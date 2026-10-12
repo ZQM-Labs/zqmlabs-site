@@ -1,0 +1,54 @@
+:root{
+  --bg:#fff7ea; --ink:#2b2118; --accent:#e07b24; --accent-deep:#b35c12;
+  --card:#ffffff; --muted:#7a6a58; --line:#ecd9b8;
+  --radius:16px; --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);font-size:18px;line-height:1.6;transition:background .4s,color .4s}
+body[data-scare="spooky"]{background:#1d1830;color:#efe9ff}
+body[data-scare="afterdark"]{background:#0b0b10;color:#d8d4c8}
+a{color:var(--accent-deep)}
+body[data-scare="spooky"] a{color:#9d6bff}
+body[data-scare="afterdark"] a{color:#b8a86a}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.site-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:#fff7eae0;border-bottom:1px solid var(--line)}
+body[data-scare="spooky"] .site-header{background:#1d1830e0}
+body[data-scare="afterdark"] .site-header{background:#0b0b10e6}
+.nav{display:flex;align-items:center;gap:18px;padding:14px 0}
+.brand{font-weight:800;font-size:1.25rem;text-decoration:none;color:inherit}
+.nav-links{margin-left:auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.nav-links a{text-decoration:none;font-weight:600;color:inherit;opacity:.9}
+.btn{display:inline-block;background:var(--accent);color:#fff!important;text-decoration:none;border-radius:12px;padding:12px 22px;font-weight:700;border:0;cursor:pointer;font-size:1rem}
+.btn.ghost{background:transparent;color:inherit!important;border:2px solid currentColor}
+.scare-switch{display:inline-flex;gap:8px;align-items:center;font-size:.9rem}
+.scare-switch button{border:2px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;cursor:pointer;font-size:.9rem;color:inherit}
+body[data-scare="spooky"] .scare-switch button,body[data-scare="afterdark"] .scare-switch button{background:#ffffff14;border-color:#ffffff2e}
+.scare-switch button[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.hero{padding:72px 0 48px;text-align:center}
+.hero .kicker{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.95rem;margin-bottom:18px}
+body[data-scare="spooky"] .hero .kicker,body[data-scare="afterdark"] .hero .kicker{background:#ffffff10;border-color:#ffffff22}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);line-height:1.1;margin:.2em 0}
+.hero p.lede{font-size:1.2rem;max-width:640px;margin:0 auto 26px;opacity:.9}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:28px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.06);color:#2b2118}
+.card h3{margin-top:0}
+body[data-scare="spooky"] .card,body[data-scare="afterdark"] .card{background:#ffffff0d;border-color:#ffffff1c;box-shadow:none;color:inherit}
+section.block{padding:40px 0}
+section.block h2{font-size:1.8rem;margin-bottom:6px}
+.muted{opacity:.75}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;color:#2b2118}
+body[data-scare="spooky"] .step,body[data-scare="afterdark"] .step{background:#ffffff0d;border-color:#ffffff1c;color:inherit}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0;color:#2b2118}
+body[data-scare="spooky"] details,body[data-scare="afterdark"] details{background:#ffffff0d;border-color:#ffffff1c;color:inherit}
+summary{cursor:pointer;font-weight:700}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 48px;font-size:.95rem}
+footer.site .cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.game-frame{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.game-frame iframe{width:100%;height:min(82vh,860px);border:0;display:block}
+.game-toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0}
+main{padding-bottom:20px}
+img{max-width:100%}
+@media (max-width:640px){.nav-links{font-size:.9rem}.hero{padding:48px 0 32px}}
