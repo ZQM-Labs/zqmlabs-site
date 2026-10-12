@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1>🏮 {{ .Title }}</h1>
+{{ .Content }}
+<div class="game-toolbar">
+  <span class="muted">Demo code: <code>WISP-2026-DEMO</code> · sign codes <code>LANTERN-1…6</code> · progress syncs to the leaderboard when the backend is up.</span>
+</div>
+<div class="game-frame">
+  <iframe src="/games/hunt-for-wisps/play/" title="Hunt for Wisps — playable demo" allow="geolocation"></iframe>
+</div>
+<p class="muted">Stuck inside the frame? <a href="/games/hunt-for-wisps/play/" target="_blank" rel="noopener">Open the game fullscreen →</a></p>
+<section class="block">
+<h2>How to play</h2>
+<div class="steps">
+<div class="step"><strong>1. Team + code</strong><br><span class="muted">Any team name. Demo code above — bogus codes get the organizer message.</span></div>
+<div class="step"><strong>2. Pick your scare</strong><br><span class="muted">Cozy / Spooky / After Dark re-skins story, puzzles &amp; palette.</span></div>
+<div class="step"><strong>3. Light 6 lanterns</strong><br><span class="muted">Solve, scan a sign code, or pass the GPS check. 3 hints per stop.</span></div>
+<div class="step"><strong>4. Parade!</strong><br><span class="muted">Finale stats + team photo prompt. Booking link below.</span></div>
+</div>
+</section>
+<p><a class="btn" href="mailto:hello@zqmlabs.com?subject=Booking%20Hunt%20for%20Wisps">Book this for your community — $199</a></p>
+{{ end }}
