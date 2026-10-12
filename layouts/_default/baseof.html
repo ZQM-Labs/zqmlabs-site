@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} · ZQM Labs{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:title" content="{{ .Title }} · Z's Quests & Mischief">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:image" content="{{ "img/logo-primary.webp" | absURL }}">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+  :root{
+    --ink:#2b2118; --bg:#fff7ea; --accent:#e07b24; --accent-dark:#b35c12;
+    --card:#fff; --line:#e8d9c3;
+    --cozy:#e8a13a; --spooky:#7a5fa0; --afterdark:#3a4a6b; --overdrive:#b32318;
+  }
+  *{box-sizing:border-box}
+  body{font-family:system-ui,sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.6}
+  header.site,main,footer.site{max-width:780px;margin:0 auto;padding:20px 16px}
+  header.site{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;border-bottom:2px solid var(--line)}
+  .brand{font-weight:800;font-size:1.1rem;color:var(--ink);text-decoration:none}
+  .brand small{display:block;font-weight:600;font-size:.75rem;color:var(--accent-dark);letter-spacing:.04em}
+  nav.mainnav a{margin-left:14px;color:var(--accent-dark);text-decoration:none;font-weight:600}
+  nav.mainnav a:hover{text-decoration:underline}
+  nav.mainnav a.active{color:var(--ink);border-bottom:3px solid var(--accent)}
+  h1{font-size:2.1rem;line-height:1.2;margin:.4em 0 .3em}
+  h2{margin-top:1.6em;line-height:1.25}
+  a{color:var(--accent-dark)}
+  img{max-width:100%;height:auto;border-radius:16px}
+  .btn{display:inline-block;background:var(--accent);color:#fff !important;font-weight:700;
+       padding:12px 20px;border-radius:999px;text-decoration:none;margin:4px 6px 4px 0}
+  .btn:hover{background:var(--accent-dark)}
+  .btn.ghost{background:transparent;color:var(--accent-dark) !important;border:2px solid var(--accent)}
+  .hero-cta{margin:10px 0 4px}
+  .mantra{font-weight:700;color:var(--accent-dark)}
+  blockquote{background:var(--card);border:1.5px dashed var(--accent);border-radius:12px;
+       padding:12px 16px;margin:18px 0;font-size:.98rem}
+  blockquote p{margin:.3em 0}
+  .dial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:16px 0}
+  .dial-card{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px;text-align:center}
+  .dial-card img{border-radius:10px}
+  .dial-card figcaption{font-size:.9rem;margin-top:8px}
+  .dial-card figcaption strong{display:block;font-size:1rem}
+  .dial-1{border-color:var(--cozy)} .dial-2{border-color:var(--spooky)}
+  .dial-3{border-color:var(--afterdark)} .dial-4{border-color:var(--overdrive)}
+  details{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0}
+  summary{cursor:pointer;font-weight:700}
+  details p{margin:.5em 0 .2em}
+  .book-cta{background:var(--card);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:34px 0 8px}
+  .book-cta h2{margin-top:0}
+  footer.site{border-top:2px solid var(--line);margin-top:30px;font-size:.92rem}
+  footer.site nav a{margin-right:12px}
+  .fineprint{opacity:.75;font-size:.85rem}
+</style>
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="/">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>
+  <nav class="mainnav">
+    {{- range .Site.Menus.main }}
+    <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{- end }}
+  </nav>
+</header>
+<main>{{ block "main" . }}{{ end }}</main>
+<footer class="site">
+  <p><span class="mantra">{{ .Site.Params.mantra }}</span> · {{ .Site.Params.tagline }}</p>
+  <nav>
+    {{- range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+  </nav>
+  <p class="fineprint">Built in New Smyrna Beach, Volusia County, Florida ·
+  <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> ·
+  Party rentals (tables, chairs, grills, cornhole) coming soon. 🎪</p>
+</footer>
+</body>
+</html>
