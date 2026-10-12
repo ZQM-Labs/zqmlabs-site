@@ -1,0 +1,39 @@
+baseURL = "https://zqmlabs.com/"
+languageCode = "en-us"
+title = "ZQM Labs — Z's Quests & Mischief"
+# No theme key on purpose: layouts/ in this repo are the whole design.
+# (An empty theme = "" breaks Hugo ≥0.15x module loading — don't re-add it.)
+enableRobotsTXT = true
+
+[params]
+  tagline = "Games, gear & a little mischief."
+  mantra = "Play more. Plan less."
+  email = "zqmcomputing@gmail.com"
+  description = "Z's Quests & Mischief (ZQM Labs) builds self-guided scavenger-hunt games for communities, offices, and groups in Volusia County, Florida. Pick your scare level on the Dial — Dr. Z handles the lightning."
+
+# Main navigation — rendered by layouts/_default/baseof.html on every page.
+# To add a page to the nav: add a block here AND create the content file.
+[[menus.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+[[menus.main]]
+  name = "Halloween"
+  url = "/halloween/"
+  weight = 20
+[[menus.main]]
+  name = "Tiers"
+  url = "/tiers/"
+  weight = 30
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40
+[[menus.main]]
+  name = "FAQ"
+  url = "/faq/"
+  weight = 50
+
+[markup.goldmark]
+  [markup.goldmark.renderer]
+    unsafe = true # allow inline HTML in content (details accordions, embeds)
