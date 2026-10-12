@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <!-- Z's Quests & Mischief — pin-lantern mark, draft v1 (2026-10-11).
+       Palette: ink #2b2118 · lantern orange #e07b24 · cream #fff7ea.
+       Edit in Inkscape/Penpot. Shapes are deliberately simple for favicon/stamp use. -->
+  <!-- map pin body -->
+  <path d="M120 12 C74 12 44 48 44 92 C44 140 120 224 120 224 C120 224 196 140 196 92 C196 48 166 12 120 12 Z" fill="#2b2118"/>
+  <!-- pin window -->
+  <circle cx="120" cy="92" r="46" fill="#fff7ea"/>
+  <!-- lantern: hanging loop -->
+  <circle cx="120" cy="56" r="4.5" fill="none" stroke="#e07b24" stroke-width="4"/>
+  <!-- lantern: cap -->
+  <rect x="104" y="62" width="32" height="9" rx="3" fill="#2b2118"/>
+  <!-- lantern: glowing body -->
+  <rect x="98" y="71" width="44" height="46" rx="10" fill="#e07b24"/>
+  <!-- lantern: ribs -->
+  <g stroke="#fff7ea" stroke-width="3.5" stroke-linecap="round">
+    <line x1="109" y1="76" x2="109" y2="112"/>
+    <line x1="120" y1="76" x2="120" y2="112"/>
+    <line x1="131" y1="76" x2="131" y2="112"/>
+  </g>
+  <!-- lantern: base -->
+  <rect x="104" y="117" width="32" height="8" rx="3" fill="#2b2118"/>
+</svg>
