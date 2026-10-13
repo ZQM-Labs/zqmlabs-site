@@ -28,6 +28,16 @@ hugo --gc --minify
 hugo server -D
 ```
 
+
+## Game tiers
+
+| Tier | Price | Best for |
+|---|---|---|
+| Community | $199 flat | HOAs, neighborhoods, PTAs |
+| Office Party | $349-499 | Team building |
+| Youth Groups | Waitlist | Scouts, schools |
+| Custom | Quote | Birthdays, special events |
+
 ## Tech stack
 
 - **Hugo** (Apache-2.0) — static site generator
