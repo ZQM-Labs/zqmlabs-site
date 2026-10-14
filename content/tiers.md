@@ -26,3 +26,12 @@ to your group. Flat fee, quoted fast.
 
 Every tier: same proven 6-stop engine, your space, your window, our game.
 Email **zqmcomputing@gmail.com** to book.
+
+## 🔍 See a full kit's guts
+
+Curious what your money actually buys? We publish the whole system — the
+[Lab Assistant's Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
+(setup checklist, print specs, day-of troubleshooting), how quests get
+[authored and validated](https://github.com/ZQM-Labs/quest-authoring), and the
+[playtest results](https://github.com/ZQM-Labs/playtests) behind every claim
+on this page. No secret sauce.

@@ -57,6 +57,17 @@ yours early.
 
 [Full tier details →](/tiers/)
 
+## Open by design 🔓
+
+No secret sauce. The quest packs, the organizer toolkit, the authoring
+format, even our playtest results — all public on GitHub.
+
+- **Try a quest for free:** [Wisp's Warm-Up](https://github.com/ZQM-Labs/quest-packs)
+  — a 6-stop, ~30-minute sample pack for 6–10 players.
+- **What you get when you book:** the [Lab Assistant's Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
+  — setup checklist, print specs, day-of troubleshooting.
+- **How do we know it works?** Read the [playtest protocol and results](https://github.com/ZQM-Labs/playtests).
+
 ## Coming soon 🎪
 
 Party rentals — tables, chairs, grills, cornhole, and yard games, delivered

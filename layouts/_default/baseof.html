@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} · ZQM Labs{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:title" content="{{ .Title }} · Z's Quests & Mischief">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:image" content="{{ "img/logo-primary.webp" | absURL }}">
@@ -72,6 +73,13 @@
   <p class="fineprint">Built in New Smyrna Beach, Volusia County, Florida ·
   <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> ·
   Party rentals (tables, chairs, grills, cornhole) coming soon. 🎪</p>
+  <p class="fineprint">Open by design — everything we run is public:
+  <a href="https://github.com/ZQM-Labs">ZQM Labs</a> ·
+  <a href="https://github.com/ZQM-Labs/quest-packs">free sample pack</a> ·
+  <a href="https://github.com/ZQM-Labs/organizer-toolkit">organizer toolkit</a> ·
+  <a href="https://github.com/ZQM-Labs/quest-authoring">how we build quests</a> ·
+  <a href="https://github.com/ZQM-Labs/playtests">playtest results</a> ·
+  <a href="https://github.com/ZQM-Labs/zqmlabs-site">this site's source</a></p>
 </footer>
 </body>
 </html>

@@ -4,6 +4,7 @@ title = "ZQM Labs — Z's Quests & Mischief"
 # No theme key on purpose: layouts/ in this repo are the whole design.
 # (An empty theme = "" breaks Hugo ≥0.15x module loading — don't re-add it.)
 enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
 
 [params]
   tagline = "Games, gear & a little mischief."

@@ -145,6 +145,17 @@ you'll hear the moment the gear chamber opens.
 </details>
 
 <details>
+<summary>How do we know a kit actually works?</summary>
+
+Every quest is playtested before it ships — six stops, real organizers, real
+weather. We publish the protocol and the honest results: what deployed, how
+many played, which signs went missing, and what we fixed afterward. See the
+[playtest log](https://github.com/ZQM-Labs/playtests) — a game you've only
+played yourself is a draft.
+
+</details>
+
+<details>
 <summary>How do we book?</summary>
 
 Email **zqmcomputing@gmail.com** with your community or company name, your
