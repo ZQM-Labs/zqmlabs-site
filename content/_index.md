@@ -1,6 +1,6 @@
 ---
 title: "Halloween, hunted — right in your own neighborhood"
-description: "Self-guided scavenger-hunt games for Volusia County communities, offices, and groups. You bring the people; Dr. Z brings the mischief."
+description: "Self-guided scavenger-hunt games for Volusia County families, communities, offices, and groups. You bring the people; Dr. Z brings the mischief."
 ---
 
 ![Dr. Z, Game Master of Z's Quests & Mischief, holding up a glowing lantern](/img/logo-primary.webp)
@@ -47,6 +47,7 @@ yours early.
 
 ## Tiers at a glance
 
+- 🏠 **Family Night — $49 flat**, one household, one great night.
 - 🏘️ **Community — $199 flat**, unlimited families. Or run it as a
   **fundraiser**: families pay $15, your community keeps $5 of every sale.
 - 🏢 **Office Party — $349–$499.** Departments race a live leaderboard.
