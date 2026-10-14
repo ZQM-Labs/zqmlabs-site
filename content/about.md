@@ -61,6 +61,9 @@ electric… hold on to your lantern.
   — real streets, real lore, real weather (the storms are free special
   effects).
 - **No apps, no accounts, no fuss.** One phone per team, in a browser.
+- **Open by design.** Every map in the Lab is built on public geospatial
+  tooling — the pattern catalog behind them lives at
+  [ZQM Computing](https://github.com/ZQM-Computing).
 
 ## What's next
 
