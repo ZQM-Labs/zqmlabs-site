@@ -1,4 +1,16 @@
 {{ define "main" }}
+<style>
+/* Game-page styles (the site-wide stylesheet is a separate theme; these are
+   the layout classes the demo page needs). */
+.game-frame{border:1px solid #e8d9c3;border-radius:16px;overflow:hidden;background:#fff;margin:16px 0}
+.game-frame iframe{width:100%;height:min(82vh,860px);border:0;display:block}
+.game-toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:16px 0}
+.step{background:#fff;border:1px solid #e8d9c3;border-radius:16px;padding:20px}
+.muted{opacity:.75}
+section.block{padding:24px 0}
+code{background:#f4e8d4;padding:2px 6px;border-radius:6px}
+</style>
 <h1>🏮 {{ .Title }}</h1>
 {{ .Content }}
 <div class="game-toolbar">
