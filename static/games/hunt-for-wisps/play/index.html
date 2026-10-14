@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wisp's Lost Lanterns — ZQM Labs</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-scare="cozy">
+<main id="app">
+  <!-- START -->
+  <section id="screen-start" class="screen active">
+    <h1>🏮 Wisp's Lost Lanterns</h1>
+    <p class="story">Wisp the will-o'-the-wisp lost her 6 glow lanterns! Your team
+    are her Lantern Keepers. Find each stop, solve the puzzle, relight the lantern.</p>
+    <label>Team name <input id="team-name" autocomplete="off" placeholder="The Pumpkin Patrol"></label>
+    <label>Access code <input id="access-code" autocomplete="off" placeholder="From your kit / organizer"></label>
+    <button id="btn-start">Start the hunt</button>
+    <p class="fineprint">One phone per team is plenty. Progress saves on this device.</p>
+  </section>
+
+  <!-- SCARE METER -->
+  <section id="screen-scare" class="screen">
+    <h2>How creepy do you want it?</h2>
+    <button class="scare-card" data-pick="cozy">🎃 <strong>Cozy Glow</strong><span>Families &amp; little kids. Counting, matching, giggles.</span></button>
+    <button class="scare-card" data-pick="spooky">👻 <strong>Spooky</strong><span>Tweens &amp; mixed groups. Riddles, ciphers, goosebumps.</span></button>
+    <button class="scare-card" data-pick="afterdark">🦇 <strong>After Dark</strong><span>Grown-ups. Local ghost lore, cryptic clues, eerie sounds.</span></button>
+  </section>
+
+  <!-- MAP -->
+  <section id="screen-map" class="screen">
+    <div id="map"></div>
+    <div id="next-stop" class="card"></div>
+  </section>
+
+  <!-- PUZZLE -->
+  <section id="screen-puzzle" class="screen">
+    <h2 id="puzzle-title"></h2>
+    <p id="puzzle-story" class="story"></p>
+    <p id="puzzle-question"></p>
+    <div id="puzzle-input-row">
+      <input id="puzzle-answer" autocomplete="off" placeholder="Your answer">
+      <button id="btn-answer">Light the lantern</button>
+    </div>
+    <div id="unlock-row">
+      <input id="unlock-code" autocomplete="off" placeholder="Code from the QR sign">
+      <button id="btn-unlock">Unlock with sign code</button>
+      <button id="btn-gps">📍 I'm here (GPS check)</button>
+    </div>
+    <div id="hints">
+      <button id="btn-hint">💡 Hint</button>
+      <p id="hint-text"></p>
+    </div>
+    <p id="feedback" role="status"></p>
+  </section>
+
+  <!-- FINALE -->
+  <section id="screen-finale" class="screen">
+    <h2>🎉 The Lantern Parade!</h2>
+    <p class="story">All 6 lanterns are lit. Wisp can find her way home — and so can you, Lantern Keepers.</p>
+    <p id="finale-stats"></p>
+    <p>📸 Take your team photo, then show this screen at the finale table for your badge &amp; treat.</p>
+    <button id="btn-restart">Play again</button>
+  </section>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
