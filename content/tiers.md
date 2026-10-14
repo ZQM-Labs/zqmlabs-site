@@ -1,7 +1,10 @@
 ---
 title: "Tiers — one game, themed for your group"
-description: "Community kits at $199 flat (or a fundraiser split), office parties at $349–$499, youth groups and custom events on the waitlist. One engine, your scare level."
+description: "Family nights at $49 flat, community kits at $199 flat (or a fundraiser split), office parties at $349–$499, youth groups and custom events on the waitlist. One engine, your scare level."
 ---
+
+## 🏠 Family Night — $49 flat (one household)
+One family, one yard (or one block), one great night. The full 6-stop quest — printable signs, puzzles for ages 5 to 75, three hints at every stop so nobody gets stuck. Play anytime during your week. Perfect for Halloween night itself, a birthday, or just because.
 
 ## 🏘️ Community — $199 flat (unlimited families)
 For HOAs, neighborhoods, PTAs, churches. Wisp's Lost Lanterns, Cozy Glow by
