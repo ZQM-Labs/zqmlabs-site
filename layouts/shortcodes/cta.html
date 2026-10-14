@@ -1,0 +1,1 @@
+<p class="hero-cta"><a class="btn" href="mailto:{{ .Page.Site.Params.email }}?subject={{ (.Get "subject" | default "Booking a quest kit") | urlquery }}">{{ .Get "text" | default "Book a kit" }}</a></p>
