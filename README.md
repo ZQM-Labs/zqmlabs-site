@@ -1,20 +1,19 @@
 # zqmlabs.com — ZQM Labs public website
 
-
-The public website for **ZQM Labs — Z's Quests & Mischief**: self-guided, location-based scavenger-hunt games for communities, schools, and offices in Volusia County, Florida. *Games, gear & a little mischief.*
-
+The public website for **ZQM Labs — Z's Quests & Mischief**:
+self-guided, location-based scavenger-hunt games for communities,
+schools, and offices in Volusia County, Florida.
+*Games, gear & a little mischief.*
 
 ## Who this is for
 
-
-- **Communities** — HOAs, neighborhoods, PTAs, churches looking for family-friendly activities
+- **Communities** — HOAs, neighborhoods, PTAs, churches looking
+  for family-friendly activities
 - **Schools** — teachers and administrators organizing events
 - **Offices** — teams wanting a fun, zero-planning team-building activity
 - **Game developers** — anyone building location-based games
 
-
 ## What's inside
-
 
 - Home page with game overview and booking CTA
 - Free playable demo: `/games/hunt-for-wisps/`
@@ -23,24 +22,17 @@ The public website for **ZQM Labs — Z's Quests & Mischief**: self-guided, loca
 - About the Lab and Dr. Z
 - FAQ covering kits, pricing, safety, rain plans
 
-
 ## Quick start
 
-
-```bash
+```sh
 # Build locally
 hugo --gc --minify
-
 
 # Serve
 hugo server -D
 ```
 
-
-
-
 ## Game tiers
-
 
 | Tier | Price | Best for |
 |---|---|---|
@@ -49,39 +41,39 @@ hugo server -D
 | Youth Groups | Waitlist | Scouts, schools |
 | Custom | Quote | Birthdays, special events |
 
-
 ## Tech stack
-
 
 - **Hugo** (Apache-2.0) — static site generator
 - **GitHub Pages** — hosting
 - **Custom CSS** — no framework
 
-
 ## Related repositories
 
-
 - [ZQM Labs org](https://github.com/ZQM-Labs) — games, gear & a little mischief
-- [zqm-labs](https://github.com/ZQM-Computing/zqm-labs) — games monorepo (player PWA, PocketBase, Twine content)
-- [ZQM Computing](https://github.com/ZQM-Computing) — geospatial arm of ZQM Labs (14 pattern repos)
-- [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns) — umbrella index
+- [zqm-labs][zcl] — games monorepo (player PWA, PocketBase, Twine)
+- [ZQM Computing][zcg] — geospatial arm of ZQM Labs (15 pattern repos)
+- [geospatial-patterns][gp] — umbrella index
 
+[zcl]: https://github.com/ZQM-Computing/zqm-labs
+[zcg]: https://github.com/ZQM-Computing
+[gp]: https://github.com/ZQM-Computing/geospatial-patterns
 
 ## License
 
-
 MIT — see LICENSE file.
-
 
 ## More from ZQM Labs
 
-- [quest-packs](https://github.com/ZQM-Labs/quest-packs) — the edition catalog, including a free 6-stop sample quest
-- [organizer-toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup checklists, print specs, day-of troubleshooting, FAQ
-- [quest-authoring](https://github.com/ZQM-Labs/quest-authoring) — quest-pack JSON spec, authoring guide, and validator
-- [playtests](https://github.com/ZQM-Labs/playtests) — playtest protocol and results
+- [quest-packs][qp] — edition catalog + free sample quest
+- [organizer-toolkit][otk] — setup checklists, print specs, FAQ
+- [quest-authoring][qa] — quest-pack spec, guide, and validator
+- [playtests][pt] — playtest protocol and results
 
-Contact: zqmcomputing@gmail.com
+[qp]: https://github.com/ZQM-Labs/quest-packs
+[otk]: https://github.com/ZQM-Labs/organizer-toolkit
+[qa]: https://github.com/ZQM-Labs/quest-authoring
+[pt]: https://github.com/ZQM-Labs/playtests
 
+Contact: <zqmcomputing@gmail.com>
 
 *Play more. Plan less.* -> [zqmlabs.com](https://zqmlabs.com)
-
