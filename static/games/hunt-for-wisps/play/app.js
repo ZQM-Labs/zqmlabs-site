@@ -218,6 +218,16 @@ function updateHUD() {
   if (hb) hb.disabled = left <= 0;
 }
 
+/* Elapsed clock on the map screen (UX #5 — only the finale showed duration). */
+function tickClock() {
+  const el = $("hunt-clock");
+  if (!el) return;
+  if (!state.startedAt) { el.textContent = ""; return; }
+  const s = Math.max(0, Math.floor((Date.now() - state.startedAt) / 1000));
+  el.textContent = `⏱ Elapsed: ${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+}
+setInterval(tickClock, 1000);
+
 /* ---------- flow ---------- */
 $("btn-start").addEventListener("click", async () => {
   state.team = $("team-name").value.trim() || "Lantern Keepers";
@@ -361,6 +371,10 @@ window.openStop = function (id) {
   // never another stop's code. (m19)
   if (deepSignCode && deepSignCode.toUpperCase() === String(currentStop.code).toUpperCase())
     $("unlock-code").value = deepSignCode;
+  // Fresh stop: reset the GPS affordance, then auto-watch for arrival.
+  const gpsBtn = $("btn-gps");
+  if (gpsBtn) { gpsBtn.disabled = false; gpsBtn.textContent = "📍 I'm here (GPS check)"; }
+  startGpsWatch(currentStop);
   show("screen-puzzle");
 };
 
@@ -373,6 +387,7 @@ function solved() {
   }
   save();
   $("feedback").textContent = "🏮 " + (currentStop.lit || "Lantern lit!");
+  stopGpsWatch();
   setTimeout(openMap, 900);
   syncProgress(); // fire-and-forget leaderboard sync when backend present
 }
@@ -382,6 +397,13 @@ $("btn-answer").addEventListener("click", () => {
   const got = $("puzzle-answer").value.trim().toLowerCase();
   if (got === String(p.a).trim().toLowerCase()) solved();
   else $("feedback").textContent = "Not quite — try a hint, Keeper!";
+});
+// Enter submits the answer (and the sign code) — no button tap needed. (UX #4)
+$("puzzle-answer").addEventListener("keydown", e => {
+  if (e.key === "Enter") { e.preventDefault(); $("btn-answer").click(); }
+});
+$("unlock-code").addEventListener("keydown", e => {
+  if (e.key === "Enter") { e.preventDefault(); $("btn-unlock").click(); }
 });
 
 $("btn-unlock").addEventListener("click", () => {
@@ -440,6 +462,59 @@ $("btn-restart").addEventListener("click", () => {
   location.href = location.pathname + (q ? "?" + q : "");
 });
 
+/* Finale share card (UX #8): a canvas PNG (team, lanterns, time, stats)
+   shared via the Web Share API or downloaded — no more photographing
+   the screen. */
+$("btn-share").addEventListener("click", () => {
+  try {
+    const W = 1080, H = 1350;
+    const cv = document.createElement("canvas");
+    cv.width = W; cv.height = H;
+    const g = cv.getContext("2d");
+    const grad = g.createLinearGradient(0, 0, 0, H);
+    grad.addColorStop(0, "#101c33"); grad.addColorStop(1, "#3a2410");
+    g.fillStyle = grad; g.fillRect(0, 0, W, H);
+    g.textAlign = "center";
+    g.fillStyle = "#ffd98a";
+    g.font = "700 84px Georgia, 'Times New Roman', serif";
+    g.fillText("\u{1F3EE} Lantern Keepers \u{1F3EE}", W / 2, 210);
+    g.fillStyle = "#fff7ea";
+    g.font = "700 72px Georgia, 'Times New Roman', serif";
+    g.fillText(state.team || "Lantern Keepers", W / 2, 340);
+    const total = pack.stops.length;
+    g.font = "88px serif";
+    for (let i = 0; i < total; i++)
+      g.fillText(i < state.solved.length ? "\u{1F3EE}" : "\u{1F311}", 160 + i * 130, 540);
+    g.fillStyle = "#ffd98a";
+    g.font = "56px Georgia, 'Times New Roman', serif";
+    const mins = state.startedAt ? Math.round((Date.now() - state.startedAt) / 60000) : 0;
+    g.fillText(`${state.solved.length} / ${total} lanterns \u00b7 ${mins} min`, W / 2, 700);
+    g.fillText(`\u2605 ${state.cleanSolves} clean solves \u00b7 ${state.hintsUsed} hints used`, W / 2, 790);
+    g.fillStyle = "#c9b18a";
+    g.font = "italic 44px Georgia, 'Times New Roman', serif";
+    g.fillText("Wisp's Lost Lanterns \u2014 ZQM Labs", W / 2, 1120);
+    g.font = "40px Georgia, 'Times New Roman', serif";
+    g.fillText("zqmlabs.com", W / 2, 1190);
+    cv.toBlob(blob => {
+      if (!blob) return;
+      const file = new File([blob], "lantern-keepers.png", { type: "image/png" });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        navigator.share({ files: [file], title: "We lit every lantern!",
+          text: `${state.team} completed Wisp's Lost Lanterns!` }).catch(() => downloadCard(blob));
+        return;
+      }
+      downloadCard(blob);
+    }, "image/png");
+  } catch (e) { console.error("share card failed:", e); }
+});
+function downloadCard(blob) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = "lantern-keepers.png";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
+}
+
 /* ---------- helpers / backend stubs ---------- */
 function haversine(a, b, c, d) {
   const R = 6371000, t = x => x * Math.PI / 180;
@@ -454,6 +529,32 @@ function bearing(a, b, c, d) {
 }
 function compassDir(deg) {
   return ['N','NE','E','SE','S','SW','W','NW'][Math.round(deg / 45) % 8];
+}
+/* Auto-arrival (UX #6): entering a puzzle screen starts a watchPosition; the
+   first fix within 30m confirms arrival and disables the manual button.
+   Watches are always cleared on stop change — an open watch is a battery
+   drain. Geolocation errors just leave the manual button in place. */
+let gpsWatch = null;
+function stopGpsWatch() {
+  if (gpsWatch) { try { navigator.geolocation.clearWatch(gpsWatch); } catch { /* already dead */ }
+    gpsWatch = null; }
+}
+function startGpsWatch(stop) {
+  stopGpsWatch();
+  if (!navigator.geolocation || !stop) return;
+  try {
+    gpsWatch = navigator.geolocation.watchPosition(pos => {
+      const d = haversine(pos.coords.latitude, pos.coords.longitude, stop.lat, stop.lng);
+      if (d <= 30) {
+        stopGpsWatch();
+        const fb = $("feedback");
+        if (fb) fb.textContent = "📍 GPS says you're here! Now solve the puzzle above.";
+        const g = $("btn-gps");
+        if (g) { g.disabled = true; g.textContent = "📍 You're here!"; }
+      }
+    }, () => { /* denied/unavailable — the manual button remains */ },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 30000 });
+  } catch { gpsWatch = null; }
 }
 async function validateCode(code) {
   try {
@@ -487,12 +588,42 @@ async function fetchKitBundle(kitId) {
 }
 async function syncProgress(done = false) {
   if (isDemo) return;
+  const payload = { team: state.team, kit: state.kitId, solved: state.solved,
+    hintsUsed: state.hintsUsed, scare: state.scare, finished: done };
   try {
-    await fetch(`${API_BASE}/api/lantern/progress`, {
+    const r = await fetch(`${API_BASE}/api/lantern/progress`, {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ team: state.team, kit: state.kitId, solved: state.solved,
-        hintsUsed: state.hintsUsed, scare: state.scare, finished: done }) });
-  } catch { /* offline is fine — progress also lives in localStorage */ }
+      body: JSON.stringify(payload) });
+    if (!r.ok) throw new Error("progress rejected");
+  } catch {
+    // Offline (or backend absent): queue the payload. Progress also lives in
+    // localStorage; the queue retries on reconnect, on load, and every 60s.
+    const q = outboxLoad(); q.push(payload); outboxSave(q);
+  }
 }
+/* Progress outbox: failed syncs survive offline stretches and retry. Bounded
+   at 50 entries (oldest dropped) so a long offline run cannot grow
+   localStorage without limit. */
+const OUTBOX_KEY = "lantern-outbox";
+function outboxLoad() { try { return JSON.parse(localStorage.getItem(OUTBOX_KEY) || "[]"); } catch { return []; } }
+function outboxSave(q) { try { localStorage.setItem(OUTBOX_KEY, JSON.stringify(q.slice(-50))); } catch { /* quota — drop oldest */ } }
+async function flushOutbox() {
+  if (isDemo) return;
+  const q = outboxLoad();
+  if (!q.length) return;
+  const rest = [];
+  for (const item of q) {
+    try {
+      const r = await fetch(`${API_BASE}/api/lantern/progress`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(item) });
+      if (!r.ok) rest.push(item);
+    } catch { rest.push(item); }
+  }
+  outboxSave(rest);
+}
+window.addEventListener("online", flushOutbox);
+flushOutbox();
+setInterval(flushOutbox, 60000);
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 document.body.dataset.scare = state.scare;

@@ -4,8 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wisp's Lost Lanterns — ZQM Labs</title>
+<meta name="description" content="Wisp's Lost Lanterns — a self-guided location scavenger hunt by Z's Quests & Mischief (ZQM Labs). Find six lanterns, solve the puzzles, light the parade.">
+<meta name="theme-color" content="#e07b24">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Wisp Hunt">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/vendor/leaflet.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-scare="cozy">
@@ -40,6 +47,7 @@
   <section id="screen-map" class="screen">
     <div id="map"></div>
     <div id="wisp-meter" class="card"></div>
+    <div id="hunt-clock" class="card" aria-live="off"></div>
     <div class="card"><strong>🏺 Relics collected</strong><div id="relics"></div></div>
     <div id="next-stop" class="card"></div>
   </section>
@@ -76,10 +84,11 @@
     <p class="lab-note">📜 <strong>Lab note:</strong> Experiment complete. Six of six lanterns recovered, zero Keepers lost to the graveyard (the pretend one). Wisp has been returned to her jar, where she is already plotting. Same time next year. — <em>Dr. Z</em></p>
     <p id="finale-stats"></p>
     <p>📸 Take your team photo, then show this screen at the finale table for your badge &amp; treat.</p>
+    <button id="btn-share" type="button">📸 Save / share your team card</button>
     <button id="btn-restart">Play again</button>
   </section>
 </main>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/vendor/leaflet.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
