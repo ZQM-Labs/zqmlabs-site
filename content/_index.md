@@ -72,7 +72,7 @@ format, even our playtest results — all public on GitHub.
 
 Party rentals — tables, chairs, grills, cornhole, and yard games, delivered
 with the same mischief. **Play more. Plan less.** The games come first; the
-gear is next. Email **zqmcomputing@gmail.com** to get on the list.
+gear is next. Email **<zqmcomputing@gmail.com>** to get on the list.
 
 ## Quick questions
 
