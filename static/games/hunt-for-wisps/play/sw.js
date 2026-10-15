@@ -7,7 +7,7 @@
    runtime-cached as fetched — already-visited areas keep their tiles offline.
 
    The QR/code + fallback unlock paths work with zero connectivity. */
-const CACHE = "lantern-v3"; // bump on every release — stale caches serve old builds
+const CACHE = "lantern-v4"; // bump on every release — stale caches serve old builds
 const SHELL = [
   "./",
   "./index.html",
