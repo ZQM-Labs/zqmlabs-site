@@ -164,3 +164,4 @@ dates, and the tier you're eyeing. The Lab replies within a day with kit
 details and next steps. Halloween 2026 pilot spots are limited.
 </details>
 <!-- markdownlint-enable MD033 -->
+
