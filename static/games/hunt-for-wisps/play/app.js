@@ -20,9 +20,7 @@ const DEMO_PACK = {
       wisp: "That's MINE! Oh — oh! It still remembers me. Quick, light it!",
       lit: "One down! See how it glows? That's my happy leaking out.",
       puzzle: { cozy: { q: "Count the pumpkins in the patch picture your organizer showed you. How many are smiling?", a: "4", type: "number" },
-                spooky: { q: "Riddle: I have a face but cannot see, I glow but cannot flee. On Halloween night I watch the street. What am I?", a: "jack-o-lantern", type: "text" },
-                afterdark: { q: "The pumpkin's glow doubles every hour it burns. It has burned one hour — how many MORE hours until it shines eight times as bright?", a: "3", type: "number" },
-                overdrive: { q: "Four smilers grin in the patch. Dr. Z just carved five more. How many faces now?", a: "9", type: "number" } },
+                spooky: { q: "Riddle: I have a face but cannot see, I glow but cannot flee. On Halloween night I watch the street. What am I?", a: "jack-o-lantern", type: "text" } },
       fallback: { q: "What color is the ribbon on the welcome sign?", a: "orange" },
       hints: ["Look low — lanterns love the ground.", "Count slowly, out loud, as a team.", "Ranger assist: the smiling pumpkins are 4."] },
     { id: 2, name: "The Whispering Oak", lat: 29.0262, lng: -80.9264, code: "LANTERN-2", art: "stop-2-oak.webp",
@@ -32,10 +30,7 @@ const DEMO_PACK = {
                overdrive: "Two hundred years this oak has stood, and it has seen faster Keepers than you. Oakie, be honest — are they slow? …He says yes. MOVE." },
       wisp: "Shhh — Oakie is sleeping. He only hides things for friends. We're friends, right?",
       lit: "Got it! Oakie says you're officially tree-approved.",
-      puzzle: { cozy: { q: "Find the oak. How many wooden swings or benches face it?", a: "2", type: "number" },
-                spooky: { q: "Riddle: I have rings but no fingers, bark but no bite, and remember every name whispered to me. What am I?", a: "tree", type: "text" },
-                afterdark: { q: "Two benches face the oak, and every bench is full tonight — two sitters each. How many sitters?", a: "4", type: "number" },
-                overdrive: { q: "Oakie says you're slow, so he's hiding THREE lanterns. One per bench, and every bench holds two ghosts. How many ghosts?", a: "6", type: "number" } },
+      puzzle: { cozy: { q: "Find the oak. How many wooden swings or benches face it?", a: "2", type: "number" } },
       fallback: { q: "What is carved on the small sign by the oak?", a: "wisp" },
       hints: ["Face the tree like it is facing you.", "Only count the ones looking at the oak.", "Ranger assist: the answer is 2."] },
     { id: 3, name: "The Giggling Graveyard (pretend!)", lat: 29.0266, lng: -80.9258, code: "LANTERN-3", art: "stop-3-graveyard.webp",
@@ -45,10 +40,7 @@ const DEMO_PACK = {
                overdrive: "The ghosts keep score, and right now you're losing to a team of TODDLERS. Tag them back. TAG. THEM. BACK." },
       wisp: "Tag, you're it! Kidding — unless…? No, kidding. Probably.",
       lit: "The ghosts are doing the wave. That's their applause. You're welcome.",
-      puzzle: { cozy: { q: "One foam tombstone says R.I.P. — Rest In... what? (The silly word on the stone!)", a: "pumpkins", type: "text" },
-                spooky: { q: "Riddle: I have a name but no body, a date but no future. Visit me at midnight and I might visit back. What am I?", a: "ghost", type: "text" },
-                afterdark: { q: "The oldest stone is twice as old as the next one, and the next one is one hundred years old. How old is the oldest?", a: "200", type: "number" },
-                overdrive: { q: "Count the tombstones — five. The ghosts just ADDED one with YOUR name on it. How many tombstones now?", a: "6", type: "number" } },
+      puzzle: { cozy: { q: "One foam tombstone says R.I.P. — Rest In... what? (The silly word on the stone!)", a: "pumpkins", type: "text" } },
       fallback: { q: "How many foam tombstones are there?", a: "5" },
       hints: ["Read the stones — one of them is joking.", "It rhymes with the patch from Stop 1.", "Ranger assist: Rest In Pumpkins."] },
     { id: 4, name: "The Spider's Counting Web", lat: 29.0270, lng: -80.9252, code: "LANTERN-4", art: "stop-4-spider.webp",
@@ -58,10 +50,7 @@ const DEMO_PACK = {
                overdrive: "Mrs. Spider has rebuilt eleven webs tonight AND finished a crossword. Your excuse is WHAT, exactly? Untangle that lantern. Clock's ticking." },
       wisp: "Mrs. Spider says hi. She says it with all eight legs. It's a lot of hi.",
       lit: "Untangled! Mrs. Spider is doing a happy leg-dance. All eight. It's a LOT.",
-      puzzle: { cozy: { q: "A real spider has 8 legs. Mrs. Spider is holding up 3 legs to wave. How many legs are on the ground?", a: "5", type: "number" },
-                spooky: { q: "Riddle: I spin silk but sew no clothes, catch guests but never host, and have eight legs of patience. What am I?", a: "spider", type: "text" },
-                afterdark: { q: "Orb weavers have eight legs and eight eyes. Two of them are watching you. How many eyes total?", a: "16", type: "number" },
-                overdrive: { q: "Three webs, five threads each — and one thread is yelling at you. How many threads?", a: "15", type: "number" } },
+      puzzle: { cozy: { q: "A real spider has 8 legs. Mrs. Spider is holding up 3 legs to wave. How many legs are on the ground?", a: "5", type: "number" } },
       fallback: { q: "What color is Mrs. Spider?", a: "purple" },
       hints: ["Start with 8 legs, like every spider.", "She waves with 3 of them.", "Ranger assist: 8 − 3 = 5."] },
     { id: 5, name: "The Owl's Night Watch", lat: 29.0274, lng: -80.9246, code: "LANTERN-5", art: "stop-5-owl.webp",
@@ -71,12 +60,9 @@ const DEMO_PACK = {
                overdrive: "Professor Hoot graded your last answer a C+. A C! In MY hunt! Listen harder, answer faster — make an owl proud." },
       wisp: "Professor Hoot is very serious. Do your serious face. …Not that serious. Dial it back.",
       lit: "‘Hoo,’ he says. That's owl for ‘well done.’ I translated. You're welcome.",
-      puzzle: { cozy: { q: "Riddle: I have big eyes, a silent flight, and I hoot at midnight from this tree. What am I?", a: "owl", type: "text" },
-                spooky: { q: "Riddle: I never blink and never sleep. I watch you solve, and my grading is final. What am I?", a: "owl", type: "text" },
-                afterdark: { q: "The owl calls: 'who cooks for you?' Answer it honestly, in one word.", a: "me", type: "text" },
-                overdrive: { q: "Professor Hoot graded your last riddle a C+. He wants the two letters an owl actually says. Type them.", a: "ho", type: "text" } },
+      puzzle: { cozy: { q: "Listen to the sound your phone plays at this stop: is it an owl, a cat, or a frog?", a: "owl", type: "text" } },
       fallback: { q: "What two letters does an owl 'say'?", a: "ho" },
-      hints: ["It is the bird this whole stop is named after.", "Twilight is its favorite time.", "Ranger assist: it's the owl."] },
+      hints: ["It is the sound this whole stop is named after.", "Twilight is this bird's favorite time.", "Ranger assist: it's the owl."] },
     { id: 6, name: "The Lantern Parade Ground", lat: 29.0278, lng: -80.9240, code: "LANTERN-6", art: "stop-6-parade.webp",
       story: { cozy: "The last lantern! Light it and the whole parade glows.",
                spooky: "The empty parade ground waits. Six lanterns, six shadows — but there are seven shadows moving on the grass, and one of them is waving at you.",
@@ -84,10 +70,7 @@ const DEMO_PACK = {
                overdrive: "FINAL STRETCH. Wisp ran the numbers and they are NOT in your favor. Light that last lantern like you mean it — FULL! MADNESS!" },
       wisp: "This is it — the last one! My hands are all shaky. Do I have hands? I'm shaky anyway!",
       lit: "IT'S LIT! Look at them all — look at ME! I'm basically a sunrise!",
-      puzzle: { cozy: { q: "Teamwork finale: how many lanterns did you light on the whole hunt (including this one)?", a: "6", type: "number" },
-                spooky: { q: "Six lanterns, six shadows — count them, then add the one waving at you from the grass. How many shadows?", a: "7", type: "number" },
-                afterdark: { q: "Each lantern burns one memory. You lit six. The Dr. Z blows out one. How many memories still glow?", a: "5", type: "number" },
-                overdrive: { q: "Every lantern doubles as the parade fills: six lit means how many lights in total?", a: "12", type: "number" } },
+      puzzle: { cozy: { q: "Teamwork finale: how many lanterns did you light on the whole hunt (including this one)?", a: "6", type: "number" } },
       fallback: { q: "Say the magic words out loud as a team: 'Light the way, Wisp!' then type: wisp", a: "wisp" },
       hints: ["Count the stops on your map.", "One lantern per stop.", "Ranger assist: 6 lanterns."] }
   ]
@@ -176,7 +159,7 @@ const WISP_MOODS = [
   { min: 3, src: "wisp-hiding-lantern.webp",
     alt: "Wisp giggling, hope returning — 3 to 4 lanterns lit",
     cap: "Hope is flickering back…" },
-  { min: 5, src: "finale-lantern-parade.webp",
+  { min: 5, src: "wisp-leading-parade.webp",
     alt: "Wisp soaring joyfully at the head of her lanterns — 5 to 6 lit, she is almost home",
     cap: "She's almost home!" }
 ];
@@ -185,6 +168,18 @@ function wispMood(lit) {
 }
 // Map markers wear each stop's spot illustration; solved stops get a lit ring.
 let markers = [];
+let playerMarker = null, playerCircle = null;
+function updatePlayerMarker(lat, lng, acc) {
+  if (!map || mapBroken) return;
+  const ll = [lat, lng];
+  if (!playerMarker) {
+    playerMarker = L.circleMarker(ll, { radius: 8, color: '#1a73e8', fillColor: '#1a73e8', fillOpacity: 0.9, weight: 2 }).addTo(map);
+    playerCircle = L.circle(ll, { radius: acc, color: '#1a73e8', fillColor: '#1a73e8', fillOpacity: 0.15, weight: 1 }).addTo(map);
+  } else {
+    playerMarker.setLatLng(ll);
+    playerCircle.setLatLng(ll).setRadius(acc);
+  }
+}
 function stopIcon(s) {
   const lit = state.solved.includes(s.id);
   const face = s.art
@@ -396,10 +391,21 @@ $("btn-unlock").addEventListener("click", () => {
 
 $("btn-gps").addEventListener("click", () => {
   navigator.geolocation.getCurrentPosition(pos => {
-    const d = haversine(pos.coords.latitude, pos.coords.longitude, currentStop.lat, currentStop.lng);
-    if (d <= 30) { $("feedback").textContent = "📍 You're here! Now solve the puzzle above."; }
-    else $("feedback").textContent = `Still ${Math.round(d)}m away — keep hunting!`;
-  }, () => $("feedback").textContent = "GPS unavailable — use the sign code instead.", { timeout: 10000 });
+    const acc = pos.coords.accuracy || 999;
+    if (acc > 50) {
+      $("feedback").textContent = `GPS accuracy is poor (±${Math.round(acc)}m) — move to open sky or use the sign code.`;
+      return;
+    }
+    const plat = pos.coords.latitude, plng = pos.coords.longitude;
+    const d = haversine(plat, plng, currentStop.lat, currentStop.lng);
+    const radius = currentStop.radius || 30;
+    updatePlayerMarker(plat, plng, acc);
+    if (d <= radius) { $("feedback").textContent = "📍 You're here! Now solve the puzzle above."; }
+    else {
+      const b = bearing(plat, plng, currentStop.lat, currentStop.lng);
+      $("feedback").textContent = `Still ${Math.round(d)}m away to the ${compassDir(b)} — keep hunting!`;
+    }
+  }, () => $("feedback").textContent = "GPS unavailable — use the sign code instead.", { timeout: 10000, enableHighAccuracy: true });
 });
 
 $("btn-hint").addEventListener("click", () => {
@@ -439,6 +445,15 @@ function haversine(a, b, c, d) {
   const R = 6371000, t = x => x * Math.PI / 180;
   const h = Math.sin(t(c - a) / 2) ** 2 + Math.cos(t(a)) * Math.cos(t(c)) * Math.sin(t(d - b) / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(h));
+}
+function bearing(a, b, c, d) {
+  const t = x => x * Math.PI / 180;
+  const y = Math.sin(t(d - b)) * Math.cos(t(c));
+  const x = Math.cos(t(a)) * Math.sin(t(c)) - Math.sin(t(a)) * Math.cos(t(c)) * Math.cos(t(d - b));
+  return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+}
+function compassDir(deg) {
+  return ['N','NE','E','SE','S','SW','W','NW'][Math.round(deg / 45) % 8];
 }
 async function validateCode(code) {
   try {
