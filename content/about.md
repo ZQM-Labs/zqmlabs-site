@@ -21,7 +21,8 @@ He assembles each game in the Lab out of maps, riddles, lanterns, and
 lightning, then unleashes it on a neighborhood and cackles (warmly) at the
 results.
 
-Behind the lab coat is a Volusia County local: a [GIS professional](https://github.com/ZQM-Computing/geospatial-patterns) and
+Behind the lab coat is a Volusia County local: a
+[GIS professional](https://github.com/ZQM-Computing/geospatial-patterns) and
 father who builds the games, playtests them on his own family (the Lab's
 daughters are ruthless critics), and answers every email himself. The
 doctorate is a costume. The mischief is real.
@@ -70,4 +71,4 @@ electric… hold on to your lantern.
 The games are Phase 1. Phase 2 is the gear: party rentals with the same
 one-call-and-done promise, so the community that books a hunt can book the
 tables, chairs, grill, and cornhole to go with it. Join the list at
-**zqmcomputing@gmail.com**.
+**<zqmcomputing@gmail.com>**.
