@@ -21,7 +21,7 @@ He assembles each game in the Lab out of maps, riddles, lanterns, and
 lightning, then unleashes it on a neighborhood and cackles (warmly) at the
 results.
 
-Behind the lab coat is a Volusia County local: a GIS professional and
+Behind the lab coat is a Volusia County local: a [GIS professional](https://github.com/ZQM-Computing/geospatial-patterns) and
 father who builds the games, playtests them on his own family (the Lab's
 daughters are ruthless critics), and answers every email himself. The
 doctorate is a costume. The mischief is real.
