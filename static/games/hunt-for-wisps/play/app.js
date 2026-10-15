@@ -12,36 +12,64 @@ const DEMO_PACK = {
   title: "Wisp's Lost Lanterns",
   kit: "DEMO",
   stops: [
-    { id: 1, name: "The Welcome Pumpkin", lat: 29.0258, lng: -80.9270, code: "LANTERN-1",
+    { id: 1, name: "The Welcome Pumpkin", lat: 29.0258, lng: -80.9270, code: "LANTERN-1", art: "stop-1-pumpkin.webp",
       story: { cozy: "Wisp twirls sadly. \"My first lantern rolled away right at the start!\"",
                spooky: "A carved pumpkin grins where no pumpkin should be. Something glows inside it.",
-               afterdark: "The old-timers say a light once wandered this road, looking for the turning it missed in 1768." },
+               afterdark: "The old-timers say a light once wandered this road, looking for the turning it missed in 1768.",
+               overdrive: "Dr. Z here — FULL MADNESS engaged. My sensors detect faster teams ahead of you. That pumpkin isn't smiling, it's SMIRKING. Wipe that smirk off." },
+      wisp: "That's MINE! Oh — oh! It still remembers me. Quick, light it!",
+      lit: "One down! See how it glows? That's my happy leaking out.",
       puzzle: { cozy: { q: "Count the pumpkins in the patch picture your organizer showed you. How many are smiling?", a: "4", type: "number" },
                 spooky: { q: "Riddle: I have a face but cannot see, I glow but cannot flee. On Halloween night I watch the street. What am I?", a: "jack-o-lantern", type: "text" } },
       fallback: { q: "What color is the ribbon on the welcome sign?", a: "orange" },
       hints: ["Look low — lanterns love the ground.", "Count slowly, out loud, as a team.", "Ranger assist: the smiling pumpkins are 4."] },
-    { id: 2, name: "The Whispering Oak", lat: 29.0262, lng: -80.9264, code: "LANTERN-2",
-      story: { cozy: "The big oak is Wisp's best friend. He hid a lantern in his branches!" },
+    { id: 2, name: "The Whispering Oak", lat: 29.0262, lng: -80.9264, code: "LANTERN-2", art: "stop-2-oak.webp",
+      story: { cozy: "The big oak is Wisp's best friend. He hid a lantern in his branches!",
+               spooky: "The oak's branches are bare, but something in the canopy breathes in and out, in and out — like the tree is dreaming.",
+               afterdark: "They say this oak was a hanging tree in the 1800s. On still nights the leaves whisper names. Listen — is one of them yours?",
+               overdrive: "Two hundred years this oak has stood, and it has seen faster Keepers than you. Oakie, be honest — are they slow? …He says yes. MOVE." },
+      wisp: "Shhh — Oakie is sleeping. He only hides things for friends. We're friends, right?",
+      lit: "Got it! Oakie says you're officially tree-approved.",
       puzzle: { cozy: { q: "Find the oak. How many wooden swings or benches face it?", a: "2", type: "number" } },
       fallback: { q: "What is carved on the small sign by the oak?", a: "wisp" },
       hints: ["Face the tree like it is facing you.", "Only count the ones looking at the oak.", "Ranger assist: the answer is 2."] },
-    { id: 3, name: "The Giggling Graveyard (pretend!)", lat: 29.0266, lng: -80.9258, code: "LANTERN-3",
-      story: { cozy: "Don't worry — these tombstones are made of foam, and every ghost here just wants to play tag." },
+    { id: 3, name: "The Giggling Graveyard (pretend!)", lat: 29.0266, lng: -80.9258, code: "LANTERN-3", art: "stop-3-graveyard.webp",
+      story: { cozy: "Don't worry — these tombstones are made of foam, and every ghost here just wants to play tag.",
+               spooky: "The foam tombstones lean like bad teeth, and the giggling isn't coming from any of them. It's coming from underneath.",
+               afterdark: "Pretend stones, real ground. The town buried its 1918 flu dead in a field like this one — and on Halloween the veil is thin enough to hear them laugh.",
+               overdrive: "The ghosts keep score, and right now you're losing to a team of TODDLERS. Tag them back. TAG. THEM. BACK." },
+      wisp: "Tag, you're it! Kidding — unless…? No, kidding. Probably.",
+      lit: "The ghosts are doing the wave. That's their applause. You're welcome.",
       puzzle: { cozy: { q: "One foam tombstone says R.I.P. — Rest In... what? (The silly word on the stone!)", a: "pumpkins", type: "text" } },
       fallback: { q: "How many foam tombstones are there?", a: "5" },
       hints: ["Read the stones — one of them is joking.", "It rhymes with the patch from Stop 1.", "Ranger assist: Rest In Pumpkins."] },
-    { id: 4, name: "The Spider's Counting Web", lat: 29.0270, lng: -80.9252, code: "LANTERN-4",
-      story: { cozy: "Mrs. Spider (she's friendly, and made of pipe cleaners) has a lantern tangled in her web!" },
+    { id: 4, name: "The Spider's Counting Web", lat: 29.0270, lng: -80.9252, code: "LANTERN-4", art: "stop-4-spider.webp",
+      story: { cozy: "Mrs. Spider (she's friendly, and made of pipe cleaners) has a lantern tangled in her web!",
+               spooky: "The web stretches between the gazebo posts like a trap, and the dew on it isn't dew — it's too thick, and it trembles when you step close.",
+               afterdark: "Orb weavers rebuild every night. This one has rebuilt in this exact spot for eleven years. She remembers every face that's ever been caught.",
+               overdrive: "Mrs. Spider has rebuilt eleven webs tonight AND finished a crossword. Your excuse is WHAT, exactly? Untangle that lantern. Clock's ticking." },
+      wisp: "Mrs. Spider says hi. She says it with all eight legs. It's a lot of hi.",
+      lit: "Untangled! Mrs. Spider is doing a happy leg-dance. All eight. It's a LOT.",
       puzzle: { cozy: { q: "A real spider has 8 legs. Mrs. Spider is holding up 3 legs to wave. How many legs are on the ground?", a: "5", type: "number" } },
       fallback: { q: "What color is Mrs. Spider?", a: "purple" },
       hints: ["Start with 8 legs, like every spider.", "She waves with 3 of them.", "Ranger assist: 8 − 3 = 5."] },
-    { id: 5, name: "The Owl's Night Watch", lat: 29.0274, lng: -80.9246, code: "LANTERN-5",
-      story: { cozy: "High in the tree, Professor Hoot guards a lantern. He only lends it to good listeners." },
+    { id: 5, name: "The Owl's Night Watch", lat: 29.0274, lng: -80.9246, code: "LANTERN-5", art: "stop-5-owl.webp",
+      story: { cozy: "High in the tree, Professor Hoot guards a lantern. He only lends it to good listeners.",
+               spooky: "The owl doesn't blink. Owls can't — but this one isn't trying to. It watches you solve, and you can feel it grading you.",
+               afterdark: "Barred owls ask ‘who cooks for you.’ The old stories say if you answer wrong, you follow the sound into the dark and don't come back. Answer carefully.",
+               overdrive: "Professor Hoot graded your last answer a C+. A C! In MY hunt! Listen harder, answer faster — make an owl proud." },
+      wisp: "Professor Hoot is very serious. Do your serious face. …Not that serious. Dial it back.",
+      lit: "‘Hoo,’ he says. That's owl for ‘well done.’ I translated. You're welcome.",
       puzzle: { cozy: { q: "Listen to the sound your phone plays at this stop: is it an owl, a cat, or a frog?", a: "owl", type: "text" } },
       fallback: { q: "What two letters does an owl 'say'?", a: "ho" },
       hints: ["It is the sound this whole stop is named after.", "Twilight is this bird's favorite time.", "Ranger assist: it's the owl."] },
-    { id: 6, name: "The Lantern Parade Ground", lat: 29.0278, lng: -80.9240, code: "LANTERN-6",
-      story: { cozy: "The last lantern! Light it and the whole parade glows." },
+    { id: 6, name: "The Lantern Parade Ground", lat: 29.0278, lng: -80.9240, code: "LANTERN-6", art: "stop-6-parade.webp",
+      story: { cozy: "The last lantern! Light it and the whole parade glows.",
+               spooky: "The empty parade ground waits. Six lanterns, six shadows — but there are seven shadows moving on the grass, and one of them is waving at you.",
+               afterdark: "Every lantern you've lit is still burning behind you, a dotted line of fire through the dark. One more, and the road home exists.",
+               overdrive: "FINAL STRETCH. Wisp ran the numbers and they are NOT in your favor. Light that last lantern like you mean it — FULL! MADNESS!" },
+      wisp: "This is it — the last one! My hands are all shaky. Do I have hands? I'm shaky anyway!",
+      lit: "IT'S LIT! Look at them all — look at ME! I'm basically a sunrise!",
       puzzle: { cozy: { q: "Teamwork finale: how many lanterns did you light on the whole hunt (including this one)?", a: "6", type: "number" } },
       fallback: { q: "Say the magic words out loud as a team: 'Light the way, Wisp!' then type: wisp", a: "wisp" },
       hints: ["Count the stops on your map.", "One lantern per stop.", "Ranger assist: 6 lanterns."] }
@@ -59,6 +87,9 @@ try { _loaded = JSON.parse(localStorage.getItem("lantern-state") || "null"); } c
 const state = _loaded || {
   team: "", scare: "cozy", solved: [], hintsUsed: 0, startedAt: null, kitId: null
 };
+const HINT_BUDGET = 6;
+state.cleanSolves = state.cleanSolves || 0;
+state.stopHints = state.stopHints || {};
 let pack = DEMO_PACK;
 let currentStop = null;
 let hintLevel = 0;
@@ -108,6 +139,73 @@ function variant(stop, kind) { // kind: "story" | puzzle object
   return (stop.puzzle && (stop.puzzle[state.scare] || stop.puzzle.cozy)) || stop.fallback;
 }
 
+/* ---------- pilot-bundle HUD: relics, Wisp meter, hint budget ----------
+   Pack-supplied names are untrusted (remote packs) — esc() them anywhere
+   they enter HTML. RELIC_ALT / WISP_MOODS are local constants, safe. */
+const RELIC_ALT = {
+  1: "Relic from Stop 1, The Welcome Pumpkin: a smiling jack-o'-lantern with a glowing carved face",
+  2: "Relic from Stop 2, The Whispering Oak: an ancient oak with a kindly face in its bark and swirling autumn leaves",
+  3: "Relic from Stop 3, The Giggling Graveyard: smiling foam tombstones and a friendly little ghost under a crescent moon",
+  4: "Relic from Stop 4, The Spider's Counting Web: a cute friendly spider in a big sparkling dew-covered web",
+  5: "Relic from Stop 5, The Owl's Night Watch: a wise big-eyed owl perched on a branch at night",
+  6: "Relic from Stop 6, The Lantern Parade Ground: glowing paper lanterns floating above a winding park path at dusk"
+};
+// Wisp's mood evolves with progress: her three story moments double as the
+// meter's tiers, so the HUD itself tells her arc (lost → hopeful → home).
+const WISP_MOODS = [
+  { min: 0, src: "wisp-sad-intro.webp",
+    alt: "Wisp the will-o'-the-wisp twirling sadly — 0 to 2 lanterns lit, she is still lost",
+    cap: "Wisp is still lost…" },
+  { min: 3, src: "wisp-hiding-lantern.webp",
+    alt: "Wisp giggling, hope returning — 3 to 4 lanterns lit",
+    cap: "Hope is flickering back…" },
+  { min: 5, src: "wisp-leading-parade.webp",
+    alt: "Wisp soaring joyfully at the head of her lanterns — 5 to 6 lit, she is almost home",
+    cap: "She's almost home!" }
+];
+function wispMood(lit) {
+  return WISP_MOODS.filter(m => lit >= m.min).pop();
+}
+// Map markers wear each stop's spot illustration; solved stops get a lit ring.
+let markers = [];
+function stopIcon(s) {
+  const lit = state.solved.includes(s.id);
+  const face = s.art
+    ? `<img src="assets/${s.art}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}">`
+    : `<div class="pin-fallback" role="img" aria-label="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}">🏮</div>`;
+  return L.divIcon({ className: "stop-marker" + (lit ? " lit" : ""), html: face,
+    iconSize: [46, 46], iconAnchor: [23, 23] });
+}
+function updateHUD() {
+  const lit = state.solved.length, total = pack.stops.length;
+  const wm = $("wisp-meter");
+  if (wm) {
+    const mood = wispMood(lit);
+    let dots = "";
+    for (let i = 0; i < total; i++) dots += i < lit ? "🏮" : "🌑";
+    wm.innerHTML = `<strong>Wisp's glow</strong>` +
+      `<img class="wisp-mood" src="assets/${mood.src}" alt="${mood.alt}">` +
+      `<div class="dots" role="img" aria-label="${lit} of ${total} lanterns lit">${dots}</div>` +
+      `<div>${lit}/${total} lanterns lit — ${mood.cap}</div>`;
+  }
+  markers.forEach((m, i) => { if (m.setIcon) m.setIcon(stopIcon(pack.stops[i])); });
+  const tray = $("relics");
+  if (tray) {
+    tray.innerHTML = pack.stops.map(s => {
+      const got = state.solved.includes(s.id);
+      const cls = got ? "relic" : "relic locked";
+      const inner = (got && s.art)
+        ? `<img class="${cls}" src="assets/${s.art}" alt="${RELIC_ALT[s.id] || ("Relic: " + esc(s.name))}">`
+        : `<div class="${cls}" role="img" aria-label="${got ? "lit lantern relic" : "unfound relic"}">${got ? "🏮" : "❔"}</div>`;
+      return `<span title="${got ? esc(s.name) : "???"}">${inner}</span>`;
+    }).join("");
+  }
+  const left = HINT_BUDGET - state.hintsUsed;
+  const hc = $("hint-count"), hb = $("btn-hint");
+  if (hc) hc.textContent = left > 0 ? `(${left} left)` : "(none left)";
+  if (hb) hb.disabled = left <= 0;
+}
+
 /* ---------- flow ---------- */
 $("btn-start").addEventListener("click", async () => {
   state.team = $("team-name").value.trim() || "Lantern Keepers";
@@ -138,7 +236,8 @@ $("btn-start").addEventListener("click", async () => {
   if (state.kitId !== startingKit) {
     // New kit (or demo<->live switch): start clean instead of inheriting
     // solved stops from whatever was played before on this device. (P1)
-    state.solved = []; state.hintsUsed = 0; state.startedAt = Date.now();
+    state.solved = []; state.hintsUsed = 0; state.cleanSolves = 0; state.stopHints = {};
+    state.startedAt = Date.now();
     state.kitId = startingKit;
   } else {
     state.startedAt = state.startedAt || Date.now();
@@ -194,7 +293,7 @@ function openMap() {
         map = L.map("map");
         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
           { attribution: "© OpenStreetMap contributors" }).addTo(map);
-        pack.stops.forEach(s => L.marker([s.lat, s.lng]).addTo(map)
+        markers = pack.stops.map(s => L.marker([s.lat, s.lng], { icon: stopIcon(s) }).addTo(map)
           .bindPopup(`${s.id}. ${esc(s.name)}`));
       } catch (e) {
         mapBroken = true;
@@ -203,6 +302,7 @@ function openMap() {
     }
   }
   const next = pack.stops.find(s => !state.solved.includes(s.id));
+  updateHUD();
   if (!next) return show("screen-finale"), finale();
   if (map && !mapBroken) map.setView([next.lat, next.lng], 17);
   // Build the node safely: stop names come from a remote content pack and must
@@ -217,6 +317,12 @@ function openMap() {
   btn.textContent = "We're at the stop →";
   btn.addEventListener("click", () => window.openStop(next.id));
   box.appendChild(btn);
+  if (state.solved.length === 3) {
+    const note = document.createElement("p");
+    note.className = "lab-note";
+    note.innerHTML = `📜 <strong>Lab note, halfway:</strong> Wisp's glow is stabilizing — the lanterns are remembering her. Don't let the fourth one spook you. It spooked <em>me</em>, and I built the things. — <em>Dr. Z</em>`;
+    box.appendChild(note);
+  }
 }
 
 window.openStop = function (id) {
@@ -224,7 +330,19 @@ window.openStop = function (id) {
   if (!currentStop) return;
   hintLevel = 0; $("hint-text").textContent = ""; $("feedback").textContent = "";
   $("puzzle-title").textContent = `Stop ${currentStop.id}: ${currentStop.name}`;
+  const sa = $("stop-art");
+  if (sa) {
+    if (currentStop.art) { sa.src = "assets/" + currentStop.art;
+      sa.alt = RELIC_ALT[currentStop.id] || ("Art for " + currentStop.name);
+      sa.style.display = ""; }
+    else { sa.removeAttribute("src"); sa.style.display = "none"; }
+  }
   $("puzzle-story").textContent = variant(currentStop, "story");
+  const ws = $("wisp-says");
+  if (ws) {
+    if (currentStop.wisp) { ws.textContent = "\u201C" + currentStop.wisp + "\u201D — Wisp"; ws.style.display = ""; }
+    else { ws.textContent = ""; ws.style.display = "none"; }
+  }
   $("puzzle-question").textContent = variant(currentStop, "puzzle").q;
   $("puzzle-answer").value = ""; $("unlock-code").value = "";
   // A QR that carried this stop's sign code pre-fills the unlock field -
@@ -235,13 +353,14 @@ window.openStop = function (id) {
 };
 
 function solved() {
+  if (!(state.stopHints[currentStop.id] > 0)) state.cleanSolves++;
   // Dedupe: re-scanning a sign must not inflate the leaderboard payload.
   // The portal scores base = solved.length * POINTS_PER_STOP.
   if (!state.solved.includes(currentStop.id)) {
     state.solved.push(currentStop.id);
   }
   save();
-  $("feedback").textContent = "🏮 Lantern lit!";
+  $("feedback").textContent = "🏮 " + (currentStop.lit || "Lantern lit!");
   setTimeout(openMap, 900);
   syncProgress(); // fire-and-forget leaderboard sync when backend present
 }
@@ -267,13 +386,24 @@ $("btn-gps").addEventListener("click", () => {
 });
 
 $("btn-hint").addEventListener("click", () => {
-  if (hintLevel < 3) { $("hint-text").textContent = currentStop.hints[hintLevel]; hintLevel++; state.hintsUsed++; save(); }
+  if (state.hintsUsed >= HINT_BUDGET) {
+    $("hint-text").textContent = "The hint jar is empty! Ask your organizer — a Lab Assistant can grant a rescue hint.";
+    return;
+  }
+  if (hintLevel < 3) {
+    $("hint-text").textContent = currentStop.hints[hintLevel]; hintLevel++;
+    state.hintsUsed++;
+    state.stopHints[currentStop.id] = (state.stopHints[currentStop.id] || 0) + 1;
+    save(); updateHUD();
+  } else {
+    $("hint-text").textContent = "That's all 3 hints for this stop — trust your team!";
+  }
 });
 
 function finale() {
   const mins = state.startedAt ? Math.round((Date.now() - state.startedAt) / 60000) : 0;
   $("finale-stats").textContent =
-    `${state.team} · ${pack.stops.length} lanterns · ${mins} minutes · ${state.hintsUsed} hints used`;
+    `${state.team} · ${pack.stops.length} lanterns · ${mins} minutes · ${state.hintsUsed} hints used · ★ ${state.cleanSolves}/${pack.stops.length} clean solves`;
   syncProgress(true);
 }
 $("btn-restart").addEventListener("click", () => {
