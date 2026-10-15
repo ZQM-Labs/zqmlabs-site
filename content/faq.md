@@ -2,6 +2,7 @@
 title: "FAQ — questions from the village"
 description: "How Z's Quests & Mischief kits work: organizer effort, scare levels and the Dial, pricing, rain plans, ages, safety, and booking. Answered by the Lab."
 ---
+<!-- markdownlint-disable MD033 -->
 
 <details>
 <summary>What exactly is a "kit"?</summary>
@@ -139,7 +140,7 @@ date and we'll skin the engine to your occasion.
 <summary>When do party rentals start?</summary>
 
 Soon — tables, chairs, grills, cornhole, and yard games are Phase 2, right
-behind the games. Email **zqmcomputing@gmail.com** to join the rentals list and
+behind the games. Email **<zqmcomputing@gmail.com>** to join the rentals list and
 you'll hear the moment the gear chamber opens.
 
 </details>
@@ -158,8 +159,9 @@ played yourself is a draft.
 <details>
 <summary>How do we book?</summary>
 
-Email **zqmcomputing@gmail.com** with your community or company name, your
+Email **<zqmcomputing@gmail.com>** with your community or company name, your
 dates, and the tier you're eyeing. The Lab replies within a day with kit
 details and next steps. Halloween 2026 pilot spots are limited.
+<!-- markdownlint-enable MD033 -->
 
 </details>
