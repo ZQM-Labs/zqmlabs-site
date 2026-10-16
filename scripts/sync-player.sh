@@ -19,6 +19,7 @@ rsync -a --delete \
   --exclude 'README.md' \
   --exclude '.gitignore' \
   --exclude '.github/' \
+  --exclude '.git/' \
   "$TMPDIR/lantern-player/" "$DST/"
 
 echo "==> Sync complete. Files in $DST:"
