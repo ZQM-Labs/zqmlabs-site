@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD013 -->
+
 # Player Release Acceptance Record
 
 ## Current automated acceptance coverage
