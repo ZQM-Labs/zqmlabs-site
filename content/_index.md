@@ -1,91 +1,75 @@
 ---
-title: "Halloween, hunted — right in your own neighborhood"
-description: "Self-guided scavenger-hunt games for Volusia County families, communities, offices, and groups. You bring the people; Dr. Z brings the mischief."
+title: "Halloween belongs to everyone — ZQM Labs"
+description: "ZQM Labs creates story-driven Halloween games that bring communities together. Play, host, adapt, and help shape the next shared adventure."
 ---
 
 ![Dr. Z, Game Master of Z's Quests & Mischief, holding up a glowing lantern](/img/logo-primary.webp)
 
-> 📜 **A note from the Lab:** Wisp — my first creation — escaped again, and
-> she hid her six glow lanterns somewhere in *your* neighborhood. I need
-> Lantern Keepers. Bring them home, and try not to let her outsmart you.
-> She learned from the best. — *Dr. Z*
+# Halloween belongs to everyone.
 
-## What is this, exactly?
+**ZQM Labs creates playful, story-driven Halloween games that bring communities together.** Start with a local hunt, adapt an experience for your group, or help shape the next shared adventure.
 
-**Wisp's Lost Lanterns** is a self-guided scavenger hunt that plays on
-phones, in your own streets and green spaces. A community books a **kit**;
-families play anytime during the event window. Six lantern stops, puzzles
-for ages 5 to 75, three hints at every stop so nobody gets stuck — and the
-organizer does about **one hour** of total work.
+Built around Halloween. Designed for communities everywhere.
 
-**How a quest comes alive:**
+> 📜 **A note from the Lab:** Wisp — my first creation — escaped again, and she hid her six glow lanterns. I need Lantern Keepers wherever curious people gather. Bring them home, and try not to let her outsmart you. She learned from the best. — *Dr. Z*
 
-1. **You book.** Email the Lab with your community and tier. We set up your
-   kit and send printable signs + a one-page organizer guide.
-2. **Your Lab Assistant places 6 signs.** (That's you, organizer. The title
-   is official. There may be a certificate someday.)
-3. **Your people play.** Teams scan a sign, solve the puzzle, relight the
-   lantern. A quest isn't alive until a community plays it — so: *IT'S
-   ALIVE.*
+## One shared world. Many ways to play.
 
-## Meet your Game Master 🎚️
+**Wisp's Lost Lanterns** is a self-guided scavenger hunt that combines story, puzzles, teamwork, and discovery. The current experience is built around six lantern stops, three hints at every stop, and four selectable scare levels.
 
-Every game runs at the scare level **you** choose — and you can tell which
-one you're getting by looking at Dr. Z's face. His hair gives it away:
-the madder the Z, the whiter the hair.
+Communities can use a quest as a neighborhood activity, a school or youth-group event, an office challenge, or a starting point for a new local adventure. Adapt the story and format to your group and venue; keep safety, accessibility, and local context in the plan.
+
+## Play. Host. Create. Contribute.
+
+- **Play:** [Try a free sample quest](https://github.com/ZQM-Labs/quest-packs) and explore the game before planning an event.
+- **Host:** Use the [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit) for setup guidance, print specifications, and event troubleshooting.
+- **Create:** Use the [quest-authoring specification and validator](https://github.com/ZQM-Labs/quest-authoring) to understand the pack format and build new content.
+- **Contribute:** Read the [playtest protocol](https://github.com/ZQM-Labs/playtests), report issues, and help improve the experience.
+
+Community participation is part of the product direction—not a feature we should claim is fully automated today. Public repositories make the work visible; a contribution is not considered accepted or published until it has been reviewed and tested.
+
+## Meet your Game Master
+
+Every game runs at the scare level the group chooses. Dr. Z's look signals the experience: the madder the Z, the whiter the hair.
 
 {{< dial >}}
 
 Same quest, four voltages. The face on the flyer is a promise.
 
-## Halloween 2026 — the first experiment 🎃
+## Local activations, global ambition
 
-**Oct 30 – Nov 1, 2026.** The pilot run of Wisp's Lost Lanterns, in
-neighborhoods across Volusia County. Kits are limited to the communities
-we can support well — [see the Halloween details](/halloween/) and claim
-yours early.
+### First activation: Volusia County, Florida
+
+The October 30 – November 1, 2026 Wisp's Lost Lanterns pilot is a local activation of a broader creative direction. It helps us learn how communities host, adapt, and play together. Volusia County is the starting point—not the limit of the idea.
+
+Current event kits, prices, and support availability may be limited by the locations and capacity we can presently serve. Contact the Lab before assuming that an event can be delivered in another region.
 
 ## Tiers at a glance
 
-- 🏠 **Family Night — $49 flat**, one household, one great night.
-- 🏘️ **Community — $199 flat**, unlimited families. Or run it as a
-  **fundraiser**: families pay $15, your community keeps $5 of every sale.
-- 🏢 **Office Party — $349–$499.** Departments race a live leaderboard.
-  The party plans itself.
-- 🧭 **Youth Groups** and 🎉 **Form-Your-Own** — waitlist open for the
-  Christmas edition.
+- 🏠 **Family Night — $49 flat**, one household.
+- 🏘️ **Community — $199 flat**, unlimited families. Fundraising terms may be available for qualifying events.
+- 🏢 **Office Party — $349–$499**, team-building format.
+- 🧭 **Youth Groups** and 🎉 **Form-Your-Own** — ask about current availability.
 
 [Full tier details →](/tiers/)
 
-## Open by design 🔓
+## Open by design
 
-No secret sauce. The quest packs, the organizer toolkit, the authoring
-format, even our playtest results — all public on GitHub.
+Quest packs, the organizer toolkit, the authoring format, and playtest materials are published on GitHub so people can inspect the work and help improve it.
 
-- **Try a quest for free:** [Wisp's Warm-Up](https://github.com/ZQM-Labs/quest-packs)
-  — a 6-stop, ~30-minute sample pack for 6–10 players.
-- **What you get when you book:** the [Lab Assistant's Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
-  — setup checklist, print specs, day-of troubleshooting.
-- **How do we know it works?** Read the [playtest protocol and results](https://github.com/ZQM-Labs/playtests).
-
-## Coming soon 🎪
-
-Party rentals — tables, chairs, grills, cornhole, and yard games, delivered
-with the same mischief. **Play more. Plan less.** The games come first; the
-gear is next. Email **<zqmcomputing@gmail.com>** to get on the list.
+- **Free sample:** [Quest Packs](https://github.com/ZQM-Labs/quest-packs)
+- **Hosting guidance:** [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
+- **Authoring rules:** [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring)
+- **Playtest process:** [Playtests](https://github.com/ZQM-Labs/playtests)
 
 ## Quick questions
 
-**Do players need to install an app?** No. One phone per team, in a browser.
-Grandparents included.
+**Do players need to install an app?** The current player runs in a browser; one phone per team is enough for the basic experience.
 
-**What does the organizer actually do?** About an hour: print 7 signs,
-place 6, set out a candy bowl. The Lab handles the rest, remotely.
+**Can we run a quest anywhere?** The content can be adapted for different venues, but location-based play, local permissions, accessibility, and current support arrangements must be considered for each event.
 
-**What if it rains?** Florida rain is the Lab's mood lighting. The kit
-window spans the whole weekend — families pick their moment.
+**Are global community features live?** Global storytelling and internationalization work is being integrated. Do not assume global leaderboards, community discovery, translated content for every language, or worldwide event fulfillment are live until those capabilities are announced and verified.
 
-[Every other question, answered →](/faq/)
+[More questions →](/faq/)
 
-Built in New Smyrna Beach, for Volusia County — your neighborhood, your
-churchyard, your office park, anywhere your people already gather.
+**Play more. Plan less.** A local gathering can be the beginning of a much bigger shared adventure.
