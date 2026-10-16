@@ -55,6 +55,17 @@ hugo server -D
 | Youth Groups | Waitlist | Scouts, schools |
 | Custom | Quote | Birthdays, special events |
 
+## Player release verification
+
+The player has automated Chromium acceptance coverage for startup reliability,
+malformed-pack rejection, offline operation and cache upgrades, progress
+persistence, and current language-support limitations. See the [player release
+acceptance record][player-release-acceptance] for the exact scope and remaining
+manual checks.
+
+<!-- markdownlint-disable MD013 -->
+[player-release-acceptance]: https://github.com/ZQM-Labs/zqmlabs-site/blob/520ababb4ca5b809f1d1ac84c2f4b59d5aa83fda/docs/player-release-acceptance.md
+
 ## Tech stack
 
 - **Hugo** (Apache-2.0) — static site generator
