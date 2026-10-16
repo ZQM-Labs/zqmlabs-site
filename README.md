@@ -64,7 +64,7 @@ acceptance record][player-release-acceptance] for the exact scope and remaining
 manual checks.
 
 <!-- markdownlint-disable MD013 -->
-[player-release-acceptance]: https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/player-release-acceptance.md
+[player-release-acceptance]: https://github.com/ZQM-Labs/zqmlabs-site/blob/520ababb4ca5b809f1d1ac84c2f4b59d5aa83fda/docs/player-release-acceptance.md
 
 ## Tech stack
 
