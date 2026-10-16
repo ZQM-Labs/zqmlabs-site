@@ -2,6 +2,8 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +26,9 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Fetch player
         run: bash scripts/sync-player.sh main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
       - name: Smoke-test deployed player source
         run: |
           PLAYER=static/games/hunt-for-wisps/play
@@ -38,6 +43,7 @@ jobs:
         with:
           path: ./public
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
