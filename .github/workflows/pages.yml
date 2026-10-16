@@ -23,14 +23,15 @@ jobs:
           sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - uses: actions/configure-pages@v5
       - name: Fetch player
+        run: bash scripts/sync-player.sh main
+      - name: Smoke-test deployed player source
         run: |
-          git clone --depth 1 https://github.com/ZQM-Labs/lantern-player.git /tmp/lantern-player
-          rsync -a --delete \
-            --exclude 'tools/' \
-            --exclude 'README.md' \
-            --exclude '.gitignore' \
-            /tmp/lantern-player/ static/games/hunt-for-wisps/play/
-          rm -rf /tmp/lantern-player
+          PLAYER=static/games/hunt-for-wisps/play
+          node --check "$PLAYER/app.js"
+          node --check "$PLAYER/global-story.js"
+          node --check "$PLAYER/i18n.js"
+          test "$(grep -n 'src=\"global-story.js\"' "$PLAYER/index.html" | cut -d: -f1)" -lt "$(grep -n 'src=\"i18n.js\"' "$PLAYER/index.html" | cut -d: -f1)"
+          test "$(grep -n 'src=\"i18n.js\"' "$PLAYER/index.html" | cut -d: -f1)" -lt "$(grep -n 'src=\"app.js\"' "$PLAYER/index.html" | cut -d: -f1)"
       - name: Build
         run: hugo --gc --minify
       - uses: actions/upload-pages-artifact@v3
