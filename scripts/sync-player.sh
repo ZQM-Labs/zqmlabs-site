@@ -16,6 +16,7 @@ echo "==> Copying repository root -> $DST"
 mkdir -p "$DST"
 rsync -a --delete \
   --exclude 'tools/' \
+  --exclude 'tests/' \
   --exclude 'README.md' \
   --exclude '.gitignore' \
   --exclude '.github/' \
