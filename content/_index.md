@@ -5,7 +5,7 @@ description: "ZQM Labs creates story-driven Halloween games that bring communiti
 
 ![Dr. Z, Game Master of Z's Quests & Mischief, holding up a glowing lantern](/img/logo-primary.webp)
 
-# Halloween belongs to everyone
+**Halloween belongs to everyone.**
 
 **ZQM Labs creates playful, story-driven Halloween games that bring
 communities together.** Start with a local hunt, adapt an experience for your
