@@ -57,7 +57,15 @@ hugo server -D
 
 ## Player release verification
 
-The player has automated Chromium acceptance coverage for startup reliability, malformed-pack rejection, offline operation and cache upgrades, progress persistence, and current language-support limitations. See [the player release acceptance record](docs/player-release-acceptance.md) for the exact scope and remaining manual checks.
+The player has automated Chromium acceptance coverage for startup reliability,
+malformed-pack rejection, offline operation and cache upgrades, progress
+persistence, and current language-support limitations. See the [player release
+acceptance record][player-release-acceptance] for the exact scope and remaining
+manual checks.
+
+<!-- markdownlint-disable MD013 -->
+[player-release-acceptance]: https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/player-release-acceptance.md
+<!-- markdownlint-restore -->
 
 ## Tech stack
 
