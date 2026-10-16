@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 MD012 -->
+
 # zqmlabs.com — ZQM Labs public website
 
 <!-- ZQM-START -->
@@ -59,7 +61,8 @@ hugo server -D
 
 ## Related repositories
 
-- [ZQM Labs org](https://github.com/ZQM-Labs) — games, gear & a little mischief
+- [ZQM Labs org](https://github.com/ZQM-Labs) — games, gear & a little
+  mischief
 - [zqm-labs][zcl] — games monorepo (player PWA, PocketBase, Twine)
 - [ZQM Computing][zcg] — geospatial arm of ZQM Labs (15 pattern repos)
 - [geospatial-patterns][gp] — umbrella index
