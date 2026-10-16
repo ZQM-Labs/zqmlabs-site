@@ -7,7 +7,7 @@
 
 set -euo pipefail
 
-SRC_REPO="https://github.com/ZQM-Computing/zqm-labs.git"
+SRC_REPO="https://github.com/ZQM-Labs/lantern-player.git"
 SRC_BRANCH="${1:-main}"
 DST="static/games/hunt-for-wisps/play"
 TMPDIR="$(mktemp -d)"
