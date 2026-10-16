@@ -36,6 +36,7 @@ jobs:
           node --check "$PLAYER/app.js"
           node --check "$PLAYER/global-story.js"
           node --check "$PLAYER/i18n.js"
+          node --check "$PLAYER/sw.js"
           line_of() {
             local tag="$1"
             local line
@@ -53,6 +54,29 @@ jobs:
             echo "ERROR: global-story.js and i18n.js must load before app.js, in that order." >&2
             exit 1
           fi
+      - name: Verify player precache files exist in site bundle
+        env:
+          PLAYER_DIR: static/games/hunt-for-wisps/play
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs");
+          const path = require("node:path");
+          const root = process.env.PLAYER_DIR;
+          const source = fs.readFileSync(path.join(root, "sw.js"), "utf8");
+          const match = source.match(/const SHELL = \[([\s\S]*?)\];/);
+          if (!match) throw new Error("Could not parse player service-worker SHELL list");
+          const paths = [...match[1].matchAll(/["']([^"']+)["']/g)]
+            .map(entry => entry[1])
+            .filter(entry => entry.startsWith("./"));
+          const missing = paths
+            .map(entry => path.join(root, entry.slice(2)))
+            .filter(file => !fs.existsSync(file));
+          if (missing.length) {
+            console.error("Missing player precache files in site bundle:", missing);
+            process.exit(1);
+          }
+          console.log("Verified " + paths.length + " player precache paths exist in the site bundle.");
+          NODE
       - name: Build
         run: hugo --gc --minify
       - uses: actions/upload-pages-artifact@v3
