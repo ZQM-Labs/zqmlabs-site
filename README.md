@@ -12,9 +12,11 @@
 
 
 
-The public website for **ZQM Labs — Z's Quests & Mischief**:
-self-guided, location-based scavenger-hunt games for communities,
-schools, and offices in Volusia County, Florida.
+The public website for **ZQM Labs — Z's Quests & Mischief**: Halloween-centered,
+story-driven games designed to bring communities together. The initial
+operational activations are local; event support and delivery availability
+must be confirmed for each region. Volusia County is the first activation,
+not the boundary of the product direction.
 *Games, gear & a little mischief.*
 
 ## Who this is for
