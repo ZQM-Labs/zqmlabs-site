@@ -1,0 +1,2 @@
+/play /games/hunt-for-wisps/play/ 301
+/play/* /games/hunt-for-wisps/play/:splat 301
