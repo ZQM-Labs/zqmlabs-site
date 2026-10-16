@@ -65,7 +65,6 @@ manual checks.
 
 <!-- markdownlint-disable MD013 -->
 [player-release-acceptance]: https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/player-release-acceptance.md
-<!-- markdownlint-restore -->
 
 ## Tech stack
 
