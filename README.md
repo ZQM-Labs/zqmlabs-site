@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 MD012 -->
+
 # zqmlabs.com — ZQM Labs public website
 
 <!-- ZQM-START -->
@@ -10,9 +12,11 @@
 
 
 
-The public website for **ZQM Labs — Z's Quests & Mischief**:
-self-guided, location-based scavenger-hunt games for communities,
-schools, and offices in Volusia County, Florida.
+The public website for **ZQM Labs — Z's Quests & Mischief**: Halloween-centered,
+story-driven games designed to bring communities together. The initial
+operational activations are local; event support and delivery availability
+must be confirmed for each region. Volusia County is the first activation,
+not the boundary of the product direction.
 *Games, gear & a little mischief.*
 
 ## Who this is for
@@ -59,7 +63,8 @@ hugo server -D
 
 ## Related repositories
 
-- [ZQM Labs org](https://github.com/ZQM-Labs) — games, gear & a little mischief
+- [ZQM Labs org](https://github.com/ZQM-Labs) — games, gear & a little
+  mischief
 - [zqm-labs][zcl] — games monorepo (player PWA, PocketBase, Twine)
 - [ZQM Computing][zcg] — geospatial arm of ZQM Labs (15 pattern repos)
 - [geospatial-patterns][gp] — umbrella index
