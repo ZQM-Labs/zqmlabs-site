@@ -64,6 +64,8 @@ Before describing checkout as live, verify and record:
 - Privacy/data handling and any required consent
 - A successful end-to-end test from product selection through confirmation and fulfillment
 
+Repository evidence currently points to a **contact-first inquiry**, not a verified self-service checkout: [the published tiers page](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/content/tiers.md) asks customers to email for an event and wait for confirmation. The repository also contains a separate [fulfillment workflow](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/fulfill.yml) triggered by issues labeled `purchase` or `subscription`; it passes multiple cryptocurrency payment-rail secrets and a release URL named `zqm_attestation_release_package.zip`. The workflow references `scripts/fulfill_bot.py`, which was not found in the repository's current `scripts/` directory. This does not demonstrate a working checkout path and warrants owner/security review before the workflow is relied upon. Do not expose customer payment details in public issues.
+
 If any of these details are unknown, mark them as unresolved in release notes and avoid implying the customer can complete an order. Do not present a manual email inquiry or direct payment link as checkout unless that is the approved and tested customer journey.
 
 ## Wisp's Lost Lanterns: availability and release status
