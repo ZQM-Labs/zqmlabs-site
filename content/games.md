@@ -1,64 +1,67 @@
 ---
 title: "Games"
-description: "Explore community-centered games from ZQM Labs."
+description: "Explore current browser demos and see which ZQM Labs games are still in development."
 url: /games/
 ---
 
 <!-- markdownlint-disable MD013 -->
 
-ZQM Labs creates story-driven, community-centered games for people who want to play together. This directory is designed to grow as more titles become ready for public play.
+ZQM Labs creates story-driven, community-centered games for people who want to play together. This directory separates experiences that can be tried now from concepts that are still being developed.
 
-## Available now
+## Available to try
 
 ### Wisp's Lost Lanterns
 
-Halloween scavenger hunt · Current featured game
+**Status: Playable browser demo** · Halloween scavenger hunt
 
-Wisp has hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided story experience with four selectable scare levels.
+Wisp has lost six glow lanterns. Follow the story, solve puzzles, and recover them across six stops, with four selectable atmosphere levels.
 
-- [Play the browser demo](/games/hunt-for-wisps/)
-- [Halloween event details](/halloween/)
-- [Hosting tiers](/tiers/)
+- [Play the free browser demo](/games/hunt-for-wisps/play/?demo=1)
+- [Game overview and sample quest](/games/hunt-for-wisps/)
+- [Halloween experience and event information](/halloween/)
+- [Hosting options for this game](/tiers/)
 
-The current event activation is in Volusia County, Florida, October 30 – November 1, 2026. A public demo does not mean in-person event delivery is available in every region; confirm local support and logistics before planning an event.
+The current in-person activation is planned for Volusia County, Florida, October 30–November 1, 2026. The browser demo is separate from a hosted event; confirm event availability, venue responsibilities, package contents, and support before making plans.
+
+## In development
+
+These pages describe concepts and planned gameplay, not separate public releases. They should not be advertised as playable games until the content and player builds have been validated.
 
 ### The Great Pumpkin Roll
 
-Autumn festival scavenger hunt · Playable
+**Status: In development** · Autumn festival scavenger hunt
 
-Farmer Joe's pumpkins have escaped and rolled into town. Six stops, harvest-themed puzzles, and the same four scare levels as the Halloween edition.
+Farmer Joe's pumpkins have escaped the patch and rolled all over town. The planned experience follows a six-stop harvest-themed hunt.
 
-- [Play the browser demo](/games/pumpkin-roll/)
+- [Read the concept and development status](/games/pumpkin-roll/)
 
 ### The Snowflake Secret
 
-Winter scavenger hunt · Playable
+**Status: In development** · Winter scavenger hunt
 
-Find the hidden snowflake ornaments and uncover the secret of the winter festival across six stops.
+A planned winter hunt about finding hidden snowflake ornaments and uncovering a festival mystery across six stops.
 
-- [Play the browser demo](/games/snowflake-secret/)
+- [Read the concept and development status](/games/snowflake-secret/)
 
-## How to play
+## How to try Wisp's Lost Lanterns
 
-Every game is a self-guided scavenger hunt. No app download, no account — just a phone with a camera or GPS.
+For the currently available browser demo:
 
-1. **Form a team** — one phone per team
-2. **Start at stop 1** — follow the map
-3. **Solve the puzzle** — count, find, or read something at each stop
-4. **Use hints if stuck** — three hints per stop
-5. **Finish at stop 6** — celebrate
+1. Open the demo on a supported, up-to-date browser.
+2. Read the on-screen instructions before starting.
+3. Choose the atmosphere level that suits your group.
+4. Follow the in-game route and puzzle instructions.
+5. Use hints if you get stuck.
 
-## More adventures are welcome
-
-This directory can feature games with different stories, themes, formats, and ways to play. New titles will be added when they have a public description and a clearly identified status, such as **playable**, **demo**, **playtest**, or **in development**.
-
-We will not list placeholder titles as released games or imply that planned features are already live. Community feedback and playtesting will help shape what comes next.
+Check the demo itself for current device, permission, and connectivity requirements. Do not assume every future title will use the same mechanics or technology.
 
 ## Play, create, contribute
+
+The public repositories provide ways to inspect the quest system and contribute to its development:
 
 - [Quest packs and sample content](https://github.com/ZQM-Labs/quest-packs)
 - [Quest authoring specification and validator](https://github.com/ZQM-Labs/quest-authoring)
 - [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
 - [Playtest protocol](https://github.com/ZQM-Labs/playtests)
 
-ZQM Labs is built around shared play. The goal is to make room for communities to participate, adapt experiences to their context, and help improve future games.
+New titles will be listed as available only when their release status is clear. A concept page, asset bundle, or in-development player is not by itself a public release.
