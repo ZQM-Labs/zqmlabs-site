@@ -6,7 +6,7 @@ status: "playable-demo"
 weight: 1
 ---
 
-# Play the browser demo
+## Play the browser demo
 
 [**Launch Wisp's Lost Lanterns**](/games/hunt-for-wisps/play/?demo=1)
 
