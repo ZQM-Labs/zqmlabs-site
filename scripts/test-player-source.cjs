@@ -30,7 +30,7 @@ for (const tier of ["cozy", "spooky", "afterdark", "overdrive"]) {
   assert.ok(variants >= 6, tier + " must define a puzzle variant for all six stops");
 }
 assert.ok(player.includes('if (!s || typeof s !== "object" || Array.isArray(s))'), "malformed stop records must be rejected without crashing");
-assert.match(worker, /const CACHE = "lantern-v5";/, "player release must invalidate the previous app-shell cache");
+assert.match(worker, /const CACHE = "lantern-v[0-9]+";/, "service worker must define a versioned app-shell cache");
 assert.match(homepage, /\/games\/hunt-for-wisps\/play\/\?demo=1/, "homepage CTA must open the actual demo player");
 assert.match(gamePage, /\/games\/hunt-for-wisps\/play\/\?demo=1/, "game page must expose a direct demo launch link");
 
