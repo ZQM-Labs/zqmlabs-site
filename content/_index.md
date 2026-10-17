@@ -14,7 +14,8 @@ Halloween is the setting for our current game, not the limit of the Lab. This si
 ## Find a game
 
 ### Wisp's Lost Lanterns
-**Our current Halloween game**
+
+Current featured game · Halloween scavenger hunt
 
 Wisp has escaped again and hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided scavenger hunt with story, puzzles, teamwork, and four selectable scare levels.
 
