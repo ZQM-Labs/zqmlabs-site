@@ -19,7 +19,8 @@ Current featured game · Halloween scavenger hunt
 
 Wisp has escaped again and hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided scavenger hunt with story, puzzles, teamwork, and four selectable scare levels.
 
-- [Play the browser demo](/games/hunt-for-wisps/)
+- [Play the browser demo](/games/hunt-for-wisps/play/?demo=1)
+- [Read game details](/games/hunt-for-wisps/)
 - [Halloween experience details](/halloween/)
 - [Hosting options and current tiers](/tiers/)
 
