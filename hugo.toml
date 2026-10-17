@@ -12,55 +12,41 @@ disableKinds = ["taxonomy", "term"]
   email = "zqmcomputing@gmail.com"
   description = "ZQM Labs creates story-driven, community-centered games. Explore the growing game collection, beginning with Wisp's Lost Lanterns."
 
-# Main navigation — rendered by layouts/_default/baseof.html on every page.
+# Keep the global navigation focused on the visitor's next action.
+# Detailed pricing, organizer, press, and seasonal pages remain linked from
+# relevant landing pages and the footer/content.
 [[menus.main]]
-  name = "Home"
-  url = "/"
-  weight = 10
+  name = "Play Demo"
+  url = "/games/hunt-for-wisps/play/?demo=1"
+  weight = 5
 [[menus.main]]
   name = "Games"
   url = "/games/"
-  weight = 20
-[[menus.main]]
-  name = "Halloween"
-  url = "/halloween/"
-  weight = 25
-[[menus.main]]
-  name = "Community"
-  url = "/community/"
-  weight = 28
+  weight = 10
 [[menus.main]]
   name = "Host a Game"
   url = "/tiers/"
+  weight = 20
+[[menus.main]]
+  name = "Community"
+  url = "/community/"
   weight = 30
-[[menus.main]]
-  name = "Pricing"
-  url = "/pricing/"
-  weight = 32
-[[menus.main]]
-  name = "Organizers"
-  url = "/organizers/"
-  weight = 34
 [[menus.main]]
   name = "Resources"
   url = "/patterns/"
-  weight = 38
+  weight = 40
 [[menus.main]]
   name = "About"
   url = "/about/"
-  weight = 45
-[[menus.main]]
-  name = "Press"
-  url = "/press/"
-  weight = 47
+  weight = 50
 [[menus.main]]
   name = "Contact"
   url = "/contact/"
-  weight = 48
+  weight = 60
 [[menus.main]]
   name = "FAQ"
   url = "/faq/"
-  weight = 50
+  weight = 70
 
 [markup.goldmark]
   [markup.goldmark.renderer]
