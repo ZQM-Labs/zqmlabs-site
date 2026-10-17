@@ -79,7 +79,7 @@ Quest packs, the organizer toolkit, the authoring format, and playtest materials
 
 **Can we run a quest anywhere?** Content can be adapted for different venues, but location-based play, local permissions, accessibility, and current support arrangements must be considered for each event.
 
-**Are global community features live?** Global storytelling and internationalization work is being integrated. Do not assume global leaderboards, community discovery, translated content for every language, or worldwide event fulfillment are live until those capabilities are announced and verified.
+**Are global community features live?** Global leaderboards, community discovery, translated content for every language, and worldwide event fulfillment are not being represented as available unless those capabilities are announced and verified.
 
 [More questions →](/faq/)
 
