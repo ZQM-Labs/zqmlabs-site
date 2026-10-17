@@ -9,7 +9,7 @@ games as they become ready for public play.
 
 ## Production deployment and CI
 
-See the [production deployment source-of-truth record](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/deployment-source-of-truth.md) for repository-verified facts, unresolved live hosting/DNS settings, and the verification/rollback checklist.
+The repository runbook at docs/deployment-source-of-truth.md records repository-verified facts, unresolved live hosting/DNS settings, and the verification/rollback checklist.
 
 The GitHub Actions workflow at
 [`.github/workflows/site-ci.yml`](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) is a **validation
