@@ -9,6 +9,8 @@ games as they become ready for public play.
 
 ## Production deployment and CI
 
+See the [production deployment source-of-truth record](docs/deployment-source-of-truth.md) for repository-verified facts, unresolved live hosting/DNS settings, and the verification/rollback checklist.
+
 The GitHub Actions workflow at
 [`.github/workflows/site-ci.yml`](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) is a **validation
 workflow**, not a deployment workflow. It synchronizes the player source into
