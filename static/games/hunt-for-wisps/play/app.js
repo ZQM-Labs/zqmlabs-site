@@ -87,7 +87,7 @@ try { _loaded = JSON.parse(localStorage.getItem("lantern-state") || "null"); } c
 const state = _loaded || {
   team: "", scare: "cozy", solved: [], hintsUsed: 0, startedAt: null, kitId: null
 };
-const HINT_BUDGET = 6;
+const HINT_BUDGET = 18;
 state.cleanSolves = state.cleanSolves || 0;
 state.stopHints = state.stopHints || {};
 state.arrivedGps = state.arrivedGps || {};
@@ -615,7 +615,7 @@ function openMap() {
 window.openStop = function (id) {
   currentStop = pack.stops.find(s => s.id === id);
   if (!currentStop) return;
-  hintLevel = 0; $("hint-text").textContent = ""; $("feedback").textContent = "";
+  hintLevel = Math.min(3, Number.isInteger(state.stopHints[currentStop.id]) ? state.stopHints[currentStop.id] : 0); $("hint-text").textContent = ""; $("feedback").textContent = "";
   $("puzzle-title").textContent = `Stop ${currentStop.id}: ${currentStop.name}`;
   if (state.arrivedGps && state.arrivedGps[currentStop.id]) {
     const chip = document.createElement("span");
