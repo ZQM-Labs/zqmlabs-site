@@ -10,7 +10,7 @@ games as they become ready for public play.
 ## Production deployment and CI
 
 The GitHub Actions workflow at
-[.github/workflows/site-ci.yml](.github/workflows/site-ci.yml) is a **validation
+[`.github/workflows/site-ci.yml`](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) is a **validation
 workflow**, not a deployment workflow. It synchronizes the player source into
 the site bundle, checks JavaScript syntax and script order, verifies service
 worker precache files, builds the Hugo site, checks generated links, and
