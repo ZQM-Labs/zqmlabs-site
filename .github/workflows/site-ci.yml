@@ -68,3 +68,14 @@ jobs:
           NODE
       - name: Build Hugo site
         run: hugo --gc --minify
+      - name: Verify required routes and internal-project exclusion
+        run: |
+          set -euo pipefail
+          for page in index.html games/index.html community/index.html halloween/index.html tiers/index.html about/index.html faq/index.html; do
+            test -f "public/$page" || { echo "Missing built page: $page" >&2; exit 1; }
+          done
+          test -f static/img/logo-primary-evergreen.webp
+          if [ -e public/haunted-volusia ]; then
+            echo "Internal Volusia field-guide route must not be published." >&2
+            exit 1
+          fi
