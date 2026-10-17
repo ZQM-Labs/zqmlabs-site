@@ -1,13 +1,12 @@
 ---
-title: "The Lab's Open Shelves"
+title: "Technical Resources"
 description: "Every pattern library behind ZQM Labs' games is public — PostGIS, GDAL, DuckDB, H3, MapLibre, and the rest, on GitHub."
 ---
 
-## The Lab's open shelves
+## Technical resources
 
-Dr. Z's rule: **anything that works gets published.** The pattern
-libraries that power
-the games' maps, puzzles, and the data behind the scenes live on GitHub under
+ZQM Labs publishes selected game-related resources. Technical and geospatial
+engineering references are maintained separately under
 [ZQM-Computing](https://github.com/ZQM-Computing), starting with the umbrella index
 [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns). No
 paywalls, no sign-ups — if the Lab learned it, you can have it.
@@ -32,7 +31,7 @@ paywalls, no sign-ups — if the Lab learned it, you can have it.
 - [ollama-fleet-patterns][ofp] — Local LLM fleet operations
 - [proxmox-ceph-operations][pcp] — Proxmox/Ceph runbooks
 
-Want the quest-side shelves instead? The [free sample pack](https://github.com/ZQM-Labs/quest-packs),
+Looking for game-building resources instead? The [free sample pack](https://github.com/ZQM-Labs/quest-packs),
 [organizer toolkit](https://github.com/ZQM-Labs/organizer-toolkit), and
 [how we build quests](https://github.com/ZQM-Labs/quest-authoring) live over on
 [ZQM-Labs](https://github.com/ZQM-Labs).
