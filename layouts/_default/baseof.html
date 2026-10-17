@@ -3,12 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff7ea">
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} · ZQM Labs{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta property="og:title" content="{{ .Title }} · Z's Quests & Mischief">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · ZQM Labs{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ "img/logo-primary.webp" | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · ZQM Labs{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{ "img/logo-primary.webp" | absURL }}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
   :root{
@@ -17,22 +25,31 @@
     --cozy:#e8a13a; --spooky:#7a5fa0; --afterdark:#3a4a6b; --overdrive:#b32318;
   }
   *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{font-family:system-ui,sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.6}
+  .skip-link{position:absolute;top:8px;left:8px;z-index:10;padding:10px 14px;background:var(--ink);color:#fff;border-radius:6px;transform:translateY(-160%)}
+  .skip-link:focus{transform:translateY(0)}
+  :focus-visible{outline:3px solid var(--afterdark);outline-offset:3px}
   header.site,main,footer.site{max-width:780px;margin:0 auto;padding:20px 16px}
   header.site{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;border-bottom:2px solid var(--line)}
   .brand{font-weight:800;font-size:1.1rem;color:var(--ink);text-decoration:none}
   .brand small{display:block;font-weight:600;font-size:.75rem;color:var(--accent-dark);letter-spacing:.04em}
-  nav.mainnav a{margin-left:14px;color:var(--accent-dark);text-decoration:none;font-weight:600}
-  nav.mainnav a:hover{text-decoration:underline}
+  nav.mainnav{display:flex;flex-wrap:wrap;gap:4px 14px}
+  nav.mainnav a{color:var(--accent-dark);text-decoration:none;font-weight:600;padding:4px 0}
+  nav.mainnav a:hover{text-decoration:underline;text-underline-offset:3px}
   nav.mainnav a.active{color:var(--ink);border-bottom:3px solid var(--accent)}
   h1{font-size:2.1rem;line-height:1.2;margin:.4em 0 .3em}
   h2{margin-top:1.6em;line-height:1.25}
-  a{color:var(--accent-dark)}
+  a{color:var(--accent-dark);text-underline-offset:2px}
   img{max-width:100%;height:auto;border-radius:16px}
   .btn{display:inline-block;background:var(--accent);color:#fff !important;font-weight:700;
        padding:12px 20px;border-radius:999px;text-decoration:none;margin:4px 6px 4px 0}
   .btn:hover{background:var(--accent-dark)}
   .btn.ghost{background:transparent;color:var(--accent-dark) !important;border:2px solid var(--accent)}
+  .dr-z-hero{margin:12px 0 18px}
+  .dr-z-hero img{display:block;width:100%;height:auto;aspect-ratio:1200/340;object-fit:cover;border:1px solid var(--line);border-radius:16px}
+  .dr-z-hero figcaption{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-dark);margin-top:6px}
+  @media(max-width:520px){.dr-z-hero{margin:8px 0 14px}.dr-z-hero figcaption{font-size:.72rem}}
   .hero-cta{margin:10px 0 4px}
   .mantra{font-weight:700;color:var(--accent-dark)}
   blockquote{background:var(--card);border:1.5px dashed var(--accent);border-radius:12px;
@@ -51,23 +68,35 @@
   .book-cta{background:var(--card);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:34px 0 8px}
   .book-cta h2{margin-top:0}
   footer.site{border-top:2px solid var(--line);margin-top:30px;font-size:.92rem}
-  footer.site nav a{margin-right:12px}
-  .fineprint{opacity:.75;font-size:.85rem}
+  footer.site nav{display:flex;flex-wrap:wrap;gap:4px 12px}
+  .fineprint{opacity:.85;font-size:.85rem}
+  @media (max-width:600px){
+    header.site,main,footer.site{padding:16px}
+    header.site{align-items:flex-start}
+    nav.mainnav{width:100%;gap:4px 12px}
+    nav.mainnav a{padding:6px 0}
+    h1{font-size:1.8rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site">
-  <a class="brand" href="/">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>
-  <nav class="mainnav">
+  <a class="brand" href="/" aria-label="ZQM Labs home">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>
+  <nav class="mainnav" aria-label="Main navigation">
     {{- range .Site.Menus.main }}
     <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
     {{- end }}
   </nav>
 </header>
-<main>{{ block "main" . }}{{ end }}</main>
+<main id="main-content" tabindex="-1">{{ block "main" . }}{{ end }}</main>
 <footer class="site">
   <p><span class="mantra">{{ .Site.Params.mantra }}</span> · {{ .Site.Params.tagline }}</p>
-  <nav>
+  <nav aria-label="Footer navigation">
     {{- range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
   </nav>
   <p class="fineprint">Built in New Smyrna Beach, Volusia County, Florida ·

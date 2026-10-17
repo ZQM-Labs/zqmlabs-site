@@ -66,6 +66,17 @@ jobs:
           if (missing.length) throw new Error("Missing precache files: " + missing.join(", "));
           console.log("Verified " + paths.length + " precache paths.");
           NODE
+      - name: Verify shared layout accessibility and social metadata
+        run: |
+          set -euo pipefail
+          LAYOUT=layouts/_default/baseof.html
+          grep -q 'href="#main-content"' "$LAYOUT"
+          grep -q '<main id="main-content" tabindex="-1">' "$LAYOUT"
+          grep -q '<nav class="mainnav" aria-label="Main navigation">' "$LAYOUT"
+          grep -q '<nav aria-label="Footer navigation">' "$LAYOUT"
+          grep -q 'prefers-reduced-motion:reduce' "$LAYOUT"
+          grep -q 'property="og:type"' "$LAYOUT"
+          grep -q 'name="twitter:card"' "$LAYOUT"
       - name: Build Hugo site
         run: hugo --gc --minify
       - name: Verify required routes and internal-project exclusion
@@ -75,6 +86,12 @@ jobs:
             test -f "public/$page" || { echo "Missing built page: $page" >&2; exit 1; }
           done
           test -f static/img/logo-primary-evergreen.webp
+          # Featured homepage art must exist in the built output and be referenced accessibly.
+          test -f public/img/dr-z-lab-banner.svg || { echo "Missing built Dr. Z banner asset." >&2; exit 1; }
+          grep -qF 'dr-z-lab-banner.svg' public/index.html || { echo "Homepage does not reference the Dr. Z banner." >&2; exit 1; }
+          grep -qF 'alt="Dr. Z' public/index.html || { echo "Dr. Z banner is missing descriptive alt text." >&2; exit 1; }
+          grep -qF 'href="/halloween/"' layouts/index.html || { echo "Homepage template is missing the Halloween kits CTA." >&2; exit 1; }
+          grep -qF 'href="/tiers/"' layouts/index.html || { echo "Homepage template is missing the tiers CTA." >&2; exit 1; }
           if [ -e public/haunted-volusia ]; then
             echo "Internal Volusia field-guide route must not be published." >&2
             exit 1
