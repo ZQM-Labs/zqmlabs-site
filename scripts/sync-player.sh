@@ -1,18 +1,32 @@
 #!/usr/bin/env bash
-# Copy the canonical lantern-player repository root into the site build tree.
-# Usage: bash scripts/sync-player.sh [branch]
+# Copy a reviewed, immutable lantern-player commit into the site build tree.
+# Usage: bash scripts/sync-player.sh <40-character commit SHA>
 set -euo pipefail
 
 SRC_REPO="https://github.com/ZQM-Labs/lantern-player.git"
-SRC_BRANCH="${1:-main}"
+SRC_REF="${1:-}"
 DST="static/games/hunt-for-wisps/play"
+if [[ ! "$SRC_REF" =~ ^[0-9a-f]{40}$ ]]; then
+  echo "Pass a reviewed 40-character lantern-player commit SHA; floating branch refs are not reproducible." >&2
+  exit 2
+fi
+
 TMPDIR="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR"' EXIT
+PLAYER_DIR="$TMPDIR/lantern-player"
 
-echo "==> Fetching lantern-player (${SRC_BRANCH})"
-git clone --depth 1 --branch "$SRC_BRANCH" "$SRC_REPO" "$TMPDIR/lantern-player"
+git init -q "$PLAYER_DIR"
+git -C "$PLAYER_DIR" remote add origin "$SRC_REPO"
+echo "==> Fetching canonical lantern-player commit $SRC_REF"
+git -C "$PLAYER_DIR" fetch --quiet --depth 1 origin "$SRC_REF"
+git -C "$PLAYER_DIR" checkout --quiet --detach FETCH_HEAD
+RESOLVED_REF="$(git -C "$PLAYER_DIR" rev-parse HEAD)"
+if [[ "$RESOLVED_REF" != "$SRC_REF" ]]; then
+  echo "Fetched player commit $RESOLVED_REF does not match requested SHA $SRC_REF." >&2
+  exit 1
+fi
 
-echo "==> Copying repository root -> $DST"
+echo "==> Copying reviewed player commit -> $DST"
 mkdir -p "$DST"
 rsync -a --delete \
   --exclude 'tools/' \
@@ -21,7 +35,7 @@ rsync -a --delete \
   --exclude '.gitignore' \
   --exclude '.github/' \
   --exclude '.git/' \
-  "$TMPDIR/lantern-player/" "$DST/"
+  "$PLAYER_DIR/" "$DST/"
+printf '%s\n' "$RESOLVED_REF" > "$DST/PLAYER_SOURCE_SHA"
 
-echo "==> Sync complete. Files in $DST:"
-ls -1 "$DST"
+echo "==> Synced canonical lantern-player commit $RESOLVED_REF"

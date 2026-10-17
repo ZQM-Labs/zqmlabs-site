@@ -1,8 +1,8 @@
 "use strict";
 /* lantern-player — game state machine.
    Content comes from a pack (exported by lantern-content). DEMO_PACK below is
-   the embedded example so ?demo=1 plays with no backend. Missing scare-level
-   variants fall back to Cozy text. */
+   the embedded example so ?demo=1 plays with no backend. Each stop must provide
+   story and puzzle content for all four scare levels; malformed packs are rejected. */
 
 const API_BASE =
   window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
@@ -19,8 +19,12 @@ const DEMO_PACK = {
                overdrive: "Dr. Z here — FULL MADNESS engaged. My sensors detect faster teams ahead of you. That pumpkin isn't smiling, it's SMIRKING. Wipe that smirk off." },
       wisp: "That's MINE! Oh — oh! It still remembers me. Quick, light it!",
       lit: "One down! See how it glows? That's my happy leaking out.",
-      puzzle: { cozy: { q: "Count the pumpkins in the patch picture your organizer showed you. How many are smiling?", a: "4", type: "number" },
-                spooky: { q: "Riddle: I have a face but cannot see, I glow but cannot flee. On Halloween night I watch the street. What am I?", a: "jack-o-lantern", type: "text" } },
+            puzzle: {
+              cozy: { q: "Count the pumpkins in the patch picture your organizer showed you. How many are smiling?", a: "4", type: "number" },
+              spooky: { q: "The carved pumpkins are watching the street. How many are smiling in the patch?", a: "4", type: "number" },
+              afterdark: { q: "A lantern's glow reveals the smiling pumpkins. How many smiling pumpkins are there?", a: "4", type: "number" },
+              overdrive: { q: "Dr. Z demands a quick count: how many pumpkins are smiling?", a: "4", type: "number" }
+            },
       fallback: { q: "What color is the ribbon on the welcome sign?", a: "orange" },
       hints: ["Look low — lanterns love the ground.", "Count slowly, out loud, as a team.", "Ranger assist: the smiling pumpkins are 4."] },
     { id: 2, name: "The Whispering Oak", lat: 29.0262, lng: -80.9264, code: "LANTERN-2", art: "stop-2-oak.webp",
@@ -30,7 +34,12 @@ const DEMO_PACK = {
                overdrive: "Two hundred years this oak has stood, and it has seen faster Keepers than you. Oakie, be honest — are they slow? …He says yes. MOVE." },
       wisp: "Shhh — Oakie is sleeping. He only hides things for friends. We're friends, right?",
       lit: "Got it! Oakie says you're officially tree-approved.",
-      puzzle: { cozy: { q: "Find the oak. How many wooden swings or benches face it?", a: "2", type: "number" } },
+            puzzle: {
+              cozy: { q: "Find the oak. How many wooden swings or benches face it?", a: "2", type: "number" },
+              spooky: { q: "The oak watches over its seats. How many wooden swings or benches face the tree?", a: "2", type: "number" },
+              afterdark: { q: "Oakie's secret is the pair of wooden places facing him. How many swings or benches face the oak?", a: "2", type: "number" },
+              overdrive: { q: "Oakie says count fast: how many wooden swings or benches face the tree?", a: "2", type: "number" }
+            },
       fallback: { q: "What is carved on the small sign by the oak?", a: "wisp" },
       hints: ["Face the tree like it is facing you.", "Only count the ones looking at the oak.", "Ranger assist: the answer is 2."] },
     { id: 3, name: "The Giggling Graveyard (pretend!)", lat: 29.0266, lng: -80.9258, code: "LANTERN-3", art: "stop-3-graveyard.webp",
@@ -40,7 +49,12 @@ const DEMO_PACK = {
                overdrive: "The ghosts keep score, and right now you're losing to a team of TODDLERS. Tag them back. TAG. THEM. BACK." },
       wisp: "Tag, you're it! Kidding — unless…? No, kidding. Probably.",
       lit: "The ghosts are doing the wave. That's their applause. You're welcome.",
-      puzzle: { cozy: { q: "One foam tombstone says R.I.P. — Rest In... what? (The silly word on the stone!)", a: "pumpkins", type: "text" } },
+            puzzle: {
+              cozy: { q: "One foam tombstone says R.I.P. — Rest In... what? (The silly word on the stone!)", a: "pumpkins", type: "text" },
+              spooky: { q: "The pretend tombstone has a silly Halloween epitaph: Rest In... what?", a: "pumpkins", type: "text" },
+              afterdark: { q: "Read the joke on the foam stone. It changes R.I.P. to Rest In... what?", a: "pumpkins", type: "text" },
+              overdrive: { q: "No time to mourn, Keeper! Finish the silly phrase: Rest In... what?", a: "pumpkins", type: "text" }
+            },
       fallback: { q: "How many foam tombstones are there?", a: "5" },
       hints: ["Read the stones — one of them is joking.", "It rhymes with the patch from Stop 1.", "Ranger assist: Rest In Pumpkins."] },
     { id: 4, name: "The Spider's Counting Web", lat: 29.0270, lng: -80.9252, code: "LANTERN-4", art: "stop-4-spider.webp",
@@ -50,7 +64,12 @@ const DEMO_PACK = {
                overdrive: "Mrs. Spider has rebuilt eleven webs tonight AND finished a crossword. Your excuse is WHAT, exactly? Untangle that lantern. Clock's ticking." },
       wisp: "Mrs. Spider says hi. She says it with all eight legs. It's a lot of hi.",
       lit: "Untangled! Mrs. Spider is doing a happy leg-dance. All eight. It's a LOT.",
-      puzzle: { cozy: { q: "A real spider has 8 legs. Mrs. Spider is holding up 3 legs to wave. How many legs are on the ground?", a: "5", type: "number" } },
+            puzzle: {
+              cozy: { q: "A real spider has 8 legs. Mrs. Spider is holding up 3 legs to wave. How many legs are on the ground?", a: "5", type: "number" },
+              spooky: { q: "Mrs. Spider waves with 3 of her 8 legs. How many legs stay on the ground?", a: "5", type: "number" },
+              afterdark: { q: "Count all 8 legs, then subtract the 3 raised in greeting. How many remain on the ground?", a: "5", type: "number" },
+              overdrive: { q: "Eight legs, three waving. Quick, how many of Mrs. Spider's legs are on the ground?", a: "5", type: "number" }
+            },
       fallback: { q: "What color is Mrs. Spider?", a: "purple" },
       hints: ["Start with 8 legs, like every spider.", "She waves with 3 of them.", "Ranger assist: 8 − 3 = 5."] },
     { id: 5, name: "The Owl's Night Watch", lat: 29.0274, lng: -80.9246, code: "LANTERN-5", art: "stop-5-owl.webp",
@@ -60,7 +79,12 @@ const DEMO_PACK = {
                overdrive: "Professor Hoot graded your last answer a C+. A C! In MY hunt! Listen harder, answer faster — make an owl proud." },
       wisp: "Professor Hoot is very serious. Do your serious face. …Not that serious. Dial it back.",
       lit: "‘Hoo,’ he says. That's owl for ‘well done.’ I translated. You're welcome.",
-      puzzle: { cozy: { q: "Professor Hoot guards this stop's lantern. What kind of bird is he?", a: "owl", type: "text" } },
+            puzzle: {
+              cozy: { q: "Professor Hoot guards this stop's lantern. What kind of bird is he?", a: "owl", type: "text" },
+              spooky: { q: "The silent night watchman hoots from the branches. What kind of bird is Professor Hoot?", a: "owl", type: "text" },
+              afterdark: { q: "Who cooks for you? The bird asking that question is what kind of bird?", a: "owl", type: "text" },
+              overdrive: { q: "Professor Hoot is grading you. Name his kind of bird before the clock runs out.", a: "owl", type: "text" }
+            },
       fallback: { q: "What two letters does an owl 'say'?", a: "ho" },
       hints: ["Look at the sign art — he's watching you.", "Twilight is this bird's favorite time.", "Ranger assist: it's the owl."] },
     { id: 6, name: "The Lantern Parade Ground", lat: 29.0278, lng: -80.9240, code: "LANTERN-6", art: "stop-6-parade.webp",
@@ -70,7 +94,12 @@ const DEMO_PACK = {
                overdrive: "FINAL STRETCH. Wisp ran the numbers and they are NOT in your favor. Light that last lantern like you mean it — FULL! MADNESS!" },
       wisp: "This is it — the last one! My hands are all shaky. Do I have hands? I'm shaky anyway!",
       lit: "IT'S LIT! Look at them all — look at ME! I'm basically a sunrise!",
-      puzzle: { cozy: { q: "Teamwork finale: how many lanterns did you light on the whole hunt (including this one)?", a: "6", type: "number" } },
+            puzzle: {
+              cozy: { q: "Teamwork finale: how many lanterns did you light on the whole hunt (including this one)?", a: "6", type: "number" },
+              spooky: { q: "The last glow joins the others. How many lanterns should be lit when the hunt is complete?", a: "6", type: "number" },
+              afterdark: { q: "Count every lantern Wisp lost and your team recovered. How many in total?", a: "6", type: "number" },
+              overdrive: { q: "FINAL COUNT! Six stops, one lantern per stop. How many lanterns must be lit?", a: "6", type: "number" }
+            },
       fallback: { q: "Say the magic words out loud as a team: 'Light the way, Wisp!' then type: wisp", a: "wisp" },
       hints: ["Count the stops on your map.", "One lantern per stop.", "Ranger assist: 6 lanterns."] }
   ]
@@ -87,7 +116,7 @@ try { _loaded = JSON.parse(localStorage.getItem("lantern-state") || "null"); } c
 const state = _loaded || {
   team: "", scare: "cozy", solved: [], hintsUsed: 0, startedAt: null, kitId: null
 };
-const HINT_BUDGET = 6;
+const HINT_BUDGET = 18;
 state.cleanSolves = state.cleanSolves || 0;
 state.stopHints = state.stopHints || {};
 state.arrivedGps = state.arrivedGps || {};
@@ -111,7 +140,26 @@ function validatePack(p) {
   const answers = [];
   const ids = [];
   for (const s of p.stops) {
+    if (!s || typeof s !== "object" || Array.isArray(s)) {
+      errs.push("stop ?: must be an object");
+      continue;
+    }
     const tag = `stop ${s.id ?? "?"}`;
+    for (const tier of ["cozy", "spooky", "afterdark", "overdrive"]) {
+      const tierStory = s.story && s.story[tier];
+      if (typeof tierStory !== "string" || !tierStory.trim()) {
+        errs.push(`${tag}: story.${tier} missing or invalid`);
+      }
+      const tierPuzzle = s.puzzle && s.puzzle[tier];
+      const questionOk = tierPuzzle && typeof tierPuzzle.q === "string" && tierPuzzle.q.trim() !== "";
+      const answerOk = tierPuzzle && (
+        (typeof tierPuzzle.a === "string" && tierPuzzle.a.trim() !== "") ||
+        (typeof tierPuzzle.a === "number" && Number.isFinite(tierPuzzle.a))
+      );
+      if (!questionOk || !answerOk) {
+        errs.push(`${tag}: puzzle.${tier} needs a non-empty question and answer`);
+      }
+    }
     if (typeof s.id !== "number" || !Number.isInteger(s.id)) errs.push(`${tag}: id must be an integer`);
     else ids.push(s.id);
     if (!s.name || !s.code) errs.push(`${tag}: needs name + code`);
@@ -615,7 +663,7 @@ function openMap() {
 window.openStop = function (id) {
   currentStop = pack.stops.find(s => s.id === id);
   if (!currentStop) return;
-  hintLevel = 0; $("hint-text").textContent = ""; $("feedback").textContent = "";
+  hintLevel = Math.min(3, Number.isInteger(state.stopHints[currentStop.id]) ? state.stopHints[currentStop.id] : 0); $("hint-text").textContent = ""; $("feedback").textContent = "";
   $("puzzle-title").textContent = `Stop ${currentStop.id}: ${currentStop.name}`;
   if (state.arrivedGps && state.arrivedGps[currentStop.id]) {
     const chip = document.createElement("span");

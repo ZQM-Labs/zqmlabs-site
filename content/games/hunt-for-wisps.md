@@ -1,18 +1,28 @@
 ---
-title: "Hunt for Wisps — free playable demo"
-description: "Play Wisp's Lost Lanterns free in your browser — 6 stops, 4 Dial levels, no signup."
+title: "Hunt for Wisps — browser demo"
+description: "Try the Wisp's Lost Lanterns browser demo. A six-stop Halloween scavenger-hunt prototype with four selectable scare levels."
 layout: "game"
 status: "playable-demo"
 weight: 1
 ---
 
-Wisp the will-o'-the-wisp lost her 6 glow lanterns. Your team are her
-**Lantern Keepers**. This is the full pilot game — same puzzles, same
-hints, same finale your community would play.
+## Play the browser demo
 
-**Run it in your own neighborhood — free.** [*Wisp's Warm-Up*][warmup]
-is a complete 6-stop sample quest: about 30 minutes, any backyard or
-block, printable QR signs, no purchase. If your group loves it, the
-full Halloween edition is one email away.
+[**Launch Wisp's Lost Lanterns**](/games/hunt-for-wisps/play/?demo=1)
 
-[warmup]: https://github.com/ZQM-Labs/quest-packs/tree/main/sample-quest
+The demo runs in your browser and does not require a paid kit or access code. Choose a team name, start the hunt, and select a scare level. Progress is stored on the current device.
+
+This is a software demo, not proof that a paid kit is orderable or that a physical route has been approved for an event. The published demo content and available features may differ from a field-tested, organizer-configured kit.
+
+## What to expect
+
+- A browser-based player; no app installation required.
+- One phone per team.
+- Six lantern stops and four selectable scare levels.
+- A built-in demo mode that does not require the production game backend.
+
+**Planning an event?** Review the [hosting options](/tiers/) and contact ZQM Labs to confirm current availability, kit contents, venue requirements, pricing, and fulfillment before advertising a booking.
+
+## Sample quest resources
+
+[*Wisp's Warm-Up*](https://github.com/ZQM-Labs/quest-packs/tree/main/sample-quest) is a separate sample quest with printable QR signs. Review its instructions and adapt it only for a location where you have permission to play.
