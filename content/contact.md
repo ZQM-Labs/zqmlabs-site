@@ -5,7 +5,7 @@ description: "Get in touch with ZQM Labs — booking a kit, hosting a fundraiser
 
 ## Email the Lab
 
-**<zqmcomputing@gmail.com>**
+**[zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)**
 
 The Lab replies within one business day. Every email is answered by a human —
 specifically, the one in the lab coat.
@@ -53,10 +53,10 @@ and the stop number if you have them.
 
 ## Elsewhere
 
-- **Games:** https://zqmlabs.com/games/
-- **GitHub:** https://github.com/ZQM-Labs
-- **Geospatial work:** https://github.com/ZQM-Computing
-- **Free sample pack:** https://github.com/ZQM-Labs/quest-packs
+- **Games:** [zqmlabs.com/games](https://zqmlabs.com/games/)
+- **GitHub:** [ZQM-Labs](https://github.com/ZQM-Labs)
+- **Geospatial work:** [ZQM-Computing](https://github.com/ZQM-Computing)
+- **Free sample pack:** [quest-packs](https://github.com/ZQM-Labs/quest-packs)
 
 ## Based in
 
