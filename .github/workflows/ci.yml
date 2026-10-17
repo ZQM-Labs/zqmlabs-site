@@ -22,7 +22,7 @@ jobs:
         shell: bash
         run: |
           if [ -f pyproject.toml ] || [ -f pytest.ini ] || [ -f requirements.txt ] || [ -d tests ]; then echo "python=true" >> "$GITHUB_OUTPUT"; else echo "python=false" >> "$GITHUB_OUTPUT"; fi
-          if [ -f package.json ]; then echo "node=true" >> "$GITHUB_OUTPUT"; else echo "node=false" >> "$GITHUB_OUTPUT"; fi
+          if [ -f package.json ] || [ -f static/games/hunt-for-wisps/play/app.js ]; then echo "node=true" >> "$GITHUB_OUTPUT"; else echo "node=false" >> "$GITHUB_OUTPUT"; fi
           if [ -f go.mod ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
 
   python:
@@ -59,7 +59,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Install dependencies and run tests when configured
+      - name: Install dependencies and run configured tests
+        if: hashFiles('package.json') != ''
         shell: bash
         run: |
           if [ -f package-lock.json ]; then npm ci; else npm install; fi
@@ -68,6 +69,11 @@ jobs:
           else
             echo "No npm test script configured; dependency installation completed."
           fi
+      - name: Check bundled player and demo regressions
+        if: hashFiles('static/games/hunt-for-wisps/play/app.js') != ''
+        run: |
+          node --check static/games/hunt-for-wisps/play/app.js
+          node scripts/test-player-source.cjs
 
   go:
     needs: detect
