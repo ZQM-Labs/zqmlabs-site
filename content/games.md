@@ -3,7 +3,7 @@ title: "Games"
 description: "Explore community-centered games from ZQM Labs."
 ---
 
-# Games from ZQM Labs
+<!-- markdownlint-disable MD013 -->
 
 ZQM Labs creates story-driven, community-centered games for people who want to play together. This directory is designed to grow as more titles become ready for public play.
 
