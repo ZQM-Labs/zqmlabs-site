@@ -60,9 +60,9 @@ const DEMO_PACK = {
                overdrive: "Professor Hoot graded your last answer a C+. A C! In MY hunt! Listen harder, answer faster — make an owl proud." },
       wisp: "Professor Hoot is very serious. Do your serious face. …Not that serious. Dial it back.",
       lit: "‘Hoo,’ he says. That's owl for ‘well done.’ I translated. You're welcome.",
-      puzzle: { cozy: { q: "Listen to the sound your phone plays at this stop: is it an owl, a cat, or a frog?", a: "owl", type: "text" } },
+      puzzle: { cozy: { q: "Professor Hoot guards this stop's lantern. What kind of bird is he?", a: "owl", type: "text" } },
       fallback: { q: "What two letters does an owl 'say'?", a: "ho" },
-      hints: ["It is the sound this whole stop is named after.", "Twilight is this bird's favorite time.", "Ranger assist: it's the owl."] },
+      hints: ["Look at the sign art — he's watching you.", "Twilight is this bird's favorite time.", "Ranger assist: it's the owl."] },
     { id: 6, name: "The Lantern Parade Ground", lat: 29.0278, lng: -80.9240, code: "LANTERN-6", art: "stop-6-parade.webp",
       story: { cozy: "The last lantern! Light it and the whole parade glows.",
                spooky: "The empty parade ground waits. Six lanterns, six shadows — but there are seven shadows moving on the grass, and one of them is waving at you.",
@@ -90,6 +90,10 @@ const state = _loaded || {
 const HINT_BUDGET = 6;
 state.cleanSolves = state.cleanSolves || 0;
 state.stopHints = state.stopHints || {};
+state.arrivedGps = state.arrivedGps || {};
+state.stopAttempts = state.stopAttempts || {};  // wrong answers per stop id
+state.stopTimes = state.stopTimes || {};        // {start, end} timestamps per stop id
+state.arrivedVia = state.arrivedVia || {};      // gps|qr|manual per stop id
 let pack = DEMO_PACK;
 let currentStop = null;
 let hintLevel = 0;
@@ -134,6 +138,15 @@ function show(id) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
   $(id).classList.add("active");
 }
+/* Scare-tier art: stop-1-pumpkin-spooky.webp etc. Cozy reuses the base file;
+   a missing tier file falls back to base art via the img onerror guard. */
+function artFor(stop) {
+  if (!stop || !stop.art) return "";
+  if (state.scare && state.scare !== "cozy")
+    return "assets/" + stop.art.replace(/\.webp$/i, "-" + state.scare + ".webp");
+  return "assets/" + stop.art;
+}
+
 function variant(stop, kind) { // kind: "story" | puzzle object
   if (kind === "story") return stop.story[state.scare] || stop.story.cozy;
   return (stop.puzzle && (stop.puzzle[state.scare] || stop.puzzle.cozy)) || stop.fallback;
@@ -183,11 +196,282 @@ function updatePlayerMarker(lat, lng, acc) {
 function stopIcon(s) {
   const lit = state.solved.includes(s.id);
   const face = s.art
-    ? `<img src="assets/${s.art}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}">`
+    ? `<img src="${artFor(s)}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}" onerror="this.onerror=null;this.src='assets/${s.art}'">`
     : `<div class="pin-fallback" role="img" aria-label="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}">🏮</div>`;
   return L.divIcon({ className: "stop-marker" + (lit ? " lit" : ""), html: face,
     iconSize: [46, 46], iconAnchor: [23, 23] });
 }
+/* ---------- live geolocation: tracking, geofences, routing ----------
+   Offline-first: every piece degrades. No permission -> the manual flow
+   (stop list + Navigate + sign codes) works exactly as before. Leaflet
+   absent -> distance-sorted text stop list. OSRM unreachable -> straight
+   dashed guide line. Nothing here is required to finish the hunt. */
+const GEO_DEFAULT_RADIUS = 30; // meters; a stop may override with `radius`
+let geoWatchId = null;
+let playerPos = null;          // {lat, lng, acc}
+let geoState = "idle";         // idle | asking | active | denied | declined | unavailable
+let geoDeclined = false;       // session flag: user tapped "No thanks"
+let guideLine = null;
+let lastRouteKey = "";
+let arrivalFired = {};
+let lastCardSig = "";
+let lastListSig = "";
+
+function stopRadius(s) { return s.radius || GEO_DEFAULT_RADIUS; }
+function nextUnsolved() { return pack.stops.find(s => !state.solved.includes(s.id)); }
+function mapsUrl(s) {
+  return "https://www.google.com/maps/dir/?api=1&destination=" +
+    s.lat + "," + s.lng + "&travelmode=walking";
+}
+function fmtDist(m) {
+  return m < 950 ? Math.round(m) + "m" : (m / 1000).toFixed(1) + "km";
+}
+function startTracking() {
+  if (!("geolocation" in navigator)) { geoState = "unavailable"; renderNextStop(); return; }
+  if (geoWatchId !== null || geoDeclined) return;
+  geoState = "asking";
+  renderNextStop();
+  geoWatchId = navigator.geolocation.watchPosition(onGeoPos, onGeoErr, {
+    enableHighAccuracy: true, maximumAge: 5000, timeout: 15000
+  });
+}
+function stopTracking() {
+  if (geoWatchId !== null) {
+    try { navigator.geolocation.clearWatch(geoWatchId); } catch (e) {}
+    geoWatchId = null;
+  }
+}
+function onGeoPos(pos) {
+  const c = pos.coords;
+  playerPos = { lat: c.latitude, lng: c.longitude, acc: c.accuracy || 999 };
+  geoState = "active";
+  updatePlayerMarker(playerPos.lat, playerPos.lng, playerPos.acc);
+  checkGeofences();
+  if (mapBroken) renderStopList(); else renderNextStop();
+  updateGuideLine();
+}
+function onGeoErr(err) {
+  geoState = (err && err.code === 1) ? "denied" : "unavailable";
+  if (mapBroken) renderStopList(); else renderNextStop();
+}
+// A stop counts as "arrived" when the player is inside its radius with a
+// sane fix. Poor-accuracy fixes never trigger arrivals (no parking-lot
+// false positives from across the street).
+function checkGeofences() {
+  if (!playerPos || playerPos.acc > 60) return;
+  state.arrivedGps = state.arrivedGps || {};
+  let changed = false;
+  for (const s of pack.stops) {
+    if (state.solved.includes(s.id) || arrivalFired[s.id]) continue;
+    if (haversine(playerPos.lat, playerPos.lng, s.lat, s.lng) <= stopRadius(s)) {
+      arrivalFired[s.id] = true;
+      state.arrivedGps[s.id] = true; state.arrivedVia[s.id] = "gps";
+      changed = true;
+    }
+  }
+  if (changed) save();
+}
+function cardSig(next) {
+  const arrived = pack.stops
+    .filter(s => arrivalFired[s.id] && !state.solved.includes(s.id))
+    .map(s => s.id).join(",");
+  const d = (playerPos && next)
+    ? Math.round(haversine(playerPos.lat, playerPos.lng, next.lat, next.lng) / 5) : "-";
+  return [geoState, next ? next.id : "x", d, arrived, state.solved.length].join("|");
+}
+function geoPromptNodes(box) {
+  const p = document.createElement("p");
+  p.textContent = "Let Wisp track your team? She\u2019ll point at the next stop and cheer when you arrive.";
+  const en = document.createElement("button");
+  en.textContent = "\uD83D\uDCCD Enable location";
+  en.addEventListener("click", () => { geoDeclined = false; startTracking(); });
+  const no = document.createElement("button");
+  no.textContent = "No thanks";
+  no.className = "ghost-btn";
+  no.addEventListener("click", () => {
+    geoDeclined = true; geoState = "declined";
+    lastCardSig = ""; lastListSig = "";
+    if (mapBroken) renderStopList(); else renderNextStop();
+  });
+  box.appendChild(p); box.appendChild(en); box.appendChild(no);
+}
+function navButton(s, label) {
+  const nav = document.createElement("a");
+  nav.className = "nav-btn";
+  nav.href = mapsUrl(s);
+  nav.target = "_blank";
+  nav.rel = "noopener";
+  nav.textContent = label || "\uD83E\uDDED Navigate";
+  return nav;
+}
+function renderNextStop() {
+  if (currentStop && !state.stopTimes[currentStop.id]) state.stopTimes[currentStop.id] = { start: Date.now() };
+  const box = $("next-stop");
+  if (!box) return;
+  const next = nextUnsolved();
+  const sig = cardSig(next);
+  if (sig === lastCardSig) return; // don't thrash the DOM on every GPS tick
+  lastCardSig = sig;
+  box.textContent = "";
+  if (!next) return;
+  // Arrival banners for any unsolved stop we're standing at.
+  for (const s of pack.stops) {
+    if (arrivalFired[s.id] && !state.solved.includes(s.id)) {
+      const banner = document.createElement("div");
+      banner.className = "arrival-banner";
+      const b = document.createElement("strong");
+      b.textContent = `\uD83D\uDCCD You're at Stop ${s.id}: ${s.name}!`;
+      banner.appendChild(b);
+      const sub = document.createElement("div");
+      sub.textContent = `Within ~${stopRadius(s)}m \u2014 Wisp can smell the lantern from here.`;
+      banner.appendChild(sub);
+      const open = document.createElement("button");
+      open.textContent = "Open the puzzle \u2192";
+      open.addEventListener("click", () => window.openStop(s.id));
+      banner.appendChild(open);
+      box.appendChild(banner);
+    }
+  }
+  const head = document.createElement("div");
+  const strong = document.createElement("strong");
+  strong.textContent = `Next: Stop ${next.id} \u2014 ${next.name}`;
+  head.appendChild(strong);
+  box.appendChild(head);
+
+  const row = document.createElement("div");
+  row.className = "geo-row";
+  if (geoState === "active" && playerPos) {
+    const d = haversine(playerPos.lat, playerPos.lng, next.lat, next.lng);
+    const b = bearing(playerPos.lat, playerPos.lng, next.lat, next.lng);
+    const info = document.createElement("span");
+    info.textContent = `\uD83D\uDCCD ${fmtDist(d)} ${compassDir(b)} of you`;
+    row.appendChild(info);
+    if (playerPos.acc > 60) {
+      const weak = document.createElement("span");
+      weak.className = "geo-weak";
+      weak.textContent = ` (GPS \u00B1${Math.round(playerPos.acc)}m \u2014 move to open sky)`;
+      row.appendChild(weak);
+    }
+  } else if (geoState === "asking") {
+    const info = document.createElement("span");
+    info.textContent = "\uD83D\uDCCD Finding you\u2026";
+    row.appendChild(info);
+  } else if (geoState === "idle" && !geoDeclined) {
+    geoPromptNodes(box);
+  } else {
+    const info = document.createElement("span");
+    info.textContent = geoState === "denied"
+      ? "\uD83D\uDCCD Location is off \u2014 the hunt still works fine without it."
+      : "\uD83D\uDCCD No live location \u2014 use Navigate below.";
+    row.appendChild(info);
+    const en = document.createElement("button");
+    en.textContent = "\uD83D\uDCCD Enable location";
+    en.className = "ghost-btn";
+    en.addEventListener("click", () => { geoDeclined = false; startTracking(); });
+    row.appendChild(en);
+  }
+  if (row.childNodes.length) box.appendChild(row);
+
+  box.appendChild(navButton(next));
+  const btn = document.createElement("button");
+  btn.textContent = "We're at the stop \u2192";
+  btn.addEventListener("click", () => window.openStop(next.id));
+  box.appendChild(btn);
+
+  if (state.solved.length === 3) {
+    const note = document.createElement("p");
+    note.className = "lab-note";
+    note.innerHTML = `\uD83D\uDCDC <strong>Lab note, halfway:</strong> Wisp's glow is stabilizing \u2014 the lanterns are remembering her. Don't let the fourth one spook you. It spooked <em>me</em>, and I built the things. \u2014 <em>Dr. Z</em>`;
+    box.appendChild(note);
+  }
+}
+// Text fallback when Leaflet can't load: stops sorted by live distance,
+// each with a Navigate link. Fully offline-capable.
+function renderStopList() {
+  const box = $("next-stop");
+  if (!box) return;
+  const sig = "list|" + cardSig(nextUnsolved());
+  if (sig === lastListSig) return;
+  lastListSig = sig;
+  box.textContent = "";
+  const intro = document.createElement("p");
+  intro.textContent = "Map tiles unavailable \u2014 the stop list works offline:";
+  box.appendChild(intro);
+  if (geoState === "idle" && !geoDeclined) geoPromptNodes(box);
+  const sorted = [...pack.stops].sort((a, b) => {
+    if (!playerPos) return a.id - b.id;
+    return haversine(playerPos.lat, playerPos.lng, a.lat, a.lng) -
+           haversine(playerPos.lat, playerPos.lng, b.lat, b.lng);
+  });
+  const ol = document.createElement("ol");
+  ol.className = "stop-list";
+  for (const s of sorted) {
+    const li = document.createElement("li");
+    const done = state.solved.includes(s.id);
+    let label = `Stop ${s.id}: ${s.name}`;
+    if (done) label = "\uD83C\uDFEE " + label + " \u2014 lit!";
+    else {
+      if (playerPos) label += ` \u2014 ${fmtDist(haversine(playerPos.lat, playerPos.lng, s.lat, s.lng))}`;
+      if (arrivalFired[s.id]) label = "\uD83D\uDCCD " + label + " \u2014 you're here!";
+    }
+    const span = document.createElement("span");
+    span.textContent = label;
+    li.appendChild(span);
+    li.appendChild(document.createTextNode(" "));
+    li.appendChild(navButton(s, "\uD83E\uDDED"));
+    if (!done) {
+      const go = document.createElement("button");
+      go.textContent = "Open \u2192";
+      go.addEventListener("click", () => window.openStop(s.id));
+      li.appendChild(document.createTextNode(" "));
+      li.appendChild(go);
+    }
+    ol.appendChild(li);
+  }
+  box.appendChild(ol);
+}
+// Guide line: dashed straight line offline; upgraded to a real walking
+// route from OSRM when the network cooperates. Stale responses are dropped.
+function updateGuideLine() {
+  if (!map || mapBroken || !playerPos) return;
+  const next = nextUnsolved();
+  if (!next) {
+    if (guideLine) { map.removeLayer(guideLine); guideLine = null; }
+    return;
+  }
+  drawStraightGuide(next);
+  const key = `${playerPos.lat.toFixed(4)},${playerPos.lng.toFixed(4)}>${next.id}`;
+  if (key !== lastRouteKey) {
+    lastRouteKey = key;
+    fetchOsrmRoute(next, key, { lat: playerPos.lat, lng: playerPos.lng });
+  }
+}
+function drawStraightGuide(next) {
+  if (!map || mapBroken || !playerPos) return;
+  if (guideLine) map.removeLayer(guideLine);
+  guideLine = L.polyline(
+    [[playerPos.lat, playerPos.lng], [next.lat, next.lng]],
+    { color: "#7c4dff", weight: 3, dashArray: "8 8", opacity: 0.85 }
+  ).addTo(map);
+}
+async function fetchOsrmRoute(next, key, from) {
+  if (!navigator.onLine) return;
+  try {
+    const u = "https://router.project-osrm.org/route/v1/foot/" +
+      `${from.lng},${from.lat};${next.lng},${next.lat}?overview=full&geometries=geojson`;
+    const r = await fetch(u);
+    if (!r.ok) return;
+    const j = await r.json();
+    const coords = j.routes && j.routes[0] && j.routes[0].geometry && j.routes[0].geometry.coordinates;
+    if (!coords || !coords.length || !map || mapBroken) return;
+    const cur = nextUnsolved();
+    if (!cur || cur.id !== next.id || lastRouteKey !== key) return; // stale
+    if (guideLine) map.removeLayer(guideLine);
+    guideLine = L.polyline(coords.map(c => [c[1], c[0]]),
+      { color: "#1a73e8", weight: 4, opacity: 0.9 }).addTo(map);
+  } catch (e) { /* keep the dashed straight line */ }
+}
+
 function updateHUD() {
   const lit = state.solved.length, total = pack.stops.length;
   const wm = $("wisp-meter");
@@ -207,7 +491,7 @@ function updateHUD() {
       const got = state.solved.includes(s.id);
       const cls = got ? "relic" : "relic locked";
       const inner = (got && s.art)
-        ? `<img class="${cls}" src="assets/${s.art}" alt="${RELIC_ALT[s.id] || ("Relic: " + esc(s.name))}">`
+        ? `<img class="${cls}" src="${artFor(s)}" alt="${RELIC_ALT[s.id] || ("Relic: " + esc(s.name))}" onerror="this.onerror=null;this.src='assets/${s.art}'">`
         : `<div class="${cls}" role="img" aria-label="${got ? "lit lantern relic" : "unfound relic"}">${got ? "🏮" : "❔"}</div>`;
       return `<span title="${got ? esc(s.name) : "???"}">${inner}</span>`;
     }).join("");
@@ -217,16 +501,6 @@ function updateHUD() {
   if (hc) hc.textContent = left > 0 ? `(${left} left)` : "(none left)";
   if (hb) hb.disabled = left <= 0;
 }
-
-/* Elapsed clock on the map screen (UX #5 — only the finale showed duration). */
-function tickClock() {
-  const el = $("hunt-clock");
-  if (!el) return;
-  if (!state.startedAt) { el.textContent = ""; return; }
-  const s = Math.max(0, Math.floor((Date.now() - state.startedAt) / 1000));
-  el.textContent = `⏱ Elapsed: ${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
-}
-setInterval(tickClock, 1000);
 
 /* ---------- flow ---------- */
 $("btn-start").addEventListener("click", async () => {
@@ -259,12 +533,16 @@ $("btn-start").addEventListener("click", async () => {
     // New kit (or demo<->live switch): start clean instead of inheriting
     // solved stops from whatever was played before on this device. (P1)
     state.solved = []; state.hintsUsed = 0; state.cleanSolves = 0; state.stopHints = {};
+    state.arrivedGps = {}; arrivalFired = {}; lastRouteKey = ""; lastCardSig = ""; lastListSig = "";
     state.startedAt = Date.now();
     state.kitId = startingKit;
   } else {
     state.startedAt = state.startedAt || Date.now();
   }
   save(); show("screen-scare");
+  startTimer();
+  focusFirst();
+  playSound("assets/audio/hoot.ogg");
 });
 
 /* ---------- QR deep links ----------
@@ -296,6 +574,8 @@ document.querySelectorAll(".scare-card").forEach(b => b.addEventListener("click"
     const target = pack.stops.find(s => s.id === deepStop);
     if (target && !state.solved.includes(target.id)) window.openStop(deepStop);
   }
+  // Show transition narrative
+  showTransition();
 }));
 
 let map = null;
@@ -323,28 +603,13 @@ function openMap() {
       }
     }
   }
-  const next = pack.stops.find(s => !state.solved.includes(s.id));
+  const next = nextUnsolved();
   updateHUD();
-  if (!next) return show("screen-finale"), finale();
+  if (!next) { stopTracking(); return show("screen-finale"), finale(); }
   if (map && !mapBroken) map.setView([next.lat, next.lng], 17);
-  // Build the node safely: stop names come from a remote content pack and must
-  // not be interpolated into innerHTML (a kit author could inject markup).
-  const box = $("next-stop");
-  box.textContent = "";
-  const strong = document.createElement("strong");
-  strong.textContent = `Next: Stop ${next.id} — ${next.name}`;
-  box.appendChild(strong);
-  box.appendChild(document.createElement("br"));
-  const btn = document.createElement("button");
-  btn.textContent = "We're at the stop →";
-  btn.addEventListener("click", () => window.openStop(next.id));
-  box.appendChild(btn);
-  if (state.solved.length === 3) {
-    const note = document.createElement("p");
-    note.className = "lab-note";
-    note.innerHTML = `📜 <strong>Lab note, halfway:</strong> Wisp's glow is stabilizing — the lanterns are remembering her. Don't let the fourth one spook you. It spooked <em>me</em>, and I built the things. — <em>Dr. Z</em>`;
-    box.appendChild(note);
-  }
+  startTracking();
+  lastCardSig = ""; lastListSig = ""; // force a fresh card for the new stop
+  if (mapBroken) renderStopList(); else renderNextStop();
 }
 
 window.openStop = function (id) {
@@ -352,9 +617,16 @@ window.openStop = function (id) {
   if (!currentStop) return;
   hintLevel = 0; $("hint-text").textContent = ""; $("feedback").textContent = "";
   $("puzzle-title").textContent = `Stop ${currentStop.id}: ${currentStop.name}`;
+  if (state.arrivedGps && state.arrivedGps[currentStop.id]) {
+    const chip = document.createElement("span");
+    chip.className = "verified-chip";
+    chip.textContent = " \uD83D\uDCCD on-site";
+    $("puzzle-title").appendChild(chip);
+  }
   const sa = $("stop-art");
   if (sa) {
-    if (currentStop.art) { sa.src = "assets/" + currentStop.art;
+    if (currentStop.art) { sa.onerror = function(){ sa.onerror = null; sa.src = "assets/" + currentStop.art; };
+      sa.src = artFor(currentStop);
       sa.alt = RELIC_ALT[currentStop.id] || ("Art for " + currentStop.name);
       sa.style.display = ""; }
     else { sa.removeAttribute("src"); sa.style.display = "none"; }
@@ -371,10 +643,6 @@ window.openStop = function (id) {
   // never another stop's code. (m19)
   if (deepSignCode && deepSignCode.toUpperCase() === String(currentStop.code).toUpperCase())
     $("unlock-code").value = deepSignCode;
-  // Fresh stop: reset the GPS affordance, then auto-watch for arrival.
-  const gpsBtn = $("btn-gps");
-  if (gpsBtn) { gpsBtn.disabled = false; gpsBtn.textContent = "📍 I'm here (GPS check)"; }
-  startGpsWatch(currentStop);
   show("screen-puzzle");
 };
 
@@ -385,29 +653,23 @@ function solved() {
   if (!state.solved.includes(currentStop.id)) {
     state.solved.push(currentStop.id);
   }
+  if (state.stopTimes[currentStop.id]) state.stopTimes[currentStop.id].end = Date.now();
   save();
   $("feedback").textContent = "🏮 " + (currentStop.lit || "Lantern lit!");
-  stopGpsWatch();
   setTimeout(openMap, 900);
   syncProgress(); // fire-and-forget leaderboard sync when backend present
 }
 
 $("btn-answer").addEventListener("click", () => {
   const p = variant(currentStop, "puzzle");
-  const got = $("puzzle-answer").value.trim().toLowerCase();
-  if (got === String(p.a).trim().toLowerCase()) solved();
-  else $("feedback").textContent = "Not quite — try a hint, Keeper!";
-});
-// Enter submits the answer (and the sign code) — no button tap needed. (UX #4)
-$("puzzle-answer").addEventListener("keydown", e => {
-  if (e.key === "Enter") { e.preventDefault(); $("btn-answer").click(); }
-});
-$("unlock-code").addEventListener("keydown", e => {
-  if (e.key === "Enter") { e.preventDefault(); $("btn-unlock").click(); }
+  const norm = s => String(s).toLowerCase().replace(/['"\-\u2019]/g, "").replace(/[^a-z0-9]/g, "");
+  const got = norm($("puzzle-answer").value);
+  if (got === norm(p.a)) solved();
+  else { state.stopAttempts[currentStop.id] = (state.stopAttempts[currentStop.id] || 0) + 1; save(); $("feedback").textContent = "Not quite — try a hint, Keeper!"; }
 });
 
 $("btn-unlock").addEventListener("click", () => {
-  if ($("unlock-code").value.trim().toUpperCase() === String(currentStop.code).toUpperCase()) solved();
+  if ($("unlock-code").value.trim().toUpperCase() === String(currentStop.code).toUpperCase()) { state.arrivedVia[currentStop.id] = state.arrivedVia[currentStop.id] || "qr"; solved(); }
   else $("feedback").textContent = "That code isn't from this stop's sign.";
 });
 
@@ -422,7 +684,11 @@ $("btn-gps").addEventListener("click", () => {
     const d = haversine(plat, plng, currentStop.lat, currentStop.lng);
     const radius = currentStop.radius || 30;
     updatePlayerMarker(plat, plng, acc);
-    if (d <= radius) { $("feedback").textContent = "📍 You're here! Now solve the puzzle above."; }
+    if (d <= radius) {
+      state.arrivedGps = state.arrivedGps || {};
+      state.arrivedGps[currentStop.id] = true; save();
+      $("feedback").textContent = "📍 You're here — verified on-site! Now solve the puzzle above.";
+    }
     else {
       const b = bearing(plat, plng, currentStop.lat, currentStop.lng);
       $("feedback").textContent = `Still ${Math.round(d)}m away to the ${compassDir(b)} — keep hunting!`;
@@ -445,12 +711,194 @@ $("btn-hint").addEventListener("click", () => {
   }
 });
 
-function finale() {
-  const mins = state.startedAt ? Math.round((Date.now() - state.startedAt) / 60000) : 0;
-  $("finale-stats").textContent =
-    `${state.team} · ${pack.stops.length} lanterns · ${mins} minutes · ${state.hintsUsed} hints used · ★ ${state.cleanSolves}/${pack.stops.length} clean solves`;
-  syncProgress(true);
+/* ---------- audio: play sound effects ---------- */
+let audioCtx = null;
+function playSound(url) {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  fetch(url)
+    .then(r => r.arrayBuffer())
+    .then(buf => audioCtx.decodeAudioData(buf))
+    .then(audioBuf => {
+      const src = audioCtx.createBufferSource();
+      src.buffer = audioBuf;
+      src.connect(audioCtx.destination);
+      src.start();
+    })
+    .catch(() => {});
 }
+
+/* ---------- share: native share or clipboard fallback ---------- */
+function shareTeam() {
+  const text = `I'm a Lantern Keeper in Wisp's Lost Lanterns! Join the hunt!`;
+  const url = window.location.href;
+  if (navigator.share) {
+    navigator.share({ title: "Wisp's Lost Lanterns", text, url }).catch(() => {});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(text + " " + url).then(() => {
+      $("feedback").textContent = "Link copied! Share it with your team.";
+    });
+  }
+}
+
+/* ---------- timer: elapsed time display ---------- */
+let timerInterval = null;
+function startTimer() {
+  if (timerInterval) clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    const el = $("hunt-clock");
+    if (!el || !state.startedAt) return;
+    const secs = Math.floor((Date.now() - state.startedAt) / 1000);
+    const m = Math.floor(secs / 60), s = secs % 60;
+    el.textContent = `⏱ ${m}:${String(s).padStart(2, "0")}`;
+  }, 1000);
+}
+function stopTimer() {
+  if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+}
+
+/* ---------- PWA install prompt ---------- */
+let deferredInstallPrompt = null;
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  const btn = $("btn-install");
+  if (btn) btn.style.display = "inline-block";
+});
+function installPWA() {
+  if (deferredInstallPrompt) {
+    deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice.then(() => { deferredInstallPrompt = null; });
+  }
+}
+
+/* ---------- focus management ---------- */
+function focusFirst() {
+  const first = document.querySelector("input, button");
+  if (first) first.focus();
+}
+
+/* ---------- story transitions ---------- */
+function showTransition() {
+  const box = $("next-stop");
+  if (!box) return;
+  const transition = document.createElement("div");
+  transition.className = "story-transition";
+  const mode = GlobalStory.getCurrentMode();
+  const lang = (typeof I18n !== "undefined") ? I18n.current : "en";
+  const storyContent = pack.story_content || {};
+  const content = storyContent[lang] || storyContent["en"] || {};
+  const transitions = content.transitions || GlobalStory.transitions[mode] || GlobalStory.transitions.halloween;
+  const idx = Math.min(state.solved.length, transitions.length - 1);
+  transition.textContent = transitions[idx];
+  box.appendChild(transition);
+  setTimeout(() => transition.remove(), 4000);
+}
+
+/* ---------- story mode selector ---------- */
+function renderStoryModeSelector() {
+  const container = $("story-mode-selector");
+  if (!container) return;
+  const modes = GlobalStory.modes;
+  const current = GlobalStory.getCurrentMode();
+  container.innerHTML = "";
+  Object.values(modes).forEach(mode => {
+    const btn = document.createElement("button");
+    btn.className = "mode-btn" + (mode.id === current ? " active" : "");
+    btn.innerHTML = `${mode.icon} ${mode.name}`;
+    btn.addEventListener("click", () => {
+      GlobalStory.currentMode = mode.id;
+      GlobalStory.applyCulturalAdaptation();
+      renderStoryModeSelector();
+      GlobalStory.renderStoryElements();
+    });
+    container.appendChild(btn);
+  });
+}
+
+/* ---------- leaderboard scoring ----------
+   Lower is better. Weights: completion >> clean solves >> hints >> time >> wrong guesses.
+   Matches backend sort intent (finished, hints) with richer local signals. */
+function teamScore(r) {
+  if (!r.finished && (r.solvedCount || 6) < 6) return 1e9 + (r.hintsUsed * 100);
+  return (r.hintsUsed * 1000) - ((r.cleanSolves || 0) * 150) + (r.mins || 0) + ((r.totalAttempts || 0) * 10) - ((r.verified || 0) * 5);
+}
+function teamTitle(r, stops) {
+  const titles = [];
+  if (r.hintsUsed === 0) titles.push("🌟 Purist");
+  if ((r.cleanSolves || 0) === stops) titles.push("🎯 Flawless");
+  if ((r.verified || 0) === stops) titles.push("📍 True Explorer");
+  return titles.join(" ");
+}
+
+function finale() {
+  stopTracking();
+  const mins = state.startedAt ? Math.round((Date.now() - state.startedAt) / 60000) : 0;
+  const verified = pack.stops.filter(s => state.arrivedGps && state.arrivedGps[s.id]).length;
+  const totalAttempts = Object.values(state.stopAttempts || {}).reduce((a, b) => a + b, 0);
+
+  // Save this run to local history for team comparisons
+  const run = {
+    team: state.team, mins, hintsUsed: state.hintsUsed,
+    cleanSolves: state.cleanSolves || 0, verified, totalAttempts,
+    scare: state.scare, date: new Date().toISOString().slice(0, 10),
+    ts: Date.now()
+  };
+  let history = [];
+  try { history = JSON.parse(localStorage.getItem("lantern-history") || "[]"); } catch {}
+  // Don't duplicate: skip if same team finished within last 5 min
+  const dup = history.find(h => h.team === run.team && (run.ts - h.ts) < 300000);
+  if (!dup) { history.push(run); localStorage.setItem("lantern-history", JSON.stringify(history.slice(-50))); }
+
+  // Rank this run among all runs (fewer hints = better, then more clean solves, then faster)
+  // (scoring via teamScore)
+  const ranked = [...history].sort((a, b) => teamScore(a) - teamScore(b));
+  const rank = ranked.findIndex(r => r.ts === run.ts) + 1;
+
+  // Best records
+  const bestTime = Math.min(...history.map(r => r.mins));
+  const bestClean = Math.max(...history.map(r => r.cleanSolves));
+  const fewestHints = Math.min(...history.map(r => r.hintsUsed));
+
+  let compare = "";
+  if (history.length > 1) {
+    const ord = rank === 1 ? "1st" : rank === 2 ? "2nd" : rank === 3 ? "3rd" : rank + "th";
+    compare = `\n🏆 ${ord} of ${history.length} teams on this device`;
+    const records = [];
+    if (run.mins === bestTime && history.length > 1) records.push("fastest time");
+    if (run.cleanSolves === bestClean && run.cleanSolves > 0) records.push("most clean solves");
+    if (run.hintsUsed === fewestHints) records.push("fewest hints");
+    if (records.length) compare += ` · New record: ${records.join(", ")}!`;
+  } else {
+    compare = "\n🎉 First team on this device — you set the bar!";
+  }
+
+  $("finale-stats").textContent =
+    `${state.team} · ${pack.stops.length} lanterns · ${mins} minutes · ${state.hintsUsed} hints used · ★ ${state.cleanSolves}/${pack.stops.length} clean solves · 📍 ${verified}/${pack.stops.length} verified on-site · 🎯 ${totalAttempts} wrong guesses${compare}`;
+
+  // Render leaderboard table (top 10)
+  const lb = $("leaderboard"), lbl = $("leaderboard-list");
+  if (lb && lbl && history.length > 0) {
+    lb.style.display = "block";
+    const medals = ["🥇", "🥈", "🥉"];
+    lbl.innerHTML = ranked.slice(0, 10).map((r, i) => {
+      const medal = medals[i] || `${i + 1}.`;
+      const title = teamTitle(r, pack.stops.length);
+      const hl = r.ts === run.ts ? ' style="font-weight:700;background:#fff3cd;border-radius:8px;padding:2px 6px"' : "";
+      return `<div${hl}>${medal} ${esc(r.team)} — ${r.mins}m · ${r.hintsUsed} hints · ★${r.cleanSolves}/6 ${title}</div>`;
+    }).join("");
+  }
+  syncProgress(true);
+  stopTimer();
+  // Show share and install buttons
+  const shareBtn = $("btn-share-finale");
+  if (shareBtn) shareBtn.style.display = "inline-block";
+  if (deferredInstallPrompt) {
+    const installBtn = $("btn-install");
+    if (installBtn) installBtn.style.display = "inline-block";
+  }
+  focusFirst();
+}
+window.addEventListener("pagehide", stopTracking);
 $("btn-restart").addEventListener("click", () => {
   // Preserve mode: forcing ?demo=1 on restart would strand a live team in the
   // offline pack and drop their kit binding.
@@ -462,58 +910,47 @@ $("btn-restart").addEventListener("click", () => {
   location.href = location.pathname + (q ? "?" + q : "");
 });
 
-/* Finale share card (UX #8): a canvas PNG (team, lanterns, time, stats)
-   shared via the Web Share API or downloaded — no more photographing
-   the screen. */
-$("btn-share").addEventListener("click", () => {
-  try {
-    const W = 1080, H = 1350;
-    const cv = document.createElement("canvas");
-    cv.width = W; cv.height = H;
-    const g = cv.getContext("2d");
-    const grad = g.createLinearGradient(0, 0, 0, H);
-    grad.addColorStop(0, "#101c33"); grad.addColorStop(1, "#3a2410");
-    g.fillStyle = grad; g.fillRect(0, 0, W, H);
-    g.textAlign = "center";
-    g.fillStyle = "#ffd98a";
-    g.font = "700 84px Georgia, 'Times New Roman', serif";
-    g.fillText("\u{1F3EE} Lantern Keepers \u{1F3EE}", W / 2, 210);
-    g.fillStyle = "#fff7ea";
-    g.font = "700 72px Georgia, 'Times New Roman', serif";
-    g.fillText(state.team || "Lantern Keepers", W / 2, 340);
-    const total = pack.stops.length;
-    g.font = "88px serif";
-    for (let i = 0; i < total; i++)
-      g.fillText(i < state.solved.length ? "\u{1F3EE}" : "\u{1F311}", 160 + i * 130, 540);
-    g.fillStyle = "#ffd98a";
-    g.font = "56px Georgia, 'Times New Roman', serif";
-    const mins = state.startedAt ? Math.round((Date.now() - state.startedAt) / 60000) : 0;
-    g.fillText(`${state.solved.length} / ${total} lanterns \u00b7 ${mins} min`, W / 2, 700);
-    g.fillText(`\u2605 ${state.cleanSolves} clean solves \u00b7 ${state.hintsUsed} hints used`, W / 2, 790);
-    g.fillStyle = "#c9b18a";
-    g.font = "italic 44px Georgia, 'Times New Roman', serif";
-    g.fillText("Wisp's Lost Lanterns \u2014 ZQM Labs", W / 2, 1120);
-    g.font = "40px Georgia, 'Times New Roman', serif";
-    g.fillText("zqmlabs.com", W / 2, 1190);
-    cv.toBlob(blob => {
-      if (!blob) return;
-      const file = new File([blob], "lantern-keepers.png", { type: "image/png" });
-      if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        navigator.share({ files: [file], title: "We lit every lantern!",
-          text: `${state.team} completed Wisp's Lost Lanterns!` }).catch(() => downloadCard(blob));
-        return;
-      }
-      downloadCard(blob);
-    }, "image/png");
-  } catch (e) { console.error("share card failed:", e); }
+// Share button
+$("btn-share-finale").addEventListener("click", shareTeam);
+
+// Install PWA button
+$("btn-install").addEventListener("click", installPWA);
+
+// Keyboard navigation: Enter to submit, Escape to go back
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && e.target.tagName === "INPUT") {
+    const btn = e.target.parentElement.querySelector("button");
+    if (btn) btn.click();
+  }
+  if (e.key === "Escape") {
+    const active = document.querySelector(".screen.active");
+    if (active && active.id === "screen-puzzle") openMap();
+  }
 });
-function downloadCard(blob) {
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url; a.download = "lantern-keepers.png";
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 5000);
-}
+
+// Touch feedback: haptic on mobile
+document.addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON" && navigator.vibrate) {
+    navigator.vibrate(10);
+  }
+}, { passive: true });
+
+// Offline detection
+window.addEventListener("offline", () => {
+  const el = $("offline-banner");
+  if (el) el.style.display = "block";
+});
+window.addEventListener("online", () => {
+  const el = $("offline-banner");
+  if (el) el.style.display = "none";
+});
+
+// Image lazy loading
+document.querySelectorAll("img").forEach(img => {
+  if (!img.src && img.dataset.src) {
+    img.src = img.dataset.src;
+  }
+});
 
 /* ---------- helpers / backend stubs ---------- */
 function haversine(a, b, c, d) {
@@ -529,32 +966,6 @@ function bearing(a, b, c, d) {
 }
 function compassDir(deg) {
   return ['N','NE','E','SE','S','SW','W','NW'][Math.round(deg / 45) % 8];
-}
-/* Auto-arrival (UX #6): entering a puzzle screen starts a watchPosition; the
-   first fix within 30m confirms arrival and disables the manual button.
-   Watches are always cleared on stop change — an open watch is a battery
-   drain. Geolocation errors just leave the manual button in place. */
-let gpsWatch = null;
-function stopGpsWatch() {
-  if (gpsWatch) { try { navigator.geolocation.clearWatch(gpsWatch); } catch { /* already dead */ }
-    gpsWatch = null; }
-}
-function startGpsWatch(stop) {
-  stopGpsWatch();
-  if (!navigator.geolocation || !stop) return;
-  try {
-    gpsWatch = navigator.geolocation.watchPosition(pos => {
-      const d = haversine(pos.coords.latitude, pos.coords.longitude, stop.lat, stop.lng);
-      if (d <= 30) {
-        stopGpsWatch();
-        const fb = $("feedback");
-        if (fb) fb.textContent = "📍 GPS says you're here! Now solve the puzzle above.";
-        const g = $("btn-gps");
-        if (g) { g.disabled = true; g.textContent = "📍 You're here!"; }
-      }
-    }, () => { /* denied/unavailable — the manual button remains */ },
-      { enableHighAccuracy: false, timeout: 15000, maximumAge: 30000 });
-  } catch { gpsWatch = null; }
 }
 async function validateCode(code) {
   try {
@@ -588,42 +999,17 @@ async function fetchKitBundle(kitId) {
 }
 async function syncProgress(done = false) {
   if (isDemo) return;
-  const payload = { team: state.team, kit: state.kitId, solved: state.solved,
-    hintsUsed: state.hintsUsed, scare: state.scare, finished: done };
   try {
-    const r = await fetch(`${API_BASE}/api/lantern/progress`, {
+    await fetch(`${API_BASE}/api/lantern/progress`, {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload) });
-    if (!r.ok) throw new Error("progress rejected");
-  } catch {
-    // Offline (or backend absent): queue the payload. Progress also lives in
-    // localStorage; the queue retries on reconnect, on load, and every 60s.
-    const q = outboxLoad(); q.push(payload); outboxSave(q);
-  }
+      body: JSON.stringify({ team: state.team, kit: state.kitId, solved: state.solved,
+        hintsUsed: state.hintsUsed, scare: state.scare, finished: done,
+        cleanSolves: state.cleanSolves, stopAttempts: state.stopAttempts,
+        stopTimes: state.stopTimes, arrivedVia: state.arrivedVia }) });
+  } catch { /* offline is fine — progress also lives in localStorage */ }
 }
-/* Progress outbox: failed syncs survive offline stretches and retry. Bounded
-   at 50 entries (oldest dropped) so a long offline run cannot grow
-   localStorage without limit. */
-const OUTBOX_KEY = "lantern-outbox";
-function outboxLoad() { try { return JSON.parse(localStorage.getItem(OUTBOX_KEY) || "[]"); } catch { return []; } }
-function outboxSave(q) { try { localStorage.setItem(OUTBOX_KEY, JSON.stringify(q.slice(-50))); } catch { /* quota — drop oldest */ } }
-async function flushOutbox() {
-  if (isDemo) return;
-  const q = outboxLoad();
-  if (!q.length) return;
-  const rest = [];
-  for (const item of q) {
-    try {
-      const r = await fetch(`${API_BASE}/api/lantern/progress`, {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(item) });
-      if (!r.ok) rest.push(item);
-    } catch { rest.push(item); }
-  }
-  outboxSave(rest);
-}
-window.addEventListener("online", flushOutbox);
-flushOutbox();
-setInterval(flushOutbox, 60000);
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 document.body.dataset.scare = state.scare;
+
+// Initialize global story mode selector
+if (typeof renderStoryModeSelector === "function") renderStoryModeSelector();

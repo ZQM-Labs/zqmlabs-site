@@ -1,51 +1,30 @@
 /* Cache-first app shell so the game plays offline in parks/neighborhoods.
-   BUMP CACHE ON EVERY RELEASE (UX gap #9): a stale version string keeps
-   serving the old build until it changes.
+   Bump CACHE on every release. Map tiles are runtime-cached opportunistically;
+   the QR/code + fallback unlock paths work with zero connectivity.
 
-   Precache: app shell + vendored Leaflet + all art/icons, so the first visit
-   fully equips the game for offline play. OSM map tiles are cross-origin and
-   runtime-cached as fetched — already-visited areas keep their tiles offline.
-
-   The QR/code + fallback unlock paths work with zero connectivity. */
-const CACHE = "lantern-v4"; // bump on every release — stale caches serve old builds
+   NOTE: Leaflet is expected to be vendored locally (see AGENTS.md). If it is
+   still loaded from a CDN, the map will not work offline — the text stop list
+   in app.js is the offline fallback. */
+const CACHE = "lantern-v4";
 const SHELL = [
   "./",
   "./index.html",
   "./app.js",
   "./styles.css",
   "./manifest.webmanifest",
-  // Vendored Leaflet — the map itself works offline (tiles excepted).
-  "./assets/vendor/leaflet.css",
-  "./assets/vendor/leaflet.js",
-  // Game art + PWA icons (downscaled 2026-10-15, ~750KB total).
-  "./assets/wisp-sad-intro.webp",
-  "./assets/wisp-hiding-lantern.webp",
-  "./assets/finale-lantern-parade.webp",
-  "./assets/logo-primary.webp",
-  "./assets/drz-cozy.webp",
-  "./assets/drz-spooky.webp",
-  "./assets/drz-afterdark.webp",
-  "./assets/drz-overdrive.webp",
-  "./assets/icon-192.png",
-  "./assets/icon-512.png",
-  "./assets/icon-maskable-512.png",
-  "./assets/apple-touch-icon.png"
+  "./vendor/leaflet.css",
+  "./vendor/leaflet.js",
 ];
 
 self.addEventListener("install", e => {
-  // Add each file individually (wrapped): unlike caches.addAll, a single
-  // 404 never fails the whole install and blocks the shell.
-  e.waitUntil(
-    caches.open(CACHE).then(c =>
-      Promise.all(SHELL.map(u => c.add(new Request(u, { cache: "reload" })).catch(() => {})))
-    ).then(() => self.skipWaiting())
-  );
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener("activate", e => {
   e.waitUntil(
     caches.keys()
       .then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k))))
+      // Take control of open pages immediately so updates apply without a reload.
       .then(() => self.clients.claim())
   );
 });
@@ -66,10 +45,8 @@ self.addEventListener("fetch", e => {
     caches.match(e.request).then(hit => {
       if (hit) return hit;
       return fetch(e.request).then(res => {
-        // Cache successful responses: same-origin ("basic") AND cross-origin
-        // map tiles ("cors"/"opaque") — OSM tiles must survive offline too.
-        const cacheable = res && (res.type === "basic" || res.type === "cors" || res.type === "opaque");
-        if (cacheable && (res.ok || res.type === "opaque")) {
+        // Only cache successful, same-origin, basic responses.
+        if (res && res.ok && res.type === "basic") {
           const copy = res.clone();
           caches.open(CACHE).then(c => c.put(e.request, copy)).catch(() => {});
         }

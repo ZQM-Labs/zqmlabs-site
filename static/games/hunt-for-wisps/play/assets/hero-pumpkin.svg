@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1a0f2e"/>
+  <circle cx="400" cy="280" r="180" fill="#e07b24"/>
+  <circle cx="400" cy="280" r="160" fill="#f4a460"/>
+  <path d="M320 240 Q400 200 480 240" stroke="#2b2118" stroke-width="8" fill="none"/>
+  <path d="M340 320 Q400 360 460 320" stroke="#2b2118" stroke-width="8" fill="none"/>
+  <rect x="380" y="140" width="40" height="40" fill="#2b2118"/>
+  <text x="400" y="520" text-anchor="middle" font-family="serif" font-size="48" fill="#e07b24">Wisp's Lost Lanterns</text>
+</svg>

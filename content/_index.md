@@ -68,6 +68,14 @@ format, even our playtest results — all public on GitHub.
   — setup checklist, print specs, day-of troubleshooting.
 - **How do we know it works?** Read the [playtest protocol and results](https://github.com/ZQM-Labs/playtests).
 
+## Everything you need 📋
+
+- 🎮 **[Play the games →](/games/)** — three seasonal editions, live now
+- 🧾 **[Pricing →](/pricing/)** — flat fees, no per-team charges
+- 🥼 **[For organizers →](/organizers/)** — the one-hour setup, print specs, troubleshooting
+- 📰 **[Press kit →](/press/)** — company facts, founder bio, brand assets
+- ✉️ **[Contact →](/contact/)** — booking, fundraisers, partnerships
+
 ## Coming soon 🎪
 
 Party rentals — tables, chairs, grills, cornhole, and yard games, delivered

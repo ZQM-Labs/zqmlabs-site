@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Syntax check app.js
+        run: node --check app.js
+
+      - name: Syntax check sw.js
+        run: node --check sw.js
+
+      - name: Verify no hardcoded stop counts
+        run: |
+          if grep -n 'cleanSolves}/6' app.js; then
+            echo "ERROR: hardcoded /6 found in leaderboard. Use pack.stops.length instead."
+            exit 1
+          fi
+
+      - name: Verify teamScore guard
+        run: |
+          if grep -n 'solvedCount || 6' app.js; then
+            echo "ERROR: teamScore guard uses || 6. Should be || 0."
+            exit 1
+          fi
+
+      - name: Check for TODO/FIXME
+        run: |
+          if grep -rn 'TODO\|FIXME' --include='*.js' --include='*.css' --include='*.html' .; then
+            echo "WARNING: TODO/FIXME found. Please resolve before merging."
+            exit 1
+          fi

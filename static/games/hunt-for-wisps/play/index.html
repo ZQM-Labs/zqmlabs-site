@@ -4,19 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wisp's Lost Lanterns — ZQM Labs</title>
-<meta name="description" content="Wisp's Lost Lanterns — a self-guided location scavenger hunt by Z's Quests & Mischief (ZQM Labs). Find six lanterns, solve the puzzles, light the parade.">
-<meta name="theme-color" content="#e07b24">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Wisp Hunt">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/vendor/leaflet.css">
+<link rel="stylesheet" href="vendor/leaflet.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-scare="cozy">
+<div id="offline-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#e07b24;color:#fff;text-align:center;padding:8px;font-weight:600;z-index:9999">📡 You're offline — progress saves on this device</div>
+<div id="achievements-toast"></div>
 <main id="app">
+  <div id="lang-switcher" class="lang-switcher"></div>
+  <div id="story-mode-selector" class="mode-selector"></div>
+  <div id="global-leaderboard" class="global-leaderboard card" style="display:none">
+    <h3>🌍 Global Leaderboard</h3>
+    <div id="global-leaderboard-list"></div>
+  </div>
+  <div id="community-discovery" class="community-discovery card" style="display:none">
+    <h3>🌐 Communities Near You</h3>
+    <div id="community-list"></div>
+  </div>
   <!-- START -->
   <section id="screen-start" class="screen active">
     <img class="brand-logo" src="assets/logo-primary.webp" alt="Z's Quests &amp; Mischief Halloween banner: Mad Z, the manic mad scientist with white electric hair, round glasses, neck bolts and lab coat, holding up a glowing paper lantern over the Z'S QUESTS &amp; MISCHIEF ribbon">
@@ -45,9 +50,9 @@
 
   <!-- MAP -->
   <section id="screen-map" class="screen">
+    <div id="hunt-clock" class="hunt-clock">⏱ 0:00</div>
     <div id="map"></div>
     <div id="wisp-meter" class="card"></div>
-    <div id="hunt-clock" class="card" aria-live="off"></div>
     <div class="card"><strong>🏺 Relics collected</strong><div id="relics"></div></div>
     <div id="next-stop" class="card"></div>
   </section>
@@ -83,12 +88,19 @@
     <p class="wisp-speech">"You did it! Every lantern is lit and I can see the whole way home! You're my favorite Keepers ever — don't tell the other Keepers. There are no other Keepers. You're still my favorite!" — <em>Wisp</em></p>
     <p class="lab-note">📜 <strong>Lab note:</strong> Experiment complete. Six of six lanterns recovered, zero Keepers lost to the graveyard (the pretend one). Wisp has been returned to her jar, where she is already plotting. Same time next year. — <em>Dr. Z</em></p>
     <p id="finale-stats"></p>
+    <div id="leaderboard" class="card" style="display:none">
+      <h3>🏆 Leaderboard</h3>
+      <div id="leaderboard-list"></div>
+    </div>
     <p>📸 Take your team photo, then show this screen at the finale table for your badge &amp; treat.</p>
-    <button id="btn-share" type="button">📸 Save / share your team card</button>
-    <button id="btn-restart">Play again</button>
+    <div class="finale-actions">
+      <button id="btn-share-finale" style="display:none">📤 Share your result</button>
+      <button id="btn-install" style="display:none">📱 Install app</button>
+      <button id="btn-restart">Play again</button>
+    </div>
   </section>
 </main>
-<script src="assets/vendor/leaflet.js"></script>
+<script src="vendor/leaflet.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

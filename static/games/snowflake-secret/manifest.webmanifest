@@ -1,0 +1,17 @@
+{
+  "name": "Z's Quests & Mischief \u2014 ZQM Labs",
+  "short_name": "Quests",
+  "description": "Self-guided location scavenger hunts for communities and groups.",
+  "start_url": "./?demo=1",
+  "display": "standalone",
+  "background_color": "#fff7ea",
+  "theme_color": "#e07b24",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

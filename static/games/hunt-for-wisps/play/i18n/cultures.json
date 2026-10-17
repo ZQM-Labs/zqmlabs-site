@@ -1,0 +1,110 @@
+{
+  "east_asian": {
+    "name": "East Asian",
+    "regions": ["China", "Japan", "Korea", "Taiwan", "Singapore"],
+    "hook": "The lantern is a symbol of hope, reunion, and the guidance of ancestors.",
+    "story_elements": ["ancestor guidance", "family reunion", "wish making"],
+    "visual_style": "Elegant, minimal, nature-focused",
+    "character_tweaks": {
+      "wisp": "Wisp is a gentle spirit who guides the lost home.",
+      "drz": "Dr. Z is an eccentric inventor, not mad but passionate.",
+      "professor_hoot": "Professor Hoot is a wise elder, not just an owl."
+    },
+    "themes": ["reunion", "ancestor_guidance", "wish_making"],
+    "colors": {
+      "primary": "#e07b24",
+      "secondary": "#ffd700",
+      "accent": "#c0392b"
+    }
+  },
+  "south_asian": {
+    "name": "South Asian",
+    "regions": ["India", "Sri Lanka", "Nepal", "Bangladesh", "Pakistan"],
+    "hook": "The festival of lights celebrates the victory of light over darkness, good over evil.",
+    "story_elements": ["victory celebration", "lamp lighting", "sweet sharing"],
+    "visual_style": "Colorful, ornate, celebratory",
+    "character_tweaks": {
+      "wisp": "Wisp is a gentle flame spirit who brings blessings.",
+      "drz": "Dr. Z is a brilliant scientist with a heart of gold.",
+      "professor_hoot": "Professor Hoot is a wise sage in owl form."
+    },
+    "themes": ["victory_of_light", "celebration", "blessing"],
+    "colors": {
+      "primary": "#e07b24",
+      "secondary": "#ffd700",
+      "accent": "#27ae60"
+    }
+  },
+  "western": {
+    "name": "Western",
+    "regions": ["USA", "UK", "Canada", "Australia", "Western Europe"],
+    "hook": "On the longest night, when shadows are deepest, light is most precious.",
+    "story_elements": ["spooky atmosphere", "costume fun", "candy reward"],
+    "visual_style": "Spooky, playful, seasonal",
+    "character_tweaks": {
+      "wisp": "Wisp is a mischievous trickster spirit.",
+      "drz": "Dr. Z is a mad scientist with a heart of gold.",
+      "professor_hoot": "Professor Hoot is a mysterious owl guardian."
+    },
+    "themes": ["light_vs_darkness", "spooky_fun", "seasonal_celebration"],
+    "colors": {
+      "primary": "#e07b24",
+      "secondary": "#9b59b6",
+      "accent": "#2c3e50"
+    }
+  },
+  "latin_american": {
+    "name": "Latin American",
+    "regions": ["Mexico", "Brazil", "Argentina", "Colombia", "Peru"],
+    "hook": "The lanterns guide the spirits home during the celebration of life and memory.",
+    "story_elements": ["spirit guidance", "family remembrance", "celebration"],
+    "visual_style": "Vibrant, colorful, family-oriented",
+    "character_tweaks": {
+      "wisp": "Wisp is a playful spirit who loves celebrations.",
+      "drz": "Dr. Z is a passionate inventor with big dreams.",
+      "professor_hoot": "Professor Hoot is a wise family elder."
+    },
+    "themes": ["spirit_guidance", "family_reunion", "celebration_of_life"],
+    "colors": {
+      "primary": "#e07b24",
+      "secondary": "#ffd700",
+      "accent": "#e74c3c"
+    }
+  },
+  "middle_eastern": {
+    "name": "Middle Eastern",
+    "regions": ["Turkey", "Iran", "UAE", "Saudi Arabia", "Egypt"],
+    "hook": "The lantern is a symbol of guidance, hope, and the light of knowledge.",
+    "story_elements": ["guidance seeking", "wisdom pursuit", "light of knowledge"],
+    "visual_style": "Geometric, ornate, mysterious",
+    "character_tweaks": {
+      "wisp": "Wisp is a guiding light for the lost.",
+      "drz": "Dr. Z is a brilliant scholar with eccentric habits.",
+      "professor_hoot": "Professor Hoot is a keeper of ancient wisdom."
+    },
+    "themes": ["guidance", "wisdom", "light_of_knowledge"],
+    "colors": {
+      "primary": "#e07b24",
+      "secondary": "#ffd700",
+      "accent": "#8e44ad"
+    }
+  },
+  "african": {
+    "name": "African",
+    "regions": ["Nigeria", "Kenya", "South Africa", "Ghana", "Ethiopia"],
+    "hook": "The lantern carries the wisdom of ancestors and the light of community.",
+    "story_elements": ["ancestor wisdom", "community gathering", "light of unity"],
+    "visual_style": "Bold, patterned, community-focused",
+    "character_tweaks": {
+      "wisp": "Wisp is an ancestral spirit who guides the community.",
+      "drz": "Dr. Z is a brilliant innovator for the community.",
+      "professor_hoot": "Professor Hoot is the village elder in spirit form."
+    },
+    "themes": ["ancestor_wisdom", "community", "unity"],
+    "colors": {
+      "primary": "#e07b24",
+      "secondary": "#ffd700",
+      "accent": "#27ae60"
+    }
+  }
+}

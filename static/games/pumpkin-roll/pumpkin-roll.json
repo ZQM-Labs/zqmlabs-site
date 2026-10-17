@@ -1,0 +1,150 @@
+{
+  "title": "The Great Pumpkin Roll",
+  "kit": "PUMPKIN-ROLL",
+  "stops": [
+    {
+      "id": 1,
+      "name": "The Starting Gate",
+      "lat": 29.0258,
+      "lng": -80.9270,
+      "code": "PUMPKIN-1",
+      "art": "stop-1-gate.webp",
+      "story": {
+        "cozy": "The Great Pumpkin Roll begins! Farmer Joe's pumpkins have escaped the patch and rolled all over town. Your team must find them all and roll them back home before the festival starts.",
+        "spooky": "The pumpkins didn't roll — they were pushed. Something in the patch wanted them gone. Find them before whatever pushed them decides to push you too.",
+        "afterdark": "Every year, the pumpkins roll themselves. Every year, someone forgets to ask why. This year, you're asking. This year, you're finding out.",
+        "overdrive": "FARMER JOE'S PUMPKINS HAVE ESCAPED AND THE FESTIVAL STARTS IN 60 MINUTES. ROLL THEM BACK. NOW. FULL PUMPKIN MADNESS."
+      },
+      "wisp": "The pumpkins are round and orange and they ROLL! Let's catch them!",
+      "lit": "Got it! That pumpkin is officially on its way home.",
+      "puzzle": {
+        "cozy": { "q": "How many pumpkins are painted on the starting gate sign?", "a": "3", "type": "number" },
+        "spooky": { "q": "I roll without legs, I'm orange and round, I'm not a ball but I'm often found on Halloween night. What am I?", "a": "pumpkin", "type": "text" },
+        "afterdark": { "q": "The gate has a number. It's the year the festival started. Count the digits.", "a": "4", "type": "number" },
+        "overdrive": { "q": "There are 3 pumpkins on the sign. Each pumpkin has 4 letters in its name. Multiply them.", "a": "12", "type": "number" }
+      },
+      "fallback": { "q": "What color are pumpkins?", "a": "orange" },
+      "hints": ["Look at the sign — it has pumpkins on it.", "Count them slowly, one by one.", "Ranger assist: there are 3 pumpkins on the sign."]
+    },
+    {
+      "id": 2,
+      "name": "The Rolling Hill",
+      "lat": 29.0262,
+      "lng": -80.9264,
+      "code": "PUMPKIN-2",
+      "art": "stop-2-hill.webp",
+      "story": {
+        "cozy": "This is where the pumpkins love to roll! The hill is gentle and the grass is soft. A pumpkin must have stopped here to rest.",
+        "spooky": "The hill is steep, and the grass is flattened in a spiral pattern. Something rolled here — but it wasn't just a pumpkin. It was being chased.",
+        "afterdark": "Locals say that on quiet nights, you can hear the pumpkins rolling down this hill by themselves. A soft thump-thump-thump in the dark.",
+        "overdrive": "THE HILL IS WHERE THE PUMPKINS GAIN SPEED. FIND THE ONE THAT STOPPED. IT'S THE KEY TO THE REST."
+      },
+      "wisp": "Wheee! Pumpkins love rolling down hills! Let's find this one!",
+      "lit": "That pumpkin is officially dizzy. Good catch!",
+      "puzzle": {
+        "cozy": { "q": "How many steps lead up to the top of the hill?", "a": "5", "type": "number" },
+        "spooky": { "q": "I go up and down but never move. I have steps but no feet. What am I?", "a": "stairs", "type": "text" },
+        "afterdark": { "q": "The hill has a sign with a number. It's the height in feet. Add the digits.", "a": "7", "type": "number" },
+        "overdrive": { "q": "There are 5 steps. Each step is 2 feet tall. What's the total height?", "a": "10", "type": "number" }
+      },
+      "fallback": { "q": "What shape is a pumpkin?", "a": "round" },
+      "hints": ["Count the steps carefully.", "Look for a sign with a number.", "Ranger assist: there are 5 steps."]
+    },
+    {
+      "id": 3,
+      "name": "The Covered Bridge",
+      "lat": 29.0266,
+      "lng": -80.9258,
+      "code": "PUMPKIN-3",
+      "art": "stop-3-bridge.webp",
+      "story": {
+        "cozy": "The covered bridge is a favorite pumpkin hiding spot. It's cool and dark inside, and pumpkins love to nap there. Check under the benches!",
+        "spooky": "The bridge creaks even when there's no wind. The wooden beams are carved with symbols — protection symbols. Protection from what?",
+        "afterdark": "The bridge was built in 1887. The carvings on the beams are older. Much older. They're not decorations. They're warnings.",
+        "overdrive": "THE BRIDGE IS THE HALFWAY POINT. FIND THE PUMPKIN. THE FESTIVAL DEPENDS ON IT."
+      },
+      "wisp": "Bridges are great for pumpkin naps! Shhh, don't wake this one!",
+      "lit": "That pumpkin is officially bridge-approved!",
+      "puzzle": {
+        "cozy": { "q": "How many benches are inside the covered bridge?", "a": "2", "type": "number" },
+        "spooky": { "q": "I have a roof but no walls, I have benches but no people, I cross over but never move. What am I?", "a": "bridge", "type": "text" },
+        "afterdark": { "q": "The bridge was built in 1887. Add the digits of the year.", "a": "24", "type": "number" },
+        "overdrive": { "q": "There are 2 benches. Each bench has 4 legs. How many legs total?", "a": "8", "type": "number" }
+      },
+      "fallback": { "q": "What is a bridge made of?", "a": "wood" },
+      "hints": ["Look inside the bridge.", "Count the benches.", "Ranger assist: there are 2 benches."]
+    },
+    {
+      "id": 4,
+      "name": "The Old Windmill",
+      "lat": 29.0270,
+      "lng": -80.9252,
+      "code": "PUMPKIN-4",
+      "art": "stop-4-windmill.webp",
+      "story": {
+        "cozy": "The old windmill has been here for a hundred years. Its blades turn slowly in the breeze. A pumpkin must have gotten stuck in the gears!",
+        "spooky": "The windmill turns even when there's no wind. The gears grind and creak. Something is caught in the mechanism — something round and orange.",
+        "afterdark": "The windmill hasn't worked in decades, but the blades still turn. At night, they cast shadows that look like reaching hands.",
+        "overdrive": "THE WINDMILL IS WHERE THE PUMPKINS GET LOST. FIND IT. FIX IT. MOVE ON."
+      },
+      "wisp": "Windmills are so tall! Maybe the pumpkin is up there!",
+      "lit": "That pumpkin is officially windmill-certified!",
+      "puzzle": {
+        "cozy": { "q": "How many blades does the windmill have?", "a": "4", "type": "number" },
+        "spooky": { "q": "I have blades but I'm not a fan, I have a tail but I'm not a kite, I turn in the wind but I'm not a weathervane. What am I?", "a": "windmill", "type": "text" },
+        "afterdark": { "q": "The windmill has 4 blades. Each blade is 12 feet long. What's the total length?", "a": "48", "type": "number" },
+        "overdrive": { "q": "There are 4 blades. Each blade has 3 sections. How many sections total?", "a": "12", "type": "number" }
+      },
+      "fallback": { "q": "What makes a windmill turn?", "a": "wind" },
+      "hints": ["Look up at the windmill.", "Count the blades.", "Ranger assist: there are 4 blades."]
+    },
+    {
+      "id": 5,
+      "name": "The Festival Grounds",
+      "lat": 29.0274,
+      "lng": -80.9246,
+      "code": "PUMPKIN-5",
+      "art": "stop-5-festival.webp",
+      "story": {
+        "cozy": "The festival grounds are where the Great Pumpkin Roll ends! There's music, games, and pumpkin pie. A pumpkin must be hiding among the decorations.",
+        "spooky": "The festival grounds are empty now, but in a few hours they'll be full of people. The pumpkins know this. They're hiding, waiting for the crowds to arrive.",
+        "afterdark": "The festival grounds have seen a hundred years of celebrations. The pumpkins remember every one. They're hiding in the oldest spot — the oak tree.",
+        "overdrive": "THE FESTIVAL GROUNDS ARE THE SECOND-TO-LAST STOP. FIND THE PUMPKIN. THE FINISH LINE IS NEAR."
+      },
+      "wisp": "The festival is so much fun! Let's find this pumpkin before the party starts!",
+      "lit": "That pumpkin is officially festival-ready!",
+      "puzzle": {
+        "cozy": { "q": "How many festival flags are flying?", "a": "6", "type": "number" },
+        "spooky": { "q": "I fly but I'm not a bird, I have colors but I'm not a rainbow, I'm on a pole but I'm not a flagpole. What am I?", "a": "flag", "type": "text" },
+        "afterdark": { "q": "There are 6 flags. Each flag has 3 colors. How many colors total?", "a": "18", "type": "number" },
+        "overdrive": { "q": "There are 6 flags. Each flag is 2 feet wide. What's the total width?", "a": "12", "type": "number" }
+      },
+      "fallback": { "q": "What do people eat at pumpkin festivals?", "a": "pie" },
+      "hints": ["Look around the festival grounds.", "Count the flags.", "Ranger assist: there are 6 flags."]
+    },
+    {
+      "id": 6,
+      "name": "The Finish Line",
+      "lat": 29.0278,
+      "lng": -80.9240,
+      "code": "PUMPKIN-6",
+      "art": "stop-6-finish.webp",
+      "story": {
+        "cozy": "The finish line! All the pumpkins are back home, and the festival can begin. You did it, Pumpkin Rollers! Time to celebrate!",
+        "spooky": "The finish line is where the pumpkins gather. All six, all home, all safe. But wait — there's a seventh shadow. It's been following you the whole time.",
+        "afterdark": "The finish line is where the journey ends and the celebration begins. The pumpkins are home, the festival is ready, and you did it. You found them all.",
+        "overdrive": "FINISH LINE. ALL PUMPKINS FOUND. FESTIVAL TIME. YOU ARE OFFICIALLY PUMPKIN ROLL CHAMPIONS."
+      },
+      "wisp": "We did it! All the pumpkins are home! You're the best Pumpkin Rollers ever!",
+      "lit": "IT'S A PUMPKIN ROLL VICTORY! Time to celebrate!",
+      "puzzle": {
+        "cozy": { "q": "How many pumpkins did you find in total?", "a": "6", "type": "number" },
+        "spooky": { "q": "I'm the end of the journey, the start of the celebration, where pumpkins gather and teams cheer. What am I?", "a": "finish line", "type": "text" },
+        "afterdark": { "q": "You found 6 pumpkins. Each pumpkin took 10 minutes to find. How many minutes total?", "a": "60", "type": "number" },
+        "overdrive": { "q": "FINAL CHALLENGE: 6 pumpkins, each took 10 minutes. Total time? Add the digits.", "a": "6", "type": "number" }
+      },
+      "fallback": { "q": "What do you cross at the end of a race?", "a": "finish line" },
+      "hints": ["Count all the pumpkins you found.", "Think about the whole journey.", "Ranger assist: you found 6 pumpkins."]
+    }
+  ]
+}
