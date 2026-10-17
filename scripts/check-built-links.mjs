@@ -52,7 +52,7 @@ walk(root);
 
 const failures = [];
 let checked = 0;
-const attributePattern = /\\b(?:href|src|action|poster)\\s*=\\s*(?:"([^"]*)"|'([^']*)')/gi;
+const attributePattern = /\b(?:href|src|action|poster)\s*=\s*(?:"([^"]*)"|'([^']*)')/gi;
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
@@ -62,7 +62,7 @@ for (const file of htmlFiles) {
 
     let pathname;
     try {
-      if (/^https?:\\/\\//i.test(raw)) {
+      if (/^https?:\/\//i.test(raw)) {
         const url = new URL(raw);
         if (url.origin !== siteOrigin && url.origin !== siteOrigin.replace("https:", "http:")) continue;
         pathname = url.pathname;
