@@ -1,31 +1,36 @@
 ---
 title: "Games"
-description: "Explore community-centered games from ZQM Labs."
+description: "Explore community-centered games from ZQM Labs, with clear availability labels."
 ---
 
 <!-- markdownlint-disable MD013 -->
 
-ZQM Labs creates story-driven, community-centered games for people who want to play together. This directory is designed to grow as more titles become ready for public play.
+ZQM Labs creates story-driven, community-centered games for people who want to play together. Each listing identifies what is available today versus what is still being tested or built.
 
-## Available now
+## Demo — playable in your browser
 
 ### Wisp's Lost Lanterns
 
-Halloween scavenger hunt · Current featured game
+Halloween scavenger hunt · Featured game
 
 Wisp has hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided story experience with four selectable scare levels.
 
 - [Play the browser demo](/games/hunt-for-wisps/)
 - [Halloween event details](/halloween/)
-- [Hosting tiers](/tiers/)
+- [Paid hosting options and current tiers](/tiers/)
 
-The current event activation is in Volusia County, Florida, October 30 – November 1, 2026. A public demo does not mean in-person event delivery is available in every region; confirm local support and logistics before planning an event.
+**What the demo means:** you can try the browser-based player. It is separate from purchasing hosted event delivery, organizer support, or a locally coordinated event. The browser demo does not reserve a venue, provide physical signage, grant site permissions, or confirm local event support.
 
-## More adventures are welcome
+The current event activation is in Volusia County, Florida, October 30 – November 1, 2026. Confirm current logistics and support before planning an in-person event.
 
-This directory can feature games with different stories, themes, formats, and ways to play. New titles will be added when they have a public description and a clearly identified status, such as **playable**, **demo**, **playtest**, or **in development**.
+## Other game statuses
 
-We will not list placeholder titles as released games or imply that planned features are already live. Community feedback and playtesting will help shape what comes next.
+- **Playable:** a public game intended for regular play, with its access and requirements stated on its page.
+- **Demo:** a limited or sample experience intended to let visitors try the game.
+- **Playtest:** an experience open for structured feedback; availability, stability, and content may change.
+- **In development:** work in progress that is not represented as ready to play.
+
+No additional titles are listed here as available until there is a verified public page and a clear status. This avoids presenting plans or repository activity as a released game.
 
 ## Play, create, contribute
 
