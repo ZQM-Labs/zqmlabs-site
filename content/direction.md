@@ -47,7 +47,7 @@ We will update public status when evidence changes, not simply when a page or fe
 
 ## Our relationship with ZQM Computing
 
-ZQM Computing is our distinct geospatial engineering portfolio. It develops practical geospatial patterns and tools that may support location-based experiences. ZQM Labs focuses on games and community participation. We link to public technical resources where useful, while keeping internal Project Volusia research systems private.
+ZQM Computing is our distinct geospatial engineering portfolio. It develops practical geospatial patterns and tools that may support location-based experiences. ZQM Labs focuses on games and community participation. We link to public technical resources where useful, while keeping internal research systems and non-public data private.
 
 ## Accountability
 
