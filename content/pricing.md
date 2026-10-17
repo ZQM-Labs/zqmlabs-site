@@ -1,67 +1,54 @@
 ---
 title: "Pricing — flat fees, no surprises"
-description: "ZQM Labs pricing: Family Night $49, Community $199, Office Party $349–$499. Fundraiser split available. No per-team fees, no setup charges."
+description: "Published ZQM Labs hosting tiers for Wisp's Lost Lanterns. Confirm availability, package details, and booking terms before committing to an event."
 ---
 
-## Flat pricing, one-time
+## Published hosting tiers
 
-Every tier is a **one-time flat fee** for your event window. No subscriptions,
-no per-player charges, no setup fees.
+The following are the published price points for Wisp's Lost Lanterns. Confirm the event date, service area, package scope, and current terms with the Lab before treating an event as booked.
 
-| Tier | Price | Who it's for | Families |
-|---|---|---|---|
-| 🏠 **Family Night** | **$49** | One household, one yard or block | 1 |
-| 🏘️ **Community** | **$199** | HOAs, neighborhoods, PTAs, churches | Unlimited |
-| 🏢 **Office Party** | **$349–$499** | Company teams, departments | Sized on booking |
-| 🧭 **Youth Groups** | Waitlist | Scouts, church youth, school clubs | Group-sized |
-| 🎉 **Form-Your-Own** | Quoted | Birthdays, crews, sports teams | Your call |
+| Tier | Published price | Intended for | Scope |
+|---|---:|---|---|
+| 🏠 **Family Night** | **$49** | One household | One household |
+| 🏘️ **Community** | **$199** | HOAs, neighborhoods, PTAs, churches | Confirm event capacity and terms |
+| 🏢 **Office Party** | **$349–$499** | Company teams and departments | Scope confirmed during booking |
+| 🧭 **Youth Groups** | Waitlist | Scouts, church youth, school clubs | Availability not confirmed |
+| 🎉 **Form-Your-Own** | Quoted | Birthdays, crews, sports teams | Scope quoted individually |
+
+These prices are published offers, not confirmation that a particular date, location, or package is available.
 
 ## Fundraiser option
 
-Run your Community kit as a fundraiser: **families pay $15, your community
-keeps $5 of every sale**. You set the price above $15 if you like — the split
-is fixed, the upside is yours.
+A proposed fundraiser arrangement is **$15 per family, with $5 per sale retained by the community**. Confirm eligibility, collection and remittance responsibilities, final pricing, and written terms with the Lab before advertising a fundraiser or collecting money.
 
-## What's included in every tier
+## Package details to confirm
 
-- 6-stop quest, fully playable in a phone browser
-- Printable QR signs for all 6 stops
+Before booking, confirm which of the following are included in the specific package and player build:
+
+- Six-stop quest and browser access
+- Printable QR signs and organizer guide
 - Team access codes
-- One-page organizer guide
 - Printable finisher badges
-- All four scare levels (Cozy / Spooky / After Dark / Overdrive)
-- Three hints at every stop
-- Live leaderboard
-- Remote support through your event window
-- Multi-language UI (8 languages)
+- Available scare levels and hint behavior
+- Leaderboard availability and operating requirements
+- Supported interface languages and translation completeness
+- Support channel and support hours during the event
 
-## What's not included
+Printing, venue permissions, physical props, and candy are not assumed to be included. The organizer is responsible for confirming venue permission and assessing route safety and accessibility.
 
-- Printing (you print 7 pages; card stock recommended)
-- Venue or permits (your space, your rules)
-- Physical props or candy (organizer's choice)
+## Multiple events
 
-## Volume and repeat business
-
-Running multiple communities, a school district, or a recurring office event?
-Email the Lab with your scope — multi-kit bookings are quoted flat and fast,
-and repeat organizers get priority scheduling.
+For multiple communities, a school district, or recurring office events, contact the Lab with the proposed scope and dates. Any volume pricing, repeat-booking priority, or additional services must be confirmed in writing.
 
 ## Seasonal editions
 
-The engine is seasonal: Halloween, Autumn Festival, and Winter editions are
-live now, with Spring and Summer editions in development. Book a tier once and
-re-run it with a new seasonal skin.
+Wisp's Lost Lanterns is the featured Halloween experience. Other seasonal concepts should be treated as in development unless their individual game pages explicitly identify a verified playable release and booking availability. A shared game engine or visual theme does not by itself establish that a seasonal edition is ready to deliver.
 
-## Payment
+## Booking and payment
 
-Invoiced on booking. Payment rails and terms are confirmed by email when your
-kit is scheduled.
+Contact the Lab to confirm the event date, location, package contents, availability, and payment process. A message or inquiry is **not** a confirmed booking. Do not advertise an event as booked until you receive written confirmation and complete the stated booking requirements.
 
-## Book
-
-Email **<zqmcomputing@gmail.com>** with your community or company name, your
-dates, and the tier you're eyeing. The Lab replies within a day.
+**Contact:** <zqmcomputing@gmail.com>
 
 - [Full tier descriptions →](/tiers/)
 - [Organizer details →](/organizers/)
