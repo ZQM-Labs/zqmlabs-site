@@ -1,45 +1,52 @@
 ---
-title: "Tiers — one game, themed for your group"
-description: "Family nights at $49 flat, community kits at $199 flat (or a fundraiser split), office parties at $349–$499, youth groups and custom events on the waitlist. One engine, your scare level."
+title: "Hosting Tiers — Wisp's Lost Lanterns"
+description: "Current hosting options for Wisp's Lost Lanterns, ZQM Labs' featured Halloween scavenger hunt."
 ---
 
-## 🏠 Family Night — $49 flat (one household)
+<!-- markdownlint-disable MD013 -->
 
-One family, one yard (or one block), one great night. The full
-6-stop quest — printable signs, puzzles for ages 5 to 75, three hints
-at every stop so nobody gets stuck. Play anytime during your week.
-Perfect for Halloween night itself, a birthday, or just because.
+These packages describe the current **Wisp's Lost Lanterns** Halloween experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
-## 🏘️ Community — $199 flat (unlimited families)
+## 🏠 Family Night — $49 flat
 
-For HOAs, neighborhoods, PTAs, churches. Wisp's Lost Lanterns, Cozy Glow by
-default. Or run it as a **fundraiser**: families pay $15, your community
-keeps $5 of every sale.
+For one household playing together. The current package is described as a six-stop quest with printable signs, puzzles, and hints. Confirm the current kit contents and play window with the Lab before booking.
+
+## 🏘️ Community — $199 flat
+
+For a neighborhood, HOA, PTA, church, or other community group. The current offer is priced for unlimited families. Fundraising arrangements may be available for qualifying events; confirm the current terms before promoting a fundraiser.
 
 ## 🏢 Office Party — $349–$499
 
-A haunted-break-room mystery built for coworkers: departments race a live
-leaderboard, Spooky by default, After Dark if your crew is brave. Zero
-planning meetings — the party plans itself.
+A team-building format for coworkers. Confirm the current scope, group size, mechanics, and availability with the Lab before booking.
 
-## 🧭 Youth Groups — waitlist open
+## 🧭 Youth Groups and 🎉 Form-Your-Own
 
-Scouts, church youth, school clubs. Cozy/Spooky only, supervised play, and a
-finisher badge kids actually keep. Join the list for the Christmas edition.
+Ask the Lab about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed.
 
-## 🎉 Form-Your-Own — tell us what you're celebrating
+## What to confirm before booking
 
-Birthdays, friend crews, sports teams. Pick a scare level, we skin the game
-to your group. Flat fee, quoted fast.
+Availability and delivery depend on the current game, event window, venue, organizer setup, and support capacity. Before announcing an event, confirm:
 
-Every tier: same proven 6-stop engine, your space, your window, our game.
-Email **<zqmcomputing@gmail.com>** to book.
+- The exact kit and materials included.
+- The price and any fundraising terms.
+- The event window and organizer responsibilities.
+- Accessibility, safety, route, and weather arrangements.
+- What support is available and how to reach it.
+- Whether the Lab can support the requested location.
 
-## 🔍 See a full kit's guts
+The current local activation is in Volusia County, Florida, October 30–November 1, 2026. A digital demo being accessible online does not mean that in-person event delivery is available worldwide.
 
-Curious what your money actually buys? We publish the whole system — the
-[Lab Assistant's Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
-(setup checklist, print specs, day-of troubleshooting), how quests get
-[authored and validated](https://github.com/ZQM-Labs/quest-authoring), and the
-[playtest results](https://github.com/ZQM-Labs/playtests) behind every claim
-on this page. No secret sauce.
+## Explore the open resources
+
+The Lab publishes supporting materials for people who want to understand or help improve the current system:
+
+- [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
+- [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring)
+- [Quest Packs](https://github.com/ZQM-Labs/quest-packs)
+- [Playtest process](https://github.com/ZQM-Labs/playtests)
+
+For a different kind of game or a general introduction to the studio, visit the [Games directory](/games/) or [About the Lab](/about/).
+
+## Contact
+
+To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Wait for confirmation before advertising an event as booked.

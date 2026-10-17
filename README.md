@@ -1,79 +1,42 @@
-# zqmlabs.com — ZQM Labs public website
+# ZQM Labs website source
 
-The public website for **ZQM Labs — Z's Quests & Mischief**:
-self-guided, location-based scavenger-hunt games for communities,
-schools, and offices in Volusia County, Florida.
-*Games, gear & a little mischief.*
+This repository contains the canonical public website content and Hugo source
+for **ZQM Labs — Z's Quests & Mischief**.
 
-## Who this is for
+ZQM Labs is a community-centered game studio. **Wisp's Lost Lanterns** is the
+current featured Halloween experience; the site is structured to support
+additional games as they become ready for public play.
 
-- **Communities** — HOAs, neighborhoods, PTAs, churches looking
-  for family-friendly activities
-- **Schools** — teachers and administrators organizing events
-- **Offices** — teams wanting a fun, zero-planning team-building activity
-- **Game developers** — anyone building location-based games
+## Production and validation
 
-## What's inside
+The production website is published through the Cloudflare Pages deployment
+pipeline. This repository runs CI to validate the shared marketing pages,
+fetch the canonical player app, verify script order and offline precache
+assets, and build the Hugo site. It does not publish a second competing
+GitHub Pages deployment.
 
-- Home page with game overview and booking CTA
-- Free playable demo: `/games/hunt-for-wisps/`
-- Halloween event details and pricing
-- Tier comparison (Community, Office, Youth, Custom)
-- About the Lab and Dr. Z
-- FAQ covering kits, pricing, safety, rain plans
+The public copy describes current availability honestly: a global audience
+and community-centered design do not imply that every game, language, event
+kit, or in-person service is available worldwide.
 
-## Quick start
+## Build locally
 
 ```sh
-# Build locally
 hugo --gc --minify
-
-# Serve
 hugo server -D
 ```
 
-## Game tiers
+To refresh the bundled player before a local build:
 
-| Tier | Price | Best for |
-|---|---|---|
-| Community | $199 flat | HOAs, neighborhoods, PTAs |
-| Office Party | $349-499 | Team building |
-| Youth Groups | Waitlist | Scouts, schools |
-| Custom | Quote | Birthdays, special events |
+```sh
+bash scripts/sync-player.sh main
+```
 
-## Tech stack
+## Main pages
 
-- **Hugo** (Apache-2.0) — static site generator
-- **GitHub Pages** — hosting
-- **Custom CSS** — no framework
-
-## Related repositories
-
-- [ZQM Labs org](https://github.com/ZQM-Labs) — games, gear & a little mischief
-- [zqm-labs][zcl] — games monorepo (player PWA, PocketBase, Twine)
-- [ZQM Computing][zcg] — geospatial arm of ZQM Labs (15 pattern repos)
-- [geospatial-patterns][gp] — umbrella index
-
-[zcl]: https://github.com/ZQM-Computing/zqm-labs
-[zcg]: https://github.com/ZQM-Computing
-[gp]: https://github.com/ZQM-Computing/geospatial-patterns
-
-## License
-
-MIT — see LICENSE file.
-
-## More from ZQM Labs
-
-- [quest-packs][qp] — edition catalog + free sample quest
-- [organizer-toolkit][otk] — setup checklists, print specs, FAQ
-- [quest-authoring][qa] — quest-pack spec, guide, and validator
-- [playtests][pt] — playtest protocol and results
-
-[qp]: https://github.com/ZQM-Labs/quest-packs
-[otk]: https://github.com/ZQM-Labs/organizer-toolkit
-[qa]: https://github.com/ZQM-Labs/quest-authoring
-[pt]: https://github.com/ZQM-Labs/playtests
-
-Contact: <zqmcomputing@gmail.com>
-
-*Play more. Plan less.* -> [zqmlabs.com](https://zqmlabs.com)
+- Home: current featured game and studio overview
+- Games: the growing collection of experiences
+- Community: playtesting, feedback, and participation
+- Halloween: the current Halloween game category
+- Host a Game: current Wisp's Lost Lanterns hosting options
+- About and FAQ: studio and availability details

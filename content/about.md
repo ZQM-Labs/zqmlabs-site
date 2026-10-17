@@ -1,74 +1,59 @@
 ---
-title: "About the Lab"
-description: "ZQM Labs is Z's Quests & Mischief: a one-scientist game laboratory in New Smyrna Beach, Florida, building scavenger-hunt games for communities — and, soon, the party gear to go with them."
+title: "About ZQM Labs"
+description: "Meet ZQM Labs, the creative home for story-driven, community-centered games led by Dr. Z."
 ---
 
-## The short version
+## A game laboratory built around shared play
 
-**ZQM Labs** is the laboratory. **Z's Quests & Mischief** is what comes out
-of it: self-guided scavenger-hunt games for communities, offices, and
-groups across Volusia County, Florida — with party rentals (tables, chairs,
-grills, cornhole, yard games) warming up in the next chamber.
+**ZQM Labs** is the studio behind **Z's Quests & Mischief**: story-driven games designed to bring people together. Our current featured experience is *Wisp's Lost Lanterns*, a Halloween scavenger hunt. The Lab's wider purpose is to create room for more games, stories, and ways for communities to play together.
 
-**Games, gear & a little mischief.** That's the whole business plan, and
-it's working.
+The current game began with a local activation in Volusia County, Florida. That is where this experience is being introduced—not a limit on the studio's creative scope or the communities its games can serve.
 
 ## Meet your Game Master
 
-Every quest is hosted by **Dr. Z** — a cheerful mad scientist in the
-Frankenstein mold: dramatic, brilliant, a little unhinged, entirely kind.
-He assembles each game in the Lab out of maps, riddles, lanterns, and
-lightning, then unleashes it on a neighborhood and cackles (warmly) at the
-results.
+Every quest is hosted by **Dr. Z**, a cheerful mad scientist in the Frankenstein mold: dramatic, inventive, a little unhinged, and entirely kind. He assembles stories, puzzles, maps, and mischief in the Lab, then invites people to become part of the experiment.
 
-Behind the lab coat is a Volusia County local: a
-[GIS professional](https://github.com/ZQM-Computing/geospatial-patterns) and
-father who builds the games, playtests them on his own family (the Lab's
-daughters are ruthless critics), and answers every email himself. The
-doctorate is a costume. The mischief is real.
+The doctorate is a costume. The mischief is real.
 
-## How a quest is born
+## How a game takes shape
 
-1. **Assembled in the Lab.** Story, puzzles, and code are built piece by
-   piece — then tested until a five-year-old and a seventy-five-year-old
-   can both finish grinning.
-2. **Shipped as a kit.** A community gets printable signs, access codes,
-   and a one-page guide. Their organizer — an official **Lab Assistant** —
-   places six signs in about an hour.
-3. **Brought to life by you.** A quest isn't alive until a community plays
-   it. When the first team relights the first lantern: *IT'S ALIVE.*
+1. **Imagine the experience.** Start with a story, a shared activity, a puzzle, or a reason for people to play together.
+2. **Build and test.** Develop the game and its supporting materials, then check that instructions, mechanics, and player expectations are clear.
+3. **Invite people in.** Depending on the title, people may play a browser experience, use a downloadable or printable kit, join a playtest, or participate in a hosted event.
+4. **Learn from the community.** Feedback and playtesting help identify what works, what confuses players, and what should improve next.
 
-## The first creation
+Not every game uses the same mechanics, technology, scare levels, or delivery model. Each title's page should explain what applies to that experience.
 
-**Wisp**, a friendly will-o'-the-wisp, was the Doctor's first experiment.
-She got loose. Now she hides lanterns all over Volusia County, and every
-game since has been the Lab recruiting help to recover from its own
-experiments. She regrets nothing.
+## The current featured game
 
-## Which Dr. Z will you get?
+**Wisp's Lost Lanterns** is a Halloween scavenger hunt featuring Wisp, a friendly will-o'-the-wisp who has lost six glow lanterns. Teams follow clues, solve puzzles, and work together to recover them.
 
-His face is the difficulty meter — check the hair, it never lies. Black
-hair is a family picnic. White streaks mean riddles. Fully white and
-electric… hold on to your lantern.
-
-{{< dial >}}
+[Explore the current game](/games/hunt-for-wisps/) · [Halloween experience](/halloween/) · [Games directory](/games/)
 
 ## What the Lab believes
 
-- **Play more. Plan less.** If an event needs a planning committee, we've
-  failed.
-- **Mischief, never malice.** The joke is never on the customer.
-- **Local first.** Built in New Smyrna Beach, flavored with Volusia County
-  — real streets, real lore, real weather (the storms are free special
-  effects).
-- **No apps, no accounts, no fuss.** One phone per team, in a browser.
-- **Open by design.** Every map in the Lab is built on public geospatial
-  tooling — the pattern catalog behind them lives at
-  [ZQM Computing](https://github.com/ZQM-Computing).
+- **Play more. Plan less.** Make it easier for people to get to the fun.
+- **Mischief, never malice.** The joke should never be on the player.
+- **Community at the center.** People should have meaningful ways to play together, give feedback, and help shape future experiences.
+- **Adapt to context.** A game should be clear about what can be adapted and what depends on a particular venue, device, or event.
+- **Design for access and safety.** Consider different abilities, ages, devices, play environments, and local conditions.
+- **Open by design.** Where practical, publish supporting tools and documentation so people can inspect the work and help improve it.
 
-## What's next
+## Built locally, intended to travel
 
-The games are Phase 1. Phase 2 is the gear: party rentals with the same
-one-call-and-done promise, so the community that books a hunt can book the
-tables, chairs, grill, and cornhole to go with it. Join the list at
-**<zqmcomputing@gmail.com>**.
+ZQM Labs is rooted in New Smyrna Beach, Florida. Our creative ambition is broader than one town, one event, or one season. We want to build games that communities can discover and enjoy in their own contexts, while being honest about where a particular service, event kit, language, or support option is actually available.
+
+Digital access to a game does not automatically mean that in-person delivery or local event support is available everywhere. Each game's page will identify its current format and availability.
+
+## Open shelves
+
+ZQM Labs publishes game-related materials, including sample quest packs, authoring guidance, organizer resources, and playtest documentation:
+
+- [Quest Packs](https://github.com/ZQM-Labs/quest-packs)
+- [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring)
+- [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
+- [Playtests](https://github.com/ZQM-Labs/playtests)
+
+The Lab also links to technical resources from [ZQM Computing](https://github.com/ZQM-Computing). ZQM Labs and ZQM Computing are distinct projects with related but different purposes.
+
+**Play more. Plan less.** Find your people, choose your adventure, and help shape what the Lab builds next.

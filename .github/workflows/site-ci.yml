@@ -1,0 +1,100 @@
+name: ZQM Labs Site CI (canonical player + Hugo build)
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.165.0"
+          extended: true
+      - name: Sync canonical player into site bundle
+        run: bash scripts/sync-player.sh main
+      - name: Syntax-check player scripts
+        run: |
+          set -euo pipefail
+          PLAYER=static/games/hunt-for-wisps/play
+          node --check "$PLAYER/app.js"
+          node --check "$PLAYER/global-story.js"
+          node --check "$PLAYER/global-features.js"
+          node --check "$PLAYER/i18n.js"
+          node --check "$PLAYER/sw.js"
+      - name: Verify player script load order
+        run: |
+          set -euo pipefail
+          PLAYER=static/games/hunt-for-wisps/play
+          line_of() {
+            local line
+            line="$(grep -nF "$1" "$PLAYER/index.html" | head -n 1 | cut -d: -f1 || true)"
+            if [ -z "$line" ]; then echo "Missing script tag: $1" >&2; exit 1; fi
+            printf '%s\n' "$line"
+          }
+          GLOBAL_LINE="$(line_of 'src="global-story.js"')"
+          I18N_LINE="$(line_of 'src="i18n.js"')"
+          APP_LINE="$(line_of 'src="app.js"')"
+          if [ "$GLOBAL_LINE" -ge "$I18N_LINE" ] || [ "$I18N_LINE" -ge "$APP_LINE" ]; then
+            echo "Player scripts must load global-story.js, i18n.js, then app.js." >&2
+            exit 1
+          fi
+      - name: Verify player service-worker precache files
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs");
+          const path = require("node:path");
+          const root = "static/games/hunt-for-wisps/play";
+          const source = fs.readFileSync(path.join(root, "sw.js"), "utf8");
+          const match = source.match(/const SHELL = \[([\s\S]*?)\];/);
+          if (!match) throw new Error("Could not parse service-worker SHELL list");
+          const paths = [...match[1].matchAll(/["']([^"']+)["']/g)]
+            .map(entry => entry[1]).filter(entry => entry.startsWith("./"));
+          const missing = paths.map(entry => path.join(root, entry.slice(2)))
+            .filter(file => !fs.existsSync(file));
+          if (missing.length) throw new Error("Missing precache files: " + missing.join(", "));
+          console.log("Verified " + paths.length + " precache paths.");
+          NODE
+      - name: Verify shared layout accessibility and social metadata
+        run: |
+          set -euo pipefail
+          LAYOUT=layouts/_default/baseof.html
+          grep -q 'href="#main-content"' "$LAYOUT"
+          grep -q '<main id="main-content" tabindex="-1">' "$LAYOUT"
+          grep -q '<nav class="mainnav" aria-label="Main navigation">' "$LAYOUT"
+          grep -q '<nav aria-label="Footer navigation">' "$LAYOUT"
+          grep -q 'prefers-reduced-motion:reduce' "$LAYOUT"
+          grep -q 'property="og:type"' "$LAYOUT"
+          grep -q 'name="twitter:card"' "$LAYOUT"
+      - name: Build Hugo site
+        run: hugo --gc --minify
+      - name: Verify generated internal links and assets
+        run: node scripts/check-built-links.mjs public
+      - name: Verify required routes and internal-project exclusion
+        run: |
+          set -euo pipefail
+          for page in index.html games/index.html community/index.html halloween/index.html tiers/index.html about/index.html faq/index.html; do
+            test -f "public/$page" || { echo "Missing built page: $page" >&2; exit 1; }
+          done
+          test -f static/img/logo-primary-evergreen.webp
+          # Featured homepage art must exist in the built output and be referenced accessibly.
+          test -f public/img/dr-z-lab-banner.svg || { echo "Missing built Dr. Z banner asset." >&2; exit 1; }
+          grep -qF 'dr-z-lab-banner.svg' public/index.html || { echo "Homepage does not reference the Dr. Z banner." >&2; exit 1; }
+          grep -qF 'alt="Dr. Z' public/index.html || { echo "Dr. Z banner is missing descriptive alt text." >&2; exit 1; }
+          grep -qF 'href="/halloween/"' layouts/index.html || { echo "Homepage template is missing the Halloween kits CTA." >&2; exit 1; }
+          grep -qF 'href="/tiers/"' layouts/index.html || { echo "Homepage template is missing the tiers CTA." >&2; exit 1; }
+          if [ -e public/haunted-volusia ]; then
+            echo "Internal Volusia field-guide route must not be published." >&2
+            exit 1
+          fi

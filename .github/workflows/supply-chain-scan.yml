@@ -1,0 +1,71 @@
+name: Supply Chain Security Scan
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  schedule:
+    - cron: "0 0 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Audit Python dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          found=0
+          for manifest in requirements.txt requirements-dev.txt; do
+            if [ -f "$manifest" ]; then
+              found=1
+              python -m pip install --disable-pip-version-check pip-audit
+              pip-audit -r "$manifest"
+            fi
+          done
+          if [ -f pyproject.toml ]; then
+            python - <<'PY'
+          import tomllib
+          from pathlib import Path
+          data = tomllib.loads(Path("pyproject.toml").read_text(encoding="utf-8"))
+          deps = data.get("project", {}).get("dependencies", [])
+          Path("/tmp/zqm-pyproject-requirements.txt").write_text("\n".join(deps) + ("\n" if deps else ""), encoding="utf-8")
+          PY
+            if [ -s /tmp/zqm-pyproject-requirements.txt ]; then
+              found=1
+              python -m pip install --disable-pip-version-check pip-audit
+              pip-audit -r /tmp/zqm-pyproject-requirements.txt
+            fi
+          fi
+          if [ "$found" -eq 0 ]; then echo "No external Python dependencies declared; Python audit not applicable."; fi
+      - name: Audit npm dependencies
+        shell: bash
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+            npm audit --audit-level=high
+          else
+            echo "No package-lock.json; npm audit not applicable."
+          fi
+      - name: Audit Go dependencies
+        shell: bash
+        run: |
+          if [ -f go.mod ]; then
+            go run golang.org/x/vuln/cmd/govulncheck@latest ./...
+          else
+            echo "No go.mod; Go audit not applicable."
+          fi
