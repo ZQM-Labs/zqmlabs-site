@@ -10,10 +10,9 @@ disableKinds = ["taxonomy", "term"]
   tagline = "Community-centered games, shared stories, and a little mischief."
   mantra = "Play more. Plan less."
   email = "zqmcomputing@gmail.com"
-  description = "ZQM Labs creates story-driven, community-centered games. Wisp's Lost Lanterns is the current Halloween game; the site supports a growing collection of titles."
+  description = "ZQM Labs creates story-driven, community-centered games. Explore the growing game collection, beginning with Wisp's Lost Lanterns."
 
 # Main navigation — rendered by layouts/_default/baseof.html on every page.
-# To add a page to the nav: add a block here AND create the content file.
 [[menus.main]]
   name = "Home"
   url = "/"
@@ -23,15 +22,19 @@ disableKinds = ["taxonomy", "term"]
   url = "/games/"
   weight = 20
 [[menus.main]]
+  name = "Community"
+  url = "/community/"
+  weight = 25
+[[menus.main]]
   name = "Halloween"
   url = "/halloween/"
   weight = 30
 [[menus.main]]
-  name = "Tiers"
+  name = "Host a Game"
   url = "/tiers/"
   weight = 35
 [[menus.main]]
-  name = "Patterns"
+  name = "Resources"
   url = "/patterns/"
   weight = 40
 [[menus.main]]
