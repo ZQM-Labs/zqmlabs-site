@@ -3,6 +3,8 @@ title: "FAQ — ZQM Labs Games"
 description: "Answers about ZQM Labs, the current Wisp's Lost Lanterns game, community participation, and event availability."
 ---
 
+<!-- markdownlint-disable MD013 MD033 -->
+
 # Frequently asked questions
 
 ## About the Lab
