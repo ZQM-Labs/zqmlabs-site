@@ -7,10 +7,10 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  tagline = "Games, gear & a little mischief."
+  tagline = "Community-centered games, shared stories, and a little mischief."
   mantra = "Play more. Plan less."
   email = "zqmcomputing@gmail.com"
-  description = "Z's Quests & Mischief (ZQM Labs) builds self-guided scavenger-hunt games for communities, offices, and groups in Volusia County, Florida. Pick your scare level on the Dial — Dr. Z handles the lightning."
+  description = "ZQM Labs creates story-driven, community-centered games. Wisp's Lost Lanterns is the current Halloween game; the site supports a growing collection of titles."
 
 # Main navigation — rendered by layouts/_default/baseof.html on every page.
 # To add a page to the nav: add a block here AND create the content file.
@@ -19,21 +19,25 @@ disableKinds = ["taxonomy", "term"]
   url = "/"
   weight = 10
 [[menus.main]]
+  name = "Games"
+  url = "/games/"
+  weight = 20
+[[menus.main]]
   name = "Halloween"
   url = "/halloween/"
-  weight = 20
+  weight = 30
 [[menus.main]]
   name = "Tiers"
   url = "/tiers/"
-  weight = 30
+  weight = 35
 [[menus.main]]
   name = "Patterns"
   url = "/patterns/"
-  weight = 35
+  weight = 40
 [[menus.main]]
   name = "About"
   url = "/about/"
-  weight = 40
+  weight = 45
 [[menus.main]]
   name = "FAQ"
   url = "/faq/"
