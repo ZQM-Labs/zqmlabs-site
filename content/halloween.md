@@ -1,35 +1,36 @@
 ---
 title: "Halloween Games & Experiences"
-description: "Explore the Halloween side of ZQM Labs, currently led by Wisp's Lost Lanterns, a community-centered scavenger hunt."
+description: "Explore the Halloween side of ZQM Labs, led by the Wisp's Lost Lanterns browser demo and clearly identified event options."
 ---
 
 <!-- markdownlint-disable MD013 -->
 
-Halloween is an important creative world for ZQM Labs: a place for mysteries, lanterns, playful scares, puzzles, and shared adventures. This page collects Halloween experiences. It is one part of the Lab's wider collection of community-centered games.
+Halloween is an important creative world for ZQM Labs: mysteries, lanterns, playful scares, puzzles, and shared adventures. This page covers the current featured experience without implying that every planned seasonal title is already released.
 
 ## Featured experience: Wisp's Lost Lanterns
 
-Wisp the will-o'-the-wisp has lost six glow lanterns. Teams become Lantern Keepers, following clues and solving puzzles across six stops.
+Wisp the will-o'-the-wisp has lost six glow lanterns. Players follow clues and solve puzzles across six stops to help recover them.
 
-- **Self-guided:** teams play within their event window rather than joining a single scheduled start.
-- **Browser-based:** the current experience is designed to be played on a phone browser; see the game instructions for current requirements.
-- **Adjustable atmosphere:** the current game describes four selectable Dial levels.
-- **Community-led setup:** in-person organizers choose a suitable route and venue for their participants.
+- **Try it online:** the free browser demo is the currently available way to explore the game.
+- **Choose an atmosphere:** the game describes four selectable Dial levels. Review the in-game descriptions and choose what is appropriate for your group.
+- **Plan hosted play separately:** a public demo does not confirm that a supported in-person event or paid package is available for your date and location.
 
-[Play the browser demo](/games/hunt-for-wisps/) · [Hosting tiers](/tiers/) · [Frequently asked questions](/faq/)
+[Play the free browser demo](/games/hunt-for-wisps/play/?demo=1) · [Game overview](/games/hunt-for-wisps/) · [Hosting options](/tiers/) · [Frequently asked questions](/faq/)
 
 ## Current local activation
 
-The current in-person activation is planned for **Volusia County, Florida, October 30–November 1, 2026**. Current hosting packages and support are subject to actual availability. Contact the Lab before assuming an in-person event can be delivered in another region.
+The current in-person activation is planned for **Volusia County, Florida, October 30–November 1, 2026**. This is a planned activation, not a guarantee of availability for every date, venue, or group. Contact the Lab to confirm delivery area, current package contents, responsibilities, and support before announcing an event.
 
-The local activation is a starting point for this game, not a boundary on who may explore the digital experience or what future ZQM Labs games may be.
+The local activation is a starting point for this game, not a limit on who may explore the digital demo or on the themes future ZQM Labs games may cover.
 
-## More Halloween adventures
+## Other seasonal adventures
 
-This page can grow as additional Halloween titles, digital experiences, community activities, or seasonal releases are ready. New experiences will be identified by their actual status—such as playable, demo, playtest, or in development—so visitors can tell what is available now.
+The Great Pumpkin Roll and The Snowflake Secret are currently described as **in development**, not as separate released games. Their pages explain the concepts and should be updated when their release status changes.
 
-For the full collection across themes and seasons, visit the [Games directory](/games/).
+For the current release status across themes and seasons, visit the [Games directory](/games/).
 
-## Play with your community
+## Planning a community event
 
-If you are considering a local event, review the [current hosting tiers](/tiers/) and contact the Lab to confirm logistics, support, and availability. Organizers should choose routes and activities appropriate to their participants, venue, accessibility needs, and local conditions.
+Before choosing a route or announcing an event, confirm the venue's permission requirements and consider participant ages, accessibility, supervision, lighting, weather, pedestrian and traffic hazards, and a way to stop or leave the activity. Do not place signs where they block access, direct participants into unsafe areas, or require trespassing.
+
+Review the [hosting options](/tiers/) and contact the Lab to confirm whether the requested event can be supported.
