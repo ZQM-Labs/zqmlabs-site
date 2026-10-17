@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+<title id="title">Dr. Z's geospatial invention lab</title>
+<desc id="desc">A stylized inventor's laboratory with topographic contours, connected data nodes, a glowing flask, CRT monitors, and the Dr. Z insignia.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a20"/><stop offset=".58" stop-color="#102b2d"/><stop offset="1" stop-color="#281c17"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6bffb3" stop-opacity=".85"/><stop offset="1" stop-color="#00a86b" stop-opacity=".25"/></linearGradient>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#7ce4ce" stroke-opacity=".10"/></pattern>
+</defs>
+<rect width="1200" height="340" rx="18" fill="url(#bg)"/><rect width="1200" height="340" rx="18" fill="url(#grid)"/>
+<g fill="none" stroke="#2bc8a5" stroke-opacity=".45" stroke-width="1.4">
+ <path d="M-40 52C70 0 120 120 220 64S360 20 430 70 500 100 570 36"/>
+ <path d="M-30 72C70 20 120 140 220 84S360 40 430 90 500 120 570 56"/>
+ <path d="M-30 92C70 40 120 160 220 104S360 60 430 110 500 140 570 76"/>
+ <path d="M-30 230C70 170 120 260 220 220S360 180 430 230 500 250 600 190"/>
+ <path d="M-30 250C70 190 120 280 220 240S360 200 430 250 500 270 600 210"/>
+</g>
+<g stroke="#f0a34a" stroke-width="2" fill="none" opacity=".8"><path d="M80 280H250L300 230H460L500 190H610"/><path d="M160 20V85H280L325 120H480"/><circle cx="250" cy="280" r="5" fill="#f0a34a"/><circle cx="460" cy="230" r="5" fill="#f0a34a"/><circle cx="480" cy="120" r="5" fill="#f0a34a"/></g>
+<g transform="translate(745 38)">
+ <rect x="0" y="28" width="170" height="105" rx="7" fill="#111b1e" stroke="#6aa99a" stroke-width="3"/><rect x="10" y="38" width="150" height="84" rx="3" fill="#061416"/>
+ <path d="M18 105L38 88 54 94 75 61 92 77 111 52 130 69 151 47" fill="none" stroke="#4cf4b0" stroke-width="2.5"/>
+ <path d="M18 112L38 101 54 106 75 78 92 90 111 67 130 81 151 62" fill="none" stroke="#f0a34a" stroke-width="1.5"/>
+ <rect x="20" y="140" width="130" height="8" rx="3" fill="#425456"/>
+</g>
+<g transform="translate(960 52)">
+ <path d="M40 0H78L74 45 96 94Q102 111 84 115H26Q8 111 14 94L36 45Z" fill="#d8eee1" fill-opacity=".10" stroke="#c9e8db" stroke-width="3"/>
+ <path d="M24 82H87L97 101Q99 109 84 110H27Q12 108 18 98Z" fill="url(#glass)"/>
+ <circle cx="43" cy="91" r="4" fill="#9dffd1"/><circle cx="67" cy="101" r="3" fill="#9dffd1"/>
+ <path d="M58 1V-10" stroke="#c9e8db" stroke-width="3"/>
+</g>
+<g transform="translate(1070 44)" fill="none" stroke="#f0a34a" stroke-width="3"><circle cx="42" cy="42" r="35"/><circle cx="42" cy="42" r="23"/><path d="M42 0V84M0 42H84M13 13L71 71M71 13L13 71"/></g>
+<g fill="#f6f0df" font-family="Arial,Helvetica,sans-serif">
+ <text x="58" y="150" font-size="17" letter-spacing="5" fill="#7de6ca">ZQM COMPUTING × ZQM LABS</text>
+ <text x="54" y="205" font-size="52" font-weight="700">DR. Z'S LAB</text>
+ <text x="58" y="240" font-size="19" fill="#f0a34a" letter-spacing="2">GEOSPATIAL SYSTEMS · OPEN TOOLS · EXPERIMENTS</text>
+ <text x="58" y="282" font-size="15" fill="#c2d6ce">Map the world. Test the edges. Build what works.</text>
+</g>
+<g transform="translate(630 250)"><path d="M0 30L24 0H92L116 30 92 60H24Z" fill="#102126" stroke="#f0a34a" stroke-width="2"/><text x="58" y="36" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#f6f0df">DR. Z</text></g>
+</svg>
