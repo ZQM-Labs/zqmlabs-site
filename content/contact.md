@@ -1,64 +1,41 @@
 ---
 title: "Contact the Lab"
-description: "Get in touch with ZQM Labs — booking a kit, hosting a fundraiser, joining the party-rental waitlist, press inquiries, or partnering."
+description: "Contact ZQM Labs about Wisp's Lost Lanterns hosting inquiries, game feedback, press, partnerships, and community contributions."
 ---
 
 ## Email the Lab
 
 **[zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)**
 
-The Lab replies within one business day. Every email is answered by a human —
-specifically, the one in the lab coat.
+For event inquiries, please include your proposed date and location. An inquiry is not a confirmed booking; wait for the Lab to confirm availability, price, package contents, responsibilities, and support arrangements before announcing an event.
 
 ## What to include
 
-For the fastest reply, include:
-
-| Question | Why it helps |
+| If you're asking about… | Include… |
 |---|---|
-| Your community, company, or group name | So we can size the kit |
-| Your dates or event window | So we can check availability |
-| The tier you're eyeing | Family / Community / Office / Youth / Custom |
-| Approximate number of teams | Sizing and leaderboard tuning |
-| Your city or venue type | Route and sign placement advice |
+| Hosting or a paid kit | Group or organization, proposed dates, location or venue type, approximate number of participants or teams, and the package you are considering |
+| An issue with the game | Game page, device and browser, the step where it happened, what you expected, and what you saw; avoid sending passwords or sensitive personal information |
+| Press or media | Outlet, topic, deadline, and the materials you need |
+| A partnership | Organization, proposed activity, location, timing, and the kind of collaboration you have in mind |
+| Community feedback or playtesting | The game or repository involved and the specific observation or question |
 
 ## Common reasons to write
 
-**Book a kit.** Community, office, youth group, or a custom event. See
-[Pricing →](/pricing/) and [Tiers →](/tiers/).
+**Hosting a Wisp's Lost Lanterns event.** Review the [hosting tiers](/tiers/) and [organizer guide](/organizers/). Confirm current availability and terms directly with the Lab.
 
-**Run a fundraiser.** Community kits can split revenue: families pay $15,
-your community keeps $5. See [Pricing →](/pricing/).
+**Press and media.** Review the [press kit](/press/) for current public information and assets, then email with your outlet and deadline.
 
-**Join the party-rental waitlist.** Tables, chairs, grills, cornhole, and yard
-games are Phase 2. Get on the list and you'll hear first.
+**Partnerships or multi-group events.** Include the scope, intended participants, proposed dates, and location so the Lab can assess fit and availability.
 
-**Press and media.** See the [Press Kit →](/press/) for company facts, founder
-bio, and brand assets, then email with your outlet and deadline.
+**Report a problem.** Include the relevant page, device/browser, steps to reproduce the issue, and any visible error. Do not include passwords, access credentials, or private information about other players.
 
-**Partnerships and multi-kit bookings.** School districts, MSPs, event
-planners, and multi-community organizers — email with your scope.
-
-**Report a problem.** If a game misbehaved, tell us. Include your team name
-and the stop number if you have them.
-
-## Response times
-
-| Request type | Typical reply |
-|---|---|
-| New booking | Under 1 business day |
-| Active event support | Same day, faster during the window |
-| Press | Under 1 business day |
-| Partnerships | 1–2 business days |
+**Contribute to the project.** See the public [Quest Packs](https://github.com/ZQM-Labs/quest-packs), [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring), [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit), and [Playtests](https://github.com/ZQM-Labs/playtests) repositories for their current contribution instructions.
 
 ## Elsewhere
 
-- **Games:** [zqmlabs.com/games](https://zqmlabs.com/games/)
+- **Games:** [ZQM Labs Games](/games/)
 - **GitHub:** [ZQM-Labs](https://github.com/ZQM-Labs)
-- **Geospatial work:** [ZQM-Computing](https://github.com/ZQM-Computing)
-- **Free sample pack:** [quest-packs](https://github.com/ZQM-Labs/quest-packs)
+- **Geospatial and engineering projects:** [ZQM-Computing](https://github.com/ZQM-Computing)
+- **Free browser demo:** [Play Wisp's Lost Lanterns](/games/hunt-for-wisps/play/?demo=1)
 
-## Based in
-
-New Smyrna Beach, Volusia County, Florida. Remote support worldwide; local
-events in Volusia County.
+ZQM Labs is based in the New Smyrna Beach / Volusia County, Florida area. Local event availability and any remote support arrangement must be confirmed for the specific request.
