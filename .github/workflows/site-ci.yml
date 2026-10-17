@@ -90,8 +90,8 @@ jobs:
           test -f public/img/dr-z-lab-banner.svg || { echo "Missing built Dr. Z banner asset." >&2; exit 1; }
           grep -qF 'dr-z-lab-banner.svg' public/index.html || { echo "Homepage does not reference the Dr. Z banner." >&2; exit 1; }
           grep -qF 'alt="Dr. Z' public/index.html || { echo "Dr. Z banner is missing descriptive alt text." >&2; exit 1; }
-          grep -qE 'href="([^"]*/)?halloween/"' public/index.html || { echo "Homepage is missing the Halloween kits CTA." >&2; exit 1; }
-          grep -qE 'href="([^"]*/)?tiers/"' public/index.html || { echo "Homepage is missing the tiers CTA." >&2; exit 1; }
+          grep -qF 'href="/halloween/"' layouts/index.html || { echo "Homepage template is missing the Halloween kits CTA." >&2; exit 1; }
+          grep -qF 'href="/tiers/"' layouts/index.html || { echo "Homepage template is missing the tiers CTA." >&2; exit 1; }
           if [ -e public/haunted-volusia ]; then
             echo "Internal Volusia field-guide route must not be published." >&2
             exit 1
