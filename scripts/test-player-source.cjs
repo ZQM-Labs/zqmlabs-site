@@ -22,6 +22,12 @@ assert.match(
   "reopening a stop should resume its hint ladder rather than repeat consumed hints"
 );
 assert.match(player, /state\.hintsUsed >= HINT_BUDGET/, "the global hint cap must be enforced");
+assert.ok(player.includes('for (const tier of ["cozy", "spooky", "afterdark", "overdrive"])'), "all four scare levels must be validated for every stop");
+for (const tier of ["spooky", "afterdark", "overdrive"]) {
+  const variants = player.split(tier + ": { q:").length - 1;
+  assert.ok(variants >= 6, tier + " must define a puzzle variant for all six stops");
+}
+assert.ok(player.includes('if (!s || typeof s !== "object" || Array.isArray(s))'), "malformed stop records must be rejected without crashing");
 assert.match(worker, /const CACHE = "lantern-v5";/, "player release must invalidate the previous app-shell cache");
 assert.match(homepage, /\/games\/hunt-for-wisps\/play\/\?demo=1/, "homepage CTA must open the actual demo player");
 assert.match(gamePage, /\/games\/hunt-for-wisps\/play\/\?demo=1/, "game page must expose a direct demo launch link");
