@@ -22,8 +22,10 @@ assert.match(
   "reopening a stop should resume its hint ladder rather than repeat consumed hints"
 );
 assert.match(player, /state\.hintsUsed >= HINT_BUDGET/, "the global hint cap must be enforced");
+assert.match(player, /if \(hintLevel < 3\)/, "each stop must cap its own hint ladder at three hints");
+assert.match(player, /state\.stopHints\[currentStop\.id\] = \(state\.stopHints\[currentStop\.id\] \|\| 0\) \+ 1/, "hint use must persist against the active stop");
 assert.ok(player.includes('for (const tier of ["cozy", "spooky", "afterdark", "overdrive"])'), "all four scare levels must be validated for every stop");
-for (const tier of ["spooky", "afterdark", "overdrive"]) {
+for (const tier of ["cozy", "spooky", "afterdark", "overdrive"]) {
   const variants = player.split(tier + ": { q:").length - 1;
   assert.ok(variants >= 6, tier + " must define a puzzle variant for all six stops");
 }
