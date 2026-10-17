@@ -3,7 +3,7 @@ title: "Community-Centered Games — ZQM Labs"
 description: "ZQM Labs creates story-driven games that bring people together. Explore the current Halloween game and follow new titles as they launch."
 ---
 
-![Dr. Z, Game Master of Z's Quests & Mischief, holding up a glowing lantern](/img/logo-primary.webp)
+![Dr. Z, Game Master of Z's Quests & Mischief, holding a quest map and compass](/img/logo-primary-evergreen.webp)
 
 **Games are better when we play together.**
 
