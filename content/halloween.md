@@ -3,7 +3,7 @@ title: "Halloween Games & Experiences"
 description: "Explore the Halloween side of ZQM Labs, currently led by Wisp's Lost Lanterns, a community-centered scavenger hunt."
 ---
 
-# Halloween at ZQM Labs
+<!-- markdownlint-disable MD013 -->
 
 Halloween is an important creative world for ZQM Labs: a place for mysteries, lanterns, playful scares, puzzles, and shared adventures. This page collects Halloween experiences. It is one part of the Lab's wider collection of community-centered games.
 
