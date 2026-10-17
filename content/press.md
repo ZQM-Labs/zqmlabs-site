@@ -16,9 +16,9 @@ description: "Press and media resources for ZQM Labs and Z's Quests & Mischief: 
 | Games live | 3 (Halloween, Autumn, Winter editions) |
 | Languages | 8 (English, Spanish, French, German, Portuguese, Chinese, Japanese, Arabic) |
 | Pricing | $49 / $199 / $349–$499 flat |
-| Contact | zqmcomputing@gmail.com |
-| Website | https://zqmlabs.com |
-| GitHub | https://github.com/ZQM-Labs |
+| Contact | [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) |
+| Website | [zqmlabs.com](https://zqmlabs.com) |
+| GitHub | [ZQM-Labs](https://github.com/ZQM-Labs) |
 
 ## The one-line pitch
 
@@ -46,16 +46,19 @@ mischief is real.
 ## Game descriptions
 
 ### Wisp's Lost Lanterns
+
 The flagship Halloween edition. Wisp, a friendly will-o'-the-wisp and the
 Lab's first (escaped) creation, has hidden six glow lanterns around your
 neighborhood. Teams become Lantern Keepers, solve a puzzle at each stop, and
 relight the lantern. Four scare levels from family-friendly to competitive.
 
 ### The Great Pumpkin Roll
+
 The autumn festival edition. Farmer Joe's pumpkins have escaped and rolled
 into town. Teams round them up across six stops with harvest-themed puzzles.
 
 ### The Snowflake Secret
+
 The winter edition. Find the hidden snowflake ornaments and uncover the
 secret of the winter festival across six stops.
 
@@ -89,8 +92,10 @@ coverage with attribution.
 
 ## Contact
 
-**Email:** zqmcomputing@gmail.com
+**Email:** [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)
+
 **Response time:** under one business day
+
 **Availability:** remote and local (Volusia County, Florida)
 
 For interviews, screenshots, or additional assets, email with your outlet and

@@ -2,6 +2,8 @@
 title: "Hunt for Wisps — free playable demo"
 description: "Play Wisp's Lost Lanterns free in your browser — 6 stops, 4 Dial levels, no signup."
 layout: "game"
+status: "playable-demo"
+weight: 1
 ---
 
 Wisp the will-o'-the-wisp lost her 6 glow lanterns. Your team are her
