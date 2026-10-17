@@ -140,6 +140,10 @@ function validatePack(p) {
   const answers = [];
   const ids = [];
   for (const s of p.stops) {
+    if (!s || typeof s !== "object" || Array.isArray(s)) {
+      errs.push("stop ?: must be an object");
+      continue;
+    }
     const tag = `stop ${s.id ?? "?"}`;
     for (const tier of ["cozy", "spooky", "afterdark", "overdrive"]) {
       const tierStory = s.story && s.story[tier];
