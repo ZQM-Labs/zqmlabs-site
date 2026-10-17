@@ -1,166 +1,112 @@
 ---
-title: "FAQ — questions from the village"
-description: "How Z's Quests & Mischief kits work: organizer effort, scare levels and the Dial, pricing, rain plans, ages, safety, and booking. Answered by the Lab."
+title: "FAQ — ZQM Labs Games"
+description: "Answers about ZQM Labs, the current Wisp's Lost Lanterns game, community participation, and event availability."
 ---
-<!-- markdownlint-disable MD033 -->
+
+# Frequently asked questions
+
+## About the Lab
 
 <details>
-<summary>What exactly is a "kit"?</summary>
+<summary>Is ZQM Labs only a Halloween game?</summary>
 
-A kit is everything your community needs to run a complete scavenger hunt,
-delivered digitally: printable QR signs for 6 stops, team access codes, the
-game itself (played in a phone browser — nothing to install), a one-page
-organizer guide, and printable finisher badges. You print the signs, place
-them in your neighborhood or venue, and your people play anytime during
-your event window.
+No. ZQM Labs is the studio and home for a growing collection of community-centered games. **Wisp's Lost Lanterns** is the current featured Halloween game. Other titles may use different themes, mechanics, audiences, and ways to play.
 
 </details>
 
 <details>
-<summary>Who can host one?</summary>
+<summary>Where can I find the games?</summary>
 
-HOAs and neighborhoods, school PTAs, churches, scout troops and youth
-groups, offices, and private crews celebrating something. If your people
-already gather somewhere, a quest can live there.
+Visit the [Games directory](/games/). Each title should identify its status—such as playable, demo, playtest, or in development—and link to its own details or play experience when available.
 
 </details>
 
 <details>
-<summary>How much work is it for the organizer, honestly?</summary>
+<summary>Are games available worldwide?</summary>
 
-About **one hour**, total: print 7 pages, place 6 signs, set out a candy
-bowl if you're feeling fancy. Organizers get the honorary title **Lab
-Assistant** and remote support from Dr. Z during the event window. We call
-it: *you bring the village, we bring the monster.*
+The studio's creative direction is global, and the current browser demo can be explored online. That does not mean that every game, language, hosted event, or support service is available everywhere. Check the individual game's page and confirm event logistics with the Lab.
 
 </details>
 
 <details>
-<summary>What do players need?</summary>
+<summary>Are global community features live?</summary>
 
-One phone per team with a browser and a camera for QR codes. No app
-installs, no accounts, no downloads. Progress saves on the device, so a
-team can start, break for dinner, and finish later in the window.
+Do not assume features such as global leaderboards, player discovery, multilingual support, or a centralized community platform are live unless the relevant feature is explicitly announced and verified. Community participation currently includes published resources and opportunities to provide feedback or participate in playtesting where offered.
+
+</details>
+
+## Wisp's Lost Lanterns
+
+<details>
+<summary>What is Wisp's Lost Lanterns?</summary>
+
+It is the current ZQM Labs Halloween scavenger hunt. Wisp the will-o'-the-wisp has lost six glow lanterns, and teams follow clues and solve puzzles to recover them. [Try the browser demo](/games/hunt-for-wisps/).
 
 </details>
 
 <details>
-<summary>What ages is it for?</summary>
+<summary>What does a kit include?</summary>
 
-The pilot game, Wisp's Lost Lanterns, is built for ages **5 to 75**:
-little kids count and match, older kids and adults get the riddles and
-ciphers, and every stop has **three levels of hints** so nobody gets stuck
-or melts down. Mixed-age teams are the sweet spot.
+The current offer describes printable signs, team access, the browser-based game, and organizer guidance. Confirm the exact deliverables for your package with the Lab before booking; contents may change as the game evolves.
 
 </details>
 
 <details>
-<summary>What's the Dial? How do scare levels work?</summary>
+<summary>What devices do players need?</summary>
 
-Every game has a scare level, and you pick it: **🎃 Cozy Glow** (families
-and little kids), **👻 Spooky** (tweens and mixed groups), **🦇 After Dark**
-(adults — gothic Volusia ghost lore, atmosphere only, no gore and no jump
-scares), and **⚡ Overdrive** for competitive office runs. You can read the
-level right off Dr. Z's face — as the games get madder, his hair gets
-whiter. The face on your flyer is a promise.
+The current game is designed for browser-based play. Check the demo and its instructions for the current device, browser, camera, and QR-code requirements before planning an event. Do not assume every future ZQM Labs game will use the same setup.
 
 </details>
 
 <details>
-<summary>When do we play? Is there a start time?</summary>
+<summary>What are the Dial levels?</summary>
 
-No start times and no lines. A kit runs across an **event window** (for
-Halloween 2026: Oct 30 – Nov 1). Each family or team plays whenever suits
-them inside the window — before dinner, after the parade, whenever.
+The current Wisp's Lost Lanterns materials describe four levels: Cozy Glow, Spooky, After Dark, and Overdrive. Check the game itself and the event materials for the current descriptions and suitability guidance. These levels are specific to this experience, not a requirement for every game from the Lab.
 
 </details>
 
 <details>
-<summary>What if it rains?</summary>
+<summary>When is the current local event?</summary>
 
-Then the lanterns look *fantastic*. Florida showers pass fast, and because
-the window spans days, families simply pick a dry moment. The Lab monitors
-the weather with every organizer and will extend a window if a real storm
-crashes the whole weekend.
+The current in-person activation is planned for Volusia County, Florida, October 30–November 1, 2026. Availability and support for a particular event must be confirmed with the Lab.
+
+</details>
+
+## Hosting and safety
+
+<details>
+<summary>Can we host a game in our community?</summary>
+
+Possibly, depending on the current package, location, support capacity, and event requirements. Contact the Lab with your location and proposed dates before advertising or selling participation. Online access to a demo does not guarantee in-person delivery in your region.
 
 </details>
 
 <details>
-<summary>How much does it cost?</summary>
+<summary>How much does hosting cost?</summary>
 
-**Community tier: $199 flat** for unlimited families — or run it as a
-**fundraiser**, where families pay $15 and your community keeps $5 of every
-sale. **Office Party tier: $349–$499** depending on crew size and voltage.
-Youth Groups and Form-Your-Own events are quoted flat and fast. No per-team
-fees, no surprises.
+The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Party at $349–$499. These are current offers for this game only and may depend on availability and package details. See [hosting tiers](/tiers/) and confirm current terms with the Lab.
 
 </details>
 
 <details>
-<summary>How many people can play?</summary>
+<summary>Who chooses the route and venue?</summary>
 
-Community kits have **no family cap** — the game is self-guided and
-staggered by design, so fifty families and five hundred families both work.
-Office events are sized when you book so the leaderboard stays spicy.
+For an in-person event, organizers must confirm a suitable venue and route for their participants, considering accessibility, supervision, local permissions, weather, and safety. Follow the current game instructions and confirm responsibilities with the Lab before the event.
+
+</details>
+
+## Participate and contribute
+
+<details>
+<summary>How can I help improve the games?</summary>
+
+Explore the public [Quest Packs](https://github.com/ZQM-Labs/quest-packs), [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring), [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit), and [Playtests](https://github.com/ZQM-Labs/playtests) repositories. Follow each project's instructions and report issues or feedback through its stated process.
 
 </details>
 
 <details>
-<summary>Is it safe?</summary>
+<summary>Where can I ask a question?</summary>
 
-Families play in **their own neighborhood or venue**, on routes the
-organizer chooses, in daylight or at dusk with flashlights and glow gear.
-Kids play with their adults; the game never sends anyone anywhere the
-organizer didn't pick. After Dark editions are for adults and stay on
-public, well-known ground.
+For current Wisp's Lost Lanterns hosting inquiries, email **zqmcomputing@gmail.com** with your group or organization, location, and dates. For other games, use the contact or feedback method listed on that game's page.
 
 </details>
-
-<details>
-<summary>Does Dr. Z come to our event in person?</summary>
-
-The Lab supports every event **remotely** — that's how one scientist can
-run a dozen neighborhoods in a weekend. The games are built to run
-themselves, and the Doctor is one email away throughout your window.
-(Reports of a tall figure with wild hair spotted near lantern stops remain
-unconfirmed.)
-
-</details>
-
-<details>
-<summary>What about Christmas? Or our spring festival?</summary>
-
-New editions roll out seasonally — a Christmas edition is next, and Youth
-Groups / Form-Your-Own bookings are waitlisting now. Tell the Lab your
-date and we'll skin the engine to your occasion.
-
-</details>
-
-<details>
-<summary>When do party rentals start?</summary>
-
-Soon — tables, chairs, grills, cornhole, and yard games are Phase 2, right
-behind the games. Email **<zqmcomputing@gmail.com>** to join the rentals list and
-you'll hear the moment the gear chamber opens.
-
-</details>
-
-<details>
-<summary>How do we know a kit actually works?</summary>
-
-Every quest is playtested before it ships — six stops, real organizers, real
-weather. We publish the protocol and the honest results: what deployed, how
-many played, which signs went missing, and what we fixed afterward. See the
-[playtest log](https://github.com/ZQM-Labs/playtests) — a game you've only
-played yourself is a draft.
-
-</details>
-
-<details>
-<summary>How do we book?</summary>
-
-Email **<zqmcomputing@gmail.com>** with your community or company name, your
-dates, and the tier you're eyeing. The Lab replies within a day with kit
-details and next steps. Halloween 2026 pilot spots are limited.
-</details>
-<!-- markdownlint-enable MD033 -->
