@@ -9,6 +9,8 @@ games as they become ready for public play.
 
 ## Production deployment and CI
 
+The production hosting and DNS configuration still need live verification. Use the [deployment source-of-truth runbook](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/deployment-source-of-truth.md) to record the actual provider/project, deployment trigger, deployed commit, canonical player source, and rollback procedure.
+
 The GitHub Actions workflow at
 [`.github/workflows/site-ci.yml`](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) is a **validation
 workflow**, not a deployment workflow. It synchronizes the player source into
