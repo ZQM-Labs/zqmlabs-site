@@ -24,6 +24,8 @@ jobs:
           extended: true
       - name: Sync canonical player into site bundle
         run: bash scripts/sync-player.sh main
+      - name: Run player regression checks against synchronized canonical source
+        run: node scripts/test-player-source.cjs
       - name: Syntax-check player scripts
         run: |
           set -euo pipefail
