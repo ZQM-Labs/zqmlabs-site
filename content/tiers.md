@@ -3,7 +3,7 @@ title: "Hosting Tiers — Wisp's Lost Lanterns"
 description: "Current hosting options for Wisp's Lost Lanterns, ZQM Labs' featured Halloween scavenger hunt."
 ---
 
-# Hosting options for Wisp's Lost Lanterns
+<!-- markdownlint-disable MD013 -->
 
 These packages describe the current **Wisp's Lost Lanterns** Halloween experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
