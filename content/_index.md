@@ -28,7 +28,7 @@ The current event activation is in Volusia County, Florida, October 30 – Novem
 
 ZQM Labs is intended to support more than one game. Visit the [Games directory](/games/) to see current public releases. New titles will be listed when their pages, demos, or play experiences are ready, with their status clearly identified. We will not present unannounced games as available.
 
-## Play. Host. Create. Contribute.
+## Play · Host · Create · Contribute
 
 - **Play:** Explore [quest packs and sample content](https://github.com/ZQM-Labs/quest-packs).
 - **Host:** Use the [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit) for setup guidance and event troubleshooting.

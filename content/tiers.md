@@ -49,4 +49,4 @@ For a different kind of game or a general introduction to the studio, visit the 
 
 ## Contact
 
-To ask about a Wisp's Lost Lanterns event, email **zqmcomputing@gmail.com** with your organization or group, preferred dates, location, and the option you are considering. Wait for confirmation before advertising an event as booked.
+To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Wait for confirmation before advertising an event as booked.

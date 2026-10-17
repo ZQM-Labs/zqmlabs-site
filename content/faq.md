@@ -5,8 +5,6 @@ description: "Answers about ZQM Labs, the current Wisp's Lost Lanterns game, com
 
 <!-- markdownlint-disable MD013 MD033 -->
 
-# Frequently asked questions
-
 ## About the Lab
 
 <details>
@@ -109,6 +107,6 @@ Explore the public [Quest Packs](https://github.com/ZQM-Labs/quest-packs), [Ques
 <details>
 <summary>Where can I ask a question?</summary>
 
-For current Wisp's Lost Lanterns hosting inquiries, email **zqmcomputing@gmail.com** with your group or organization, location, and dates. For other games, use the contact or feedback method listed on that game's page.
+For current Wisp's Lost Lanterns hosting inquiries, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your group or organization, location, and dates. For other games, use the contact or feedback method listed on that game's page.
 
 </details>

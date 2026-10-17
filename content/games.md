@@ -10,7 +10,8 @@ ZQM Labs creates story-driven, community-centered games for people who want to p
 ## Available now
 
 ### Wisp's Lost Lanterns
-**Halloween scavenger hunt · Current featured game**
+
+Halloween scavenger hunt · Current featured game
 
 Wisp has hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided story experience with four selectable scare levels.
 

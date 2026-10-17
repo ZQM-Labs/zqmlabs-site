@@ -23,7 +23,7 @@ Thank you for your interest in contributing to ZQM Labs — quest packs, game de
 - Use GitHub Issues for bug reports
 - Include steps to reproduce
 - Specify your environment (OS, version, etc)
-- For security vulnerabilities, see [SECURITY.md](SECURITY.md)
+- For security vulnerabilities, see [SECURITY.md](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/SECURITY.md)
 
 ## Questions?
 

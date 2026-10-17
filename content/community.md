@@ -3,8 +3,6 @@ title: "Community"
 description: "Ways to play, give feedback, playtest, and contribute to the ZQM Labs game ecosystem."
 ---
 
-# The community is part of the game
-
 ZQM Labs aims to make games that bring people together—and to give players and organizers meaningful ways to help those games improve. Community participation should be useful, safe, and honest about what is available today.
 
 ## Play together
