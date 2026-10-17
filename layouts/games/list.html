@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main class="game-directory">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  {{ range .Pages.ByWeight }}
+  <article class="game-directory-entry">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p><strong>Status:</strong>
+      {{ if eq .Params.status "playable-demo" }}Playable browser demo
+      {{ else if eq .Params.status "playtest" }}Playtest only
+      {{ else if eq .Params.status "in-development" }}In development
+      {{ else }}Availability unverified{{ end }}
+    </p>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <p><a href="{{ .RelPermalink }}">Details</a></p>
+  </article>
+  {{ end }}
+</main>
+{{ end }}
