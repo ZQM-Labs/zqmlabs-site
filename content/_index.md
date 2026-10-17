@@ -1,115 +1,86 @@
 ---
-title: "Halloween belongs to everyone — ZQM Labs"
-description: "ZQM Labs creates story-driven Halloween games that bring communities together. Play, host, adapt, and help shape the next shared adventure."
+title: "Community-Centered Games — ZQM Labs"
+description: "ZQM Labs creates story-driven games that bring people together. Explore the current Halloween game and follow new titles as they launch."
 ---
 
 ![Dr. Z, Game Master of Z's Quests & Mischief, holding up a glowing lantern](/img/logo-primary.webp)
 
-**Halloween belongs to everyone.**
+**Games are better when we play together.**
 
-**ZQM Labs creates playful, story-driven Halloween games that bring
-communities together.** Start with a local hunt, adapt an experience for your
-group, or help shape the next shared adventure.
+**ZQM Labs creates story-driven, community-centered games.** Our games are made for friends, families, neighborhoods, schools, teams, and curious people to share an experience—wherever they are.
 
-Built around Halloween. Designed for communities everywhere.
+Halloween is the setting for our current game, not the limit of the Lab. This site is the home for a growing collection of ZQM Labs games as more titles become ready to play.
 
-> 📜 **A note from the Lab:** Wisp — my first creation — escaped again, and
-  she hid her six glow lanterns. I need Lantern Keepers wherever curious
-  people gather. Bring them home, and try not to let her outsmart you. She
-  learned from the best. — *Dr. Z*
+## Find a game
 
-## One shared world. Many ways to play
+### Wisp's Lost Lanterns
+**Our current Halloween game**
 
-**Wisp's Lost Lanterns** is a self-guided scavenger hunt that combines story,
-puzzles, teamwork, and discovery. The current experience is built around six
-lantern stops, three hints at every stop, and four selectable scare levels.
+Wisp has escaped again and hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided scavenger hunt with story, puzzles, teamwork, and four selectable scare levels.
 
-Communities can use a quest as a neighborhood activity, a school or
-youth-group event, an office challenge, or a starting point for a new local
-adventure. Adapt the story and format to your group and venue; keep safety,
-accessibility, and local context in the plan.
+- [Play the browser demo](/games/hunt-for-wisps/)
+- [Halloween experience details](/halloween/)
+- [Hosting options and current tiers](/tiers/)
 
-## Play. Host. Create. Contribute
+The current event activation is in Volusia County, Florida, October 30 – November 1, 2026. The game can inspire community play elsewhere, but in-person delivery, local permissions, and support availability must be confirmed for each location.
 
-- **Play:** [Try a free sample quest](https://github.com/ZQM-Labs/quest-packs)
-  and explore the game before planning an event.
-- **Host:** Use the [Organizer
-  Toolkit](https://github.com/ZQM-Labs/organizer-toolkit) for setup guidance,
-  print specifications, and event troubleshooting.
-- **Create:** Use the [quest-authoring specification and
-  validator](https://github.com/ZQM-Labs/quest-authoring) to understand the
-  pack format and build new content.
-- **Contribute:** Read the [playtest
-  protocol](https://github.com/ZQM-Labs/playtests), report issues, and help
-  improve the experience.
+### More games from the Lab
 
-Community participation is part of the product direction—not a feature we
-should claim is fully automated today. Public repositories make the work
-visible; a contribution is not considered accepted or published until it has
-been reviewed and tested.
+ZQM Labs is intended to support more than one game. Visit the [Games directory](/games/) to see current public releases. New titles will be listed when their pages, demos, or play experiences are ready, with their status clearly identified. We will not present unannounced games as available.
+
+## Play. Host. Create. Contribute.
+
+- **Play:** Explore [quest packs and sample content](https://github.com/ZQM-Labs/quest-packs).
+- **Host:** Use the [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit) for setup guidance and event troubleshooting.
+- **Create:** Read the [quest-authoring specification and validator](https://github.com/ZQM-Labs/quest-authoring) to understand the current quest-pack format.
+- **Contribute:** Follow the [playtest protocol](https://github.com/ZQM-Labs/playtests), report issues, and help improve the experience.
+
+Community participation is part of the product direction—not a claim that every community feature is automated today. Public repositories make the work visible; contributions are not accepted or published until reviewed and tested.
+
+## Made for communities everywhere
+
+Our direction is global and community-centric: games should bring people together across regions, not depend on one local event or one season. Communities should be able to adapt experiences to their group, venue, traditions, and comfort level while planning for safety, accessibility, and local context.
+
+Volusia County is the first activation for Wisp's Lost Lanterns, not a boundary on who can play or what ZQM Labs can create. Current event kits, pricing, and support may still be limited by the locations and capacity we can presently serve. Contact the Lab before assuming an event can be delivered in another region.
 
 ## Meet your Game Master
 
-Every game runs at the scare level the group chooses. Dr. Z's look signals the
-experience: the madder the Z, the whiter the hair.
+Every Wisp's Lost Lanterns team chooses its scare level. Dr. Z's look signals the experience: the madder the Z, the whiter the hair.
 
 {{< dial >}}
 
 Same quest, four voltages. The face on the flyer is a promise.
 
-## Local activations, global ambition
+## Current Halloween game: hosting tiers
 
-### First activation: Volusia County, Florida
-
-The October 30 – November 1, 2026 Wisp's Lost Lanterns pilot is a local
-activation of a broader creative direction. It helps us learn how communities
-host, adapt, and play together. Volusia County is the starting point—not the
-limit of the idea.
-
-Current event kits, prices, and support availability may be limited by the
-locations and capacity we can presently serve. Contact the Lab before assuming
-that an event can be delivered in another region.
-
-## Tiers at a glance
+These tiers apply to Wisp's Lost Lanterns; they are not pricing for every future game.
 
 - 🏠 **Family Night — $49 flat**, one household.
-- 🏘️ **Community — $199 flat**, unlimited families. Fundraising terms may be
-  available for qualifying events.
+- 🏘️ **Community — $199 flat**, unlimited families. Fundraising terms may be available for qualifying events.
 - 🏢 **Office Party — $349–$499**, team-building format.
-- 🧭 **Youth Groups** and 🎉 **Form-Your-Own** — ask about current
-  availability.
+- 🧭 **Youth Groups** and 🎉 **Form-Your-Own** — ask about current availability.
 
 [Full tier details →](/tiers/)
 
 ## Open by design
 
-Quest packs, the organizer toolkit, the authoring format, and playtest
-materials are published on GitHub so people can inspect the work and help
-improve it.
+Quest packs, the organizer toolkit, the authoring format, and playtest materials are published on GitHub so people can inspect the work and help improve it.
 
-- **Free sample:** [Quest Packs](https://github.com/ZQM-Labs/quest-packs)
-- **Hosting guidance:** [Organizer
-  Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
-- **Authoring rules:** [Quest
-  Authoring](https://github.com/ZQM-Labs/quest-authoring)
-- **Playtest process:** [Playtests](https://github.com/ZQM-Labs/playtests)
+- [Free sample: Quest Packs](https://github.com/ZQM-Labs/quest-packs)
+- [Hosting guidance: Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
+- [Authoring rules: Quest Authoring](https://github.com/ZQM-Labs/quest-authoring)
+- [Playtest process](https://github.com/ZQM-Labs/playtests)
 
 ## Quick questions
 
-**Do players need to install an app?** The current player runs in a browser;
-one phone per team is enough for the basic experience.
+**Is ZQM Labs only a Halloween game?** No. Wisp's Lost Lanterns is the current Halloween game. ZQM Labs is the studio and home for a broader collection of community-centered games.
 
-**Can we run a quest anywhere?** The content can be adapted for different
-venues, but location-based play, local permissions, accessibility, and current
-support arrangements must be considered for each event.
+**Do players need to install an app?** The current Wisp's Lost Lanterns player runs in a browser; one phone per team is enough for the basic experience.
 
-**Are global community features live?** Global storytelling and
-internationalization work is being integrated. Do not assume global
-leaderboards, community discovery, translated content for every language, or
-worldwide event fulfillment are live until those capabilities are announced
-and verified.
+**Can we run a quest anywhere?** Content can be adapted for different venues, but location-based play, local permissions, accessibility, and current support arrangements must be considered for each event.
+
+**Are global community features live?** Global storytelling and internationalization work is being integrated. Do not assume global leaderboards, community discovery, translated content for every language, or worldwide event fulfillment are live until those capabilities are announced and verified.
 
 [More questions →](/faq/)
 
-**Play more. Plan less.** A local gathering can be the beginning of a much
-bigger shared adventure.
+**Play more. Plan less.** Find your people, choose your adventure, and help shape what the Lab builds next.
