@@ -8,7 +8,7 @@ weight: 2
 
 ## Play the browser demo
 
-[**Launch Lantern Player**](/games/lantern-player/)
+[**Launch Lantern Player**](/games/lantern-player/index.html)
 
 The demo runs in your browser and does not require a paid kit or access code. Light lanterns, solve puzzles, and explore the story.
 

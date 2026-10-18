@@ -18,6 +18,12 @@ code{background:#f4e8d4;padding:2px 6px;border-radius:6px}
 </div>
 {{/* ?demo=1 is required: without it the player takes its live branch and calls
      api.zqmlabs.com for access-code validation, which is not deployed. */}}
+{{ if eq .RelPermalink "/games/lantern-player/" }}
+<div class="game-frame">
+  <iframe src="/games/lantern-player/" title="Lantern Player — playable demo" allow="geolocation"></iframe>
+</div>
+<p class="muted">Stuck inside the frame? <a href="/games/lantern-player/" target="_blank" rel="noopener">Open the game fullscreen →</a></p>
+{{ else if eq .RelPermalink "/games/hunt-for-wisps/" }}
 <div class="game-frame">
   <iframe src="/games/hunt-for-wisps/play/?demo=1" title="Hunt for Wisps — playable demo" allow="geolocation"></iframe>
 </div>
@@ -34,4 +40,7 @@ code{background:#f4e8d4;padding:2px 6px;border-radius:6px}
 {{/* Booking address must match every other page. hello@zqmlabs.com has no MX
      record, so mail sent there is silently dropped. */}}
 <p><a class="btn" href="mailto:{{ .Site.Params.email }}?subject=Booking%20Hunt%20for%20Wisps">Book this for your community — $199</a></p>
+{{ else }}
+{{/* Wisps Tracker and other non-game pages: no iframe embed */}}
+{{ end }}
 {{ end }}

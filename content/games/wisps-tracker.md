@@ -1,7 +1,7 @@
 ---
 title: "Wisps Tracker — live event dashboard"
 description: "Wisps Tracker is a live event dashboard for Hunt for Wisps events. Track teams, scores, and progress in real time."
-status: "playable-demo"
+status: "tool"
 weight: 3
 ---
 
