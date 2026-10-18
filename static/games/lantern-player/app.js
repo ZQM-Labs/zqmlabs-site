@@ -160,8 +160,8 @@ function show(id) {
 function artFor(stop) {
   if (!stop || !stop.art) return "";
   if (state.scare && state.scare !== "cozy")
-    return "assets/" + stop.art.replace(/\.webp$/i, "-" + state.scare + ".webp");
-  return "assets/" + stop.art;
+    return "assets/img/" + stop.art.replace(/\.webp$/i, "-" + state.scare + ".webp");
+  return "assets/img/" + stop.art;
 }
 
 function variant(stop, kind) { // kind: "story" | puzzle object
@@ -213,7 +213,7 @@ function updatePlayerMarker(lat, lng, acc) {
 function stopIcon(s) {
   const lit = state.solved.includes(s.id);
   const face = s.art
-    ? `<img src="${artFor(s)}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}" onerror="this.onerror=null;this.src='assets/${s.art}'">`
+    ? `<img src="${artFor(s)}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}" onerror="this.onerror=null;this.src='assets/img/${s.art}'">`
     : `<div class="pin-fallback" role="img" aria-label="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}">🏮</div>`;
   return L.divIcon({ className: "stop-marker" + (lit ? " lit" : ""), html: face,
     iconSize: [46, 46], iconAnchor: [23, 23] });
@@ -497,7 +497,7 @@ function updateHUD() {
     let dots = "";
     for (let i = 0; i < total; i++) dots += i < lit ? "🏮" : "🌑";
     wm.innerHTML = `<strong>Wisp's glow</strong>` +
-      `<img class="wisp-mood" src="assets/${mood.src}" alt="${mood.alt}">` +
+      `<img class="wisp-mood" src="assets/img/${mood.src}" alt="${mood.alt}">` +
       `<div class="dots" role="img" aria-label="${lit} of ${total} lanterns lit">${dots}</div>` +
       `<div>${lit}/${total} lanterns lit — ${mood.cap}</div>`;
   }
@@ -508,7 +508,7 @@ function updateHUD() {
       const got = state.solved.includes(s.id);
       const cls = got ? "relic" : "relic locked";
       const inner = (got && s.art)
-        ? `<img class="${cls}" src="${artFor(s)}" alt="${RELIC_ALT[s.id] || ("Relic: " + esc(s.name))}" onerror="this.onerror=null;this.src='assets/${s.art}'">`
+        ? `<img class="${cls}" src="${artFor(s)}" alt="${RELIC_ALT[s.id] || ("Relic: " + esc(s.name))}" onerror="this.onerror=null;this.src='assets/img/${s.art}'">`
         : `<div class="${cls}" role="img" aria-label="${got ? "lit lantern relic" : "unfound relic"}">${got ? "🏮" : "❔"}</div>`;
       return `<span title="${got ? esc(s.name) : "???"}">${inner}</span>`;
     }).join("");

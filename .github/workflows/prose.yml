@@ -16,9 +16,11 @@ jobs:
           globs: '**/*.md'
 
   links:
+    # Internal routes are checked against the generated Hugo output by site-ci.yml.
+    # Exclude the live production origin here so an unreleased PR is not judged against stale deployed HTML.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --base https://zqmlabs.com --exclude https://github.com/ZQM-Computing/zqm-labs '**/*.md'
+          args: --verbose --base https://zqmlabs.com --exclude https://github.com/ZQM-Computing/zqm-labs --exclude https://zqmlabs.com/ '**/*.md'

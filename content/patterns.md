@@ -18,7 +18,7 @@ paywalls, no sign-ups — if the Lab learned it, you can have it.
 - [Organizer toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup instructions, QR generation, print specifications, and event-day troubleshooting
 - [Playtest protocol and reports](https://github.com/ZQM-Labs/playtests) — playtest process and appropriately anonymized findings
 - [Standalone Lantern player](https://github.com/ZQM-Labs/lantern-player) — source for the browser player/PWA; this source link does not imply that the dedicated `play.zqmlabs.com` hostname is live
-- [Wisps Tracker](https://github.com/ZQM-Labs/wisps-tracker) — live event dashboard backend for Hunt for Wisps; team tracking, leaderboards, and hint management
+- **Wisps Tracker** — a companion organizer-dashboard capability; its source repository is private and is not linked from this public resource index
 - [Quest pack generator](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/scripts/gen_quest_pack.py) — `scripts/gen_quest_pack.py` in the site repo; generates a playable quest pack HTML + manifest from a YAML config
 - [ZQM Labs public website source](https://github.com/ZQM-Labs/zqmlabs-site) — canonical Hugo source for this site's public content
 

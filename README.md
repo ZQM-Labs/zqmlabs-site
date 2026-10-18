@@ -1,13 +1,7 @@
 # ZQM Labs website source
-<!-- ZQM-START -->
-<p align="center">
-  <strong>ZQM Labs — Z's Quests & Mischief</strong><br>
-  <a href="https://zqmlabs.com">zqmlabs.com</a> •
-  <a href="https://github.com/ZQM-Labs">GitHub</a>
-</p>
-<!-- ZQM-END -->
 
-
+**ZQM Labs — Z's Quests & Mischief**  
+[zqmlabs.com](https://zqmlabs.com) · [GitHub organization](https://github.com/ZQM-Labs)
 
 This repository contains the public website content and Hugo source for
 **ZQM Labs — Z's Quests & Mischief**. It is the canonical source for the public
@@ -75,7 +69,7 @@ Before describing checkout as live, verify and record:
 - Privacy/data handling and any required consent
 - A successful end-to-end test from product selection through confirmation and fulfillment
 
-Repository evidence currently points to a **contact-first inquiry**, not a verified self-service checkout: [the published tiers page](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/content/tiers.md) asks customers to email for an event and wait for confirmation. The repository also contains a separate [fulfillment workflow](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/fulfill.yml) triggered by issues labeled `purchase` or `subscription`; it passes multiple cryptocurrency payment-rail secrets and a release URL named `zqm_attestation_release_package.zip`. The workflow references `scripts/fulfill_bot.py`, which was not found in the repository's current `scripts/` directory. This does not demonstrate a working checkout path and warrants owner/security review before the workflow is relied upon. Do not expose customer payment details in public issues.
+Repository evidence currently points to a **contact-first inquiry**, not a verified self-service checkout: [the published tiers page](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/content/tiers.md) asks customers to email for an event and wait for confirmation. A previous review referred to a fulfillment workflow at `.github/workflows/fulfill.yml`, but that path is not present in the current public repository. The current workflow inventory does not substantiate that description. Before relying on separate fulfillment automation, locate its authoritative source, review its permissions and payment-data handling, and verify an end-to-end test. Do not expose customer payment details in public issues.
 
 If any of these details are unknown, mark them as unresolved in release notes and avoid implying the customer can complete an order. Do not present a manual email inquiry or direct payment link as checkout unless that is the approved and tested customer journey.
 
@@ -140,7 +134,7 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 ## Related repos
 
 - [lantern-player](https://github.com/ZQM-Labs/lantern-player) — the player PWA
-- [wisps-tracker](https://github.com/ZQM-Labs/wisps-tracker) — team tracking backend
+- Wisps Tracker — organizer-dashboard capability; its source repository is private and is not linked from public documentation
 - [quest-authoring](https://github.com/ZQM-Labs/quest-authoring) — quest pack spec, validator, and generator
 - [quest-packs](https://github.com/ZQM-Labs/quest-packs) — ready-to-play quest packs
 - [organizer-toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup checklists, print specs, FAQ
@@ -148,12 +142,12 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 
 ## Installation
 
-```bash
+~~~bash
 pip install -e .
-```
+~~~
 
 Requires Python 3.11+.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see the [LICENSE file in this repository](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/LICENSE).

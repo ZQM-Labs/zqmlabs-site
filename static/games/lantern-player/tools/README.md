@@ -41,6 +41,7 @@ another host.
 ## What each harness proves
 
 **`verify-exec.js`**
+
 1. Whether QR params (`?kit`, `?stop`, `?code`) reach the UI
 2. Whether unlocking the same stop twice duplicates it in `state.solved`
    (and therefore inflates the portal's `solved.length * POINTS_PER_STOP`)
@@ -64,7 +65,7 @@ another host.
 
 ## Expected results (playthrough / deeplink)
 
-```
+```text
 verify-playthrough.js  ->  RESULT  stops_lit=6/6  duplicates=false  completable=true
 
 verify-deeplink.js "?kit=DEMO&stop=3&code=LANTERN-3"
