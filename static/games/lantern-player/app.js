@@ -212,7 +212,7 @@ function updatePlayerMarker(lat, lng, acc) {
 function stopIcon(s) {
   const lit = state.solved.includes(s.id);
   const face = s.art
-    ? `<img src="${artFor(s)}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}" onerror="this.onerror=null;this.src='assets/img/${s.art.replace(/\\.webp$/i, "-cozy.webp")}'">`
+    ? `<img src="${artFor(s)}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}" onerror="this.onerror=null;this.src='assets/img/${s.art.replace(/\.webp$/i, "-cozy.webp")}'">`
     : `<div class="pin-fallback" role="img" aria-label="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}">🏮</div>`;
   return L.divIcon({ className: "stop-marker" + (lit ? " lit" : ""), html: face,
     iconSize: [46, 46], iconAnchor: [23, 23] });
