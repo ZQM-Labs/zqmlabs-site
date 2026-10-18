@@ -27,4 +27,4 @@ This is a software demo, not proof that a paid kit is orderable. The published d
 
 Lantern Player is the standalone engine behind the lantern-lighting experiences. It is open source on GitHub:
 
-- [Lantern Player source](https://github.com/ZQM-Computing/lantern-player) — fork, extend, and run your own.
+- [Lantern Player source](https://github.com/ZQM-Labs/lantern-player) — fork, extend, and run your own.
