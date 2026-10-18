@@ -65,7 +65,7 @@ another host.
 
 ## Expected results (playthrough / deeplink)
 
-~~~text
+```text
 verify-playthrough.js  ->  RESULT  stops_lit=6/6  duplicates=false  completable=true
 
 verify-deeplink.js "?kit=DEMO&stop=3&code=LANTERN-3"
@@ -76,7 +76,7 @@ verify-deeplink.js "?kit=DEMO&stop=3&code=LANTERN-3"
 verify-deeplink.js "?kit=DEMO&ac=WISP-2026-DEMO"
   access-code  : "WISP-2026-DEMO"
   unlock-code  : ""
-~~~
+```
 
 The shim must provide what the player touches: `L.divIcon`, `L.circleMarker`,
 `L.circle`, `L.latLng`, element `childNodes`, and
