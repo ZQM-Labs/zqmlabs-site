@@ -27,7 +27,11 @@ The current event activation is in Volusia County, Florida, October 30–Novembe
 
 ### More games from the Lab
 
-Visit the [Games directory](/games/) to see experiences and their current status. Listings should distinguish a playable browser demo from a bookable event, a limited playtest, and a game still in development. A demo alone does not mean that a complete paid event package is available.
+- [Hunt for Wisps](/games/hunt-for-wisps/) — the flagship 6-stop lantern hunt
+- [Lantern Player](/games/lantern-player/) — the standalone lantern-lighting engine
+- [Wisps Tracker](/games/wisps-tracker/) — the live event dashboard
+
+Visit the [Games directory](/games/) to see all experiences and their current status. Listings distinguish a playable browser demo from a bookable event, a limited playtest, and a game still in development. A demo alone does not mean that a complete paid event package is available.
 
 ## Play · Host · Create · Contribute
 

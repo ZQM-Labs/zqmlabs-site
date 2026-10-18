@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <!-- Z's Quests & Mischief — pin-compass mark, evergreen v2 (2026-10-12).
+       Palette: ink #2b2118 · quest orange #e07b24 · cream #fff7ea.
+       The mark: a map pin whose window is a compass rose (location quests
+       in one glyph, season-neutral). Edit in Inkscape/Penpot.
+       Halloween variant: icon-halloween-lantern.svg (pin-lantern). -->
+  <!-- map pin body -->
+  <path d="M120 12 C74 12 44 48 44 92 C44 140 120 224 120 224 C120 224 196 140 196 92 C196 48 166 12 120 12 Z" fill="#2b2118"/>
+  <!-- pin window -->
+  <circle cx="120" cy="92" r="46" fill="#fff7ea"/>
+  <!-- compass ring -->
+  <circle cx="120" cy="92" r="41" fill="none" stroke="#e07b24" stroke-width="4"/>
+  <!-- compass star: diagonal points (soft) -->
+  <polygon points="120,63 128,84 149,92 128,100 120,121 112,100 91,92 112,84" fill="#e07b24" opacity="0.45" transform="rotate(45 120 92)"/>
+  <!-- compass star: cardinal points -->
+  <polygon points="120,54 131,81 158,92 131,103 120,130 109,103 82,92 109,81" fill="#e07b24" stroke="#2b2118" stroke-width="3" stroke-linejoin="round"/>
+  <!-- compass hub -->
+  <circle cx="120" cy="92" r="7" fill="#fff7ea" stroke="#2b2118" stroke-width="3"/>
+</svg>

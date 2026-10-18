@@ -53,6 +53,8 @@ ZQM Labs publishes game-related materials, including sample quest packs, authori
 - [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring)
 - [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
 - [Playtests](https://github.com/ZQM-Labs/playtests)
+- [Lantern Player](https://github.com/ZQM-Computing/lantern-player) — the standalone lantern-lighting engine
+- [Wisps Tracker](https://github.com/ZQM-Labs/wisps-tracker) — the live event dashboard
 
 The Lab also links to technical resources from [ZQM Computing](https://github.com/ZQM-Computing). ZQM Labs and ZQM Computing are distinct projects with related but different purposes.
 

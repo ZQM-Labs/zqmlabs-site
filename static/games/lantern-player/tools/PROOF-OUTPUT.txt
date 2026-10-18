@@ -1,0 +1,78 @@
+==========================================================================
+RUNTIME PROOF — lantern-player defects
+==========================================================================
+original source : origin/main (fetched)
+fixed source    : working tree (branch fix/player-defects)
+node            : v22.23.1
+origin/main app : 10984 bytes
+fixed app       : 15275 bytes
+
+--------------------------------------------------------------------------
+DEFECT 1 — QR deep link (?kit=&stop=&code=)
+--------------------------------------------------------------------------
+  ORIGINAL : access-code field = ""
+             -> QR params IGNORED
+  FIXED    : access-code field = "LANTERN-3"
+             -> QR params CONSUMED
+
+--------------------------------------------------------------------------
+DEFECT 2 — duplicate solve -> leaderboard inflation
+--------------------------------------------------------------------------
+  ORIGINAL:
+    after unlock #1             : [1]
+    after unlock #2             : [1,1]
+    after unlock #3             : [1,1,1]
+    duplicates present           : true
+    portal score (len * 100)     : 300   [clean 6-stop run = 600]
+  FIXED:
+    after unlock #1             : [1]
+    after unlock #2             : [1]
+    after unlock #3             : [1]
+    duplicates present           : false
+    portal score (len * 100)     : 100   [clean 6-stop run = 600]
+
+--------------------------------------------------------------------------
+DEFECT 6 — openMap() with Leaflet unavailable (live CSP state)
+--------------------------------------------------------------------------
+  ORIGINAL: RESULT : THREW ReferenceError: L is not defined
+  FIXED: RESULT : did not throw (guarded)
+
+--------------------------------------------------------------------------
+DEFECT 5 — service worker serves HTML in place of failed JS
+--------------------------------------------------------------------------
+  ORIGINAL:
+    [A] offline fetch of app.js (the JS the game needs)
+    returned body : "SHELL:./index.html"
+    RESULT : !! SERVED HTML IN PLACE OF JS (silent SyntaxError in browser)
+    [B] offline navigation (should serve the shell)
+    returned body : "SHELL:./index.html"
+    [C] POST /api/lantern/progress (API write)
+    RESULT : INTERCEPTED (wrong — Cache API rejects non-GET)
+  FIXED:
+    [A] offline fetch of app.js (the JS the game needs)
+    RESULT : threw -> offline
+    [B] offline navigation (should serve the shell)
+    returned body : "SHELL:./index.html"
+    [C] POST /api/lantern/progress (API write)
+    RESULT : passed through to network (correct)
+
+--------------------------------------------------------------------------
+DEFECT 4 — PWA start_url lands on a dead screen
+--------------------------------------------------------------------------
+  ORIGINAL start_url : '.'  -> /play/  -> no ?demo=1
+             -> live branch -> validateCode() -> api.zqmlabs.com 404 -> stuck
+  FIXED    start_url : './?demo=1'  -> /play/?demo=1 -> playable
+  live check         : POST api.zqmlabs.com/api/lantern/validate -> 404
+
+==========================================================================
+VERDICT
+==========================================================================
+  PROVEN  QR deep link consumed (was ignored)
+  PROVEN  duplicate solves eliminated (was inflating score)
+  PROVEN  map degrades instead of throwing (was ReferenceError)
+  PROVEN  SW no longer serves HTML for JS (was silent SyntaxError)
+  PROVEN  SW passes POST through (was intercepting API writes)
+  PROVEN  PWA start_url reaches a playable screen (was a dead screen)
+
+  All defects reproduced on origin/main and resolved in the working tree.
+==========================================================================

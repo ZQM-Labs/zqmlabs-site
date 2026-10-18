@@ -100,7 +100,7 @@ For an in-person event, organizers must confirm a suitable venue and route for t
 <details>
 <summary>How can I help improve the games?</summary>
 
-Explore the public [Quest Packs](https://github.com/ZQM-Labs/quest-packs), [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring), [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit), and [Playtests](https://github.com/ZQM-Labs/playtests) repositories. Follow each project's instructions and report issues or feedback through its stated process.
+Explore the public [Quest Packs](https://github.com/ZQM-Labs/quest-packs), [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring), [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit), [Playtests](https://github.com/ZQM-Labs/playtests), [Lantern Player](https://github.com/ZQM-Computing/lantern-player), and [Wisps Tracker](https://github.com/ZQM-Labs/wisps-tracker) repositories. Follow each project's instructions and report issues or feedback through its stated process.
 
 </details>
 
