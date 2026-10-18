@@ -1,6 +1,8 @@
 # Production deployment source-of-truth record
 
 **Status: partially verified from repository and Cloudflare API evidence on 2026-10-18; public runtime and latest GitHub Actions deployment remain unverified.** No production configuration was changed. This record distinguishes configured hosting state from the artifact currently served to users.
+||||||| parent of 07b6eeb (docs: record Cloudflare Pages audit snapshot)
+**Status: not yet verified against the live hosting account.** This record separates facts visible in the repositories from claims that require access to the production hosting and DNS configuration. Do not use the unresolved items as authorization to deploy or change DNS.
 
 ## Repository-verified facts
 
@@ -13,6 +15,8 @@
 | Historical Pages references | Other repository documentation describes Cloudflare Pages and a manual Wrangler deployment | These are repository claims, not live account evidence; the deployment output and trigger must be checked in the actual account |
 
 ## Remaining runtime and release verification
+||||||| parent of 07b6eeb (docs: record Cloudflare Pages audit snapshot)
+## Required live verification
 
 Configuration is partially verified above. Use exact identifiers and timestamps; do not copy credentials, API tokens, or secret environment-variable values into this file. Public HTTP behavior, the latest successful GitHub Actions deploy, and the exact artifact currently served remain unresolved.
 
