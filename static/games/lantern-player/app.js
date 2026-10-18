@@ -77,7 +77,7 @@ const DEMO_PACK = {
                 overdrive: { q: "Quick, Keeper: 'Hoo' is owl for 'well done.' How many O's are in Hoo?", a: "2", type: "number" } },
       fallback: { q: "What two letters does an owl 'say'?", a: "ho" },
       hints: ["Look at the sign art — he's watching you.", "Twilight is this bird's favorite time.", "Ranger assist: it's the owl."] },
-    { id: 6, name: "The Lantern Parade Ground", lat: 0, lng: 0, code: "LANTERN-6", art: "stop-6-parade.webp",
+    { id: 6, name: "The Lantern Parade Ground", lat: 0, lng: 0, code: "LANTERN-6", art: "stop-6-lantern.webp",
       story: { cozy: "The last lantern! Light it and the whole parade glows.",
                spooky: "The empty parade ground waits. Six lanterns, six shadows — but there are seven shadows moving on the grass, and one of them is waving at you.",
                afterdark: "Every lantern you've lit is still burning behind you, a dotted line of fire through the dark. One more, and the road home exists.",
@@ -155,13 +155,12 @@ function show(id) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
   $(id).classList.add("active");
 }
-/* Scare-tier art: stop-1-pumpkin-spooky.webp etc. Cozy reuses the base file;
-   a missing tier file falls back to base art via the img onerror guard. */
+/* All stop art is stored as explicit tier variants; there are no unsuffixed
+   base files. Always select the active tier, defaulting to Cozy. */
 function artFor(stop) {
   if (!stop || !stop.art) return "";
-  if (state.scare && state.scare !== "cozy")
-    return "assets/img/" + stop.art.replace(/\.webp$/i, "-" + state.scare + ".webp");
-  return "assets/img/" + stop.art;
+  const tier = state.scare || "cozy";
+  return "assets/img/" + stop.art.replace(/\.webp$/i, "-" + tier + ".webp");
 }
 
 function variant(stop, kind) { // kind: "story" | puzzle object
@@ -213,7 +212,7 @@ function updatePlayerMarker(lat, lng, acc) {
 function stopIcon(s) {
   const lit = state.solved.includes(s.id);
   const face = s.art
-    ? `<img src="${artFor(s)}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}" onerror="this.onerror=null;this.src='assets/img/${s.art}'">`
+    ? `<img src="${artFor(s)}" alt="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}" onerror="this.onerror=null;this.src='assets/img/${s.art.replace(/\\.webp$/i, "-cozy.webp")}'">`
     : `<div class="pin-fallback" role="img" aria-label="${lit ? "Lit" : "Unlit"}: Stop ${s.id} — ${esc(s.name)}">🏮</div>`;
   return L.divIcon({ className: "stop-marker" + (lit ? " lit" : ""), html: face,
     iconSize: [46, 46], iconAnchor: [23, 23] });
