@@ -42,7 +42,6 @@ another host.
 
 **`verify-exec.js`**
 1. Whether QR params (`?kit`, `?stop`, `?code`) reach the UI
-
 2. Whether unlocking the same stop twice duplicates it in `state.solved`
    (and therefore inflates the portal's `solved.length * POINTS_PER_STOP`)
 3. Whether `openMap()` throws when Leaflet is absent (the live CSP state)
