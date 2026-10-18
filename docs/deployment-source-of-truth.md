@@ -16,6 +16,21 @@
 
 ## Remaining runtime and release verification
 ||||||| parent of 07b6eeb (docs: record Cloudflare Pages audit snapshot)
+||||||| parent of 84398b4 (docs: record Pages deployment IDs and DNS mapping)
+## Cloudflare Pages API snapshot — 2026-10-18
+
+The Cloudflare account API returned a Pages project named `zqmlabs-site` with custom domains `zqmlabs.com` and `www.zqmlabs.com`, repository source metadata pointing to `zqm-labs`, and production branch `main`. The project metadata reported production deployments as disabled. The latest deployment record reported its latest stage as `idle` and referenced commit `730c15ab681f482425a794d2cad6a4da63255f3c`.
+
+These are **provider-side configuration/deployment-record observations**, not proof that the referenced commit is currently serving the public domain, that the record represents a failed deployment, or that users receive an error. HTTP probes from the audit execution environment returned 403 responses across multiple unrelated services; that uniform pattern was inconclusive.
+
+### Required follow-up
+
+1. In Cloudflare Pages, identify the last successful production deployment and its deployment ID, timestamp, and source commit.
+2. Confirm that the custom domains are attached to this project and compare the live artifact with the source commit.
+3. Determine whether disabled production deployments are intentional release control. Do not enable automatic production deployments until the release owner confirms the intended policy.
+4. Run external smoke checks from an ordinary browser/network and record response codes, redirects, and route-level results.
+5. Keep the last known-good production artifact available for rollback; do not redeploy solely because a deployment record is `idle`.
+
 ## Required live verification
 
 Configuration is partially verified above. Use exact identifiers and timestamps; do not copy credentials, API tokens, or secret environment-variable values into this file. Public HTTP behavior, the latest successful GitHub Actions deploy, and the exact artifact currently served remain unresolved.
