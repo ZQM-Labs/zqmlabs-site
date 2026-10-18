@@ -9,12 +9,12 @@
 | Website source | This repository contains the Hugo website source and validation workflow | See [site CI](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) |
 | CI behavior | The checked-in site workflow validates JavaScript, player synchronization, the Hugo build, generated links, and required routes; it contains no production deployment step | A green CI run does not prove that production was deployed |
 | Standalone player repository | [ZQM-Labs/lantern-player](https://github.com/ZQM-Labs/lantern-player) is the standalone player repository | The monorepo also contains a player copy; production's selected source has not been independently verified |
-| Competing deployment path | The private ZQM-Computing/zqm-labs monorepo contains a server-oriented deployment script | Its existence does not prove that it currently serves the public domain |
+| Production deployment workflow | The private `ZQM-Computing/zqm-labs` monorepo contains `.github/workflows/pages-deploy.yml`, which is configured to validate/build the nested Hugo site and deploy to Pages with Wrangler | Workflow configuration is verified; the latest successful GitHub Actions run and exact artifact-to-deployment correlation remain unverified |
 | Historical Pages references | Other repository documentation describes Cloudflare Pages and a manual Wrangler deployment | These are repository claims, not live account evidence; the deployment output and trigger must be checked in the actual account |
 
-## Required live verification
+## Remaining runtime and release verification
 
-Complete this table from the production hosting account and public DNS. Use exact identifiers and timestamps; do not copy credentials, API tokens, or secret environment-variable values into this file.
+Configuration is partially verified above. Use exact identifiers and timestamps; do not copy credentials, API tokens, or secret environment-variable values into this file. Public HTTP behavior, the latest successful GitHub Actions deploy, and the exact artifact currently served remain unresolved.
 
 | Field | Verified value | Evidence to record |
 |---|---|---|
