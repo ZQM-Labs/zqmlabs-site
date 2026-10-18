@@ -74,6 +74,7 @@ jobs:
         run: |
           node --check static/games/hunt-for-wisps/play/app.js
           node scripts/test-player-source.cjs
+          node scripts/test-legacy-player-assets.cjs
 
   go:
     needs: detect
