@@ -1,24 +1,22 @@
 ---
 title: "Wisps Tracker — live event dashboard"
-description: "Wisps Tracker is a live event dashboard for Hunt for Wisps events. Track teams, scores, and progress in real time."
+description: "Wisps Tracker is a companion organizer-dashboard capability for Hunt for Wisps events; access and availability must be confirmed with ZQM Labs."
 status: "tool"
 weight: 3
 ---
 
 ## About Wisps Tracker
 
-Wisps Tracker is the live event dashboard for Hunt for Wisps. It gives organizers and spectators a real-time view of team progress, scores, and event status.
+Wisps Tracker is a companion organizer-dashboard capability for Hunt for Wisps. Its deployment, access model, and event support must be confirmed with ZQM Labs before an organizer relies on it.
 
-- [Wisps Tracker source](https://github.com/ZQM-Labs/wisps-tracker) — fork, extend, and run your own.
 - [Hunt for Wisps](/games/hunt-for-wisps/) — the main game experience.
 
 ## Features
 
-- Live team tracking with real-time score updates
-- Event dashboard for organizers
-- Spectator mode for audiences
-- Open source and self-hostable
+- Intended organizer view of team progress and event status
+- Availability depends on a confirmed event setup
+- Public self-service access and self-hosting instructions are not currently documented here
 
 ## Try it
 
-The Wisps Tracker demo is available as part of the Hunt for Wisps event experience. Contact ZQM Labs to learn more about using Wisps Tracker for your event.
+Do not assume the dashboard is live or publicly self-service. Contact ZQM Labs to confirm whether it is available for a specific event.
