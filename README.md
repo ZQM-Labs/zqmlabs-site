@@ -127,3 +127,12 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 - Halloween: the current Halloween game category
 - Host a Game: current Wisp's Lost Lanterns hosting options
 - About and FAQ: studio and availability details
+
+## Related repos
+
+- [lantern-player](https://github.com/ZQM-Labs/lantern-player) — the player PWA
+- [wisps-tracker](https://github.com/ZQM-Labs/wisps-tracker) — team tracking backend
+- [quest-authoring](https://github.com/ZQM-Labs/quest-authoring) — quest pack spec, validator, and generator
+- [quest-packs](https://github.com/ZQM-Labs/quest-packs) — ready-to-play quest packs
+- [organizer-toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup checklists, print specs, FAQ
+- [playtests](https://github.com/ZQM-Labs/playtests) — playtest protocol and results
