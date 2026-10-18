@@ -1,4 +1,13 @@
 # ZQM Labs website source
+<!-- ZQM-START -->
+<p align="center">
+  <strong>ZQM Labs — Z's Quests & Mischief</strong><br>
+  <a href="https://zqmlabs.com">zqmlabs.com</a> •
+  <a href="https://github.com/ZQM-Labs">GitHub</a>
+</p>
+<!-- ZQM-END -->
+
+
 
 This repository contains the public website content and Hugo source for
 **ZQM Labs — Z's Quests & Mischief**. It is the canonical source for the public
@@ -136,3 +145,15 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 - [quest-packs](https://github.com/ZQM-Labs/quest-packs) — ready-to-play quest packs
 - [organizer-toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup checklists, print specs, FAQ
 - [playtests](https://github.com/ZQM-Labs/playtests) — playtest protocol and results
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+Requires Python 3.11+.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
