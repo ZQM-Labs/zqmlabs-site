@@ -1,6 +1,6 @@
 # Production deployment source-of-truth record
 
-**Status: not yet verified against the live hosting account.** This record separates facts visible in the repositories from claims that require access to the production hosting and DNS configuration. Do not use the unresolved items as authorization to deploy or change DNS.
+**Status: partially verified from repository and Cloudflare API evidence on 2026-10-18; public runtime and latest GitHub Actions deployment remain unverified.** No production configuration was changed. This record distinguishes configured hosting state from the artifact currently served to users.
 
 ## Repository-verified facts
 
@@ -19,25 +19,24 @@ Complete this table from the production hosting account and public DNS. Use exac
 | Field | Verified value | Evidence to record |
 |---|---|---|
 | Public hostname | zqmlabs.com is the intended public hostname; current response and DNS state still require verification | DNS record type/target, custom-domain status, HTTP response, verification timestamp |
-| Hosting provider and project | **Unverified** | Provider, exact project/site name, project URL |
-| Production branch | **Unverified** | Configured branch and repository URL |
-| Build command and output directory | **Unverified** | Exact command, output path, Hugo version, relevant non-secret build settings |
-| Deployment trigger | **Unverified** | Git integration, GitHub Actions, manual Wrangler, or another mechanism; identify the one authoritative production path |
-| Last successful production deployment | **Unverified** | Deployment ID, source commit SHA, completion time, and deployed URL |
-| Canonical player source | **Unverified** | Player repository and commit SHA actually included in the deployed artifact |
-| DNS/custom-domain mapping | **Unverified** | Active CNAME/flattening record and Pages custom-domain binding, or the actual non-Pages origin |
+| Hosting provider and project | Cloudflare Pages project `zqmlabs-site`; custom domains `zqmlabs.com` and `www.zqmlabs.com` are active in the project configuration | Cloudflare account API read on 2026-10-18; this proves configuration, not successful browser delivery |
+| Pages Git source / production branch | `ZQM-Computing/zqm-labs`, branch `main`, `root_dir: zqmlabs-site` | Cloudflare Pages project API read on 2026-10-18 |
+| Pages build command/output | `hugo --gc --minify` / `public`; Hugo version is pinned to `0.165.0` in `.github/workflows/pages-deploy.yml` | Cloudflare project API and monorepo workflow; workflow execution on latest commit still needs verification |
+| Deployment trigger | Monorepo `.github/workflows/pages-deploy.yml` is configured to run on main changes under `zqmlabs-site/**` or the workflow itself, validate/build, then call Wrangler for project `zqmlabs-site`. Separately, Pages Git integration is configured with `production_deployments_enabled: false`. | Source workflow + Cloudflare project API. These are two distinct mechanisms; do not enable Git integration or assume workflow succeeded without run evidence. |
+| Latest successful deployment record | Cloudflare API returned canonical deployment ID `df26807e-d811-46fd-af33-0796a90bdaef`, commit `58e69e1e04838d3e7d603a12105d2a860d4962a1`, deployment URL `https://df26807e.zqmlabs-site.pages.dev`, final stage `deploy: success` at `2026-10-18T22:58:17Z`. The newer Git-triggered record for commit `a0e318640ce165fb9062542db15de8650b970725` was skipped with reason `production_deployments_disabled`. | Cloudflare API read on 2026-10-18; does not establish latest public route behavior or that the latest GitHub Actions run completed |
+| Player source pin in current workflow | `ZQM-Labs/lantern-player` commit `ab6fa4acb7d41d10a31878d614ebe70bb5a6bc22`; the workflow also pins public site content commit `8106d82d0450867d98a9654598f76b12b390d605` | `.github/workflows/pages-deploy.yml` on main. The actual contents of the recorded successful deployment still need artifact-level confirmation. |
+| DNS/custom-domain mapping | Pages project lists `zqmlabs.com` and `www.zqmlabs.com`, both custom-domain bindings report active. Root and `www` DNS records were previously observed pointing to `zqmlabs-site.pages.dev`; refresh the DNS record before any change. | Cloudflare Pages project/domain API plus prior DNS read; public HTTPS behavior remains unverified |
 | Rollback procedure | **Unverified** | Exact provider UI/CLI steps to restore the last known-good artifact and verify it |
 
 ## Verification procedure
 
-1. Open the production hosting account and locate the project currently bound to zqmlabs.com. Do not infer the project from a repository name.
-2. Confirm the custom-domain binding and current DNS record. Record the visible target; do not attempt to discover or bypass a private origin.
-3. Confirm the connected repository, production branch, build command, output directory, environment settings, and deployment trigger.
-4. Compare the latest successful deployment's commit SHA with the intended source revision. If the player is synchronized from a moving branch, record the resolved player commit included in the build.
-5. Download or inspect the deployed artifact where the provider supports it. Confirm that required routes and player assets match the source commit.
-6. Test the public hostname from a normal browser and a clean mobile session. Check the homepage, game launch, player startup, and one offline/reload path where supported.
-7. Identify the last known-good deployment and perform a documented rollback rehearsal in a preview/staging environment if one exists. Do not test rollback by changing production DNS.
-8. Update this record with the verified values, evidence links, verifier, and timestamp. Re-run the verification after any hosting, branch, build, or player-source change.
+1. The project/source/build/branch and domain binding are now recorded above from the Cloudflare API; refresh them before any operational change.
+2. Inspect GitHub Actions run history for `.github/workflows/pages-deploy.yml` and identify the most recent successful run, including runner, build, Wrangler deployment result, and source commit. Do not infer success from a Pages deployment record alone.
+3. Compare the workflow run commit, pinned site/player revisions, Cloudflare canonical deployment commit, and current public artifact. Record any mismatch explicitly.
+4. Test `https://zqmlabs.com/`, `https://www.zqmlabs.com/`, and `/games/hunt-for-wisps/play/` from a normal browser and clean mobile session. Verify final URL, status, page signature, player startup, required assets, and an offline/reload path where supported.
+5. Test `https://api.zqmlabs.com/` independently. DNS presence alone does not prove the Worker/backend returns a healthy or intended response. Do not alter the route as part of this verification.
+6. Identify the last known-good deployment and rehearse rollback in preview/staging if available. Do not test rollback by changing production DNS.
+7. Update this record with evidence links, verifier, timestamp, and exact deployment IDs/SHAs. Re-run verification after any hosting, branch, build, or player-source change.
 
 ## Release guardrails
 
