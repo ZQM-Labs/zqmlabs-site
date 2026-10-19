@@ -27,15 +27,13 @@ if [[ "$RESOLVED_REF" != "$SRC_REF" ]]; then
 fi
 
 echo "==> Copying reviewed player commit -> $DST"
+# Use coreutils available in Git Bash and Linux runners; rsync is not installed
+# on every supported self-hosted runner (notably the Windows runner).
+# Recreate the destination so stale files cannot survive the sync.
+rm -rf "$DST"
 mkdir -p "$DST"
-rsync -a --delete \
-  --exclude 'tools/' \
-  --exclude 'tests/' \
-  --exclude 'README.md' \
-  --exclude '.gitignore' \
-  --exclude '.github/' \
-  --exclude '.git/' \
-  "$PLAYER_DIR/" "$DST/"
+cp -a "$PLAYER_DIR/." "$DST/"
+rm -rf "$DST/tools" "$DST/tests" "$DST/README.md" "$DST/.gitignore" "$DST/.github" "$DST/.git"
 printf '%s\n' "$RESOLVED_REF" > "$DST/PLAYER_SOURCE_SHA"
 
 echo "==> Synced canonical lantern-player commit $RESOLVED_REF"
