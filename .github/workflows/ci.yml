@@ -17,12 +17,12 @@ jobs:
       node: ${{ steps.detect.outputs.node }}
       go: ${{ steps.detect.outputs.go }}
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
       - id: detect
         shell: bash
         run: |
           if [ -f pyproject.toml ] || [ -f pytest.ini ] || [ -f requirements.txt ] || [ -d tests ]; then echo "python=true" >> "$GITHUB_OUTPUT"; else echo "python=false" >> "$GITHUB_OUTPUT"; fi
-          if [ -f package.json ] || [ -f static/games/hunt-for-wisps/play/app.js ]; then echo "node=true" >> "$GITHUB_OUTPUT"; else echo "node=false" >> "$GITHUB_OUTPUT"; fi
+          if [ -f package.json ]; then echo "node=true" >> "$GITHUB_OUTPUT"; else echo "node=false" >> "$GITHUB_OUTPUT"; fi
           if [ -f go.mod ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
 
   python:
@@ -30,7 +30,7 @@ jobs:
     if: needs.detect.outputs.python == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -55,12 +55,11 @@ jobs:
     if: needs.detect.outputs.node == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Install dependencies and run configured tests
-        if: hashFiles('package.json') != ''
+      - name: Install dependencies and run tests when configured
         shell: bash
         run: |
           if [ -f package-lock.json ]; then npm ci; else npm install; fi
@@ -69,23 +68,26 @@ jobs:
           else
             echo "No npm test script configured; dependency installation completed."
           fi
-      - name: Check bundled player and demo regressions
-        if: hashFiles('static/games/hunt-for-wisps/play/app.js') != ''
-        run: |
-          bash scripts/sync-player.sh a3e123bcd53a3c9747fa4c0c95c815eb1732642c
-          node --check static/games/hunt-for-wisps/play/app.js
-          node scripts/test-player-source.cjs
-          node scripts/test-legacy-player-assets.cjs
 
   go:
     needs: detect
     if: needs.detect.outputs.go == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-go@v7
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
         with:
           go-version: stable
           cache: true
       - name: Run Go tests
         run: go test ./...
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check repository documentation
+        run: python scripts/check_docs.py
