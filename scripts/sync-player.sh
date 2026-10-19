@@ -27,15 +27,12 @@ if [[ "$RESOLVED_REF" != "$SRC_REF" ]]; then
 fi
 
 echo "==> Copying reviewed player commit -> $DST"
+# Stream a Git archive into the destination. This avoids relying on rsync
+# and avoids path translation issues when Git Bash runs on Windows.
+rm -rf "$DST"
 mkdir -p "$DST"
-rsync -a --delete \
-  --exclude 'tools/' \
-  --exclude 'tests/' \
-  --exclude 'README.md' \
-  --exclude '.gitignore' \
-  --exclude '.github/' \
-  --exclude '.git/' \
-  "$PLAYER_DIR/" "$DST/"
+git -C "$PLAYER_DIR" archive --format=tar HEAD | tar -xf - -C "$DST"
+rm -rf "$DST/tools" "$DST/tests" "$DST/README.md" "$DST/.gitignore" "$DST/.github" "$DST/.git"
 printf '%s\n' "$RESOLVED_REF" > "$DST/PLAYER_SOURCE_SHA"
 
 echo "==> Synced canonical lantern-player commit $RESOLVED_REF"

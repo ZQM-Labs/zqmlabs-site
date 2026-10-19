@@ -72,8 +72,10 @@ jobs:
       - name: Check bundled player and demo regressions
         if: hashFiles('static/games/hunt-for-wisps/play/app.js') != ''
         run: |
+          bash scripts/sync-player.sh a3e123bcd53a3c9747fa4c0c95c815eb1732642c
           node --check static/games/hunt-for-wisps/play/app.js
           node scripts/test-player-source.cjs
+          node scripts/test-legacy-player-assets.cjs
 
   go:
     needs: detect
