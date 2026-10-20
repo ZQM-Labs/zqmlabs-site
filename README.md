@@ -106,6 +106,13 @@ release work, record the player commit used and verify that the synchronized
 files match the intended release; a moving branch name is not an immutable
 version identifier.
 
+## Usage
+
+This repository is the source for zqmlabs.com. To work on it, see
+[Build locally](#build-locally) for previewing changes, and
+[Production deployment and CI](#production-deployment-and-ci) for how the
+live site ships. Pages live under [Main pages](#main-pages).
+
 ## Validation
 
 Run the same key checks used in CI before proposing a change:
