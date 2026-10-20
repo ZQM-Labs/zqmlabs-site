@@ -1,0 +1,26 @@
+name: Prose
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          globs: '**/*.md'
+
+  links:
+    # Internal routes are checked against the generated Hugo output by site-ci.yml.
+    # Exclude the live production origin here so an unreleased PR is not judged against stale deployed HTML.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --base https://zqmlabs.com --exclude https://github.com/ZQM-Computing/zqm-labs --exclude https://zqmlabs.com/ '**/*.md'
