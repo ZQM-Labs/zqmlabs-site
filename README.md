@@ -22,7 +22,14 @@ The Project Volusia portal is an internal research/context system, not the publi
 
 ## Production deployment and CI
 
-The production hosting and DNS configuration still need live verification. Use the [deployment source-of-truth runbook](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/deployment-source-of-truth.md) to record the actual provider/project, deployment trigger, deployed commit, canonical player source, and rollback procedure.
+**Serving source of truth — verified 2026-10-20** (full evidence in the [deployment source-of-truth runbook](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/deployment-source-of-truth.md)):
+
+- **This repository does not deploy the site.** Its GitHub Actions workflow is validation-only (see below). Nothing in this repo publishes to production.
+- **Production is built and deployed by the private monorepo `ZQM-Computing/zqm-labs`**, workflow `.github/workflows/pages-deploy.yml`. It builds the monorepo's nested `zqmlabs-site/` tree and deploys it with Wrangler to the Cloudflare Pages project `zqmlabs-site` (custom domains `zqmlabs.com` and `www.zqmlabs.com`).
+- **Only part of this repository reaches production.** The monorepo workflow copies `hugo.toml` and exactly eight content files from this repository, at a pinned commit (`SITE_SOURCE_SHA` in the workflow; `6b6fdc78` as of 2026-10-20): `_index.md`, `about.md`, `halloween.md`, `tiers.md`, `faq.md`, `patterns.md`, `community.md`, `games.md`. Layouts, static assets, and every other content file in the deployed build come from the monorepo's own tree. The player bundle is synced the same way, from `ZQM-Labs/lantern-player` at `PLAYER_SOURCE_SHA`.
+- **Consequence, verified live on 2026-10-20:** pages that exist only in this repository — `pricing.md`, `organizers.md`, `contact.md`, `press.md`, `direction.md`, and `content/games/lantern-player.md`, `pumpkin-roll.md`, `snowflake-secret.md`, `wisps-tracker.md` — are **not in the production build and return 404**, even though the site navigation links to `/pricing/` and `/organizers/` from every page. A full build of this repository yields 18 sitemap URLs; the live sitemap lists 9, matching the monorepo build's content inventory exactly.
+- **To publish a new page**, do one of: (a) add the file to the sync list in the monorepo's `pages-deploy.yml`, or (b) mirror the file into the monorepo's `zqmlabs-site/content/` (the sync overwrites only the eight listed files; it does not clean the directory, so mirrored files survive). Then confirm the page appears in the live sitemap after a production deploy.
+- **Still unverified:** the workflow's Wrangler deploy omits `--branch=main`, so its deploys land as Pages *preview* deployments; how the current production deployment was promoted is unconfirmed. On 2026-10-20, some requests were intermittently answered with the fuller build of this repository (e.g. `/organizers/` returned 200 between 404s), indicating a second origin sometimes serves the hostname; its identity is unconfirmed. See the runbook's 2026-10-20 runtime verification.
 
 The GitHub Actions workflow at
 [.github/workflows/site-ci.yml](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) is a **validation
@@ -31,20 +38,17 @@ the site bundle, checks JavaScript syntax and script order, verifies service
 worker precache files, builds the Hugo site, checks generated links, and
 validates required routes and assets.
 
-Production deployment is configured outside that workflow. Repository
-documentation has described Cloudflare Pages as the production host, but this
-README alone does not establish the currently active Pages project, production
-branch, deployment trigger, or deployed commit. Before changing production,
-verify those values in the deployment configuration and compare the deployed
-artifact with the source revision. Do not infer a successful production deploy
-from a green CI build.
+Production deployment runs through the monorepo workflow described above,
+not through this repository. Do not infer a successful production deploy from
+a green CI build here: this repo's CI can pass while production still serves
+an older or partial build (as verified on 2026-10-20, when nine content
+pages were missing from production despite existing here).
 
-Record the following when the deployment path is verified:
+Still to record in the runbook when established:
 
-- Hosting provider and exact project/site identifier
-- Production branch and build command
-- Whether deployment is triggered by Git integration, a workflow, or a manual command
-- The source commit and deployed artifact identifier
+- How a workflow deploy becomes the production deployment (the Wrangler
+  deploy currently omits `--branch=main`)
+- The identity and owner of the intermittent second origin
 - Smoke-test and rollback procedures
 - Who owns access and production changes
 
