@@ -60,9 +60,9 @@ Same quest, four voltages. Choose the level that fits your team.
 
 These tiers apply to Wisp's Lost Lanterns; they are not pricing for every future game.
 
-- 🏠 **Family Night — $49**, one household.
+- 🏠 **Family Night — $25**, one household.
 - 🏘️ **Community — $199**, intended for neighborhood and community events; confirm capacity and current terms before booking.
-- 🏢 **Office Party — $349–$499**, team-building format.
+- 🏢 **Office Team — $349 · Office Event — $499**, team-building formats.
 - 🧭 **Youth Groups** and 🎉 **Form-Your-Own** — ask about current availability.
 
 [Review hosting tiers and booking information →](/tiers/)
