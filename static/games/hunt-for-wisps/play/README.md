@@ -1,14 +1,14 @@
 # lantern-player
 
 <!-- ZQM-START -->
+<!-- markdownlint-disable MD033 -->
 <p align="center">
   <strong>ZQM Labs — Z's Quests & Mischief</strong><br>
   <a href="https://zqmlabs.com">zqmlabs.com</a> •
   <a href="https://github.com/ZQM-Labs">GitHub</a>
 </p>
+<!-- markdownlint-enable MD033 -->
 <!-- ZQM-END -->
-
-
 
 The player web app (PWA) for ZQM Labs location games. Vanilla HTML/CSS/JS —
 no build step, no framework. Leaflet is the only library (vendor it locally
@@ -50,8 +50,8 @@ hardcode new story text here — author it in `lantern-content`.
 - `sw.js` — service worker: cache-first app shell (offline play)
 - `manifest.webmanifest` — installable PWA metadata
 
-
 <!-- ZQM-FOOTER-START -->
+<!-- markdownlint-disable MD033 -->
 ---
 
 <p align="center">
@@ -60,4 +60,5 @@ hardcode new story text here — author it in `lantern-content`.
   <a href="https://github.com/ZQM-Labs">ZQM Labs</a> •
   <a href="https://github.com/ZQM-Computing">ZQM Computing</a>
 </p>
+<!-- markdownlint-enable MD033 -->
 <!-- ZQM-FOOTER-END -->
