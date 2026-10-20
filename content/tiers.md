@@ -1,1 +1,56 @@
-LS0tCnRpdGxlOiAiSG9zdGluZyBUaWVycyDigJQgV2lzcCdzIExvc3QgTGFudGVybnMiCmRlc2NyaXB0aW9uOiAiQ3VycmVudCBob3N0aW5nIG9wdGlvbnMgZm9yIFdpc3AncyBMb3N0IExhbnRlcm5zLCBaUU0gTGFicycgZmVhdHVyZWQgSGFsbG93ZWVuIHNjYXZlbmdlciBodW50LiIKLS0tCgo8IS0tIG1hcmtkb3dubGludC1kaXNhYmxlIE1EMDEzIC0tPgoKVGhlc2UgcGFja2FnZXMgZGVzY3JpYmUgdGhlIGN1cnJlbnQgKipXaXNwJ3MgTG9zdCBMYW50ZXJucyoqIEhhbGxvd2VlbiBleHBlcmllbmNlLiBUaGV5IGFyZSBub3QgdW5pdmVyc2FsIHByaWNpbmcgZm9yIGV2ZXJ5IFpRTSBMYWJzIGdhbWU7IGZ1dHVyZSB0aXRsZXMgbWF5IGhhdmUgZGlmZmVyZW50IGZvcm1hdHMsIGFjY2VzcyBtb2RlbHMsIGFuZCBwcmljZXMuCgojIyDwn4+gIEZhbWlseSBOaWdodCDigJQgJDI1IGZsYXQKCkZvciBvbmUgaG91c2Vob2xkIHBsYXlpbmcgdG9nZXRoZXIuIFtHZXQgdGhlIEZhbWlseSBOaWdodCBraXRdKGh0dHBzOi8vYnV5LnN0cmlwZS5jb20vMTRBYUVaNTFGN252ME9DNEJyOWJPMDQpIOKAlCB0aGUgY3VycmVudCBwYWNrYWdlIGlzIGRlc2NyaWJlZCBhcyBhIHNpeC1zdG9wIHF1ZXN0IHdpdGggcHJpbnRhYmxlIHNpZ25zLCBwdXp6bGVzLCBhbmQgaGludHMuIENvbmZpcm0gdGhlIGN1cnJlbnQga2l0IGNvbnRlbnRzIGFuZCBwbGF5IHdpbmRvdyB3aXRoIHRoZSBMYWIgYmVmb3JlIGJvb2tpbmcuCgojIyDwn4+Y77iPIENvbW11bml0eSDigJQgJDE5OSBmbGF0CgpGb3IgYSBuZWlnaGJvcmhvb2QsIEhPQSwgUFRBLCBjaHVyY2gsIG9yIG90aGVyIGNvbW11bml0eSBncm91cC4gW0dldCB0aGUgQ29tbXVuaXR5IExpY2Vuc2VdKGh0dHBzOi8vYnV5LnN0cmlwZS5jb20vMjhFNm9KZUNmMFo3NDBPZDdYOWJPMDApIOKAlCB0aGUgY3VycmVudCBvZmZlciBpcyBwcmljZWQgZm9yIHVubGltaXRlZCBmYW1pbGllcy4gRnVuZHJhaXNpbmcgYXJyYW5nZW1lbnRzIG1heSBiZSBhdmFpbGFibGUgZm9yIHF1YWxpZnlpbmcgZXZlbnRzOyBjb25maXJtIHRoZSBjdXJyZW50IHRlcm1zIGJlZm9yZSBwcm9tb3RpbmcgYSBmdW5kcmFpc2VyLgoKIyMg8J+PoiBPZmZpY2UgVGVhbSDigJQgJDM0OSBmbGF0CgpBIHRlYW0tYnVpbGRpbmcgZm9ybWF0IGZvciBjb3dvcmtlcnMuIFtHZXQgdGhlIE9mZmljZSBUZWFtIGtpdF0oaHR0cHM6Ly9idXkuc3RyaXBlLmNvbS8xNEFjTjc4ZFI3bnZidGc1RnY5Yk8wMSkuIENvbmZpcm0gdGhlIGN1cnJlbnQgc2NvcGUsIGdyb3VwIHNpemUsIG1lY2hhbmljcywgYW5kIGF2YWlsYWJpbGl0eSB3aXRoIHRoZSBMYWIgYmVmb3JlIGJvb2tpbmcuCgojIyDwn46qIE9mZmljZSBFdmVudCDigJQgJDQ5OSBmbGF0CgpGb3IgYSBsYXJnZXIgY29tcGFueSBvciBvcmdhbml6YXRpb24td2lkZSBldmVudC4gW0dldCB0aGUgT2ZmaWNlIEV2ZW50IGtpdF0oaHR0cHM6Ly9idXkuc3RyaXBlLmNvbS9mWnUxNHA4ZFI3bnYwT0M0QnI5Yk8wMikuIENvbmZpcm0gdGhlIGN1cnJlbnQgc2NvcGUsIGdyb3VwIHNpemUsIG1lY2hhbmljcywgYW5kIGF2YWlsYWJpbGl0eSB3aXRoIHRoZSBMYWIgYmVmb3JlIGJvb2tpbmcuCgojIyDwn6etIFlvdXRoIEdyb3VwcyBhbmQg8J+OiSBGb3JtLVlvdXItT3duCgpBc2sgdGhlIExhYiBhYm91dCBjdXJyZW50IGF2YWlsYWJpbGl0eSwgc3VpdGFiaWxpdHksIHN1cGVydmlzaW9uLCBhbmQgcHJpY2luZy4gVGhlc2Ugb3B0aW9ucyBzaG91bGQgbm90IGJlIHRyZWF0ZWQgYXMgY29uZmlybWVkIGJvb2tpbmdzIHVudGlsIHRoZSBkZXRhaWxzIGFyZSBhZ3JlZWQuCgojIyBXaGF0IHRvIGNvbmZpcm0gYmVmb3JlIGJvb2tpbmcKCkF2YWlsYWJpbGl0eSBhbmQgZGVsaXZlcnkgZGVwZW5kIG9uIHRoZSBjdXJyZW50IGdhbWUsIGV2ZW50IHdpbmRvdywgdmVudWUsIG9yZ2FuaXplciBzZXR1cCwgYW5kIHN1cHBvcnQgY2FwYWNpdHkuIEJlZm9yZSBhbm5vdW5jaW5nIGFuIGV2ZW50LCBjb25maXJtOgoKLSBUaGUgZXhhY3Qga2l0IGFuZCBtYXRlcmlhbHMgaW5jbHVkZWQuCi0gVGhlIHByaWNlIGFuZCBhbnkgZnVuZHJhaXNpbmcgdGVybXMuCi0gVGhlIGV2ZW50IHdpbmRvdyBhbmQgb3JnYW5pemVyIHJlc3BvbnNpYmlsaXRpZXMuCi0gQWNjZXNzaWJpbGl0eSwgc2FmZXR5LCByb3V0ZSwgYW5kIHdlYXRoZXIgYXJyYW5nZW1lbnRzLgotIFdoYXQgc3VwcG9ydCBpcyBhdmFpbGFibGUgYW5kIGhvdyB0byByZWFjaCBpdC4KLSBXaGV0aGVyIHRoZSBMYWIgY2FuIHN1cHBvcnQgdGhlIHJlcXVlc3RlZCBsb2NhdGlvbi4KClRoZSBjdXJyZW50IGxvY2FsIGFjdGl2YXRpb24gaXMgaW4gVm9sdXNpYSBDb3VudHksIEZsb3JpZGEsIE9jdG9iZXIgMzDigJNOb3ZlbWJlciAxLCAyMDI2LiBBIGRpZ2l0YWwgZGVtbyBiZWluZyBhY2Nlc3NpYmxlIG9ubGluZSBkb2VzIG5vdCBtZWFuIHRoYXQgaW4tcGVyc29uIGV2ZW50IGRlbGl2ZXJ5IGlzIGF2YWlsYWJsZSB3b3JsZHdpZGUuCgojIyBFeHBsb3JlIHRoZSBvcGVuIHJlc291cmNlcwoKVGhlIExhYiBwdWJsaXNoZXMgc3VwcG9ydGluZyBtYXRlcmlhbHMgZm9yIHBlb3BsZSB3aG8gd2FudCB0byB1bmRlcnN0YW5kIG9yIGhlbHAgaW1wcm92ZSB0aGUgY3VycmVudCBzeXN0ZW06CgotIFtPcmdhbml6ZXIgVG9vbGtpdF0oaHR0cHM6Ly9naXRodWIuY29tL1pRTS1MYWJzL29yZ2FuaXplci10b29sa2l0KQotIFtRdWVzdCBBdXRob3JpbmddKGh0dHBzOi8vZ2l0aHViLmNvbS9aUU0tTGFicy9xdWVzdC1hdXRob3JpbmcpCi0gW1F1ZXN0IFBhY2tzXShodHRwczovL2dpdGh1Yi5jb20vWlFNLUxhYnMvcXVlc3QtcGFja3MpCi0gW1BsYXl0ZXN0IHByb2Nlc3NdKGh0dHBzOi8vZ2l0aHViLmNvbS9aUU0tTGFicy9wbGF5dGVzdHMpCgpGb3IgYSBkaWZmZXJlbnQga2luZCBvZiBnYW1lIG9yIGEgZ2VuZXJhbCBpbnRyb2R1Y3Rpb24gdG8gdGhlIHN0dWRpbywgdmlzaXQgdGhlIFtHYW1lcyBkaXJlY3RvcnldKC9nYW1lcy8pIG9yIFtBYm91dCB0aGUgTGFiXSgvYWJvdXQvKS4KCiMjIENvbnRhY3QKClRvIGFzayBhYm91dCBhIFdpc3AncyBMb3N0IExhbnRlcm5zIGV2ZW50LCBlbWFpbCBbenFtY29tcHV0aW5nQGdtYWlsLmNvbV0obWFpbHRvOnpxbWNvbXB1dGluZ0BnbWFpbC5jb20pIHdpdGggeW91ciBvcmdhbml6YXRpb24gb3IgZ3JvdXAsIHByZWZlcnJlZCBkYXRlcywgbG9jYXRpb24sIGFuZCB0aGUgb3B0aW9uIHlvdSBhcmUgY29uc2lkZXJpbmcuIFdhaXQgZm9yIGNvbmZpcm1hdGlvbiBiZWZvcmUgYWR2ZXJ0aXNpbmcgYW4gZXZlbnQgYXMgYm9va2VkLgo=
+---
+title: "Hosting Tiers — Wisp's Lost Lanterns"
+description: "Current hosting options for Wisp's Lost Lanterns, ZQM Labs' featured Halloween scavenger hunt."
+---
+
+<!-- markdownlint-disable MD013 -->
+
+These packages describe the current **Wisp's Lost Lanterns** Halloween experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
+
+## 🏠 Family Night — $25 flat
+
+For one household playing together. [Get the Family Night kit](https://buy.stripe.com/14AaEZ51F7nv0OC4Br9bO04) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Confirm the current kit contents and play window with the Lab before booking.
+
+## 🏘️ Community — $199 flat
+
+For a neighborhood, HOA, PTA, church, or other community group. [Get the Community License](https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00) — the current offer is priced for unlimited families. Fundraising arrangements may be available for qualifying events; confirm the current terms before promoting a fundraiser.
+
+## 🏢 Office Team — $349 flat
+
+A team-building format for coworkers. [Get the Office Team kit](https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01). Confirm the current scope, group size, mechanics, and availability with the Lab before booking.
+
+## 🎪 Office Event — $499 flat
+
+For a larger company or organization-wide event. [Get the Office Event kit](https://buy.stripe.com/fZu14p8dR7nv0OC4Br9bO02). Confirm the current scope, group size, mechanics, and availability with the Lab before booking.
+
+## 🧭 Youth Groups and 🎉 Form-Your-Own
+
+Ask the Lab about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed.
+
+## What to confirm before booking
+
+Availability and delivery depend on the current game, event window, venue, organizer setup, and support capacity. Before announcing an event, confirm:
+
+- The exact kit and materials included.
+- The price and any fundraising terms.
+- The event window and organizer responsibilities.
+- Accessibility, safety, route, and weather arrangements.
+- What support is available and how to reach it.
+- Whether the Lab can support the requested location.
+
+The current local activation is in Volusia County, Florida, October 30–November 1, 2026. A digital demo being accessible online does not mean that in-person event delivery is available worldwide.
+
+## Explore the open resources
+
+The Lab publishes supporting materials for people who want to understand or help improve the current system:
+
+- [Organizer Toolkit](https://github.com/ZQM-Labs/organizer-toolkit)
+- [Quest Authoring](https://github.com/ZQM-Labs/quest-authoring)
+- [Quest Packs](https://github.com/ZQM-Labs/quest-packs)
+- [Playtest process](https://github.com/ZQM-Labs/playtests)
+
+For a different kind of game or a general introduction to the studio, visit the [Games directory](/games/) or [About the Lab](/about/).
+
+## Contact
+
+To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Wait for confirmation before advertising an event as booked.
