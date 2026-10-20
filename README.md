@@ -12,6 +12,16 @@ featured Halloween experience; the site can support additional games as they
 become ready for public play. A featured page or browser demo does not by itself
 prove that a game is orderable or approved for an in-person event.
 
+## Repository role and status
+
+**Status:** Active, public. Canonical website source for zqmlabs.com; deployment-critical.
+
+**What this repository is:** The Hugo source and content for the public ZQM Labs website — pages, layouts, static assets, and the bundled player copy served under the site's game routes.
+
+**What it contributes:** All customer- and organizer-facing public information for ZQM Labs lives here: the featured game, hosting and tiers pages, community and FAQ content. It is the public record of what the studio offers.
+
+**Deployment:** This repo is the canonical site content source. The production deploy (ZQM-Computing/zqm-labs, `.github/workflows/pages-deploy.yml`) pins this repository by commit in `SITE_SOURCE_SHA` and builds the production site from that pin; the same workflow syncs the pinned quest-player source into the bundle (see `scripts/sync-player.sh`). Changes here go live only when the pin is bumped in the monorepo. The workflow in this repo (`site-ci.yml`) is validation only, not deployment.
+
 ## Audience and content boundaries
 
 - **Visitors and customers:** explain what a game is, who it is for, what is currently available, how checkout works, and what happens after purchase.
