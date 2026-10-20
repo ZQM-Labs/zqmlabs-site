@@ -140,14 +140,6 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 - [organizer-toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup checklists, print specs, FAQ
 - [playtests](https://github.com/ZQM-Labs/playtests) — playtest protocol and results
 
-## Installation
-
-~~~bash
-pip install -e .
-~~~
-
-Requires Python 3.11+.
-
 ## License
 
 MIT — see the [LICENSE file in this repository](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/LICENSE).
