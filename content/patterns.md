@@ -17,24 +17,24 @@ paywalls, no sign-ups — if the Lab learned it, you can have it.
 - [Quest authoring specification and validator](https://github.com/ZQM-Labs/quest-authoring) — the format and validation rules for authored quests
 - [Organizer toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup instructions, QR generation, print specifications, and event-day troubleshooting
 - [Playtest protocol and reports](https://github.com/ZQM-Labs/playtests) — playtest process and appropriately anonymized findings
-- [Standalone Lantern player](https://github.com/ZQM-Labs/lantern-player) — source for the browser player/PWA; this source link does not imply that the dedicated `play.zqmlabs.com` hostname is live
-- **Wisps Tracker** — a companion organizer-dashboard capability; its source repository is private and is not linked from this public resource index
+- [Quest player](https://github.com/ZQM-Labs/quest-player) — source for the browser player/PWA that runs every ZQM Labs game
+- **Quest analytics** — the companion organizer-dashboard capability (formerly Wisps Tracker); its source repository is private and is not linked from this public resource index
 - [Quest pack generator](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/scripts/gen_quest_pack.py) — `scripts/gen_quest_pack.py` in the site repo; generates a playable quest pack HTML + manifest from a YAML config
 - [ZQM Labs public website source](https://github.com/ZQM-Labs/zqmlabs-site) — canonical Hugo source for this site's public content
 
 ### The geospatial shelf
 
 - [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns) — umbrella index and entry point
-- [postgis-patterns](https://github.com/ZQM-Computing/postgis-patterns) — PostGIS indexing, joins, and tiles
-- [duckdb-spatial-patterns](https://github.com/ZQM-Computing/duckdb-spatial-patterns) — DuckDB Spatial analytics SQL
-- [geopandas-patterns](https://github.com/ZQM-Computing/geopandas-patterns) — GeoPandas and Shapely
-- [geoparquet-patterns](https://github.com/ZQM-Computing/geoparquet-patterns) — GeoParquet columnar storage
-- [gdal-patterns](https://github.com/ZQM-Computing/gdal-patterns) — GDAL/OGR CLI patterns
-- [cog-patterns](https://github.com/ZQM-Computing/cog-patterns) — Cloud-Optimized GeoTIFF
-- [h3-patterns](https://github.com/ZQM-Computing/h3-patterns) — H3 hexagonal grids
-- [stac-patterns](https://github.com/ZQM-Computing/stac-patterns) — STAC catalog and discovery
-- [maplibre-patterns](https://github.com/ZQM-Computing/maplibre-patterns) — MapLibre GL JS vector tiles
-- [pgrouting-patterns](https://github.com/ZQM-Computing/pgrouting-patterns) — pgRouting network analysis
+- [postgis-patterns](https://postgis.zqmlabs.com) — PostGIS indexing, joins, and tiles
+- [duckdb-spatial-patterns](https://duckdb.zqmlabs.com) — DuckDB Spatial analytics SQL
+- [geopandas-patterns](https://geopandas.zqmlabs.com) — GeoPandas and Shapely
+- [geoparquet-patterns](https://geoparquet.zqmlabs.com) — GeoParquet columnar storage
+- [gdal-patterns](https://gdal.zqmlabs.com) — GDAL/OGR CLI patterns
+- [cog-patterns](https://cog.zqmlabs.com) — Cloud-Optimized GeoTIFF
+- [h3-patterns](https://h3.zqmlabs.com) — H3 hexagonal grids
+- [stac-patterns](https://stac.zqmlabs.com) — STAC catalog and discovery
+- [maplibre-patterns](https://maplibre.zqmlabs.com) — MapLibre GL JS vector tiles
+- [pgrouting-patterns](https://pgrouting.zqmlabs.com) — pgRouting network analysis
 - [qgis-resources](https://github.com/ZQM-Computing/qgis-resources) — QGIS expressions, PyQGIS, and styles
 - [geospatial-api-reference](https://github.com/ZQM-Computing/geospatial-api-reference) — OGC API reference (FastAPI + PostGIS)
 
