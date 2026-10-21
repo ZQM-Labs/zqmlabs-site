@@ -96,6 +96,15 @@ The release record should identify the exact player and content versions, test d
 
 Public copy should describe current availability accurately. A global audience and community-centered design do not imply that every game, language, event kit, or in-person service is available worldwide.
 
+## Installation
+
+Clone the repo, and install Hugo Extended 0.165.0 and Node.js 22 — the versions the CI workflow uses:
+
+```bash
+git clone https://github.com/ZQM-Labs/zqmlabs-site.git
+cd zqmlabs-site
+```
+
 ## Build locally
 
 Install Hugo Extended version 0.165.0 and Node.js 22 to match the CI workflow.
