@@ -96,20 +96,29 @@ The release record should identify the exact player and content versions, test d
 
 Public copy should describe current availability accurately. A global audience and community-centered design do not imply that every game, language, event kit, or in-person service is available worldwide.
 
+## Installation
+
+Clone the repo, and install Hugo Extended 0.165.0 and Node.js 22 — the versions the CI workflow uses:
+
+```bash
+git clone https://github.com/ZQM-Labs/zqmlabs-site.git
+cd zqmlabs-site
+```
+
 ## Build locally
 
 Install Hugo Extended version 0.165.0 and Node.js 22 to match the CI workflow.
 
-~~~sh
+```sh
 hugo --gc --minify
 hugo server -D
-~~~
+```
 
 To refresh the bundled player before a local build:
 
-~~~sh
+```sh
 bash scripts/sync-player.sh main
-~~~
+```
 
 The sync command retrieves the player from its named branch. For reproducible
 release work, record the player commit used and verify that the synchronized
@@ -160,3 +169,7 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 ## License
 
 MIT — see the [LICENSE file in this repository](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/LICENSE).
+
+---
+
+*Games, gear & a little mischief. Play more. Plan less.*
