@@ -84,7 +84,7 @@ Possibly, depending on the current package, location, support capacity, and even
 <details>
 <summary>How much does hosting cost?</summary>
 
-The current Wisp's Lost Lanterns page lists Family Night at $25, Community at $199, and Office Team / Office Event at $349 / $499. These are current offers for this game only and may depend on availability and package details. See [hosting tiers](/tiers/) and confirm current terms with the Lab.
+The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are current offers for this game only and may depend on availability and package details. See [hosting tiers](/tiers/) and confirm current terms with the Lab.
 
 </details>
 

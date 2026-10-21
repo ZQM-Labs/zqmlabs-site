@@ -7,9 +7,9 @@ description: "Current hosting options for Wisp's Lost Lanterns, ZQM Labs' featur
 
 These packages describe the current **Wisp's Lost Lanterns** Halloween experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
-## 🏠 Family Night — $25 flat
+## 🏠 Family Night — $49 flat
 
-For one household playing together. [Get the Family Night kit](https://buy.stripe.com/14AaEZ51F7nv0OC4Br9bO04) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Confirm the current kit contents and play window with the Lab before booking.
+For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Confirm the current kit contents and play window with the Lab before booking.
 
 ## 🏘️ Community — $199 flat
 
