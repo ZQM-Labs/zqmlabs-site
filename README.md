@@ -109,16 +109,16 @@ cd zqmlabs-site
 
 Install Hugo Extended version 0.165.0 and Node.js 22 to match the CI workflow.
 
-~~~sh
+```sh
 hugo --gc --minify
 hugo server -D
-~~~
+```
 
 To refresh the bundled player before a local build:
 
-~~~sh
+```sh
 bash scripts/sync-player.sh main
-~~~
+```
 
 The sync command retrieves the player from its named branch. For reproducible
 release work, record the player commit used and verify that the synchronized
