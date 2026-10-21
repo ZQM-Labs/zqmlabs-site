@@ -31,8 +31,26 @@ echo "==> Copying reviewed player commit -> $DST"
 # and avoids path translation issues when Git Bash runs on Windows.
 rm -rf "$DST"
 mkdir -p "$DST"
-git -C "$PLAYER_DIR" archive --format=tar HEAD | tar -xf - -C "$DST"
-rm -rf "$DST/tools" "$DST/tests" "$DST/README.md" "$DST/.gitignore" "$DST/.github" "$DST/.git"
+# Publish by ALLOWLIST, not denylist. The old flow archived the entire
+# player tree and deleted a few known non-runtime paths, so anything
+# added to the player repo later (docs, scripts, fixtures, tooling)
+# would silently ship to the public site. The runtime set below mirrors
+# sw.js's precache list plus the entry document: the root runtime files
+# and the assets/, i18n/, vendor/ trees. global-features.js is excluded
+# on purpose — index.html does not load it (see quest-player#42); add it
+# here deliberately if that ever changes.
+git -C "$PLAYER_DIR" archive --format=tar HEAD -- \
+  index.html app.js global-story.js i18n.js styles.css \
+  manifest.webmanifest sw.js assets i18n vendor | tar -xf - -C "$DST"
+# Fail loudly if anything outside the allowlist slipped through (e.g. if
+# archive pathspec semantics ever change): the public tree must contain
+# exactly the runtime set plus the provenance marker written below.
+for entry in "$DST"/*; do
+  case "$(basename "$entry")" in
+    index.html|app.js|global-story.js|i18n.js|styles.css|manifest.webmanifest|sw.js|assets|i18n|vendor) ;;
+    *) echo "Unexpected file in synced player tree: $entry" >&2; exit 1 ;;
+  esac
+done
 printf '%s\n' "$RESOLVED_REF" > "$DST/PLAYER_SOURCE_SHA"
 
 echo "==> Synced canonical quest-player commit $RESOLVED_REF"
