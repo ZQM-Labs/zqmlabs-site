@@ -160,3 +160,7 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 ## License
 
 MIT — see the [LICENSE file in this repository](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/LICENSE).
+
+---
+
+*Games, gear & a little mischief. Play more. Plan less.*
