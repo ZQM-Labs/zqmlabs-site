@@ -8,7 +8,7 @@ weight: 2
 
 ## Play the browser demo
 
-[**Launch Lantern Player**](/games/lantern-player/index.html)
+[**Launch Lantern Player**](/games/lantern-player/)
 
 The demo runs in your browser and does not require a paid kit or access code. Light lanterns, solve puzzles, and explore the story.
 
@@ -27,4 +27,4 @@ This is a software demo, not proof that a paid kit is orderable. The published d
 
 Lantern Player is the standalone engine behind the lantern-lighting experiences. It is open source on GitHub:
 
-- [Lantern Player source](https://github.com/ZQM-Labs/lantern-player) — fork, extend, and run your own.
+- [Lantern Player source](https://github.com/ZQM-Labs/quest-player) — fork, extend, and run your own.
