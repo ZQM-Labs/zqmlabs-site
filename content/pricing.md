@@ -1,6 +1,6 @@
 ---
 title: "Pricing — flat fees, no surprises"
-description: "ZQM Labs pricing: Family Night $49, Community $199, Office Party $349–$499. Fundraiser split available. No per-team fees, no setup charges."
+description: "ZQM Labs pricing: Family Night $49, Community $199, Office Team $349, Office Event $499. Fundraiser split available. No per-team fees, no setup charges."
 ---
 
 ## Flat pricing, one-time
@@ -12,7 +12,8 @@ no per-player charges, no setup fees.
 |---|---|---|---|
 | 🏠 **Family Night** | **$49** | One household, one yard or block | 1 |
 | 🏘️ **Community** | **$199** | HOAs, neighborhoods, PTAs, churches | Unlimited |
-| 🏢 **Office Party** | **$349–$499** | Company teams, departments | Sized on booking |
+| 🏢 **Office Team** | **$349** | Company teams, departments | Sized on booking |
+| 🎪 **Office Event** | **$499** | Larger companies, organization-wide events | Sized on booking |
 | 🧭 **Youth Groups** | Waitlist | Scouts, church youth, school clubs | Group-sized |
 | 🎉 **Form-Your-Own** | Quoted | Birthdays, crews, sports teams | Your call |
 
