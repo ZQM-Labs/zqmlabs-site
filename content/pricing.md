@@ -34,7 +34,7 @@ is fixed, the upside is yours.
 - Three hints at every stop
 - Live leaderboard
 - Remote support through your event window
-- Multi-language UI (8 languages)
+- Multi-language UI (7 languages)
 
 ## What's not included
 

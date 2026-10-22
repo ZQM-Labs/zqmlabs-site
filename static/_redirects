@@ -1,2 +1,3 @@
 /play /games/hunt-for-wisps/play/ 301
 /play/* /games/hunt-for-wisps/play/:splat 301
+/games/lantern-player/index.html /games/lantern-player/ 301

@@ -81,7 +81,7 @@ coverage with attribution.
   results are all public on GitHub.
 - **Four scare levels, one engine.** Family night and office competition run
   the same game at different voltages.
-- **Multi-language.** 8 languages with automatic detection.
+- **Multi-language.** 7 languages with automatic detection.
 
 ## Coverage angles
 
