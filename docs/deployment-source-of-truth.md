@@ -1,6 +1,46 @@
 # Production deployment source-of-truth record
 
-**Status: partially verified from repository and Cloudflare API evidence on 2026-10-18; public runtime and latest GitHub Actions deployment remain unverified.** No production configuration was changed. This record distinguishes configured hosting state from the artifact currently served to users.
+**Status: RESOLVED 2026-10-23 — see the resolution section below.** The
+2026-10-18/20 investigation sections are kept unchanged as the evidence
+record that led here.
+
+## Resolution — single-brain rule (2026-10-23)
+
+Owner decision (2026-10-23): **zqmlabs.com has exactly one production
+writer ("single brain"): the composite pin build in `ZQM-Computing/zqm-labs`
+(`.github/workflows/pages-deploy.yml`).** Canonical architecture document:
+`docs/single-brain-architecture.md` in that repo. This repo remains the
+source of truth for site *content*; it never deploys.
+
+The open questions from the 2026-10-18/20 investigation are now answered:
+
+- **Production promotion path — ESTABLISHED.** The workflow deploys with
+  `wrangler pages deploy ... --branch=main`; those direct uploads are the
+  production deployments. Verified operationally on 2026-10-23: production
+  was rolled back to workflow deployments via the Pages rollback API and
+  the live origin immediately served the pinned build
+  (`lantern-v26` at `PLAYER_SOURCE_SHA` `661d762f`).
+- **Second origin — IDENTIFIED.** It was Cloudflare Pages *native Git
+  builds*. When `production_deployments_enabled` was switched on estate-wide
+  on 2026-10-23, every merge to the monorepo triggered a native build of the
+  nested `zqmlabs-site/` tree (the fuller page inventory — the same effect
+  observed intermittently on 2026-10-20), which clobbered the composite
+  production. Three live regressions that day (07:22, 11:35, 13:09 ET) all
+  traced to native-build deployments; each was recovered by rollback to a
+  composite deployment.
+- **Final state:** `production_deployments_enabled: false` on the
+  `zqmlabs-site` Pages project (set 2026-10-23 via API, verified by
+  re-read). An hourly automated guard now reads the setting and raises a
+  CONFIG-DRIFT alert if it is ever `true` again. **Do not re-enable it.**
+- **Rollback procedure — ESTABLISHED.** Pages rollback (dashboard or API)
+  to the last known-good deployment, then verify the live origin with a
+  cache-busted fetch of `/games/hunt-for-wisps/play/sw.js` (cache name must
+  match the pinned build). A `git revert` + push alone does not roll back
+  production.
+- **How to ship from this repo:** merge the content change here, then open
+  a pin-bump PR in `ZQM-Computing/zqm-labs` updating `SITE_SOURCE_SHA` to
+  this repo's new `main` HEAD. Nothing in this repo publishes to production.
+
 
 ## Repository-verified facts
 
