@@ -10,6 +10,8 @@ weight: 1
 
 [**Launch Wisp's Lost Lanterns**](/games/hunt-for-wisps/play/?demo=1)
 
+Meet the creatures first in [Z's Zoo](https://zoo.zqmlabs.com), the official bestiary of Wisp's Lost Lanterns.
+
 The demo runs in your browser and does not require a paid kit or access code. Choose a team name, start the hunt, and select a scare level. Progress is stored on the current device.
 
 This is a software demo, not proof that a paid kit is orderable or that a physical route has been approved for an event. The published demo content and available features may differ from a field-tested, organizer-configured kit.
