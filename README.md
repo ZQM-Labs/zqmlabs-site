@@ -164,7 +164,7 @@ are separate checks unless a workflow explicitly demonstrates otherwise.
 ## Related repos
 
 - [quest-player](https://github.com/ZQM-Labs/quest-player) — the player PWA
-- Wisps Tracker — organizer-dashboard capability; its source repository is private and is not linked from public documentation
+- quest-analytics — organizer-dashboard capability; its source repository is private and is not linked from public documentation
 - [quest-authoring](https://github.com/ZQM-Labs/quest-authoring) — quest pack spec, validator, and generator
 - [quest-packs](https://github.com/ZQM-Labs/quest-packs) — ready-to-play quest packs
 - [organizer-toolkit](https://github.com/ZQM-Labs/organizer-toolkit) — setup checklists, print specs, FAQ
