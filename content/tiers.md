@@ -11,6 +11,8 @@ These packages describe the current **Wisp's Lost Lanterns** Halloween experienc
 
 For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Confirm the current kit contents and play window with the Lab before booking.
 
+**Halloween launch offer:** use code **FAMILY25** at checkout for $24 off — play for $25.
+
 ## 🏘️ Community — $199 flat
 
 For a neighborhood, HOA, PTA, church, or other community group. [Get the Community License](https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00) — the current offer is priced for unlimited families. Fundraising arrangements may be available for qualifying events; confirm the current terms before promoting a fundraiser.
