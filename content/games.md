@@ -17,6 +17,7 @@ Halloween scavenger hunt · Current featured game
 Wisp has hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided story experience with four selectable scare levels.
 
 - [Play the browser demo](/games/hunt-for-wisps/)
+- [Meet the creatures in Z's Zoo, the official bestiary](https://zoo.zqmlabs.com)
 - [Halloween event details](/halloween/)
 - [Hosting tiers](/tiers/)
 
