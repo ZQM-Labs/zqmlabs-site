@@ -41,7 +41,6 @@ The open questions from the 2026-10-18/20 investigation are now answered:
   a pin-bump PR in `ZQM-Computing/zqm-labs` updating `SITE_SOURCE_SHA` to
   this repo's new `main` HEAD. Nothing in this repo publishes to production.
 
-
 ## Repository-verified facts
 
 | Item | Finding | Evidence / limitation |
