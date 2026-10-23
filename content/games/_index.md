@@ -12,6 +12,8 @@ The directory distinguishes what can be played now from planned experiences. A l
 **Playable browser demo** · Halloween scavenger hunt
 Wisp has escaped again and hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided scavenger hunt with story, puzzles, teamwork, and four selectable scare levels.
 
+Meet the creatures first in [Z's Zoo](https://zoo.zqmlabs.com), the official bestiary of Wisp's Lost Lanterns.
+
 ### [Lantern Player](/games/lantern-player/)
 
 **Playable browser demo** · Lantern-lighting engine
