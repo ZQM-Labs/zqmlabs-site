@@ -21,7 +21,7 @@ A team-building format for coworkers. [Get the Office Team kit](https://buy.stri
 
 ## 🎪 Office Event — $499 flat
 
-For a larger company or organization-wide event. [Get the Office Event kit](https://buy.stripe.com/fZu14p8dR7nv0OC4Br9bO02). Confirm the current scope, group size, mechanics, and availability with the Lab before booking.
+For a larger company or organization-wide event. [Get the Office Event kit](https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02). Confirm the current scope, group size, mechanics, and availability with the Lab before booking.
 
 ## 🧭 Youth Groups and 🎉 Form-Your-Own
 
