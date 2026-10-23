@@ -28,6 +28,39 @@ Configuration is partially verified above. Use exact identifiers and timestamps;
 | DNS/custom-domain mapping | Pages project lists `zqmlabs.com` and `www.zqmlabs.com`, both custom-domain bindings report active. Root and `www` DNS records were previously observed pointing to `zqmlabs-site.pages.dev`; refresh the DNS record before any change. | Cloudflare Pages project/domain API plus prior DNS read; public HTTPS behavior remains unverified |
 | Rollback procedure | **Unverified** | Exact provider UI/CLI steps to restore the last known-good artifact and verify it |
 
+## Runtime verification — 2026-10-20
+
+Performed 2026-10-20 (EDT) after a full crawl of `https://zqmlabs.com` (every
+internal link followed; status codes and page titles recorded) and a local
+Hugo build of this repository at HEAD. This section records which repository
+actually serves the site, with evidence.
+
+### Determination: the monorepo serves the site; this repo supplies 8 files
+
+| Question | Finding | Evidence |
+|---|---|---|
+| Which repo deploys zqmlabs.com? | `ZQM-Computing/zqm-labs` (private monorepo), via `.github/workflows/pages-deploy.yml` | Workflow builds the monorepo's nested `zqmlabs-site/` tree and runs `wrangler pages deploy zqmlabs-site/public --project-name=zqmlabs-site`. This repo's workflows are CI-only (no deploy step). |
+| What crosses over from this repo? | `hugo.toml` + 8 content files, at a pinned commit | Workflow env `SITE_SOURCE_SHA=6b6fdc78f5bade93234da136f1cd9bb00fd682a2` (2026-10-20T01:06Z, "fix(tiers): rewrite as raw markdown"); copy list: `_index.md about.md halloween.md tiers.md faq.md patterns.md community.md games.md`. Player: `PLAYER_SOURCE_SHA=71a7561aec817e1cc4506068456808efce9d132a` via `scripts/sync-player.sh`. (Supersedes the 2026-10-18 pins recorded above: site `8106d82d`, player `ab6fa4ac`.) |
+| What does the deployed build contain? | The monorepo's layouts/static + the 8 synced files + the monorepo's own remaining content (incl. `content/games/hunt-for-wisps.md`, the only file in its `content/games/`) | Live sitemap lists exactly 9 URLs: `/`, `/about/`, `/community/`, `/faq/`, `/games/`, `/halloween/`, `/patterns/`, `/tiers/`, `/games/hunt-for-wisps/` — the monorepo build's content inventory. A local Hugo build of this repo at HEAD produces 19 pages / 18 sitemap URLs. |
+| Which pages are missing from production? | `/pricing/`, `/organizers/`, `/contact/`, `/press/`, `/direction/`, `/games/lantern-player/`, `/games/pumpkin-roll/`, `/games/snowflake-secret/`, `/games/wisps-tracker/` — all HTTP 404 with the site's 404 page | All exist in this repo with publishable front matter (no drafts). `/pricing/` and `/organizers/` are linked from the global navigation on all 12 built pages; the game pages are linked from `/` and `/games/`. |
+| Deploy trigger | Push to monorepo `main` touching `zqmlabs-site/**` or the workflow, plus manual `workflow_dispatch` (main only). **No schedule** (an hourly run is claimed in the monorepo's `zqmlabs-site/README.md`; the workflow on main has none). | Workflow source on main, read 2026-10-20. |
+| Production promotion path | **Unverified.** The Wrangler command omits `--branch=main`, so workflow deploys land as Pages preview deployments. How the current production deployment was promoted is not established. | Workflow source; Pages Git integration previously recorded as `production_deployments_enabled: false`. |
+| Second origin (intermittent) | **Observed, identity unconfirmed.** During the 2026-10-20 checks, `/organizers/` answered 404 -> 200 (correct page) -> 404 within seconds, and `/press/` and `/contact/` each answered both 404 and 200-with-404-body (cached soft-404, `Age` ~249700s) at different times. Some requests are intermittently served a fuller build resembling this repo's full build. | Repeated curl probes 2026-10-20 11:05-11:30 UTC. Candidates: the Cloudflare Tunnel origin (see the api.zqmlabs.com record), a manual Wrangler deploy from this repo (a `.wrangler` directory exists at this repo's root), or a stale Pages deployment still bound to a hostname. Do not treat the 404 set as fixed until the second origin is identified and retired or documented as failover. |
+| External links | Healthy: 30/30 external links returned 200 in the crawl, including all four Stripe checkout links and all GitHub links. | Crawl 2026-10-20. |
+
+### Fix paths for the missing pages
+
+1. Add the missing files to the sync copy list in the monorepo's
+   `pages-deploy.yml` (requires editing a workflow file), **or** mirror the
+   files into the monorepo's `zqmlabs-site/content/` — the sync overwrites
+   only its eight listed files and never cleans the directory, so mirrored
+   files persist in the build.
+2. Extend the workflow's route-verification step to require the new routes,
+   so a future sync change cannot silently drop them again.
+3. Add `--branch=main` to the Wrangler deploy (or document the actual
+   promotion mechanism) so workflow deploys reach production deterministically.
+4. Identify and retire (or document as deliberate failover) the second origin.
+
 ## Verification procedure
 
 1. The project/source/build/branch and domain binding are now recorded above from the Cloudflare API; refresh them before any operational change.
