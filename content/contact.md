@@ -18,13 +18,13 @@ For the fastest reply, include:
 |---|---|
 | Your community, company, or group name | So we can size the kit |
 | Your dates or event window | So we can check availability |
-| The tier you're eyeing | Family / Community / Office / Youth / Custom |
+| The tier you're eyeing | Family / Community / Office / Youth / Form-Your-Own (by arrangement) |
 | Approximate number of teams | Sizing and leaderboard tuning |
 | Your city or venue type | Route and sign placement advice |
 
 ## Common reasons to write
 
-**Book a kit.** Community, office, youth group, or a custom event. See
+**Book a kit.** Community, office, youth group, or a form-your-own event (by arrangement — flat kits are generic, not customized per buyer). See
 [Pricing →](/pricing/) and [Tiers →](/tiers/).
 
 **Run a fundraiser.** Community kits can split revenue: families pay $15,
@@ -47,7 +47,7 @@ and the stop number if you have them.
 | Request type | Typical reply |
 |---|---|
 | New booking | Under 1 business day |
-| Active event support | Same day, faster during the window |
+| Active event support | Limited, best-effort email; may be delayed on Halloween |
 | Press | Under 1 business day |
 | Partnerships | 1–2 business days |
 

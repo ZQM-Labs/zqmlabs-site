@@ -32,4 +32,4 @@ For the full collection across themes and seasons, visit the [Games directory](/
 
 ## Play with your community
 
-If you are considering a local event, review the [current hosting tiers](/tiers/) and contact the Lab to confirm logistics, support, and availability. Organizers should choose routes and activities appropriate to their participants, venue, accessibility needs, and local conditions.
+If you are considering a local event, review the [current hosting tiers](/tiers/) and coordinate logistics, support, and availability with the Lab before announcing it. Organizers should choose routes and activities appropriate to their participants, venue, accessibility needs, and local conditions.

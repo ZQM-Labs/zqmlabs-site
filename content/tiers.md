@@ -9,29 +9,35 @@ These packages describe the current **Wisp's Lost Lanterns** Halloween experienc
 
 ## 🏠 Family Night — $49 flat
 
-For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Confirm the current kit contents and play window with the Lab before booking.
+For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Your kit is usable on checkout; kit contents and the play window are as listed here.
 
 **Halloween launch offer:** use code **FAMILY25** at checkout for $24 off — play for $25.
 
 ## 🏘️ Community — $199 flat
 
-For a neighborhood, HOA, PTA, church, or other community group. [Get the Community License](https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00) — the current offer is priced for unlimited families. Fundraising arrangements may be available for qualifying events; confirm the current terms before promoting a fundraiser.
+For a neighborhood, HOA, PTA, church, or other community group. [Get the Community License](https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00) — the current offer is priced for unlimited families. Fundraising arrangements may be available for qualifying events; coordinate the current terms with the Lab before promoting a fundraiser.
 
 ## 🏢 Office Team — $349 flat
 
-A team-building format for coworkers. [Get the Office Team kit](https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01). Confirm the current scope, group size, mechanics, and availability with the Lab before booking.
+A team-building format for coworkers. [Get the Office Team kit](https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01). Coordinate the current scope, group size, mechanics, and availability with the Lab before announcing your event.
 
 ## 🎪 Office Event — $499 flat
 
-For a larger company or organization-wide event. [Get the Office Event kit](https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02). Confirm the current scope, group size, mechanics, and availability with the Lab before booking.
+For a larger company or organization-wide event. [Get the Office Event kit](https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02). Coordinate the current scope, group size, mechanics, and availability with the Lab before announcing your event.
 
 ## 🧭 Youth Groups and 🎉 Form-Your-Own
 
-Ask the Lab about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed.
+Ask the Lab about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed. Flat kits are generic — the same quest for every buyer, not customized per buyer.
 
-## What to confirm before booking
+## Before you buy
 
-Availability and delivery depend on the current game, event window, venue, organizer setup, and support capacity. Before announcing an event, confirm:
+- **Usable on checkout.** Your kit is usable as soon as checkout delivers it. Coordinating with the Lab is about announcing your event, not about unlocking the kit.
+- **No refunds or reschedules.** All kit sales are final.
+- **Kit access expires after the window.** Kit access expires after the October 30–November 1, 2026 window.
+
+## What to coordinate before announcing
+
+Availability and delivery depend on the current game, event window, venue, organizer setup, and support capacity. Before announcing an event, coordinate with the Lab on:
 
 - The exact kit and materials included.
 - The price and any fundraising terms.
@@ -55,4 +61,4 @@ For a different kind of game or a general introduction to the studio, visit the 
 
 ## Contact
 
-To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Wait for confirmation before advertising an event as booked.
+To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Coordinate with the Lab before announcing your event. Your kit is usable on checkout — coordination is about the announcement, not about unlocking the kit.
