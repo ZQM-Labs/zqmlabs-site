@@ -21,7 +21,7 @@ This is a software demo, not proof that a paid kit is orderable. The published d
 - Story-driven puzzles and atmospheric effects.
 - Built-in demo mode that does not require the production game backend.
 
-**Planning an event?** Review the [hosting options](/tiers/) and contact ZQM Labs to confirm current availability, kit contents, venue requirements, pricing, and fulfillment before advertising a booking.
+**Planning an event?** Review the [hosting options](/tiers/) and coordinate with ZQM Labs on current availability, kit contents, venue requirements, pricing, and fulfillment before announcing your event.
 
 ## About Lantern Player
 

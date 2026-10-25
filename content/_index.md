@@ -23,7 +23,7 @@ Wisp has escaped again and hidden six glow lanterns. Bring your team together to
 - [Halloween experience details](/halloween/)
 - [Hosting options and current tiers](/tiers/)
 
-The current event activation is in Volusia County, Florida, October 30–November 1, 2026. The browser demo is distinct from a booked, supported event. Before planning an in-person event, confirm date availability, delivery area, venue permissions, accessibility, and support arrangements with the Lab.
+The current event activation is in Volusia County, Florida, October 30–November 1, 2026. The browser demo is distinct from a booked, supported event. Kits are usable on checkout. Before announcing an in-person event, coordinate date availability, delivery area, venue permissions, accessibility, and support arrangements with the Lab.
 
 ### More games from the Lab
 
@@ -61,7 +61,7 @@ Same quest, four voltages. Choose the level that fits your team.
 These tiers apply to Wisp's Lost Lanterns; they are not pricing for every future game.
 
 - 🏠 **Family Night — $49**, one household.
-- 🏘️ **Community — $199**, intended for neighborhood and community events; confirm capacity and current terms before booking.
+- 🏘️ **Community — $199**, intended for neighborhood and community events; coordinate capacity and current terms with the Lab before announcing.
 - 🏢 **Office Team — $349 · Office Event — $499**, team-building formats.
 - 🧭 **Youth Groups** and 🎉 **Form-Your-Own** — ask about current availability.
 
@@ -92,7 +92,7 @@ Party rentals—tables, chairs, grills, cornhole, and yard games—are planned a
 
 **Is ZQM Labs only a Halloween game?** No. Wisp's Lost Lanterns is the featured Halloween experience. ZQM Labs is the studio and home for a broader collection of community-centered games.
 
-**Do players need to install an app?** The Wisp's Lost Lanterns browser demo runs in a web browser. One phone per team is the intended basic play pattern; confirm the requirements for any hosted event.
+**Do players need to install an app?** The Wisp's Lost Lanterns browser demo runs in a web browser. One phone per team is the intended basic play pattern; check the requirements for any hosted event.
 
 **Can we run a quest anywhere?** Content can be adapted for different venues, but location-based play, local permissions, accessibility, and current support arrangements must be considered for each event.
 

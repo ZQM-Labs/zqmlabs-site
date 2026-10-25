@@ -23,7 +23,7 @@ This is a software demo, not proof that a paid kit is orderable or that a physic
 - Six lantern stops and four selectable scare levels.
 - A built-in demo mode that does not require the production game backend.
 
-**Planning an event?** Review the [hosting options](/tiers/) and contact ZQM Labs to confirm current availability, kit contents, venue requirements, pricing, and fulfillment before advertising a booking.
+**Planning an event?** Review the [hosting options](/tiers/) and coordinate with ZQM Labs on current availability, kit contents, venue requirements, pricing, and fulfillment before announcing your event.
 
 ## Sample quest resources
 

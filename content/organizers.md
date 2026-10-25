@@ -6,8 +6,7 @@ description: "Everything a Lab Assistant needs: what arrives in your kit, the on
 ## You are the Lab Assistant 🥼
 
 Every quest needs one person to print a few pages and place six signs. That's
-the whole job — about **one hour, total**. The Lab handles everything else,
-remotely, throughout your event window.
+the whole job — about **one hour, total**. The Lab provides limited, best-effort remote support during your event window.
 
 ## What arrives in your kit
 
@@ -18,7 +17,7 @@ remotely, throughout your event window.
 | Organizer guide | 1 page | Read once, keep handy |
 | Finisher badges | Printable PDF | Cut out, hand at the finale |
 | Map preview | Web link | Check your route before the day |
-| Remote support | Email | Dr. Z answers during your window |
+| Remote support | Email | Limited, best-effort email support; replies may be delayed on Halloween |
 
 ## The one-hour setup
 
@@ -56,13 +55,12 @@ the map inside the game. No QR required.
 fresh on any phone with the same access code. Team name keeps their score.
 
 **Rain.** Florida showers pass. The window spans days — teams pick a dry
-moment. The Lab will extend a window if a real storm wipes out the weekend.
+moment. Kit access still expires after the October 30–November 1, 2026 window.
 
 **A puzzle is too hard for a young team.** Every stop has **three hints**,
 revealed one at a time. Hints never block a finish.
 
-**Something is actually broken.** Email the Lab. Remote support is included
-through your whole window.
+**Something is actually broken.** Email the Lab. Limited, best-effort remote support is included through your event window; it is not a monitored phone line, and replies may be delayed on Halloween.
 
 ## What you never have to do
 
@@ -74,12 +72,11 @@ through your whole window.
 
 ## Support window
 
-Your Lab Assistant status includes remote support from **booking through the
-end of your event window**. Typical reply time is under a day, and faster
-during live events.
+Your Lab Assistant status includes limited, best-effort remote email support from **booking through the end of your event window**. Replies are typically under a day outside the Halloween window, but may be delayed on Halloween itself, when the Lab team are out at events themselves.
 
 ## Next steps
 
 - [See the tiers and pricing →](/tiers/)
 - [Read the FAQ →](/faq/)
-- [Book: email the Lab →](mailto:zqmcomputing@gmail.com)
+- [Get a flat kit: see the tiers →](/tiers/)
+- [Youth or form-your-own arrangements: email the Lab →](mailto:zqmcomputing@gmail.com)

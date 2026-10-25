@@ -33,7 +33,7 @@ is fixed, the upside is yours.
 - All four scare levels (Cozy / Spooky / After Dark / Overdrive)
 - Three hints at every stop
 - Live leaderboard
-- Remote support through your event window
+- Limited, best-effort remote email support through your event window
 - Multi-language UI (7 languages)
 
 ## What's not included
@@ -61,8 +61,9 @@ kit is scheduled.
 
 ## Book
 
-Email **<zqmcomputing@gmail.com>** with your community or company name, your
-dates, and the tier you're eyeing. The Lab replies within a day.
+Flat kits are usable on checkout — see the [tiers](/tiers/). **No refunds or reschedules:** all kit sales are final. **Kit access expires after the October 30–November 1, 2026 window.**
+
+For multi-kit or quoted options, email **<zqmcomputing@gmail.com>** with your community or company name, your dates, and the tier you're eyeing. The Lab replies within a day.
 
 - [Full tier descriptions →](/tiers/)
 - [Organizer details →](/organizers/)

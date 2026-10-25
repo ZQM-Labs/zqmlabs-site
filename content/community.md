@@ -32,7 +32,7 @@ Before contributing, follow the instructions in the relevant repository. Contrib
 
 ZQM Labs intends to make games that communities can discover and enjoy across regions. That is a product direction, not a claim that every language, local event service, community platform, or support arrangement is available worldwide today.
 
-The current in-person Wisp's Lost Lanterns activation is planned for Volusia County, Florida, October 30–November 1, 2026. Confirm availability before planning a hosted event elsewhere.
+The current in-person Wisp's Lost Lanterns activation is planned for Volusia County, Florida, October 30–November 1, 2026. Coordinate availability with the Lab before announcing a hosted event elsewhere.
 
 ## Find your next step
 

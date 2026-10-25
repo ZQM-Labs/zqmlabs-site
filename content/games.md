@@ -21,7 +21,7 @@ Wisp has hidden six glow lanterns. Bring your team together to solve clues, expl
 - [Halloween event details](/halloween/)
 - [Hosting tiers](/tiers/)
 
-The current event activation is in Volusia County, Florida, October 30 – November 1, 2026. A public demo does not mean in-person event delivery is available in every region; confirm local support and logistics before planning an event.
+The current event activation is in Volusia County, Florida, October 30 – November 1, 2026. A public demo does not mean in-person event delivery is available in every region; coordinate local support and logistics with the Lab before announcing an event.
 
 ### The Great Pumpkin Roll
 

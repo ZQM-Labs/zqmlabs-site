@@ -24,7 +24,7 @@ Visit the [Games directory](/games/). Each title should identify its status—su
 <details>
 <summary>Are games available worldwide?</summary>
 
-The studio's creative direction is global, and the current browser demo can be explored online. That does not mean that every game, language, hosted event, or support service is available everywhere. Check the individual game's page and confirm event logistics with the Lab.
+The studio's creative direction is global, and the current browser demo can be explored online. That does not mean that every game, language, hosted event, or support service is available everywhere. Check the individual game's page and coordinate event logistics with the Lab before announcing an event.
 
 </details>
 
@@ -47,7 +47,7 @@ It is the current ZQM Labs Halloween scavenger hunt. Wisp the will-o'-the-wisp h
 <details>
 <summary>What does a kit include?</summary>
 
-The current offer describes printable signs, team access, the browser-based game, and organizer guidance. Confirm the exact deliverables for your package with the Lab before booking; contents may change as the game evolves.
+The current offer describes printable signs, team access, the browser-based game, and organizer guidance. Kits are usable on checkout; contents may change as the game evolves, so check the hosting tiers page for the current listing.
 
 </details>
 
@@ -68,7 +68,7 @@ The current Wisp's Lost Lanterns materials describe four levels: Cozy Glow, Spoo
 <details>
 <summary>When is the current local event?</summary>
 
-The current in-person activation is planned for Volusia County, Florida, October 30–November 1, 2026. Availability and support for a particular event must be confirmed with the Lab.
+The current in-person activation is planned for Volusia County, Florida, October 30–November 1, 2026. Coordinate availability and support for a particular event with the Lab before announcing it.
 
 </details>
 
@@ -77,21 +77,21 @@ The current in-person activation is planned for Volusia County, Florida, October
 <details>
 <summary>Can we host a game in our community?</summary>
 
-Possibly, depending on the current package, location, support capacity, and event requirements. Contact the Lab with your location and proposed dates before advertising or selling participation. Online access to a demo does not guarantee in-person delivery in your region.
+Possibly, depending on the current package, location, support capacity, and event requirements. Coordinate with the Lab — with your location and proposed dates — before announcing or selling participation. Online access to a demo does not guarantee in-person delivery in your region.
 
 </details>
 
 <details>
 <summary>How much does hosting cost?</summary>
 
-The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are current offers for this game only and may depend on availability and package details. See [hosting tiers](/tiers/) and confirm current terms with the Lab.
+The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are current offers for this game only and may depend on availability and package details. See [hosting tiers](/tiers/) and coordinate with the Lab before announcing your event.
 
 </details>
 
 <details>
 <summary>Who chooses the route and venue?</summary>
 
-For an in-person event, organizers must confirm a suitable venue and route for their participants, considering accessibility, supervision, local permissions, weather, and safety. Follow the current game instructions and confirm responsibilities with the Lab before the event.
+For an in-person event, organizers must confirm a suitable venue and route for their participants, considering accessibility, supervision, local permissions, weather, and safety. Follow the current game instructions and coordinate responsibilities with the Lab before announcing the event.
 
 </details>
 
