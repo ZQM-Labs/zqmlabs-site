@@ -1,6 +1,6 @@
 ---
 title: "Games"
-description: "Browse playable demos, tools, and games in development."
+description: "Browse ZQM Labs browser game demos, companion tools, and scavenger-hunt projects in development, with current playability and availability clearly labeled."
 ---
 
 The directory distinguishes what can be played now from planned experiences. A listing marked **Playable browser demo** is available in the browser. **Tool** is a companion app, not a standalone game. **In development** means the experience is not yet a separate playable release.
