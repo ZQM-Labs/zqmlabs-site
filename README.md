@@ -3,9 +3,7 @@
 **ZQM Labs — Z's Quests & Mischief**  
 [zqmlabs.com](https://zqmlabs.com) · [GitHub organization](https://github.com/ZQM-Labs)
 
-This repository contains the public website content and Hugo source for
-**ZQM Labs — Z's Quests & Mischief**. It is the canonical source for the public
-ZQM Labs website and for customer- and organizer-facing information.
+The canonical **Hugo website source for ZQM Labs (Z's Quests & Mischief)**, the community-centered game studio. It contains public pages and content for browser game demos, Halloween experiences, hosting tiers, pricing, organizer guidance, FAQs, and customer information. This repository's CI validates the site source; production content is published only through the separately documented pinned-source deployment flow.
 
 ZQM Labs is a community-centered game studio. **Wisp's Lost Lanterns** is the
 featured Halloween experience; the site can support additional games as they
