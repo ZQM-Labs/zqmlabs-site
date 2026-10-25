@@ -12,11 +12,16 @@
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · ZQM Labs{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "img/logo-primary.webp" | absURL }}">
+<meta property="og:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">
+<meta property="og:image:alt" content="ZQM Labs — Z's Quests & Mischief">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · ZQM Labs{{ end }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ "img/logo-primary.webp" | absURL }}">
+<meta name="twitter:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">
+<meta name="twitter:image:alt" content="ZQM Labs — Z's Quests & Mischief">
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.description "logo" ("img/logo-primary-evergreen.webp" | absURL) "sameAs" (slice "https://github.com/ZQM-Labs") | jsonify | safeJS }}
+</script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
   :root{
