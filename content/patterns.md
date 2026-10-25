@@ -1,6 +1,6 @@
 ---
 title: "Technical Resources"
-description: "Public game-building and geospatial engineering resources from ZQM Labs and ZQM Computing."
+description: "Explore ZQM Labs game-building resources and ZQM Computing geospatial engineering cookbooks, APIs, and data tools, maintained as distinct projects."
 ---
 
 ## Technical resources
