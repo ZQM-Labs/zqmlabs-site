@@ -1,6 +1,6 @@
 ---
 title: "Games"
-description: "Explore community-centered games from ZQM Labs."
+description: "Explore ZQM Labs story-driven, community-centered games, including the Wisp’s Lost Lanterns browser demo and projects still in development."
 url: /games/
 ---
 
