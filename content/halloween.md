@@ -9,7 +9,9 @@ Halloween is an important creative world for ZQM Labs: a place for mysteries, la
 
 ## Featured experience: Wisp's Lost Lanterns
 
-Wisp the will-o'-the-wisp has lost six glow lanterns. Teams become Lantern Keepers, following clues and solving puzzles across six stops.
+Wisp the will-o'-the-wisp has lost six glow lanterns, the lights that show her the way home. Teams become Lantern Keepers, following clues and solving puzzles across six stops — one lantern relit at each — until all six burn and the quest ends in the Lantern Parade.
+
+Along the trail you'll meet the residents of Z's Zoo: the Welcome Pumpkin at the front door, Oakie the Whispering Oak — Wisp's best friend — the Tag Ghosts of the Giggling Graveyard, Mrs. Spider, and Professor Hoot. Keep an eye out at the parade ground for the Seventh Shadow, waving back.
 
 - **Self-guided:** teams play within their event window rather than joining a single scheduled start.
 - **Browser-based:** the current experience is designed to be played on a phone browser; see the game instructions for current requirements.

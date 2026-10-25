@@ -14,7 +14,7 @@ ZQM Labs creates story-driven, community-centered games for people who want to p
 
 Halloween scavenger hunt · Current featured game
 
-Wisp has hidden six glow lanterns. Bring your team together to solve clues, explore, and recover them in a self-guided story experience with four selectable scare levels.
+Wisp — a small, wandering will-o'-the-wisp, and Dr. Z's escaped first creation — has lost her six glow lanterns, the lights that show her the way home. Without them she flickers like a dying candle. Teams become Lantern Keepers: follow the trail across six stops, solve the puzzle at each, and relight one lantern at a time. Every lantern relit makes Wisp brighter and braver — and when all six burn, the quest ends in the Lantern Parade, where Wisp lights your way home too.
 
 - [Play the browser demo](/games/hunt-for-wisps/)
 - [Meet the creatures in Z's Zoo, the official bestiary](https://zoo.zqmlabs.com)
