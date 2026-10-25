@@ -1,6 +1,6 @@
 ---
 title: "The Snowflake Secret"
-description: "Find the hidden snowflake ornaments in this winter scavenger hunt"
+description: "The Snowflake Secret is a winter scavenger hunt in development from ZQM Labs. Find six hidden snowflake ornaments before the Winter Festival begins."
 url: /games/snowflake-secret/
 status: "in-development"
 weight: 3
