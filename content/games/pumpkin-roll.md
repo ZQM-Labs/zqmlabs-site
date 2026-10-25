@@ -1,6 +1,6 @@
 ---
 title: "The Great Pumpkin Roll"
-description: "Help Farmer Joe round up his escaped pumpkins in this family-friendly scavenger hunt"
+description: "The Great Pumpkin Roll is a family-friendly six-pumpkin scavenger hunt in development from ZQM Labs. Find the escaped pumpkins and return them before the festival."
 url: /games/pumpkin-roll/
 status: "in-development"
 weight: 2
