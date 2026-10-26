@@ -13,7 +13,7 @@ loop. Proving them required running the code.
 ## Files
 
 | File | What it does |
-|---|---|
+| --- | --- |
 | `verify-exec.js` | Loads an `app.js`, sets `location.search`, clicks the real buttons, reads `localStorage` |
 | `verify-sw.js` | Loads a `sw.js`, dispatches synthetic fetch events, reports what `respondWith` returned |
 | `verify-playthrough.js` | Drives a complete 6-stop run (start → scare → solve all → hints → finale) with Leaflet present |
@@ -56,7 +56,7 @@ another host.
 ## Expected results
 
 | Check | origin/main | fixed |
-|---|---|---|
+| --- | --- | --- |
 | QR params | IGNORED | CONSUMED |
 | duplicate solves | `[1,1,1]`, score 300 | `[1]`, score 100 |
 | `openMap()` no Leaflet | `ReferenceError: L is not defined` | guarded, text fallback |
