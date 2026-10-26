@@ -69,7 +69,7 @@ for (const file of walk(root)) {
   } else {
     for (const [index, block] of jsonLdBlocks.entries()) {
       try {
-        JSON.parse(block[1]);
+        JSON.parse(block[2]);
       } catch (error) {
         errors.push(`${relative}: JSON-LD block ${index + 1} is invalid JSON (${error.message})`);
       }
