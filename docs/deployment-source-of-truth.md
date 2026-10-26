@@ -44,7 +44,7 @@ The open questions from the 2026-10-18/20 investigation are now answered:
 ## Repository-verified facts
 
 | Item | Finding | Evidence / limitation |
-|---|---|---|
+| --- | --- | --- |
 | Website source | This repository contains the Hugo website source and validation workflow | See [site CI](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) |
 | CI behavior | The checked-in site workflow validates JavaScript, player synchronization, the Hugo build, generated links, and required routes; it contains no production deployment step | A green CI run does not prove that production was deployed |
 | Standalone player repository | [ZQM-Labs/lantern-player](https://github.com/ZQM-Labs/lantern-player) is the standalone player repository | The monorepo also contains a player copy; production's selected source has not been independently verified |
@@ -56,7 +56,7 @@ The open questions from the 2026-10-18/20 investigation are now answered:
 Configuration is partially verified above. Use exact identifiers and timestamps; do not copy credentials, API tokens, or secret environment-variable values into this file. Public HTTP behavior, the latest successful GitHub Actions deploy, and the exact artifact currently served remain unresolved.
 
 | Field | Verified value | Evidence to record |
-|---|---|---|
+| --- | --- | --- |
 | Public hostname | zqmlabs.com is the intended public hostname; current response and DNS state still require verification | DNS record type/target, custom-domain status, HTTP response, verification timestamp |
 | Hosting provider and project | Cloudflare Pages project `zqmlabs-site`; custom domains `zqmlabs.com` and `www.zqmlabs.com` are active in the project configuration | Cloudflare account API read on 2026-10-18; this proves configuration, not successful browser delivery |
 | Pages Git source / production branch | `ZQM-Computing/zqm-labs`, branch `main`, `root_dir: zqmlabs-site` | Cloudflare Pages project API read on 2026-10-18 |
@@ -77,7 +77,7 @@ actually serves the site, with evidence.
 ### Determination: the monorepo serves the site; this repo supplies 8 files
 
 | Question | Finding | Evidence |
-|---|---|---|
+| --- | --- | --- |
 | Which repo deploys zqmlabs.com? | `ZQM-Computing/zqm-labs` (private monorepo), via `.github/workflows/pages-deploy.yml` | Workflow builds the monorepo's nested `zqmlabs-site/` tree and runs `wrangler pages deploy zqmlabs-site/public --project-name=zqmlabs-site`. This repo's workflows are CI-only (no deploy step). |
 | What crosses over from this repo? | `hugo.toml` + 8 content files, at a pinned commit | Workflow env `SITE_SOURCE_SHA=6b6fdc78f5bade93234da136f1cd9bb00fd682a2` (2026-10-20T01:06Z, "fix(tiers): rewrite as raw markdown"); copy list: `_index.md about.md halloween.md tiers.md faq.md patterns.md community.md games.md`. Player: `PLAYER_SOURCE_SHA=71a7561aec817e1cc4506068456808efce9d132a` via `scripts/sync-player.sh`. (Supersedes the 2026-10-18 pins recorded above: site `8106d82d`, player `ab6fa4ac`.) |
 | What does the deployed build contain? | The monorepo's layouts/static + the 8 synced files + the monorepo's own remaining content (incl. `content/games/hunt-for-wisps.md`, the only file in its `content/games/`) | Live sitemap lists exactly 9 URLs: `/`, `/about/`, `/community/`, `/faq/`, `/games/`, `/halloween/`, `/patterns/`, `/tiers/`, `/games/hunt-for-wisps/` — the monorepo build's content inventory. A local Hugo build of this repo at HEAD produces 19 pages / 18 sitemap URLs. |

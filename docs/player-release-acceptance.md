@@ -7,7 +7,7 @@
 The canonical player is maintained in [ZQM-Labs/lantern-player](https://github.com/ZQM-Labs/lantern-player). Its CI release suite currently runs in Chromium on a Linux GitHub Actions runner.
 
 | Area | Automated check | Passing threshold |
-|---|---|---|
+| --- | --- | --- |
 | Startup | Launch the player 20 consecutive times and watch for uncaught JavaScript errors | 20/20 launches render the start screen |
 | Pack validation | Exercise null packs, null/array stop entries, invalid field types, malformed hints, non-finite/out-of-range coordinates, and duplicate IDs | Invalid packs return validation errors without throwing; valid fixture passes |
 | Service-worker update | Seed the previous `lantern-v5` cache, activate `lantern-v6`, and inspect the cache set | Previous player cache removed; unrelated origin cache preserved |

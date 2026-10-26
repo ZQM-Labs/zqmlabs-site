@@ -9,7 +9,7 @@ Every tier is a **one-time flat fee** for your event window. No subscriptions,
 no per-player charges, no setup fees.
 
 | Tier | Price | Who it's for | Families |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 🏠 **Family Night** | **$49** | One household, one yard or block | 1 |
 | 🏘️ **Community** | **$199** | HOAs, neighborhoods, PTAs, churches | Unlimited |
 | 🏢 **Office Team** | **$349** | Company teams, departments | Sized on booking |
