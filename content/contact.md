@@ -15,7 +15,7 @@ specifically, the one in the lab coat.
 For the fastest reply, include:
 
 | Question | Why it helps |
-|---|---|
+| --- | --- |
 | Your community, company, or group name | So we can size the kit |
 | Your dates or event window | So we can check availability |
 | The tier you're eyeing | Family / Community / Office / Youth / Form-Your-Own (by arrangement) |
@@ -45,7 +45,7 @@ and the stop number if you have them.
 ## Response times
 
 | Request type | Typical reply |
-|---|---|
+| --- | --- |
 | New booking | Under 1 business day |
 | Active event support | Limited, best-effort email; may be delayed on Halloween |
 | Press | Under 1 business day |
