@@ -33,7 +33,7 @@ Use this checklist when changing public content, game routes, player assets, or 
 Record the following in the PR or release evidence:
 
 | Evidence | Record |
-|---|---|
+| --- | --- |
 | Production deployment | Workflow run URL and result |
 | Deployed source | Exact commit SHA and configured source pins |
 | Public route checks | Routes checked and HTTP outcomes |
