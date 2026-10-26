@@ -37,6 +37,14 @@ if (!fs.existsSync(root) || !fs.statSync(root).isDirectory()) {
 for (const file of walk(root)) {
   pages += 1;
   const relative = path.relative(root, file).split(path.sep).join("/");
+  // These are standalone game-player shells, not Hugo content pages. Their
+  // metadata and release contracts belong to the canonical player source.
+  if ([
+    "games/hunt-for-wisps/play/index.html",
+    "games/lantern-player/index.html",
+  ].includes(relative)) {
+    continue;
+  }
   const html = fs.readFileSync(file, "utf8");
   const titleMatch = html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
   if (!titleMatch || !titleMatch[1].replace(/<[^>]+>/g, "").trim()) {
