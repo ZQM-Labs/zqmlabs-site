@@ -24,11 +24,17 @@ assert.match(
 assert.match(player, /state\.hintsUsed >= HINT_BUDGET/, "the global hint cap must be enforced");
 assert.match(player, /if \(hintLevel < 3\)/, "each stop must cap its own hint ladder at three hints");
 assert.match(player, /state\.stopHints\[currentStop\.id\] = \(state\.stopHints\[currentStop\.id\] \|\| 0\) \+ 1/, "hint use must persist against the active stop");
-assert.ok(player.includes('for (const tier of ["cozy", "spooky", "afterdark", "overdrive"])'), "all four scare levels must be validated for every stop");
-for (const tier of ["cozy", "spooky", "afterdark", "overdrive"]) {
-  const variants = player.split(tier + ": { q:").length - 1;
-  assert.ok(variants >= 6, tier + " must define a puzzle variant for all six stops");
-}
+assert.ok(player.includes('for (const tier of ["spooky", "afterdark", "overdrive"])'), "all optional non-cozy tiers must be validated when present");
+assert.match(
+  player,
+  /const pz = s\.puzzle && typeof s\.puzzle === "object" \? s\.puzzle\.cozy : null/,
+  "each stop must validate its required cozy puzzle without requiring optional tiers"
+);
+assert.match(
+  player,
+  /if \(tierPuzzle !== undefined && tierPuzzle !== null\)/,
+  "every optional tier that is present must be validated"
+);
 assert.ok(player.includes('if (!s || typeof s !== "object" || Array.isArray(s))'), "malformed stop records must be rejected without crashing");
 assert.match(player, /fetchKitBundle\(result\.kit,\s*code\)/, "live kit loading must pass the validated access code to the bundle request");
 assert.match(player, /method:\s*"POST"/, "live kit loading must use a POST request rather than expose kit identifiers in a GET path");
