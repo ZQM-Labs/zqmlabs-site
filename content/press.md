@@ -6,7 +6,7 @@ description: "Press and media resources for ZQM Labs and Z's Quests & Mischief: 
 ## Company facts
 
 | Field | Detail |
-|---|---|
+| --- | --- |
 | Name | ZQM Labs |
 | Product line | Z's Quests & Mischief |
 | Founded | 2026 |
@@ -65,7 +65,7 @@ secret of the winter festival across six stops.
 ## Brand assets
 
 | Asset | Use |
-|---|---|
+| --- | --- |
 | [Primary logo](/img/logo-primary.webp) | Dr. Z with lantern — primary brand mark |
 | [Dial imagery](/img/dial1.webp) | Scare-level indicator (4 variants) |
 | [Game site](https://zqmlabs.com) | Live product |
