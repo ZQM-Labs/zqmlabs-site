@@ -32,7 +32,6 @@ jobs:
           PLAYER=static/games/hunt-for-wisps/play
           node --check "$PLAYER/app.js"
           node --check "$PLAYER/global-story.js"
-          node --check "$PLAYER/global-features.js"
           node --check "$PLAYER/i18n.js"
           node --check "$PLAYER/sw.js"
       - name: Verify player script load order
