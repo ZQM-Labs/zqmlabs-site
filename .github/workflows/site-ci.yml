@@ -23,7 +23,7 @@ jobs:
           hugo-version: "0.165.0"
           extended: true
       - name: Sync canonical player into site bundle
-        run: bash scripts/sync-player.sh a3e123bcd53a3c9747fa4c0c95c815eb1732642c
+        run: bash scripts/sync-player.sh 81063812c045189d9108a0e4f4a00a2220b28087
       - name: Run player regression checks against synchronized canonical source
         run: node scripts/test-player-source.cjs
       - name: Syntax-check player scripts
