@@ -55,7 +55,8 @@ for (const file of walk(root)) {
   if (!meta.get("og:url")?.trim()) errors.push(`${relative}: missing og:url`);
   if (!meta.get("twitter:card")?.trim()) errors.push(`${relative}: missing twitter:card`);
 
-  const canonicalTag = (html.match(/<link\b[^>]*rel=["']canonical["'][^>]*>/i) || [])[0];
+  const canonicalTag = (html.match(/<link\b[^>]*>/gi) || [])
+    .find((tag) => attributes(tag).rel?.toLowerCase().split(/\s+/).includes("canonical"));
   const canonical = canonicalTag ? attributes(canonicalTag).href : "";
   if (!canonical) {
     errors.push(`${relative}: missing canonical URL`);
