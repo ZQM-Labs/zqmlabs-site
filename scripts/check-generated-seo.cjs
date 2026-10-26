@@ -13,10 +13,10 @@ let pages = 0;
 
 function attributes(tag) {
   const result = {};
-  const pattern = /([^\s=]+)\s*=\s*["']([^"']*)["']/g;
+  const pattern = /([^\s=]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g;
   let match;
   while ((match = pattern.exec(tag)) !== null) {
-    result[match[1].toLowerCase()] = match[2];
+    result[match[1].toLowerCase()] = match[2] ?? match[3] ?? match[4] ?? "";
   }
   return result;
 }
@@ -63,7 +63,8 @@ for (const file of walk(root)) {
     errors.push(`${relative}: canonical URL is not on ${canonicalOrigin}: ${canonical}`);
   }
 
-  const jsonLdBlocks = [...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+  const jsonLdBlocks = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
+    .filter((block) => attributes("<script " + block[1] + ">").type?.toLowerCase() === "application/ld+json");
   if (jsonLdBlocks.length === 0) {
     errors.push(`${relative}: missing JSON-LD structured data`);
   } else {
