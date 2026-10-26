@@ -22,9 +22,9 @@ Report vulnerabilities to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com
 ## Supported Versions
 
 | Version | Supported |
-|---------|-----------|
-| latest  | Yes        |
-| < latest| No         |
+| --------- | ----------- |
+| latest | Yes |
+| < latest | No |
 
 ---
 
