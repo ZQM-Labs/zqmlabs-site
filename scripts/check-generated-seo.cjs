@@ -13,7 +13,7 @@ let pages = 0;
 
 function attributes(tag) {
   const result = {};
-  const pattern = /([^\\s=]+)\\s*=\\s*["']([^"']*)["']/g;
+  const pattern = /([^\s=]+)\s*=\s*["']([^"']*)["']/g;
   let match;
   while ((match = pattern.exec(tag)) !== null) {
     result[match[1].toLowerCase()] = match[2];
@@ -38,13 +38,13 @@ for (const file of walk(root)) {
   pages += 1;
   const relative = path.relative(root, file).split(path.sep).join("/");
   const html = fs.readFileSync(file, "utf8");
-  const titleMatch = html.match(/<title\\b[^>]*>([\\s\\S]*?)<\\/title>/i);
+  const titleMatch = html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i);
   if (!titleMatch || !titleMatch[1].replace(/<[^>]+>/g, "").trim()) {
     errors.push(`${relative}: missing or empty <title>`);
   }
 
   const meta = new Map();
-  for (const tag of html.match(/<meta\\b[^>]*>/gi) || []) {
+  for (const tag of html.match(/<meta\b[^>]*>/gi) || []) {
     const attrs = attributes(tag);
     const key = (attrs.name || attrs.property || "").toLowerCase();
     if (key) meta.set(key, attrs.content || "");
@@ -55,7 +55,7 @@ for (const file of walk(root)) {
   if (!meta.get("og:url")?.trim()) errors.push(`${relative}: missing og:url`);
   if (!meta.get("twitter:card")?.trim()) errors.push(`${relative}: missing twitter:card`);
 
-  const canonicalTag = (html.match(/<link\\b[^>]*rel=["']canonical["'][^>]*>/i) || [])[0];
+  const canonicalTag = (html.match(/<link\b[^>]*rel=["']canonical["'][^>]*>/i) || [])[0];
   const canonical = canonicalTag ? attributes(canonicalTag).href : "";
   if (!canonical) {
     errors.push(`${relative}: missing canonical URL`);
@@ -63,7 +63,7 @@ for (const file of walk(root)) {
     errors.push(`${relative}: canonical URL is not on ${canonicalOrigin}: ${canonical}`);
   }
 
-  const jsonLdBlocks = [...html.matchAll(/<script\\b[^>]*type=["']application\\/ld\\+json["'][^>]*>([\\s\\S]*?)<\\/script>/gi)];
+  const jsonLdBlocks = [...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
   if (jsonLdBlocks.length === 0) {
     errors.push(`${relative}: missing JSON-LD structured data`);
   } else {
