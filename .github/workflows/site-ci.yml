@@ -81,6 +81,8 @@ jobs:
           grep -q 'name="twitter:card"' "$LAYOUT"
       - name: Build Hugo site
         run: hugo --gc --minify
+      - name: Validate generated SEO metadata and structured data
+        run: node scripts/check-generated-seo.cjs public
       - name: Verify generated internal links and assets
         run: node scripts/check-built-links.mjs public
       - name: Verify required routes and internal-project exclusion
