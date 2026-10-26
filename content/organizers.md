@@ -11,7 +11,7 @@ the whole job — about **one hour, total**. The Lab provides limited, best-effo
 ## What arrives in your kit
 
 | Item | Format | What you do |
-|---|---|---|
+| --- | --- | --- |
 | 6 stop signs | Printable PDF, A4/Letter | Print, trim, mount |
 | Access codes | Email + printable card | Hand to teams (or post one code) |
 | Organizer guide | 1 page | Read once, keep handy |
@@ -34,7 +34,7 @@ That's it. The game runs itself from the first QR scan.
 ## Print specs
 
 | Spec | Value |
-|---|---|
+| --- | --- |
 | Sign size | 8.5 × 11 in (Letter) or A4 |
 | Recommended stock | 65–110 lb card stock |
 | Mounting | Stake, tape, or zip-tie to an existing post |
