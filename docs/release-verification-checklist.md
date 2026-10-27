@@ -32,14 +32,14 @@ Use this checklist when changing public content, game routes, player assets, or 
 
 Record the following in the PR or release evidence:
 
-|Evidence|Record|
-|---|---|
-|Production deployment|Workflow run URL and result|
-|Deployed source|Exact commit SHA and configured source pins|
-|Public route checks|Routes checked and HTTP outcomes|
-|Sitemap|Whether expected public routes are present|
-|Browser smoke test|Device/browser and observed result|
-|Rollback|Known-good deployment/source reference and recovery procedure|
+| Evidence | Record |
+| --- | --- |
+| Production deployment | Workflow run URL and result |
+| Deployed source | Exact commit SHA and configured source pins |
+| Public route checks | Routes checked and HTTP outcomes |
+| Sitemap | Whether expected public routes are present |
+| Browser smoke test | Device/browser and observed result |
+| Rollback | Known-good deployment/source reference and recovery procedure |
 
 - [ ] Open the actual production domain in a clean browser session.
 - [ ] Check changed routes, primary navigation, and any game/demo entry point affected by the change.
