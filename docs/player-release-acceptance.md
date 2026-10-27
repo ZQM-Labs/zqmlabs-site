@@ -4,7 +4,7 @@
 
 ## Current automated acceptance coverage
 
-The canonical player is maintained in [ZQM-Labs/lantern-player](https://github.com/ZQM-Labs/lantern-player). Its CI release suite currently runs in Chromium on a Linux GitHub Actions runner.
+The canonical player is maintained in [ZQM-Labs/quest-player](https://github.com/ZQM-Labs/quest-player). Its CI release suite currently runs in Chromium on a Linux GitHub Actions runner.
 
 | Area | Automated check | Passing threshold |
 | --- | --- | --- |
