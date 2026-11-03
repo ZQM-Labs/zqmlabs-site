@@ -89,6 +89,10 @@ jobs:
               exit 1
             fi
           done
+      - name: Verify public JSON answer-key boundary
+        run: |
+          node scripts/check-public-answer-json.cjs --self-test
+          node scripts/check-public-answer-json.cjs
       - name: Validate generated SEO metadata and structured data
         run: node scripts/check-generated-seo.cjs public
       - name: Verify generated internal links and assets
