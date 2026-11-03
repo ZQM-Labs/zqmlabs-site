@@ -83,7 +83,7 @@ jobs:
       - name: Reject paid packs in public source and output
         run: |
           set -euo pipefail
-          for dir in static/packs public/packs; do
+          for dir in static/packs public/packs static/games/pumpkin-roll static/games/snowflake-secret; do
             if [ -d "$dir" ] && find "$dir" -type f -print -quit | grep -q .; then
               echo "::error::Public site contains a pack artifact in $dir; use private fulfillment." >&2
               exit 1
