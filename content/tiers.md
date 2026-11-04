@@ -7,6 +7,8 @@ description: "Current hosting options for Wisp’s Lost Lanterns, ZQM Labs’ Ha
 
 These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
+![Team celebrating at the finish of an outdoor quest at golden hour](/img/tiers-evergreen.webp)
+
 ## 🏠 Family Night — $49 flat
 
 For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Your kit is usable on checkout; kit contents and the play window are as listed here.

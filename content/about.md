@@ -9,6 +9,8 @@ description: "Meet ZQM Labs, the creative home for story-driven, community-cente
 
 The first game began with a local activation in Volusia County, Florida. That is where this experience is being introduced—not a limit on the studio's creative scope or the communities its games can serve.
 
+![Dr. Z in his workshop laboratory with quest maps and a brass compass](/img/about-evergreen.webp)
+
 ## Meet your Game Master
 
 Every quest is hosted by **Dr. Z**, a cheerful mad scientist in the Frankenstein mold: dramatic, inventive, a little unhinged, and entirely kind. He assembles stories, puzzles, maps, and mischief in the Lab, then invites people to become part of the experiment.
