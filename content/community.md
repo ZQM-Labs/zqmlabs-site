@@ -5,6 +5,8 @@ description: "Ways to play, give feedback, playtest, and contribute to the ZQM L
 
 ZQM Labs aims to make games that bring people together—and to give players and organizers meaningful ways to help those games improve. Community participation should be useful, safe, and honest about what is available today.
 
+![Neighbors and teams playing a location quest together in a park](/img/community-evergreen.webp)
+
 ## Play together
 
 Start with the [Games directory](/games/) to find the current featured experience and any other titles that are ready to try. Each game should explain its format, requirements, and current status.

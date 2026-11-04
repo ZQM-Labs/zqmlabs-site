@@ -8,6 +8,8 @@ url: /games/
 
 ZQM Labs creates story-driven, community-centered games for people who want to play together. This directory is designed to grow as more titles become ready for public play.
 
+![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
+
 ## Available now
 
 ### Wisp's Lost Lanterns
