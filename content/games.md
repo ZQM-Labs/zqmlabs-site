@@ -12,16 +12,16 @@ ZQM Labs creates story-driven, community-centered games for people who want to p
 
 ### Wisp's Lost Lanterns
 
-Halloween scavenger hunt · Current featured game
+Halloween scavenger hunt · Past edition (Halloween 2026)
 
 Wisp — a small, wandering will-o'-the-wisp, and Dr. Z's escaped first creation — has lost her six glow lanterns, the lights that show her the way home. Without them she flickers like a dying candle. Teams become Lantern Keepers: follow the trail across six stops, solve the puzzle at each, and relight one lantern at a time. Every lantern relit makes Wisp brighter and braver — and when all six burn, the quest ends in the Lantern Parade, where Wisp lights your way home too.
 
 - [Play the browser demo](/games/hunt-for-wisps/)
 - [Meet the creatures in Z's Zoo, the official bestiary](https://zoo.zqmlabs.com)
-- [Halloween event details](/halloween/)
+- [Past-edition details](/halloween/)
 - [Hosting tiers](/tiers/)
 
-The current event activation is in Volusia County, Florida, October 30 – November 1, 2026. A public demo does not mean in-person event delivery is available in every region; coordinate local support and logistics with the Lab before announcing an event.
+The Halloween 2026 event activation was in Volusia County, Florida, October 30 – November 1, 2026. A public demo does not mean in-person event delivery is available in every region; coordinate local support and logistics with the Lab before announcing an event.
 
 ### The Great Pumpkin Roll
 
