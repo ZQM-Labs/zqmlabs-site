@@ -5,6 +5,8 @@ description: "Answers about ZQM Labs, the Wisp’s Lost Lanterns game, community
 
 <!-- markdownlint-disable MD013 MD033 -->
 
+![Dr. Z answering questions beside a question board](/img/faq-evergreen.webp)
+
 ## About the Lab
 
 <details>

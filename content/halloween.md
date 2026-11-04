@@ -9,6 +9,8 @@ Halloween is an important creative world for ZQM Labs: a place for mysteries, la
 
 **Past edition — Halloween 2026.** Wisp’s Lost Lanterns was ZQM Labs’ Halloween 2026 edition. The in-person activation has ended; the free browser demo stays live.
 
+![Archive shelf with rolled quest maps, a brass compass, and keepsakes from past editions](/img/past-editions-evergreen.webp)
+
 ## Past edition: Wisp’s Lost Lanterns (Halloween 2026)
 
 Wisp the will-o'-the-wisp has lost six glow lanterns, the lights that show her the way home. Teams become Lantern Keepers, following clues and solving puzzles across six stops — one lantern relit at each — until all six burn and the quest ends in the Lantern Parade.
