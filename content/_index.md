@@ -1,6 +1,6 @@
 ---
 title: "Community-Centered Games — ZQM Labs"
-description: "ZQM Labs creates story-driven games that bring people together. Try the Wisp's Lost Lanterns browser demo and explore hosting options."
+description: "ZQM Labs creates story-driven location quests that bring people together. Try the Wisp's Lost Lanterns browser demo and explore hosting options."
 ---
 
 ![Dr. Z, Game Master of Z's Quests & Mischief, holding a quest map and compass](/img/logo-primary-evergreen.webp)
@@ -9,25 +9,25 @@ description: "ZQM Labs creates story-driven games that bring people together. Tr
 
 **ZQM Labs creates story-driven, community-centered games.** Our games are made for friends, families, neighborhoods, schools, teams, and curious people to share an experience—wherever they are.
 
-Halloween is the setting for our featured experience, not the limit of the Lab. This site is the home for a growing collection of ZQM Labs games as additional titles become ready to play.
+Wisp’s Lost Lanterns was our first edition: a Halloween scavenger hunt, and the lantern is that edition’s prop — not the Lab’s year-round symbol. This site is the home for a growing collection of ZQM Labs location quests, with a new edition every season as titles become ready to play.
 
 ## Start with a game
 
 ### Wisp's Lost Lanterns
 
-Featured experience · Halloween scavenger hunt
+Past edition · Halloween scavenger hunt (2026)
 
 Wisp — a small, wandering will-o'-the-wisp, and Dr. Z's escaped first creation — has lost her six glow lanterns, the lights that show her the way home. Without them she flickers like a dying candle. Teams become Lantern Keepers: follow the trail across six stops, solve the puzzle at each, and relight one lantern at a time. Every lantern relit makes Wisp brighter and braver — and when all six burn, the quest ends in the Lantern Parade, where Wisp lights your way home too. Along the trail you'll meet the residents of Z's Zoo: the Welcome Pumpkin at the front door, Oakie the Whispering Oak — Wisp's best friend — the Tag Ghosts of the Giggling Graveyard, Mrs. Spider, and Professor Hoot. Keep an eye out at the parade ground for the Seventh Shadow, waving back. The same six stops play differently at each of the four Dial levels — Cozy, Spooky, After Dark, and Overdrive — so one team can play it gentle and another can play it feral.
 
 - [Play the free browser demo](/games/hunt-for-wisps/play/?demo=1)
-- [Halloween experience details](/halloween/)
+- [Past-edition details](/halloween/)
 - [Hosting options and current tiers](/tiers/)
 
-The current event activation is in Volusia County, Florida, October 30–November 1, 2026. The browser demo is distinct from a booked, supported event. Kits are usable on checkout. Before announcing an in-person event, coordinate date availability, delivery area, venue permissions, accessibility, and support arrangements with the Lab.
+The Halloween 2026 in-person activation in Volusia County, Florida, has ended. The free browser demo stays live and is distinct from a booked, supported event. Kits are usable on checkout. Before announcing an in-person event, coordinate date availability, delivery area, venue permissions, accessibility, and support arrangements with the Lab.
 
 ### More games from the Lab
 
-- [Hunt for Wisps](/games/hunt-for-wisps/) — the flagship 6-stop lantern hunt
+- [Hunt for Wisps](/games/hunt-for-wisps/) — the 6-stop lantern hunt (Halloween 2026 past edition)
 - [Lantern Player](/games/lantern-player/) — the standalone lantern-lighting engine
 - [Wisps Tracker](/games/wisps-tracker/) — the live event dashboard
 
@@ -90,7 +90,7 @@ Party rentals—tables, chairs, grills, cornhole, and yard games—are planned a
 
 ## Quick questions
 
-**Is ZQM Labs only a Halloween game?** No. Wisp's Lost Lanterns is the featured Halloween experience. ZQM Labs is the studio and home for a broader collection of community-centered games.
+**Is ZQM Labs only a Halloween game?** No. Wisp’s Lost Lanterns was the Halloween 2026 edition. ZQM Labs is the studio and home for a broader collection of community-centered location quests.
 
 **Do players need to install an app?** The Wisp's Lost Lanterns browser demo runs in a web browser. One phone per team is the intended basic play pattern; check the requirements for any hosted event.
 

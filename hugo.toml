@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "term"]
   tagline = "Community-centered games, shared stories, and a little mischief."
   mantra = "Play more. Plan less."
   email = "zqmcomputing@gmail.com"
-  description = "ZQM Labs creates story-driven, community-centered games. Explore the growing game collection, beginning with Wisp's Lost Lanterns."
+  description = "ZQM Labs creates story-driven, community-centered location quests. Explore the growing game collection, beginning with Wisp's Lost Lanterns."
 
 # Main navigation — rendered by layouts/_default/baseof.html on every page.
 [[menus.main]]
@@ -22,7 +22,7 @@ disableKinds = ["taxonomy", "term"]
   url = "/games/"
   weight = 20
 [[menus.main]]
-  name = "Halloween"
+  name = "Past Editions"
   url = "/halloween/"
   weight = 25
 [[menus.main]]
