@@ -3,7 +3,7 @@ title: "Community-Centered Games — ZQM Labs"
 description: "ZQM Labs creates story-driven location quests that bring people together. Try the Wisp's Lost Lanterns browser demo and explore hosting options."
 ---
 
-<figure class="home-logo"><img src="/img/logo-primary-evergreen.webp" alt="Dr. Z, Game Master of Z's Quests &amp; Mischief, holding a quest map and compass"></figure>
+{{< figure src="/img/logo-primary-evergreen.webp" alt="Dr. Z, Game Master of Z's Quests & Mischief, holding a quest map and compass" class="home-logo" >}}
 
 **Games are better when we play together.**
 
