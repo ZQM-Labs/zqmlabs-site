@@ -5,9 +5,11 @@ description: "Meet ZQM Labs, the creative home for story-driven, community-cente
 
 ## A game laboratory built around shared play
 
-**ZQM Labs** is the studio behind **Z's Quests & Mischief**: story-driven games designed to bring people together. Our current featured experience is *Wisp's Lost Lanterns*, a Halloween scavenger hunt. The Lab's wider purpose is to create room for more games, stories, and ways for communities to play together.
+**ZQM Labs** is the studio behind **Z's Quests & Mischief**: story-driven games designed to bring people together. Our first experience was *Wisp’s Lost Lanterns*, the Halloween 2026 scavenger hunt. The Lab's wider purpose is to create room for more games, stories, and ways for communities to play together.
 
-The current game began with a local activation in Volusia County, Florida. That is where this experience is being introduced—not a limit on the studio's creative scope or the communities its games can serve.
+The first game began with a local activation in Volusia County, Florida. That is where this experience is being introduced—not a limit on the studio's creative scope or the communities its games can serve.
+
+![Dr. Z in his workshop laboratory with quest maps and a brass compass](/img/about-evergreen.webp)
 
 ## Meet your Game Master
 
@@ -24,11 +26,11 @@ The doctorate is a costume. The mischief is real.
 
 Not every game uses the same mechanics, technology, scare levels, or delivery model. Each title's page should explain what applies to that experience.
 
-## The current featured game
+## The first game
 
-**Wisp's Lost Lanterns** is a Halloween scavenger hunt featuring Wisp, a friendly will-o'-the-wisp who has lost six glow lanterns. Teams follow clues, solve puzzles, and work together to recover them.
+**Wisp’s Lost Lanterns** was the Halloween 2026 scavenger hunt featuring Wisp, a friendly will-o'-the-wisp who has lost six glow lanterns. Teams follow clues, solve puzzles, and work together to recover them.
 
-[Explore the current game](/games/hunt-for-wisps/) · [Halloween experience](/halloween/) · [Games directory](/games/)
+[Explore the game](/games/hunt-for-wisps/) · [Past-edition details](/halloween/) · [Games directory](/games/)
 
 ## What the Lab believes
 

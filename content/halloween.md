@@ -5,9 +5,13 @@ description: "Explore the Halloween side of ZQM Labs, currently led by Wisp's Lo
 
 <!-- markdownlint-disable MD013 -->
 
-Halloween is an important creative world for ZQM Labs: a place for mysteries, lanterns, playful scares, puzzles, and shared adventures. This page collects Halloween experiences. It is one part of the Lab's wider collection of community-centered games.
+Halloween is an important creative world for ZQM Labs: a place for mysteries, lanterns, playful scares, puzzles, and shared adventures. This page collects Halloween experiences. It is one part of the Lab’s wider collection of community-centered games.
 
-## Featured experience: Wisp's Lost Lanterns
+**Past edition — Halloween 2026.** Wisp’s Lost Lanterns was ZQM Labs’ Halloween 2026 edition. The in-person activation has ended; the free browser demo stays live.
+
+![Archive shelf with rolled quest maps, a brass compass, and keepsakes from past editions](/img/past-editions-evergreen.webp)
+
+## Past edition: Wisp’s Lost Lanterns (Halloween 2026)
 
 Wisp the will-o'-the-wisp has lost six glow lanterns, the lights that show her the way home. Teams become Lantern Keepers, following clues and solving puzzles across six stops — one lantern relit at each — until all six burn and the quest ends in the Lantern Parade.
 
@@ -20,9 +24,9 @@ Along the trail you'll meet the residents of Z's Zoo: the Welcome Pumpkin at the
 
 [Play the browser demo](/games/hunt-for-wisps/) · [Hosting tiers](/tiers/) · [Frequently asked questions](/faq/)
 
-## Current local activation
+## Past local activation
 
-The current in-person activation is planned for **Volusia County, Florida, October 30–November 1, 2026**. Current hosting packages and support are subject to actual availability. Contact the Lab before assuming an in-person event can be delivered in another region.
+The Halloween 2026 in-person activation took place in **Volusia County, Florida, October 30–November 1, 2026**. Hosting packages and support remain subject to actual availability. Contact the Lab before assuming an in-person event can be delivered in another region.
 
 The local activation is a starting point for this game, not a boundary on who may explore the digital experience or what future ZQM Labs games may be.
 

@@ -5,6 +5,8 @@ description: "Ways to play, give feedback, playtest, and contribute to the ZQM L
 
 ZQM Labs aims to make games that bring people together—and to give players and organizers meaningful ways to help those games improve. Community participation should be useful, safe, and honest about what is available today.
 
+![Neighbors and teams playing a location quest together in a park](/img/community-evergreen.webp)
+
 ## Play together
 
 Start with the [Games directory](/games/) to find the current featured experience and any other titles that are ready to try. Each game should explain its format, requirements, and current status.
@@ -32,11 +34,11 @@ Before contributing, follow the instructions in the relevant repository. Contrib
 
 ZQM Labs intends to make games that communities can discover and enjoy across regions. That is a product direction, not a claim that every language, local event service, community platform, or support arrangement is available worldwide today.
 
-The current in-person Wisp's Lost Lanterns activation is planned for Volusia County, Florida, October 30–November 1, 2026. Coordinate availability with the Lab before announcing a hosted event elsewhere.
+The Halloween 2026 in-person Wisp’s Lost Lanterns activation took place in Volusia County, Florida, October 30–November 1, 2026. Coordinate availability with the Lab before announcing a hosted event elsewhere.
 
 ## Find your next step
 
 - [Explore games](/games/)
 - [Learn about ZQM Labs](/about/)
-- [Current Halloween experience](/halloween/)
+- [Past Halloween edition](/halloween/)
 - [Hosting options for Wisp's Lost Lanterns](/tiers/)

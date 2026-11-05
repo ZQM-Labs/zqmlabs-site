@@ -1,16 +1,18 @@
 ---
 title: "FAQ — ZQM Labs Games"
-description: "Answers about ZQM Labs, the current Wisp's Lost Lanterns game, community participation, and event availability."
+description: "Answers about ZQM Labs, the Wisp’s Lost Lanterns game, community participation, and event availability."
 ---
 
 <!-- markdownlint-disable MD013 MD033 -->
+
+![Dr. Z answering questions beside a question board](/img/faq-evergreen.webp)
 
 ## About the Lab
 
 <details>
 <summary>Is ZQM Labs only a Halloween game?</summary>
 
-No. ZQM Labs is the studio and home for a growing collection of community-centered games. **Wisp's Lost Lanterns** is the current featured Halloween game. Other titles may use different themes, mechanics, audiences, and ways to play.
+No. ZQM Labs is the studio and home for a growing collection of community-centered games. **Wisp’s Lost Lanterns** was the Halloween 2026 edition. Other titles may use different themes, mechanics, audiences, and ways to play.
 
 </details>
 
@@ -40,7 +42,7 @@ Do not assume features such as global leaderboards, player discovery, multilingu
 <details>
 <summary>What is Wisp's Lost Lanterns?</summary>
 
-It is the current ZQM Labs Halloween scavenger hunt. Wisp the will-o'-the-wisp has lost six glow lanterns, and teams follow clues and solve puzzles to recover them. [Try the browser demo](/games/hunt-for-wisps/).
+It was ZQM Labs’ Halloween 2026 scavenger hunt. Wisp the will-o'-the-wisp has lost six glow lanterns, and teams follow clues and solve puzzles to recover them. [Try the browser demo](/games/hunt-for-wisps/).
 
 </details>
 
@@ -66,9 +68,9 @@ The current Wisp's Lost Lanterns materials describe four levels: Cozy Glow, Spoo
 </details>
 
 <details>
-<summary>When is the current local event?</summary>
+<summary>When was the local event?</summary>
 
-The current in-person activation is planned for Volusia County, Florida, October 30–November 1, 2026. Coordinate availability and support for a particular event with the Lab before announcing it.
+The Halloween 2026 in-person activation took place in Volusia County, Florida, October 30–November 1, 2026. Coordinate availability and support for a particular event with the Lab before announcing it.
 
 </details>
 
@@ -107,6 +109,6 @@ Explore the public [Quest Packs](https://github.com/ZQM-Labs/quest-packs), [Ques
 <details>
 <summary>Where can I ask a question?</summary>
 
-For current Wisp's Lost Lanterns hosting inquiries, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your group or organization, location, and dates. For other games, use the contact or feedback method listed on that game's page.
+For Wisp’s Lost Lanterns hosting inquiries, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your group or organization, location, and dates. For other games, use the contact or feedback method listed on that game's page.
 
 </details>
