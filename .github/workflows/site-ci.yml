@@ -80,6 +80,19 @@ jobs:
           grep -q 'name="twitter:card"' "$LAYOUT"
       - name: Build Hugo site
         run: hugo --gc --minify
+      - name: Reject paid packs in public source and output
+        run: |
+          set -euo pipefail
+          for dir in static/packs public/packs static/games/pumpkin-roll static/games/snowflake-secret; do
+            if [ -d "$dir" ] && find "$dir" -type f -print -quit | grep -q .; then
+              echo "::error::Public site contains a pack artifact in $dir; use private fulfillment." >&2
+              exit 1
+            fi
+          done
+      - name: Verify public JSON answer-key boundary
+        run: |
+          node scripts/check-public-answer-json.cjs --self-test
+          node scripts/check-public-answer-json.cjs
       - name: Validate generated SEO metadata and structured data
         run: node scripts/check-generated-seo.cjs public
       - name: Verify generated internal links and assets
