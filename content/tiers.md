@@ -1,6 +1,25 @@
 ---
-title: "Hosting Tiers — Wisp's Lost Lanterns"
+title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
+seo_title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
+h1: "Host a scavenger hunt: kits for every group"
 description: "Current hosting options for Wisp’s Lost Lanterns, ZQM Labs’ Halloween 2026 scavenger hunt."
+products:
+  - name: "Family Night"
+    price: 49
+    url: "https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03"
+    description: "One household playing together. Use code FAMILY25 at checkout for $24 off — play for $25."
+  - name: "Community"
+    price: 199
+    url: "https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00"
+    description: "Neighborhood, HOA, PTA, church, or other community group. Unlimited families."
+  - name: "Office Team"
+    price: 349
+    url: "https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01"
+    description: "Team-building format for coworkers."
+  - name: "Office Event"
+    price: 499
+    url: "https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02"
+    description: "Larger company or organization-wide event."
 ---
 
 <!-- markdownlint-disable MD013 -->

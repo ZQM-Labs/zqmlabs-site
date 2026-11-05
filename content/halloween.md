@@ -1,5 +1,7 @@
 ---
-title: "Halloween Games & Experiences"
+title: "Halloween Scavenger Hunt Game — ZQM Labs"
+seo_title: "Halloween Scavenger Hunt Game — ZQM Labs"
+h1: "Halloween scavenger hunt games"
 description: "Explore the Halloween side of ZQM Labs, currently led by Wisp's Lost Lanterns, a community-centered scavenger hunt."
 ---
 

@@ -1,13 +1,40 @@
 ---
-title: "Community-Centered Games — ZQM Labs"
-description: "ZQM Labs creates story-driven location quests that bring people together. Try the Wisp's Lost Lanterns browser demo and explore hosting options."
+title: "Location Quests & Scavenger Hunt Games — ZQM Labs"
+seo_title: "Location Quests & Scavenger Hunt Games — ZQM Labs"
+h1: "Story-driven location quests & scavenger hunts for groups"
+description: "Play story-driven location quests and scavenger hunt games for families, neighborhoods, schools, and teams. Free browser demo, flat-fee hosting kits from $49, no app to install."
+local_business:
+  name: "ZQM Labs"
+  description: "Story-driven location quests and scavenger hunt games for families, neighborhoods, schools, and teams — based in New Smyrna Beach, Volusia County, Florida."
+  area_served: "Volusia County, Florida"
+faq:
+  - q: "Is ZQM Labs only a Halloween game?"
+    a: >-
+      No. Wisp's Lost Lanterns was the Halloween 2026 edition. ZQM Labs is
+      the studio and home for a broader collection of community-centered
+      location quests.
+  - q: "Do players need to install an app?"
+    a: >-
+      The Wisp's Lost Lanterns browser demo runs in a web browser. One phone
+      per team is the intended basic play pattern; check the requirements for
+      any hosted event.
+  - q: "Can we run a quest anywhere?"
+    a: >-
+      Content can be adapted for different venues, but location-based play,
+      local permissions, accessibility, and current support arrangements must
+      be considered for each event.
+  - q: "Are global community features live?"
+    a: >-
+      Global leaderboards, community discovery, translated content for every
+      language, and worldwide event fulfillment are not represented as
+      available unless those capabilities are announced and verified.
 ---
 
 {{< figure src="/img/logo-primary-evergreen.webp" alt="Dr. Z, Game Master of Z's Quests & Mischief, holding a quest map and compass" class="home-logo" >}}
 
 **Games are better when we play together.**
 
-**ZQM Labs creates story-driven, community-centered games.** Our games are made for friends, families, neighborhoods, schools, teams, and curious people to share an experience—wherever they are.
+**ZQM Labs creates story-driven location quests and scavenger hunt games.** Our games are made for friends, families, neighborhoods, schools, teams, and curious people to share an experience—wherever they are. ZQM Labs is based in Volusia County, Florida — our home base, and the first place our quests came to life.
 
 Wisp’s Lost Lanterns was our first edition: a Halloween scavenger hunt, and the lantern is that edition’s prop — not the Lab’s year-round symbol. This site is the home for a growing collection of ZQM Labs location quests, with a new edition every season as titles become ready to play.
 
@@ -21,7 +48,7 @@ Wisp — a small, wandering will-o'-the-wisp, and Dr. Z's escaped first creation
 
 - [Play the free browser demo](/games/hunt-for-wisps/play/?demo=1)
 - [Past-edition details](/halloween/)
-- [Hosting options and current tiers](/tiers/)
+- [scavenger hunt hosting tiers and pricing](/tiers/)
 
 The Halloween 2026 in-person activation in Volusia County, Florida, has ended. The free browser demo stays live and is distinct from a booked, supported event. Kits are usable on checkout. Before announcing an in-person event, coordinate date availability, delivery area, venue permissions, accessibility, and support arrangements with the Lab.
 
@@ -79,6 +106,7 @@ Quest packs, the organizer toolkit, the authoring format, and playtest materials
 ## Explore ZQM Labs
 
 - [Play the games](/games/) — see demos, playtests, and development status
+- [New Smyrna Beach](/locations/new-smyrna-beach/) — our home city, where local quests are coordinated
 - [Pricing](/pricing/) — current published tiers and booking details
 - [For organizers](/organizers/) — setup, print guidance, and troubleshooting
 - [Press kit](/press/) — company information and brand assets
