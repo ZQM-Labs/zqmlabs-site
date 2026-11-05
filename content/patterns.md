@@ -3,6 +3,8 @@ title: "Technical Resources"
 description: "Explore ZQM Labs game-building resources and ZQM Computing geospatial engineering cookbooks, APIs, and data tools, maintained as distinct projects."
 ---
 
+![An overhead quest map with a winding route, a key, a lantern, footprints, a bridge, and a locked gate](/img/patterns-evergreen.webp)
+
 ## Technical resources
 
 ZQM Labs publishes selected game-building resources. Technical and geospatial
