@@ -1,5 +1,7 @@
 ---
-title: "Games"
+title: "Location Quest Games: Demos & Editions — ZQM Labs"
+seo_title: "Location Quest Games: Demos & Editions — ZQM Labs"
+h1: "Location quest games you can play now"
 description: "Explore ZQM Labs story-driven, community-centered games, including the Wisp’s Lost Lanterns browser demo and projects still in development."
 url: /games/
 ---
@@ -21,7 +23,7 @@ Wisp — a small, wandering will-o'-the-wisp, and Dr. Z's escaped first creation
 - [Play the browser demo](/games/hunt-for-wisps/)
 - [Meet the creatures in Z's Zoo, the official bestiary](https://zoo.zqmlabs.com)
 - [Past-edition details](/halloween/)
-- [Hosting tiers](/tiers/)
+- [scavenger hunt hosting tiers and pricing](/tiers/)
 
 The Halloween 2026 event activation was in Volusia County, Florida, October 30 – November 1, 2026. A public demo does not mean in-person event delivery is available in every region; coordinate local support and logistics with the Lab before announcing an event.
 
