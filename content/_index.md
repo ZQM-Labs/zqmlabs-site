@@ -13,6 +13,8 @@ Wisp’s Lost Lanterns was our first edition: a Halloween scavenger hunt, and th
 
 ## Start with a game
 
+![Three seasonal quest worlds — a lantern-lit trail, a pumpkin town path, and a winter square — joined by one quest route](/img/home-collection-evergreen.webp)
+
 ### Wisp's Lost Lanterns
 
 Past edition · Halloween scavenger hunt (2026)
