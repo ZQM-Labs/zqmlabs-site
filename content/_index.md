@@ -12,8 +12,8 @@ description: "ZQM Labs creates story-driven location quests that bring people to
 Wisp’s Lost Lanterns was our first edition: a Halloween scavenger hunt, and the lantern is that edition’s prop — not the Lab’s year-round symbol. This site is the home for a growing collection of ZQM Labs location quests, with a new edition every season as titles become ready to play.
 
 ## Start with a game
-![Three seasonal quest worlds — a lantern-lit trail, a pumpkin town path, and a winter square — joined by one quest route](/img/home-collection-evergreen.webp)
 
+![Three seasonal quest worlds — a lantern-lit trail, a pumpkin town path, and a winter square — joined by one quest route](/img/home-collection-evergreen.webp)
 
 ### Wisp's Lost Lanterns
 
