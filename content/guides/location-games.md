@@ -61,7 +61,7 @@ The best-known format is geocaching: players use an app to find hidden container
 
 ## How they differ
 
-|  | Location quest | City game | Outdoor escape game | GPS treasure hunt |
+| | Location quest | City game | Outdoor escape game | GPS treasure hunt |
 | --- | --- | --- | --- | --- |
 | Built for | Groups and teams | Small teams, visitors | One small team | Solo players |
 | Story | Yes — written for the event | Light, route-based | Yes — one story | No — the hunt is the game |
