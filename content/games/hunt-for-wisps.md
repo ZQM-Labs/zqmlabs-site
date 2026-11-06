@@ -1,6 +1,8 @@
 ---
-title: "Hunt for Wisps — browser demo"
-description: "Try the Wisp's Lost Lanterns browser demo. A six-stop Halloween scavenger-hunt prototype with four selectable scare levels."
+title: "Play the Free Scavenger Hunt Demo — Hunt for Wisps · ZQM Labs"
+seo_title: "Play the Free Scavenger Hunt Demo — Hunt for Wisps · ZQM Labs"
+h1: "Play the free scavenger hunt demo"
+description: "Play the free Wisp's Lost Lanterns browser demo — the full six-stop scavenger hunt with four scare levels. No app, no kit, no code needed."
 layout: "game"
 status: "playable-demo"
 weight: 1
@@ -18,6 +20,8 @@ Meet the creatures first in [Z's Zoo](https://zoo.zqmlabs.com), the official bes
 
 [**Launch Wisp's Lost Lanterns**](/games/hunt-for-wisps/play/?demo=1)
 
+The demo is the complete six-stop trail: follow Wisp's lost lanterns across six stops, solve the puzzle at each one, and finish in the Lantern Parade. The same six stops play differently at each of the four scare levels — Cozy, Spooky, After Dark, and Overdrive — so one team can play it gentle and another can play it feral.
+
 Meet the creatures first in [Z's Zoo](https://zoo.zqmlabs.com), the official bestiary of Wisp's Lost Lanterns.
 
 The demo runs in your browser and does not require a paid kit or access code. Choose a team name, start the hunt, and select a scare level. Progress is stored on the current device.
@@ -32,6 +36,12 @@ This is a software demo, not proof that a paid kit is orderable or that a physic
 - A built-in demo mode that does not require the production game backend.
 
 **Planning an event?** Review the [hosting options](/tiers/) and coordinate with ZQM Labs on current availability, kit contents, venue requirements, pricing, and fulfillment before announcing your event.
+
+## What the paid kit adds
+
+The demo shows you the game. A paid kit gives you the event: printable QR signs for all six stops, team access codes, a one-page organizer guide, printable finisher badges, and remote support through your event window. The kit is a one-time flat fee — Family Night $49, Community $199, Office Team $349, Office Event $499 — and it is usable on checkout. A kit is for the event window agreed with the Lab; a route, venue, and date are coordinated with the Lab, not included in the download.
+
+Planning a dated event? [Contact the Lab](/contact/) with your group, your date, and the area you have in mind, and the Lab will tell you what is possible before you announce anything.
 
 ## Sample quest resources
 
