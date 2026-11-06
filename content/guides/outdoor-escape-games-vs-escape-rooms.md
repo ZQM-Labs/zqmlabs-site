@@ -45,7 +45,7 @@ There is a third shape worth knowing about, because it fixes the group-size prob
 
 ## The comparison
 
-| | Indoor escape room | Outdoor escape game | Location quest |
+| Feature | Indoor escape room | Outdoor escape game | Location quest |
 | --- | --- | --- | --- |
 | Group size | 2–8 per room | One small team | Teams of 4–8, many teams at once |
 | Venue | Operator's rooms | Operator's park or area | Your venue, coordinated |

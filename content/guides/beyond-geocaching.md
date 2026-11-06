@@ -39,7 +39,7 @@ A location quest is a story-driven scavenger hunt built for a group: a team foll
 
 ## How they differ
 
-| | Geocaching | Location quest |
+| Feature | Geocaching | Location quest |
 | --- | --- | --- |
 | Built for | Solo players | Groups and teams |
 | Goal | Find hidden containers | Finish a story together |
