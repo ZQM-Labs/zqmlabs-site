@@ -107,6 +107,10 @@ Quest packs, the organizer toolkit, the authoring format, and playtest materials
 
 - [Play the games](/games/) — see demos, playtests, and development status
 - [New Smyrna Beach](/locations/new-smyrna-beach/) — our home city, where local quests are coordinated
+- [Daytona Beach](/locations/daytona-beach/) — scavenger hunts on City Island and Beach Street
+- [Port Orange](/locations/port-orange/) — family and community games
+- [Ormond Beach](/locations/ormond-beach/) — scavenger hunts along the Granada corridor
+- [DeLand](/locations/deland/) — team and community games downtown
 - [Pricing](/pricing/) — current published tiers and booking details
 - [For organizers](/organizers/) — setup, print guidance, and troubleshooting
 - [Press kit](/press/) — company information and brand assets
