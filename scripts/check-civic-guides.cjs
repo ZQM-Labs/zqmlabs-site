@@ -26,7 +26,8 @@ for (const name of names) {
   assert.match(markdown, /not|approval|feasibility/i, filename + ": missing clear limitation language");
   assert.ok(fs.existsSync(html), html + ": expected Hugo route missing");
   const built = fs.readFileSync(html, "utf8");
-  assert.match(built, /<meta[^>]+name="description"/i, html + ": meta description missing");
+  const metaTags = built.match(/<meta\\b[^>]*>/gi) || [];
+  assert.ok(metaTags.some(tag => /\\bname\\s*=\\s*(?:"description"|'description'|description)(?=\\s|>)/i.test(tag)), html + ": meta description missing");
 }
 
 const games = fs.readFileSync(path.join(root, "content", "games.md"), "utf8");
