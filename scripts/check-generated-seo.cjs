@@ -71,9 +71,9 @@ for (const file of walk(root)) {
       errors.push(`${relative}: experimental page is missing required descriptive metadata`);
     }
     if (meta.has("og:url") ||
-        (html.match(/<link\\b[^>]*>/gi) || []).some(tag =>
-          attributes(tag).rel?.toLowerCase().split(/\\s+/).includes("canonical")) ||
-        /<script\\b[^>]*type=["']application\\/ld\\+json["']/i.test(html)) {
+        (html.match(/<link\b[^>]*>/gi) || []).some(tag =>
+          attributes(tag).rel?.toLowerCase().split(/\s+/).includes("canonical")) ||
+        /<script\b[^>]*type=["']application\/ld\+json["']/i.test(html)) {
       errors.push(`${relative}: unlaunched prototype must not declare a production canonical, og:url, or JSON-LD`);
     }
     continue;
