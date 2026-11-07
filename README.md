@@ -20,6 +20,10 @@ prove that a game is orderable or approved for an in-person event.
 
 **Deployment:** This repo is the canonical site content source. The production deploy (ZQM-Computing/zqm-labs, `.github/workflows/pages-deploy.yml`) pins this repository by commit in `SITE_SOURCE_SHA` and builds the production site from that pin; the same workflow syncs the pinned quest-player source into the bundle (see `scripts/sync-player.sh`). Changes here go live only when the pin is bumped in the monorepo. The workflow in this repo (`site-ci.yml`) is validation only, not deployment.
 
+## Civic and group quest growth (source-only planning)
+
+The [civic and group quest conversion plan](docs/civic-quest-conversion-release.md) documents SEO guides, safe game-format distinctions, scoped organizer inquiries, and exact production release gates. New guide pages are not assumed live on zqmlabs.com: the pinned composite deploy currently copies only selected content. No new city route, white-label license, live multiplayer or payment offering is represented as available.
+
 ## Audience and content boundaries
 
 - **Visitors and customers:** explain what a game is, who it is for, what is currently available, how checkout works, and what happens after purchase.
