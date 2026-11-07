@@ -8,6 +8,7 @@ const assert = require("node:assert/strict");
 
 const root = path.resolve(__dirname, "..");
 const names = [
+  "host-your-first-scavenger-hunt",
   "city-history-scavenger-hunt",
   "outdoor-games-with-friends-no-app",
   "ai-photo-geolocation-vs-real-world-quests",
@@ -35,4 +36,4 @@ assert.doesNotMatch(games, /The Great Pumpkin Roll\s*\n\s*\nAutumn festival scav
 assert.doesNotMatch(games, /The Snowflake Secret\s*\n\s*\nWinter scavenger hunt · Playable/);
 assert.match(games, /The Great Pumpkin Roll[\s\S]*?In development/);
 assert.match(games, /The Snowflake Secret[\s\S]*?In development/);
-console.log("Civic/group site source: three useful guide routes and truthful game statuses verified.");
+console.log("Civic/group site source: four useful guide routes and truthful game statuses verified.");
