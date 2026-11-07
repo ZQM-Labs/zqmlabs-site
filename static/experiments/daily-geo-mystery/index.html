@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Daily Geo Mystery | ZQM Labs (Prototype)</title>
+  <meta name="description" content="Experimental no-login daily geography puzzle from ZQM Labs.">
+  <meta property="og:title" content="Daily Geo Mystery | ZQM Labs (Prototype)">
+  <meta property="og:description" content="A text-clue geography challenge prototype. Not yet launched.">
+  <meta property="og:url" content="https://zqmlabs.com/experiments/daily-geo-mystery/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://zqmlabs.com/experiments/daily-geo-mystery/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Daily Geo Mystery — prototype","description":"An experimental text-only geography quiz, not a launched game.","url":"https://zqmlabs.com/experiments/daily-geo-mystery/"}</script>
+  <style>
+    :root { color-scheme: dark; font: 100%/1.5 system-ui, sans-serif; background: #091424; color: #f5f8ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1.25rem; }
+    main { width: min(100%, 42rem); padding: clamp(1.25rem, 4vw, 2.5rem); border: 1px solid #425a72; border-radius: 1.2rem; background: #12253c; }
+    .eyebrow { color: #b9d8ee; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+    h1 { margin: .25rem 0; line-height: 1.15; }
+    .note { color: #d2dfeb; }
+    #clue { font-size: 1.2rem; font-weight: 550; margin-block: 1.5rem; }
+    #choices { display: grid; gap: .75rem; }
+    button { cursor: pointer; padding: .85rem 1rem; border: 2px solid #8eb4d3; border-radius: .55rem; background: #1d3b56; color: #fff; font: inherit; text-align: left; }
+    button:hover:not(:disabled), button:focus-visible { background: #286186; border-color: #fff; }
+    button:focus-visible { outline: 3px solid #ffce65; outline-offset: 3px; }
+    button:disabled { cursor: default; opacity: .75; }
+    #result { min-height: 1.5em; font-weight: 700; }
+    #share { width: 100%; resize: vertical; font: inherit; color: #142137; background: #fff; padding: .75rem; border-radius: .4rem; }
+    #copy, #download { width: 100%; margin-top: .7rem; text-align: center; }
+    footer { margin-top: 1.5rem; font-size: .875rem; color: #ccd9e7; }
+    footer a { color: #cce8ff; }
+    @media (prefers-reduced-motion: no-preference) { button { transition: background-color .15s ease; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">ZQM Labs / Experimental prototype</p>
+    <h1>Daily Geo Mystery</h1>
+    <p class="note">One clue. Three choices. Same challenge for everyone each UTC day.</p>
+    <p class="note">Challenge date: <time id="date">Loading…</time></p>
+    <section aria-labelledby="clue-heading">
+      <h2 id="clue-heading">Where in the world?</h2>
+      <p id="clue">Loading challenge…</p>
+      <div id="choices" role="group" aria-label="Choose a location"></div>
+    </section>
+    <p id="result" role="status" aria-live="polite"></p>
+    <textarea id="share" rows="3" readonly aria-label="Spoiler-free shareable score" hidden></textarea>
+    <button id="copy" type="button" hidden>Copy spoiler-free result</button>
+    <button id="download" type="button" hidden>Save shareable score image (SVG)</button>
+    <p id="copy-status" role="status" aria-live="polite"></p>
+    <footer>
+      <p>Proof of concept using written clues, not satellite imagery. No login, geolocation request, backend, or analytics. A single result is remembered on this browser for each UTC day when local storage is enabled; clearing storage or using another device allows replay. Streaks and leaderboards are not implemented.</p>
+      <p>These twelve sample clues repeat; this is not a production daily game. <a href="https://github.com/ZQM-Labs/zqmlabs-site">View source and status</a>.</p>
+    </footer>
+  </main>
+  <script type="module" src="./daily.mjs"></script>
+</body>
+</html>
