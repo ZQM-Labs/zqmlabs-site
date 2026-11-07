@@ -1,6 +1,14 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { CHALLENGES, utcDayLabel, selectChallenge, formatShareText, readAttempt, writeAttempt, scorecardSvg } from "../static/experiments/daily-geo-mystery/daily.mjs";
+
+test("unreleased experiment cannot declare a production canonical or structured URL", () => {
+  const html = readFileSync(new URL("../static/experiments/daily-geo-mystery/index.html", import.meta.url), "utf8");
+  assert.match(html, /<meta name="robots" content="noindex, nofollow">/);
+  assert.doesNotMatch(html, /<link[^>]+rel="canonical"|<meta[^>]+property="og:url"|<script[^>]+type="application\/ld\+json"/i);
+  assert.doesNotMatch(html, /https:\/\/zqmlabs\.com\/experiments\/daily-geo-mystery\//);
+});
 
 test("sample contains twelve valid multiple-choice challenges", () => {
   assert.equal(CHALLENGES.length, 12);
