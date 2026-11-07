@@ -11,6 +11,12 @@ ZQM Labs aims to make games that bring people together—and to give players and
 
 Start with the [Games directory](/games/) to find the current featured experience and any other titles that are ready to try. Each game should explain its format, requirements, and current status.
 
+## Civic, visitor and group event ideas
+
+Planning a downtown history walk, museum quest, neighborhood story day, supervised school activity, or staff team-building experience? ZQM Labs can **discuss feasibility** using its existing six-stop story and organizer resources. A customized route, white-label arrangement, city partnership, instant checkout, or event date is **not automatically available**.
+
+To start a scoping conversation, [email the Lab](mailto:zqmcomputing@gmail.com) with your venue/city, audience, approximate team count, preferred dates, accessibility needs and any required approvals. Do not send private participant locations or school rosters. A host should confirm permissions, safety and event delivery before making public promises.
+
 ## Help improve a game
 
 The public repositories contain materials for the current quest system:
