@@ -24,6 +24,10 @@ prove that a game is orderable or approved for an in-person event.
 
 The [civic and group quest conversion plan](docs/civic-quest-conversion-release.md) documents SEO guides, safe game-format distinctions, scoped organizer inquiries, and exact production release gates. New guide pages are not assumed live on zqmlabs.com: the pinned composite deploy currently copies only selected content. No new city route, white-label license, live multiplayer or payment offering is represented as available.
 
+## Experimental content (not launched)
+
+The [Daily Geo Mystery prototype](docs/daily-geo-mystery-experiment.md) is an isolated, no-backend browser experiment. It is not listed as playable or sold, and is not part of the Wisp player. Test and release gates are documented with the source.
+
 ## Audience and content boundaries
 
 - **Visitors and customers:** explain what a game is, who it is for, what is currently available, how checkout works, and what happens after purchase.

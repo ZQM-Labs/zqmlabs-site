@@ -57,6 +57,27 @@ for (const file of walk(root)) {
     const key = (attrs.name || attrs.property || "").toLowerCase();
     if (key) meta.set(key, attrs.content || "");
   }
+  // This exact, unlaunched experiment is deliberately not an indexed product.
+  // Keep all normal marketing/Hugo pages under the full production SEO gate.
+  if (relative === "experiments/daily-geo-mystery/index.html") {
+    const robots = (meta.get("robots") || "").toLowerCase().split(",").map(s => s.trim());
+    if (!robots.includes("noindex") || !robots.includes("nofollow")) {
+      errors.push(`${relative}: experimental page must remain noindex, nofollow`);
+    }
+    if (!meta.get("description")?.trim() ||
+        !meta.get("og:title")?.trim() ||
+        !meta.get("og:description")?.trim() ||
+        !meta.get("twitter:card")?.trim()) {
+      errors.push(`${relative}: experimental page is missing required descriptive metadata`);
+    }
+    if (meta.has("og:url") ||
+        (html.match(/<link\b[^>]*>/gi) || []).some(tag =>
+          attributes(tag).rel?.toLowerCase().split(/\s+/).includes("canonical")) ||
+        /<script\b[^>]*type=["']application\/ld\+json["']/i.test(html)) {
+      errors.push(`${relative}: unlaunched prototype must not declare a production canonical, og:url, or JSON-LD`);
+    }
+    continue;
+  }
   if (!meta.get("description")?.trim()) errors.push(`${relative}: missing meta description`);
   if (!meta.get("og:title")?.trim()) errors.push(`${relative}: missing og:title`);
   if (!meta.get("og:description")?.trim()) errors.push(`${relative}: missing og:description`);
