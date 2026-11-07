@@ -19,6 +19,13 @@ They do not assert cities have commissioned routes, that white-label
 licenses are for sale, that local organizers may place signs without
 permissions, or that future multiplayer works.
 
+The [first-time host landing page](/guides/host-your-first-scavenger-hunt/)
+connects the separate built-in browser demo, editable public JSON sample,
+first-quest tutorial and prospective organizer inquiry. This page is a
+**source-only** route until the pinned production overlay explicitly copies
+it and verifies its URL, associated internal links and external GitHub
+source documents. A source merge must not trigger a public CTA before then.
+
 The Games directory must not label Pumpkin Roll or Snowflake Secret as
 playable without deployable source, verified route, tested assets and a
 release record. Wisp's Lost Lanterns is explicitly a past 2026 edition
