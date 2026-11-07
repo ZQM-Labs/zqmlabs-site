@@ -12,7 +12,7 @@ ZQM Labs creates story-driven, community-centered games for people who want to p
 
 ![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
 
-## Available now
+## Featured demo and past edition
 
 ### Wisp's Lost Lanterns
 
@@ -29,23 +29,19 @@ The Halloween 2026 event activation was in Volusia County, Florida, October 30 �
 
 ### The Great Pumpkin Roll
 
-Autumn festival scavenger hunt · Playable
+Autumn festival concept · In development
 
-Farmer Joe's pumpkins have escaped and rolled into town. Six stops, harvest-themed puzzles, and the same four scare levels as the Halloween edition.
-
-- [Play the browser demo](/games/pumpkin-roll/)
+A proposed six-stop harvest-themed story. No public playable route or game availability is verified.
 
 ### The Snowflake Secret
 
-Winter scavenger hunt · Playable
+Winter festival concept · In development
 
-Find the hidden snowflake ornaments and uncover the secret of the winter festival across six stops.
+A proposed six-stop winter scavenger story. No public playable route or game availability is verified.
 
-- [Play the browser demo](/games/snowflake-secret/)
+## How the current six-stop quest format works
 
-## How to play
-
-Every game is a self-guided scavenger hunt. No app download, no account — just a phone with a camera or GPS.
+The current Wisp's Lost Lanterns format is a self-guided scavenger hunt. No app download, no account — just a phone with a camera or GPS.
 
 1. **Form a team** — one phone per team
 2. **Start at stop 1** — follow the map
@@ -67,3 +63,7 @@ We will not list placeholder titles as released games or imply that planned feat
 - [Playtest protocol](https://github.com/ZQM-Labs/playtests)
 
 ZQM Labs is built around shared play. The goal is to make room for communities to participate, adapt experiences to their context, and help improve future games.
+
+## Planning a community, history or team event?
+
+ZQM Labs' six-stop storytelling format may inform future civic and tourism pilots, school and museum activities, or team-building experiences. These are **prospective commissioned formats, not currently released city routes or instant-order products**. For venue, audience, access requirements, dates and feasibility, [email the Lab](mailto:zqmcomputing@gmail.com). Do not announce an event or place signs before permissions and a tested delivery plan are agreed.
