@@ -51,6 +51,13 @@ for (const file of walk(root)) {
     errors.push(`${relative}: missing or empty <title>`);
   }
 
+  // Prove an explicit seo_title is rendered, not merely consistent across tags.
+  // This guide deliberately has a different page title and SEO title.
+  if (relative === "guides/host-your-first-scavenger-hunt/index.html" &&
+      titleMatch?.[1]?.replace(/<[^>]+>/g, "").trim() !== "Host a Scavenger Hunt Without an App | ZQM Labs") {
+    errors.push(`${relative}: authored seo_title was not rendered`);
+  }
+
   const meta = new Map();
   for (const tag of html.match(/<meta\b[^>]*>/gi) || []) {
     const attrs = attributes(tag);
@@ -80,6 +87,14 @@ for (const file of walk(root)) {
   }
   if (!meta.get("description")?.trim()) errors.push(`${relative}: missing meta description`);
   if (!meta.get("og:title")?.trim()) errors.push(`${relative}: missing og:title`);
+  if (!meta.get("twitter:title")?.trim()) errors.push(`${relative}: missing twitter:title`);
+  const normalizedTitle = titleMatch?.[1]?.replace(/<[^>]+>/g, "").trim();
+  if (normalizedTitle && meta.get("og:title") && normalizedTitle !== meta.get("og:title")) {
+    errors.push(`${relative}: og:title must match the HTML title`);
+  }
+  if (normalizedTitle && meta.get("twitter:title") && normalizedTitle !== meta.get("twitter:title")) {
+    errors.push(`${relative}: twitter:title must match the HTML title`);
+  }
   if (!meta.get("og:description")?.trim()) errors.push(`${relative}: missing og:description`);
   if (!meta.get("og:url")?.trim()) errors.push(`${relative}: missing og:url`);
   if (!meta.get("twitter:card")?.trim()) errors.push(`${relative}: missing twitter:card`);
