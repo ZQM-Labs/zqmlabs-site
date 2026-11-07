@@ -51,6 +51,13 @@ for (const file of walk(root)) {
     errors.push(`${relative}: missing or empty <title>`);
   }
 
+  // Prove an explicit seo_title is rendered, not merely consistent across tags.
+  // This guide deliberately has a different page title and SEO title.
+  if (relative === "guides/host-your-first-scavenger-hunt/index.html" &&
+      titleMatch?.[1]?.replace(/<[^>]+>/g, "").trim() !== "Host a Scavenger Hunt Without an App | ZQM Labs") {
+    errors.push(`${relative}: authored seo_title was not rendered`);
+  }
+
   const meta = new Map();
   for (const tag of html.match(/<meta\b[^>]*>/gi) || []) {
     const attrs = attributes(tag);
