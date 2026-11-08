@@ -122,16 +122,24 @@
   </nav>
   <p class="fineprint">Built in New Smyrna Beach, Volusia County, Florida ·
   <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> ·
-  {{ if not $isComputing }}Party rentals (tables, chairs, grills, cornhole) coming soon. 🎪{{ else }}Project inquiries are scoped individually; no new form or checkout is active.{{ end }}</p>
-  <p class="fineprint">{{ if $isComputing }}Open-source resources and references:{{ else }}Open by design — see the public project resources:{{ end }}
-  <a href="https://github.com/ZQM-Labs">ZQM Labs</a> ·
-  <a href="https://github.com/ZQM-Labs/quest-packs">free sample pack</a> ·
-  <a href="https://github.com/ZQM-Labs/organizer-toolkit">organizer toolkit</a> ·
-  <a href="https://github.com/ZQM-Labs/quest-authoring">how we build quests</a> ·
-  <a href="https://github.com/ZQM-Labs/playtests">playtest results</a> ·
-  <a href="https://github.com/ZQM-Labs/zqmlabs-site">this site's source</a> ·
-  <a href="https://github.com/ZQM-Computing">ZQM-Computing</a> ·
-  <a href="https://github.com/ZQM-Computing/geospatial-patterns">the Lab's pattern shelves</a></p>
+  {{ if $isComputing }}GIS service inquiries are scoped individually; no self-service checkout is active.{{ else }}ZQM Labs currently offers browser demos and hosted-game inquiries; booking and paid-kit availability require confirmation.{{ end }}</p>
+  {{ if $isComputing }}
+  <p class="fineprint">ZQM Computing engineering resources:
+    <a href="https://github.com/ZQM-Computing">GitHub organization</a> ·
+    <a href="https://github.com/ZQM-Computing/geospatial-patterns">geospatial patterns</a> ·
+    <a href="/computing/">services</a> ·
+    <a href="/computing/inquiry/">project inquiry</a>.
+    <a href="/labs/">Explore ZQM Labs separately</a>.</p>
+  {{ else }}
+  <p class="fineprint">ZQM Labs game resources:
+    <a href="https://github.com/ZQM-Labs">GitHub organization</a> ·
+    <a href="https://github.com/ZQM-Labs/quest-packs">free sample pack</a> ·
+    <a href="https://github.com/ZQM-Labs/organizer-toolkit">organizer toolkit</a> ·
+    <a href="https://github.com/ZQM-Labs/quest-authoring">quest authoring</a> ·
+    <a href="https://github.com/ZQM-Labs/playtests">playtests</a> ·
+    <a href="https://github.com/ZQM-Labs/zqmlabs-site">website source</a>.
+    <a href="/computing/">Explore ZQM Computing separately</a>.</p>
+  {{ end }}
 </footer>
 </body>
 </html>
