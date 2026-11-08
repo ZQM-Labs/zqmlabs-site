@@ -50,3 +50,16 @@ Required response before changing the status:
 ## Exit criteria for package A
 
 Complete immutable-ref source conflict classifications, live-origin URL and redirect baseline, full source-to-publisher artifact mapping, exact-head security disposition, and a signed-off release/nonrelease boundary. Until then this branch is for **draft architecture review only**.
+
+## Gitleaks pass-to-fail revision window (observed)
+
+The full-history scanner runs on every PR head; therefore a failing run cannot identify the triggering file by itself. The GitHub Actions history does establish these boundaries:
+
+| Revision | Result | Workflow run |
+| --- | --- | --- |
+| `53a90f905264e86474f5e03ea5c82df0996eff82` | **Passed** | `42430117648` |
+| `4760d7293908c4f9afd9201af6b2ab18dec56cbe` | **Failed, 1 finding** | `42431128392` |
+| `464e8db98bc6e3acf4dcf4f6154b0e4d5a3cda8c` | **Failed, 1 finding** | `42431311789` |
+
+The first observed failure follows additions to the branch's source comparison and conflict documents; that is a **triage hypothesis**, not a finding attribution. Compare the commits in this bounded interval and obtain **redacted fingerprint/rule/path metadata** under restricted access. Avoid copying potential secrets into the PR or changing the repository-wide scanner settings. Do not remove source inventory evidence solely to force a green check until the detection mechanism has been established.
+
