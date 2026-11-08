@@ -1,13 +1,29 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1>Geospatial engineering and community-centered games</h1>
+<p>ZQM Computing and ZQM Labs are independent brands sharing one website. Explore professional GIS services or play a browser-based quest.</p>
+<style>
+.dual-brand-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin:1.5rem 0}
+.dual-brand-preview section{border:1px solid #b6aa99;border-radius:12px;padding:1rem;min-width:0}
+.dual-brand-preview h2{margin-top:0}
+@media(max-width:640px){.dual-brand-preview{grid-template-columns:1fr}}
+</style>
+<div class="dual-brand-preview" aria-label="Choose a ZQM brand">
+  <section aria-labelledby="computing-heading">
+    <h2 id="computing-heading">ZQM Computing</h2>
+    <p>Preliminary GIS screening, repeatable geospatial workflows, Web GIS, and APIs.</p>
+    <p><a class="btn" href="/computing/">Explore GIS services</a></p>
+  </section>
+  <section aria-labelledby="labs-heading">
+    <h2 id="labs-heading">ZQM Labs</h2>
+    <p>Story-driven location games built for friends, families, and communities.</p>
+    <p><a class="btn" href="/labs/">Explore the game studio</a></p>
+  </section>
+</div>
+<p class="hero-cta"><a class="btn" href="/games/hunt-for-wisps/play/?demo=1">Play the free Wisp browser demo</a></p>
+<p>Computing projects are scoped by inquiry; a playable Labs demo does not establish event or paid-kit availability.</p>
 <figure class="dr-z-hero">
-  <img src="/img/dr-z-lab-banner.svg" alt="Dr. Z's geospatial invention lab, with topographic contours, data connections, laboratory glassware, and a scientific display" width="1200" height="340" fetchpriority="high">
-  <figcaption>Geospatial systems · open tools · experiments</figcaption>
+  <img src="/img/dr-z-lab-banner.svg" alt="Dr. Z's geospatial invention lab with topographic contours, data connections, and scientific displays" width="1200" height="340">
+  <figcaption>Geospatial systems, open tools, and experiments</figcaption>
 </figure>
-<p class="hero-cta">
-  <a class="btn" href="/games/hunt-for-wisps/play/?demo=1">Play the free browser demo</a>
-  <a class="btn ghost" href="/halloween/">🎃 Halloween 2026 kits</a>
-  <a class="btn ghost" href="/tiers/">See the tiers</a>
-</p>
 {{ .Content }}
 {{ end }}
