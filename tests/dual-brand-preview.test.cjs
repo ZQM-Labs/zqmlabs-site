@@ -11,13 +11,31 @@ function hasLink(document, route) {
   return document.includes('href="' + route + '"') || document.includes('href=' + route);
 }
 
+function assertBrandOrder(document) {
+  const computingIndex = document.indexOf("id=computing-heading");
+  const labsIndex = document.indexOf("id=labs-heading");
+  assert.notEqual(computingIndex, -1, "Missing Computing heading");
+  assert.notEqual(labsIndex, -1, "Missing Labs heading");
+  assert.ok(computingIndex < labsIndex, "Computing service card must precede Labs card");
+}
+
+test("brand ordering guard rejects missing and reversed headings", () => {
+  const computingHeading = "id=computing-heading";
+  const labsHeading = "id=labs-heading";
+  assert.throws(() => assertBrandOrder(labsHeading), /Missing Computing heading/);
+  assert.throws(() => assertBrandOrder(computingHeading), /Missing Labs heading/);
+  assert.throws(() => assertBrandOrder(labsHeading + computingHeading), /must precede/);
+  assert.doesNotThrow(() => assertBrandOrder(computingHeading + labsHeading));
+});
+
 test("preview homepage gives each brand a route and keeps the direct Wisp demo", () => {
   for (const route of ["/computing/", "/labs/", "/games/hunt-for-wisps/play/?demo=1", "/games/", "/halloween/", "/tiers/"]) {
     assert.ok(hasLink(html, route), "Missing homepage link: " + route);
   }
   assert.ok(html.includes("ZQM Computing") && html.includes("ZQM Labs"));
-  const main = html.slice(html.indexOf("<main "));
-  assert.ok(main.indexOf("id=computing-heading") < main.indexOf("id=labs-heading"), "Computing service card must precede Labs card");
+  const mainIndex = html.indexOf("<main ");
+  assert.notEqual(mainIndex, -1, "Missing main element");
+  assertBrandOrder(html.slice(mainIndex));
 });
 
 test("Computing landing page is inquiry-only with non-certified screening limitations", () => {
