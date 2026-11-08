@@ -4,8 +4,6 @@ seo_title: "Web GIS and Geospatial APIs | ZQM Computing"
 description: "Scope geospatial APIs, PostGIS integrations and accessible browser mapping interfaces with security, performance and operational requirements."
 ---
 
-# Web GIS and geospatial APIs
-
 ## Common project needs
 
 Web map prototypes, spatial data access APIs, PostGIS data models, map tiles, geographic search, and geospatial application integration.
