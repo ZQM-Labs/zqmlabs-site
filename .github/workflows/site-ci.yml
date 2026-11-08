@@ -82,6 +82,16 @@ jobs:
           grep -q 'name="twitter:card"' "$LAYOUT"
       - name: Build Hugo site
         run: hugo --gc --minify
+      - name: Remove legacy player development files from public build
+        run: |
+          set -euo pipefail
+          # Preserve the legacy browser player; exclude repo-only docs and tooling.
+          test -f public/games/lantern-player/index.html
+          test -f public/games/lantern-player/app.js
+          rm -rf public/games/lantern-player/tools
+          rm -f public/games/lantern-player/README.md
+          test ! -e public/games/lantern-player/tools
+          test ! -e public/games/lantern-player/README.md
       - name: Verify dual-brand preview routes and commercial boundaries
         run: node --test tests/dual-brand-preview.test.cjs
       - name: Preserve 40 production sitemap routes and game directory ownership
