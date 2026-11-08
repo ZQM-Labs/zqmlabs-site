@@ -16,7 +16,7 @@ A demo being playable does not mean a paid event package is available, or that a
 
 Hosting kits are **one-time flat fees for your event window**:
 
-- Family Night — **$49** (one household). Use code **FAMILY25** at checkout for $24 off — play for $25.
+- Family Night — **$49** (one household). The earlier FAMILY25 Halloween promotion is historical and checkout is paused.
 - Community — **$199** (unlimited families).
 - Office Team — **$349**. Office Event — **$499**.
 - Youth Groups — waitlist; ask about current availability and pricing.
@@ -24,9 +24,9 @@ Hosting kits are **one-time flat fees for your event window**:
 
 Full descriptions are on the [hosting tiers](/tiers/) and [pricing](/pricing/) pages. If these terms and those pages ever disagree, the prices on the pricing page are the current ones — and the Lab will confirm the price for your event before you promote it.
 
-**Before purchasing:** The published checkout links may accept payment, but they do not by themselves establish that a new event window, game entitlement, download, or email delivery is available. The Halloween 2026 access window has ended. Confirm current access and fulfillment arrangements with the Lab before paying.
+**Purchases paused:** The Halloween 2026 access window has ended. New paid kit checkout is disabled until entitlements, download, and email delivery are verified. Published historical prices do not constitute a currently available purchase offer. Inquire about any future event first.
 
-**No refunds or reschedules.** Kit sales are final: no refunds, and an event window cannot be rescheduled once bought.
+**Refunds and changes.** If ZQM Labs cannot deliver an agreed paid order, a refund is available. Other cancellations, reschedules, and refund requests are handled under the agreed event-specific terms and applicable law; no waiver of statutory rights is intended.
 
 **Kit access expires after the event window.** A kit is for the event window agreed with the Lab — it is not an open-ended license.
 
