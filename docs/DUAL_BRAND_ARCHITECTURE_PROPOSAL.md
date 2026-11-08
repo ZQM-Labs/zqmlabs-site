@@ -74,3 +74,12 @@ J. Reproducible integrated preview, exact-head required checks, rollback evidenc
 ## Decision boundaries
 
 This ADR is a review artifact. It does **not** approve a branch merge, site publication, production environment change, DNS change, payment change, or new customer data processing. Revisit scope and evidence at each package gate.
+
+## Approved execution update — November 7, 2026
+
+- **Allocation:** Plan and measure engineering effort at **50% ZQM Computing / 50% ZQM Labs** over each rolling four-week execution period. Track actual engineering hours, not PR counts, and reconcile deviations at the next planning review. Security incidents and already-required release gates may temporarily consume capacity without being concealed in the accounting.
+- **Brand separation:** Computing owns geospatial services and reproducible products; Labs owns games, hosting and player experience. Maintain separate buyers, statuses, conversion events, data handling and financial attribution.
+- **Commercial priority is not staffing priority:** Public marketing priority may place Computing inquiries first without implying more engineering capacity for Computing.
+- **Implementation path:** Incremental review branches and private/preview builds first. Existing public routes, direct free Wisp demo, privacy controls and noindex/unpublished Computing preview stay unchanged until explicit artifact parity, source provenance and controlled release checks pass.
+- **Promotion evidence:** Exact commit and immutable source SHAs, required CI and security results, representative end-to-end tests, rollback proof, negative publication checks, and paid entitlement → fulfillment → customer inbox proof whenever checkout or delivery is affected. Missing evidence blocks deployment; never infer release readiness from a build-only pass.
+- **Scope of approval:** Authorize safely isolated implementation proposals and tests; this document does not authorize a production release, force merge, weaker branch protection, new paid infrastructure, credential rotation or trust-root changes.
