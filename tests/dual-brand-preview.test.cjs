@@ -56,8 +56,8 @@ test("Computing inquiries remain brand-specific, mailto-only and noncommittal", 
   const page = fs.readFileSync(file, "utf8");
   assert.match(page, /ZQM Computing/);
   assert.match(page, /mailto:zqmcomputing@gmail.com/);
-  assert.match(page, /not.*(?:booking|order confirmation)/i);
-  assert.doesNotMatch(page, /<form\\b|checkout\\.stripe\\.com|buy\\.stripe\\.com/i);
+  assert.match(page, /booking, order confirmation/i);
+  assert.doesNotMatch(page, /<form\b|checkout\.stripe\.com|buy\.stripe\.com/i);
   assert.doesNotMatch(page, /within one business day|under 1 business day/i);
   assert.ok(hasLink(page, "/labs/"));
 });
