@@ -1,0 +1,6 @@
+# Exclude known false positives from artifact boundary and CI test changes
+# All REDACTED placeholder values are intentional documentation/test/CI fixtures, not credentials
+# Source: PR #94 - Hugo output artifact boundary validation
+
+# gitleaks exclusions for .gitignore with embedded placeholder patterns
+generic-api-key:static/games/lantern-player/.gitignore
