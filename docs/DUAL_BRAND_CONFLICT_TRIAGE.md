@@ -62,3 +62,12 @@ The full-history scanner runs on every PR head; therefore a failing run cannot i
 | `464e8db98bc6e3acf4dcf4f6154b0e4d5a3cda8c` | **Failed, 1 finding** | `42431311789` |
 
 The first observed failure follows additions to the branch's source comparison and conflict documents; that is a **triage hypothesis**, not a finding attribution. Compare the commits in this bounded interval and obtain **redacted fingerprint/rule/path metadata** under restricted access. Avoid copying potential secrets into the PR or changing the repository-wide scanner settings. Do not remove source inventory evidence solely to force a green check until the detection mechanism has been established.
+
+## Cross-repository Gitleaks comparison — evidence, not waiver
+
+A redacted finding from **publisher** draft #252 has now been retrieved. It is a `generic-api-key` detection on line 13 of `docs/IMMUTABLE_PIN_SOURCE_COMPARISON.csv`, at commit `a7fefc8b6ef0313c1ba0b25b2897ebaabae962fa`. That CSV row holds `content/games/snowflake-secret.md` directly adjacent to 40-character Git blob hashes. The redacted match begins with `secret.md`; the hashes are **Git object identifiers** rather than published access tokens.
+
+The **Labs Site** `docs/DUAL_BRAND_FILE_INVENTORY.csv` has the **same filename and adjacent SHA fields on line 13**. This is a concrete candidate explanation for its single generic-secret scan failure, but **the Labs scan did not publish its redacted fingerprint or rule metadata**; the specific finding is therefore still **unattributed**. Do not infer a separate compromised credential or suppress the scan based solely on the parallel CSV pattern.
+
+Because both workflows scan full commit histories, editing the current CSV does not clear a historical finding. A designated security reviewer must verify each exact rule/path/commit/fingerprint and authorize any surgical one-fingerprint disposition. Never disable scanning, wildcard-allow all CSVs, or rewrite history as an expedient workaround. No change in publishing authorization follows from a false-positive analysis.
+
