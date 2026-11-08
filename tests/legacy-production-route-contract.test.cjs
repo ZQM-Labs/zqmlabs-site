@@ -119,7 +119,9 @@ test("legacy player remains an information page, not a duplicated standalone app
   const directory = path.join(root, "games/lantern-player");
   const page = fs.readFileSync(path.join(directory, "index.html"), "utf8");
   assert.match(page, /Lantern Player.{0,90}browser demo/i);
-  assert.match(page, /software demo, not proof that a paid kit is orderable/i);
+  assert.match(page, /not proof that a paid kit is orderable/i);
+  assert.match(page, /this URL does not host a separate game runtime/i);
+  assert.match(page, /information, not a separate playable release/i);
   assert.match(page, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
   assert.doesNotMatch(page, /<iframe[^>]+src=(?:"|)\/games\/lantern-player\//i);
   for (const file of ["app.js", "sw.js", "README.md", "tools", "assets", "vendor"]) {
