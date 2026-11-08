@@ -18,42 +18,34 @@ const VERIFIED = [
   { name: "Office Event", price: 499, url: "https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02" }
 ];
 
-test("existing live Stripe price-to-link mapping matches the approved published four offers", () => {
+test("historical offer identities and prices remain stable while checkout is paused", () => {
   const fm = tierSource.match(/^---\s*\n([\s\S]*?)\n---/);
   assert.ok(fm, "Missing tiers front matter");
   const offerings = [...fm[1].matchAll(
-    /- name: "([^"]+)"\s*\n\s*price: (\d+)\s*\n\s*url: "(https:\/\/buy\.stripe\.com\/[^"]+)"/g
-  )].map(m => ({ name: m[1], price: Number(m[2]), url: m[3] }));
-  assert.deepEqual(offerings, VERIFIED, "Prices and payment-link identities need independent commercial approval");
-  const urls = new Set([...tierOutput.matchAll(/https:\/\/buy\.stripe\.com\/[A-Za-z0-9]+/g)].map(m => m[0]));
-  assert.deepEqual([...urls].sort(), VERIFIED.map(x => x.url).sort(), "Rendered tiers changed active checkout links");
-  assert.doesNotMatch(pricingOutput, /https:\/\/buy\.stripe\.com\/[A-Za-z0-9]+/,
-    "Pricing page must link to the existing tier offers, not create another checkout source");
-});
-
-test("historic Halloween checkout does not imply currently deliverable game access", () => {
-  for (const page of [tierOutput, pricingOutput]) {
-    assert.match(page, /October 30.{0,10}November 1, 2026/);
-    assert.match(page, /before (?:buying|purchasing|paying|payment)/i);
-    assert.doesNotMatch(page, /Your kit is usable as soon as checkout delivers it/i);
-    assert.doesNotMatch(page, /Halloween, Autumn Festival, and Winter editions are[\s\S]{0,30}live now/i);
+    /- name: "([^"]+)"\s*\n\s*price: (\d+)\s*\n\s*url: "([^"]+)"/g
+  )].map(m => ({name:m[1],price:Number(m[2]),url:m[3]}));
+  assert.deepEqual(offerings,
+    VERIFIED.map(({name,price}) => ({name,price,url:"/contact/"})),
+    "Do not change historical prices or provide active checkout links");
+  for (const output of [tierOutput, pricingOutput]) {
+    assert.doesNotMatch(output, /https:\/\/buy\.stripe\.com\//);
+    assert.match(output, /checkout is paused/i);
   }
-  assert.match(tierOutput, /The Great Pumpkin Roll[\s\S]{0,500}in development/i);
-  assert.match(tierOutput, /The Snowflake Secret[\s\S]{0,500}in development/i);
+  assert.match(tierOutput, /October 30.{0,10}November 1, 2026/);
+  assert.match(pricingOutput, /October 30.{0,10}November 1, 2026/);
+  assert.doesNotMatch(tierOutput, /Your kit is usable as soon as checkout delivers it/i);
 });
 
-test("existing $24 Family Night promotion remains identified but cannot imply active play", () => {
+test("historic discounts cannot imply current eligibility", () => {
   assert.match(tierSource, /FAMILY25/);
-  assert.match(tierSource, /\$24 off/);
+  assert.match(tierSource, /promotion and new kit purchases are not currently available/i);
   assert.doesNotMatch(tierSource, /play for \$25/i);
-  assert.match(tierSource, /discount is not a guarantee of currently usable kit access/i);
 });
 
-test("preview retains explicit no-refund terms while disclosing fulfillment uncertainty", () => {
-  assert.match(pricingOutput, /No refunds or reschedules/i);
-  assert.match(tierOutput, /No refunds or reschedules/i);
-  assert.match(tierSource, /does \*\*not\*\* establish that a new access window/i);
-  assert.doesNotMatch(pricingOutput, /The Lab replies within a day/i);
+test("paused checkout retains clear refunds for undeliverable orders", () => {
+  assert.match(pricingOutput, /undeliverable order is eligible for refund/i);
+  assert.match(tierOutput, /Orders that cannot be fulfilled are eligible for refund/i);
+  assert.doesNotMatch(pricingOutput, /No refunds or reschedules/i);
 });
 
 test("game, FAQ, terms, and contact cannot promise unverified fulfillment or response times", () => {
@@ -68,7 +60,7 @@ test("game, FAQ, terms, and contact cannot promise unverified fulfillment or res
   const demo = fs.readFileSync(path.join(root, "content/games/hunt-for-wisps.md"), "utf8");
   assert.match(demo, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
   const terms = fs.readFileSync(path.join(root, "content/terms.md"), "utf8");
-  assert.match(terms, /No refunds or reschedules/);
+  assert.match(terms, /If ZQM Labs cannot deliver an agreed paid order, a refund is available/);
   assert.match(terms, /Halloween 2026 access window has ended/);
   const contact = fs.readFileSync(path.join(root, "content/contact.md"), "utf8");
   assert.doesNotMatch(contact, /Under 1 business day|1–2 business days/);
