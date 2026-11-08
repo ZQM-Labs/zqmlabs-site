@@ -73,7 +73,9 @@ function selfTest() {
     ];
     for (const [name, reason] of probes) {
       add(name);
-      assert(checkArtifact(tmp).failures.some(f => f.includes(name) && f.includes(reason)));
+      const blockedPath = reason === "forbidden directory" ? name.split("/")[0] : name;
+      assert(checkArtifact(tmp).failures.some(f => f.includes(blockedPath) && f.includes(reason)),
+        `Expected ${name} to be rejected for ${reason}`);
       fs.unlinkSync(path.join(tmp, name));
     }
     if (process.platform !== "win32") {
