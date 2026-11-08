@@ -19,10 +19,7 @@ code{background:#f4e8d4;padding:2px 6px;border-radius:6px}
 {{/* ?demo=1 is required: without it the player takes its live branch and calls
      api.zqmlabs.com for access-code validation, which is not deployed. */}}
 {{ if eq .RelPermalink "/games/lantern-player/" }}
-<div class="game-frame">
-  <iframe src="/games/lantern-player/" title="Lantern Player — playable demo" allow="geolocation"></iframe>
-</div>
-<p class="muted">Stuck inside the frame? <a href="/games/lantern-player/" target="_blank" rel="noopener">Open the game fullscreen →</a></p>
+<p class="muted">The legacy Lantern Player page is an informational route. The supported free browser experience is the <a href="/games/hunt-for-wisps/play/?demo=1">Wisp's Lost Lanterns demo</a>; current event and kit availability must be confirmed separately.</p>
 {{ else if eq .RelPermalink "/games/hunt-for-wisps/" }}
 <div class="game-frame">
   <iframe src="/games/hunt-for-wisps/play/?demo=1" title="Hunt for Wisps — playable demo" allow="geolocation"></iframe>
