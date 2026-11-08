@@ -16,7 +16,7 @@ A demo being playable does not mean a paid event package is available, or that a
 
 Hosting kits are **one-time flat fees for your event window**:
 
-- Family Night — **$49** (one household). Use code **FAMILY25** at checkout for $24 off — play for $25.
+- Family Night — **$49** (one household). The previously advertised **FAMILY25** code offered $24 off when eligible; this is not proof of a current access window, applicable promotion, or deliverable kit.
 - Community — **$199** (unlimited families).
 - Office Team — **$349**. Office Event — **$499**.
 - Youth Groups — waitlist; ask about current availability and pricing.
@@ -24,7 +24,7 @@ Hosting kits are **one-time flat fees for your event window**:
 
 Full descriptions are on the [hosting tiers](/tiers/) and [pricing](/pricing/) pages. If these terms and those pages ever disagree, the prices on the pricing page are the current ones — and the Lab will confirm the price for your event before you promote it.
 
-**Kits are usable on checkout.** Paid kits are delivered by email.
+**Payment does not establish immediate kit access or delivery.** The Halloween 2026 access window has ended. Confirm an available event window, eligibility, delivery arrangements, and support with the Lab before buying. Historical checkout links may still accept payment even if a playable event is not currently available.
 
 **No refunds or reschedules.** Kit sales are final: no refunds, and an event window cannot be rescheduled once bought.
 
