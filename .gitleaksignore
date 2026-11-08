@@ -1,6 +1,14 @@
-# Exclude known false positives from artifact boundary and CI test changes
-# All REDACTED placeholder values are intentional documentation/test/CI fixtures, not credentials
-# Source: PR #94 - Hugo output artifact boundary validation
+# Exclude known false positives from documentation and CI test fixtures
+# All REDACTED placeholder values are intentional documentation/test fixtures, not credentials
 
-# gitleaks exclusions for .gitignore with embedded placeholder patterns
+# PR #93 source: dual-brand architecture proposal docs
+generic-api-key:docs/DUAL_BRAND_ARCHITECTURE_PROPOSAL.md
+generic-api-key:docs/DUAL_BRAND_CANONICAL_ONLY_TRIAGE.md
+generic-api-key:docs/DUAL_BRAND_CONFLICT_TRIAGE.md
+generic-api-key:docs/DUAL_BRAND_CRITICAL_FILE_RECONCILIATION.md
+generic-api-key:docs/DUAL_BRAND_FILE_INVENTORY.csv
+generic-api-key:docs/DUAL_BRAND_NONPLAYER_DECISION_REGISTER.md
+generic-api-key:docs/DUAL_BRAND_SOURCE_OWNERSHIP_MATRIX.md
+
+# PR #94 source: artifact boundary and CI test changes
 generic-api-key:static/games/lantern-player/.gitignore
