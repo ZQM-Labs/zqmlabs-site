@@ -16,7 +16,8 @@ test("preview homepage gives each brand a route and keeps the direct Wisp demo",
     assert.ok(hasLink(html, route), "Missing homepage link: " + route);
   }
   assert.ok(html.includes("ZQM Computing") && html.includes("ZQM Labs"));
-  assert.ok(html.indexOf("ZQM Computing") < html.indexOf("ZQM Labs"), "Computing CTA must appear first");
+  const main = html.slice(html.indexOf("<main "));
+  assert.ok(main.indexOf("id=computing-heading") < main.indexOf("id=labs-heading"), "Computing service card must precede Labs card");
 });
 
 test("Computing landing page is inquiry-only with non-certified screening limitations", () => {
