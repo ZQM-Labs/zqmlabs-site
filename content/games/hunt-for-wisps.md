@@ -39,7 +39,7 @@ This is a software demo, not proof that a paid kit is orderable or that a physic
 
 ## What the paid kit adds
 
-The demo shows you the game. A paid kit gives you the event: printable QR signs for all six stops, team access codes, a one-page organizer guide, printable finisher badges, and remote support through your event window. The kit is a one-time flat fee — Family Night $49, Community $199, Office Team $349, Office Event $499 — and it is usable on checkout. A kit is for the event window agreed with the Lab; a route, venue, and date are coordinated with the Lab, not included in the download.
+The published paid-kit offer describes printable QR signs for six stops, team access codes, a one-page organizer guide, printable finisher badges, and remote support through an agreed event window. The listed one-time prices remain Family Night $49, Community $199, Office Team $349, and Office Event $499. The Halloween 2026 access window has ended and paid-kit checkout is paused. No new event entitlement, delivery, or support is currently available for purchase. Confirm future kit, date, route, venue, and fulfillment arrangements with the Lab before announcing an event.
 
 Planning a dated event? [Contact the Lab](/contact/) with your group, your date, and the area you have in mind, and the Lab will tell you what is possible before you announce anything.
 

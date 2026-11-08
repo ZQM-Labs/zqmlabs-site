@@ -58,14 +58,11 @@ Lab before making plans.
 
 ## Payment
 
-Existing kit checkout links are published on the [hosting tiers page](/tiers/).
-Confirm current kit eligibility, event window, access terms and fulfillment
-before buying; viewing this page does not create a booking or extend expired
-game access.
+Paid-kit checkout is paused. The [hosting tiers page](/tiers/) retains historical prices and directs prospective organizers to [contact ZQM Labs](/contact/) for future availability. The free browser demo remains available.
 
 ## Book
 
-The existing checkout links remain listed on the [tiers page](/tiers/), but the October 30–November 1, 2026 Halloween access window has ended. **Do not assume a payment now provides usable game access or immediate delivery.** Confirm the current event window and fulfillment with ZQM Labs before paying. **No refunds or reschedules:** the published terms state that kit sales are final.
+The October 30–November 1, 2026 Halloween access window has ended. **No new paid kit purchase is available through the site.** Confirm a future event window, fulfillment and terms with ZQM Labs before arranging an event. An undeliverable order is eligible for refund; other requests follow applicable law and agreed terms.
 
 For multi-kit or quoted options, email **<zqmcomputing@gmail.com>** with your community or company name, your dates, and the tier you're eyeing. Confirm terms and availability with the Lab before buying.
 
