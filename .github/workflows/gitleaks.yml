@@ -27,7 +27,16 @@ jobs:
         shell: bash
         run: |
           if [ -f .gitleaks.toml ]; then
-            gitleaks git --config .gitleaks.toml --redact .
+            gitleaks git --config .gitleaks.toml --report-format json --report-path gitleaks-redacted.json --redact .
           else
-            gitleaks git --redact .
+            gitleaks git --report-format json --report-path gitleaks-redacted.json --redact .
           fi
+
+      - name: Retain redacted scanner evidence for restricted review
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: gitleaks-redacted-${{ github.run_id }}
+          path: gitleaks-redacted.json
+          if-no-files-found: warn
+          retention-days: 7
