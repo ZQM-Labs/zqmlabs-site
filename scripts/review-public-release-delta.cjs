@@ -15,6 +15,15 @@ const PROTECTED = [
   "games/hunt-for-wisps/play/sw.js"
 ];
 const MANIFEST = "release-manifest.json";
+// Public release inventories must never introduce private data or key material,
+// even when a human-review delta list otherwise permits additional files.
+function forbiddenPublicPath(name) {
+  const parts=name.toLowerCase().split("/");
+  const leaf=parts[parts.length-1];
+  return parts.some(p=>[".git",".github","private","packs","__pycache__"].includes(p)) ||
+    leaf===".env" || leaf.startsWith(".env.") ||
+    [".pem",".key",".p12",".pfx"].some(ext=>leaf.endsWith(ext));
+}
 function review(baseline, candidate, allowlist) {
   if (allowlist.length !== 39 || new Set(allowlist).size !== 39 ||
       allowlist.some(x=>!x || x===MANIFEST || x.startsWith("/") ||
@@ -27,6 +36,11 @@ function review(baseline, candidate, allowlist) {
   for (const name of PROTECTED) {
     if (!baseline.has(name)) blockers.push({path:name, reason:"protected baseline missing"});
     if (!candidate.has(name)) blockers.push({path:name, reason:"protected candidate missing"});
+  }
+  for (const name of candidate.keys()) {
+    if (forbiddenPublicPath(name)) {
+      blockers.push({path:name, reason:"forbidden private or credential-bearing public artifact"});
+    }
   }
   for (const record of changes.changes) {
     if (PROTECTED.includes(record.path) && record.status!=="identical") {
