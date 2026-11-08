@@ -7,6 +7,7 @@
 The production artifact contains only `games/lantern-player/index.html` at the legacy Lantern Player route. It is an **informational Hugo page** titled “Lantern Player — browser demo.” The prior preview instead copied a complete standalone player runtime into `games/lantern-player/`, replacing that information page and adding dozens of unreviewed public assets. This also introduced a self-referencing iframe in the canonical single-game layout.
 
 Preview remediation:
+
 - Move `static/games/lantern-player/` outside the Hugo static source **inside the preview CI job only**, allowing Hugo to emit the information page; source material remains untouched for separate review.
 - Remove the self-referencing iframe and point the legacy page's play action to the existing direct Wisp browser demo, `/games/hunt-for-wisps/play/?demo=1`.
 - Fail CI if `games/lantern-player/README.md`, `tools/`, `app.js`, `sw.js`, `assets/`, or `vendor/` appears in output.
