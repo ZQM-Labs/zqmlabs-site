@@ -112,6 +112,10 @@ jobs:
               exit 1
             fi
           done
+      - name: Reject private and non-runtime files in public build
+        run: |
+          node scripts/check-public-artifact-boundary.mjs --self-test
+          node scripts/check-public-artifact-boundary.mjs public
       - name: Verify public JSON answer-key boundary
         run: |
           node scripts/check-public-answer-json.cjs --self-test
