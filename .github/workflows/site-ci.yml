@@ -84,6 +84,8 @@ jobs:
         run: hugo --gc --minify
       - name: Verify dual-brand preview routes and commercial boundaries
         run: node --test tests/dual-brand-preview.test.cjs
+      - name: Preserve 40 production sitemap routes and game directory ownership
+        run: node --test tests/legacy-production-route-contract.test.cjs
       - name: Verify civic guide route and offer integrity
         run: node scripts/check-civic-guides.cjs
       - name: Reject paid packs in public source and output
