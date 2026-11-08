@@ -50,14 +50,18 @@ and repeat organizers get priority scheduling.
 
 ## Seasonal editions
 
-The engine is seasonal: Halloween, Autumn Festival, and Winter editions are
-live now, with Spring and Summer editions in development. Book a tier once and
-re-run it with a new seasonal skin.
+Wisp's Lost Lanterns (Halloween 2026) is a past edition with a
+browser demo still available. The Great Pumpkin Roll (autumn) and
+The Snowflake Secret (winter) are in development, not separately playable
+releases. Confirm future seasonal offerings and event availability with the
+Lab before making plans.
 
 ## Payment
 
-Invoiced on booking. Payment rails and terms are confirmed by email when your
-kit is scheduled.
+Existing kit checkout links are published on the [hosting tiers page](/tiers/).
+Confirm current kit eligibility, event window, access terms and fulfillment
+before buying; viewing this page does not create a booking or extend expired
+game access.
 
 ## Book
 
