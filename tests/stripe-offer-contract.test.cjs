@@ -96,3 +96,15 @@ test("press kit distinguishes the Wisp demo from unreleased seasonal products", 
   assert.doesNotMatch(press, /A live leaderboard keeps offices competitive/i);
   assert.doesNotMatch(press, /under one business day/i);
 });
+
+test("Wisp game detail separates the free demo from expired paid event access", () => {
+  const wisp = fs.readFileSync(path.join(root, "public/games/hunt-for-wisps/index.html"), "utf8");
+  assert.match(wisp, /October 30.{0,10}November 1, 2026 access window has ended/i);
+  assert.match(wisp, /payment does not establish a currently playable event/i);
+  assert.match(wisp, /free browser demo remains separate from any paid offer/i);
+  assert.match(wisp, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
+  assert.doesNotMatch(wisp, /usable on checkout/i);
+  for (const price of ["$49", "$199", "$349", "$499"]) {
+    assert.ok(wisp.includes(price), "Previously published tier price missing: " + price);
+  }
+});
