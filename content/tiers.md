@@ -7,7 +7,7 @@ products:
   - name: "Family Night"
     price: 49
     url: "https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03"
-    description: "One household playing together. Use code FAMILY25 at checkout for $24 off — play for $25."
+    description: "One household. Existing FAMILY25 code offers $24 off when eligible; confirm current access before paying."
   - name: "Community"
     price: 199
     url: "https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00"
@@ -27,6 +27,8 @@ products:
 These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
 **Before using a checkout link:** The October 30–November 1, 2026 Halloween event window has ended. The existing links may still accept payment, but this does **not** establish that a new access window, entitlement, download or organizer support is available. Confirm the current offer and delivery arrangements with ZQM Labs before purchasing.
+
+The Great Pumpkin Roll and The Snowflake Secret remain **in development**. They are not included as separately playable editions in these Halloween pilot offers.
 
 ![Team celebrating at the finish of an outdoor quest at golden hour](/img/tiers-evergreen.webp)
 
