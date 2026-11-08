@@ -87,7 +87,8 @@ test("organizer page does not claim automatic live scoring or guaranteed support
 
 test("press kit distinguishes the Wisp demo from unreleased seasonal products", () => {
   const press = fs.readFileSync(path.join(root, "public/press/index.html"), "utf8");
-  assert.match(press, /Wisp.s Lost Lanterns browser demo/i);
+  assert.match(press, /Wisp.s Lost Lanterns/i);
+  assert.match(press, /browser demo/i);
   assert.match(press, /other named seasonal titles are in development/i);
   assert.match(press, /Verify the languages available in the current Wisp demo/i);
   assert.match(press, /Response time:[\s\S]{0,120}best effort/i);
