@@ -133,6 +133,7 @@ test("pricing retains checkout route and distinguishes past vs planned seasons",
   assert.match(pricing, /Snowflake Secret[\s\S]{0,200}in development/i);
   assert.match(pricing, /Halloween 2026[\s\S]{0,200}past edition/i);
   assert.doesNotMatch(pricing, /Halloween, Autumn Festival, and Winter editions are.{0,50}live now/i);
+  assert.match(pricing, /Live leaderboard \(coming soon\)/i);
   assert.match(pricing, /href=(?:"|)\/tiers\//i);
   const tiers = fs.readFileSync(artifact("/tiers/"), "utf8");
   const links = [
