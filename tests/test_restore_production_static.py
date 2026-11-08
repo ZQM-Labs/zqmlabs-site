@@ -53,7 +53,7 @@ class RestoreStaticTests(unittest.TestCase):
 
     def test_divergent_candidate_file_never_overwritten(self):
         target = self.public / self.files[0]
-        target.parent.mkdir(parents=True)
+        target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(b"changed by candidate")
         with self.assertRaisesRegex(ValueError, "Refusing overwrite"):
             self.plan()
