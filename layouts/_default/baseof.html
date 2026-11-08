@@ -114,14 +114,14 @@
 </header>
 <main id="main-content" tabindex="-1">{{ block "main" . }}{{ end }}</main>
 <footer class="site">
-  <p><span class="mantra">{{ .Site.Params.mantra }}</span> · {{ .Site.Params.tagline }}</p>
+  {{ if $isComputing }}<p><span class="mantra">Geospatial engineering</span> · Reproducible GIS services and tools from ZQM Computing.</p>{{ else }}<p><span class="mantra">{{ .Site.Params.mantra }}</span> · {{ .Site.Params.tagline }}</p>{{ end }}
   <nav aria-label="Footer navigation">
     {{- range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
   </nav>
   <p class="fineprint">Built in New Smyrna Beach, Volusia County, Florida ·
   <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> ·
-  Party rentals (tables, chairs, grills, cornhole) coming soon. 🎪</p>
-  <p class="fineprint">Open by design — everything we run is public:
+  {{ if not $isComputing }}Party rentals (tables, chairs, grills, cornhole) coming soon. 🎪{{ else }}Project inquiries are scoped individually; no new form or checkout is active.{{ end }}</p>
+  <p class="fineprint">{{ if $isComputing }}Open-source resources and references:{{ else }}Open by design — see the public project resources:{{ end }}
   <a href="https://github.com/ZQM-Labs">ZQM Labs</a> ·
   <a href="https://github.com/ZQM-Labs/quest-packs">free sample pack</a> ·
   <a href="https://github.com/ZQM-Labs/organizer-toolkit">organizer toolkit</a> ·
