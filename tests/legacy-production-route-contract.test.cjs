@@ -117,3 +117,12 @@ test("unapproved Daily Geo Mystery experiment is not public", () => {
       "Research-only experiment included in public preview: " + file);
   }
 });
+
+test("404 recovery page avoids unreviewed prices or advertising unreleased games", () => {
+  const page = fs.readFileSync(path.join(root, "404.html"), "utf8");
+  assert.doesNotMatch(page, /\$\s*(?:49|199|349|499)\b/,
+    "404 must not introduce a second source of commercial pricing claims");
+  assert.match(page, /pumpkin.roll.{0,100}in development/i);
+  assert.match(page, /snowflake.secret.{0,100}in development/i);
+  assert.match(page, /href=(?:"|)\/pricing\//i);
+});
