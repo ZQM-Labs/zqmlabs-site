@@ -22,4 +22,4 @@ Evaluate authentication, authorization, data rights, geographic coverage, perfor
 
 ## Request a scope review
 
-[Contact ZQM Computing](/contact/) with the intended users, high-level data sources, scale, deployment preferences and technical constraints. No new inquiry processor, API deployment or payment feature is activated by this page.
+[Contact ZQM Computing](/computing/inquiry/) with the intended users, high-level data sources, scale, deployment preferences and technical constraints. No new inquiry processor, API deployment or payment feature is activated by this page.
