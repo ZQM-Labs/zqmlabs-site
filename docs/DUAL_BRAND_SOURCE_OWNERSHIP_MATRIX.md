@@ -10,6 +10,14 @@
 - The canonical site has **299 tracked blobs** and the publisher has **404 tracked blobs** in the main Git trees reviewed. Those are repository-wide counts, **not** approved artifact counts. Both contain Hugo layouts, content, redirect files, game assets and non-web documentation. Their duplication is not a license to publish both trees.
 - Current publisher gates include exact pin checks, the selected-guide overlay validator, game player SHA validation, 404/guide/route checks, paid-pack exclusion, a v1 public release-manifest and live deployment verification. Do not remove any gate until an equivalent or stronger check has passed.
 
+## Exact tracked-file evidence (machine-readable)
+
+The companion [file inventory](DUAL_BRAND_FILE_INVENTORY.csv) enumerates **319** relevant records: **303 distinct Hugo source paths** in the canonical/publisher site comparison plus **16** separate Computing preview files. The Hugo comparison has **31 identical**, **66 different**, **156 canonical-only**, and **50 publisher-only** path records by Git blob SHA. These are **source-file statuses**, not public artifact diffs, number of required changes, or a substitute for a route crawl.
+
+Each row includes path, exact canonical and publisher-vendored Git blob SHAs, relation, currently known composition precedence, proposed disposition and unresolved/review state. Rows marked `different` or present in only one site remain unresolved by default. Values describe the **main trees retrieved for this analysis**, not an approved immutable release baseline. Before implementation, repeat the extraction at reviewed full commit SHAs, check file modes and symbolic links, and resolve every path with an authorized owner and explicit output decision.
+
+The Computing preview records carry their current source SHA in the canonical SHA column solely as an inventory convenience; they are **not canonical Labs files** and must not be imported by that label. The current composition field `publisher_vendor_or_absent` intentionally does not claim all publisher-only source files appear in the live artifact.
+
 ## File / path-family ownership and treatment
 
 | Source path or family | Current deployed ownership | Target authority | Allowed treatment and evidence required |
