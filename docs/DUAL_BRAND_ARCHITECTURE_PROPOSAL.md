@@ -3,6 +3,7 @@
 Status: **PROPOSED — no code, deployment, checkout, domain, or data-system changes authorized**. Date: 2026-11-07.
 
 ## Approved product decisions
+
 - One domain, `zqmlabs.com`, with `/labs/` and `/computing/`; distinct commercial identities.
 - Equal brand visibility in the homepage hero; Computing service inquiry CTAs take commercial priority; Labs demo access remains prominent.
 - Canonical Hugo public source in this repository, pinned and published only via `ZQM-Computing/zqm-labs`; independent pinned `ZQM-Labs/quest-player`.
@@ -12,9 +13,11 @@ Status: **PROPOSED — no code, deployment, checkout, domain, or data-system cha
 - Curated evidence-backed guides link to GitHub cookbooks; do not mirror or imply completeness of the entire catalog.
 
 ## Existing constraints and evidence
+
 The canonical source currently holds Hugo content, layouts, assets and `scripts/check-generated-seo.cjs`, `scripts/check-built-links.mjs` and source/player checks. The production publisher currently copies selected pages and a reviewed guide allowlist into a separate site tree. Existing demo path `/games/hunt-for-wisps/play/?demo=1` and other live URLs must remain operational. The Computing profile repo has an unpublished `commercial-site/` Hugo preview with `publicRelease=false`, `noindex` and `example.invalid` base URL. Preserve these until approved publication.
 
 ## Target site information architecture
+
 - `/`: two distinct brand cards with equal visibility; Computing service inquiry CTA placed first in commercial section, Labs demo play CTA obvious.
 - `/computing/`: positioning, services, methods, evidence, and qualified contact.
 - `/computing/services/environmental-screening/`: preliminary desktop GIS scope, source/coverage limitations, sample deliverables and inquiry.
@@ -26,6 +29,7 @@ The canonical source currently holds Hugo content, layouts, assets and `scripts/
 A route map must distinguish existing URLs, new proposed URLs, aliases, redirects, and intentionally excluded drafts.
 
 ## Authoritative ownership (proposed)
+
 | Surface | Authority | Publishing |
 | --- | --- | --- |
 | Public Hugo content/layouts/styles/brand metadata | `ZQM-Labs/zqmlabs-site` | Immutable approved site SHA |
@@ -36,12 +40,15 @@ A route map must distinguish existing URLs, new proposed URLs, aliases, redirect
 | Computing inquiry processing | Proposed isolated service | Independently secured/released; not implemented here |
 
 ## Publication contract (design, not implemented)
+
 Every marketing page shall declare `brand` (`labs`/`computing`/`ecosystem`), `publication_status` (`draft`/`review`/`approved`), owner, review date, and page-specific title/description. Offer pages additionally declare `offer_status` (`inquiry-only`/`demo`/`pilot`/`available`/`past`/`planned`) and supporting evidence identifiers. A production build must include only explicitly approved public material; a robots noindex tag is not a confidentiality boundary. Avoid global recursive copying without a reviewed inclusion/exclusion manifest and negative tests. Separate brand JSON-LD, social cards, canonicals and contact routes. Preserve authoritative source links.
 
 ## Secure Computing inquiry contract
+
 Initial fields: name, email, optional organization, general project region, service category, project description, approximate timeline, privacy acknowledgement. No unsolicited uploads, parcel/customer private datasets, secrets or student records. Server-side schema and length validation, rate limits, abuse protection, safe encoding, restricted recipients, server-only mail credentials, minimal retention, and operator-visible delivery failures. A receipt requires a durable accepted submission or verified queue, never a merely attempted email. Do not connect publicly submitted text directly to Chiefs or internal privileged tools. Labs inquiries remain distinct.
 
 ## Dependency-ordered review packages (none authorized to implement)
+
 A. Source/production route and SHA inventory; open PR conflict audit; reversible baseline.
 B. Public/draft/experimental/paid asset publication manifest and fail-closed tests (depends A).
 C. Shared Hugo components and brand-aware structured metadata (A,B).
@@ -54,6 +61,7 @@ I. Labs game/hosting improvements and cross-brand SEO (F–H).
 J. Reproducible integrated preview, exact-head required checks, rollback evidence and **separate** production authorization (E–I).
 
 ## Architecture acceptance criteria
+
 - Every public artifact file traces to an approved source, with zero secret/private/paid assets and zero unexpectedly published drafts.
 - 100% of required pre-existing routes resolve or have explicit reviewed redirects; zero broken built-site links.
 - No change in production writer ownership, Cloudflare native Git deploy prohibition, independent site/player pin controls, or payment/fulfillment authorization.
@@ -64,4 +72,5 @@ J. Reproducible integrated preview, exact-head required checks, rollback evidenc
 - Release is blocked on missing/stale/red required checks, unresolved blocking reviews, or unverified rollback.
 
 ## Decision boundaries
+
 This ADR is a review artifact. It does **not** approve a branch merge, site publication, production environment change, DNS change, payment change, or new customer data processing. Revisit scope and evidence at each package gate.
