@@ -127,7 +127,7 @@ test("404 recovery page avoids unreviewed prices or advertising unreleased games
   assert.match(page, /href=(?:"|)\/pricing\//i);
 });
 
-test("pricing retains checkout route and distinguishes past vs planned seasons", () => {
+test("pricing retains inquiry route, historical prices, and planned-season labels", () => {
   const pricing = fs.readFileSync(artifact("/pricing/"), "utf8");
   assert.match(pricing, /Great Pumpkin Roll[\s\S]{0,400}in development/i);
   assert.match(pricing, /Snowflake Secret[\s\S]{0,200}in development/i);
@@ -136,20 +136,13 @@ test("pricing retains checkout route and distinguishes past vs planned seasons",
   assert.match(pricing, /Live leaderboard \(coming soon\)/i);
   assert.match(pricing, /href=(?:"|)\/tiers\//i);
   const tiers = fs.readFileSync(artifact("/tiers/"), "utf8");
-  const links = [
-    "https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03",
-    "https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00",
-    "https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01",
-    "https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02"
-  ];
-  for (const url of links) {
-    assert.ok(tiers.includes(url), "Existing checkout link changed or removed: " + url);
-  }
-  assert.match(tiers, /checkout link remains active, but payment is not proof of usable game access/i,
-    "Expired seasonal offers must not claim immediate kit access");
+  assert.doesNotMatch(tiers, /https:\/\/buy\.stripe\.com\//i, "Paid checkout is paused; do not publish direct purchase links");
+  assert.doesNotMatch(pricing, /https:\/\/buy\.stripe\.com\//i);
+  assert.match(tiers, /Paid kit checkout is paused/i);
+  assert.match(tiers, /href=(?:"|)\/contact\//i);
   assert.match(tiers, /Halloween 2026 event window/i);
   assert.match(tiers, /FAMILY25/);
-  assert.match(tiers, /\$24 off/);
+  assert.match(tiers, /refund/i);
   assert.doesNotMatch(tiers, /Your kit is usable on checkout/i);
   assert.doesNotMatch(pricing, /<form\b/i, "Pricing should not add a new payment or intake form");
 });
