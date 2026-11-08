@@ -32,6 +32,34 @@ jobs:
             gitleaks git --report-format json --report-path gitleaks-redacted.json --redact .
           fi
 
+      - name: Verify unrelated synthetic credentials remain detectable
+        shell: bash
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          if [ -f .gitleaksignore ]; then cp .gitleaksignore "$fixture/.gitleaksignore"; fi
+          python3 - "$fixture" <<'PY'
+          import pathlib
+          import secrets
+          import string
+          import sys
+          alphabet = string.ascii_letters + string.digits
+          token = "github_pat_" + "".join(secrets.choice(alphabet) for _ in range(82))
+          pathlib.Path(sys.argv[1], "synthetic-credential.txt").write_text(
+              "github_token = " + token + "\n", encoding="utf-8"
+          )
+          PY
+          set +e
+          gitleaks dir --redact --exit-code 7 "$fixture" >/dev/null 2>&1
+          status="$?"
+          set -e
+          if [ "$status" -ne 7 ]; then
+            echo "::error::Synthetic credential not detected (status $status)." >&2
+            exit 1
+          fi
+          echo "Independent synthetic credential remains detectable."
+
       - name: Retain redacted scanner evidence for restricted review
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
