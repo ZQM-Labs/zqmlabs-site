@@ -55,3 +55,21 @@ test("preview retains explicit no-refund terms while disclosing fulfillment unce
   assert.match(tierSource, /does \*\*not\*\* establish that a new access window/i);
   assert.doesNotMatch(pricingOutput, /The Lab replies within a day/i);
 });
+
+test("game, FAQ, terms, and contact cannot promise unverified fulfillment or response times", () => {
+  const pages = ["content/games/hunt-for-wisps.md", "content/faq.md", "content/terms.md", "content/contact.md"];
+  for (const name of pages) {
+    const source = fs.readFileSync(path.join(root, name), "utf8");
+    assert.doesNotMatch(source, /kits? (?:are|is) usable on checkout/i, name);
+    assert.doesNotMatch(source, /(?:kit|kits) (?:are|is) delivered by email/i, name);
+    assert.doesNotMatch(source, /replies within one business day/i, name);
+    assert.match(source, /(?:confirm|not guaranteed|capacity permits)/i, name);
+  }
+  const demo = fs.readFileSync(path.join(root, "content/games/hunt-for-wisps.md"), "utf8");
+  assert.match(demo, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
+  const terms = fs.readFileSync(path.join(root, "content/terms.md"), "utf8");
+  assert.match(terms, /No refunds or reschedules/);
+  assert.match(terms, /Halloween 2026 access window has ended/);
+  const contact = fs.readFileSync(path.join(root, "content/contact.md"), "utf8");
+  assert.doesNotMatch(contact, /Under 1 business day|1–2 business days/);
+});
