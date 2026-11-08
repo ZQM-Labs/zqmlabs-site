@@ -35,6 +35,22 @@ test("Labs landing links directly to demo without claiming a booked event", () =
   assert.match(labs, /does not confirm host availability/i);
 });
 
+
+test("all three Computing services exist without activating forms or checkout", () => {
+  const routes = ["environmental-screening", "gis-automation", "web-gis"];
+  for (const name of routes) {
+    const route = "/computing/services/" + name + "/";
+    assert.ok(hasLink(computing, route), "Missing Computing service link: " + route);
+    const output = path.join(root, "public/computing/services", name, "index.html");
+    assert.ok(fs.existsSync(output), "Missing service page output: " + output);
+    const page = fs.readFileSync(output, "utf8");
+    assert.ok(page.includes("https://zqmlabs.com" + route), "Missing canonical on " + route);
+    assert.match(page, /"name":"ZQM Computing"/);
+    assert.doesNotMatch(page, /<form\\b|checkout\\.stripe\\.com|buy\\.stripe\\.com/i);
+    assert.ok(hasLink(page, "/contact/"), "Missing scoped inquiry route on " + route);
+  }
+});
+
 test("preview build includes no new paid game output", () => {
   for (const target of ["public/packs", "public/games/pumpkin-roll/play", "public/games/snowflake-secret/play"]) {
     assert.equal(fs.existsSync(path.join(root, target)), false, "Unreviewed artifact: " + target);
