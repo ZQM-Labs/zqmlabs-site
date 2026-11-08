@@ -7,30 +7,35 @@ const root = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(root, "public/index.html"), "utf8");
 const computing = fs.readFileSync(path.join(root, "public/computing/index.html"), "utf8");
 const labs = fs.readFileSync(path.join(root, "public/labs/index.html"), "utf8");
+function hasLink(document, route) {
+  return document.includes('href="' + route + '"') || document.includes('href=' + route);
+}
 
-test("preview homepage gives each brand a route and exposes the playable demo", () => {
-  for (const route of ['href="/computing/"', 'href="/labs/"', 'href="/games/hunt-for-wisps/play/?demo=1"']) {
-    assert.ok(html.includes(route.replaceAll('"', '')) || html.includes(route), 'Missing homepage link: ' + route);
+test("preview homepage gives each brand a route and keeps the direct Wisp demo", () => {
+  for (const route of ["/computing/", "/labs/", "/games/hunt-for-wisps/play/?demo=1", "/games/", "/halloween/", "/tiers/"]) {
+    assert.ok(hasLink(html, route), "Missing homepage link: " + route);
   }
-  assert.ok(html.includes('ZQM Computing') && html.includes('ZQM Labs'));
-  assert.ok(html.indexOf('ZQM Computing') < html.indexOf('ZQM Labs'), 'Computing service CTA must appear first');
+  assert.ok(html.includes("ZQM Computing") && html.includes("ZQM Labs"));
+  assert.ok(html.indexOf("ZQM Computing") < html.indexOf("ZQM Labs"), "Computing CTA must appear first");
 });
 
-test("Computing landing page has preliminary-screening limitations and no payment or intake form", () => {
+test("Computing landing page is inquiry-only with non-certified screening limitations", () => {
   assert.match(computing, /<strong>not<\/strong> a certified survey/i);
   assert.match(computing, /GIS workflow automation/i);
   assert.match(computing, /Web GIS/i);
   assert.doesNotMatch(computing, /<form\b|checkout\.stripe\.com|buy\.stripe\.com/i);
-  assert.match(computing, /href="\/contact\//);
+  assert.ok(hasLink(computing, "/contact/"));
+  assert.match(computing, /"name":"ZQM Computing"/);
+  assert.match(computing, /"url":"https:\/\/zqmlabs\.com\/computing\/"/);
 });
 
-test("Labs landing links directly to demo without implying booking", () => {
-  assert.match(labs, /href="\/games\/hunt-for-wisps\/play\/\?demo=1"/);
+test("Labs landing links directly to demo without claiming a booked event", () => {
+  assert.ok(hasLink(labs, "/games/hunt-for-wisps/play/?demo=1"));
   assert.match(labs, /does not confirm host availability/i);
 });
 
-test("preview does not add paid game outputs or secret-bearing pages", () => {
+test("preview build includes no new paid game output", () => {
   for (const target of ["public/packs", "public/games/pumpkin-roll/play", "public/games/snowflake-secret/play"]) {
-    assert.equal(fs.existsSync(path.join(root, target)), false, 'Unreviewed artifact: ' + target);
+    assert.equal(fs.existsSync(path.join(root, target)), false, "Unreviewed artifact: " + target);
   }
 });
