@@ -35,7 +35,6 @@ test("Labs landing links directly to demo without claiming a booked event", () =
   assert.match(labs, /does not confirm host availability/i);
 });
 
-
 test("all three Computing services exist without activating forms or checkout", () => {
   const routes = ["environmental-screening", "gis-automation", "web-gis"];
   for (const name of routes) {
