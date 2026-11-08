@@ -90,6 +90,9 @@ jobs:
           test -f static/games/lantern-player/index.html
           test -f static/games/lantern-player/app.js
           mv static/games/lantern-player "${RUNNER_TEMP}/legacy-lantern-player-not-published"
+          # Research-only experiment has not received publication authorization.
+          test -f static/experiments/daily-geo-mystery/index.html
+          mv static/experiments/daily-geo-mystery "${RUNNER_TEMP}/daily-geo-mystery-not-published"
       - name: Build Hugo site
         run: hugo --gc --minify
       - name: Verify dual-brand preview routes and commercial boundaries
