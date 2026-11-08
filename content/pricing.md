@@ -32,7 +32,7 @@ is fixed, the upside is yours.
 - Printable finisher badges
 - All four scare levels (Cozy / Spooky / After Dark / Overdrive)
 - Three hints at every stop
-- Live leaderboard
+- Live leaderboard (coming soon)
 - Limited, best-effort remote email support through your event window
 - Multi-language UI (7 languages)
 
