@@ -32,7 +32,7 @@ test("fail closed on an unexpected removed production artifact",()=>{
  const a=base(),b=new Map(a);b.delete("private-unexpected.txt");
  const result=review(a,b,allow);
  assert.equal(result.artifact_boundary_pass,false);
- assert.match(result.blockers[0].reason,/unexpected missing/);
+ assert.ok(result.blockers.some(x=>x.path==="private-unexpected.txt" && /unexpected missing/.test(x.reason)));
 });
 test("reject malformed or expanded restoration allowlists",()=>{
  assert.throws(()=>review(base(),base(),allow.slice(0,38)),/Invalid frozen/);
