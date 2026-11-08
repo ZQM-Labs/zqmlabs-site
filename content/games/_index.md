@@ -5,6 +5,8 @@ description: "Browse ZQM Labs browser game demos, companion tools, and scavenger
 
 The directory distinguishes what can be played now from planned experiences. A listing marked **Playable browser demo** is available in the browser. **Tool** is a companion app, not a standalone game. **In development** means the experience is not yet a separate playable release.
 
+[Play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1)
+
 ## Playable demos
 
 ### [Hunt for Wisps](/games/hunt-for-wisps/)
