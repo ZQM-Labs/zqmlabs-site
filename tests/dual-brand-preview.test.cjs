@@ -45,7 +45,7 @@ test("all three Computing services exist without activating forms or checkout", 
     const page = fs.readFileSync(output, "utf8");
     assert.ok(page.includes("https://zqmlabs.com" + route), "Missing canonical on " + route);
     assert.match(page, /"name":"ZQM Computing"/);
-    assert.doesNotMatch(page, /<form\\b|checkout\\.stripe\\.com|buy\\.stripe\\.com/i);
+    assert.doesNotMatch(page, /<form\b|checkout\.stripe\.com|buy\.stripe\.com/i);
     assert.ok(hasLink(page, "/contact/"), "Missing scoped inquiry route on " + route);
   }
 });
