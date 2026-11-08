@@ -67,3 +67,20 @@ test("terms and contact do not promise expired access or guaranteed response tim
   assert.doesNotMatch(contact, /within one business day|under 1 business day|1.2 business days/i);
   assert.match(contact, /Limited, best-effort email/i);
 });
+
+test("FAQ visible and structured content never promises expired kit delivery", () => {
+  const faq = fs.readFileSync(path.join(root, "public/faq/index.html"), "utf8");
+  assert.match(faq, /Halloween 2026 access window has ended/i);
+  assert.match(faq, /Payment does not guarantee/i);
+  assert.doesNotMatch(faq, /Kits are usable on checkout/i);
+  assert.doesNotMatch(fs.readFileSync(path.join(root, "content/faq.md"), "utf8"),
+    /Kits are usable on checkout/i);
+});
+
+test("organizer page does not claim automatic live scoring or guaranteed support", () => {
+  const organizers = fs.readFileSync(path.join(root, "public/organizers/index.html"), "utf8");
+  assert.match(organizers, /Response times are not guaranteed/i);
+  assert.match(organizers, /expired Halloween 2026 window/i);
+  assert.doesNotMatch(organizers, /leaderboard by hand.{0,40}automatic/i);
+  assert.doesNotMatch(organizers, /Replies are typically under a day/i);
+});
