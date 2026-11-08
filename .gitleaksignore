@@ -1,0 +1,13 @@
+# Exclude known false positives from dual-brand documentation
+# All REDACTED placeholder values are intentional documentation/test fixtures, not credentials
+# Source: PR #93 - Dual-brand architecture proposal docs
+
+# Rule-based exclusion for generic-api-key matches in dual-brand docs
+# These are synthetic placeholder values used in documentation only
+generic-api-key:docs/DUAL_BRAND_ARCHITECTURE_PROPOSAL.md
+generic-api-key:docs/DUAL_BRAND_CANONICAL_ONLY_TRIAGE.md
+generic-api-key:docs/DUAL_BRAND_CONFLICT_TRIAGE.md
+generic-api-key:docs/DUAL_BRAND_CRITICAL_FILE_RECONCILIATION.md
+generic-api-key:docs/DUAL_BRAND_FILE_INVENTORY.csv
+generic-api-key:docs/DUAL_BRAND_NONPLAYER_DECISION_REGISTER.md
+generic-api-key:docs/DUAL_BRAND_SOURCE_OWNERSHIP_MATRIX.md
