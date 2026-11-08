@@ -1,0 +1,42 @@
+# Exact static file members absent from dual-brand preview, from publisher artifact run 42429271354.
+# Production baseline SHA256: 254de65c0769a9f133f6c6257f33a03fc880c14176f57380eb5722b79dfdd393
+# Excludes release-manifest.json (publisher-generated, never restored by a site build).
+apple-touch-icon.png
+favicon.ico
+images/dr-z/dr-z-laboratory-banner.svg
+img/about-evergreen.webp
+img/community-evergreen.webp
+img/contact-evergreen.webp
+img/dial2-card.webp
+img/dial3-card.webp
+img/dial4-card.webp
+img/direction-evergreen.webp
+img/faq-evergreen.webp
+img/games-evergreen.webp
+img/halloween/finale-lantern-parade.webp
+img/halloween/stop-1-pumpkin.webp
+img/halloween/stop-2-oak.webp
+img/halloween/stop-3-graveyard.webp
+img/halloween/stop-4-spider.webp
+img/halloween/stop-5-owl.webp
+img/halloween/stop-6-parade.webp
+img/halloween/wisp-hiding-lantern.webp
+img/halloween/wisp-leading-parade.webp
+img/halloween/wisp-sad-intro.webp
+img/home-collection-evergreen.webp
+img/hunt-for-wisps-evergreen.webp
+img/lantern-player-evergreen.webp
+img/logo-halloween-lantern.webp
+img/organizers-evergreen.webp
+img/past-editions-evergreen.webp
+img/patterns-evergreen.webp
+img/press-evergreen.webp
+img/pricing-evergreen.webp
+img/pumpkin-roll-evergreen.webp
+img/snowflake-secret-evergreen.webp
+img/social-card-evergreen.webp
+img/social-card-halloween.webp
+img/tiers-evergreen.webp
+js/countdown.js
+video/drz-hero-poster.jpg
+video/drz-hero.mp4
