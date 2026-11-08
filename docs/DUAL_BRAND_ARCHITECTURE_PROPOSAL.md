@@ -83,3 +83,17 @@ This ADR is a review artifact. It does **not** approve a branch merge, site publ
 - **Implementation path:** Incremental review branches and private/preview builds first. Existing public routes, direct free Wisp demo, privacy controls and noindex/unpublished Computing preview stay unchanged until explicit artifact parity, source provenance and controlled release checks pass.
 - **Promotion evidence:** Exact commit and immutable source SHAs, required CI and security results, representative end-to-end tests, rollback proof, negative publication checks, and paid entitlement → fulfillment → customer inbox proof whenever checkout or delivery is affected. Missing evidence blocks deployment; never infer release readiness from a build-only pass.
 - **Scope of approval:** Authorize safely isolated implementation proposals and tests; this document does not authorize a production release, force merge, weaker branch protection, new paid infrastructure, credential rotation or trust-root changes.
+
+## Approved launch operations — November 7, 2026
+
+This section supersedes any earlier assumption that every release needs a fresh owner approval. **Low-risk** changes may deploy continuously **only after** the required security, exact-commit CI, preview/E2E, artifact-provenance and rollback gates are enforced and passing. High-risk changes (payment/entitlement, customer data, privacy, API/Worker, CSP, DNS, CI/release policy, credential/trust roots, player/offline contracts) require exact-release owner approval and protected-environment approval. An uncertain or mixed-risk change is high until reviewed. No existing production workflow is changed by this planning document.
+
+- **Homepage:** equal visual priority for Labs and Computing; preserve direct Wisp demo and Computing qualified inquiry, separate brand metadata and truthful statuses.
+- **Coverage:** launch features only where dataset coverage, service geography, operator capacity and capability have been validated; worldwide support is an ambition, not a blanket availability claim.
+- **Preview:** ephemeral isolated environments with production-equivalent configuration shape, synthetic data and separate credentials. Browser/E2E tests must include the currently observed `/games/` directory and live waitlist compatibility before proposed source cutover.
+- **Safety:** critical-health automated rollback requires an independently verified known-good target and approved controller; noncritical rollback is manual. Never bypass failed Gitleaks, branch protections or CodeRabbit requirements.
+- **Commercial and data:** no new paid offer before payment → entitlement → fulfillment → delivery/inbox → support/refund evidence. No expanded waitlist/inquiry collection before verified consent, validation, rate limiting, retention and deletion.
+- **Chief authority:** Chiefs may conduct bounded approved low-risk operational actions, but must never approve their own high-risk release, widen permissions, rotate credentials or alter trust roots.
+- **Runner trust:** isolated trusted self-hosted runners plus GitHub-hosted fallback for eligible workloads; untrusted PR code never executes with privileged production credentials.
+
+The normative cross-repository policy and required release-decision fields are specified in [publisher draft PR #252](https://github.com/ZQM-Computing/zqm-labs/pull/252) at `docs/PRODUCTION_LAUNCH_POLICY_20261107.md`. These approved **policy directions** do not authorize a site merge or production cutover.
