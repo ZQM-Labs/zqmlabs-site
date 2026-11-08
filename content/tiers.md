@@ -2,7 +2,7 @@
 title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
 seo_title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
 h1: "Host a scavenger hunt: kits for every group"
-description: "Current hosting options for Wisp’s Lost Lanterns, ZQM Labs’ Halloween 2026 scavenger hunt."
+description: "Published Wisp's Lost Lanterns hosting tiers. The Halloween 2026 event window has ended; confirm current access and fulfillment before purchasing."
 products:
   - name: "Family Night"
     price: 49
@@ -26,13 +26,15 @@ products:
 
 These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
+**Before using a checkout link:** The October 30–November 1, 2026 Halloween event window has ended. The existing links may still accept payment, but this does **not** establish that a new access window, entitlement, download or organizer support is available. Confirm the current offer and delivery arrangements with ZQM Labs before purchasing.
+
 ![Team celebrating at the finish of an outdoor quest at golden hour](/img/tiers-evergreen.webp)
 
 ## 🏠 Family Night — $49 flat
 
 For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Your kit is usable on checkout; kit contents and the play window are as listed here.
 
-**Halloween launch offer:** use code **FAMILY25** at checkout for $24 off — play for $25.
+**Previously advertised Halloween launch offer:** code **FAMILY25** provides $24 off the listed Family Night price when eligible. The discount is not a guarantee of currently usable kit access. Confirm availability and fulfillment before payment.
 
 ## 🏘️ Community — $199 flat
 
@@ -52,7 +54,7 @@ Ask the Lab about current availability, suitability, supervision, and pricing. T
 
 ## Before you buy
 
-- **Usable on checkout.** Your kit is usable as soon as checkout delivers it. Coordinating with the Lab is about announcing your event, not about unlocking the kit.
+- **Confirm current access and fulfillment.** Existing payment links remain published, but a completed checkout alone does not demonstrate that valid game access, downloadable materials or support will be delivered for a new event window.
 - **No refunds or reschedules.** All kit sales are final.
 - **Kit access follows the event window.** Kit access for the Halloween 2026 window expired with that window (October 30–November 1, 2026). Coordinate with the Lab on current availability before announcing an event.
 
