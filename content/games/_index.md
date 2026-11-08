@@ -9,7 +9,9 @@ The directory distinguishes what can be played now from planned experiences. A l
 
 ## Playable demos
 
-### [Hunt for Wisps](/games/hunt-for-wisps/)
+### Wisp's Lost Lanterns — Hunt for Wisps
+
+[Play the free browser demo](/games/hunt-for-wisps/play/?demo=1) · [Game details and availability](/games/hunt-for-wisps/)
 
 **Playable browser demo** · Halloween scavenger hunt
 Wisp — a small, wandering will-o'-the-wisp, and Dr. Z's escaped first creation — has lost her six glow lanterns, the lights that show her the way home. Without them she flickers like a dying candle. Teams become Lantern Keepers: follow the trail across six stops, solve the puzzle at each, and relight one lantern at a time. Every lantern relit makes Wisp brighter and braver — and when all six burn, the quest ends in the Lantern Parade, where Wisp lights your way home too.
