@@ -145,5 +145,11 @@ test("pricing retains checkout route and distinguishes past vs planned seasons",
   for (const url of links) {
     assert.ok(tiers.includes(url), "Existing checkout link changed or removed: " + url);
   }
+  assert.match(tiers, /checkout link remains active, but payment is not proof of usable game access/i,
+    "Expired seasonal offers must not claim immediate kit access");
+  assert.match(tiers, /Halloween 2026 event window/i);
+  assert.match(tiers, /FAMILY25/);
+  assert.match(tiers, /\$24 off/);
+  assert.doesNotMatch(tiers, /Your kit is usable on checkout/i);
   assert.doesNotMatch(pricing, /<form\b/i, "Pricing should not add a new payment or intake form");
 });
