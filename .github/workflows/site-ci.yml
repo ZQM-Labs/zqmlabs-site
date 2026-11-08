@@ -148,6 +148,7 @@ jobs:
         run: |
           node --test tests/inventory-public-artifact.test.cjs
           node --test tests/compare-public-inventories.test.cjs
+          node --test tests/review-public-release-delta.test.cjs
           node scripts/inventory-public-artifact.cjs public "${RUNNER_TEMP}/site-artifact-inventory.tsv"
       - name: Archive inventory evidence for exact-commit comparisons
         if: ${{ github.event_name == 'pull_request' }}
