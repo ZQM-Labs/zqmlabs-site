@@ -56,9 +56,31 @@ test("forbid credential and private artifacts even when listed for human review"
 });
 test("ordinary additional public content remains subject to human review",()=>{
  const old=base(), next=new Map(old);
+ next.delete("release-manifest.json");
  next.set("computing/index.html",same);
  const result=review(old,next,allow);
  assert.equal(result.artifact_boundary_pass,true);
  assert.equal(result.release_approved,false);
  assert.ok(result.human_review_required.some(x=>x.path==="computing/index.html"));
+});
+
+test("reject preview-supplied release manifest even when bytes match the publisher",()=>{
+ const old=base(), next=new Map(old);
+ const identical=review(old,next,allow);
+ assert.equal(identical.artifact_boundary_pass,false);
+ assert.ok(identical.blockers.some(x=>x.path==="release-manifest.json" &&
+   /publisher-only/.test(x.reason)));
+ next.set("release-manifest.json",different);
+ const modified=review(old,next,allow);
+ assert.equal(modified.artifact_boundary_pass,false);
+ assert.ok(modified.blockers.some(x=>x.path==="release-manifest.json" &&
+   /publisher-only/.test(x.reason)));
+});
+test("preview omission of publisher manifest is review-only, never release approval",()=>{
+ const old=base(), next=new Map(old);
+ next.delete("release-manifest.json");
+ const result=review(old,next,allow);
+ assert.equal(result.artifact_boundary_pass,true);
+ assert.equal(result.release_approved,false);
+ assert.ok(result.permitted_missing_for_review.includes("release-manifest.json"));
 });
