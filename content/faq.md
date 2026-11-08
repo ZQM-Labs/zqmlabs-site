@@ -38,9 +38,9 @@ faq:
   - q: "What does a kit include?"
     a: >-
       The current offer describes printable signs, team access, the
-      browser-based game, and organizer guidance. Kits are usable on checkout;
-      contents may change as the game evolves, so check the hosting tiers page
-      for the current listing.
+      browser-based game, and organizer guidance. The Halloween 2026 access window has ended. Payment does not guarantee
+      a new event window, usable game access or email delivery. Confirm
+      eligibility, contents and fulfillment with the Lab before purchasing.
   - q: "What devices do players need?"
     a: >-
       The current game is designed for browser-based play. Check the demo and
@@ -138,7 +138,7 @@ It was ZQM Labs’ Halloween 2026 scavenger hunt. Wisp the will-o'-the-wisp has 
 <details>
 <summary>What does a kit include?</summary>
 
-The current offer describes printable signs, team access, the browser-based game, and organizer guidance. Kits are usable on checkout; contents may change as the game evolves, so check the hosting tiers page for the current listing.
+The current offer describes printable signs, team access, the browser-based game, and organizer guidance. The Halloween 2026 access window has ended. Payment does not guarantee a new event window, usable game access or email delivery. Confirm eligibility, contents and fulfillment with the Lab before purchasing.
 
 </details>
 
