@@ -55,3 +55,15 @@ test("preview retains explicit no-refund terms while disclosing fulfillment unce
   assert.match(tierSource, /does \*\*not\*\* establish that a new access window/i);
   assert.doesNotMatch(pricingOutput, /The Lab replies within a day/i);
 });
+
+test("terms and contact do not promise expired access or guaranteed response time", () => {
+  const terms = fs.readFileSync(path.join(root, "public/terms/index.html"), "utf8");
+  const contact = fs.readFileSync(path.join(root, "public/contact/index.html"), "utf8");
+  assert.match(terms, /Payment does not establish immediate kit access or delivery/i);
+  assert.match(terms, /Halloween 2026 access window has ended/i);
+  assert.doesNotMatch(terms, /Kits are usable on checkout|play for \$25/i);
+  assert.match(terms, /No refunds or reschedules/i);
+  assert.match(contact, /Response times and event availability are not guaranteed/i);
+  assert.doesNotMatch(contact, /within one business day|under 1 business day|1.2 business days/i);
+  assert.match(contact, /Limited, best-effort email/i);
+});
