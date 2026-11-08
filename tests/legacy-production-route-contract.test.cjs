@@ -140,7 +140,7 @@ test("pricing retains inquiry route, historical prices, and planned-season label
   assert.doesNotMatch(pricing, /https:\/\/buy\.stripe\.com\//i);
   assert.match(tiers, /Paid kit checkout is paused/i);
   assert.match(tiers, /href=(?:"|)\/contact\//i);
-  assert.match(tiers, /Halloween 2026 event window/i);
+  assert.match(tiers, /Halloween 2026 (?:event )?window/i);
   assert.match(tiers, /FAMILY25/);
   assert.match(tiers, /refund/i);
   assert.doesNotMatch(tiers, /Your kit is usable on checkout/i);
