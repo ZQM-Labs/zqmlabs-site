@@ -26,6 +26,10 @@ jobs:
           extended: true
       - name: Verify pinned production static restore safety (offline fixtures)
         run: python3 -m unittest discover -s tests -p 'test_restore_production_static.py' -v
+      - name: Verify source inventory schema and historical comparison negative tests
+        run: |
+          python3 -m unittest discover -s tests -p 'test_source_inventory_schema.py' -v
+          node --test tests/review-public-release-delta.test.cjs
       - name: Sync canonical player into site bundle
         run: bash scripts/sync-player.sh 739a8490c0c1ce5df5f8e6c8b5ce57033ccc7749
       - name: Run player regression checks against synchronized canonical source
