@@ -4,31 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fff7ea">
+{{- $isComputing := hasPrefix .RelPermalink "/computing/" -}}
+{{- $brandName := cond $isComputing "ZQM Computing" "ZQM Labs" -}}
 {{- $seoTitle := .Params.seo_title -}}
 {{- if not $seoTitle -}}
   {{- if .IsHome -}}
     {{- $seoTitle = .Site.Title -}}
   {{- else -}}
-    {{- $seoTitle = printf "%s · ZQM Labs" .Title -}}
+    {{- $seoTitle = printf "%s · %s" .Title $brandName -}}
   {{- end -}}
 {{- end -}}
 <title>{{ $seoTitle }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:site_name" content="{{ $brandName }}">
 <meta property="og:title" content="{{ $seoTitle }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">
-<meta property="og:image:alt" content="ZQM Labs — Z's Quests & Mischief">
+{{ if not $isComputing }}<meta property="og:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">{{ end }}
+{{ if not $isComputing }}<meta property="og:image:alt" content="ZQM Labs — Z's Quests &amp; Mischief">{{ end }}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $seoTitle }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">
-<meta name="twitter:image:alt" content="ZQM Labs — Z's Quests & Mischief">
+{{ if not $isComputing }}<meta name="twitter:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">{{ end }}
+{{ if not $isComputing }}<meta name="twitter:image:alt" content="ZQM Labs — Z's Quests &amp; Mischief">{{ end }}
 <script type="application/ld+json">
+{{ if $isComputing }}
+{{ dict "@context" "https://schema.org" "@type" "Organization" "name" "ZQM Computing" "url" ("computing/" | absURL) "description" "Geospatial engineering services and reproducible open-source tools." "sameAs" (slice "https://github.com/ZQM-Computing") | jsonify | safeJS }}
+{{ else }}
 {{ dict "@context" "https://schema.org" "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.description "logo" ("img/logo-primary-evergreen.webp" | absURL) "sameAs" (slice "https://github.com/ZQM-Labs") | jsonify | safeJS }}
+{{ end }}
 </script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
@@ -99,7 +105,7 @@
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site">
-  <a class="brand" href="/" aria-label="ZQM Labs home">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>
+  {{ if $isComputing }}<a class="brand" href="/computing/" aria-label="ZQM Computing home">ZQM Computing<small>GEOSPATIAL ENGINEERING</small></a>{{ else }}<a class="brand" href="/" aria-label="ZQM Labs home">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>{{ end }}
   <nav class="mainnav" aria-label="Main navigation">
     {{- range .Site.Menus.main }}
     <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
