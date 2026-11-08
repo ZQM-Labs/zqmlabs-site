@@ -109,3 +109,11 @@ test("legacy player remains an information page, not a duplicated standalone app
       "Unreviewed legacy runtime or development file published: " + file);
   }
 });
+
+test("unapproved Daily Geo Mystery experiment is not public", () => {
+  for (const file of ["experiments/daily-geo-mystery/index.html",
+    "experiments/daily-geo-mystery/daily.mjs"]) {
+    assert.equal(fs.existsSync(path.join(root, file)), false,
+      "Research-only experiment included in public preview: " + file);
+  }
+});
