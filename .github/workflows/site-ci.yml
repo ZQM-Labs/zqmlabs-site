@@ -99,6 +99,8 @@ jobs:
         run: node --test tests/dual-brand-preview.test.cjs
       - name: Guard published Stripe offer identities and expired-access warnings
         run: node --test tests/stripe-offer-contract.test.cjs
+      - name: Restrict historical Gitleaks allowlist to exact fingerprints
+        run: node --test tests/gitleaks-exception-contract.test.cjs
       - name: Preserve 40 production sitemap routes and game directory ownership
         run: node --test tests/legacy-production-route-contract.test.cjs
       - name: Verify civic guide route and offer integrity
