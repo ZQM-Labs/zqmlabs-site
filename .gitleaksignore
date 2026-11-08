@@ -1,6 +1,8 @@
-# Exactly one reviewed historical generic-api-key false positive.
+# Exactly two reviewed commit-specific fingerprints for one immutable CSV row.
 # Source: the filename content/games/snowflake-secret.md adjacent to
 # two immutable 40-character Git blob SHA fields in a CSV source inventory.
+# Both fingerprinted commits contain the same two Git blob SHA-1 values.
 # This is not an API credential and is not a broad file or rule exemption.
 # Gitleaks full-history scanning and all other findings remain blocking.
 add4d3d75fcd9f3cf7b50f7f9b66d74cb52215c2:docs/DUAL_BRAND_FILE_INVENTORY.csv:generic-api-key:13
+344aad1a2b79344477ed2bc3c7cc4acb895d0b99:docs/DUAL_BRAND_FILE_INVENTORY.csv:generic-api-key:13
