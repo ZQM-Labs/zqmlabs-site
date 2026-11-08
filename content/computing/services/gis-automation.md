@@ -22,4 +22,4 @@ Define data contracts, projected coordinate systems, schema validation, provenan
 
 ## Request a scope review
 
-[Contact ZQM Computing](/contact/) with a non-sensitive description of your workflow, input formats, output needs and current bottlenecks. No automated submission processor or new checkout is enabled by this page.
+[Contact ZQM Computing](/computing/inquiry/) with a non-sensitive description of your workflow, input formats, output needs and current bottlenecks. No automated submission processor or new checkout is enabled by this page.
