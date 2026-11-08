@@ -31,3 +31,30 @@ jobs:
           else
             gitleaks git --redact .
           fi
+      - name: Verify a different synthetic credential remains detectable
+        shell: bash
+        run: |
+          set -euo pipefail
+          fixture="$(mktemp -d)"
+          trap 'rm -rf "$fixture"' EXIT
+          if [ -f .gitleaksignore ]; then cp .gitleaksignore "$fixture/.gitleaksignore"; fi
+          python3 - "$fixture" <<'PY'
+          import pathlib
+          import secrets
+          import string
+          import sys
+          alphabet = string.ascii_letters + string.digits
+          token = "github_pat_" + "".join(secrets.choice(alphabet) for _ in range(82))
+          pathlib.Path(sys.argv[1], "synthetic-credential.txt").write_text(
+              "github_token = " + token + "\n", encoding="utf-8"
+          )
+          PY
+          set +e
+          gitleaks dir --redact --exit-code 7 "$fixture" >/dev/null 2>&1
+          status="$?"
+          set -e
+          if [ "$status" -ne 7 ]; then
+            echo "::error::A newly generated credential fixture was not detected (status $status)." >&2
+            exit 1
+          fi
+          echo "Independent synthetic credential remains detectable."
