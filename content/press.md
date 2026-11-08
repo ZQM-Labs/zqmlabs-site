@@ -13,8 +13,8 @@ description: "Press and media resources for ZQM Labs and Z's Quests & Mischief: 
 | Based in | New Smyrna Beach, Volusia County, Florida |
 | What we do | Location-based scavenger-hunt games for communities, offices, and groups |
 | Flagship game | Wisp's Lost Lanterns |
-| Games live | 3 (Halloween, Autumn, Winter editions) |
-| Languages | 8 (English, Spanish, French, German, Portuguese, Chinese, Japanese, Arabic) |
+| Playable games | Wisp's Lost Lanterns browser demo; other named seasonal titles are in development |
+| Languages | Verify the languages available in the current Wisp demo; do not assume every proposed locale is supported |
 | Pricing | $49 / $199 / $349–$499 flat |
 | Contact | [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) |
 | Website | [zqmlabs.com](https://zqmlabs.com) |
@@ -28,12 +28,7 @@ no app installs, and a scare level you choose.
 
 ## The longer pitch
 
-A community books a kit. The organizer — an honorary "Lab Assistant" — prints
-seven pages and places six QR signs. Teams play on their own phones, in their
-own streets, anytime during the event window. Puzzles are built for ages 5 to
-75, with three hints at every stop so nobody gets stuck. A live leaderboard
-keeps offices competitive. Everything runs without an app, an account, or a
-download.
+An organizer can discuss a potential hosted Wisp event with the Lab. The published pilot format describes printable QR signs, six lantern stops and browser-based team play. The October 30–November 1, 2026 access window has ended; event dates, printable kit availability, scoring features, and delivery must be confirmed before any new event is advertised. The free browser demo does not require installing an app or buying a kit.
 
 ## Founder bio
 
@@ -54,12 +49,12 @@ relight the lantern. Four scare levels from family-friendly to competitive.
 
 ### The Great Pumpkin Roll
 
-The autumn festival edition. Farmer Joe's pumpkins have escaped and rolled
+A planned autumn festival edition, currently in development. Farmer Joe's pumpkins have escaped and rolled
 into town. Teams round them up across six stops with harvest-themed puzzles.
 
 ### The Snowflake Secret
 
-The winter edition. Find the hidden snowflake ornaments and uncover the
+A planned winter edition, currently in development. Find the hidden snowflake ornaments and uncover the
 secret of the winter festival across six stops.
 
 ## Brand assets
@@ -81,20 +76,20 @@ coverage with attribution.
   results are all public on GitHub.
 - **Four scare levels, one engine.** Family night and office competition run
   the same game at different voltages.
-- **Multi-language.** 7 languages with automatic detection.
+- **Language availability.** Check the current playable demo for supported languages; planned translations are not confirmed releases.
 
 ## Coverage angles
 
 1. **The one-hour event.** How a scavenger hunt replaced the planning committee.
 2. **Open-source events.** What happens when a game studio publishes its whole toolkit.
-3. **Seasonal economies.** One engine, four seasonal editions.
+3. **Seasonal game development.** One playable Wisp demo and proposed future editions.
 4. **Local tech.** A Volusia County GIS professional building games on public geospatial tooling.
 
 ## Contact
 
 **Email:** [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)
 
-**Response time:** under one business day
+**Response time:** best effort; not guaranteed
 
 **Availability:** remote and local (Volusia County, Florida)
 
