@@ -34,7 +34,7 @@ The Great Pumpkin Roll and The Snowflake Secret remain **in development**. They 
 
 ## 🏠 Family Night — $49 flat
 
-For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Your kit is usable on checkout; kit contents and the play window are as listed here.
+For one household playing together. [Get the Family Night kit](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. The checkout link remains active, but payment is not proof of usable game access after the Halloween 2026 event window. Confirm the current kit, delivery arrangements and access dates before purchasing.
 
 **Previously advertised Halloween launch offer:** code **FAMILY25** provides $24 off the listed Family Night price when eligible. The discount is not a guarantee of currently usable kit access. Confirm availability and fulfillment before payment.
 
