@@ -65,9 +65,9 @@ game access.
 
 ## Book
 
-Flat kits are usable on checkout — see the [tiers](/tiers/). **No refunds or reschedules:** all kit sales are final. **Kit access expires after the October 30–November 1, 2026 window.**
+The existing checkout links remain listed on the [tiers page](/tiers/), but the October 30–November 1, 2026 Halloween access window has ended. **Do not assume a payment now provides usable game access or immediate delivery.** Confirm the current event window and fulfillment with ZQM Labs before paying. **No refunds or reschedules:** the published terms state that kit sales are final.
 
-For multi-kit or quoted options, email **<zqmcomputing@gmail.com>** with your community or company name, your dates, and the tier you're eyeing. The Lab replies within a day.
+For multi-kit or quoted options, email **<zqmcomputing@gmail.com>** with your community or company name, your dates, and the tier you're eyeing. Confirm terms and availability with the Lab before buying.
 
 - [Full tier descriptions →](/tiers/)
 - [Organizer details →](/organizers/)
