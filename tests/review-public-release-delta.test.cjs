@@ -39,3 +39,26 @@ test("reject malformed or expanded restoration allowlists",()=>{
  assert.throws(()=>review(base(),base(),[...allow.slice(0,38),"../escape"]),/Invalid frozen/);
  assert.throws(()=>review(base(),base(),[...allow.slice(0,38),allow[0]]),/Invalid frozen/);
 });
+
+test("forbid credential and private artifacts even when listed for human review",()=>{
+ const old=base(), next=new Map(old);
+ for(const name of [".env.production","packs/answers.json","private/orders.json","assets/signing.key",
+                    "nested/.github/workflows/release.yml","secrets/cert.PEM"]){
+  next.set(name,same);
+ }
+ const result=review(old,next,allow);
+ assert.equal(result.artifact_boundary_pass,false);
+ assert.equal(result.release_approved,false);
+ for(const name of [".env.production","packs/answers.json","private/orders.json","assets/signing.key",
+                    "nested/.github/workflows/release.yml","secrets/cert.PEM"]){
+  assert.ok(result.blockers.some(x=>x.path===name && /forbidden/.test(x.reason)),name);
+ }
+});
+test("ordinary additional public content remains subject to human review",()=>{
+ const old=base(), next=new Map(old);
+ next.set("computing/index.html",same);
+ const result=review(old,next,allow);
+ assert.equal(result.artifact_boundary_pass,true);
+ assert.equal(result.release_approved,false);
+ assert.ok(result.human_review_required.some(x=>x.path==="computing/index.html"));
+});
