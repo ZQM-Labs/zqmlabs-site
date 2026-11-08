@@ -82,18 +82,16 @@ jobs:
           grep -q 'prefers-reduced-motion:reduce' "$LAYOUT"
           grep -q 'property="og:type"' "$LAYOUT"
           grep -q 'name="twitter:card"' "$LAYOUT"
-      - name: Build Hugo site
-        run: hugo --gc --minify
-      - name: Remove legacy player development files from public build
+      - name: Exclude legacy standalone player tree from canonical Hugo build
         run: |
           set -euo pipefail
-          # Preserve the legacy browser player; exclude repo-only docs and tooling.
-          test -f public/games/lantern-player/index.html
-          test -f public/games/lantern-player/app.js
-          rm -rf public/games/lantern-player/tools
-          rm -f public/games/lantern-player/README.md
-          test ! -e public/games/lantern-player/tools
-          test ! -e public/games/lantern-player/README.md
+          # Archived publisher release serves a Hugo information page at this
+          # route, NOT a second standalone app. Preserve the canonical Wisp demo.
+          test -f static/games/lantern-player/index.html
+          test -f static/games/lantern-player/app.js
+          mv static/games/lantern-player "${RUNNER_TEMP}/legacy-lantern-player-not-published"
+      - name: Build Hugo site
+        run: hugo --gc --minify
       - name: Verify dual-brand preview routes and commercial boundaries
         run: node --test tests/dual-brand-preview.test.cjs
       - name: Preserve 40 production sitemap routes and game directory ownership
