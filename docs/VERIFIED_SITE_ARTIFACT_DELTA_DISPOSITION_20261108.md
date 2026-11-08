@@ -38,3 +38,11 @@ The old publisher `/games/` metadata was more descriptive than the merged initia
 ## Release gate
 
 Require an independently reviewed, per-route exception/delta inventory; current exact-head Gitleaks and required checks; restored static byte provenance and approved redistribution; publisher-generated release manifest; correct immutable site/player pins; browser, accessibility and offline test evidence; checkout-to-fulfillment evidence where commercial offers are affected; and rehearsed rollback. **Do not deploy by merging this repository or by enabling Cloudflare Pages native Git production builds.**
+
+## Reconstructed candidate evidence — offline, 2026-11-08
+
+Using the archived 180-file production ZIP and the 149-file preview ZIP, a separate offline comparison added **only** the 39 paths in the frozen legacy-static restoration allowlist into a temporary in-memory candidate. Each was copied from the archived production bytes, not reconstructed or substituted. The resulting 188-file comparison yields **133 byte-identical, 46 changed, 9 added and one absent**. The sole absent file remains the publisher-owned `release-manifest.json`.
+
+This confirms restoration feasibility at the byte level, **not** whether these assets are licensed, referenced correctly by rebuilt pages, browser-compatible, or appropriate for a newly published release. The 46 content changes and nine additions still require explicit dispositions. No public artifact or website source tree was overwritten; the authorization to produce a publisher build was not granted.
+
+Evidence can be reproduced with the immutable ZIP hashes and existing preview-only restoration utility. It is important to compare a **fresh exact-head build** again after further source changes; the 188-file figure applies to the cited archived preview only.
