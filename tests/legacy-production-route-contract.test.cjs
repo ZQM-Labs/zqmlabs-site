@@ -97,10 +97,15 @@ test("production player and origin security contract stay byte-identical in prev
   }
 });
 
-test("legacy player source documentation and tools never enter public output", () => {
-  for (const file of ["games/lantern-player/README.md", "games/lantern-player/tools"]) {
-    assert.equal(fs.existsSync(path.join(root, file)), false, "Development file leaked to public output: " + file);
+test("legacy player remains an information page, not a duplicated standalone app", () => {
+  const directory = path.join(root, "games/lantern-player");
+  const page = fs.readFileSync(path.join(directory, "index.html"), "utf8");
+  assert.match(page, /Lantern Player.{0,90}browser demo/i);
+  assert.match(page, /software demo, not proof that a paid kit is orderable/i);
+  assert.match(page, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
+  assert.doesNotMatch(page, /<iframe[^>]+src=(?:"|)\/games\/lantern-player\//i);
+  for (const file of ["app.js", "sw.js", "README.md", "tools", "assets", "vendor"]) {
+    assert.equal(fs.existsSync(path.join(directory, file)), false,
+      "Unreviewed legacy runtime or development file published: " + file);
   }
-  assert.ok(fs.existsSync(path.join(root, "games/lantern-player/index.html")),
-    "Legacy game route must remain available");
 });
