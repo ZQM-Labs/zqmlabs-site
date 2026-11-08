@@ -67,6 +67,16 @@ test("all 40 existing public routes survive the dual-brand preview", () => {
     assert.ok(fs.existsSync(artifact(route)), "Missing existing route HTML: " + route);
   }
 });
+test("games directory preserves established searchable title, H1 and description", () => {
+  const html = fs.readFileSync(artifact("/games/"), "utf8");
+  assert.ok(html.includes("<title>Location Quest Games: Demos &amp; Editions — ZQM Labs</title>") ||
+            html.includes("<title>Location Quest Games: Demos & Editions — ZQM Labs</title>"),
+    "Games directory SEO title changed without review");
+  assert.match(html, /<h1>Location quest games you can play now<\/h1>/i);
+  assert.ok(html.includes('content="Browse playable demos, tools, and games in development."'),
+    "Games directory meta description changed without review");
+});
+
 test("preview retains the publisher-rendered /games/ discovery page", () => {
   const html = fs.readFileSync(artifact("/games/"), "utf8");
   assert.match(html, /The directory distinguishes what can be played now from planned experiences/i);
