@@ -126,3 +126,23 @@ test("404 recovery page avoids unreviewed prices or advertising unreleased games
   assert.match(page, /snowflake.secret.{0,100}in development/i);
   assert.match(page, /href=(?:"|)\/pricing\//i);
 });
+
+test("pricing retains checkout route and distinguishes past vs planned seasons", () => {
+  const pricing = fs.readFileSync(artifact("/pricing/"), "utf8");
+  assert.match(pricing, /Great Pumpkin Roll.{0,150}in development/i);
+  assert.match(pricing, /Snowflake Secret.{0,150}in development/i);
+  assert.match(pricing, /Halloween 2026.{0,150}past edition/i);
+  assert.doesNotMatch(pricing, /Halloween, Autumn Festival, and Winter editions are.{0,50}live now/i);
+  assert.match(pricing, /href=(?:"|)\/tiers\//i);
+  const tiers = fs.readFileSync(artifact("/tiers/"), "utf8");
+  const links = [
+    "https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03",
+    "https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00",
+    "https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01",
+    "https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02"
+  ];
+  for (const url of links) {
+    assert.ok(tiers.includes(url), "Existing checkout link changed or removed: " + url);
+  }
+  assert.doesNotMatch(pricing, /<form\b/i, "Pricing should not add a new payment or intake form");
+});
