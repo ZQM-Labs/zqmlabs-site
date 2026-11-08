@@ -8,15 +8,15 @@ ZQM Computing provides geospatial engineering services and develops reproducible
 
 ## Services
 
-### Preliminary GIS and environmental screening
+### [Preliminary GIS and environmental screening](/computing/services/environmental-screening/)
 
 Early-stage mapping and spatial-data review for site and parcel questions. Results are preliminary and are **not** a certified survey, engineering opinion, regulatory determination, or substitute for field verification.
 
-### GIS workflow automation
+### [GIS workflow automation](/computing/services/gis-automation/)
 
 Scoping, building, testing, and documenting repeatable geospatial data processing workflows, with explicit source, quality, and handoff requirements.
 
-### Web GIS and geospatial APIs
+### [Web GIS and geospatial APIs](/computing/services/web-gis/)
 
 Scoping and engineering geospatial web interfaces, PostGIS integrations, and application interfaces with deployment, security, and maintainability requirements.
 
