@@ -79,3 +79,28 @@ test("brand preview routes exist without changing the retained game directory", 
     assert.ok(fs.existsSync(artifact(route)), "Missing preview route: " + route);
   }
 });
+
+test("production player and origin security contract stay byte-identical in preview", () => {
+  const crypto = require("node:crypto");
+  const hashes = new Map([
+    ["_headers", "084539e5eedd3700a2ce28d972110c723c775b469668a532d22e51a74b0d754f"],
+    ["_redirects", "a86219edab4a9afd594efa36ea59a06dc15a51ab9f19db10ec3178fa05695dd2"],
+    ["games/hunt-for-wisps/play/PLAYER_SOURCE_SHA", "25d80eb3e9d75e832564ca75d13343d7e8a6ff6dac6cc22cedc9107343649fec"],
+    ["games/hunt-for-wisps/play/app.js", "c90925ae9c43da99a2445ef0b45513c1970641d65843c24a5f7e1c1d3d68df45"],
+    ["games/hunt-for-wisps/play/sw.js", "8acc600009cfc4e7bdc0b3c7765efb1a0497aedaa93f21561f1bee37481f54b9"]
+  ]);
+  for (const [file, expected] of hashes) {
+    const artifact = path.join(root, file);
+    assert.ok(fs.existsSync(artifact), "Missing protected deployed file: " + file);
+    const actual = crypto.createHash("sha256").update(fs.readFileSync(artifact)).digest("hex");
+    assert.equal(actual, expected, "Unapproved production contract change: " + file);
+  }
+});
+
+test("legacy player source documentation and tools never enter public output", () => {
+  for (const file of ["games/lantern-player/README.md", "games/lantern-player/tools"]) {
+    assert.equal(fs.existsSync(path.join(root, file)), false, "Development file leaked to public output: " + file);
+  }
+  assert.ok(fs.existsSync(path.join(root, "games/lantern-player/index.html")),
+    "Legacy game route must remain available");
+});
