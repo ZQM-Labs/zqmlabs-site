@@ -4,8 +4,6 @@ seo_title: "Preliminary GIS Screening | ZQM Computing"
 description: "Preliminary desktop spatial screening for parcels, sites, and project questions, with documented data sources, uncertainty, and next steps."
 ---
 
-# Preliminary environmental and parcel GIS screening
-
 ## Who this is for
 
 Property buyers, planners, environmental teams, and project managers seeking an **early-stage desktop review** of available geographic data.
