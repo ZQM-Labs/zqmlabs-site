@@ -82,6 +82,8 @@ jobs:
           grep -q 'name="twitter:card"' "$LAYOUT"
       - name: Build Hugo site
         run: hugo --gc --minify
+      - name: Verify dual-brand preview routes and commercial boundaries
+        run: node --test tests/dual-brand-preview.test.cjs
       - name: Verify civic guide route and offer integrity
         run: node scripts/check-civic-guides.cjs
       - name: Reject paid packs in public source and output
