@@ -4,31 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fff7ea">
+{{- $isComputing := hasPrefix .RelPermalink "/computing/" -}}
+{{- $brandName := cond .IsHome "ZQM Computing + ZQM Labs" (cond $isComputing "ZQM Computing" "ZQM Labs") -}}
 {{- $seoTitle := .Params.seo_title -}}
 {{- if not $seoTitle -}}
   {{- if .IsHome -}}
     {{- $seoTitle = .Site.Title -}}
   {{- else -}}
-    {{- $seoTitle = printf "%s · ZQM Labs" .Title -}}
+    {{- $seoTitle = printf "%s · %s" .Title $brandName -}}
   {{- end -}}
 {{- end -}}
 <title>{{ $seoTitle }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:site_name" content="{{ $brandName }}">
 <meta property="og:title" content="{{ $seoTitle }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">
-<meta property="og:image:alt" content="ZQM Labs — Z's Quests & Mischief">
-<meta name="twitter:card" content="summary_large_image">
+{{ if and (not $isComputing) (not .IsHome) }}<meta property="og:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">{{ end }}
+{{ if and (not $isComputing) (not .IsHome) }}<meta property="og:image:alt" content="ZQM Labs — Z's Quests &amp; Mischief">{{ end }}
+<meta name="twitter:card" content="{{ if or $isComputing .IsHome }}summary{{ else }}summary_large_image{{ end }}">
 <meta name="twitter:title" content="{{ $seoTitle }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">
-<meta name="twitter:image:alt" content="ZQM Labs — Z's Quests & Mischief">
+{{ if and (not $isComputing) (not .IsHome) }}<meta name="twitter:image" content="{{ "img/logo-primary-evergreen.webp" | absURL }}">{{ end }}
+{{ if and (not $isComputing) (not .IsHome) }}<meta name="twitter:image:alt" content="ZQM Labs — Z's Quests &amp; Mischief">{{ end }}
 <script type="application/ld+json">
-{{ dict "@context" "https://schema.org" "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.description "logo" ("img/logo-primary-evergreen.webp" | absURL) "sameAs" (slice "https://github.com/ZQM-Labs") | jsonify | safeJS }}
+{{ if .IsHome }}
+{{ dict "@context" "https://schema.org" "@graph" (slice (dict "@type" "Organization" "name" "ZQM Computing" "url" ("computing/" | absURL) "sameAs" (slice "https://github.com/ZQM-Computing")) (dict "@type" "Organization" "name" "ZQM Labs" "url" ("labs/" | absURL) "sameAs" (slice "https://github.com/ZQM-Labs"))) | jsonify | safeJS }}
+{{ else if $isComputing }}
+{{ dict "@context" "https://schema.org" "@type" "Organization" "name" "ZQM Computing" "url" ("computing/" | absURL) "description" "Geospatial engineering services and reproducible open-source tools." "sameAs" (slice "https://github.com/ZQM-Computing") | jsonify | safeJS }}
+{{ else }}
+{{ dict "@context" "https://schema.org" "@type" "Organization" "name" "ZQM Labs" "url" ("labs/" | absURL) "description" .Site.Params.description "logo" ("img/logo-primary-evergreen.webp" | absURL) "sameAs" (slice "https://github.com/ZQM-Labs") | jsonify | safeJS }}
+{{ end }}
 </script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
@@ -99,7 +107,7 @@
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site">
-  <a class="brand" href="/" aria-label="ZQM Labs home">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>
+  {{ if .IsHome }}<a class="brand" href="/" aria-label="ZQM dual-brand home">ZQM<small>COMPUTING &amp; LABS</small></a>{{ else if $isComputing }}<a class="brand" href="/computing/" aria-label="ZQM Computing home">ZQM Computing<small>GEOSPATIAL ENGINEERING</small></a>{{ else }}<a class="brand" href="/" aria-label="ZQM Labs home">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>{{ end }}
   <nav class="mainnav" aria-label="Main navigation">
     {{- range .Site.Menus.main }}
     <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
@@ -108,14 +116,14 @@
 </header>
 <main id="main-content" tabindex="-1">{{ block "main" . }}{{ end }}</main>
 <footer class="site">
-  <p><span class="mantra">{{ .Site.Params.mantra }}</span> · {{ .Site.Params.tagline }}</p>
+  {{ if .IsHome }}<p><span class="mantra">ZQM Computing + ZQM Labs</span> · Separate expertise, shared website.</p>{{ else if $isComputing }}<p><span class="mantra">Geospatial engineering</span> · Reproducible GIS services and tools from ZQM Computing.</p>{{ else }}<p><span class="mantra">{{ .Site.Params.mantra }}</span> · {{ .Site.Params.tagline }}</p>{{ end }}
   <nav aria-label="Footer navigation">
     {{- range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
   </nav>
   <p class="fineprint">Built in New Smyrna Beach, Volusia County, Florida ·
   <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> ·
-  Party rentals (tables, chairs, grills, cornhole) coming soon. 🎪</p>
-  <p class="fineprint">Open by design — everything we run is public:
+  {{ if not $isComputing }}Party rentals (tables, chairs, grills, cornhole) coming soon. 🎪{{ else }}Project inquiries are scoped individually; no new form or checkout is active.{{ end }}</p>
+  <p class="fineprint">{{ if $isComputing }}Open-source resources and references:{{ else }}Open by design — see the public project resources:{{ end }}
   <a href="https://github.com/ZQM-Labs">ZQM Labs</a> ·
   <a href="https://github.com/ZQM-Labs/quest-packs">free sample pack</a> ·
   <a href="https://github.com/ZQM-Labs/organizer-toolkit">organizer toolkit</a> ·

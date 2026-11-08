@@ -8,7 +8,7 @@ weight: 2
 
 ## Play the browser demo
 
-[**Launch Lantern Player**](/games/lantern-player/)
+[**Play the free Wisp browser demo**](/games/hunt-for-wisps/play/?demo=1)
 
 The demo runs in your browser and does not require a paid kit or access code. Light lanterns, solve puzzles, and explore the story.
 

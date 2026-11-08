@@ -24,8 +24,10 @@ jobs:
         with:
           hugo-version: "0.165.0"
           extended: true
+      - name: Verify pinned production static restore safety (offline fixtures)
+        run: python3 -m unittest discover -s tests -p 'test_restore_production_static.py' -v
       - name: Sync canonical player into site bundle
-        run: bash scripts/sync-player.sh 81063812c045189d9108a0e4f4a00a2220b28087
+        run: bash scripts/sync-player.sh 739a8490c0c1ce5df5f8e6c8b5ce57033ccc7749
       - name: Run player regression checks against synchronized canonical source
         run: node scripts/test-player-source.cjs
       - name: Syntax-check player scripts
@@ -80,8 +82,25 @@ jobs:
           grep -q 'prefers-reduced-motion:reduce' "$LAYOUT"
           grep -q 'property="og:type"' "$LAYOUT"
           grep -q 'name="twitter:card"' "$LAYOUT"
+      - name: Exclude legacy standalone player tree from canonical Hugo build
+        run: |
+          set -euo pipefail
+          # Archived publisher release serves a Hugo information page at this
+          # route, NOT a second standalone app. Preserve the canonical Wisp demo.
+          test -f static/games/lantern-player/index.html
+          test -f static/games/lantern-player/app.js
+          mv static/games/lantern-player "${RUNNER_TEMP}/legacy-lantern-player-not-published"
+          # Research-only experiment has not received publication authorization.
+          test -f static/experiments/daily-geo-mystery/index.html
+          mv static/experiments/daily-geo-mystery "${RUNNER_TEMP}/daily-geo-mystery-not-published"
       - name: Build Hugo site
         run: hugo --gc --minify
+      - name: Verify dual-brand preview routes and commercial boundaries
+        run: node --test tests/dual-brand-preview.test.cjs
+      - name: Guard published Stripe offer identities and expired-access warnings
+        run: node --test tests/stripe-offer-contract.test.cjs
+      - name: Preserve 40 production sitemap routes and game directory ownership
+        run: node --test tests/legacy-production-route-contract.test.cjs
       - name: Verify civic guide route and offer integrity
         run: node scripts/check-civic-guides.cjs
       - name: Reject paid packs in public source and output
@@ -93,6 +112,10 @@ jobs:
               exit 1
             fi
           done
+      - name: Reject private and non-runtime files in public build
+        run: |
+          node scripts/check-public-artifact-boundary.mjs --self-test
+          node scripts/check-public-artifact-boundary.mjs public
       - name: Verify public JSON answer-key boundary
         run: |
           node scripts/check-public-answer-json.cjs --self-test
@@ -118,3 +141,25 @@ jobs:
             echo "Internal Volusia field-guide route must not be published." >&2
             exit 1
           fi
+
+      - name: Produce deterministic unpublished artifact inventory
+        run: |
+          node --test tests/inventory-public-artifact.test.cjs
+          node scripts/inventory-public-artifact.cjs public "${RUNNER_TEMP}/site-artifact-inventory.tsv"
+      - name: Archive inventory evidence for exact-commit comparisons
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.number == 95 }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: zqm-preview-inventory-${{ github.sha }}
+          path: ${{ runner.temp }}/site-artifact-inventory.tsv
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Archive checked preview HTML and assets for offline parity review
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.number == 95 }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: zqm-dual-brand-reviewed-public-${{ github.sha }}
+          path: public/
+          if-no-files-found: error
+          retention-days: 1
