@@ -52,6 +52,6 @@ test("existing $24 Family Night promotion remains identified but cannot imply ac
 test("preview retains explicit no-refund terms while disclosing fulfillment uncertainty", () => {
   assert.match(pricingOutput, /No refunds or reschedules/i);
   assert.match(tierOutput, /No refunds or reschedules/i);
-  assert.match(tierOutput, /does not establish that a new access window/i);
+  assert.match(tierSource, /does \*\*not\*\* establish that a new access window/i);
   assert.doesNotMatch(pricingOutput, /The Lab replies within a day/i);
 });
