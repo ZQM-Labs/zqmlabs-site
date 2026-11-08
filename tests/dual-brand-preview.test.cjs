@@ -25,7 +25,7 @@ test("Computing landing page is inquiry-only with non-certified screening limita
   assert.match(computing, /GIS workflow automation/i);
   assert.match(computing, /Web GIS/i);
   assert.doesNotMatch(computing, /<form\b|checkout\.stripe\.com|buy\.stripe\.com/i);
-  assert.ok(hasLink(computing, "/contact/"));
+  assert.ok(hasLink(computing, "/computing/inquiry/"));
   assert.match(computing, /"name":"ZQM Computing"/);
   assert.match(computing, /"url":"https:\/\/zqmlabs\.com\/computing\/"/);
 });
@@ -46,8 +46,20 @@ test("all three Computing services exist without activating forms or checkout", 
     assert.ok(page.includes("https://zqmlabs.com" + route), "Missing canonical on " + route);
     assert.match(page, /"name":"ZQM Computing"/);
     assert.doesNotMatch(page, /<form\b|checkout\.stripe\.com|buy\.stripe\.com/i);
-    assert.ok(hasLink(page, "/contact/"), "Missing scoped inquiry route on " + route);
+    assert.ok(hasLink(page, "/computing/inquiry/"), "Missing scoped inquiry route on " + route);
   }
+});
+
+test("Computing inquiries remain brand-specific, mailto-only and noncommittal", () => {
+  const file = path.join(root, "public/computing/inquiry/index.html");
+  assert.ok(fs.existsSync(file), "Computing inquiry route missing");
+  const page = fs.readFileSync(file, "utf8");
+  assert.match(page, /ZQM Computing/);
+  assert.match(page, /mailto:zqmcomputing@gmail.com/);
+  assert.match(page, /not.*(?:booking|order confirmation)/i);
+  assert.doesNotMatch(page, /<form\\b|checkout\\.stripe\\.com|buy\\.stripe\\.com/i);
+  assert.doesNotMatch(page, /within one business day|under 1 business day/i);
+  assert.ok(hasLink(page, "/labs/"));
 });
 
 test("preview build includes no new paid game output", () => {
