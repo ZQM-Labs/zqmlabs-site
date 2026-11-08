@@ -33,6 +33,9 @@ function review(baseline, candidate, allowlist) {
   const changes = compare(baseline, candidate);
   const allowedMissing = new Set([...allowlist, MANIFEST]);
   const blockers = [];
+  if (candidate.has(MANIFEST)) {
+    blockers.push({path:MANIFEST, reason:"publisher-only manifest must not be supplied by site preview"});
+  }
   for (const name of PROTECTED) {
     if (!baseline.has(name)) blockers.push({path:name, reason:"protected baseline missing"});
     if (!candidate.has(name)) blockers.push({path:name, reason:"protected candidate missing"});
