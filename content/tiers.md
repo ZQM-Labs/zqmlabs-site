@@ -86,4 +86,4 @@ For a different kind of game or a general introduction to the studio, visit the 
 
 ## Contact
 
-To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Coordinate with the Lab before announcing your event. Your kit is usable on checkout — coordination is about the announcement, not about unlocking the kit.
+To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Coordinate with the Lab before announcing your event. The previously advertised Halloween access window has ended. Confirm a currently supported event window, purchase terms and fulfillment arrangements with the Lab before paying or advertising an event.
