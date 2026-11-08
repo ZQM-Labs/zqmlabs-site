@@ -66,13 +66,13 @@ revealed one at a time. Hints never block a finish.
 
 - Build a map, write a puzzle, or design anything
 - Run a planning committee (that's the point of the mantra)
-- Manage a leaderboard by hand — it's automatic
-- Chase players for scores — teams submit their own
+- Run a live leaderboard unless the available event package explicitly includes a tested scoring feature
+- Collect or publish player scores without a verified, consent-aware event workflow
 - Staff the route — the game is self-guided and staggered by design
 
 ## Support window
 
-Your Lab Assistant status includes limited, best-effort remote email support from **booking through the end of your event window**. Replies are typically under a day outside the Halloween window, but may be delayed on Halloween itself, when the Lab team are out at events themselves.
+An agreed event package may include limited, best-effort remote email support during the confirmed event window. The expired Halloween 2026 window does not create a continuing support entitlement. Response times are not guaranteed; confirm coverage and contact arrangements with the Lab before purchasing.
 
 ## Next steps
 
