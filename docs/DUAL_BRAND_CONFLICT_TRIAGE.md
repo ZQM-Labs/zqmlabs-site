@@ -62,4 +62,3 @@ The full-history scanner runs on every PR head; therefore a failing run cannot i
 | `464e8db98bc6e3acf4dcf4f6154b0e4d5a3cda8c` | **Failed, 1 finding** | `42431311789` |
 
 The first observed failure follows additions to the branch's source comparison and conflict documents; that is a **triage hypothesis**, not a finding attribution. Compare the commits in this bounded interval and obtain **redacted fingerprint/rule/path metadata** under restricted access. Avoid copying potential secrets into the PR or changing the repository-wide scanner settings. Do not remove source inventory evidence solely to force a green check until the detection mechanism has been established.
-
