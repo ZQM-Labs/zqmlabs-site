@@ -7,9 +7,9 @@ import path from "node:path";
 
 const forbiddenDirectory = new Set([
   ".git", ".github", ".git.broken", "private", "secrets", "backend", "node_modules",
-  "__pycache__", "packs"
+  "__pycache__", "packs", ".ssh", ".aws", ".terraform"
 ]);
-const forbiddenFilename = /^(?:\.env(?:\..*)?|\.gitignore|\.gitattributes|id_(?:rsa|ed25519)|.*\.(?:pem|key|p12|pfx))$/i;
+const forbiddenFilename = /^(?:\.env(?:\..*)?|\.gitignore|\.gitattributes|\.npmrc|\.netrc|\.pypirc|\.dockerconfigjson|credentials|id_(?:rsa|ed25519)|.*\.(?:pem|key|p12|pfx|sqlite|sqlite3|db|bak))$/i;
 const forbiddenPlayerFile = /^(?:readme\.md|package(?:-lock)?\.json|pyproject\.toml|requirements\.txt)$/i;
 const playerPrefix = "games/hunt-for-wisps/play/";
 
@@ -69,7 +69,12 @@ function selfTest() {
       ["private/customer.csv", "forbidden directory"],
       ["packs/paid-kit.pdf", "forbidden directory"],
       ["games/hunt-for-wisps/play/README.md", "non-runtime player file"],
-      ["games/hunt-for-wisps/play/.env", "forbidden filename"]
+      ["games/hunt-for-wisps/play/.env", "forbidden filename"],
+      [".npmrc", "forbidden filename"],
+      [".netrc", "forbidden filename"],
+      [".ssh/id_rsa", "forbidden directory"],
+      [".aws/credentials", "forbidden directory"],
+      ["data/customers.sqlite", "forbidden filename"]
     ];
     for (const [name, reason] of probes) {
       add(name);
