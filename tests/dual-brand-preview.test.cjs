@@ -48,6 +48,12 @@ test("Computing landing page is inquiry-only with non-certified screening limita
   assert.match(computing, /"url":"https:\/\/zqmlabs\.com\/computing\/"/);
 });
 
+test("games directory offers a direct Wisp demo alongside game details", () => {
+  const games = fs.readFileSync(path.join(root, "public/games/index.html"), "utf8");
+  assert.ok(hasLink(games, "/games/hunt-for-wisps/play/?demo=1"), "Games directory must link directly to the playable demo");
+  assert.ok(hasLink(games, "/games/hunt-for-wisps/"), "Games directory must retain game details route");
+});
+
 test("Labs landing links directly to demo without claiming a booked event", () => {
   assert.ok(hasLink(labs, "/games/hunt-for-wisps/play/?demo=1"));
   assert.match(labs, /does not confirm host availability/i);
