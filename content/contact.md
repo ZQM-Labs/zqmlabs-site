@@ -7,8 +7,7 @@ description: "Get in touch with ZQM Labs — booking a kit, hosting a fundraiser
 
 **[zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)**
 
-The Lab replies within one business day. Every email is answered by a human —
-specifically, the one in the lab coat.
+Messages are reviewed as capacity permits. Response times and event availability are not guaranteed. Please include your intended dates and requirements so the Lab can assess scope.
 
 ## What to include
 
@@ -46,10 +45,10 @@ and the stop number if you have them.
 
 | Request type | Typical reply |
 | --- | --- |
-| New booking | Under 1 business day |
-| Active event support | Limited, best-effort email; may be delayed on Halloween |
-| Press | Under 1 business day |
-| Partnerships | 1–2 business days |
+| New booking inquiry | Best effort; timing and availability confirmed individually |
+| Active event support | Limited, best-effort email under the agreed event terms |
+| Press | Best effort; include your deadline |
+| Partnerships | Best effort; include your proposed scope and timeframe |
 
 ## Elsewhere
 
