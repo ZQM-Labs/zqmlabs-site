@@ -24,7 +24,7 @@ Hosting kits are **one-time flat fees for your event window**:
 
 Full descriptions are on the [hosting tiers](/tiers/) and [pricing](/pricing/) pages. If these terms and those pages ever disagree, the prices on the pricing page are the current ones — and the Lab will confirm the price for your event before you promote it.
 
-**Kits are usable on checkout.** Paid kits are delivered by email.
+**Before purchasing:** The published checkout links may accept payment, but they do not by themselves establish that a new event window, game entitlement, download, or email delivery is available. The Halloween 2026 access window has ended. Confirm current access and fulfillment arrangements with the Lab before paying.
 
 **No refunds or reschedules.** Kit sales are final: no refunds, and an event window cannot be rescheduled once bought.
 
