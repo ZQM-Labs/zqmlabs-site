@@ -70,4 +70,3 @@ A redacted finding from **publisher** draft #252 has now been retrieved. It is a
 The **Labs Site** `docs/DUAL_BRAND_FILE_INVENTORY.csv` has the **same filename and adjacent SHA fields on line 13**. This is a concrete candidate explanation for its single generic-secret scan failure, but **the Labs scan did not publish its redacted fingerprint or rule metadata**; the specific finding is therefore still **unattributed**. Do not infer a separate compromised credential or suppress the scan based solely on the parallel CSV pattern.
 
 Because both workflows scan full commit histories, editing the current CSV does not clear a historical finding. A designated security reviewer must verify each exact rule/path/commit/fingerprint and authorize any surgical one-fingerprint disposition. Never disable scanning, wildcard-allow all CSVs, or rewrite history as an expedient workaround. No change in publishing authorization follows from a false-positive analysis.
-
