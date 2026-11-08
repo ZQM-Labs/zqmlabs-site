@@ -22,6 +22,6 @@ Define the location and decision question, review source availability and spatia
 
 ## Request a scope review
 
-[Contact ZQM Computing through the existing contact page](/contact/). Include the general geography, project objective, known parcels or boundaries, desired format, and deadline. Do not submit sensitive documents or credentials through an unreviewed channel.
+[Contact ZQM Computing through the existing contact page](/computing/inquiry/). Include the general geography, project objective, known parcels or boundaries, desired format, and deadline. Do not submit sensitive documents or credentials through an unreviewed channel.
 
 Availability, price and final deliverables require a separate scope agreement.
