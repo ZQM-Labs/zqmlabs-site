@@ -107,6 +107,14 @@ test("production player and origin security contract stay byte-identical in prev
   }
 });
 
+test("games directory accurately labels the legacy Lantern Player information page", () => {
+  const page = fs.readFileSync(artifact("/games/"), "utf8");
+  assert.match(page, /Demo information page[\s\S]{0,100}Lantern Player/i);
+  assert.match(page, /not a separate standalone game release/i);
+  assert.doesNotMatch(page, /A standalone lantern-lighting engine/i);
+  assert.match(page, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
+});
+
 test("legacy player remains an information page, not a duplicated standalone app", () => {
   const directory = path.join(root, "games/lantern-player");
   const page = fs.readFileSync(path.join(directory, "index.html"), "utf8");
