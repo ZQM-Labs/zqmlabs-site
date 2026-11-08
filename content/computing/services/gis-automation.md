@@ -4,8 +4,6 @@ seo_title: "GIS Automation Services | ZQM Computing"
 description: "Design, test and document reproducible GIS workflows, ETL pipelines and quality checks with explicit source and operational requirements."
 ---
 
-# GIS workflow automation and data engineering
-
 ## Common project needs
 
 Repeatable spatial ETL, geospatial data normalization, scheduled quality checks, documented scripts, database transformations, or replacing manual GIS processing steps.
