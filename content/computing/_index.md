@@ -22,7 +22,7 @@ Scoping and engineering geospatial web interfaces, PostGIS integrations, and app
 
 ## Discuss a project
 
-Use the existing [contact page](/contact/) to describe your project and request a scope review. No new form, automated intake, payment, or customer-data processing is enabled by this preview.
+Use the existing [contact page](/computing/inquiry/) to describe your project and request a scope review. No new form, automated intake, payment, or customer-data processing is enabled by this preview.
 
 [Explore ZQM Computing's open-source repositories](https://github.com/ZQM-Computing).
 
