@@ -1,22 +1,22 @@
 ---
-title: "Lantern Player — browser demo"
-description: "Try the Lantern Player browser demo. A standalone lantern-lighting engine with story, puzzles, and atmospheric effects."
+title: "Lantern Player — browser demo information"
+description: "Learn about the Lantern Player engine and launch the free Wisp browser demo. This page is information, not a separate playable release."
 layout: "game"
-status: "playable-demo"
+status: "information"
 weight: 2
 ---
 
-## Play the browser demo
+## Play the Wisp browser demo
 
 [**Play the free Wisp browser demo**](/games/hunt-for-wisps/play/?demo=1)
 
-The demo runs in your browser and does not require a paid kit or access code. Light lanterns, solve puzzles, and explore the story.
+This information page links to the playable Wisp's Lost Lanterns browser demo. The demo requires no paid kit or access code; this URL does not host a separate game runtime.
 
-This is a software demo, not proof that a paid kit is orderable. The published demo content and available features may differ from a field-tested, organizer-configured kit.
+The free Wisp demo is software, not proof that a paid kit is orderable, an event is available, or a separate Lantern Player edition has been released.
 
 ## What to expect
 
-- A standalone browser-based lantern-lighting engine; no app installation required.
+- A link to the free Wisp browser demo; no app installation required.
 - One phone per team.
 - Story-driven puzzles and atmospheric effects.
 - Built-in demo mode that does not require the production game backend.
@@ -25,6 +25,6 @@ This is a software demo, not proof that a paid kit is orderable. The published d
 
 ## About Lantern Player
 
-Lantern Player is the standalone engine behind the lantern-lighting experiences. It is open source on GitHub:
+Lantern Player is the underlying open-source player engine used for lantern-lighting experiences. Source code and a public gameplay demo are distinct from paid hosting availability:
 
 - [Lantern Player source](https://github.com/ZQM-Labs/quest-player) — fork, extend, and run your own.
