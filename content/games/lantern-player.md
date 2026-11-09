@@ -12,7 +12,7 @@ weight: 2
 
 This information page links to the playable Wisp's Lost Lanterns browser demo. The demo requires no paid kit or access code; this URL does not host a separate game runtime.
 
-The free Wisp demo is software, not proof that a paid kit is orderable, an event is available, or a separate Lantern Player edition has been released.
+This is a software demo, not proof that a paid kit is orderable. The free Wisp demo also does not establish that an event is available or a separate Lantern Player edition has been released.
 
 ## What to expect
 
