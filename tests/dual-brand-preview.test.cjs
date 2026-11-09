@@ -91,3 +91,14 @@ test("preview build includes no new paid game output", () => {
     assert.equal(fs.existsSync(path.join(root, target)), false, "Unreviewed artifact: " + target);
   }
 });
+
+test("shared footer remains brand-specific and hosted-games-only", () => {
+  assert.match(computing, /ZQM Computing engineering resources/i);
+  assert.match(computing, /GIS service inquiries are scoped individually/i);
+  assert.doesNotMatch(computing, /ZQM Labs game resources|Party rentals \(tables/i);
+  assert.match(labs, /ZQM Labs game resources/i);
+  assert.match(labs, /hosted-game inquiries/i);
+  assert.doesNotMatch(labs, /ZQM Computing engineering resources|Party rentals \(tables/i);
+  assert.ok(hasLink(labs, "/computing/"));
+  assert.ok(hasLink(computing, "/labs/"));
+});
