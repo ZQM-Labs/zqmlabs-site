@@ -72,6 +72,33 @@ class RestoreStaticTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Symlink"):
             self.plan()
 
+    def test_late_conflict_rejected_before_any_asset_writes(self):
+        plans = self.plan()
+        target = self.public / self.files[-1]
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(b"late conflict")
+        with self.assertRaisesRegex(ValueError, "Destination changed"):
+            mod.apply_plan(self.zip, self.public, plans)
+        self.assertEqual(sum(p.is_file() for p in self.public.rglob("*")), 1)
+        self.assertEqual(target.read_bytes(), b"late conflict")
+
+    def test_stale_identical_asset_rejected_before_restoring_missing_files(self):
+        target = self.public / self.files[-1]
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(("verified bytes: " + self.files[-1]).encode("utf-8"))
+        plans = self.plan()
+        target.write_bytes(b"replaced after planning")
+        with self.assertRaisesRegex(ValueError, "Identical asset changed"):
+            mod.apply_plan(self.zip, self.public, plans)
+        self.assertEqual(sum(p.is_file() for p in self.public.rglob("*")), 1)
+
+    def test_tampered_plan_digest_rejected_before_writes(self):
+        plans = self.plan()
+        plans[-1]["sha256"] = "0" * 64
+        with self.assertRaisesRegex(ValueError, "checksum mismatch"):
+            mod.apply_plan(self.zip, self.public, plans)
+        self.assertEqual(list(self.public.rglob("*")), [])
+
     def test_allowlist_traversal_rejected(self):
         self.allowlist.write_text(self.allowlist.read_text() + "../escape\n")
         with self.assertRaisesRegex(ValueError, "39 distinct"):

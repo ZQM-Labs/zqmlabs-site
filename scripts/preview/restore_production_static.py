@@ -65,21 +65,47 @@ def restoration_plan(baseline_zip, destination, allowlist, baseline_sha=BASELINE
     return plans
 
 def apply_plan(baseline_zip, destination, plans):
+    """Preflight every path and digest before any writes; fail on stale plans.
+
+    This tool only restores to a separately prepared preview directory. It is
+    not a transactional filesystem replacement and does not authorize release.
+    """
+    if not destination.is_dir() or destination.is_symlink():
+        raise ValueError("Destination must be a regular directory")
+    approved = {item["path"]: item for item in plans}
+    if len(approved) != 39 or len(plans) != 39:
+        raise ValueError("Invalid restoration plan size or duplicate paths")
     with zipfile.ZipFile(baseline_zip) as archive:
+        prepared = []
         for item in plans:
-            if item["status"] != "restore":
-                continue
             name = item["path"]
+            if not safe_name(name) or name == "release-manifest.json":
+                raise ValueError("Unsafe restoration plan path: " + name)
+            if item["status"] not in ("identical", "restore"):
+                raise ValueError("Unsupported restoration plan status: " + name)
             out = destination / name
-            if out.exists() or any(p.is_symlink() for p in [out, *out.parents] if p == destination or destination in p.parents):
+            if any(p.is_symlink() for p in [out, *out.parents]
+                   if p == destination or destination in p.parents):
                 raise ValueError("Destination changed during restoration: " + name)
             payload = archive.read(name)
-            if sha256(payload) != item["sha256"]:
+            if sha256(payload) != item["sha256"] or len(payload) != item["bytes"]:
                 raise ValueError("Restoration member checksum mismatch: " + name)
+            if item["status"] == "identical":
+                if not out.is_file() or sha256(out.read_bytes()) != item["sha256"]:
+                    raise ValueError("Identical asset changed during restoration: " + name)
+            elif out.exists():
+                raise ValueError("Destination changed during restoration: " + name)
+            else:
+                prepared.append((out, name, payload, item["sha256"]))
+        # No files have been written until all entries pass the checks above.
+        for out, name, payload, digest in prepared:
+            if any(p.is_symlink() for p in [out, *out.parents]
+                   if p == destination or destination in p.parents):
+                raise ValueError("Destination changed during restoration: " + name)
             out.parent.mkdir(parents=True, exist_ok=True)
             with open(out, "xb") as file:
                 file.write(payload)
-            if sha256(out.read_bytes()) != item["sha256"]:
+            if sha256(out.read_bytes()) != digest:
                 raise ValueError("Restored asset checksum mismatch: " + name)
 
 def main():
