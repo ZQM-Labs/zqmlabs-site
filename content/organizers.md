@@ -1,14 +1,13 @@
 ---
 title: "For Organizers — one hour, start to finish"
-description: "Everything a Lab Assistant needs: what arrives in your kit, the one-hour setup, print specs, day-of troubleshooting, and how the Lab supports you remotely."
+description: "Historical Wisp organizer guidance, sample setup and troubleshooting. New kit availability, delivery and support require confirmation."
 ---
 
 ## You are the Lab Assistant 🥼
 
-Every quest needs one person to print a few pages and place six signs. That's
-the whole job — about **one hour, total**. The Lab provides limited, best-effort remote support during your event window.
+The archived Wisp hosting format described an organizer printing signs and placing six stops. **The Halloween 2026 paid access window has ended and new paid-kit checkout is paused.** The guidance below describes the former event format; it does not establish current kit delivery, event access, scoring or support. Confirm a new event window and its terms with ZQM Labs before making arrangements.
 
-## What arrives in your kit
+## Historical kit contents (not currently for sale)
 
 | Item | Format | What you do |
 | --- | --- | --- |
@@ -29,7 +28,7 @@ the whole job — about **one hour, total**. The Lab provides limited, best-effo
    flyer, a group chat, or hand out the printable card.
 4. **Set out a candy bowl** — Optional. Historically very popular.
 
-That's it. The game runs itself from the first QR scan.
+For an approved, delivered event kit, the configured player may run from the first QR scan; the free Wisp demo remains available separately.
 
 ## Print specs
 
@@ -66,17 +65,17 @@ revealed one at a time. Hints never block a finish.
 
 - Build a map, write a puzzle, or design anything
 - Run a planning committee (that's the point of the mantra)
-- Manage a leaderboard by hand — it's automatic
-- Chase players for scores — teams submit their own
+- Run a live leaderboard unless an agreed package includes a tested scoring feature
+- Collect or publish scores without an agreed, consent-aware event workflow
 - Staff the route — the game is self-guided and staggered by design
 
 ## Support window
 
-Your Lab Assistant status includes limited, best-effort remote email support from **booking through the end of your event window**. Replies are typically under a day outside the Halloween window, but may be delayed on Halloween itself, when the Lab team are out at events themselves.
+A newly agreed event package may include limited, best-effort email support during a confirmed event window. The expired Halloween 2026 window creates no continuing support entitlement. Reply times are not guaranteed; confirm coverage and contacts before any purchase.
 
 ## Next steps
 
 - [See the tiers and pricing →](/tiers/)
 - [Read the FAQ →](/faq/)
-- [Get a flat kit: see the tiers →](/tiers/)
+- [Confirm future hosting availability and historical tiers →](/tiers/)
 - [Youth or form-your-own arrangements: email the Lab →](mailto:zqmcomputing@gmail.com)
