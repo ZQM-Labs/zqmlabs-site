@@ -65,3 +65,35 @@ test("game, FAQ, terms, and contact cannot promise unverified fulfillment or res
   const contact = fs.readFileSync(path.join(root, "content/contact.md"), "utf8");
   assert.doesNotMatch(contact, /Under 1 business day|1–2 business days/);
 });
+
+test("press kit describes only verified demos, not unreleased games or guaranteed service", () => {
+  const press = fs.readFileSync(path.join(root, "public/press/index.html"), "utf8");
+  assert.match(press, /other named seasonal titles are in development/i);
+  assert.match(press, /Verify the languages available in the current Wisp demo/i);
+  assert.match(press, /new paid checkout paused/i);
+  assert.doesNotMatch(press, /3 \(Halloween, Autumn, Winter editions\)|Games live\s*<[^>]*>\s*3/i);
+  assert.doesNotMatch(press, /A live leaderboard keeps offices competitive|under one business day/i);
+});
+
+test("organizer kit description is historical and does not guarantee scoring or support", () => {
+  const organizers = fs.readFileSync(path.join(root, "public/organizers/index.html"), "utf8");
+  assert.match(organizers, /paid access window has ended and new paid-kit checkout is paused/i);
+  assert.match(organizers, /Historical kit contents/i);
+  assert.match(organizers, /Reply times are not guaranteed/i);
+  assert.doesNotMatch(organizers, /Manage a leaderboard by hand[^\n]*automatic/i);
+  assert.doesNotMatch(organizers, /Replies are typically under a day/i);
+});
+
+test("terms preserve paused checkout and refund protection for undeliverable orders", () => {
+  const terms = fs.readFileSync(path.join(root, "public/terms/index.html"), "utf8");
+  assert.match(terms, /New paid kit checkout is disabled/i);
+  assert.match(terms, /If ZQM Labs cannot deliver an agreed paid order, a refund is available/i);
+  assert.doesNotMatch(terms, /No refunds or reschedules|Kits are usable on checkout/i);
+});
+
+test("the games directory labels Lantern Player as an information page", () => {
+  const games = fs.readFileSync(path.join(root, "public/games/index.html"), "utf8");
+  assert.match(games, /Demo information page[\s\S]{0,120}Lantern Player/i);
+  assert.match(games, /not a separate playable game release/i);
+  assert.match(games, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
+});
