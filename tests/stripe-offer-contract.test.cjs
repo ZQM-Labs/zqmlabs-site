@@ -36,6 +36,15 @@ test("historical offer identities and prices remain stable while checkout is pau
   assert.doesNotMatch(tierOutput, /Your kit is usable as soon as checkout delivers it/i);
 });
 
+test("historical tier descriptions do not imply available checkout, worldwide events or active fundraiser payouts", () => {
+  assert.match(tierSource, /historical Community tier/i);
+  assert.match(tierSource, /prior fundraiser split was an illustration/i);
+  assert.match(tierSource, /checkout is paused/i);
+  assert.doesNotMatch(tierSource, /the current offer is priced|the current package is described/i);
+  assert.doesNotMatch(tierSource, /Fundraising arrangements may be available for qualifying events/i);
+  assert.match(tierOutput, /no new purchase or entitlement is currently available/i);
+});
+
 test("historic discounts cannot imply current eligibility", () => {
   assert.match(tierSource, /FAMILY25/);
   assert.match(tierSource, /promotion and new kit purchases are not currently available/i);
