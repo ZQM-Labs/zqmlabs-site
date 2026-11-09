@@ -1,7 +1,7 @@
 ---
 title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
 seo_title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
-h1: "Host a scavenger hunt: kits for every group"
+h1: "Historical Wisp hosting tiers and future inquiries"
 description: "Published historical Wisp hosting tiers. Paid checkout is paused; request future event availability from ZQM Labs."
 products:
   - name: "Family Night"
@@ -11,15 +11,15 @@ products:
   - name: "Community"
     price: 199
     url: "/contact/"
-    description: "Neighborhood, HOA, PTA, church, or other community group. Unlimited families."
+    description: "Historical Community package for neighborhoods, HOAs, PTAs and community groups; paid checkout paused."
   - name: "Office Team"
     price: 349
     url: "/contact/"
-    description: "Team-building format for coworkers."
+    description: "Historical coworker team-building package; not currently available to purchase."
   - name: "Office Event"
     price: 499
     url: "/contact/"
-    description: "Larger company or organization-wide event."
+    description: "Historical larger-event package; not currently available to purchase."
 ---
 
 <!-- markdownlint-disable MD013 -->
@@ -34,21 +34,21 @@ The Great Pumpkin Roll and The Snowflake Secret remain **in development**. They 
 
 ## 🏠 Family Night — $49 flat
 
-For one household playing together. [Ask about Family Night](/contact/) — the current package is described as a six-stop quest with printable signs, puzzles, and hints. Checkout is paused. Confirm any future kit, delivery arrangements and access dates with the Lab before committing to an event.
+The historical Family Night tier described a six-stop quest for one household, including printable signs, puzzles and hints. [Ask about future family-hosting options](/contact/); checkout is paused, and no kit, delivery arrangement or access date is currently promised.
 
 **Previously advertised Halloween launch offer:** code **FAMILY25** was promoted for the past Halloween event. The promotion and new kit purchases are not currently available.
 
 ## 🏘️ Community — $199 flat
 
-For a neighborhood, HOA, PTA, church, or other community group. [Ask about Community hosting](/contact/) — the current offer is priced for unlimited families. Fundraising arrangements may be available for qualifying events; coordinate the current terms with the Lab before promoting a fundraiser.
+The historical Community tier described a neighborhood, HOA, PTA, church or community-group format, advertised for unlimited families during its former event window. [Ask about future Community hosting](/contact/). The prior fundraiser split was an illustration, not a current offer or payout commitment. Written scope, price, fulfillment and fundraising terms must be confirmed before any event is promoted.
 
 ## 🏢 Office Team — $349 flat
 
-A team-building format for coworkers. [Ask about Office Team hosting](/contact/). Coordinate the current scope, group size, mechanics, and availability with the Lab before announcing your event.
+A historical team-building format for coworkers. [Ask about potential future Office Team hosting](/contact/). Confirm any future scope, group size, mechanics, pricing and availability in writing before announcing an event.
 
 ## 🎪 Office Event — $499 flat
 
-For a larger company or organization-wide event. [Ask about Office Event hosting](/contact/). Coordinate the current scope, group size, mechanics, and availability with the Lab before announcing your event.
+A historical package for a larger company or organization-wide event. [Ask about potential future Office Event hosting](/contact/). Confirm any future scope, group size, mechanics, pricing and availability in writing before announcing an event.
 
 ## 🧭 Youth Groups and 🎉 Form-Your-Own
 
