@@ -20,8 +20,8 @@ Meet the creatures first in [Z's Zoo](https://zoo.zqmlabs.com), the official bes
 
 ### [Lantern Player](/games/lantern-player/)
 
-**Playable browser demo** · Lantern-lighting engine
-A standalone lantern-lighting engine with story, puzzles, and atmospheric effects. Light lanterns, solve puzzles, and explore the story.
+**Demo information page** · Lantern Player
+This route explains the lantern-lighting engine and links to the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1). It is not a separate playable game release or evidence of paid-kit availability.
 
 ## Tools
 
