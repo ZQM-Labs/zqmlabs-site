@@ -9,7 +9,7 @@ description: "Host a ZQM Labs location quest: Family Night $49, Community $199, 
 
 A ZQM Labs location quest is a story-driven scavenger hunt played on foot with a phone: your team follows a trail of stops, solves a puzzle at each one, and finishes together. Every tier is a **one-time flat fee** for your event window — no subscriptions, no per-player charges, no setup fees.
 
-> **Checkout is paused.** The prices below are the historical Halloween 2026 tiers, shown so you can plan. No paid kit purchase is available through the site right now. Try the [free browser demo](/games/hunt-for-wisps/play/?demo=1), then [contact the Lab](/contact/) about a future event window, price, and terms.
+> **Checkout is paused.** The prices below are the historical Halloween 2026 tiers, shown so you can plan. The October 30–November 1, 2026 Halloween access window has ended. No paid kit purchase is available through the site right now. Try the [free browser demo](/games/hunt-for-wisps/play/?demo=1), then [contact the Lab](/contact/) about a future event window, price, and terms.
 
 | Tier | Price | Who it's for | Families |
 | --- | --- | --- | --- |
