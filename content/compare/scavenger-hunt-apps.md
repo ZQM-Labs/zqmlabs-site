@@ -5,6 +5,8 @@ h1: "Scavenger hunt apps and kits, compared honestly"
 description: "Compare scavenger hunt apps and hosted quest kits — GooseChase, Let's Roam, Scavify, PlayTours, and ZQM Labs — by price, who builds the hunt, and who each one fits. Prices checked 2026-11-11."
 ---
 
+![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
+
 You want a scavenger hunt for your group. The hard part is not finding an app — it is figuring out which kind of product you are actually buying. There are three different things on the market, and they solve three different problems:
 
 - **A builder platform.** You author the missions, the app runs them. GooseChase, Scavify, and PlayTours live here.

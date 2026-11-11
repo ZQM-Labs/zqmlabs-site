@@ -5,6 +5,8 @@ h1: "Looking for a Let's Roam alternative?"
 description: "Let's Roam runs ready-made hunts in 3,000+ cities. If your group is outside the big-city template — or wants its own yard, neighborhood, campus, or office — ZQM Labs builds the quest for your place. Prices checked 2026-11-11."
 ---
 
+![Three seasonal quest scenes — a lantern-lit park path at dusk, a pumpkin-lined autumn village street, and a snowy village square — above a brass compass](/img/home-collection-evergreen.webp)
+
 Let's Roam is good at what it does. If you are visiting a big city and want a ready-made scavenger hunt waiting for you there, it is the right tool, and this page will not pretend otherwise. The question is whether your group is going to their city — or staying at your place.
 
 There are two different trips here:

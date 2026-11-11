@@ -5,6 +5,8 @@ h1: "Looking for a GooseChase alternative?"
 description: "GooseChase is the right tool if you want to author your own missions. If you want a finished, story-driven quest your group just plays, that is what ZQM Labs builds. Prices checked 2026-11-11."
 ---
 
+![Organizers setting up a quest — poring over a route map, hanging paper lanterns, and unpacking supplies](/img/organizers-evergreen.webp)
+
 GooseChase is good at what it does. If you want to author your own scavenger hunt — write the missions, set the points, judge the photos — it is the right tool, and this page will not pretend otherwise. The question is whether authoring is what you actually want to do.
 
 There are two different jobs here, and they suit two different organizers:
