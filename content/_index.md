@@ -1,14 +1,27 @@
 ---
 title: "ZQM Computing and ZQM Labs"
-seo_title: "ZQM | GIS Services and Community-Centered Games"
-h1: "Geospatial engineering and community-centered games"
-description: "ZQM Computing provides professional geospatial engineering services. ZQM Labs creates community-centered location games, including the free Wisp browser demo."
+seo_title: "Location Quests & Scavenger Hunt Games — ZQM Labs"
+h1: "Story-driven location quests and scavenger hunt games"
+description: "Play story-driven location quests and scavenger hunt games for families, neighborhoods, schools, and teams. Free browser demo, flat-fee hosting kits from $49, no app to install. ZQM Computing offers GIS services from the same lab in New Smyrna Beach, Florida."
 ---
 
-ZQM Computing and ZQM Labs are separate brands sharing this website.
+ZQM Labs builds location quests — six-stop, story-led scavenger hunts you play in real places with just a phone browser. No app to install, no per-player charge, one phone per team. ZQM Computing is the geospatial engineering studio behind the maps. Both are based in New Smyrna Beach, in Volusia County, Florida.
 
-- [Explore ZQM Computing's GIS services](/computing/).
-- [Explore ZQM Labs and its games](/labs/).
-- [Play the free Wisp's Lost Lanterns browser demo](/games/hunt-for-wisps/play/?demo=1).
+## A location quest is a story you walk through
 
-Existing Labs games, guides and hosting information remain available at their current routes. New Computing engagements begin with a scope inquiry; no form submission system, checkout, pricing change, or commercial availability promise is introduced by the preview.
+Dr. Z, the Lab's mad-scientist Game Master, builds each quest around a story — and Wisp, his escaped first creation, is the one leading players through it. A quest is six stops, a puzzle at each stop, and a Game Master who set the whole thing in motion. Four comfort levels — Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, Full Madness Overdrive — let the same quest fit children, families, and adults after dark.
+
+[Play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1): six stops, no sign-up, right in your browser. When you're ready to host, [flat-fee scavenger hunt kits start at $49](/tiers/) — Family Night is $25 with code FAMILY25 — one fee for the whole group, no per-player charge. Browse the [games directory](/games/) for current and past editions.
+
+## GIS services from the lab that maps the quests
+
+ZQM Computing does preliminary GIS screening, repeatable geospatial workflows, Web GIS, and APIs — built by the same hands that map the quests. [Explore GIS services](/computing/) or [start a scope inquiry](/computing/inquiry/).
+
+## How a quest works
+
+1. **Play the free demo** — six stops in your browser, no install.
+2. **Pick a kit** — Family Night, Community, Office Team, or Office Event.
+3. **Gather your team** — one phone per team, walk the route, solve the puzzles.
+4. **Finish the story** — the quest ends when the last clue lands.
+
+Computing projects are scoped by inquiry; a playable Labs demo does not establish event or paid-kit availability.
