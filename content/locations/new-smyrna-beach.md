@@ -2,7 +2,7 @@
 title: "Things to Do in New Smyrna Beach: Location Quests — ZQM Labs"
 seo_title: "Things to Do in New Smyrna Beach: Location Quests — ZQM Labs"
 h1: "Location quests in New Smyrna Beach, Florida"
-description: "Play a story-driven location quest in New Smyrna Beach, Florida — Flagler Avenue, Canal Street, and local parks as settings to coordinate with the Lab. Free browser demo, flat-fee kits from $49."
+description: "Play a story-driven location quest in New Smyrna Beach, Florida — Flagler Avenue, Canal Street, and local parks as settings to coordinate with the Lab. Free browser demo, historical kit pricing; paid checkout paused."
 breadcrumb: true
 faq:
   - q: "Can we play a ZQM Labs quest in New Smyrna Beach?"
@@ -10,8 +10,10 @@ faq:
   - q: "Is there a fixed route in New Smyrna Beach?"
     a: "No. Flagler Avenue, Canal Street, and local parks are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance."
   - q: "How much does a local quest cost?"
-    a: "Hosting kits are flat fees: Family Night $49, Community $199, Office Team $349, Office Event $499. Use code FAMILY25 at checkout for $24 off Family Night — play for $25."
+    a: "Historical Halloween 2026 tier prices were Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; paid checkout is paused."
 ---
+
+> **Availability as of November 2026:** The free Wisp demo remains playable. Paid Halloween 2026 kits, the FAMILY25 discount and historical fundraiser splits are **not current offers**. Checkout is paused; future availability, prices, delivery and support require separate confirmation.
 
 ![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
 
@@ -23,9 +25,13 @@ A location quest is a story-driven scavenger hunt played on foot with a phone: y
 
 New Smyrna Beach is the Lab's home city, and local quests are coordinated around places that suit a walking game — **Flagler Avenue, Canal Street, and local parks** are the settings we start from. These are settings to coordinate, not promised routes: the exact stops, route, and permissions are agreed with the Lab for each event, and a setting only becomes a quest once the Lab has confirmed it works for your group, your date, and your players' needs.
 
+## Historical tier reference
+
+The prices below describe the expired Halloween 2026 event. They are not purchase offers; no current kit checkout is available.
+
 ## Which tier fits which group
 
-- **Family Night — $49.** One household, one quest. Use code **FAMILY25** at checkout for $24 off — play for $25.
+- **Family Night — $49.** One household, one quest. The former FAMILY25 discount has expired; paid checkout is paused.
 - **Community — $199.** Neighborhoods, HOAs, PTAs, churches, and community groups — unlimited families.
 - **Office Team — $349.** A team-building format for coworkers.
 - **Office Event — $499.** A larger company or organization-wide event.
@@ -38,7 +44,7 @@ See [scavenger hunt hosting tiers and pricing](/tiers/) for the full list, or [f
 1. **Try the demo.** Play the [free browser demo](/games/hunt-for-wisps/play/?demo=1) so you know how a quest feels.
 2. **Contact the Lab.** Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your group, your dates, the tier you are eyeing, and the area you have in mind.
 3. **Agree the details.** Route and stops, venue permissions, accessibility, the event window, and support are confirmed with the Lab before you announce anything.
-4. **Buy your kit.** Your kit is usable on checkout. Coordination is about announcing your event, not about unlocking the kit.
+4. **Confirm future availability.** Paid checkout is paused. Future purchase, entitlement and delivery require confirmed fulfillment and terms.
 
 ## Quick questions
 
@@ -46,7 +52,7 @@ See [scavenger hunt hosting tiers and pricing](/tiers/) for the full list, or [f
 
 **Is there a fixed route in New Smyrna Beach?** No. Flagler Avenue, Canal Street, and local parks are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance.
 
-**How much does a local quest cost?** Hosting kits are flat fees: Family Night $49, Community $199, Office Team $349, Office Event $499. Use code FAMILY25 at checkout for $24 off Family Night — play for $25.
+**How much does a local quest cost?** Historical Halloween 2026 tier prices were Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; paid checkout is paused.
 
 ## Check availability
 
