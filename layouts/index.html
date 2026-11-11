@@ -1,10 +1,16 @@
 {{ define "main" }}
 <h1>{{ .Params.h1 | default .Title }}</h1>
+<figure class="home-hero">
+  <img src="/img/home-collection-evergreen.webp" alt="Three seasonal quest scenes — a lantern-lit park path at dusk, a pumpkin-lined autumn village street, and a snowy village square — above a brass compass" width="1600" height="1067">
+  <figcaption>Quests for every season, in your neighborhood</figcaption>
+</figure>
 <style>
 .dual-brand-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin:1.5rem 0}
 .dual-brand-preview section{border:1px solid #b6aa99;border-radius:12px;padding:1rem;min-width:0}
 .dual-brand-preview h2{margin-top:0}
 @media(max-width:640px){.dual-brand-preview{grid-template-columns:1fr}}
+.home-hero{margin:12px 0 18px}
+.home-hero figcaption{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-dark);margin-top:6px}
 </style>
 <div class="dual-brand-preview" aria-label="Choose a ZQM brand">
   <section aria-labelledby="computing-heading">
@@ -19,6 +25,24 @@
   </section>
 </div>
 {{ .Content }}
+<div class="dial-grid" aria-label="Four comfort levels">
+  <figure class="dial-card dial-1">
+    <img src="/img/dial1.webp" alt="Young Dr. Z holding a glowing lantern — the Li'l Z Cozy level" width="640" height="640">
+    <figcaption><strong>Li'l Z Cozy</strong>For young children</figcaption>
+  </figure>
+  <figure class="dial-card dial-2">
+    <img src="/img/dial2-card.webp" alt="Dr. Z winking and grinning, holding a lantern, with a Dial 2 patch — the Classic Z Spooky level" width="640" height="640">
+    <figcaption><strong>Classic Z Spooky</strong>For families</figcaption>
+  </figure>
+  <figure class="dial-card dial-3">
+    <img src="/img/dial3-card.webp" alt="Wild-haired Dr. Z grinning manically, holding a lantern — the Mad Z After Dark level" width="640" height="640">
+    <figcaption><strong>Mad Z After Dark</strong>For adults after dark</figcaption>
+  </figure>
+  <figure class="dial-card dial-4">
+    <img src="/img/dial4-card.webp" alt="Dr. Z in full madness, lightning crackling, holding a lantern — the Full Madness Overdrive level" width="640" height="640">
+    <figcaption><strong>Full Madness Overdrive</strong>For the brave</figcaption>
+  </figure>
+</div>
 <p class="hero-cta"><a class="btn ghost" href="/games/">Games directory</a><a class="btn ghost" href="/halloween/">Past Halloween edition</a><a class="btn ghost" href="/tiers/">Current hosting information</a></p>
 <figure class="dr-z-hero">
   <img src="/img/dr-z-lab-banner.svg" alt="Dr. Z's geospatial invention lab with topographic contours, data connections, and scientific displays" width="1200" height="340">
