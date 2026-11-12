@@ -84,6 +84,10 @@ The Lab publishes supporting materials for people who want to understand or help
 
 For a different kind of game or a general introduction to the studio, visit the [Games directory](/games/) or [About the Lab](/about/).
 
+## Try it first
+
+Play the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1) before you plan — six stops, four scare levels, no app to install.
+
 ## Contact
 
 To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Coordinate with the Lab before announcing your event. The previously advertised Halloween access window has ended. Confirm a currently supported event window, purchase terms and fulfillment arrangements with the Lab before advertising an event.
