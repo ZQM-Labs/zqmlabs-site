@@ -30,6 +30,10 @@ disableKinds = ["taxonomy", "term"]
   url = "/games/"
   weight = 20
 [[menus.main]]
+  name = "Try the Demo"
+  url = "/games/hunt-for-wisps/play/?demo=1"
+  weight = 22
+[[menus.main]]
   name = "Past Editions"
   url = "/halloween/"
   weight = 25
@@ -46,9 +50,17 @@ disableKinds = ["taxonomy", "term"]
   url = "/pricing/"
   weight = 32
 [[menus.main]]
+  name = "Compare"
+  url = "/compare/"
+  weight = 33
+[[menus.main]]
   name = "Organizers"
   url = "/organizers/"
   weight = 34
+[[menus.main]]
+  name = "Locations"
+  url = "/locations/"
+  weight = 36
 [[menus.main]]
   name = "Resources"
   url = "/patterns/"
