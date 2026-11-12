@@ -31,7 +31,7 @@ disableKinds = ["taxonomy", "term"]
   weight = 20
 [[menus.main]]
   name = "Try the Demo"
-  url = "/games/hunt-for-wisps/play/?demo=1"
+  url = "/demo/"
   weight = 22
 [[menus.main]]
   name = "Past Editions"
