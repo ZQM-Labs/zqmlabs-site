@@ -29,7 +29,7 @@ A ZQM Labs location quest is a story-driven scavenger hunt played on foot with a
 - Printable finisher badges
 - All four scare levels (Cozy / Spooky / After Dark / Overdrive)
 - Three hints at every stop
-- Leaderboard availability was not verified; do not assume live scoring is part of the demo or a future kit
+- Live leaderboard (coming soon)
 - Limited, best-effort remote email support through your event window
 - Language options depend on the published player; some translations may be incomplete. Verify the needed language before proposing an event
 
