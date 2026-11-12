@@ -5,7 +5,7 @@ description: "Practical guides for hosting location quests and scavenger hunts �
 
 Guides for organizers: how to run a quest as a fundraiser, a party, or a team event. Each guide uses only the Lab's published prices and terms — nothing here is a promise the Lab has not agreed for your event.
 
-## Start here: try the demo, then learn to host
+## Start here: [try the demo](/games/hunt-for-wisps/play/?demo=1), then learn to host
 
 - [Host your first no-app scavenger hunt](/guides/host-your-first-scavenger-hunt/) — immediate browser demo versus editable sample, six-stop authoring and realistic host feasibility.
 

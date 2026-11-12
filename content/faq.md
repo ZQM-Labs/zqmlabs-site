@@ -34,7 +34,7 @@ faq:
     a: >-
       It was ZQM Labs' Halloween 2026 scavenger hunt. Wisp the will-o'-the-wisp
       has lost six glow lanterns, and teams follow clues and solve puzzles to
-      recover them. Try the browser demo at zqmlabs.com/games/hunt-for-wisps/.
+      recover them. Try the free browser demo at zqmlabs.com/games/hunt-for-wisps/play/?demo=1.
   - q: "What does a kit include?"
     a: >-
       The current offer describes printable signs, team access, the
@@ -69,9 +69,7 @@ faq:
   - q: "How much does hosting cost?"
     a: >-
       The current Wisp's Lost Lanterns page lists Family Night at $49,
-      Community at $199, and Office Team / Office Event at $349 / $499. These
-      are current offers for this game only and may depend on availability and
-      package details. See the hosting tiers page and coordinate with the Lab
+      Community at $199, and Office Team / Office Event at $349 / $499. These are the historical Halloween 2026 tiers, shown for reference; paid-kit checkout is paused and no kit purchase is currently available. Confirm any future price and availability with the Lab. See the hosting tiers page and coordinate with the Lab
       before announcing your event.
   - q: "Who chooses the route and venue?"
     a: >-
@@ -132,7 +130,7 @@ Do not assume features such as global leaderboards, player discovery, multilingu
 <details>
 <summary>What is Wisp's Lost Lanterns?</summary>
 
-It was ZQM Labs’ Halloween 2026 scavenger hunt. Wisp the will-o'-the-wisp has lost six glow lanterns, and teams follow clues and solve puzzles to recover them. [Try the browser demo](/games/hunt-for-wisps/).
+It was ZQM Labs’ Halloween 2026 scavenger hunt. Wisp the will-o'-the-wisp has lost six glow lanterns, and teams follow clues and solve puzzles to recover them. [Try the free browser demo](/games/hunt-for-wisps/play/?demo=1).
 
 </details>
 
@@ -176,7 +174,7 @@ Possibly, depending on the current package, location, support capacity, and even
 <details>
 <summary>How much does hosting cost?</summary>
 
-The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are current offers for this game only and may depend on availability and package details. See [hosting tiers](/tiers/) and coordinate with the Lab before announcing your event.
+The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are the historical Halloween 2026 tiers, shown for reference; paid-kit checkout is paused and no kit purchase is currently available. Confirm any future price and availability with the Lab. See [hosting tiers](/tiers/) and coordinate with the Lab before announcing your event.
 
 </details>
 
