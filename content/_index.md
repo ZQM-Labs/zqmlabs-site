@@ -20,8 +20,8 @@ ZQM Computing does preliminary GIS screening, repeatable geospatial workflows, W
 ## How a quest works
 
 1. **Play the free demo** — six stops in your browser, no install.
-2. **Pick a kit** — Family Night, Community, Office Team, or Office Event.
+2. **[Pick a kit](/tiers/)** — Family Night, Community, Office Team, or Office Event.
 3. **Gather your team** — one phone per team, walk the route, solve the puzzles.
 4. **Finish the story** — the quest ends when the last clue lands.
 
-Computing projects are scoped by inquiry; a playable Labs demo does not establish event or paid-kit availability.
+Computing projects are scoped by inquiry; a playable Labs demo does not establish event availability.
