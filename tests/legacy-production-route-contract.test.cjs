@@ -140,7 +140,6 @@ test("pricing retains inquiry route, historical prices, and planned-season label
   assert.match(tiers, /https:\/\/buy\.stripe\.com\/28E6oJeCf0Z740Od7X9bO00/i, "Community must link to its verified Stripe payment link");
   assert.match(tiers, /https:\/\/buy\.stripe\.com\/14AcN78dR7nvbtg5Fv9bO01/i, "Office Team must link to its verified Stripe payment link");
   assert.match(tiers, /https:\/\/buy\.stripe\.com\/fZu14p8dR7nveFs0lb9bO02/i, "Office Event must link to its verified Stripe payment link");
-  assert.match(pricing, /https:\/\/buy\.stripe\.com\//i);
   assert.doesNotMatch(tiers, /Paid kit checkout is paused/i);
   assert.doesNotMatch(pricing, /checkout is paused/i);
   assert.match(tiers, /href=(?:"|)\/contact\//i);

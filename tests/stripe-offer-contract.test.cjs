@@ -28,10 +28,12 @@ test("live offer identities and prices match the verified Stripe links", () => {
   )].map(m => ({name:m[1],price:Number(m[2]),url:m[3]}));
   assert.deepEqual(offerings, VERIFIED,
     "Do not change live prices or publish an unverified checkout link");
-  for (const output of [tierOutput, pricingOutput]) {
+  for (const output of [tierOutput]) {
     assert.match(output, /https:\/\/buy\.stripe\.com\//);
     assert.doesNotMatch(output, /checkout is paused/i);
   }
+  assert.doesNotMatch(pricingOutput, /checkout is paused/i);
+  assert.match(pricingOutput, /href=(?:"|)\/tiers\//i);
   assert.match(tierOutput, /October 30.{0,10}November 1, 2026/);
   assert.match(pricingOutput, /October 30.{0,10}November 1, 2026/);
   assert.match(tierOutput, /Your kit is usable as soon as checkout delivers it/i);
