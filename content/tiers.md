@@ -26,7 +26,7 @@ products:
 
 These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
-**Paid kit checkout is live.** Buy your kit below — a one-time flat fee for your event window. After checkout, your kit access details are emailed to you. The Halloween 2026 window ran October 30–November 1, 2026; kits are now available for your own event window.
+**Paid kit checkout is live.** Buy your kit below — a one-time flat fee for your event window. After checkout, your kit access details are emailed to you. The Halloween 2026 window ran October 30–November 1, 2026 and has ended; kits are now available for your own event window.
 
 The Great Pumpkin Roll and The Snowflake Secret remain **in development**. They are not included as separately playable editions in these offers.
 

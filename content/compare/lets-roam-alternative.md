@@ -53,7 +53,7 @@ For a group visiting a big city for a day, Let's Roam wins on convenience: the r
 
 ## What to do next
 
-**Paid-kit checkout is currently paused.** The October 30–November 1, 2026 Halloween event window has ended, and no new kit purchase is available through the site right now. The flat fees above are the Lab's published tiers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything. The Lab is based in New Smyrna Beach, in Volusia County, Florida, and its first activation ran there; ask about your location before you plan around it.
+**Paid kit checkout is live.** The October 30–November 1, 2026 Halloween event window has ended, and kits are available to buy on the [hosting tiers page](/tiers/). The flat fees above are the Lab's published tiers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything. The Lab is based in New Smyrna Beach, in Volusia County, Florida, and its first activation ran there; ask about your location before you plan around it.
 
 If you want to feel the difference before you decide, [play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1): six stops, no sign-up, right in your browser. It is a finished quest at your own pace — you will know within ten minutes whether your group wants a city route or a story at their own place.
 
