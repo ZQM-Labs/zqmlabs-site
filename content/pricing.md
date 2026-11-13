@@ -1,6 +1,6 @@
 ---
 title: "Pricing — flat fees for your quest"
-description: "Host a ZQM Labs location quest: Family Night $49, Community $199, Office Team $349, Office Event $499. One-time flat fees, no subscriptions. Checkout is paused — try the free demo and contact the Lab about future availability."
+description: "Host a ZQM Labs location quest: Family Night $49, Community $199, Office Team $349, Office Event $499. One-time flat fees, no subscriptions. Buy your kit — checkout is live."
 ---
 
 ![Families and neighbors gathered with lanterns at an outdoor evening quest, string lights and a wooden kiosk behind them](/img/pricing-evergreen.webp)
@@ -9,7 +9,7 @@ description: "Host a ZQM Labs location quest: Family Night $49, Community $199, 
 
 A ZQM Labs location quest is a story-driven scavenger hunt played on foot with a phone: your team follows a trail of stops, solves a puzzle at each one, and finishes together. Every tier is a **one-time flat fee** for your event window — no subscriptions, no per-player charges, no setup fees.
 
-> **Checkout is paused.** The prices below are the historical Halloween 2026 tiers, shown so you can plan. The October 30–November 1, 2026 Halloween access window has ended. No paid kit purchase is available through the site right now. Try the [free browser demo](/games/hunt-for-wisps/play/?demo=1), then [contact the Lab](/contact/) about a future event window, price, and terms.
+> **Checkout is live.** Buy your kit below — a one-time flat fee for your event window. The Halloween 2026 window ran October 30–November 1, 2026; kits are now available for your own event window. Try the [free browser demo](/games/hunt-for-wisps/play/?demo=1) first, then buy the tier that fits.
 
 | Tier | Price | Who it's for | Families |
 | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ A ZQM Labs location quest is a story-driven scavenger hunt played on foot with a
 | 🏘️ **Community** | **$199** | HOAs, neighborhoods, PTAs, churches | Unlimited |
 | 🏢 **Office Team** | **$349** | Company teams, departments | Sized on booking |
 | 🎪 **Office Event** | **$499** | Larger companies, organization-wide events | Sized on booking |
-| 🧭 **Youth Groups** | Waitlist | Scouts, church youth, school clubs | Group-sized |
+| 🧭 **Youth Groups** | Ask the Lab | Scouts, church youth, school clubs | Group-sized |
 | 🎉 **Form-Your-Own** | Quoted | Birthdays, crews, sports teams | Your call |
 
 ## What's included in every tier
@@ -48,7 +48,7 @@ A Community kit can work as a fundraiser: the historical example was **$15 per f
 1. **Try the demo.** Play the [free browser demo](/games/hunt-for-wisps/play/?demo=1) so you know how a quest feels.
 2. **Contact the Lab.** Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your group, your dates, the tier you are eyeing, and the area you have in mind.
 3. **Agree the details.** Route and stops, venue permissions, accessibility, the event window, and support are confirmed with the Lab before you announce anything.
-4. **Confirm future availability.** Paid checkout is paused. Future purchase, price, and delivery require confirmed fulfillment and terms.
+4. **Buy your kit.** Choose your tier above and check out — your kit access details are emailed to you after checkout. Confirm the event window and delivery with the Lab before you announce anything.
 
 ## Compare and explore
 
@@ -64,7 +64,7 @@ For a prospective community, school district, or recurring office event, email t
 
 ## Payment
 
-Paid-kit checkout is paused. The [hosting tiers page](/tiers/) retains historical prices and directs prospective organizers to [contact ZQM Labs](/contact/) for future availability. The free browser demo remains available. An undeliverable order is eligible for refund; other requests follow applicable law and agreed terms.
+Paid-kit checkout is live — buy your kit from the [hosting tiers page](/tiers/) or the table above. The free browser demo remains available. An undeliverable order is eligible for refund; other requests follow applicable law and agreed terms.
 
 - [Full tier descriptions →](/tiers/)
 - [Organizer details →](/organizers/)
