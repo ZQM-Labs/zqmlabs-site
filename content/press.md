@@ -15,7 +15,7 @@ description: "Press and media resources for ZQM Labs and Z's Quests & Mischief: 
 | Flagship game | Wisp's Lost Lanterns |
 | Playable games | Wisp's Lost Lanterns browser demo; other named seasonal titles are in development |
 | Languages | Verify the languages available in the current Wisp demo; do not assume every proposed locale is supported |
-| Historical hosting prices | $49 / $199 / $349–$499; new paid checkout paused |
+| Historical hosting prices | $49 / $199 / $349–$499; paid kits available — see [hosting tiers](/tiers/) |
 | Contact | [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) |
 | Website | [zqmlabs.com](https://zqmlabs.com) |
 | GitHub | [ZQM-Labs](https://github.com/ZQM-Labs) |

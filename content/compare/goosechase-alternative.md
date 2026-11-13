@@ -51,7 +51,7 @@ For a group that plays once and never builds again, the finished quest is usuall
 
 ## What to do next
 
-**Paid-kit checkout is currently paused.** The October 30–November 1, 2026 Halloween event window has ended, and no new kit purchase is available through the site right now. The flat fees above are the Lab's published tiers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything.
+**Paid kit checkout is live.** The October 30–November 1, 2026 Halloween event window has ended, and kits are available to buy on the [hosting tiers page](/tiers/). The flat fees above are the Lab's published tiers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything.
 
 If you want to feel the difference before you decide, [play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1): six stops, no sign-up, right in your browser. It is a finished quest, not a builder — you will know within ten minutes which one your group actually wants.
 

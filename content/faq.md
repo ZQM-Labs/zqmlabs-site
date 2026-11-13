@@ -39,9 +39,9 @@ faq:
     a: >-
       The current offer describes printable signs, team access, the
       browser-based game, and organizer guidance. The Halloween 2026 access
-      window has ended and paid-kit checkout is paused. New entitlements and
-      kit delivery are unavailable for purchase. Check the hosting tiers
-      page and contact the Lab about any future event.
+      window has ended and paid kit checkout is live. Buy your kit on the
+      hosting tiers page; kit access details are emailed to you after purchase.
+      Contact the Lab about any future event.
   - q: "What devices do players need?"
     a: >-
       The current game is designed for browser-based play. Check the demo and
@@ -69,7 +69,7 @@ faq:
   - q: "How much does hosting cost?"
     a: >-
       The current Wisp's Lost Lanterns page lists Family Night at $49,
-      Community at $199, and Office Team / Office Event at $349 / $499. These are the historical Halloween 2026 tiers, shown for reference; paid-kit checkout is paused and no kit purchase is currently available. Confirm any future price and availability with the Lab. See the hosting tiers page and coordinate with the Lab
+      Community at $199, and Office Team / Office Event at $349 / $499. These are the current tiers; paid kit checkout is live — see the hosting tiers page to buy. Confirm any future price and availability with the Lab. See the hosting tiers page and coordinate with the Lab
       before announcing your event.
   - q: "Who chooses the route and venue?"
     a: >-
@@ -137,7 +137,7 @@ It was ZQM Labs’ Halloween 2026 scavenger hunt. Wisp the will-o'-the-wisp has 
 <details>
 <summary>What does a kit include?</summary>
 
-The published offer describes printable signs, team access, the browser-based game, and organizer guidance. The Halloween 2026 access window has ended and paid-kit checkout is paused. New entitlements and kit delivery are unavailable for purchase. Check the hosting tiers page and contact the Lab about any future event.
+The published offer describes printable signs, team access, the browser-based game, and organizer guidance. The Halloween 2026 access window has ended and paid kit checkout is live. Buy your kit on the [hosting tiers page](/tiers/); kit access details are emailed to you after purchase. Contact the Lab about any future event.
 
 </details>
 
@@ -174,7 +174,7 @@ Possibly, depending on the current package, location, support capacity, and even
 <details>
 <summary>How much does hosting cost?</summary>
 
-The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are the historical Halloween 2026 tiers, shown for reference; paid-kit checkout is paused and no kit purchase is currently available. Confirm any future price and availability with the Lab. See [hosting tiers](/tiers/) and coordinate with the Lab before announcing your event.
+The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are the current tiers; paid kit checkout is live — see [hosting tiers](/tiers/) to buy. Confirm any future price and availability with the Lab. See [hosting tiers](/tiers/) and coordinate with the Lab before announcing your event.
 
 </details>
 

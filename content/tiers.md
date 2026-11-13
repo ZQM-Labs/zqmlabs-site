@@ -1,64 +1,66 @@
 ---
 title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
 seo_title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
-h1: "Historical Wisp hosting tiers and future inquiries"
-description: "Published historical Wisp hosting tiers. Paid checkout is paused; request future event availability from ZQM Labs."
+h1: "Wisp hosting tiers — buy your kit"
+description: "Buy a Wisp's Lost Lanterns hosting kit: Family Night $49, Community $199, Office Team $349, Office Event $499. One-time flat fees, checkout live."
 products:
   - name: "Family Night"
     price: 49
-    url: "/contact/"
-    description: "One household; historical tier. Checkout paused; inquire about future arrangements."
+    url: "https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03"
+    description: "One household; six-stop quest with printable signs, puzzles and hints."
   - name: "Community"
     price: 199
-    url: "/contact/"
-    description: "Historical Community package for neighborhoods, HOAs, PTAs and community groups; paid checkout paused."
+    url: "https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00"
+    description: "Neighborhoods, HOAs, PTAs and community groups; unlimited families."
   - name: "Office Team"
     price: 349
-    url: "/contact/"
-    description: "Historical coworker team-building package; not currently available to purchase."
+    url: "https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01"
+    description: "Coworker team-building package for company teams and departments."
   - name: "Office Event"
     price: 499
-    url: "/contact/"
-    description: "Historical larger-event package; not currently available to purchase."
+    url: "https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02"
+    description: "Larger company or organization-wide event package."
 ---
 
 <!-- markdownlint-disable MD013 -->
 
 These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 
-**Paid kit checkout is paused.** The October 30–November 1, 2026 Halloween event window has ended, and no new purchase or entitlement is currently available through this site. The historical prices below are for reference, not offers to purchase. [Contact ZQM Labs](/contact/) to discuss a future event.
+**Paid kit checkout is live.** Buy your kit below — a one-time flat fee for your event window. After checkout, your kit access details are emailed to you. The Halloween 2026 window ran October 30–November 1, 2026 and has ended; kits are now available for your own event window.
 
-The Great Pumpkin Roll and The Snowflake Secret remain **in development**. They are not included as separately playable editions in these Halloween pilot offers.
+The Great Pumpkin Roll and The Snowflake Secret remain **in development**. They are not included as separately playable editions in these offers.
 
 ![Team celebrating at the finish of an outdoor quest at golden hour](/img/tiers-evergreen.webp)
 
 ## 🏠 Family Night — $49 flat
 
-The historical Family Night tier described a six-stop quest for one household, including printable signs, puzzles and hints. [Ask about future family-hosting options](/contact/); checkout is paused, and no kit, delivery arrangement or access date is currently promised.
+A six-stop quest for one household, including printable signs, puzzles and hints. [Buy Family Night](https://buy.stripe.com/28E14p9hV23bgNA5Fv9bO03). Your kit is usable as soon as checkout delivers it.
 
-**Previously advertised Halloween launch offer:** code **FAMILY25** was promoted for the past Halloween event. The promotion and new kit purchases are not currently available.
+The earlier code **FAMILY25** was a Halloween 2026 promotion and is no longer valid. Family Night is $49 at checkout.
 
 ## 🏘️ Community — $199 flat
 
-The historical Community tier described a neighborhood, HOA, PTA, church or community-group format, advertised for unlimited families during its former event window. [Ask about future Community hosting](/contact/). The prior fundraiser split was an illustration, not a current offer or payout commitment. Written scope, price, fulfillment and fundraising terms must be confirmed before any event is promoted.
+A neighborhood, HOA, PTA, church or community-group format for unlimited families during your event window. [Buy Community](https://buy.stripe.com/28E6oJeCf0Z740Od7X9bO00). Your kit is usable as soon as checkout delivers it.
+
+The prior fundraiser split was an illustration, not a current offer or payout commitment. Any fundraiser arrangement needs written scope and terms before promotion.
 
 ## 🏢 Office Team — $349 flat
 
-A historical team-building format for coworkers. [Ask about potential future Office Team hosting](/contact/). Confirm any future scope, group size, mechanics, pricing and availability in writing before announcing an event.
+A team-building format for coworkers. [Buy Office Team](https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01). Confirm group size, mechanics, and availability with the Lab before announcing an event.
 
 ## 🎪 Office Event — $499 flat
 
-A historical package for a larger company or organization-wide event. [Ask about potential future Office Event hosting](/contact/). Confirm any future scope, group size, mechanics, pricing and availability in writing before announcing an event.
+A package for a larger company or organization-wide event. [Buy Office Event](https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02). Confirm group size, mechanics, and availability with the Lab before announcing an event.
 
 ## 🧭 Youth Groups and 🎉 Form-Your-Own
 
-Ask the Lab about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed. Flat kits are generic — the same quest for every buyer, not customized per buyer.
+[Ask the Lab](/contact/) about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed. Flat kits are generic — the same quest for every buyer, not customized per buyer.
 
-## Before arranging a future event
+## Before arranging your event
 
-- **Checkout paused.** New kit purchases and paid entitlement delivery are unavailable until verified and explicitly reopened.
+- **Checkout is live.** Buy your kit above; your kit access details are emailed to you after checkout.
 - **Refunds for non-delivery.** Orders that cannot be fulfilled are eligible for refund; applicable law and agreed terms control other refund or reschedule requests.
-- **Kit access follows the event window.** Kit access for the Halloween 2026 window expired with that window (October 30–November 1, 2026). Coordinate with the Lab on current availability before announcing an event.
+- **Kit access follows the event window.** Kit access expires after the event window agreed with the Lab (October 30–November 1, 2026 was the Halloween 2026 window). Coordinate with the Lab on current availability before announcing an event.
 
 ## What to coordinate before announcing
 
@@ -90,4 +92,4 @@ Play the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1) before you
 
 ## Contact
 
-To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Coordinate with the Lab before announcing your event. The previously advertised Halloween access window has ended. Confirm a currently supported event window, purchase terms and fulfillment arrangements with the Lab before advertising an event.
+To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Coordinate with the Lab before announcing your event. Confirm a currently supported event window, purchase terms and fulfillment arrangements with the Lab before advertising an event.

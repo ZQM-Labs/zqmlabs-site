@@ -48,7 +48,7 @@ Fairness cuts both ways, so here is where the Lab is not the answer:
 
 Six stops. A story that connects them — Wisp, the Game Master's escaped first creation, leading players through it. A puzzle at each stop, three hints per stop, and four comfort levels (Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, Full Madness Overdrive) so the same quest fits children, families, and adults after dark. One phone per team, played in a browser, works offline at the stops. No app to install, no per-player charge, no subscription.
 
-**Paid-kit checkout is currently paused.** The October 30–November 1, 2026 Halloween event window has ended, and no new kit purchase is available through the site right now. The flat fees above are the Lab's published tiers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything.
+**Paid kit checkout is live.** The October 30–November 1, 2026 Halloween event window has ended, and kits are available to buy on the [hosting tiers page](/tiers/). The flat fees above are the Lab's published tiers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything.
 
 ## Try it before you decide
 
