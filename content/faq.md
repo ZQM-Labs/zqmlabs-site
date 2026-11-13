@@ -42,19 +42,27 @@ faq:
       window has ended and paid kit checkout is live. Buy your kit on the
       hosting tiers page; kit access details are emailed to you after purchase.
       Contact the Lab about any future event.
+  - q: "Can I try it before I buy?"
+    a: >-
+      Yes. Play the free Wisp browser demo — six stops, no sign-up, right in
+      your browser.
   - q: "What devices do players need?"
     a: >-
       The current game is designed for browser-based play. Check the demo and
       its instructions for the current device, browser, camera, and QR-code
       requirements before planning an event. Do not assume every future ZQM
       Labs game will use the same setup.
+  - q: "Do I need to install an app?"
+    a: >-
+      No. ZQM Labs quests run in a phone browser — no app to install, one
+      phone per team.
   - q: "What are the Dial levels?"
     a: >-
-      The current Wisp's Lost Lanterns materials describe four levels: Cozy
-      Glow, Spooky, After Dark, and Overdrive. Check the game itself and the
-      event materials for the current descriptions and suitability guidance.
-      These levels are specific to this experience, not a requirement for every
-      game from the Lab.
+      The current Wisp's Lost Lanterns materials describe four levels: Li'l Z
+      Cozy, Classic Z Spooky, Mad Z After Dark, and Full Madness Overdrive.
+      Check the game itself and the event materials for the current
+      descriptions and suitability guidance. These levels are specific to this
+      experience, not a requirement for every game from the Lab.
   - q: "When was the local event?"
     a: >-
       The Halloween 2026 in-person activation took place in Volusia County,
@@ -69,7 +77,7 @@ faq:
   - q: "How much does hosting cost?"
     a: >-
       The current Wisp's Lost Lanterns page lists Family Night at $49,
-      Community at $199, and Office Team / Office Event at $349 / $499. These are the current tiers; paid kit checkout is live — see the hosting tiers page to buy. Confirm any future price and availability with the Lab. See the hosting tiers page and coordinate with the Lab
+      Community at $199, and Office Team / Office Event at $349 / $499. These are the current tiers; paid kit checkout is live — see the hosting tiers page to buy. Confirm any future price and availability with the Lab, and coordinate with the Lab
       before announcing your event.
   - q: "Who chooses the route and venue?"
     a: >-
@@ -142,6 +150,13 @@ The published offer describes printable signs, team access, the browser-based ga
 </details>
 
 <details>
+<summary>Can I try it before I buy?</summary>
+
+Yes. [Play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1) — six stops, no sign-up, right in your browser.
+
+</details>
+
+<details>
 <summary>What devices do players need?</summary>
 
 The current game is designed for browser-based play. Check the demo and its instructions for the current device, browser, camera, and QR-code requirements before planning an event. Do not assume every future ZQM Labs game will use the same setup.
@@ -149,9 +164,16 @@ The current game is designed for browser-based play. Check the demo and its inst
 </details>
 
 <details>
+<summary>Do I need to install an app?</summary>
+
+No. ZQM Labs quests run in a phone browser — no app to install, one phone per team.
+
+</details>
+
+<details>
 <summary>What are the Dial levels?</summary>
 
-The current Wisp's Lost Lanterns materials describe four levels: Cozy Glow, Spooky, After Dark, and Overdrive. Check the game itself and the event materials for the current descriptions and suitability guidance. These levels are specific to this experience, not a requirement for every game from the Lab.
+The current Wisp's Lost Lanterns materials describe four levels: Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, and Full Madness Overdrive. Check the game itself and the event materials for the current descriptions and suitability guidance. These levels are specific to this experience, not a requirement for every game from the Lab.
 
 </details>
 
@@ -174,7 +196,7 @@ Possibly, depending on the current package, location, support capacity, and even
 <details>
 <summary>How much does hosting cost?</summary>
 
-The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are the current tiers; paid kit checkout is live — see [hosting tiers](/tiers/) to buy. Confirm any future price and availability with the Lab. See [hosting tiers](/tiers/) and coordinate with the Lab before announcing your event.
+The current Wisp's Lost Lanterns page lists Family Night at $49, Community at $199, and Office Team / Office Event at $349 / $499. These are the current tiers; paid kit checkout is live — see [hosting tiers](/tiers/) to buy. Confirm any future price and availability with the Lab, and coordinate with the Lab before announcing your event.
 
 </details>
 
