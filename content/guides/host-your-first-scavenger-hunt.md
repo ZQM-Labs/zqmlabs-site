@@ -7,6 +7,8 @@ breadcrumb: true
 ---
 
 **Start with the experience, then decide whether you need to become a host.**
+
+There are two different searches behind “scavenger hunt without an app”: **a ready-made scavenger hunt kit** for a group that wants to play, and **a build-your-own hunt** for an organizer who wants to create clues. The [current Wisp kits](/tiers/) are the finished-story option; the free tools below help teach an organizer how to author their own. Neither route or activity is automatically approved for a specific venue.
 ZQM Labs uses a browser-first six-stop puzzle format with QR or
 manual-code alternatives and an offline-first player design. A
 published example pack and a working demo are *not* evidence that a
