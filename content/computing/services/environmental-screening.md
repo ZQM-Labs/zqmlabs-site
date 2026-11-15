@@ -1,14 +1,16 @@
 ---
 title: "Environmental GIS Maps and Preliminary Parcel Screening"
-seo_title: "Environmental GIS Map Production & Parcel Screening | ZQM Computing"
-description: "Scope environmental GIS figures, parcel map series and data preparation for consultant review, or request a preliminary desktop screening with documented sources."
+seo_title: "Environmental GIS Subcontracting & Parcel Maps | ZQM Computing"
+description: "Environmental GIS subcontracting for consultant-reviewed exhibits, QGIS Atlas parcel maps and data preparation, plus separately scoped desktop screening."
+service_type: "Environmental GIS map production and preliminary parcel screening"
+breadcrumb_title: "Environmental GIS production"
 ---
 
 ## Need a figure set, or an early look at a parcel?
 
 Environmental and engineering consultancies can scope a defined GIS production task for their own review process. Property buyers and planners can request a separate preliminary desktop review of available indicator data.
 
-{{< btn href="/computing/inquiry/" text="Discuss your map or parcel question" >}}
+{{< btn href="/computing/inquiry/#map-production" text="Scope your GIS figure set" >}}
 
 ## Environmental GIS production
 
@@ -20,6 +22,12 @@ Bring the figure list, available inputs, required formats and reviewer. Dependin
 - A draft figure index, QA notes and identified missing or conflicting information.
 
 Native editable files, CAD conversion, third-party data, page dimensions and revision allowance are scoped explicitly. The client retains responsibility for professional opinions, agency submissions and required sign-off.
+
+### QGIS Atlas parcel map series
+
+For a parcel portfolio, an Atlas can produce one consistently formatted page per parcel. Agree the coverage layer, unique parcel identifier, map theme, scale approach and figure index before production. Each page can carry an overview, source and retrieval dates, constraint flags, scale bar and the screening limitations appropriate to the work.
+
+The delivery manifest ties each page to its parcel ID, data sources, CRS and generation date. Layer names and legends are prepared for the intended reviewer. Coverage gaps remain explicit in the exhibit and QA notes.
 
 ## Preliminary desktop screening
 
@@ -37,4 +45,18 @@ Agree the figure index or screening question, source rights and coverage, CRS, i
 
 **Desktop limitations:** This work is not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion, legal determination or regulatory approval. Public data and parcel boundaries can be incomplete, outdated or misaligned. Field verification and qualified professional review may be required.
 
-[Send the general geography, requested figures and deadline](/computing/inquiry/). Availability, fee and final deliverables are confirmed after scope review.
+## Questions before a GIS production handoff
+
+### Can you work from a consultant's figure list?
+
+That is a useful starting scope. Provide the requested figures, page dimensions, available source files, symbology requirements, intended use and reviewer. Editable projects, source licensing and revision limits are agreed explicitly.
+
+### Does a map with no intersecting indicators clear a parcel?
+
+No. A missing intersection is meaningful only within verified source coverage and the source's limitations. Unknown coverage is recorded as unknown. Desktop maps do not establish field conditions or regulatory status.
+
+### What if the figure set needs recurring data updates?
+
+An agreed [GIS workflow audit or spatial ETL pilot](/computing/services/gis-automation/) can assess the repeatable preparation and QA steps before the map series is refreshed.
+
+[Send the general geography, requested figures and deadline](/computing/inquiry/#map-production). Availability, fee and final deliverables are confirmed after scope review.

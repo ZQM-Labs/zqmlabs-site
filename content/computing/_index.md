@@ -1,10 +1,12 @@
 ---
 title: "ZQM Computing — GIS Services"
-seo_title: "GIS Maps, Workflow Automation & Web GIS | ZQM Computing"
-description: "Environmental GIS production, spatial workflow automation and Web GIS for consulting and operations teams. Review concrete outputs and discuss one scoped project."
+seo_title: "GIS Consulting & Workflow Automation | ZQM Computing"
+description: "GIS subcontracting, QGIS map series, spatial ETL and Web GIS for consulting and operations teams. Inspect example deliverables and scope one project."
 ---
 
 Get a defined GIS task from source data to a reviewable handoff. ZQM Computing helps environmental and engineering teams prepare maps and datasets, and helps spatial-data teams build repeatable workflows.
+
+Based in New Smyrna Beach, Florida. Project geography, remote delivery and client-specific requirements are reviewed when the work is scoped.
 
 {{< btn href="/computing/inquiry/" text="Discuss your GIS project" >}}
 
@@ -33,6 +35,16 @@ Screening is **not** a certified survey, engineering opinion, regulatory determi
 3. **Deliver for review.** Provide the agreed files or code, QA evidence, limitations and handoff instructions.
 
 Availability, fee, start date and revision allowance are agreed after reviewing the scope. Hosting, ongoing operation and support are included only when specifically agreed.
+
+## Start with one deliverable
+
+| Your immediate need | A practical first scope | What to bring |
+| --- | --- | --- |
+| A report needs GIS figures | [Environmental GIS subcontracting](/computing/services/environmental-screening/): an agreed figure list or parcel Atlas series | Boundary, figure list, source files, reviewer and deadline |
+| A GIS task repeats every week or month | [Workflow audit and automation pilot](/computing/services/gis-automation/): one process, representative inputs and one output | Current steps, formats, frequency and known errors |
+| Spatial data needs an interface | [Web GIS or PostGIS integration](/computing/services/web-gis/): one user task and an agreed interface | Users, permitted data, target environment and expected usage |
+
+The first conversation establishes fit and missing information. A diagnostic, implementation and ongoing maintenance are separate decisions with written acceptance criteria.
 
 ## Work examples
 

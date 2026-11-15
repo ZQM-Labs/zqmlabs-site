@@ -2,13 +2,15 @@
 title: "Web GIS, Spatial Databases and Geospatial APIs"
 seo_title: "Web GIS, PostGIS & Geospatial API Services | ZQM Computing"
 description: "Scope a browser map, PostGIS integration or geospatial API around your users, data access and deployment requirements, with a documented technical handoff."
+service_type: "Web GIS, spatial database integration and geospatial APIs"
+breadcrumb_title: "Web GIS and spatial APIs"
 ---
 
 ## Make spatial data useful to the people who need it
 
 Start with the user task: finding a location, exploring an approved dataset, querying a spatial database or connecting a map to an existing application.
 
-{{< btn href="/computing/inquiry/" text="Discuss a Web GIS project" >}}
+{{< btn href="/computing/inquiry/#web-gis" text="Scope a Web GIS project" >}}
 
 ## Define one useful interface
 
@@ -16,12 +18,30 @@ A scoped project can address a browser map, geographic search, spatial-data API,
 
 Potential deliverables include an architecture/interface specification, a tested prototype or implementation, and documentation for deployment and operator handoff where agreed.
 
+## Useful first project boundaries
+
+- **One browser map:** an approved dataset, agreed filters or geographic search, readable legends and a defined mobile use case.
+- **One spatial API:** named requests and responses, permitted users, example queries and documented error behavior.
+- **One PostGIS integration:** an agreed schema and spatial queries, indexing appropriate to the workload and a documented application connection.
+
+The handoff can include source code, environment instructions, interface documentation, representative tests and an agreed deployment or rollback guide. Data preparation can be scoped through a separate [GIS automation and QA pilot](/computing/services/gis-automation/).
+
 ## Plan the operating responsibilities
 
 Establish authentication and authorization, data rights, geographic coverage, accessibility, performance expectations, caching, hosting, monitoring and rollback. A prototype and a production service have different acceptance requirements; ongoing operation and support are separately agreed.
 
 Cookbook examples demonstrate individual patterns. They do not establish production availability, security certification, continuous hosting or suitability for regulated use. Third-party maps and data may impose licensing and usage limits.
 
+## Questions before a Web GIS project
+
+### Do we need a custom web application?
+
+Start with the user task and distribution requirements. A GeoPackage and QGIS project or a static map may be sufficient. A browser application is useful when the agreed users need shared access, interactive filtering or an application integration.
+
+### Is hosting included?
+
+Deployment target, account ownership, monitoring, operating costs and ongoing support are agreed in writing. A prototype demonstrates the scoped behavior; a production release also needs accepted access controls, recovery and operational ownership.
+
 ## Bring the users, data and target environment
 
-[Send a non-sensitive project brief](/computing/inquiry/) with the intended users, task, high-level sources, approximate usage, deployment preferences and constraints. Scope, fees, timing and availability are confirmed after review.
+[Send a non-sensitive project brief](/computing/inquiry/#web-gis) with the intended users, task, high-level sources, approximate usage, deployment preferences and constraints. Scope, fees, timing and availability are confirmed after review.
