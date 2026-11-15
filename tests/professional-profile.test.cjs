@@ -26,4 +26,6 @@ test("release guard rejects a missing PDF and an incorrect professional credenti
   const original = fs.readFileSync(page, "utf8");
   fs.writeFileSync(page, original.replace('"honorificSuffix":"GISP"', '"honorificSuffix":"PhD"'));
   assert.throws(() => validate(root), /GISP/);
+  fs.writeFileSync(page, original.replace(/"dateModified":"[^"]+",?/, ""));
+  assert.throws(() => validate(root), /modification date/);
 });
