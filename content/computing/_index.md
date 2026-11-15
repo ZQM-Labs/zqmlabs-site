@@ -1,10 +1,10 @@
 ---
 title: "ZQM Computing — GIS Services"
-seo_title: "GIS Consulting & Workflow Automation | ZQM Computing"
+seo_title: "Environmental GIS Mapping & Automation Services | ZQM Computing"
 description: "GIS subcontracting, QGIS map series, spatial ETL and Web GIS for consulting and operations teams. Inspect example deliverables and scope one project."
 ---
 
-Get a defined GIS task from source data to a reviewable handoff. ZQM Computing helps environmental and engineering teams prepare maps and datasets, and helps spatial-data teams build repeatable workflows.
+Get a defined GIS task from source data to a reviewable handoff. ZQM Computing provides **environmental GIS mapping services and subcontracted exhibit production** for consulting and engineering teams, alongside GIS workflow automation, spatial data QA and Web GIS development.
 
 Based in New Smyrna Beach, Florida. Project geography, remote delivery and client-specific requirements are reviewed when the work is scoped.
 
@@ -45,6 +45,14 @@ Availability, fee, start date and revision allowance are agreed after reviewing 
 | Spatial data needs an interface | [Web GIS or PostGIS integration](/computing/services/web-gis/): one user task and an agreed interface | Users, permitted data, target environment and expected usage |
 
 The first conversation establishes fit and missing information. A diagnostic, implementation and ongoing maintenance are separate decisions with written acceptance criteria.
+
+## Environmental mapping resources
+
+For a project manager preparing a figure list or parcel screening request, start with the [environmental GIS production resource hub](/computing/resources/):
+
+- [Environmental permit map checklist](/computing/resources/environmental-permit-map-checklist/) — specify figures, source dates, QA and consultant review.
+- [QGIS Atlas for parcel map series](/computing/resources/qgis-atlas-parcel-map-series/) — plan repeatable parcel-level figures.
+- [Desktop wetland screening vs. delineation](/computing/resources/desktop-wetland-screening-vs-delineation/) — avoid treating public indicator maps as regulatory determinations.
 
 ## Work examples
 
