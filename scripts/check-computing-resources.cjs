@@ -13,8 +13,8 @@ const routes = [
   "/computing/resources/desktop-wetland-screening-vs-delineation/",
 ];
 const articles = routes.slice(1);
-const forbidden = /(?:ArcGIS Enterprise|jurisdictionally cleared|guaranteed permit approval|344 S\\.? Woodland)/i;
-const hasLink = (html, href) => [...html.matchAll(/<a\\b[^>]*\\bhref=(?:"([^"]*)"|'([^']*)'|([^\\s>]+))[^>]*>/gi)]
+const forbidden = /(?:ArcGIS Enterprise|guaranteed permit approval|344 S\.? Woodland)/i;
+const hasLink = (html, href) => [...html.matchAll(/<a\b[^>]*\bhref=(?:"([^"]*)"|'([^']*)'|([^\s>]+))[^>]*>/gi)]
   .some(m => (m[1] ?? m[2] ?? m[3]) === href);
 
 function validate(root) {
@@ -27,7 +27,7 @@ function validate(root) {
   assert.ok(hasLink(service, routes[0]), "Environmental GIS service must link resources");
   for (const route of routes) {
     const html = read(route);
-    assert.equal((html.match(/<h1\\b/gi) || []).length, 1, "Exactly one H1: " + route);
+    assert.equal((html.match(/<h1\b/gi) || []).length, 1, "Exactly one H1: " + route);
     assert.ok(html.includes('rel="canonical"'), "Missing canonical: " + route);
     assert.ok(!/<meta[^>]*name="robots"[^>]*noindex/i.test(html), "Resource unexpectedly noindexed: " + route);
     assert.ok(sitemap.includes("https://zqmlabs.com" + route), "Missing sitemap URL: " + route);
@@ -40,10 +40,10 @@ function validate(root) {
     assert.ok(hasLink(html, "/computing/inquiry/#map-production"), "Missing inquiry path: " + route);
   }
   const wetland = read(routes[3]);
-  assert.match(wetland, /U\\.S\\. Fish|USFWS|fws\\.gov/i, "Need authoritative wetland source");
+  assert.match(wetland, /U\.S\. Fish|USFWS|fws\.gov/i, "Need authoritative wetland source");
   assert.match(wetland, /unknown/i, "Missing unknown coverage status");
   const atlas = read(routes[2]);
-  assert.match(atlas, /docs\\.qgis\\.org/i, "Need authoritative QGIS source");
+  assert.match(atlas, /docs\.qgis\.org/i, "Need authoritative QGIS source");
   assert.match(atlas, /parcel_id/i, "Need tractable example identifiers");
   const manifestPath = path.join(root, "release-manifest.json");
   if (fs.existsSync(manifestPath)) {
