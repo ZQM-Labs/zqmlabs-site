@@ -53,7 +53,22 @@ puzzles, a matching player/QR setup and a documented field test.
 Teams should be able to finish safely without speed-based rewards.
 Allow no-photo alternatives and obtain consent for any sharing.
 
-## 4. How do I know the pack is ready?
+## 4. Plan an office team-building scavenger hunt
+
+For a workplace **team-building scavenger hunt**, choose a cooperative six-stop puzzle walk rather than a timed race. A good event rewards solving and discussion, not how quickly participants cross a street or how many photos they upload.
+
+| Decision | Practical approach |
+| --- | --- |
+| Format | Use one permitted indoor or outdoor venue, six approved stops and a common finish |
+| Teams and devices | Agree team sizes, one phone per team where suitable, and a manual-code or paper fallback |
+| Participation | Arrange accessible route and activity alternatives in advance; avoid compulsory photography or GPS |
+| Route and safety | Check boundaries, accessibility, signage permissions, weather and crossings |
+| Privacy | Avoid sharing live locations, unconsented photos or named employee performance scores |
+| Test | Walk the route on supported phones and test weak connectivity and permission-denial cases |
+
+**Ready-made office scavenger hunt kit or custom event?** [Wisp hosting kits](/tiers/) list currently published family, community and office options, subject to availability and coordination. The [free demo](/games/hunt-for-wisps/play/?demo=1) shows the puzzle format; it does not certify a workplace venue or create a booking. For a venue-specific event, [contact ZQM Labs](/contact/) before announcing availability.
+
+## 5. How do I know the pack is ready?
 
 A good first host review covers the pack/validator result, physical
 route and signage, screen-reader/keyboard and mobile usability,
@@ -62,7 +77,7 @@ crossings. Record exact versions and observed outcomes in the
 [playtesting process](https://github.com/ZQM-Labs/playtests).
 Passing a JSON validator does **not** certify venue safety or release.
 
-## 5. Explore a custom event with ZQM Labs
+## 6. Explore a custom event with ZQM Labs
 
 For a proposed neighborhood, heritage, school, nonprofit or workplace
 pilot, send [an organizer inquiry](mailto:zqmcomputing@gmail.com)
