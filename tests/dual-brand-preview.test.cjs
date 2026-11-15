@@ -102,3 +102,18 @@ test("shared footer remains brand-specific and hosted-games-only", () => {
   assert.ok(hasLink(labs, "/computing/"));
   assert.ok(hasLink(computing, "/labs/"));
 });
+
+test("Computing navigation keeps pricing and booking in the separate game studio", () => {
+  for (const route of ["computing", "computing/inquiry", "computing/services/environmental-screening", "computing/services/gis-automation", "computing/services/web-gis"]) {
+    const page = fs.readFileSync(path.join(root, "public", route, "index.html"), "utf8");
+    const navigation = [...page.matchAll(/<nav\b[^>]*>[\s\S]*?<\/nav>/g)];
+    assert.equal(navigation.length, 2, route + ": expected main and footer navigation");
+    for (const [nav] of navigation) {
+      const links = [...nav.matchAll(/\bhref=(?:"([^"]+)"|([^\s>]+))/g)].map(m => m[1] || m[2]);
+      assert.ok(links.length > 0, route + ": navigation has no links");
+      assert.ok(links.every(href => href.startsWith("/computing/") || href === "/labs/"),
+        route + ": game navigation leaked into GIS inquiry path");
+      assert.ok(hasLink(nav, "/computing/inquiry/"), route + ": missing project inquiry");
+    }
+  }
+});
