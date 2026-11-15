@@ -1,32 +1,39 @@
 ---
-title: "GIS Workflow Automation and Geospatial Data Engineering"
-seo_title: "GIS Automation Services | ZQM Computing"
-description: "Scope and implement reproducible GIS workflows, ETL pipelines and quality controls based on measurable operating requirements."
+title: "GIS Workflow Automation and Spatial ETL"
+seo_title: "GIS Workflow Automation & Spatial ETL Services | ZQM Computing"
+description: "Turn one recurring GIS cleanup, data transfer or report into a defined automation pilot with QA, reconciliation, recovery instructions and a documented handoff."
 ---
 
-## Common project needs
+## Start with the GIS task your team repeats
 
-Repeatable spatial ETL, geospatial data normalization, scheduled quality checks, documented scripts, database transformations, or replacing manual GIS processing steps. Environmental and engineering teams may need to produce recurring exhibits, reconcile spatial datasets, or shorten reporting cycles.
+Recurring location files, supplier deliveries, database imports and reporting cycles all need a clear input contract and a reliable output. Scope one process first, with an agreed owner and a measurable definition of success.
 
-## Potential deliverables
+{{< btn href="/computing/inquiry/" text="Discuss a workflow" >}}
 
-- Workflow specification, inputs, outputs, dependencies and operator requirements.
-- Reproducible pipeline code with validation checks and example fixtures.
-- Runbook describing retries, data versioning, failure behavior and recovery.
-- An agreed acceptance plan identifying expected data quality, failure handling, output format, and responsible reviewer.
+## Three practical starting points
 
-## Define a measurable baseline first
+- **Recurring data QA:** check schema, identifiers, geometry and CRS; separate accepted records from reason-coded rejects; reconcile every input row.
+- **File standardization:** map agreed fields and coordinate systems into a documented GeoPackage or GeoParquet output and verify it after writing.
+- **PostGIS import preparation:** validate one source against a staging schema, compare keys and values, and define replay or rollback before any authorized promotion.
 
-Before proposing a cost-saving or throughput claim, identify the existing work steps, typical input volumes, processing frequency, manual effort or elapsed time, common errors/rework, and required reporting deadline. Where a reliable baseline is not available, classify projected benefits as estimates to be measured after implementation—not achieved savings.
+These are bounded pilot options. Enterprise migrations, new platform administration and continuous operational support require their own scope.
 
-A diagnostic and any subsequent implementation are separately scoped. Ongoing monitoring, hosting, support and maintenance require their own operational agreement.
+## Diagnostic first, implementation by agreement
 
-## Engineering controls
+A workflow diagnostic can assess one recurring process, up to three agreed representative inputs and one target output. It documents the current steps, bottlenecks, quality rules and implementation acceptance criteria.
 
-Define data contracts, projected coordinate systems, schema validation, provenance, licensing, error handling and security boundaries before production automation. Cloud, on-premises and local execution are scoped separately.
+A separately scoped pilot can deliver code/configuration, an agreed dataset or report, provenance, QA and reconciliation, representative tests, an operator runbook and a failure/recovery guide. Scheduling, hosting and maintenance are included only when agreed.
 
-**Limitations:** Platform compatibility, source access, hosting, operational support, financial savings and accuracy cannot be guaranteed without reviewing the actual environment. No customer systems or credentials are accessed through this preview.
+## Inspect the QA evidence
 
-## Request a scope review
+The [synthetic workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff.
 
-[Contact ZQM Computing](/computing/inquiry/) with a non-sensitive description of the workflow, its frequency, approximate input volumes, formats, output needs, bottlenecks and intended handoff. No automated submission processor or new checkout is enabled by this page.
+These are synthetic capability examples, not customer results or proof of a complete production integration.
+
+## Choose tools around the target
+
+Use Python/GeoPandas, GDAL, DuckDB Spatial, PostGIS or QGIS where the agreed inputs and output justify them. A file-only workflow need not add a database or a hosted orchestration platform. Client-specific tools, licensing, source access and operational ownership are reviewed during scoping.
+
+Measure current effort, frequency, rework and elapsed time before estimating benefits. Projected savings remain estimates until measured against a defensible baseline.
+
+[Send the workflow, frequency, approximate volume, formats and desired output](/computing/inquiry/). Availability, fees, supported runtime and acceptance thresholds are agreed before implementation.

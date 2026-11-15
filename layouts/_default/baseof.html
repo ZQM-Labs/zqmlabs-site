@@ -102,15 +102,39 @@
     html{scroll-behavior:auto}
     *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
   }
+
+  body.home{font-size:18px}
+  body.home header.site,body.home main,body.home footer.site{max-width:1080px}
+  body.computing{--accent:#145b63;--accent-dark:#104a51;--bg:#f5f8f7;--line:#cbdad7;font-size:18px}
+  body.computing main{max-width:880px}
+  nav.mainnav{display:flex;flex-wrap:wrap;gap:4px 18px;overflow:visible}
+  nav.mainnav a{margin:0;padding:6px 0}
+  main{overflow-wrap:break-word}
 </style>
 </head>
-<body>
+<body class="{{ if .IsHome }}home{{ else if $isComputing }}computing{{ else }}labs{{ end }}">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site">
   {{ if .IsHome }}<a class="brand" href="/" aria-label="ZQM dual-brand home">ZQM<small>COMPUTING &amp; LABS</small></a>{{ else if $isComputing }}<a class="brand" href="/computing/" aria-label="ZQM Computing home">ZQM Computing<small>GEOSPATIAL ENGINEERING</small></a>{{ else }}<a class="brand" href="/" aria-label="ZQM Labs home">🏮 ZQM Labs<small>Z'S QUESTS &amp; MISCHIEF</small></a>{{ end }}
   <nav class="mainnav" aria-label="Main navigation">
-    {{- range .Site.Menus.main }}
-    <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{- if .IsHome }}
+    <a href="/computing/">GIS services</a>
+    <a href="/labs/">Game studio</a>
+    <a href="/games/hunt-for-wisps/play/?demo=1">Free Wisp demo</a>
+    <a href="/computing/inquiry/">GIS project inquiry</a>
+    {{- else if $isComputing }}
+    <a href="/computing/"{{ if eq .RelPermalink "/computing/" }} class="active" aria-current="page"{{ end }}>Services</a>
+    <a href="/computing/#work-examples">Examples</a>
+    <a href="/computing/#how-we-work">How we work</a>
+    <a href="/computing/inquiry/"{{ if eq .RelPermalink "/computing/inquiry/" }} class="active" aria-current="page"{{ end }}>Discuss a project</a>
+    <a href="/labs/">ZQM Labs</a>
+    {{- else }}
+    <a href="/labs/"{{ if eq .RelPermalink "/labs/" }} class="active" aria-current="page"{{ end }}>Studio</a>
+    <a href="/games/"{{ if eq .RelPermalink "/games/" }} class="active" aria-current="page"{{ end }}>Games</a>
+    <a href="/games/hunt-for-wisps/play/?demo=1">Free demo</a>
+    <a href="/tiers/"{{ if eq .RelPermalink "/tiers/" }} class="active" aria-current="page"{{ end }}>Hosting</a>
+    <a href="/organizers/">Organizers</a>
+    <a href="/computing/">GIS services</a>
     {{- end }}
   </nav>
 </header>
@@ -118,7 +142,14 @@
 <footer class="site">
   {{ if .IsHome }}<p><span class="mantra">ZQM Computing + ZQM Labs</span> · Separate expertise, shared website.</p>{{ else if $isComputing }}<p><span class="mantra">Geospatial engineering</span> · Reproducible GIS services and tools from ZQM Computing.</p>{{ else }}<p><span class="mantra">{{ .Site.Params.mantra }}</span> · {{ .Site.Params.tagline }}</p>{{ end }}
   <nav aria-label="Footer navigation">
+    {{- if $isComputing }}
+    <a href="/computing/">GIS services</a>
+    <a href="/computing/#work-examples">Work examples</a>
+    <a href="/computing/inquiry/">Project inquiry</a>
+    <a href="/labs/">ZQM Labs</a>
+    {{- else }}
     {{- range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+    {{- end }}
   </nav>
   <p class="fineprint">Built in New Smyrna Beach, Volusia County, Florida ·
   <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> ·

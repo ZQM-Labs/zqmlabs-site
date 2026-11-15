@@ -1,25 +1,27 @@
 ---
 title: "Web GIS, Spatial Databases and Geospatial APIs"
-seo_title: "Web GIS and Geospatial APIs | ZQM Computing"
-description: "Scope geospatial APIs, PostGIS integrations and accessible browser mapping interfaces with security, performance and operational requirements."
+seo_title: "Web GIS, PostGIS & Geospatial API Services | ZQM Computing"
+description: "Scope a browser map, PostGIS integration or geospatial API around your users, data access and deployment requirements, with a documented technical handoff."
 ---
 
-## Common project needs
+## Make spatial data useful to the people who need it
 
-Web map prototypes, spatial data access APIs, PostGIS data models, map tiles, geographic search, and geospatial application integration.
+Start with the user task: finding a location, exploring an approved dataset, querying a spatial database or connecting a map to an existing application.
 
-## Potential deliverables
+{{< btn href="/computing/inquiry/" text="Discuss a Web GIS project" >}}
 
-- Technical architecture and interface specification.
-- Scoped proof of concept or implementation with appropriate tests.
-- Deployment, security and maintenance requirements, plus operational documentation where agreed.
+## Define one useful interface
 
-## Engineering controls
+A scoped project can address a browser map, geographic search, spatial-data API, PostGIS data model or an integration with an existing application. Agree who will use it, which data they can access and what the interface must return.
 
-Evaluate authentication, authorization, data rights, geographic coverage, performance, caching, monitoring, accessibility and rollback before production deployment.
+Potential deliverables include an architecture/interface specification, a tested prototype or implementation, and documentation for deployment and operator handoff where agreed.
 
-**Limitations:** A preview or cookbook pattern is not proof of production availability, security certification, uninterrupted hosting, or suitability for regulated use. Third-party maps and data can impose licenses and usage limits.
+## Plan the operating responsibilities
 
-## Request a scope review
+Establish authentication and authorization, data rights, geographic coverage, accessibility, performance expectations, caching, hosting, monitoring and rollback. A prototype and a production service have different acceptance requirements; ongoing operation and support are separately agreed.
 
-[Contact ZQM Computing](/computing/inquiry/) with the intended users, high-level data sources, scale, deployment preferences and technical constraints. No new inquiry processor, API deployment or payment feature is activated by this page.
+Cookbook examples demonstrate individual patterns. They do not establish production availability, security certification, continuous hosting or suitability for regulated use. Third-party maps and data may impose licensing and usage limits.
+
+## Bring the users, data and target environment
+
+[Send a non-sensitive project brief](/computing/inquiry/) with the intended users, task, high-level sources, approximate usage, deployment preferences and constraints. Scope, fees, timing and availability are confirmed after review.

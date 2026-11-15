@@ -1,37 +1,40 @@
 ---
-title: "Preliminary Environmental and Parcel GIS Screening"
-seo_title: "Preliminary GIS Screening | ZQM Computing"
-description: "Preliminary desktop spatial screening and scoped environmental GIS production, with documented sources, uncertainty, review requirements, and next steps."
+title: "Environmental GIS Maps and Preliminary Parcel Screening"
+seo_title: "Environmental GIS Map Production & Parcel Screening | ZQM Computing"
+description: "Scope environmental GIS figures, parcel map series and data preparation for consultant review, or request a preliminary desktop screening with documented sources."
 ---
 
-## Who this is for
+## Need a figure set, or an early look at a parcel?
 
-Property buyers, planners, environmental teams, and project managers seeking an **early-stage desktop review** of available geographic data. Environmental and engineering consultancies may also request scoped **overflow GIS map and figure production** for their own professional review processes.
+Environmental and engineering consultancies can scope a defined GIS production task for their own review process. Property buyers and planners can request a separate preliminary desktop review of available indicator data.
 
-## Preliminary desktop screening — potential deliverables
+{{< btn href="/computing/inquiry/" text="Discuss your map or parcel question" >}}
 
-- A location and context map for the supplied project boundary.
-- A source-by-source screening matrix with retrieval dates, coverage, and observed limitations.
-- A concise written summary of mapped constraints and items requiring professional or field verification.
+## Environmental GIS production
 
-## Environmental GIS production — potential deliverables
+Bring the figure list, available inputs, required formats and reviewer. Depending on the agreed scope, the handoff can include:
 
-For consulting and engineering teams with defined inputs and review responsibility, possible outputs include:
+- Site-location, aerial-context, parcel, soils, wetland-indicator or flood-hazard exhibits.
+- One page per parcel with a detail map, overview, legend, scale, source dates and clear coverage-gap labels.
+- Prepared GIS layers with attribute/CRS checks, organized filenames and source provenance.
+- A draft figure index, QA notes and identified missing or conflicting information.
 
-- Site location, aerial-context, parcel, soils, mapped wetland indicator, flood-hazard, and other project-specific map exhibits as appropriate to the agreed scope.
-- GIS layer preparation, attribute/coordinate-reference checks, file organization, and documented source provenance.
-- A draft figure set or review package with a map index, scale/legend checks, QA notes, and clearly identified missing or conflicting data.
+Native editable files, CAD conversion, third-party data, page dimensions and revision allowance are scoped explicitly. The client retains responsibility for professional opinions, agency submissions and required sign-off.
 
-The client retains responsibility for its professional opinions, agency submissions, and any required qualified review or sign-off. Native editable files, CAD conversion, third-party datasets, and redistribution rights are scoped separately.
+## Preliminary desktop screening
 
-## Method and acceptance
+Begin with the project boundary and the question the screening should support. Possible outputs include a context map, source-by-source screening matrix, retrieval dates and a concise summary of mapped indicators and follow-up questions.
 
-Define the location and decision question or requested figure index; establish source availability, licensing, geographic extent, and intended scale; validate inputs and coordinate systems; prepare agreed outputs; record limitations and QA findings; and return items requiring client review. For repeat production, acceptance criteria can address file naming, layers, formats, page dimensions, legends, source dates, and revision count.
+Coverage is checked before interpreting a missing intersection. Missing or unverified source coverage remains unknown; it is not a finding that a parcel has no constraints.
 
-**Limitations:** Desktop screening and draft technical exhibits are not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion, regulatory approval, legal determination, or guarantee that no constraints exist. Parcel polygons, open datasets, hazard layers and zoning references can be incomplete, outdated, misaligned or jurisdiction-specific.
+## See the exhibit structure
 
-## Request a scope review
+The [synthetic QGIS parcel Atlas example](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production) includes a portable project, layout template, PDF series and delivery manifest. It demonstrates wetland/flood handoff themes and coverage-gap reporting using synthetic data. It is not a client case study.
 
-[Contact ZQM Computing through the existing contact page](/computing/inquiry/). Landowners can describe the general geography, parcel identifiers, objective and deadline. Professional teams can include a non-sensitive figure list, expected input formats, desired editable outputs, and review requirements.
+## Define acceptance before production
 
-Do not submit sensitive documents or credentials through an unreviewed channel. Availability, price and final deliverables require a separate scope agreement.
+Agree the figure index or screening question, source rights and coverage, CRS, intended scale, output formats, reviewer and revision limit. The delivery records sources, assumptions, QA findings and items requiring further review.
+
+**Desktop limitations:** This work is not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion, legal determination or regulatory approval. Public data and parcel boundaries can be incomplete, outdated or misaligned. Field verification and qualified professional review may be required.
+
+[Send the general geography, requested figures and deadline](/computing/inquiry/). Availability, fee and final deliverables are confirmed after scope review.

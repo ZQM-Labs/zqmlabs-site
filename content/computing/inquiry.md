@@ -1,28 +1,41 @@
 ---
-title: "Contact ZQM Computing"
-seo_title: "GIS Project Inquiry | ZQM Computing"
-description: "Discuss environmental GIS production, parcel screening, workflow automation, or Web GIS with ZQM Computing. Scope and availability are confirmed individually."
+title: "Discuss Your GIS Project"
+seo_title: "Discuss a GIS Project | ZQM Computing"
+description: "Send a short GIS project brief: the task, available inputs, desired output and deadline. Scope, fees and availability are confirmed after review."
 ---
 
-## Discuss a geospatial project
+## Start with the task you need done
 
-For outsourced environmental GIS production, preliminary environmental or parcel GIS screening, workflow automation, Web GIS, PostGIS or geospatial API projects, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry).
+Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about environmental GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
 
-To support a useful initial assessment, include only non-sensitive information:
+A short description is enough to begin. You can copy this brief into your email:
 
-- **Type of need:** consulting/engineering GIS production, parcel screening, data engineering/automation, or Web GIS.
-- **Intended outcome:** the decision, map/figure set, recurring report, or workflow to be supported.
-- **General scope:** project geography, public data sources, desired formats, expected cadence or volume, and target deadline.
-- **Review responsibilities:** who will approve final content and whether qualified professional sign-off is needed separately.
+> **I need:** a map/figure set, desktop screening, data cleanup, workflow automation or Web GIS.
+>
+> **The output will be used for:** the decision, report or recurring process.
+>
+> **Available inputs:** general source, formats, approximate volume and project geography.
+>
+> **Desired output:** PDF, GIS data, code, a web interface or another agreed format.
+>
+> **Timing and review:** target deadline, recurrence and who will approve the work.
 
-Do not email credentials, confidential customer records, private access keys, health information or restricted datasets. Secure transfer arrangements, if necessary, require a separate agreement.
+For map production, a non-sensitive figure list helps. For automation, describe the current manual steps, how often they repeat and where errors or delays occur. If you have a budget range or a required client environment, include it.
 
-## Before engagement
+{{< cta subject="ZQM Computing project inquiry" text="Email your project brief" >}}
 
-Scope, jurisdiction, availability, fees, completion dates, source-data rights and responsibilities must be reviewed and agreed independently. This preview is **not** a booking, order confirmation, price quotation, regulatory approval, or promise of an immediate response.
+## What happens next
 
-Preliminary GIS screening is not a certified boundary survey, field wetland delineation, jurisdictional determination, engineering opinion, environmental site assessment, or regulatory approval. Figure production does not replace the client's professional review.
+The initial review establishes whether the task fits, what further information is needed and whether a separately scoped diagnostic or implementation makes sense. Scope, data rights, fees, timing, review responsibilities and availability are agreed before work begins.
 
-[Return to ZQM Computing services](/computing/).
+An inquiry is not a booking, order confirmation or price quotation. Response times are confirmed individually.
 
-For games or event hosting rather than geospatial services, use the separate [ZQM Labs information](/labs/).
+## Share project context first
+
+Keep credentials, confidential customer records, private access keys, health information and restricted datasets out of your initial email. If sample data is needed, agree a suitable transfer method and permitted handling first.
+
+Preliminary screening is not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion or regulatory approval. Figure production supports the client's professional review.
+
+[Review the services and work examples](/computing/).
+
+For a game kit or event, use the separate [ZQM Labs information](/labs/).
