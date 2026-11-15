@@ -1,0 +1,8 @@
+{{- if .Params.professional_profile -}}
+{{- $personID := printf "%s#person" .Permalink -}}
+{{- $pageID := printf "%s#profile" .Permalink -}}
+{{- $credential := dict "@type" "EducationalOccupationalCredential" "name" "Certified GIS Professional (GISP)" "credentialCategory" "Professional certification" "recognizedBy" (dict "@type" "Organization" "name" "GIS Certification Institute" "url" "https://www.gisci.org/") -}}
+{{- $person := dict "@type" "Person" "@id" $personID "name" "Alex Zelenski" "honorificSuffix" "GISP" "url" .Permalink "jobTitle" "Geospatial Developer and Environmental Planning Consultant" "description" .Description "alumniOf" (dict "@type" "CollegeOrUniversity" "name" "Stetson University" "url" "https://www.stetson.edu/") "hasCredential" $credential "affiliation" (dict "@type" "Organization" "@id" ("computing/#organization" | absURL) "name" "ZQM Computing" "url" ("computing/" | absURL)) "sameAs" (slice "https://www.linkedin.com/in/alexczelenski/") -}}
+{{- $profile := dict "@type" "ProfilePage" "@id" $pageID "url" .Permalink "name" .Title "description" .Description "mainEntity" (dict "@id" $personID) -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $profile $person) | jsonify | safeJS }}</script>
+{{- end -}}
