@@ -1,0 +1,10 @@
+# Exact professional-source URLs checked against source content on 2026-11-15.
+# These return bot-access denial (403/999) to the CI link checker.
+# Keep ordinary HTTP failures blocking; no domain-wide exclusions or accepted 403s.
+# Recheck source content manually when editing the associated portfolio claims.
+^https://www\.linkedin\.com/in/alexczelenski/$
+^https://www\.researchgate\.net/publication/333474436_Coastal_Flood_Vulnerability_Assessment_for_the_City_of_New_Smyrna_Beach_under_Current_and_Future_Conditions$
+^https://www\.researchgate\.net/publication/373711829_Natural_Lands_Inventory_and_Planning_Strategies_Review_in_Support_of_Resilient_Green_Space_Conservation_in_Lake_County_Florida$
+^https://www\.researchgate\.net/publication/386540351_Conservation_Planning_for_Biodiversity_and_Flood_Resilience_in_Osceola_County_Florida$
+^https://www\.stlucieco\.gov/departments-and-services/county-administration/innovation-resilience-and-performance/resilience-initiative/resilient-st-lucie-webinar-videos$
+^https://www2\.stetson\.edu/today/2021/04/3-year-effort-by-stetson-professor-results-in-35-discount-in-flood-insurance-for-residents-of-monroe-county-florida/$

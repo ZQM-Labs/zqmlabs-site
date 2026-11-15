@@ -56,6 +56,10 @@ Inspect the structure and checks behind the proposed work:
 
 These examples demonstrate configured checks on synthetic inputs. They are not completed client projects, a production integration or evidence of customer savings.
 
+## Who delivers the work?
+
+[Alex Zelenski, GISP](/computing/alex-zelenski/) brings environmental planning, permitting support, conservation research, cartography and geospatial development experience to ZQM Computing. Explore the [project portfolio and source records](/computing/portfolio/) or [download the public résumé (PDF)](/computing/alex-zelenski-resume.pdf).
+
 ## Have a specific deliverable in mind?
 
 Send a short, non-sensitive brief: the task, general geography or workflow, available formats, desired output and deadline. [Start a project inquiry](/computing/inquiry/).
