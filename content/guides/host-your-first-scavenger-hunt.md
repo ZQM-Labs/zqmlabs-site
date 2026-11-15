@@ -51,7 +51,22 @@ puzzles, a matching player/QR setup and a documented field test.
 Teams should be able to finish safely without speed-based rewards.
 Allow no-photo alternatives and obtain consent for any sharing.
 
-## 4. How do I know the pack is ready?
+## 4. Plan an office or team-building scavenger hunt
+
+For a workplace team-building scavenger hunt, pick a **cooperative six-stop puzzle walk** rather than a speed contest. A good team format rewards solving and discussion, not how quickly participants cross a street or how many photos they upload.
+
+| Decision | Practical approach |
+| --- | --- |
+| Format | Choose one permitted indoor or outdoor venue, with six approved stops and a common finish |
+| Teams and devices | Decide team size, provide one phone per team when appropriate, and offer a printed/manual-code fallback |
+| Participation | Make movement, camera use and GPS optional wherever the current kit mechanics permit; arrange accessible alternatives in advance |
+| Route and safety | Check accessible paths, boundaries, signage rights, weather breaks and any venue-specific rules |
+| Privacy | Avoid live location sharing, employee performance scoring, unconsented photography and public leaderboards tied to names |
+| Test | Perform a real route walkthrough on supported phones, including weak-connectivity and permission-denial cases |
+
+**Ready-made kit or custom activity?** [Wisp hosting kits](/tiers/) list the currently published family, community and office options, with purchase or organizer-coordination requirements. The browser [free demo](/games/hunt-for-wisps/play/?demo=1) is useful for testing the puzzle style, but it does not verify an office venue or create a booked event. For a venue-specific adaptation, [contact ZQM Labs](/contact/) before announcing availability.
+
+## 5. How do I know the pack is ready?
 
 A good first host review covers the pack/validator result, physical
 route and signage, screen-reader/keyboard and mobile usability,
@@ -60,7 +75,7 @@ crossings. Record exact versions and observed outcomes in the
 [playtesting process](https://github.com/ZQM-Labs/playtests).
 Passing a JSON validator does **not** certify venue safety or release.
 
-## 5. Explore a custom event with ZQM Labs
+## 6. Explore a custom event with ZQM Labs
 
 For a proposed neighborhood, heritage, school, nonprofit or workplace
 pilot, send [an organizer inquiry](mailto:zqmcomputing@gmail.com)
