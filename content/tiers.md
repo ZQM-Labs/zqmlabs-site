@@ -46,11 +46,11 @@ The prior fundraiser split was an illustration, not a current offer or payout co
 
 ## 🏢 Office Team — $349 flat
 
-A team-building format for coworkers. [Buy Office Team](https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01). Confirm group size, mechanics, and availability with the Lab before announcing an event.
+**Office scavenger hunt kit for team building.** A team-building format for coworkers. [Buy Office Team](https://buy.stripe.com/14AcN78dR7nvbtg5Fv9bO01). Confirm group size, mechanics, and availability with the Lab before announcing an event.
 
 ## 🎪 Office Event — $499 flat
 
-A package for a larger company or organization-wide event. [Buy Office Event](https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02). Confirm group size, mechanics, and availability with the Lab before announcing an event.
+**Team-building scavenger hunt for a larger workplace group.** A package for a larger company or organization-wide event. [Buy Office Event](https://buy.stripe.com/fZu14p8dR7nveFs0lb9bO02). Confirm group size, mechanics, and availability with the Lab before announcing an event.
 
 ## 🧭 Youth Groups and 🎉 Form-Your-Own
 
@@ -61,6 +61,10 @@ A package for a larger company or organization-wide event. [Buy Office Event](ht
 - **Checkout is live.** Buy your kit above; your kit access details are emailed to you after checkout.
 - **Refunds for non-delivery.** Orders that cannot be fulfilled are eligible for refund; applicable law and agreed terms control other refund or reschedule requests.
 - **Kit access follows the event window.** Kit access expires after the event window agreed with the Lab (October 30–November 1, 2026 was the Halloween 2026 window). Coordinate with the Lab on current availability before announcing an event.
+
+## Planning an office scavenger hunt?
+
+Read the [six-stop workplace team-building scavenger hunt planning checklist](/guides/host-your-first-scavenger-hunt/#4-plan-an-office-or-team-building-scavenger-hunt) for venue permissions, team format, accessibility, offline testing and privacy. The Office Team and Office Event products are **ready-made Wisp kits**, not a promise of custom game design, onsite facilitation or an unrestricted venue. Contact the Lab to confirm what is appropriate for your event window.
 
 ## What to coordinate before announcing
 
