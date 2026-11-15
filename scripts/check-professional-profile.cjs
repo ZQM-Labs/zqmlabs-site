@@ -35,6 +35,8 @@ function validate(root) {
   assert.equal(person.honorificSuffix, "GISP");
   assert.equal(person.url, "https://zqmlabs.com" + route);
   assert.equal(pages[0].mainEntity["@id"], person["@id"], "ProfilePage must reference the visible person");
+  assert.match(pages[0].dateModified || "", /^\d{4}-\d{2}-\d{2}$/, "ProfilePage must carry an ISO 8601 calendar modification date");
+  assert.ok(!Number.isNaN(Date.parse(pages[0].dateModified + "T00:00:00Z")), "ProfilePage modification date must be valid");
   assert.equal(person.affiliation.name, "ZQM Computing");
   assert.equal(person.alumniOf.name, "Stetson University");
   assert.equal(person.hasCredential.name, "Certified GIS Professional (GISP)");
