@@ -12,7 +12,9 @@ Environmental and engineering consultancies can scope a defined GIS production t
 
 {{< btn href="/computing/inquiry/#map-production" text="Scope your GIS figure set" >}}
 
-## Environmental GIS production
+## Environmental GIS mapping and permit exhibit production
+
+Environmental consultants, engineering teams and planning firms can subcontract defined **environmental GIS mapping services** when an application, permit review or technical report needs maps. The service is map and data production for the client's qualified reviewer—not preparation, certification or submission of a permit application.
 
 Bring the figure list, available inputs, required formats and reviewer. Depending on the agreed scope, the handoff can include:
 
@@ -28,6 +30,20 @@ Native editable files, CAD conversion, third-party data, page dimensions and rev
 For a parcel portfolio, an Atlas can produce one consistently formatted page per parcel. Agree the coverage layer, unique parcel identifier, map theme, scale approach and figure index before production. Each page can carry an overview, source and retrieval dates, constraint flags, scale bar and the screening limitations appropriate to the work.
 
 The delivery manifest ties each page to its parcel ID, data sources, CRS and generation date. Layer names and legends are prepared for the intended reviewer. Coverage gaps remain explicit in the exhibit and QA notes.
+
+## Environmental permit maps: scope and review checklist
+
+A useful request for proposal identifies the jurisdiction, report or permit context, map sizes and formats, boundary source, figure list, due date and responsible reviewer. For a defensible handoff, agree these checks before drafting:
+
+| Production question | Reviewer-ready evidence |
+| --- | --- |
+| Which layers and parcel boundaries are authorized? | Source agency, vintage, permitted use, and coverage record |
+| Which coordinate system and scale are required? | Documented CRS, extent, north arrow and scale-bar checks |
+| What maps or permit exhibits are needed? | Figure index, titles, consistent symbology and requested PDF/native formats |
+| How are overlaps and missing data handled? | Reproducible spatial checks and explicit unknown or conflicting coverage |
+| Who signs or files the application? | Named client reviewer; professional or regulatory sign-off stays with qualified parties |
+
+For repeated layouts, see the [QGIS Atlas parcel map series](#qgis-atlas-parcel-map-series). For documented past work and current synthetic demonstrations, review the [professional portfolio](/computing/portfolio/).
 
 ## Preliminary desktop screening
 
