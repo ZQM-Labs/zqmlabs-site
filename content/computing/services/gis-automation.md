@@ -12,6 +12,12 @@ Recurring location files, supplier deliveries, database imports and reporting cy
 
 {{< btn href="/computing/inquiry/#workflow-automation" text="Scope a GIS workflow audit" >}}
 
+## GIS workflow automation: typical buyer needs
+
+A consulting team may need to **automate a repeatable GIS data cleanup, verify a spatial ETL import, or standardize parcel and asset records** before monthly map or reporting production. The starting point is a bounded diagnostic with input/output acceptance criteria, not a promise of automatic savings.
+
+For example, a synthetic workflow can read supplied GeoPackage or CSV records, validate field names and coordinate systems, isolate geometry errors, preserve rejected-record reasons, and write a versioned GeoPackage or PostGIS staging output. The demonstration must reconcile input counts before a reviewer accepts the result.
+
 ## Three practical starting points
 
 - **Recurring data QA:** check schema, identifiers, geometry and CRS; separate accepted records from reason-coded rejects; reconcile every input row.
