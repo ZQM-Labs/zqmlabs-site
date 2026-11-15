@@ -36,3 +36,7 @@ Reviewed November 15, 2026. The public profile is client-facing; the portfolio r
 ## Rebuild and review
 
 Run `python3 scripts/build-public-resume.py` with ReportLab installed. Review the exported PDF visually and verify two pages, text extraction and working links. The profile, portfolio and résumé must be copied by the publisher's explicit source overlay and represented in its release manifest before release. A passing local build is separate from deployed evidence.
+
+## External link checking
+
+The six exact URLs in `.lycheeignore` return anti-automation 403/999 responses to the CI checker. Source text was reviewed through the public document/search record; St. Lucie was corroborated from the county search index and prior evidence because direct automated access was denied. The rule does not accept 403 responses globally or exclude entire domains. All other URLs remain subject to the existing link gate.
