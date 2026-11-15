@@ -28,7 +28,7 @@ function validate(root) {
   for (const route of routes) {
     const html = read(route);
     assert.equal((html.match(/<h1\b/gi) || []).length, 1, "Exactly one H1: " + route);
-    assert.ok(html.includes('rel="canonical"'), "Missing canonical: " + route);
+    assert.ok(/<link[^>]*rel=(?:"canonical"|'canonical'|canonical)/i.test(html), "Missing canonical: " + route);
     assert.ok(!/<meta[^>]*name="robots"[^>]*noindex/i.test(html), "Resource unexpectedly noindexed: " + route);
     assert.ok(sitemap.includes("https://zqmlabs.com" + route), "Missing sitemap URL: " + route);
     assert.doesNotMatch(html, forbidden, "Unsupported claim or privacy leak in " + route);
