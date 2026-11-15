@@ -1,21 +1,29 @@
 ---
 title: "ZQM Labs — Story-Driven Location Games"
-seo_title: "ZQM Labs | Location Quests and Browser Games"
-description: "Explore community-centered location quests, playable browser demos, and games in development from ZQM Labs."
+seo_title: "ZQM Labs | Story-Led Scavenger Hunts & Browser Games"
+description: "Play the free Wisp's Lost Lanterns browser demo: six stops, one phone per team, no app to install. Explore hosting information and current game status."
 ---
 
-ZQM Labs builds story-driven location experiences for families, teams, communities, and curious players. Games are separate from ZQM Computing's professional geospatial services.
+## Six stops. One team. A story to finish
 
-## Play Wisp's Lost Lanterns
+Follow Wisp through a story-led scavenger hunt in your phone browser. Play with one phone per team, without installing an app. Four comfort levels run from Cozy Glow through Spooky and After Dark to Overdrive.
 
-The free browser demo is playable without booking an event. It does not confirm host availability, paid fulfillment, or a future in-person edition.
+{{< btn href="/games/hunt-for-wisps/play/?demo=1" text="Play the free Wisp demo" >}}
 
-[Play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1)
+[Explore the games](/games/).
 
-[Explore games and their current status](/games/)
+## Try it before planning an event
 
-## Hosting and community
+1. Open the free Wisp browser demo.
+2. Choose a comfort level and work through the six stops.
+3. Review the [hosting tiers and current terms](/tiers/) if you want a kit for your group.
 
-[Review the existing hosting information](/tiers/) and [organizer resources](/organizers/). Confirm current eligibility, terms, and capacity before announcing an event.
+The demo does not confirm host availability, event dates or a future in-person edition. The [games directory](/games/) identifies the playable demo, information pages and past editions.
 
-[Learn about the Labs](/about/).
+## Planning for a family, team or community?
+
+Use the [organizer resources](/organizers/) to think through the venue, team count and event window. Confirm eligibility, availability, support and terms before announcing an event. The [past Halloween edition](/halloween/) provides historical context.
+
+[Learn about the studio](/about/).
+
+ZQM Labs games have their own offers and terms. For GIS maps, automation or Web GIS, visit [ZQM Computing](/computing/).

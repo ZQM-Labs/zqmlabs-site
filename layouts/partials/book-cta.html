@@ -1,9 +1,26 @@
-<aside class="book-cta">
-  <h2>Ready to unleash one on your neighborhood? ⚡</h2>
-  <p>Tell the Lab your community's name and which tier you're eyeing.
-  Dr. Z replies within a day — usually much faster, the lightning helps.</p>
+{{- if hasPrefix .RelPermalink "/computing/" }}
+{{- if ne .RelPermalink "/computing/inquiry/" }}
+<aside class="book-cta" aria-label="Discuss a GIS project">
+  <h2>Start with one project or workflow</h2>
+  <p>Tell us what your team needs to produce, which inputs are available and when the
+  output is needed. A short, non-sensitive brief is enough to start a scope review.</p>
   <p>
-    <a class="btn" href="mailto:{{ .Site.Params.email }}?subject={{ "Booking a quest kit" | urlquery }}">Email the Lab</a>
+    <a class="btn" href="/computing/inquiry/">Discuss your GIS project</a>
+    <a class="btn ghost" href="/computing/#work-examples">See work examples</a>
+  </p>
+  <p class="fineprint">Scope, fee, availability and start date are agreed after review.</p>
+</aside>
+{{- end }}
+{{- else }}
+<aside class="book-cta">
+  <h2>Questions about future ZQM Labs events?</h2>
+  <p>For paid-kit purchase options, see <a href="/tiers/">the tiers page</a>.
+  The Halloween 2026 access window has ended.
+  The free Wisp demo remains available. Future event dates, paid fulfillment and
+  organizer support require separate confirmation; reply times are not guaranteed.</p>
+  <p>
+    <a class="btn" href="mailto:{{ .Site.Params.email }}?subject={{ "ZQM Labs future event inquiry" | urlquery }}">Email ZQM Labs</a>
     <a class="btn ghost" href="/faq/">Read the FAQ first</a>
   </p>
 </aside>
+{{- end }}
