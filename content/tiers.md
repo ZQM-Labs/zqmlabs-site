@@ -2,7 +2,7 @@
 title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
 seo_title: "Scavenger Hunt Kits for Families, Communities & Teams — ZQM Labs"
 h1: "Wisp hosting tiers — buy your kit"
-description: "Buy a Wisp's Lost Lanterns hosting kit: Family Night $49, Community $199, Office Team $349, Office Event $499. One-time flat fees, checkout live."
+description: "Ready-made Wisp scavenger hunt kits for families, communities and office teams: browser-based play, no app installation, and published one-time hosting tiers."
 products:
   - name: "Family Night"
     price: 49
@@ -23,6 +23,10 @@ products:
 ---
 
 <!-- markdownlint-disable MD013 -->
+
+Looking for a **ready-made scavenger hunt kit** rather than a scavenger hunt app builder? Wisp's Lost Lanterns is a finished, story-driven six-stop quest, played in a phone browser with one phone per team. The free demo lets you examine the format before choosing a family, neighborhood or office kit. Event setup, supported locations and availability still depend on the current kit and agreed arrangements.
+
+[Try the free browser demo](/games/hunt-for-wisps/play/?demo=1) · [Compare scavenger hunt apps and kits](/compare/scavenger-hunt-apps/) · [Read the no-app hosting guide](/guides/host-your-first-scavenger-hunt/).
 
 These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experience. They are not universal pricing for every ZQM Labs game; future titles may have different formats, access models, and prices.
 

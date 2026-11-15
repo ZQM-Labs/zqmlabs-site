@@ -128,6 +128,8 @@ jobs:
           node scripts/check-public-answer-json.cjs
       - name: Validate professional profile, resume and public attribution
         run: node --test tests/professional-profile.test.cjs
+      - name: Validate environmental GIS buyer resource links and limitations
+        run: node --test tests/computing-resources.test.cjs
       - name: Validate generated SEO metadata and structured data
         run: node scripts/check-generated-seo.cjs public
       - name: Verify generated internal links and assets

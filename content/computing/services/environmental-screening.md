@@ -1,7 +1,7 @@
 ---
 title: "Environmental GIS Maps and Preliminary Parcel Screening"
 seo_title: "Environmental GIS Subcontracting & Parcel Maps | ZQM Computing"
-description: "Environmental GIS subcontracting for consultant-reviewed exhibits, QGIS Atlas parcel maps and data preparation, plus separately scoped desktop screening."
+description: "Environmental GIS mapping services for permit exhibits, QGIS parcel map series, data QA and preliminary desktop screening, scoped for consultant review."
 service_type: "Environmental GIS map production and preliminary parcel screening"
 breadcrumb_title: "Environmental GIS production"
 ---
@@ -12,7 +12,9 @@ Environmental and engineering consultancies can scope a defined GIS production t
 
 {{< btn href="/computing/inquiry/#map-production" text="Scope your GIS figure set" >}}
 
-## Environmental GIS production
+## Environmental GIS subcontracting for permit maps and figures
+
+If your environmental consulting or engineering team needs additional GIS mapping capacity, ZQM Computing can scope **environmental permit map production, supporting GIS exhibits, parcel map series and data preparation** against your own figure list and review standards. This is a production handoff, not outsourced professional signoff.
 
 Bring the figure list, available inputs, required formats and reviewer. Depending on the agreed scope, the handoff can include:
 
@@ -34,6 +36,14 @@ The delivery manifest ties each page to its parcel ID, data sources, CRS and gen
 Begin with the project boundary and the question the screening should support. Possible outputs include a context map, source-by-source screening matrix, retrieval dates and a concise summary of mapped indicators and follow-up questions.
 
 Coverage is checked before interpreting a missing intersection. Missing or unverified source coverage remains unknown; it is not a finding that a parcel has no constraints.
+
+## Map-production checklists and buyer resources
+
+- [Environmental permit map checklist](/computing/resources/environmental-permit-map-checklist/) — figure index, source register, QA and handoff records.
+- [QGIS Atlas parcel map series](/computing/resources/qgis-atlas-parcel-map-series/) — coverage layer, unique parcel IDs, PDF export and reconciliation.
+- [Desktop wetland screening vs. field delineation](/computing/resources/desktop-wetland-screening-vs-delineation/) — distinguish mapped indicators from site observations and regulatory decisions.
+
+These resources are practical specifications, not substitute permits or completed-client examples. A [GIS production resource index](/computing/resources/) groups them for consultant reviewers.
 
 ## See the exhibit structure
 
