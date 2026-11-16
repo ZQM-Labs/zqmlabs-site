@@ -40,11 +40,13 @@ The headline price is rarely the whole story. Work it out for your group:
 Fairness cuts both ways, so here is where the Lab is not the answer:
 
 - **If you want to author your own missions**, GooseChase or PlayTours is the right tool. ZQM Labs sells finished quests, not a builder. You cannot write your own missions into a Lab kit.
-- **If you want a ready-made hunt in a big city you are visiting**, Let's Roam has 3,000+ cities and a route waiting. The Lab's quests are built for your place, not theirs.
+- **If you want a ready-made hunt in a big city you are visiting**, Let's Roam has 3,000+ cities and a route waiting. The Lab supplies a ready-made Wisp story; any venue and event window need separate confirmation.
 - **If you run hunts constantly**, a monthly platform subscription will cost less per event than buying a kit each time.
 - **If you need a fully managed, white-glove corporate event with a dedicated account manager**, Scavify's full-service offering is built for that (pricing by custom quote). The Lab's kits are self-run by your organizer, with a one-page guide and best-effort email support.
 
 ## What a ZQM Labs quest is
+
+Flat-fee Wisp kits use the same finished story for every buyer. They are self-guided by your organizer; custom story writing and onsite facilitation are not included in the published office-kit offer. Confirm current kit contents and event arrangements on the [tiers page](/tiers/).
 
 Six stops. A story that connects them — Wisp, the Game Master's escaped first creation, leading players through it. A puzzle at each stop, three hints per stop, and four comfort levels (Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, Full Madness Overdrive) so the same quest fits children, families, and adults after dark. One phone per team, played in a browser, works offline at the stops. No app to install, no per-player charge, no subscription.
 
