@@ -18,7 +18,13 @@ ZQM Labs' published Wisp kits are **Office Team $349** and **Office Event $499**
 | **Office Team** | **$349** | Coworker teams and departments; confirm group size, mechanics and availability |
 | **Office Event** | **$499** | Larger company or organization-wide events; confirm group format, venue, support and availability |
 
-These are current Wisp's Lost Lanterns offers, not universal prices for every future game. Paid-kit checkout is live on the [hosting tiers page](/tiers/); that page holds the purchase links and full tier terms. Youth Groups and Form-Your-Own requests need a separately confirmed scope and price.
+<!-- coderabbit-ai-generated:v1 -->
+
+<!-- coderabbit-ai-generated-section:v1:8925f4131205b707f368a56821ff2882a6941bae12253387aa58912b461a16ae -->
+
+These are current Wisp's Lost Lanterns offers, not universal prices for every future game. Checkout is live on the [hosting tiers page](/tiers/); that page holds the purchase links and full tier terms. Youth Groups and Form-Your-Own requests need a separately confirmed scope and price.
+
+<!-- /coderabbit-ai-generated:v1 -->
 
 ![Families and neighbors gathered with lanterns at an outdoor evening quest, string lights and a wooden kiosk behind them](/img/pricing-evergreen.webp)
 
@@ -29,7 +35,13 @@ These are current Wisp's Lost Lanterns offers, not universal prices for every fu
 - Printable finisher badges, three hints at every stop and four scare/comfort levels.
 - Limited, best-effort remote email support through the agreed event window.
 
-The published kit does not include custom story writing or onsite facilitation. Leaderboard availability has not been verified; confirm any scoring needs with the Lab. Language options depend on the current published player, and some translations may be incomplete. Test the needed format before planning the event.
+<!-- coderabbit-ai-generated:v1 -->
+
+<!-- coderabbit-ai-generated-section:v1:fae7767cc7669cb85e71c7bf733292db6ffa34ca7bb1717cf7fe0dad698a92d2 -->
+
+The published kit does not include custom story writing or onsite facilitation. Leaderboard availability was not verified; confirm any scoring needs with the Lab. Language options depend on the current published player, and some translations may be incomplete. Test the needed format before planning the event.
+
+<!-- /coderabbit-ai-generated:v1 -->
 
 ## Budget for the organizer's work as well
 
