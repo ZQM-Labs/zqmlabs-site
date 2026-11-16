@@ -26,11 +26,11 @@ GooseChase is a builder platform. You create an Experience from missions — pho
 
 ## ZQM Labs, plainly
 
-ZQM Labs does the authoring for you. Dr. Z, the Lab's mad-scientist Game Master, builds each quest around a story — six stops, a puzzle at each stop, three hints per stop, and four comfort levels (Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, Full Madness Overdrive) so the same quest fits children, families, and adults after dark. Wisp, his escaped first creation, is the one leading players through it. Your group gathers, one phone per team, and plays it in a browser. No app to install.
+ZQM Labs supplies a finished Wisp story. The flat-fee kits use the same ready-made quest for every buyer; custom story writing is not included. Dr. Z, the Lab's mad-scientist Game Master, builds each quest around a story — six stops, a puzzle at each stop, three hints per stop, and four comfort levels (Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, Full Madness Overdrive) so the same quest fits children, families, and adults after dark. Wisp, his escaped first creation, is the one leading players through it. Your group gathers, one phone per team, and plays it in a browser. No app to install.
 
-**What it costs:** published flat fees, one-time — Family Night $49, Community $199, Office Team $349, Office Event $499. No per-player charge, no subscription. One fee for the whole group, whatever its size.
+**What it costs:** published flat fees, one-time — Family Night $49, Community $199, Office Team $349, Office Event $499. No per-player charge, no subscription. Each published tier has a flat fee. Confirm the appropriate tier, group format, venue and event window with the Lab before announcing an event.
 
-**What you do:** almost nothing before the day. Pick a kit, gather your team, walk the route, solve the puzzles. A one-page organizer guide covers setup, which takes about an hour.
+**What you do:** review the current kit contents, confirm the event arrangements, prepare the permitted stops and test your setup before the group plays. Follow the organizer instructions for your kit; setup time depends on the venue and agreed format.
 
 ## The honest split
 
@@ -45,9 +45,9 @@ ZQM Labs does the authoring for you. Dr. Z, the Lab's mad-scientist Game Master,
 
 ## The price, worked out
 
-For a group of 10 playing once: GooseChase starts at $99 for a single Experience. A ZQM Labs Community kit is $199 flat — more than GooseChase's entry tier, but the Lab's kit is a finished six-stop story with puzzles, hints, and four comfort levels already written, and it covers an unlimited-size community group rather than 10 participants. A Family Night kit is $49 flat for one household — less than GooseChase's $99 entry tier.
+For a group of 10 playing once: GooseChase starts at $99 for a single Experience. A ZQM Labs Community kit is $199 flat — more than GooseChase's entry tier, but the Lab's kit is a finished six-stop story with puzzles, hints, and four comfort levels already written, and its published Community tier covers unlimited families during the agreed event window. Venue suitability and event arrangements still need confirmation. A Family Night kit is $49 flat for one household — less than GooseChase's $99 entry tier.
 
-For a group that plays once and never builds again, the finished quest is usually the cheaper hour: the building time is the cost GooseChase does not put on its pricing page. For a group that builds once and runs the same hunt ten times, GooseChase wins — you pay for the Experience and reuse your own work.
+Compare the work as well as the listed fee: a builder asks you to author and test missions; a ready-made kit provides an existing story but still needs organizer preparation. Check each vendor's current reuse terms and your event requirements before choosing.
 
 ## What to do next
 
