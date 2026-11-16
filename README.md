@@ -20,6 +20,10 @@ prove that a game is orderable or approved for an in-person event.
 
 **Deployment:** This repo is the canonical site content source. The production deploy (ZQM-Computing/zqm-labs, `.github/workflows/pages-deploy.yml`) pins this repository by commit in `SITE_SOURCE_SHA` and builds the production site from that pin; the same workflow syncs the pinned quest-player source into the bundle (see `scripts/sync-player.sh`). Changes here go live only when the pin is bumped in the monorepo. The workflow in this repo (`site-ci.yml`) is validation only, not deployment.
 
+## Buyer-intent content implementation
+
+The [buyer-intent content briefs](docs/high-intent-content-briefs.md) link six page specifications and scoped implementation issues for the distinct Computing and Labs funnels. The [organic intent map](docs/organic-discovery-keyword-map.md) includes dated US estimates and primary-page ownership; proposed work is separate from source-merged and live content.
+
 ## Civic and group quest guides
 
 The [civic and group quest conversion plan](docs/civic-quest-conversion-release.md) documents SEO guides, safe game-format distinctions, scoped organizer inquiries, and exact production release gates. The four selected guides were included in the November 16 verified production snapshot described below. Additional source pages remain unverified until selected and checked through the publisher. No new city route, white-label license, live multiplayer or payment offering is represented as available.
