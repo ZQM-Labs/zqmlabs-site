@@ -38,7 +38,7 @@ test("public paid-state and demo messaging are accurate on both pages", () => {
   assert.match(pricingOutput, /checkout is currently unavailable/i);
   for (const html of [tierOutput, pricingOutput]) {
     assert.match(html, /\/games\/hunt-for-wisps\/play\/\?demo=1/);
-    assert.match(html, /href="\/contact\/"/);
+    assert.match(html, /href=(?:["\']|)\/contact\/(?:["\']|)/, "Contact link must survive Hugo minification");
     assert.match(html, /October 30.{0,10}November 1, 2026/);
   }
   assert.match(tierSource, /prior fundraiser split was an illustration/i);
