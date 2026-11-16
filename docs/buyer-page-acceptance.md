@@ -45,6 +45,8 @@ The existing publisher imports the five changed Computing pages at its reviewed 
 
 The publisher currently owns its pricing page. Its matching pricing change must be reviewed separately in `ZQM-Computing/zqm-labs`; this repository retains an identical preview copy. A canonical source merge alone does not publish either change. Keep the existing manual publisher, reviewed main-source pins, exact-commit checks and rollback evidence.
 
+Clean CI exposed two sources competing for `/games/`: legacy `content/games.md` and the established `content/games/_index.md` directory. The legacy file now uses [Hugo's page build option](https://gohugo.io/content-management/build-options/) `render: never`; its content remains available to the publisher's selected-file import. The branch directory and child game routes remain rendered. The existing directory-ownership assertion remains blocking, and fresh builds must agree on that page.
+
 ## Verification record
 
 Record the implementation PR head, applicable build/tests, generated SEO and internal-link checks, source/price boundaries, and the matching publisher pricing blob before source promotion. The existing leaderboard assertion now rejects an unverified included-feature promise rather than requiring an old speculative roadmap label. It does not relax a runtime, payment or security gate.
