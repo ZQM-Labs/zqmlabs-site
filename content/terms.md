@@ -24,7 +24,7 @@ Previously published hosting-kit reference prices were **one-time flat fees for 
 
 Full descriptions are on the [hosting tiers](/tiers/) and [pricing](/pricing/) pages. The listed prices are historical references, not currently available checkout offers; the Lab must confirm any future quote and availability in writing before you promote an event.
 
-**Purchases unavailable:** All listed live Stripe payment links are currently inactive. The Halloween 2026 window has ended. No new paid kit order, entitlement, or email delivery is being offered via checkout. [Contact the Lab](/contact/) to discuss future availability; the free demo remains available.
+**Purchases unavailable:** All listed live Stripe payment links are currently inactive. The Halloween 2026 access window has ended. No new paid kit order, entitlement, or email delivery is being offered via checkout. [Contact the Lab](/contact/) to discuss future availability; the free demo remains available.
 
 **Refunds and changes.** If ZQM Labs cannot deliver an agreed paid order, a refund is available. Other cancellations, reschedules, and refund requests are handled under the agreed event-specific terms and applicable law; no waiver of statutory rights is intended.
 
