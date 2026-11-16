@@ -70,7 +70,7 @@ Early university work and my Environmental Science & Geography degree establishe
 
 **B.S., Environmental Science & Geography — Stetson University, 2016.**
 
-**Certified GIS Professional (GISP) — GIS Certification Institute.** [Check the issuing organization's registry](https://www.gisci.org/Already-a-GISP/GISP-Registry/pagesize/10/Country/us/GISP/active/Region/Florida?page=52).
+**Certified GIS Professional (GISP) — GIS Certification Institute.** Current, valid until January 2027. Verify in the [GISCI GISP Registry](https://www.gisci.org/Already-a-GISP/GISP-Registry) (search by name; the registry lists active and inactive GISPs).
 
 ## Tools and delivery methods
 

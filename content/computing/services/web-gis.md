@@ -12,6 +12,10 @@ Start with the user task: finding a location, exploring an approved dataset, que
 
 {{< btn href="/computing/inquiry/#web-gis" text="Scope a Web GIS project" >}}
 
+See the work before you brief it: [an accessible project map of six fictional projects](#see-an-accessible-project-map) — keyboard-navigable, WCAG 2.1 AA.
+
+Delivered by [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS Professional, GIS Certification Institute, current until January 2027.
+
 ## Define one useful interface
 
 A scoped project can address a browser map, geographic search, spatial-data API, PostGIS data model or an integration with an existing application. Agree who will use it, which data they can access and what the interface must return.
@@ -40,6 +44,8 @@ The estimate separates the prototype or implementation from data preparation, ho
 ## Plan the operating responsibilities
 
 Establish authentication and authorization, data rights, geographic coverage, accessibility, performance expectations, caching, hosting, monitoring and rollback. A prototype and a production service have different acceptance requirements; ongoing operation and support are separately agreed.
+
+One defined task at a time: scope, start date and availability are agreed in writing before work begins.
 
 [Cookbook examples](#see-an-accessible-project-map) demonstrate individual patterns. They do not establish production availability, security certification, continuous hosting or suitability for regulated use. Third-party maps and data may impose licensing and usage limits.
 

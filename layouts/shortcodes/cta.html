@@ -1,1 +1,1 @@
-<p class="hero-cta"><a class="btn" href="mailto:{{ .Page.Site.Params.email }}?subject={{ (.Get "subject" | default "Booking a quest kit") | urlquery }}">{{ .Get "text" | default "Book a kit" }}</a></p>
+<p class="hero-cta"><a class="btn" href="mailto:{{ .Page.Site.Params.email }}?subject={{ (.Get "subject" | default "Booking a quest kit") | urlquery }}{{ with .Get "body" }}&amp;body={{ (replace . "\\n" "\n") | urlquery }}{{ end }}">{{ .Get "text" | default "Book a kit" }}</a></p>
