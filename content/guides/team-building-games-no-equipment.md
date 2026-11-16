@@ -2,7 +2,7 @@
 title: "Team Building Games That Need No Equipment — ZQM Labs"
 seo_title: "Team Building Games That Need No Equipment — ZQM Labs"
 h1: "Team building games that need no equipment"
-description: "Six no-equipment team games you can run anywhere, plus the one game that needs a single phone — a story-driven location quest."
+description: "Five no-equipment team games, optional Human Bingo with prepared grids, and a phone-based Wisp quest. Review setup and venue needs before planning."
 breadcrumb: true
 faq:
   - q: "How many people do these games need?"
@@ -15,9 +15,9 @@ faq:
 
 ![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
 
-## Six games, zero equipment
+## Five games with no equipment
 
-No props, no printouts, no setup. Every game below runs on people and a room — or a video call, where noted. Each one takes ten to twenty minutes.
+The five games in this section need no props or printouts. Use a suitable room or a video call where noted. Human Bingo is an optional activity below and needs prepared grids and a way to write names.
 
 ### Two Truths and a Lie
 
@@ -26,14 +26,6 @@ Each person tells the group two true things about themselves and one false thing
 - **Players:** four or more, any size.
 - **Best for:** a new team that does not know each other yet.
 - **Tip:** the lie should be plausible. "I have never been stung by a bee" is a better lie than "I have been to the moon."
-
-### Human Bingo
-
-Before the session, make a five-by-five grid where each square is a trait — "has been to another country," "can play an instrument," "has a dog." Players mingle, find a person who matches each square, and write their name in it. First to complete a row — or a full card, for a longer game — wins.
-
-- **Players:** ten or more, so the grid fills.
-- **Best for:** a mixed group at the start of an offsite, when people need a reason to talk to strangers.
-- **Tip:** put one square in the middle that is true of almost everyone ("has drunk coffee today") so nobody stalls at the start.
 
 ### One-Word Story
 
@@ -67,20 +59,30 @@ Pose a forced choice — "Would you rather work from a beach or a mountain cabin
 - **Best for:** a team that likes debate and needs to practice making a case together.
 - **Tip:** pick choices with no right answer. The argument is the game, not the choice.
 
+## Optional game with prepared materials
+
+### Human Bingo
+
+Before the session, make a five-by-five grid where each square is a trait — "has been to another country," "can play an instrument," "has a dog." Players mingle, find a person who matches each square, and write their name in it. First to complete a row — or a full card, for a longer game — wins.
+
+- **Players:** ten or more, so the grid fills.
+- **Best for:** a mixed group at the start of an offsite, when people need a reason to talk to strangers.
+- **Tip:** put one square in the middle that is true of almost everyone ("has drunk coffee today") so nobody stalls at the start.
+
 ## The one game that needs a phone
 
-Six no-equipment games fill an hour. A full team event needs more than an hour — it needs a shared experience with a shape. That is the one phone-based option on this page: a story-driven location quest.
+Choose a few of the five no-equipment games for a short session, or prepare Human Bingo if materials are available. A ready-made Wisp quest is a separate phone-based option with its own kit, venue and event arrangements.
 
-A team takes one phone, follows a trail of six stops, solves a puzzle at each one, and finishes together. Four comfort levels (Cozy, Spooky, After Dark, Overdrive) let the same quest fit the whole team. It plays in the browser — no app to install — and the organizer kit is designed to run in about an hour of setup. Try the [free browser demo](/games/hunt-for-wisps/) first: six stops, four levels, no account.
+A team takes one phone, follows a trail of six stops, solves a puzzle at each one, and finishes together. Four comfort levels (Cozy, Spooky, After Dark, Overdrive) let the same quest fit the whole team. It plays in the browser — no app to install — and the flat-fee kit uses the same finished story for each buyer. Review the current kit instructions and confirm setup, venue and event window with the Lab; custom authorship and onsite facilitation are not included in the published office-kit offer. Try the [free browser demo](/games/hunt-for-wisps/) first: six stops, four levels, no account.
 
 ## Choosing by group size and venue
 
 - **Under 10 people, one room, no budget:** any two or three games above. Two Truths and a Lie plus One-Word Story is a solid hour.
-- **10 to 30 people, an offsite:** Human Bingo to open, a location quest (Office Team, $349) as the main event.
-- **30 to 50+ people, organization-wide:** split into teams of four to eight and run a location quest (Office Event, $499). No-equipment games work as openers, not as the event itself, at that size.
+- **An offsite:** Human Bingo is an option if you prepare grids and writing materials. Review Office Team ($349) if a ready-made Wisp kit fits the confirmed group, venue and event arrangements.
+- **A larger organization:** Office Event lists at $499. Confirm supported headcount and operating format before planning around a kit; the published price is not a capacity guarantee.
 - **No venue at all:** the no-equipment games work anywhere — a park, a video call, a hallway. A location quest needs a venue agreed with the Lab.
 - **Bad weather:** the no-equipment games move indoors without changing. A location quest needs a multi-day window or an indoor fallback — see the [team-building guide](/guides/team-building-games/) for the full comparison.
 
-## Ready to book?
+## Choose a kit and confirm arrangements
 
 Start with the [Office tiers](/tiers/) and [flat-fee pricing](/pricing/) — Office Team $349, Office Event $499, no per-player charges — then [contact the Lab](/contact/) with your team size, your dates, and your venue.
