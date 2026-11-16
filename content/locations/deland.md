@@ -29,7 +29,7 @@ A location quest is a story-driven scavenger hunt played on foot with a phone: y
 
 DeLand is the county seat, with a walkable historic downtown and a college community around Stetson University. **The downtown streets and the Stetson area** are the settings we start from. These are settings to coordinate, not promised routes: the exact stops, route, and permissions are agreed with the Lab for each event, and a setting only becomes a quest once the Lab has confirmed it works for your group, your date, and your players' needs.
 
-DeLand suits school and youth groups especially well — a school club afternoon, a Scout troop outing, a church youth group — and the same format works for visiting teams and community groups. The Youth Groups tier is waitlist; the Community tier ($199, unlimited families) is a historical group tier, not currently bookable while a Youth Groups date is being arranged.
+DeLand suits school and youth groups especially well — a school club afternoon, a Scout troop outing, a church youth group — and the same format works for visiting teams and community groups. The Youth Groups tier requires separate confirmation. The Community tier ($199, unlimited families) is listed as a current kit on the [tiers page](/tiers/); confirm the venue and event window before planning.
 
 Flat-fee Wisp kits use the same finished story for every buyer. Coordinating the setting, stop placement and permissions does not mean the story is customized. Review current kit contents and confirm the event arrangements with the Lab.
 
