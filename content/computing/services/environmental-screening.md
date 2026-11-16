@@ -119,6 +119,8 @@ Agree the figure index or screening question, source rights and coverage, CRS, i
 
 **Desktop limitations:** This work is not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion, legal determination or regulatory approval. Public data and parcel boundaries can be incomplete, outdated or misaligned. Field verification and qualified professional review may be required.
 
+**Regulated-practice boundary:** If a requested figure would establish or reestablish legal property lines, certify elevations or grades, provide engineering design, reach a professional geologic conclusion or make a formal regulatory determination, the task requires a separate review of applicable licensing requirements before acceptance. Those tasks are not included by default. A client reviewer or final stamp does not by itself authorize ZQM Computing to perform regulated services. Tax-parcel and other reference geometries are mapped indicators, not certified surveyed boundaries.
+
 ## Questions before a GIS production handoff
 
 ### Can you work from a consultant's figure list?
