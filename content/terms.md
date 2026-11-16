@@ -12,6 +12,8 @@ This site is the home of ZQM Labs' location quests and scavenger hunt games. The
 
 A demo being playable does not mean a paid event package is available, or that an in-person route has been approved for your area. Before announcing an event, coordinate date availability, delivery area, venue permissions, accessibility, and support arrangements with the Lab.
 
+**Participant and organizer coordination.** Before a kit-based Wisp event, the group's designated organizer must email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20Game%20Coordination) with the kit format, date/time and time zone, city/venue, team count and any relevant accessibility or support needs. Participants should coordinate with the Lab through that organizer. ZQM Labs must confirm the event window, venue/route arrangements, delivery and support terms in writing. Payment alone, if checkout becomes available, does not reserve a date or authorize a physical venue.
+
 ## Hosting kits
 
 Previously published hosting-kit reference prices were **one-time flat fees for an agreed event window**. **No paid kit is currently available for online purchase**:
