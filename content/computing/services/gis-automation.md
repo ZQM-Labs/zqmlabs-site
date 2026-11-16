@@ -57,34 +57,34 @@ The audit produces a workflow outline, data-quality rules, a proposed pilot boun
 
 ## Inspect the QA evidence
 
-The [synthetic workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff. The full report below was computed by a standard-library-only Python script against the six-parcel GeoPackage; nothing in it is hand-typed.
+The [synthetic workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff. The full report below was computed by a standard-library-only Python script against a six-parcel GeoPackage built from Volusia County parcels, USFWS NWI wetlands, and FEMA NFHL flood zones (Turnbull Bay sample, accessed 2026-11-16); nothing in it is hand-typed.
 
 ### QA report — computed checks
 
 **Overlap accounting — 12/12 PASS.** All 12 recomputed overlaps match the stored attributes within ±1 m²:
 
-| Synthetic parcel | Wetland overlap | Flood overlap |
+| Parcel | Wetland overlap | Flood overlap |
 | --- | --- | --- |
-| DEMO-P1 | 5,000 m² | 0 m² |
-| DEMO-P2 | 0 m² | 2,500 m² |
-| DEMO-P3 | 5,000 m² | 0 m² |
-| DEMO-P4 | 2,500 m² | 2,500 m² |
-| DEMO-P5 | 0 m² | 0 m² |
-| DEMO-P6 | 10,000 m² | 2,500 m² |
+| 730901000W14 | 23,633 m² | 0 m² |
+| 731500000044 | 0 m² | 12,356 m² |
+| 731503000001 | 24,227 m² | 0 m² |
+| 731510000006 | 29,157 m² | 34,493 m² |
+| 732101000080 | 0 m² | 0 m² |
+| 732200000042 | 13,352 m² | 6,659 m² |
 
-CRS PASS (all layers EPSG:32617); geometry PASS (6 parcels, closed rings, 10,000 m² each, no self-intersection); attributes PASS (no duplicate/null parcel_id).
+CRS PASS (all layers EPSG:32617); geometry PASS (6 parcels, closed rings, non-zero area, no self-intersection, all parts); attributes PASS (no duplicate/null parcel_id).
 
 **Reconciliation — 6 = 6 + 0.** Main parcel set: 6 inputs = 6 accepted + 0 rejected. Incoming batch: 8 = 2 accepted + 6 rejected, with 7 reason instances across the 6 rejected rows (record B-008 carries two reasons).
 
 Reject reasons include duplicate identifiers, missing names, unusable geometry, the wrong geometry type and records outside the boundary. A row can have more than one reason, so reason totals must not be used as a second row count.
 
-**Source freshness — 4 FLAGs, explained.** One FLAG per synthetic source (SYNTH-PARCELS-2026, SYNTH-WETLAND-2026, SYNTH-FLOOD-HAZARD-2026, SYNTH-FLOOD-COVERAGE-2026): the effective date is null, so freshness cannot be verified. A FLAG means "cannot be verified", not "wrong".
+**Source freshness — 2 PASS + 3 FLAG, explained.** PASS: NWI wetland inventory and NWI mapped extent (effective 2026-10). FLAG: Volusia parcels, NFHL flood hazard, NFHL flood coverage — effective dates not published, so freshness **cannot be verified**. A FLAG means "cannot be verified", not "wrong".
 
-Input identity: SHA-256 `6c65d13c…f04f8a`. Tooling: Python 3.12 standard library only (`sqlite3` + WKB parsing); no geopandas/shapely needed to run it.
+Input identity: SHA-256 `c6ec806a…1a2a4`. Tooling: Python 3.12 standard library only (`sqlite3` + WKB parsing plus the documented ear-clipping triangulation for real-geometry clipping); no geopandas/shapely needed to run it.
 
-Read the full rendered report: [qa_report.html](/computing/demonstrators/qa-report/qa_report.html) — a complete standalone document, inline styles, no external dependencies. Run it yourself: [qa_report.py](/computing/demonstrators/qa-report/qa_report.py) with [fixtures/parcel_screening.json](/computing/demonstrators/qa-report/fixtures/parcel_screening.json) (download, for running without the GeoPackage).
+Read the full rendered report: [qa_report.html](/computing/demonstrators/qa-report/qa_report.html) — a complete standalone document, inline styles, no external dependencies. Run it yourself: [qa_report.py](/computing/demonstrators/qa-report/qa_report.py) (download; it reads the GeoPackage above).
 
-These are synthetic capability examples, not customer results or proof of a complete production integration. They demonstrate traceable checks, not a measured percentage improvement or labor saving.
+These are computed checks against a public-data sample, not customer results or proof of a complete production integration. They demonstrate traceable checks, not a measured percentage improvement or labor saving.
 
 ## Scope, price and delivery decisions
 
