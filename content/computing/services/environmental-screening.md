@@ -10,7 +10,11 @@ breadcrumb_title: "Environmental GIS production"
 
 Need report figures while your GIS team is at capacity? Start with your figure list, source files and deadline. ZQM Computing scopes site maps, parcel map series, permit exhibits and data preparation for your consultant's review. Property buyers and planners can request a separate preliminary desktop review of mapped indicators.
 
-{{< btn href="/computing/inquiry/#map-production" text="Request a figure-set estimate" >}}
+{{< btn href="/computing/inquiry/#map-production" text="Send a figure-set brief" >}}
+
+Before you scroll: the [six-parcel screening table, source register and downloadable fixture](#see-the-exhibit-structure) show the exhibit structure on synthetic parcels, with coverage gaps recorded as unknown — not as clear.
+
+Delivered by [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS Professional, GIS Certification Institute, current until January 2027.
 
 [Inspect the synthetic sample](#see-the-exhibit-structure) · [Review the input checklist](#what-to-send-for-an-estimate).
 
@@ -147,6 +151,8 @@ Agree the figure index or screening question, source rights and coverage, CRS, i
 **Desktop limitations:** This work is not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion, legal determination or regulatory approval. Public data and parcel boundaries can be incomplete, outdated or misaligned. Field verification and qualified professional review may be required.
 
 **Regulated-practice boundary:** If a requested figure would establish or reestablish legal property lines, certify elevations or grades, provide engineering design, reach a professional geologic conclusion or make a formal regulatory determination, the task requires a separate review of applicable licensing requirements before acceptance. Those tasks are not included by default. A client reviewer or final stamp does not by itself authorize ZQM Computing to perform regulated services. Tax-parcel and other reference geometries are mapped indicators, not certified surveyed boundaries.
+
+One defined task at a time: scope, start date and availability are agreed in writing before work begins.
 
 ## Questions before a GIS production handoff
 

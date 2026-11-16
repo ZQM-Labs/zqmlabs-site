@@ -12,6 +12,10 @@ Recurring location files, supplier deliveries, database imports and reporting cy
 
 {{< btn href="/computing/inquiry/#workflow-automation" text="Scope a GIS workflow audit" >}}
 
+The evidence is computed, not hand-typed: [12/12 overlap checks PASS, reconciliation 6 = 6 + 0](#inspect-the-qa-evidence) — see the full QA report below.
+
+Delivered by [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS Professional, GIS Certification Institute, current until January 2027.
+
 ## GIS workflow automation: typical buyer needs
 
 A consulting team may need to **automate a repeatable GIS data cleanup, verify a spatial ETL import, or standardize parcel and asset records** before monthly map or reporting production. The starting point is a bounded diagnostic with input/output acceptance criteria, not a promise of automatic savings.
@@ -87,6 +91,8 @@ These are synthetic capability examples, not customer results or proof of a comp
 The estimate identifies the diagnostic or pilot boundary, supported runtime, output contract, QA/reject rules, review allowance, target dates and operator responsibilities. Data volume, source quality, licensing and access requirements affect the work. New inputs, a changed destination or ongoing operation require a scope decision.
 
 Agree a baseline before implementation: current effort, error/rework counts, frequency and elapsed reporting time. Review the pilot against the accepted output, repeatability and recovery checks before deciding whether to expand it.
+
+One defined task at a time: scope, start date and availability are agreed in writing before work begins.
 
 ## Choose tools around the target
 

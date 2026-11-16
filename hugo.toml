@@ -85,3 +85,5 @@ disableKinds = ["taxonomy", "term"]
 [markup.goldmark]
   [markup.goldmark.renderer]
     unsafe = true # allow inline HTML in content (details accordions, embeds)
+  [markup.goldmark.parser.attribute]
+    block = true # allow {#id} attribute blocks, used for copy-brief targets on /computing/inquiry/

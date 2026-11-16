@@ -104,6 +104,8 @@ Public records also include an [Imagine Our Florida advisory biography](https://
 
 [Source: DEP final order and attached recommended order, paragraph 154 (PDF)](https://floridadep.gov/sites/default/files/22-2509.pdf#page=42).
 
+Discuss a project that needs this kind of record: [start with a defined project inquiry](/computing/inquiry/).
+
 ## Earlier technical-report collection
 
 Earlier Clearview-era sources include the following studies. Their printed author lists use **Alex Clark**; the source wording is preserved here. These historical records are presented separately from the personal credits under Alex Zelenski above.
@@ -122,5 +124,7 @@ Earlier Clearview-era sources include the following studies. Their printed autho
 - [Open-source GIS repositories](https://github.com/ZQM-Computing) — Python, GeoPandas, GDAL, PostGIS, QGIS, DuckDB Spatial and GeoParquet patterns.
 
 Synthetic examples demonstrate configured workflows and checks. Historical project credits and current demonstrations are identified individually so clients can evaluate the relevant evidence.
+
+The examples above are open-source demonstrations, not client work. To scope a defined GIS task, [send a short project brief](/computing/inquiry/).
 
 For a map series, spatial-data workflow or geospatial interface, [start with a defined project inquiry](/computing/inquiry/).

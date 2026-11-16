@@ -12,6 +12,8 @@ Based in New Smyrna Beach, Florida. Project geography, remote delivery and clien
 
 [See example deliverables](#work-examples) · [What to include in your brief](/computing/inquiry/).
 
+See the evidence first: [six-parcel screening table and downloadable fixture](/computing/services/environmental-screening/#see-the-exhibit-structure) · [computed QA report — 12/12 overlap checks PASS](/computing/services/gis-automation/#inspect-the-qa-evidence) · [accessible project map](/computing/services/web-gis/#see-an-accessible-project-map).
+
 ## Choose the work you need
 
 ### [Environmental GIS production and preliminary screening](/computing/services/environmental-screening/)
@@ -20,17 +22,23 @@ Based in New Smyrna Beach, Florida. Project geography, remote delivery and clien
 
 Screening is **not** a certified survey, engineering opinion, regulatory determination, or substitute for field verification.
 
+[Send a figure-set brief](/computing/inquiry/#map-production)
+
 ### [GIS workflow automation](/computing/services/gis-automation/)
 
 **When the same data cleanup or report repeats every cycle.** Start with one workflow, its inputs and one target output. A diagnostic identifies the current steps, quality rules and acceptance criteria; a separately scoped pilot implements the agreed process.
+
+[Send a workflow audit brief](/computing/inquiry/#workflow-automation)
 
 ### [Web GIS and geospatial APIs](/computing/services/web-gis/)
 
 **When people need a practical way to use your spatial data.** Scope a browser map, spatial database integration or API around named users, permitted data access and an agreed deployment environment.
 
+[Send a Web GIS brief](/computing/inquiry/#web-gis)
+
 ## How we work
 
-1. **Send the task.** Share a short, non-sensitive brief with your output, available formats, deadline and reviewer.
+1. **Send the task.** Share a short, non-sensitive brief with your output, available formats, deadline and reviewer. ZQM Computing is a one-person practice: Alex Zelenski takes on one defined task at a time, and scope, start date and availability are agreed in writing before work begins.
 2. **Agree the work.** Confirm fit, missing inputs, deliverables, fee, target dates and revision allowance in writing before work begins.
 3. **Prepare and check.** Establish source rights, coverage, CRS, data quality and acceptance checks; record gaps rather than assume them away.
 4. **Review the handoff.** Inspect the agreed files or code, QA evidence, limitations and operator instructions against the scope.
@@ -68,6 +76,8 @@ Inspect the structure and checks behind the proposed work:
 - **[Open-source GIS resources](https://github.com/ZQM-Computing):** reusable examples for GeoPandas, GDAL, DuckDB Spatial, PostGIS and QGIS.
 
 These examples demonstrate configured checks on synthetic inputs. They are not completed client projects, a production integration or evidence of customer savings.
+
+ZQM Computing is a new independent practice (October 2026). The examples above are capability demonstrations on synthetic inputs, not client work. Early engagements are scoped the same way as the examples: a defined task, a written scope, and acceptance criteria agreed before work begins.
 
 ## Who delivers the work?
 
