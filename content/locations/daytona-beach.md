@@ -2,7 +2,7 @@
 title: "Scavenger Hunt in Daytona Beach — ZQM Labs"
 seo_title: "Scavenger Hunt in Daytona Beach — ZQM Labs"
 h1: "Scavenger hunts in Daytona Beach, Florida"
-description: "Play a story-driven location quest in Daytona Beach, Florida — City Island, Beach Street, and the Riverfront Esplanade as settings to coordinate with the Lab. Free browser demo, historical kit pricing; paid checkout paused."
+description: "Play a story-driven location quest in Daytona Beach, Florida — City Island, Beach Street, and the Riverfront Esplanade as settings to coordinate with the Lab. Free browser demo, current kit pricing; confirm venue and event arrangements."
 breadcrumb: true
 local_business:
   name: "ZQM Labs"
@@ -14,10 +14,10 @@ faq:
   - q: "Is there a fixed route in Daytona Beach?"
     a: "No. City Island, Beach Street, and the Riverfront Esplanade are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance."
   - q: "How much does a local quest cost?"
-    a: "Historical Halloween 2026 tier prices were Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; paid checkout is paused."
+    a: "Current published tier prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms."
 ---
 
-> **Availability as of November 2026:** The free Wisp demo remains playable. Paid Halloween 2026 kits, the FAMILY25 discount and historical fundraiser splits are **not current offers**. Checkout is paused; future availability, prices, delivery and support require separate confirmation.
+> **Current Wisp kit availability:** The free demo remains playable, and paid kit options are listed on the [tiers page](/tiers/). The Halloween 2026 event window has ended; the FAMILY25 discount and historical fundraiser splits are not current offers. Confirm venue, event window and organizer responsibilities before announcing an event.
 
 ![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
 
@@ -27,19 +27,21 @@ A location quest is a story-driven scavenger hunt played on foot with a phone: y
 
 ## Where quests suit play in Daytona Beach
 
-Daytona Beach already has template city hunts — a fixed route that every group runs the same way. A ZQM Labs quest is different: it is built around your venue, with a story, characters, and four comfort levels (Cozy, Spooky, After Dark, Overdrive) so the same quest fits children and adults.
+Daytona Beach already has template city hunts — a fixed route that every group runs the same way. A ZQM Labs quest is different: it supplies a ready-made Wisp story, characters, and four comfort levels (Cozy, Spooky, After Dark, Overdrive) so the same quest fits children and adults.
 
 **City Island, Beach Street, and the Riverfront Esplanade** are the settings we start from. These are settings to coordinate, not promised routes: the exact stops, route, and permissions are agreed with the Lab for each event, and a setting only becomes a quest once the Lab has confirmed it works for your group, your date, and your players' needs.
 
 Daytona suits group play well — visiting teams, company offsites, and family reunions are the groups we hear from most. A quest here works as a team event, not just a walk: teams of four to eight, one phone per team, and a shared finish.
 
-## Historical tier reference
+Flat-fee Wisp kits use the same finished story for every buyer. Coordinating the setting, stop placement and permissions does not mean the story is customized. Review current kit contents and confirm the event arrangements with the Lab.
 
-The prices below describe the expired Halloween 2026 event. They are not purchase offers; no current kit checkout is available.
+## Current kit pricing and historical promotions
+
+The prices below are the current published Wisp kit tiers. Venue suitability, event window and support arrangements still need confirmation; a purchase is not a hosted-event booking.
 
 ## Which tier fits which group
 
-- **Family Night — $49.** One household, one quest. The former FAMILY25 discount has expired; paid checkout is paused.
+- **Family Night — $49.** One household, one quest. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms.
 - **Community — $199.** Neighborhoods, HOAs, PTAs, churches, and community groups — unlimited families.
 - **Office Team — $349.** A team-building format for coworkers.
 - **Office Event — $499.** A larger company or organization-wide event.
@@ -54,7 +56,7 @@ The free demo is playable now. A hosted local quest is by coordination — it is
 1. **Try the demo.** Play the [free browser demo](/games/hunt-for-wisps/play/?demo=1) so you know how a quest feels.
 2. **Contact the Lab.** Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your group, your dates, the tier you are eyeing, and the area you have in mind.
 3. **Agree the details.** Route and stops, venue permissions, accessibility, the event window, and support are confirmed with the Lab before you announce anything.
-4. **Confirm future availability.** Paid checkout is paused. Future purchase, entitlement and delivery require confirmed fulfillment and terms.
+4. **Choose the appropriate kit.** Review the [current tiers](/tiers/) and purchase terms after confirming the event arrangements. Keep payment, delivered access and a hosted booking distinct.
 
 ## Quick questions
 
@@ -62,7 +64,7 @@ The free demo is playable now. A hosted local quest is by coordination — it is
 
 **Is there a fixed route in Daytona Beach?** No. City Island, Beach Street, and the Riverfront Esplanade are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance.
 
-**How much does a local quest cost?** Historical Halloween 2026 tier prices were Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; paid checkout is paused.
+**How much does a local quest cost?** Current published tier prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms.
 
 ## Check availability
 
