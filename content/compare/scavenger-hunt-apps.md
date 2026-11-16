@@ -50,7 +50,7 @@ Flat-fee Wisp kits use the same finished story for every buyer. They are self-gu
 
 Six stops. A story that connects them — Wisp, the Game Master's escaped first creation, leading players through it. A puzzle at each stop, three hints per stop, and four comfort levels (Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, Full Madness Overdrive) so the same quest fits children, families, and adults after dark. One phone per team, played in a browser, works offline at the stops. No app to install, no per-player charge, no subscription.
 
-**Paid kit checkout is live.** The October 30–November 1, 2026 Halloween event window has ended, and kits are available to buy on the [hosting tiers page](/tiers/). The flat fees above are the Lab's published tiers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything.
+**Paid kit checkout is currently unavailable.** The October 30–November 1, 2026 Halloween event window has ended, and no new kit order or automatic delivery is being offered. The flat fees above are prior published reference prices, not active offers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything.
 
 ## Try it before you decide
 
