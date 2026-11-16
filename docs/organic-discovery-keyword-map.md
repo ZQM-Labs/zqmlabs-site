@@ -33,6 +33,14 @@ This plan covers **ZQM Labs games and organizer experiences**. ZQM Computing ser
 - Validate rendered title, descriptions, canonical, social metadata, JSON-LD, internal links and sitemap in CI; keep unreleased/private routes out of public indexes.
 - Production remains controlled by the independently pinned deployment source. This document does not authorize releases or checkout claims.
 
+## Office cost-answer ownership
+
+Use the existing `/pricing/` page for corporate/office cost explanation and `/tiers/` for current kit selection and purchase terms. The comparison page `/compare/scavenger-hunt-apps/` covers builder, city-hunt and finished-kit tradeoffs. Improve these existing owners before proposing another cost page.
+
+The cost question is a commercial-investigation hypothesis, not a newly measured keyword. A useful answer includes current fees, the actual Wisp story, organizer preparation, materials, device requirements, agreed venue/window and support. Competitor numbers need dated primary sources and comparable billing/participant/service units; no automatic group-capacity, savings or setup-time promises follow from a persona.
+
+The [supporting cost brief](high-intent-content-briefs.md#buyer-questions-and-first-supporting-cost-brief) and [implementation issue #134](https://github.com/ZQM-Labs/zqmlabs-site/issues/134) record acceptance. The existing dated keyword estimates below remain unchanged.
+
 ## Measured Labs buyer-phrase snapshot
 
 US national, English estimates collected November 15, 2026 ET through DataForSEO/OpenSEO. Unknown means unreturned or unavailable data; zero is only the provider's estimate. CPC is estimated advertising cost per click, not organic traffic value. Do not sum overlapping team-building variants.
