@@ -102,6 +102,8 @@ This preview is drawn from the two-parcel fixture in the [reproducible QGIS Atla
 
 Inspect the [fixture results](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/geopandas-handoff/parcel_screening.json), [source register](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/geopandas-handoff/source_register.json) and [reproduction/provenance notes](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/README.md). Coordinates, source records and IDs are synthetic. Source dates in the fixture are example metadata; missing effective dates and accuracy remain unknown.
 
+For a consultant-facing review, see the [synthetic Atlas figure-set handoff example](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/exhibit-production/BUYER_HANDOFF_SAMPLE.md) and [scope/acceptance worksheet](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/docs/ENVIRONMENTAL_GIS_BRIEF_TEMPLATE.md). They explain the requested figures, source-rights questions, coverage uncertainty, QA and quote factors. Both are written synthetic examples, **not** a pre-generated sample PDF, customer engagement or fixed-price offer.
+
 ## What to send for an estimate
 
 - **The job:** report or planning purpose, figure list or parcel count, intended scale and page dimensions.
