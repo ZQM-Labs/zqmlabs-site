@@ -9,6 +9,8 @@ ZQM Labs previously listed Wisp kits at **Office Team $349** and **Office Event 
 
 [Try the free browser demo](/games/hunt-for-wisps/play/?demo=1) · [Review reference Wisp tiers](/tiers/) · [Ask about future availability](/contact/).
 
+**Game coordination is required.** Before organizing or participating in a future paid kit event, one organizer should email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20Game%20Coordination) with the proposed date/time, location, group size and kit format. Coordinate venue permission, route safety, accessibility and delivery arrangements; the Lab must confirm the event in writing. Payment alone does not confirm a booking.
+
 ## Flat-fee tier reference
 
 | Current Wisp tier | Fee | Group and planning |

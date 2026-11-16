@@ -9,6 +9,10 @@ description: "Contact ZQM Labs about the free Wisp demo, future kit availability
 
 Messages are reviewed as capacity permits. Reply times and event-support availability are not guaranteed unless confirmed for an agreed event window.
 
+**Wisp game coordination:** Participants and event organizers should use this email to arrange their game. One organizer may coordinate for an entire household, office team or community group. Please share the kit format, preferred date/time and time zone, city/venue, approximate number of teams and relevant accessibility needs. The Lab must confirm availability, event scope and delivery details in writing before the event is announced or played; payment alone is not an event reservation. Never send card details or sensitive participant data by email.
+
+[Start a Wisp game coordination email](mailto:zqmcomputing@gmail.com?subject=Wisp%20Game%20Coordination)
+
 ## What to include
 
 For the fastest reply, include:

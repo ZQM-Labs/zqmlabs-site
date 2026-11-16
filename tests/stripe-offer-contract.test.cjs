@@ -74,3 +74,17 @@ test("press kit does not promise unreleased games or guaranteed service", () => 
   const press = file("public/press/index.html");
   assert.match(press, /other named seasonal titles are in development/i);
 });
+
+test("Wisp kit coordination email and organizer confirmation survive buyer-facing pages", () => {
+  for (const path of ["content/tiers.md", "content/pricing.md", "content/contact.md", "content/terms.md"]) {
+    const source = file(path);
+    assert.match(source, /zqmcomputing@gmail[.]com/i, path);
+    assert.match(source, /Wisp%20Game%20Coordination/, path);
+    assert.match(source, /confirm|confirmation/i, path);
+  }
+  assert.match(tierSource, /Required game coordination/);
+  assert.match(pricingSource, /Game coordination is required/);
+  assert.match(tierOutput, /Required game coordination/);
+  assert.match(pricingOutput, /Game coordination is required/);
+  assert.match(file("content/tiers.md"), /payment[^.]*does not by itself reserve a date/i);
+});
