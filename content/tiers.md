@@ -24,7 +24,7 @@ products:
 
 <!-- markdownlint-disable MD013 -->
 
-Looking for a **ready-made scavenger hunt kit** rather than a scavenger hunt app builder? Wisp's Lost Lanterns is a finished, story-driven six-stop quest, played in a phone browser with one phone per team. The free demo lets you examine the format before choosing a family, neighborhood or office kit. Event setup, supported locations and availability still depend on the current kit and agreed arrangements.
+Looking for a **ready-made scavenger hunt kit** rather than a scavenger hunt app builder? Wisp's Lost Lanterns is a finished, story-driven six-stop quest, played in a phone browser with one phone per team. The free demo lets you examine the format before choosing a family, neighborhood or office kit. Event setup, supported locations and availability still depend on the current kit and agreed arrangements. Flat-fee kits use the same ready-made Wisp quest for every buyer; the story is not customized per buyer. Confirm the venue, event window and organizer responsibilities before announcing an event.
 
 [Try the free browser demo](/games/hunt-for-wisps/play/?demo=1) · [Compare scavenger hunt apps and kits](/compare/scavenger-hunt-apps/) · [Read the no-app hosting guide](/guides/host-your-first-scavenger-hunt/).
 
@@ -58,7 +58,7 @@ The prior fundraiser split was an illustration, not a current offer or payout co
 
 ## 🧭 Youth Groups and 🎉 Form-Your-Own
 
-[Ask the Lab](/contact/) about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed. Flat kits are generic — the same quest for every buyer, not customized per buyer.
+[Ask the Lab](/contact/) about current availability, suitability, supervision, and pricing. These options should not be treated as confirmed bookings until the details are agreed.
 
 ## Before arranging your event
 

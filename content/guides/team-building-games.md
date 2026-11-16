@@ -2,15 +2,15 @@
 title: "Outdoor Team Building Games — ZQM Labs"
 seo_title: "Outdoor Team Building Games — ZQM Labs"
 h1: "Outdoor team building games"
-description: "Compare outdoor team building game formats honestly — hosted location quests, DIY platform hunts, fixed city template hunts, and indoor options — and pick by group size, venue, and setup time."
+description: "Compare outdoor team building game formats honestly — ready-made self-guided kits, DIY platform hunts, fixed city template hunts, and indoor options — and pick by group size, venue, and setup time."
 breadcrumb: true
 faq:
   - q: "How long does a ZQM Labs team-building quest take to set up?"
-    a: "About an hour. The organizer kit is designed to run in about an hour of setup: print the signs, hand out the team codes, and start. The route and venue permissions are agreed with the Lab beforehand — that coordination happens before setup day, not during it."
+    a: "Setup depends on the kit, venue and agreed format. Review the current kit instructions and confirm the event window, stop placement and permissions before preparing the event. A flat-fee kit supplies a ready-made story rather than custom authorship or onsite facilitation."
   - q: "What group sizes work?"
-    a: "Teams of four to eight work best, one phone per team. Office Team ($349) fits a department; Office Event ($499) fits a larger company or organization-wide event. Group size and format are confirmed with the Lab when you book."
+    a: "Plan for one phone per team. Office Team ($349) and Office Event ($499) are the published workplace tiers; confirm the supported headcount, team format, venue and event window with the Lab before announcing an event."
   - q: "What if it rains?"
-    a: "Florida showers pass. A multi-day event window lets teams pick a dry moment, and the Lab will extend a window if a real storm wipes out the weekend — ask, don't assume. Indoor options exist too; see the comparison below."
+    a: "Agree weather, cancellation and any rescheduling arrangements before the event. Do not assume an automatic extension or a permitted indoor fallback; confirm the available options with the Lab."
 ---
 
 ![Team celebrating at the finish of an outdoor quest at golden hour](/img/tiers-evergreen.webp)
@@ -19,14 +19,14 @@ faq:
 
 There is no single best outdoor team building game — there is a best fit for your group, your venue, and how much setup you want to do. Here is how the four common formats actually compare.
 
-### Hosted location quest (ZQM Labs)
+### Ready-made self-guided kit (ZQM Labs)
 
-A story-driven scavenger hunt built around your venue: six stops, puzzles at each one, four comfort levels (Cozy, Spooky, After Dark, Overdrive) so the same quest fits the whole team. The Lab supplies the story, the organizer kit, and the printable signs; you supply the venue and the teams.
+Wisp's Lost Lanterns is a finished six-stop story with puzzles and four comfort levels. Flat-fee kits supply the same story for each buyer. Review the current tier for included materials, and confirm your venue, event window and organizer responsibilities. Custom story writing and onsite facilitation are not included in the published office-kit offer.
 
 - **Cost:** one flat fee — Office Team $349, Office Event $499. No per-player charges.
-- **Setup:** about an hour, with the organizer kit. Route and permissions are agreed with the Lab beforehand.
+- **Setup:** follow the current kit instructions. Preparation time depends on the venue and format; agree stop placement and permissions before the event.
 - **Best for:** a team that wants a shared outdoor event with a story, not a task list — and an organizer who does not want to build the game themselves.
-- **Honest limit:** it is coordinated, not instant. A hosted quest is agreed for your date and venue; it is not booked off a shelf five minutes before the event.
+- **Limit:** buying a ready-made kit does not confirm a venue or a hosted booking. Agree the event arrangements with the Lab before announcing them.
 
 ### DIY platform hunt
 
@@ -57,17 +57,17 @@ Escape rooms, office games, and facilitated workshops. No outdoor element at all
 
 ## Choosing by group size, venue, and setup time
 
-- **Under 10 people, one afternoon, your own venue:** a hosted quest (Office Team) or a DIY platform hunt both work. Pick the hosted quest if nobody on the team wants to build the game.
-- **10 to 50 people, a company offsite:** a hosted quest (Office Team or Office Event). Per-player pricing gets expensive at this size; a flat fee does not.
-- **50+ people, organization-wide:** Office Event ($499). Confirm group size and format with the Lab when you book — large groups need the format agreed in advance, not on the day.
+- **A small team at your own venue:** compare a ready-made kit with a DIY builder. Confirm the supported group format and venue before choosing a Wisp tier.
+- **A company offsite:** review Office Team and Office Event, then confirm headcount, setup and event arrangements. Published flat fees do not by themselves establish venue suitability or capacity.
+- **A larger organization:** Office Event lists at $499. Ask the Lab about the proposed group size and operating format before committing.
 - **No venue of your own:** a fixed city template hunt, or ask the Lab about a local setting — [Daytona Beach](/locations/daytona-beach/), [Ormond Beach](/locations/ormond-beach/), [New Smyrna Beach](/locations/new-smyrna-beach/), [Port Orange](/locations/port-orange/), and [DeLand](/locations/deland/) are the Volusia settings the Lab coordinates.
-- **Almost no setup time:** a fixed city hunt or an indoor option. A hosted quest needs about an hour of setup and the coordination agreed beforehand.
+- **Almost no setup time:** a fixed city hunt or an indoor option. A self-guided kit needs organizer preparation and agreed event arrangements; check the current instructions rather than assuming a fixed setup time.
 - **Bad weather forecast:** pick a multi-day window for an outdoor quest, or go indoor. A quest is not worth a miserable team.
 
 ## Florida and Volusia note
 
 ZQM Labs is based in New Smyrna Beach, Volusia County, Florida. Local quests are coordinated around real settings — City Island and Beach Street in Daytona Beach, the Granada corridor in Ormond Beach, Flagler Avenue and Canal Street in New Smyrna Beach — not promised routes. If your team is visiting Volusia County, the [local pages](/locations/) show where a quest can be coordinated. If your team is elsewhere, contact the Lab before assuming an event can be delivered in your region.
 
-## Ready to book?
+## Choose a kit and confirm arrangements
 
 Start with the [Office tiers](/tiers/) and [flat-fee pricing](/pricing/), then [contact the Lab](/contact/) with your team size, your dates, and your venue. The Lab will confirm the format, the price, and the event window before you announce anything.
