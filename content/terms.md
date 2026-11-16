@@ -2,7 +2,7 @@
 title: "Terms — ZQM Labs"
 seo_title: "Terms — ZQM Labs"
 h1: "Terms of use and kit terms"
-description: "Plain-language terms for using zqmlabs.com, playing the free demo, and buying a hosting kit."
+description: "Terms for the free ZQM Labs demo and previously listed Wisp hosting-kit formats. Paid checkout is currently unavailable."
 breadcrumb: true
 ---
 
@@ -14,7 +14,7 @@ A demo being playable does not mean a paid event package is available, or that a
 
 ## Hosting kits
 
-Hosting kits are **one-time flat fees for your event window**:
+Previously published hosting-kit reference prices were **one-time flat fees for an agreed event window**. **No paid kit is currently available for online purchase**:
 
 - Family Night — **$49** (one household). The earlier FAMILY25 Halloween promotion is historical and no longer valid.
 - Community — **$199** (unlimited families).
@@ -22,15 +22,15 @@ Hosting kits are **one-time flat fees for your event window**:
 - Youth Groups — ask the Lab about current availability and pricing.
 - Form-Your-Own — quoted per event.
 
-Full descriptions are on the [hosting tiers](/tiers/) and [pricing](/pricing/) pages. If these terms and those pages ever disagree, the prices on the pricing page are the current ones — and the Lab will confirm the price for your event before you promote it.
+Full descriptions are on the [hosting tiers](/tiers/) and [pricing](/pricing/) pages. The listed prices are historical references, not currently available checkout offers; the Lab must confirm any future quote and availability in writing before you promote an event.
 
-**Purchases live:** Paid kit checkout is open. The Halloween 2026 access window has ended, and kits are now sold for your own agreed event window. Prices on the [pricing page](/pricing/) are current; the Lab confirms the price for your event before you promote it.
+**Purchases unavailable:** All listed live Stripe payment links are currently inactive. The Halloween 2026 access window has ended. No new paid kit order, entitlement, or email delivery is being offered via checkout. [Contact the Lab](/contact/) to discuss future availability; the free demo remains available.
 
 **Refunds and changes.** If ZQM Labs cannot deliver an agreed paid order, a refund is available. Other cancellations, reschedules, and refund requests are handled under the agreed event-specific terms and applicable law; no waiver of statutory rights is intended.
 
 **Kit access expires after the event window.** A kit is for the event window agreed with the Lab — it is not an open-ended license.
 
-**Day-of support is limited.** Remote support is available through your event window as described on the pricing page; same-day, on-site support is not included.
+**Day-of support is not currently offered with a purchasable kit.** Any future remote support requires a separately confirmed event window and written terms; same-day, on-site support is not included by default.
 
 **Custom or bespoke kits are not included.** A kit is the published tier as described. A custom route, custom story, or custom game is a separate conversation — ask the Lab, and expect a separate quote.
 
@@ -48,7 +48,7 @@ Full descriptions are on the [hosting tiers](/tiers/) and [pricing](/pricing/) p
 
 ## Fundraisers
 
-A Community kit can be run as a fundraiser: **families pay $15, your community keeps $5 of every sale**. Fundraising arrangements are for qualifying events and must be agreed with the Lab in writing before you promote a fundraiser. See the [scavenger hunt fundraiser guide](/guides/fundraiser-scavenger-hunt/) for a worked example.
+The earlier illustration of **$15 per family with $5 retained by a community** was historical and is **not an available fundraiser offer, sale, or payout commitment**. Any future arrangement needs separately agreed written terms. See the [scavenger hunt fundraiser guide](/guides/fundraiser-scavenger-hunt/) for a worked example.
 
 ## Questions
 
