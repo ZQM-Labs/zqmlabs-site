@@ -53,17 +53,32 @@ The audit produces a workflow outline, data-quality rules, a proposed pilot boun
 
 ## Inspect the QA evidence
 
-The [synthetic workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff.
+The [synthetic workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff. The full report below was computed by a standard-library-only Python script against the six-parcel GeoPackage; nothing in it is hand-typed.
 
-### A small QA result you can inspect now
+### QA report — computed checks
 
-The linked synthetic sample records the following result:
+**Overlap accounting — 12/12 PASS.** All 12 recomputed overlaps match the stored attributes within ±1 m²:
 
-| Input | Accepted | Rejected | Check |
-| --- | --- | --- | --- |
-| 8 | 2 | 6 | 8 = 2 + 6; every input is accounted for once |
+| Synthetic parcel | Wetland overlap | Flood overlap |
+| --- | --- | --- |
+| DEMO-P1 | 5,000 m² | 0 m² |
+| DEMO-P2 | 0 m² | 2,500 m² |
+| DEMO-P3 | 5,000 m² | 0 m² |
+| DEMO-P4 | 2,500 m² | 2,500 m² |
+| DEMO-P5 | 0 m² | 0 m² |
+| DEMO-P6 | 10,000 m² | 2,500 m² |
 
-Reject reasons include duplicate identifiers, missing names, unusable geometry, the wrong geometry type and records outside the boundary. A row can have more than one reason, so reason totals must not be used as a second row count. The sample retains its input hash, coordinate systems and software versions for inspection.
+CRS PASS (all layers EPSG:32617); geometry PASS (6 parcels, closed rings, 10,000 m² each, no self-intersection); attributes PASS (no duplicate/null parcel_id).
+
+**Reconciliation — 6 = 6 + 0.** Main parcel set: 6 inputs = 6 accepted + 0 rejected. Incoming batch: 8 = 2 accepted + 6 rejected, with 7 reason instances across the 6 rejected rows (record B-008 carries two reasons).
+
+Reject reasons include duplicate identifiers, missing names, unusable geometry, the wrong geometry type and records outside the boundary. A row can have more than one reason, so reason totals must not be used as a second row count.
+
+**Source freshness — 4 FLAGs, explained.** One FLAG per synthetic source (SYNTH-PARCELS-2026, SYNTH-WETLAND-2026, SYNTH-FLOOD-HAZARD-2026, SYNTH-FLOOD-COVERAGE-2026): the effective date is null, so freshness cannot be verified. A FLAG means "cannot be verified", not "wrong".
+
+Input identity: SHA-256 `6c65d13c…f04f8a`. Tooling: Python 3.12 standard library only (`sqlite3` + WKB parsing); no geopandas/shapely needed to run it.
+
+Read the full rendered report: [qa_report.html](/computing/demonstrators/qa-report/qa_report.html) — a complete standalone document, inline styles, no external dependencies. Run it yourself: [qa_report.py](/computing/demonstrators/qa-report/qa_report.py) with [fixtures/parcel_screening.json](/computing/demonstrators/qa-report/fixtures/parcel_screening.json) (download, for running without the GeoPackage).
 
 These are synthetic capability examples, not customer results or proof of a complete production integration. They demonstrate traceable checks, not a measured percentage improvement or labor saving.
 

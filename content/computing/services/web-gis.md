@@ -41,7 +41,19 @@ The estimate separates the prototype or implementation from data preparation, ho
 
 Establish authentication and authorization, data rights, geographic coverage, accessibility, performance expectations, caching, hosting, monitoring and rollback. A prototype and a production service have different acceptance requirements; ongoing operation and support are separately agreed.
 
-Cookbook examples demonstrate individual patterns. They do not establish production availability, security certification, continuous hosting or suitability for regulated use. Third-party maps and data may impose licensing and usage limits.
+[Cookbook examples](#see-an-accessible-project-map) demonstrate individual patterns. They do not establish production availability, security certification, continuous hosting or suitability for regulated use. Third-party maps and data may impose licensing and usage limits.
+
+## See an accessible project map
+
+<!-- markdownlint-disable MD033 -->
+<iframe src="/computing/demonstrators/project-map/index.html" width="100%" height="900" title="Accessible map of six fictional demonstration projects" loading="lazy"></iframe>
+<!-- markdownlint-enable MD033 -->
+
+[Open the accessible project map](/computing/demonstrators/project-map/index.html) (full size) if the embedded map does not load.
+
+The map shows six fictional projects (P-01–P-06) driven by an editable CSV — [projects.csv](/computing/demonstrators/project-map/projects.csv): edit it and reload to update the markers, the project list and the filter. Markers are keyboard-navigable buttons with arrow-key movement between projects, and the full project list below the map carries the same information as a text alternative. Contrast is WCAG 2.1 AA (body text 17.40:1; worst passing pair 5.98:1 focus outline).
+
+Fictional demonstration projects only — no real sites or clients. Demonstration contact only — no real client.
 
 ## Questions before a Web GIS project
 
