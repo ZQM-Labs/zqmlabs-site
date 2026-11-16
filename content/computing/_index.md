@@ -10,7 +10,7 @@ Based in New Smyrna Beach, Florida. Project geography, remote delivery and clien
 
 {{< btn href="/computing/inquiry/" text="Discuss your GIS project" >}}
 
-[See example deliverables](#work-examples).
+[See example deliverables](#work-examples) · [What to include in your brief](/computing/inquiry/).
 
 ## Choose the work you need
 
@@ -30,9 +30,10 @@ Screening is **not** a certified survey, engineering opinion, regulatory determi
 
 ## How we work
 
-1. **Define one outcome.** Agree the question, inputs, output, deadline and reviewer.
-2. **Check the evidence.** Establish source rights, coverage, CRS, data quality and any gaps.
-3. **Deliver for review.** Provide the agreed files or code, QA evidence, limitations and handoff instructions.
+1. **Send the task.** Share a short, non-sensitive brief with your output, available formats, deadline and reviewer.
+2. **Agree the work.** Confirm fit, missing inputs, deliverables, fee, target dates and revision allowance in writing before work begins.
+3. **Prepare and check.** Establish source rights, coverage, CRS, data quality and acceptance checks; record gaps rather than assume them away.
+4. **Review the handoff.** Inspect the agreed files or code, QA evidence, limitations and operator instructions against the scope.
 
 Availability, fee, start date and revision allowance are agreed after reviewing the scope. Hosting, ongoing operation and support are included only when specifically agreed.
 
@@ -46,6 +47,10 @@ Availability, fee, start date and revision allowance are agreed after reviewing 
 
 The first conversation establishes fit and missing information. A diagnostic, implementation and ongoing maintenance are separate decisions with written acceptance criteria.
 
+### What determines the fee and timing?
+
+Figure count, source readiness, data licensing, output formats, review needs and deployment responsibilities affect the scope. A written estimate follows that review; a target deadline is confirmed with the work, rather than assumed from a generic turnaround. [Send the brief for the service you need](/computing/inquiry/).
+
 ## Environmental mapping resources
 
 For a project manager preparing a figure list or parcel screening request, start with the [environmental GIS production resource hub](/computing/resources/):
@@ -58,7 +63,7 @@ For a project manager preparing a figure list or parcel screening request, start
 
 Inspect the structure and checks behind the proposed work:
 
-- **[Synthetic parcel Atlas](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production):** a QGIS project, layout template, PDF series and page manifest with source and coverage information.
+- **[Synthetic parcel figure preview](/computing/services/environmental-screening/#see-the-exhibit-structure):** inspect mapped indicators and explicit coverage gaps, then follow the pinned source fixture and reproducible QGIS Atlas workflow.
 - **[Synthetic workflow QA report](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md):** traceable accepted/rejected records and reconciled counts.
 - **[Open-source GIS resources](https://github.com/ZQM-Computing):** reusable examples for GeoPandas, GDAL, DuckDB Spatial, PostGIS and QGIS.
 

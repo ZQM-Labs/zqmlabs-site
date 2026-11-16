@@ -6,11 +6,24 @@ service_type: "Environmental GIS map production and preliminary parcel screening
 breadcrumb_title: "Environmental GIS production"
 ---
 
-## Need a figure set, or an early look at a parcel?
+## GIS figure production for environmental consulting teams
 
-Environmental and engineering consultancies can scope a defined GIS production task for their own review process. Property buyers and planners can request a separate preliminary desktop review of available indicator data.
+Need report figures while your GIS team is at capacity? Start with your figure list, source files and deadline. ZQM Computing scopes site maps, parcel map series, permit exhibits and data preparation for your consultant's review. Property buyers and planners can request a separate preliminary desktop review of mapped indicators.
 
-{{< btn href="/computing/inquiry/#map-production" text="Scope your GIS figure set" >}}
+{{< btn href="/computing/inquiry/#map-production" text="Request a figure-set estimate" >}}
+
+[Inspect the synthetic sample](#see-the-exhibit-structure) · [Review the input checklist](#what-to-send-for-an-estimate).
+
+## Your figure-set handoff
+
+| Part of the scope | Agree before production | Check at handoff |
+| --- | --- | --- |
+| Figures | Figure index, page size, scale approach and intended use | Every agreed figure is present and labeled |
+| Data and appearance | Provided sources, dates, CRS, symbology and title-block requirements | Source register, clear legends and explicit coverage gaps |
+| Files | PDF exhibits and any supported editable GIS files | Files open in the agreed environment; filenames and IDs reconcile |
+| Review | Named reviewer, QA checks and revision allowance | QA notes, unresolved questions and review changes are recorded |
+
+Native file formats, client title blocks and CAD conversions require confirmation against your actual inputs and environment. The estimate identifies the included work, target dates and any separate data or support costs.
 
 ## Environmental GIS subcontracting for permit maps and figures
 
@@ -47,11 +60,62 @@ These resources are practical specifications, not substitute permits or complete
 
 ## See the exhibit structure
 
-The [synthetic QGIS parcel Atlas example](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production) includes a portable project, layout template, PDF series and delivery manifest. It demonstrates wetland/flood handoff themes and coverage-gap reporting using synthetic data. It is not a client case study.
+This preview is drawn from the two-parcel fixture in the [reproducible QGIS Atlas workflow](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production). That workflow generates the QGIS project, layout, PDF series and delivery manifest. The preview below illustrates its source fixture; it is not a QGIS PDF export or a client case study.
+
+<!-- Static, accessible fixture illustration; inline SVG travels with the selected page. -->
+<!-- markdownlint-disable MD033 -->
+<figure style="margin:1.2rem 0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" width="720" height="460" role="img" aria-labelledby="parcel-sample-title parcel-sample-description" style="max-width:100%;height:auto">
+<title id="parcel-sample-title">Synthetic parcel indicators and unknown source coverage</title>
+<desc id="parcel-sample-description">Two adjacent 100 by 100 metre synthetic parcels in EPSG:32617. DEMO-P1 has 50 percent mapped wetland overlap and complete fixture source coverage. DEMO-P2 has no wetland coverage, 50 percent flood coverage and 25 percent known flood overlap. Hatching marks areas unknown for at least one source; no real property is represented.</desc>
+<defs><pattern id="parcel-unknown-hatch" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" stroke="#334155" stroke-width="1"/></pattern></defs>
+<rect width="720" height="460" rx="12" fill="#f1f5f9"/>
+<g font-family="Arial, sans-serif" fill="#132c3d">
+<text x="28" y="35" font-size="24" font-weight="700">Synthetic fixture: indicators and coverage gaps</text>
+<text x="28" y="61" font-size="16">No real property or agency datasets. Desktop demonstration only.</text>
+<text x="240" y="85" font-size="18" text-anchor="middle">DEMO-P1</text>
+<text x="480" y="85" font-size="18" text-anchor="middle">DEMO-P2</text>
+<path d="M360,334 L360,94 L120,94 L120,334 L360,334 Z" fill="#ffffff"/>
+<path d="M600,334 L600,94 L360,94 L360,334 L600,334 Z" fill="#ffffff"/>
+<path d="M120,334 L120,94 L240,94 L240,334 L120,334 Z" fill="#d08a42"/>
+<path d="M480,334 L420,334 L420,94 L480,94 L480,334 Z" fill="#187ea6"/>
+<path d="M360,94 L480,94 L600,94 L600,334 L480,334 L360,334 L360,94 Z" fill="url(#parcel-unknown-hatch)" fill-rule="evenodd"/>
+<path d="M360,334 L360,94 L120,94 L120,334 L360,334 Z" fill="none" stroke="#132c3d" stroke-width="3"/>
+<path d="M600,334 L600,94 L360,94 L360,334 L600,334 Z" fill="none" stroke="#132c3d" stroke-width="3"/>
+<path d="M650,154 L650,106 M640,121 L650,106 L660,121" fill="none" stroke="#132c3d" stroke-width="3"/>
+<text x="650" y="180" font-size="16" text-anchor="middle">Grid N</text>
+<path d="M120,357 L120,367 L240,367 L240,357 M240,367 L360,367 L360,357" fill="none" stroke="#132c3d" stroke-width="3"/>
+<text x="120" y="390" font-size="16" text-anchor="middle">0</text><text x="240" y="390" font-size="16" text-anchor="middle">50</text><text x="360" y="390" font-size="16" text-anchor="middle">100 m</text>
+<text x="600" y="383" font-size="16" text-anchor="end">Fixture CRS: EPSG:32617</text>
+<rect x="28" y="410" width="20" height="18" fill="#d08a42"/><text x="57" y="425" font-size="17">Wetland indicator</text>
+<rect x="250" y="410" width="20" height="18" fill="#187ea6"/><text x="279" y="425" font-size="17">Flood indicator</text>
+<rect x="465" y="410" width="20" height="18" fill="url(#parcel-unknown-hatch)" stroke="#334155"/><text x="494" y="425" font-size="17">Coverage unknown</text>
+</g></svg>
+<figcaption>Synthetic parcels only. Hatching means coverage is unknown for at least one source; it does not mean a site is clear or that a constraint is confirmed.</figcaption>
+</figure>
+<!-- markdownlint-enable MD033 -->
+
+| Synthetic parcel | Wetland-indicator result | Flood-indicator result |
+| --- | --- | --- |
+| DEMO-P1 | 50% mapped overlap; 100% fixture coverage | No mapped intersection; 100% fixture coverage |
+| DEMO-P2 | No source coverage; unknown | 25% known overlap; 50% fixture coverage; remaining area unknown |
+
+Inspect the [fixture results](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/geopandas-handoff/parcel_screening.json), [source register](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/geopandas-handoff/source_register.json) and [reproduction/provenance notes](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/README.md). Coordinates, source records and IDs are synthetic. Source dates in the fixture are example metadata; missing effective dates and accuracy remain unknown.
+
+For a consultant-facing review, see the [synthetic Atlas figure-set handoff example](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/exhibit-production/BUYER_HANDOFF_SAMPLE.md) and [scope/acceptance worksheet](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/docs/ENVIRONMENTAL_GIS_BRIEF_TEMPLATE.md). They explain the requested figures, source-rights questions, coverage uncertainty, QA and quote factors. Both are written synthetic examples, **not** a pre-generated sample PDF, customer engagement or fixed-price offer.
+
+## What to send for an estimate
+
+- **The job:** report or planning purpose, figure list or parcel count, intended scale and page dimensions.
+- **The inputs:** general geography, available spatial/analytical files, coordinate systems, source dates and permission to use them.
+- **The handoff:** required PDF/native formats, title block or style example, reviewing professional and target deadline.
+- **The review:** known gaps, acceptance checks, revision needs and whether the work will repeat.
+
+Send the non-sensitive outline first. File transfer and permitted handling are agreed before confidential inputs are shared. Fee, start date, delivery window and revision allowance are confirmed after the inputs and scope are reviewed.
 
 ## Define acceptance before production
 
-Agree the figure index or screening question, source rights and coverage, CRS, intended scale, output formats, reviewer and revision limit. The delivery records sources, assumptions, QA findings and items requiring further review.
+Agree the figure index or screening question, source rights and coverage, CRS, intended scale, output formats, reviewer and revision limit. The delivery records sources, assumptions, QA findings and items requiring further review. Additional figures, replacement inputs or a changed analysis question are reviewed as a scope change before extra work proceeds.
 
 **Desktop limitations:** This work is not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion, legal determination or regulatory approval. Public data and parcel boundaries can be incomplete, outdated or misaligned. Field verification and qualified professional review may be required.
 
@@ -60,6 +124,14 @@ Agree the figure index or screening question, source rights and coverage, CRS, i
 ### Can you work from a consultant's figure list?
 
 That is a useful starting scope. Provide the requested figures, page dimensions, available source files, symbology requirements, intended use and reviewer. Editable projects, source licensing and revision limits are agreed explicitly.
+
+### Can you support figures for a Phase I or Phase II report?
+
+GIS figure production can be scoped from your consultant's requested figures and supplied site or analytical information. Your consultant retains interpretation, assessment and sign-off responsibilities. Producing a map does not constitute performing an environmental site assessment, field investigation or regulatory determination.
+
+### How much will the figures cost, and when can they be delivered?
+
+Provide the figure list, source formats and requested deadline. The estimate depends on data readiness, figure complexity, required files and review allowance. Your written scope confirms the delivery window after that review.
 
 ### Does a map with no intersecting indicators clear a parcel?
 

@@ -26,7 +26,17 @@ For map production, a non-sensitive figure list helps. For automation, describe 
 
 ## Map production
 
-For [environmental GIS figures or a parcel Atlas series](/computing/services/environmental-screening/), include the figure list or parcel count, general location, source formats, page dimensions, intended use, reviewer and deadline. Indicate whether you need editable GIS files as well as PDF exhibits.
+For [environmental GIS figures or a parcel Atlas series](/computing/services/environmental-screening/), a short outline is enough for the first review. Copy these fields into your email:
+
+> **Figures and use:** requested maps or parcel count; report/planning purpose.
+>
+> **Available inputs:** general location, file formats, CRS and source dates if known.
+>
+> **Required handoff:** PDF/native formats, page size, title block or style requirements.
+>
+> **Review and timing:** reviewing professional, target deadline and revision needs.
+
+Flag missing data or uncertain coverage. Do not attach confidential source files until transfer and handling are agreed.
 
 {{< cta subject="Environmental GIS figure set inquiry" text="Email a map production brief" >}}
 
@@ -46,7 +56,18 @@ For a [browser map, PostGIS integration or spatial API](/computing/services/web-
 
 The initial review establishes whether the task fits, what further information is needed and whether a separately scoped diagnostic or implementation makes sense. Scope, data rights, fees, timing, review responsibilities and availability are agreed before work begins.
 
-An inquiry is not a booking, order confirmation or price quotation. Response times are confirmed individually.
+A scoped estimate records:
+
+- The deliverables and what is outside the scope.
+- Required inputs, data rights, permitted handling and any unresolved gaps.
+- Fee, third-party costs if applicable, and the agreed payment arrangement.
+- Start/delivery targets, input-completeness requirements and review dates.
+- Output formats, acceptance checks, revision allowance and scope-change handling.
+- Deployment, operation and support responsibilities where relevant.
+
+The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. Response times are confirmed individually.
+
+If an email application does not open, copy [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) into your usual email service. Use the relevant service subject above so the request includes its context.
 
 ## Share project context first
 

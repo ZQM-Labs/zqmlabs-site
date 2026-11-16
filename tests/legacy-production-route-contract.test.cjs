@@ -133,7 +133,8 @@ test("pricing retains inquiry route, historical prices, and planned-season label
   assert.match(pricing, /Snowflake Secret[\s\S]{0,200}in development/i);
   assert.match(pricing, /Halloween 2026[\s\S]{0,200}past edition/i);
   assert.doesNotMatch(pricing, /Halloween, Autumn Festival, and Winter editions are.{0,50}live now/i);
-  assert.match(pricing, /Live leaderboard \(coming soon\)/i);
+  assert.doesNotMatch(pricing, /<li>Live leaderboard(?: \(coming soon\))?<\/li>/i,
+    "An unverified leaderboard must not be listed as an included feature");
   assert.match(pricing, /href=(?:"|)\/tiers\//i);
   const tiers = fs.readFileSync(artifact("/tiers/"), "utf8");
   assert.match(tiers, /https:\/\/buy\.stripe\.com\/28E14p9hV23bgNA5Fv9bO03/i, "Family Night must link to its verified Stripe payment link");

@@ -55,7 +55,23 @@ The audit produces a workflow outline, data-quality rules, a proposed pilot boun
 
 The [synthetic workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff.
 
-These are synthetic capability examples, not customer results or proof of a complete production integration.
+### A small QA result you can inspect now
+
+The linked synthetic sample records the following result:
+
+| Input | Accepted | Rejected | Check |
+| --- | --- | --- | --- |
+| 8 | 2 | 6 | 8 = 2 + 6; every input is accounted for once |
+
+Reject reasons include duplicate identifiers, missing names, unusable geometry, the wrong geometry type and records outside the boundary. A row can have more than one reason, so reason totals must not be used as a second row count. The sample retains its input hash, coordinate systems and software versions for inspection.
+
+These are synthetic capability examples, not customer results or proof of a complete production integration. They demonstrate traceable checks, not a measured percentage improvement or labor saving.
+
+## Scope, price and delivery decisions
+
+The estimate identifies the diagnostic or pilot boundary, supported runtime, output contract, QA/reject rules, review allowance, target dates and operator responsibilities. Data volume, source quality, licensing and access requirements affect the work. New inputs, a changed destination or ongoing operation require a scope decision.
+
+Agree a baseline before implementation: current effort, error/rework counts, frequency and elapsed reporting time. Review the pilot against the accepted output, repeatability and recovery checks before deciding whether to expand it.
 
 ## Choose tools around the target
 

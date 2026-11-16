@@ -26,6 +26,17 @@ Potential deliverables include an architecture/interface specification, a tested
 
 The handoff can include source code, environment instructions, interface documentation, representative tests and an agreed deployment or rollback guide. Data preparation can be scoped through a separate [GIS automation and QA pilot](/computing/services/gis-automation/).
 
+## What your team accepts
+
+| Decision | Define in the scope | Review before handoff |
+| --- | --- | --- |
+| User task | Named users, permitted data and one useful action | The agreed search, filter, map or query works with representative inputs |
+| Interface | Data schema, requests/responses and error cases | Example queries and tests match the documented contract |
+| Deployment | Prototype or production target; account and data ownership | Environment instructions and agreed deployment/recovery steps |
+| Operation | Access controls, usage expectations, monitoring and support | A named operator and clear ongoing responsibilities |
+
+The estimate separates the prototype or implementation from data preparation, hosting and maintenance. Required data rights, access, expected usage and review needs determine the fee and target dates. Changes to those assumptions are reviewed before extending the work.
+
 ## Plan the operating responsibilities
 
 Establish authentication and authorization, data rights, geographic coverage, accessibility, performance expectations, caching, hosting, monitoring and rollback. A prototype and a production service have different acceptance requirements; ongoing operation and support are separately agreed.

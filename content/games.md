@@ -4,9 +4,14 @@ seo_title: "Location Quest Games: Demos & Editions — ZQM Labs"
 h1: "Location quest games you can play now"
 description: "Explore ZQM Labs story-driven, community-centered games, including the Wisp’s Lost Lanterns browser demo and projects still in development."
 url: /games/
+build:
+  render: never
 ---
 
 <!-- markdownlint-disable MD013 -->
+
+<!-- /games/ is rendered by content/games/_index.md. Keep this legacy selected
+source available to the publisher without competing for the same output path. -->
 
 ZQM Labs creates story-driven, community-centered games for people who want to play together. This directory is designed to grow as more titles become ready for public play.
 
