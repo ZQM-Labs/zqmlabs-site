@@ -39,12 +39,35 @@ Titles and headings below are hypotheses to review, not instructions to replace 
 | Workflow automation / spatial ETL | `/computing/services/gis-automation/` | Inputs, reason-coded rejects, reconciled output and replay/recovery | Scope one audit or pilot |
 | Web GIS / PostGIS / spatial APIs | `/computing/services/web-gis/` | Users, data rights, bounded architecture and operating handoff | Send users, datasets and target environment |
 
+## Buyer questions and first supporting cost brief
+
+Treat these roles as audience hypotheses. Confirm the buyer's actual requirements and current product/service scope; an employer's size is not a supported event capacity.
+
+| Buyer role | First question | Existing content owner | Evidence and next step |
+| --- | --- | --- | --- |
+| HR / office organizer | What will this finished quest cost and what must our organizer prepare? | `/pricing/` → Office Team/Event on `/tiers/` | Current theme, materials, organizer work, event/venue terms and sample → relevant kit or scoped inquiry. |
+| Environmental consultant / project manager | Can you prepare this defined figure set in a usable format for our review? | Environmental GIS service → inquiry | Required inputs, figure list, supported formats/title block, source register, QA/revisions and agreed timing → written scope/estimate. |
+| Community organizer / household | Is the current story suitable, and what arrangements are required? | Community/Family sections on tiers and existing guides | Actual suitability/setup/event conditions → demo and appropriate current offer. |
+| Property buyer / local developer | What does desktop GIS support establish and what requires further review? | Environmental GIS service and relevant existing guides | Dataset coverage, dates, uncertainty, exclusions and professional-review needs → bounded project brief. |
+
+First supporting-content candidate for [#134](https://github.com/ZQM-Labs/zqmlabs-site/issues/134): improve the existing `/pricing/` answer for “how much does a corporate or office scavenger hunt cost?” after claim and measurement review. Keep `/tiers/` authoritative for current Wisp offers; the existing `/compare/scavenger-hunt-apps/` page owns vendor/format tradeoffs. Do not create another master cost page or Office landing page without distinct evidence.
+
+Cost-brief acceptance:
+
+- Explain the actual Wisp story/theme, included materials, organizer preparation, device requirements, agreed event window/venue and support.
+- Preserve the configured tiers: Family Night $49, Community $199, Office Team $349 and Office Event $499. Proposed prices, add-ons and capacity ranges require an actual offer decision.
+- For each competitor figure, cite a dated primary source and its currency, billing period, participant/device unit, preparation and service scope. Omit unverified amounts; avoid universal event-price floors, “cheapest”, “zero logistics” or guaranteed savings.
+- State that browser participation is also available from competitors where supported; compare the finished experience and work required accurately.
+- Treat cost/kit views and meaningful sample completion as intermediate activity; fulfilled retained orders are separate outcomes.
+- Keep new cost and report-figure phrases unmeasured until data is available. Separate Phase I/II pages require distinct needs and proof; improve the current environmental GIS owner first.
+
 ## Proof and expert review acceptance
 
 - Keep all synthetic Atlas and workflow outputs explicitly synthetic and versioned; never present them as client results.
 - Show a readable output preview and matching download/source/manifest where useful. Proposed `/computing/work-examples/parcel-atlas/` and `/computing/work-examples/spatial-etl-qa/` routes are conditional on adding useful inspection beyond existing sections.
 - After actual expert review, add the real reviewer and genuine review date to the three GIS resource guides; link the existing sourced profile only when accurate.
 - Retain source/version context, explicit unknown coverage, professional-review boundaries and a relevant inquiry path.
+- For environmental figure work, document complete client inputs, supported output/native formats, title-block feasibility, QA/revision acceptance and timing agreed after scoping. A competitor's advertised turnaround is not a ZQM delivery promise.
 - Preserve accurate historical credits and credentials; do not invent platform experience, measured savings, customers or endorsement.
 
 ## Labs offer and conversion acceptance
@@ -59,7 +82,7 @@ Titles and headings below are hypotheses to review, not instructions to replace 
 ## SEO and answer-engine acceptance
 
 - Use one primary page per buyer-intent cluster. Improve existing useful pages before adding variants.
-- Give direct factual answers, input/output requirements, exclusions, examples and clear next steps in readable HTML.
+- Give direct factual answers, input/output requirements, exclusions, examples and clear next steps in readable HTML. FAQ markup is not a promised Google rich result or an AI-citation requirement.
 - Keep Computing and Labs Organization identities distinct; ensure structured data represents the visible page.
 - Validate canonical/index directives, title/description, sitemap, internal links and public-artifact boundaries with existing checks.
 - Record the actual source revision, rendered preview and applicable tests. Verify publisher import before describing new source content as live.
@@ -69,7 +92,7 @@ Titles and headings below are hypotheses to review, not instructions to replace 
 ## Review order and evidence
 
 1. Confirm current offer terms and measurement definitions.
-2. Improve the Computing hub, map-production service and relevant inquiry path.
+2. Improve the Computing hub, map-production service and relevant inquiry path; bring the existing office cost answer into this first content wave after offer/measurement review.
 3. Add accurate guide review details and inspectable proof, then automation/Web GIS refinements.
 4. Revisit supporting content from real buyer questions and comparable search data.
 
