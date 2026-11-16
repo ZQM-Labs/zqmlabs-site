@@ -67,6 +67,8 @@ A scoped estimate records:
 
 The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. Response times are confirmed individually.
 
+**Professional scope and contracting:** Before agreeing a job, we confirm the legal contracting party, intended use, data permissions, any professional licensing or supervisory requirements, the client reviewer and the delivery/acceptance criteria. GIS map preparation is not a substitute for legal boundary surveying, engineering design, professional geology or a formal environmental jurisdictional determination. Work that falls within a regulated profession must be assigned to appropriately authorized professionals or excluded; a client's later review alone does not create an exemption. Proposed fees, applicable tax treatment and any third-party data or hosting costs are confirmed in the written scope rather than presumed from an inquiry.
+
 If an email application does not open, copy [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) into your usual email service. Use the relevant service subject above so the request includes its context.
 
 ## Share project context first
