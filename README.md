@@ -16,13 +16,13 @@ prove that a game is orderable or approved for an in-person event.
 
 **What this repository is:** The Hugo source and content for the public ZQM Labs website — pages, layouts, static assets, and the bundled player copy served under the site's game routes.
 
-**What it contributes:** All customer- and organizer-facing public information for ZQM Labs lives here: the featured game, hosting and tiers pages, community and FAQ content. It is the public record of what the studio offers.
+**What it contributes:** Selected public pages and configuration for ZQM Computing and ZQM Labs, including GIS services, game information and organizer resources. The publisher owns the remaining composite content; current offers must agree across both sources.
 
 **Deployment:** This repo is the canonical site content source. The production deploy (ZQM-Computing/zqm-labs, `.github/workflows/pages-deploy.yml`) pins this repository by commit in `SITE_SOURCE_SHA` and builds the production site from that pin; the same workflow syncs the pinned quest-player source into the bundle (see `scripts/sync-player.sh`). Changes here go live only when the pin is bumped in the monorepo. The workflow in this repo (`site-ci.yml`) is validation only, not deployment.
 
-## Civic and group quest growth (source-only planning)
+## Civic and group quest guides
 
-The [civic and group quest conversion plan](docs/civic-quest-conversion-release.md) documents SEO guides, safe game-format distinctions, scoped organizer inquiries, and exact production release gates. New guide pages are not assumed live on zqmlabs.com: the pinned composite deploy currently copies only selected content. No new city route, white-label license, live multiplayer or payment offering is represented as available.
+The [civic and group quest conversion plan](docs/civic-quest-conversion-release.md) documents SEO guides, safe game-format distinctions, scoped organizer inquiries, and exact production release gates. The four selected guides were included in the November 16 verified production snapshot described below. Additional source pages remain unverified until selected and checked through the publisher. No new city route, white-label license, live multiplayer or payment offering is represented as available.
 
 ## Experimental content (not launched)
 
@@ -38,38 +38,15 @@ The Project Volusia portal is an internal research/context system, not the publi
 
 ## Production deployment and CI
 
-**Serving source of truth — verified 2026-10-20** (full evidence in the [deployment source-of-truth runbook](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/docs/deployment-source-of-truth.md)):
+**Current contract — reviewed 2026-11-16:**
 
-- **This repository does not deploy the site.** Its GitHub Actions workflow is validation-only (see below). Nothing in this repo publishes to production.
-- **Production is built and deployed by the private monorepo `ZQM-Computing/zqm-labs`**, workflow `.github/workflows/pages-deploy.yml`. It builds the monorepo's nested `zqmlabs-site/` tree and deploys it with Wrangler to the Cloudflare Pages project `zqmlabs-site` (custom domains `zqmlabs.com` and `www.zqmlabs.com`).
-- **Only part of this repository reaches production.** The monorepo workflow copies `hugo.toml` and exactly eight content files from this repository, at a pinned commit (`SITE_SOURCE_SHA` in the workflow; `6b6fdc78` as of 2026-10-20): `_index.md`, `about.md`, `halloween.md`, `tiers.md`, `faq.md`, `patterns.md`, `community.md`, `games.md`. Layouts, static assets, and every other content file in the deployed build come from the monorepo's own tree. The player bundle is synced the same way, from `ZQM-Labs/quest-player` at `PLAYER_SOURCE_SHA`.
-- **Consequence, verified live on 2026-10-20:** pages that exist only in this repository — `pricing.md`, `organizers.md`, `contact.md`, `press.md`, `direction.md`, and `content/games/lantern-player.md`, `pumpkin-roll.md`, `snowflake-secret.md`, `wisps-tracker.md` — are **not in the production build and return 404**, even though the site navigation links to `/pricing/` and `/organizers/` from every page. A full build of this repository yields 18 sitemap URLs; the live sitemap lists 9, matching the monorepo build's content inventory exactly.
-- **To publish a new page**, do one of: (a) add the file to the sync list in the monorepo's `pages-deploy.yml`, or (b) mirror the file into the monorepo's `zqmlabs-site/content/` (the sync overwrites only the eight listed files; it does not clean the directory, so mirrored files survive). Then confirm the page appears in the live sitemap after a production deploy.
-- **Resolved 2026-10-23 (single-brain rule):** the workflow deploys with `--branch=main`, and its direct uploads ARE the production deployments (verified by API rollback to them). The intermittent "second origin" seen on 2026-10-20 was Cloudflare Pages native Git builds; they are now permanently disabled for the apex project (`production_deployments_enabled: false`, guarded by an hourly automated check). Production has exactly one writer: the monorepo's composite pin build. See the runbook's 2026-10-23 resolution section and `docs/single-brain-architecture.md` in the monorepo.
+- This repository validates canonical source and does not publish production. The private `ZQM-Computing/zqm-labs` publisher assembles its Hugo tree using reviewed `SITE_SOURCE_SHA` and `PLAYER_SOURCE_SHA` pins.
+- The publisher imports explicit groups of root, guide, comparison, Computing and Labs pages, plus selected configuration/layout/assets. Its `.github/workflows/pages-deploy.yml` copy lists are authoritative. Remaining pages can be publisher-owned, including pricing, organizer, contact and press content. Absence from the canonical import list does not establish a live 404.
+- The October 20 eight-file import list, nine-URL sitemap count and missing-page observations are historical. They are not the current production inventory. Production run `43825765643` on November 16 checked the four selected guide routes, dual-brand/service routes and GIS resource canonicals after publishing site pin `336b269fa1ab374dcb25e93a846f03c00dd76ec4` with player pin `c1397093bb215bfb68edd615056e12c7310f1f25`.
+- Production publication requires a main-branch manual dispatch through the approved publisher and its exact-commit gates. Push/PR builds are validation. Cloudflare native Git production publishing stays disabled; the publisher deploys with `--branch=main`. Do not create a competing writer.
+- To publish a new page, first identify its owner, then update the explicit import where appropriate and add route/SEO/claim validation. Promote reviewed canonical main pins through the publisher and verify the live page, canonical, indexability, sitemap membership and release/source markers. Preserve rollback and fulfillment evidence.
 
-The GitHub Actions workflow at
-[.github/workflows/site-ci.yml](https://github.com/ZQM-Labs/zqmlabs-site/blob/main/.github/workflows/site-ci.yml) is a **validation
-workflow**, not a deployment workflow. It synchronizes the player source into
-the site bundle, checks JavaScript syntax and script order, verifies service
-worker precache files, builds the Hugo site, checks generated links, and
-validates required routes and assets.
-
-Production deployment runs through the monorepo workflow described above,
-not through this repository. Do not infer a successful production deploy from
-a green CI build here: this repo's CI can pass while production still serves
-an older or partial build (as verified on 2026-10-20, when nine content
-pages were missing from production despite existing here).
-
-Still to record in the runbook when established:
-
-- How a workflow deploy becomes the production deployment (the Wrangler
-  deploy currently omits `--branch=main`)
-- The identity and owner of the intermittent second origin
-- Smoke-test and rollback procedures
-- Who owns access and production changes
-
-Do not create a competing deployment path without updating this runbook and
-the repository architecture map.
+The validation workflow in this repository builds and checks source; it does not prove what the live origin currently serves. Use the current publisher workflow and dated release evidence for production state. A local or canonical-only build can contain pages outside the selected production overlay.
 
 ## Checkout and purchase flow
 
