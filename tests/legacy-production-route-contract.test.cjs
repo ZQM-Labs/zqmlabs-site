@@ -139,11 +139,11 @@ test("pricing retains inquiry route, historical prices, and planned-season label
   const tiers = fs.readFileSync(artifact("/tiers/"), "utf8");
   // The connected live Stripe account marked all four advertised links inactive
   // as of 2026-11-16. Route-level truth must not regress to dead payment CTAs.
-  assert.doesNotMatch(tiers, /buy\\.stripe\\.com/i, "Inactive purchase links must not render");
-  assert.doesNotMatch(pricing, /buy\\.stripe\\.com/i, "Pricing must remain inquiry-only");
+  assert.doesNotMatch(tiers, /buy[.]stripe[.]com/i, "Inactive purchase links must not render");
+  assert.doesNotMatch(pricing, /buy[.]stripe[.]com/i, "Pricing must remain inquiry-only");
   assert.match(tiers, /Paid kit checkout is currently unavailable/i);
   assert.match(pricing, /paid checkout is currently unavailable/i);
-  assert.doesNotMatch(tiers, /schema\\.org\\/InStock|\\"@type\\"\\s*:\\s*\\"Product\\"/i);
+  assert.doesNotMatch(tiers, /schema[.]org[/]InStock|"@type" *: *"Product"/i);
   assert.match(tiers, /href=(?:"|)\/contact\//i);
   assert.match(tiers, /Halloween 2026 (?:event )?window/i);
   assert.match(tiers, /FAMILY25/);
