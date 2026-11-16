@@ -15,7 +15,7 @@ Git history, revoke cached public artifacts, or modify any production site.
 
 The private production build pins this repository at an immutable commit. The
 release workflow change that stops copying `static/packs` into the public
-build landed as [ZQM-Computing/zqm-labs#214](https://github.com/ZQM-Computing/zqm-labs/pull/214)
+build landed as `ZQM-Computing/zqm-labs#214`
 (merged 2026-11-05; its deploy removed the packs from the live site). Merging
 this PR and bumping the site pin pulls the cleaned source into production.
 
