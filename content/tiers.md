@@ -15,6 +15,12 @@ These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experienc
 
 **Paid kit checkout is currently unavailable.** The Stripe purchase links are inactive, and no new kit order or automatic delivery is being offered. The Halloween 2026 window (October 30–November 1) has ended. The amounts below are prior published reference prices, **not active offers**. [Contact the Lab](/contact/) to discuss possible future arrangements; the [free browser demo](/games/hunt-for-wisps/play/?demo=1) remains available.
 
+## Required game coordination
+
+**To organize or participate in a kit-based Wisp game, coordinate with [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20Game%20Coordination).** One designated organizer may email on behalf of the whole group. Include the kit format, requested date and time (with time zone), city or proposed venue, approximate team/participant count, and any accessibility or support needs.
+
+ZQM Labs must confirm the event window, route/venue arrangements, delivery method and support availability **in writing before your group announces or begins the event**. A payment, when checkout becomes available, does not by itself reserve a date, approve a physical route, or guarantee onsite support. Do not email credit-card numbers or sensitive participant information.
+
 The Great Pumpkin Roll and The Snowflake Secret remain **in development**. They are not included as separately playable editions in these offers.
 
 ![Team celebrating at the finish of an outdoor quest at golden hour](/img/tiers-evergreen.webp)
