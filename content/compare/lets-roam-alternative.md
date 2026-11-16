@@ -2,7 +2,7 @@
 title: "A Let's Roam Alternative: Your Venue, Your Quest — ZQM Labs"
 seo_title: "Let's Roam Alternative: A Scavenger Hunt at Your Own Venue — ZQM Labs"
 h1: "Looking for a Let's Roam alternative?"
-description: "Let's Roam runs ready-made hunts in 3,000+ cities. If your group is outside the big-city template — or wants its own yard, neighborhood, campus, or office — ZQM Labs builds the quest for your place. Prices checked 2026-11-11."
+description: "Compare a city hunt with a ready-made Wisp kit. Review the story, organizer setup, current prices and venue arrangements before choosing."
 ---
 
 ![Three seasonal quest scenes — a lantern-lit park path at dusk, a pumpkin-lined autumn village street, and a snowy village square — above a brass compass](/img/home-collection-evergreen.webp)
@@ -12,7 +12,7 @@ Let's Roam is good at what it does. If you are visiting a big city and want a re
 There are two different trips here:
 
 - **Go to their route.** You buy tickets to a pre-built hunt in one of 3,000+ cities. Let's Roam is built for this.
-- **Play at your place.** You want the quest at your yard, your neighborhood, your campus, or your office. ZQM Labs is built for this.
+- **Organize a self-guided kit.** You want a finished story and can prepare a venue and event window agreed with the Lab. ZQM Labs offers ready-made Wisp kits.
 
 If your group is in Daytona Beach, New Smyrna Beach, or any town without a Let's Roam template — or if the event is at a venue you chose, not a city they mapped — read on. If you are visiting a big city and want a hunt ready to go, stop here — Let's Roam is your answer, and you should use it.
 
@@ -26,11 +26,11 @@ Let's Roam sells ready-made, app-guided hunts in 3,000+ cities, plus facilitated
 
 ## ZQM Labs, plainly
 
-ZQM Labs builds the quest for your place. Dr. Z, the Lab's mad-scientist Game Master, builds each quest around a story — six stops, a puzzle at each stop, three hints per stop, and four comfort levels (Li'l Z Cozy, Classic Z Spooky, Mad Z After Dark, Full Madness Overdrive) so the same quest fits children, families, and adults after dark. Wisp, his escaped first creation, is the one leading players through it. Your group gathers at your venue — a yard, a neighborhood, a campus, an office — one phone per team, and plays it in a browser. No app to install.
+ZQM Labs supplies the same ready-made Wisp's Lost Lanterns story for each flat-fee kit buyer. It has six stops, a puzzle and three hints at each stop, and four comfort levels. One phone per team runs the game in a browser, with no app to install. A kit purchase does not include custom story writing or onsite facilitation; venue suitability, organizer setup and the event window need confirmation.
 
-**What it costs:** published flat fees, one-time — Family Night $49, Community $199, Office Team $349, Office Event $499. No per-player charge, no subscription. One fee for the whole group, whatever its size.
+**What it costs:** published flat fees, one-time — Family Night $49, Community $199, Office Team $349, Office Event $499. No per-player charge, no subscription. Each published tier has a flat fee. Confirm the appropriate tier and group format before announcing an event.
 
-**What you get:** a finished story, not a city template. The quest is built to be played where your group already is.
+**What you get:** the current finished Wisp story and the materials described for your tier. The same story is supplied to each buyer; agreeing a venue or stop placement does not mean the story is customized.
 
 ## The honest split
 
@@ -38,7 +38,7 @@ ZQM Labs builds the quest for your place. Dr. Z, the Lab's mad-scientist Game Ma
 | --- | --- |
 | A ready-made hunt in a big city you are visiting, with no setup | Let's Roam |
 | A facilitated corporate event with a host and a fixed format | Let's Roam team building |
-| A hunt at your own venue — your yard, neighborhood, campus, or office | ZQM Labs |
+| A ready-made, self-guided kit with a venue and event window agreed beforehand | ZQM Labs |
 | A quest for a group in a town without a big-city template | ZQM Labs |
 | One flat fee for the whole group, with no per-person math | ZQM Labs |
 | A story with characters, not a list of landmarks | ZQM Labs |
@@ -47,9 +47,9 @@ ZQM Labs builds the quest for your place. Dr. Z, the Lab's mad-scientist Game Ma
 
 For a family of six playing once: a Let's Roam team ticket for up to 6 players lists at $111.09. A ZQM Labs Family Night kit is $49 flat for the household — less than half, for a finished six-stop story at your own place.
 
-For a team of 20 at a corporate event: Let's Roam team building starts at $35 per person — $700 for 20 people. A ZQM Labs Office Team kit is $349 flat for the group — half the price, with no per-person charge, and the quest runs at your office rather than a city route.
+For a team of 20 at a corporate event: Let's Roam team building starts at $35 per person — $700 for 20 people. A ZQM Labs Office Team kit lists at $349 flat. It is a self-guided kit rather than a facilitated event; confirm that the proposed group, venue and format are supported before comparing the fees.
 
-For a group visiting a big city for a day, Let's Roam wins on convenience: the route is already there. For a group staying put, the Lab's flat fee wins on price — and the quest is built for the place you are actually in.
+For a group visiting a city, a published city route may suit the day. For a group considering a Wisp kit, compare the finished story, required preparation and confirmed event arrangements as well as the listed fee.
 
 ## What to do next
 
