@@ -60,14 +60,14 @@ These resources are practical specifications, not substitute permits or complete
 
 ## See the exhibit structure
 
-This preview is drawn from the two-parcel fixture in the [reproducible QGIS Atlas workflow](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production). That workflow generates the QGIS project, layout, PDF series and delivery manifest. The preview below illustrates its source fixture; it is not a QGIS PDF export or a client case study.
+This preview is drawn from the six-parcel synthetic fixture in the [reproducible QGIS Atlas workflow](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production). That workflow generates the QGIS project, layout, PDF series and delivery manifest. The figure below shows DEMO-P1 and DEMO-P2 as the illustrated pair, and the table that follows gives the full six-parcel fixture; it is not a QGIS PDF export or a client case study.
 
 <!-- Static, accessible fixture illustration; inline SVG travels with the selected page. -->
 <!-- markdownlint-disable MD033 -->
 <figure style="margin:1.2rem 0">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" width="720" height="460" role="img" aria-labelledby="parcel-sample-title parcel-sample-description" style="max-width:100%;height:auto">
 <title id="parcel-sample-title">Synthetic parcel indicators and unknown source coverage</title>
-<desc id="parcel-sample-description">Two adjacent 100 by 100 metre synthetic parcels in EPSG:32617. DEMO-P1 has 50 percent mapped wetland overlap and complete fixture source coverage. DEMO-P2 has no wetland coverage, 50 percent flood coverage and 25 percent known flood overlap. Hatching marks areas unknown for at least one source; no real property is represented.</desc>
+<desc id="parcel-sample-description">Two adjacent 100 by 100 metre synthetic parcels in EPSG:32617, DEMO-P1 and DEMO-P2, the illustrated pair from the six-parcel fixture; the table below the figure covers DEMO-P1–P6. DEMO-P1 has 50 percent mapped wetland overlap and complete fixture source coverage. DEMO-P2 has no wetland coverage, 50 percent flood coverage and 25 percent known flood overlap. Hatching marks areas unknown for at least one source; no real property is represented.</desc>
 <defs><pattern id="parcel-unknown-hatch" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M-2,2 L2,-2 M0,10 L10,0 M8,12 L12,8" stroke="#334155" stroke-width="1"/></pattern></defs>
 <rect width="720" height="460" rx="12" fill="#f1f5f9"/>
 <g font-family="Arial, sans-serif" fill="#132c3d">
@@ -95,12 +95,39 @@ This preview is drawn from the two-parcel fixture in the [reproducible QGIS Atla
 </figure>
 <!-- markdownlint-enable MD033 -->
 
-| Synthetic parcel | Wetland-indicator result | Flood-indicator result |
-| --- | --- | --- |
-| DEMO-P1 | 50% mapped overlap; 100% fixture coverage | No mapped intersection; 100% fixture coverage |
-| DEMO-P2 | No source coverage; unknown | 25% known overlap; 50% fixture coverage; remaining area unknown |
+A 0% overlap at 100% coverage is a mapped result; the same 0% at 0% coverage is unknown, not clear. Every parcel is 100 × 100 m = 10,000 m² (2.471 acres), EPSG:32617.
+
+| Synthetic parcel | Wetland overlap | Wetland coverage | Flood overlap | Flood coverage |
+| --- | --- | --- | --- | --- |
+| DEMO-P1 | 5,000 m² (50%) | 100% | 0 m² | 100% |
+| DEMO-P2 | 0 m² | 0% — unknown | 2,500 m² (25% known) | 50% |
+| DEMO-P3 | 5,000 m² (50%) | 100% | 0 m² | 0% — unknown |
+| DEMO-P4 | 2,500 m² (25%) | 50% | 2,500 m² (25%) | 100% |
+| DEMO-P5 | 0 m² | 0% — unknown | 0 m² | 50% |
+| DEMO-P6 | 10,000 m² (100%) | 100% | 2,500 m² (25%) | 100% |
+
+| Source ID | Dataset | Accessed | Effective date | Accuracy |
+| --- | --- | --- | --- | --- |
+| SYNTH-PARCELS-2026 | parcel boundary (synthetic fixture) | 2026-11-02T12:00:00Z | unknown | unknown |
+| SYNTH-WETLAND-2026 | wetland inventory | 2026-11-02T12:00:00Z | unknown | unknown |
+| SYNTH-FLOOD-HAZARD-2026 | flood hazard | 2026-11-02T12:00:00Z | unknown | unknown |
+| SYNTH-FLOOD-COVERAGE-2026 | flood hazard coverage extent | 2026-11-02T12:00:00Z | unknown | unknown |
 
 Inspect the [fixture results](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/geopandas-handoff/parcel_screening.json), [source register](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/geopandas-handoff/source_register.json) and [reproduction/provenance notes](https://github.com/ZQM-Computing/qgis-resources/blob/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production/fixtures/README.md). Coordinates, source records and IDs are synthetic. Source dates in the fixture are example metadata; missing effective dates and accuracy remain unknown.
+
+Download the fixture: [parcel_screening.gpkg](/computing/demonstrators/parcel-screening/parcel_screening.gpkg) — open in QGIS by drag-and-drop; 5 layers: parcels 6, wetland_indicator 4, flood_hazard 3, flood_coverage 5, source_register 4. [parcel_screening.geojson](/computing/demonstrators/parcel-screening/parcel_screening.geojson) — same 6 parcels, same attributes.
+
+Synthetic fixture only. No real property or agency dataset is represented.
+
+### Explore the six parcels interactively
+
+<!-- markdownlint-disable MD033 -->
+<iframe src="/computing/demonstrators/parcel-web-map/index.html" width="100%" height="560" title="Interactive map of the six synthetic screening parcels" loading="lazy"></iframe>
+<!-- markdownlint-enable MD033 -->
+
+[Open the interactive parcel map](/computing/demonstrators/parcel-web-map/index.html) (full size) if the embedded map does not load.
+
+The map shows all six synthetic parcels with their wetland and flood screening numbers in click popups, toggleable wetland and flood overlays, and client-side-only KML/KMZ import — nothing is uploaded. Static front-end demonstration, not a live PostGIS application; a production version would be PostGIS-backed.
 
 For a consultant-facing review, see the [synthetic Atlas figure-set handoff example](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/exhibit-production/BUYER_HANDOFF_SAMPLE.md) and [scope/acceptance worksheet](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/docs/ENVIRONMENTAL_GIS_BRIEF_TEMPLATE.md). They explain the requested figures, source-rights questions, coverage uncertainty, QA and quote factors. Both are written synthetic examples, **not** a pre-generated sample PDF, customer engagement or fixed-price offer.
 
