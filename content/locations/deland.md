@@ -2,7 +2,7 @@
 title: "Team & Community Games in DeLand — ZQM Labs"
 seo_title: "Team & Community Games in DeLand — ZQM Labs"
 h1: "Team and community games in DeLand, Florida"
-description: "Play a story-driven location quest in DeLand, Florida — the historic downtown and Stetson area as settings to coordinate with the Lab. Free browser demo, historical kit pricing; paid checkout paused."
+description: "Play a story-driven location quest in DeLand, Florida — the historic downtown and Stetson area as settings to coordinate with the Lab. Free browser demo, current kit pricing; confirm venue and event arrangements."
 breadcrumb: true
 local_business:
   name: "ZQM Labs"
@@ -14,10 +14,10 @@ faq:
   - q: "Is there a fixed route in DeLand?"
     a: "No. The historic downtown streets and the Stetson area are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance."
   - q: "How much does a local quest cost?"
-    a: "Historical Halloween 2026 tier prices were Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; paid checkout is paused."
+    a: "Current published tier prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms."
 ---
 
-> **Availability as of November 2026:** The free Wisp demo remains playable. Paid Halloween 2026 kits, the FAMILY25 discount and historical fundraiser splits are **not current offers**. Checkout is paused; future availability, prices, delivery and support require separate confirmation.
+> **Current Wisp kit availability:** The free demo remains playable, and paid kit options are listed on the [tiers page](/tiers/). The Halloween 2026 event window has ended; the FAMILY25 discount and historical fundraiser splits are not current offers. Confirm venue, event window and organizer responsibilities before announcing an event.
 
 ![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
 
@@ -31,13 +31,15 @@ DeLand is the county seat, with a walkable historic downtown and a college commu
 
 DeLand suits school and youth groups especially well — a school club afternoon, a Scout troop outing, a church youth group — and the same format works for visiting teams and community groups. The Youth Groups tier is waitlist; the Community tier ($199, unlimited families) is a historical group tier, not currently bookable while a Youth Groups date is being arranged.
 
-## Historical tier reference
+Flat-fee Wisp kits use the same finished story for every buyer. Coordinating the setting, stop placement and permissions does not mean the story is customized. Review current kit contents and confirm the event arrangements with the Lab.
 
-The prices below describe the expired Halloween 2026 event. They are not purchase offers; no current kit checkout is available.
+## Current kit pricing and historical promotions
+
+The prices below are the current published Wisp kit tiers. Venue suitability, event window and support arrangements still need confirmation; a purchase is not a hosted-event booking.
 
 ## Which tier fits which group
 
-- **Family Night — $49.** One household, one quest. The former FAMILY25 discount has expired; paid checkout is paused.
+- **Family Night — $49.** One household, one quest. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms.
 - **Community — $199.** Neighborhoods, HOAs, PTAs, churches, and community groups — unlimited families.
 - **Office Team — $349.** A team-building format for coworkers.
 - **Office Event — $499.** A larger company or organization-wide event.
@@ -52,7 +54,7 @@ The free demo is playable now. A hosted local quest is by coordination — it is
 1. **Try the demo.** Play the [free browser demo](/games/hunt-for-wisps/play/?demo=1) so you know how a quest feels.
 2. **Contact the Lab.** Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your group, your dates, the tier you are eyeing, and the area you have in mind.
 3. **Agree the details.** Route and stops, venue permissions, accessibility, the event window, and support are confirmed with the Lab before you announce anything.
-4. **Confirm future availability.** Paid checkout is paused. Future purchase, entitlement and delivery require confirmed fulfillment and terms.
+4. **Choose the appropriate kit.** Review the [current tiers](/tiers/) and purchase terms after confirming the event arrangements. Keep payment, delivered access and a hosted booking distinct.
 
 ## Quick questions
 
@@ -60,7 +62,7 @@ The free demo is playable now. A hosted local quest is by coordination — it is
 
 **Is there a fixed route in DeLand?** No. The historic downtown streets and the Stetson area are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance.
 
-**How much does a local quest cost?** Historical Halloween 2026 tier prices were Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; paid checkout is paused.
+**How much does a local quest cost?** Current published tier prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms.
 
 ## Check availability
 
