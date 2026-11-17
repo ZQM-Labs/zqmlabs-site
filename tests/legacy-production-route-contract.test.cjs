@@ -83,10 +83,12 @@ test("brand preview routes exist without changing the retained game directory", 
 test("production player and origin security contract stay byte-identical in preview", () => {
   const crypto = require("node:crypto");
   const hashes = new Map([
-    // Re-pinned 2026-11-17 (webmap worker-src PR, owner authorization
-    // "update security policy"): worker-src blob: added after script-src.
-    // img-src nationalmap + frame-ancestors mischief unchanged from #149.
-    ["_headers", "cb2583297c7a13ea10fd49aa98891ed7a9106ccce8efeb75605b0deafba6f26a"],
+    // Re-pinned 2026-11-17 (CSP remediations, owner authorization
+    // "Fix both CSP items"): tile.openstreetmap.org +
+    // basemap.nationalmap.gov added to connect-src so MapLibre's
+    // fetch()-based raster tiles load live. worker-src blob:,
+    // img-src nationalmap + frame-ancestors mischief unchanged.
+    ["_headers", "af5cdc1ec384b50224a93ee6b94d967d05d210f5faa5937d548db2c98e55d531"],
     ["_redirects", "a86219edab4a9afd594efa36ea59a06dc15a51ab9f19db10ec3178fa05695dd2"],
     ["games/hunt-for-wisps/play/PLAYER_SOURCE_SHA", "25d80eb3e9d75e832564ca75d13343d7e8a6ff6dac6cc22cedc9107343649fec"],
     ["games/hunt-for-wisps/play/app.js", "c90925ae9c43da99a2445ef0b45513c1970641d65843c24a5f7e1c1d3d68df45"],

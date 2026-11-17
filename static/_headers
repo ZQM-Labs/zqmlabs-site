@@ -2,7 +2,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: default-src 'self'; script-src 'self'; worker-src blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org https://basemap.nationalmap.gov; font-src 'self'; connect-src 'self' https://api.zqmlabs.com; frame-src 'self'; frame-ancestors 'self' https://mischief.zqmlabs.com; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self'; worker-src blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org https://basemap.nationalmap.gov; font-src 'self'; connect-src 'self' https://api.zqmlabs.com https://tile.openstreetmap.org https://basemap.nationalmap.gov; frame-src 'self'; frame-ancestors 'self' https://mischief.zqmlabs.com; base-uri 'self'; form-action 'self'
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: camera=(), microphone=(), geolocation=(self), payment=()
 
