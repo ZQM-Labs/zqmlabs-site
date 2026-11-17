@@ -127,6 +127,8 @@ Parcels are 14,336–58,556 m², EPSG:32617. Flood overlap below is the Special 
 
 Sources: Volusia County GIS Open Data (Florida public record, Fla. Stat. ch. 119); U.S. Fish & Wildlife Service National Wetlands Inventory, Oct 2026 release (doi:10.7944/usfws.nwi.202610), U.S. federal public domain; FEMA National Flood Hazard Layer, DFIRM 12127C, U.S. federal public domain. Parcel boundaries are county polygons, not surveyed boundaries. NWI indicators are mapped indicators, not a regulatory delineation or jurisdictional determination. NFHL zones are not a flood determination. Missing effective dates are genuine unknowns in the published sources, not omissions.
 
+Aerial imagery (optional basemap): USDA National Agriculture Imagery Program (NAIP) orthoimagery served by the U.S. Geological Survey's The National Map (USGSImageryOnly). Data available from U.S. Geological Survey, National Geospatial Program. Imagery is shown for orientation only; it does not change the screening/project data.
+
 Download the sample: [parcel_screening.gpkg](/computing/demonstrators/parcel-screening/parcel_screening.gpkg) — open in QGIS by drag-and-drop; 6 layers: parcels 6, wetland_indicator 7, flood_hazard 3, flood_coverage 9, wetland_coverage 6, source_register 5. [parcel_screening.geojson](/computing/demonstrators/parcel-screening/parcel_screening.geojson) — same 6 parcels, same attributes.
 
 Public-data sample only. Real Volusia County parcels with real NWI and NFHL overlaps — not a client project, not a client case study, and no owner information is included (geometry + parcel ID only).

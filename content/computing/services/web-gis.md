@@ -12,7 +12,7 @@ Start with the user task: finding a location, exploring an approved dataset, que
 
 {{< btn href="/computing/inquiry/#web-gis" text="Scope a Web GIS project" >}}
 
-See the work before you brief it: [an accessible project map of six fictional projects](#see-an-accessible-project-map) — keyboard-navigable, WCAG 2.1 AA.
+See the work before you brief it: [an accessible map of 45 real public parks in New Smyrna Beach](#see-an-accessible-project-map) — keyboard-navigable, WCAG 2.1 AA.
 
 Delivered by [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS Professional, GIS Certification Institute, current until January 2027.
 
@@ -52,14 +52,16 @@ One defined task at a time: scope, start date and availability are agreed in wri
 ## See an accessible project map
 
 <!-- markdownlint-disable MD033 -->
-<iframe src="/computing/demonstrators/project-map/index.html" width="100%" height="900" title="Accessible map of six fictional demonstration projects" loading="lazy"></iframe>
+<iframe src="/computing/demonstrators/project-map/index.html" width="100%" height="900" title="Accessible map of 45 real public parks in New Smyrna Beach" loading="lazy"></iframe>
 <!-- markdownlint-enable MD033 -->
 
 [Open the accessible project map](/computing/demonstrators/project-map/index.html) (full size) if the embedded map does not load.
 
-The map shows six fictional projects (P-01–P-06) driven by an editable CSV — [projects.csv](/computing/demonstrators/project-map/projects.csv): edit it and reload to update the markers, the project list and the filter. Markers are keyboard-navigable buttons with arrow-key movement between projects, and the full project list below the map carries the same information as a text alternative. Contrast is WCAG 2.1 AA (body text 17.40:1; worst passing pair 5.98:1 focus outline).
+The map shows 45 real public parks and beach-access points in New Smyrna Beach, from Volusia County GIS Open Data — [projects.csv](/computing/demonstrators/project-map/projects.csv): edit it and reload to update the markers, the place list and the filter. Markers are keyboard-navigable buttons with arrow-key movement between places, and the full place list below the map carries the same information as a text alternative. Contrast is WCAG 2.1 AA (body text 17.40:1; worst passing pair 5.98:1 focus outline).
 
-Fictional demonstration projects only — no real sites or clients. Demonstration contact only — no real client.
+Source: Volusia County GIS Open Data — Park Locations. Computed against a public-data sample, not a client project.
+
+Aerial imagery (optional basemap): USDA National Agriculture Imagery Program (NAIP) orthoimagery served by the U.S. Geological Survey's The National Map (USGSImageryOnly). Data available from U.S. Geological Survey, National Geospatial Program. Imagery is shown for orientation only; it does not change the screening/project data.
 
 ## Questions before a Web GIS project
 
