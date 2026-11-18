@@ -1,6 +1,6 @@
 {{- $serviceID := printf "%s#service" ("computing/" | absURL) -}}
 {{- $personID := printf "%s#person" ("computing/alex-zelenski/" | absURL) -}}
-{{- $provider := dict "@type" "Person" "@id" $personID "name" "Alex Zelenski" "honorificSuffix" "GISP" "url" ("computing/alex-zelenski/" | absURL) -}}
+{{- $provider := dict "@type" "Person" "@id" $personID "name" "Alex Zelenski" "url" ("computing/alex-zelenski/" | absURL) -}}
 {{- $production := dict "@type" "Offer" "name" "Production package" "description" "Subcontract GIS production: figures, QA, data prep." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "minPrice" 1000 "maxPrice" 1500) -}}
 {{- $automation := dict "@type" "Offer" "name" "Automation pilot" "description" "A working workflow, delivered and documented." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "minPrice" 3000) -}}
 {{- $program := dict "@type" "Offer" "name" "Program" "description" "Multi-phase or large-area work, quoted by scope." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "minPrice" 25000) -}}
