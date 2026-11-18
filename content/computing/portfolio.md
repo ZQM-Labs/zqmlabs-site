@@ -71,7 +71,7 @@ The following records credit the former company or describe a consulting team's 
 | Project | Published evidence and scope of credit |
 | --- | --- |
 | Martin County resilience and watershed planning | Clearview-branded vulnerability maps reproduced in [Town of Ocean Breeze planning materials (PDF)](https://townofoceanbreeze.com/wp-content/uploads/2021/01/Ordinance-310-2021-EAR-Transmittal-Package.pdf); consulting-team qualifications also describe Clearview map books and GIS data |
-| Palm Beach County climate vulnerability assessment, 2024 | Clearview named on the [final county assessment's consultant roster (PDF)](https://discover.pbc.gov/fdo/BERR/Documents/PBC_Climate_Risk_VA_2024.pdf); individual tasks are not specified there |
+| Palm Beach County climate vulnerability assessment, 2024 | Clearview named on the consultant roster of the county's [2024 climate vulnerability assessment](https://discover.pbc.gov/fdo/BERR/Pages/Climate-Vulnerability-Assessment-and-RAP.aspx) (completed end of 2024); individual tasks are not specified there |
 | Pensacola vulnerability assessment, 2021 | Erin L. Deady P.A.'s retrospective account in the [2023 Levy qualifications submission (PDF)](https://mccmeetingspublic.blob.core.usgovcloudapi.net/levyfl-meet-89faed121abe4fa8915ba5a0c69999de/ITEM-Attachment-001-eef88d8e25a3432093412e9213999374.pdf) describes a jointly completed assessment with Clearview |
 
 ## Public service, environmental policy and outreach
@@ -119,11 +119,11 @@ Earlier Clearview-era sources include the following studies. Their printed autho
 
 **ZQM Computing** publishes inspectable examples for spatial-data preparation, GIS quality checks, map production and API design:
 
-- [Synthetic parcel Atlas](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production) — QGIS project, layout template, map series and source/coverage register.
-- [Synthetic GIS workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) — accepted/rejected records, reconciled counts and handoff structure.
+- [Parcel Atlas — synthetic two-parcel fixture](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production) — QGIS project, layout template, map series and source/coverage register.
+- [GIS workflow QA sample — synthetic fixture](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) — accepted/rejected records, reconciled counts and handoff structure.
 - [Open-source GIS repositories](https://github.com/ZQM-Computing) — Python, GeoPandas, GDAL, PostGIS, QGIS, DuckDB Spatial and GeoParquet patterns.
 
-Synthetic examples demonstrate configured workflows and checks. Historical project credits and current demonstrations are identified individually so clients can evaluate the relevant evidence.
+The examples above demonstrate configured workflows and checks. Historical project credits and current demonstrations are identified individually so clients can evaluate the relevant evidence.
 
 The examples above are open-source demonstrations, not client work. To scope a defined GIS task, [send a short project brief](/computing/inquiry/).
 

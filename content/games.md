@@ -15,6 +15,8 @@ source available to the publisher without competing for the same output path. --
 
 ZQM Labs creates story-driven, community-centered games for people who want to play together. This directory is designed to grow as more titles become ready for public play.
 
+ZQM Labs is the portfolio name under which Alex Zelenski offers games and interactive experiences. It is not a registered company, LLC, or DBA; payments and agreements are issued in his individual name, Alex Zelenski.
+
 ![Illustrated quest map across a neighborhood and park, with routes, pins, and families on the trail](/img/games-evergreen.webp)
 
 ## Featured demo and past edition

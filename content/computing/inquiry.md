@@ -8,7 +8,9 @@ description: "Send a short GIS project brief: the task, available inputs, desire
 
 Briefs go to [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS Professional, GIS Certification Institute, current until January 2027.
 
-Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about environmental GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
+First reply within one business day.
+
+Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
 
 A short description is enough to begin — for example, a map/figure set, desktop screening, data cleanup, workflow automation or Web GIS. Copy this brief into your email, or click the button above it and paste:
 

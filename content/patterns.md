@@ -10,7 +10,7 @@ description: "Explore ZQM Labs game-building resources and ZQM Computing geospat
 ZQM Labs publishes selected game-building resources. Technical and geospatial
 engineering references are maintained separately under
 [ZQM-Computing](https://github.com/ZQM-Computing), starting with the umbrella index
-[geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns). No
+[geospatial-cookbooks](https://github.com/ZQM-Computing/geospatial-cookbooks). No
 paywalls, no sign-ups — if the Lab learned it, you can have it.
 
 ### Game-building shelf
@@ -26,7 +26,7 @@ paywalls, no sign-ups — if the Lab learned it, you can have it.
 
 ### The geospatial shelf
 
-- [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns) — umbrella index and entry point
+- [geospatial-cookbooks](https://github.com/ZQM-Computing/geospatial-cookbooks) — umbrella index and entry point
 - [postgis-patterns](https://postgis.zqmlabs.com) — PostGIS indexing, joins, and tiles
 - [duckdb-spatial-patterns](https://duckdb.zqmlabs.com) — DuckDB Spatial analytics SQL
 - [geopandas-patterns](https://geopandas.zqmlabs.com) — GeoPandas and Shapely
@@ -42,14 +42,14 @@ paywalls, no sign-ups — if the Lab learned it, you can have it.
 
 ### The machine room
 
-- [ollama-fleet-patterns](https://github.com/ZQM-Computing/ollama-fleet-patterns) — local LLM fleet operations
+- [ollama-fleet-cookbook](https://github.com/ZQM-Computing/ollama-fleet-cookbook) — local LLM fleet operations
 - [proxmox-ceph-operations](https://github.com/ZQM-Computing/proxmox-ceph-operations) — Proxmox/Ceph runbooks
 
 ### Find the right starting point
 
 - Want to play? Start with [Games](/games/) and the [browser demo](/games/hunt-for-wisps/).
 - Want to create or host a quest? Start with the [organizer toolkit](https://github.com/ZQM-Labs/organizer-toolkit) and [quest authoring guide](https://github.com/ZQM-Labs/quest-authoring).
-- Want geospatial engineering references? Start with [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns).
+- Want geospatial engineering references? Start with [geospatial-cookbooks](https://github.com/ZQM-Computing/geospatial-cookbooks).
 - Want the source for the public website? Visit [ZQM-Labs/zqmlabs-site](https://github.com/ZQM-Labs/zqmlabs-site).
 
 Only public repositories intended for public use are linked here. Internal Project Volusia portals and data pipelines are deliberately excluded. Dedicated `docs.zqmlabs.com` and `software.zqmlabs.com` hostnames should be linked here only after their separate public builds, access boundaries, and route health have been verified.

@@ -1,10 +1,10 @@
 ---
 title: "ZQM Computing — GIS Services"
-seo_title: "Environmental GIS Mapping & Automation Services | ZQM Computing"
+seo_title: "GIS Mapping & Automation Services | ZQM Computing"
 description: "GIS subcontracting, QGIS map series, spatial ETL and Web GIS for consulting and operations teams. Inspect example deliverables and scope one project."
 ---
 
-Get a defined GIS task from source data to a reviewable handoff. ZQM Computing provides **environmental GIS mapping services and subcontracted exhibit production** for consulting and engineering teams, alongside GIS workflow automation, spatial data QA and Web GIS development.
+Get a defined GIS task from source data to a reviewable handoff. ZQM Computing provides **GIS mapping services and subcontracted exhibit production** for consulting and engineering teams, alongside GIS workflow automation, spatial data QA and Web GIS development.
 
 Based in New Smyrna Beach, Florida. Project geography, remote delivery and client-specific requirements are reviewed when the work is scoped.
 
@@ -59,6 +59,18 @@ The first conversation establishes fit and missing information. A diagnostic, im
 
 Figure count, source readiness, data licensing, output formats, review needs and deployment responsibilities affect the scope. A written estimate follows that review; a target deadline is confirmed with the work, rather than assumed from a generic turnaround. [Send the brief for the service you need](/computing/inquiry/).
 
+## Typical pricing
+
+Typical engagements, scoped and priced after review:
+
+- **Production package — typically $1,000–$1,500.** Subcontract GIS production: figures, QA, data prep.
+- **Automation pilot — from $3,000.** A working workflow, delivered and documented.
+- **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
+- **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
+- **Focused task — from $250.** A single defined deliverable.
+
+Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a brief](/computing/inquiry/).
+
 ## Environmental mapping resources
 
 For a project manager preparing a figure list or parcel screening request, start with the [environmental GIS production resource hub](/computing/resources/):
@@ -71,13 +83,13 @@ For a project manager preparing a figure list or parcel screening request, start
 
 Inspect the structure and checks behind the proposed work:
 
-- **[Synthetic parcel figure preview](/computing/services/environmental-screening/#see-the-exhibit-structure):** inspect mapped indicators and explicit coverage gaps, then follow the pinned source fixture and reproducible QGIS Atlas workflow.
-- **[Synthetic workflow QA report](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md):** traceable accepted/rejected records and reconciled counts.
+- **[Real-parcel figure preview](/computing/services/environmental-screening/#see-the-exhibit-structure):** inspect mapped indicators and explicit coverage gaps for six real Volusia County parcels, then follow the pinned source fixture and reproducible QGIS Atlas workflow.
+- **[Workflow QA sample — synthetic fixture](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md):** traceable accepted/rejected records and reconciled counts; the computed QA report on the [automation page](/computing/services/gis-automation/#inspect-the-qa-evidence) runs the same checks on six real parcels.
 - **[Open-source GIS resources](https://github.com/ZQM-Computing):** reusable examples for GeoPandas, GDAL, DuckDB Spatial, PostGIS and QGIS.
 
-These examples demonstrate configured checks on synthetic inputs. They are not completed client projects, a production integration or evidence of customer savings.
+These examples demonstrate configured checks — the figure preview on six real parcels, the QA sample on a synthetic fixture. They are not completed client projects, a production integration or evidence of customer savings.
 
-ZQM Computing is a new independent practice (October 2026). The examples above are capability demonstrations on synthetic inputs, not client work. Early engagements are scoped the same way as the examples: a defined task, a written scope, and acceptance criteria agreed before work begins.
+ZQM Computing is a new independent practice (October 2026). The examples above are capability demonstrations on a public-data sample and a synthetic fixture, not client work. Early engagements are scoped the same way as the examples: a defined task, a written scope, and acceptance criteria agreed before work begins.
 
 ## Who delivers the work?
 
