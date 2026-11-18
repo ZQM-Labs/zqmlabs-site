@@ -82,7 +82,7 @@ test("Computing inquiries remain brand-specific, mailto-only and noncommittal", 
   assert.match(page, /mailto:zqmcomputing@gmail.com/);
   assert.match(page, /booking, order confirmation/i);
   assert.doesNotMatch(page, /<form\b|checkout\.stripe\.com|buy\.stripe\.com/i);
-  assert.doesNotMatch(page, /within one business day|under 1 business day/i);
+  assert.match(page, /First reply within one business day/i);
   assert.ok(hasLink(page, "/labs/"));
 });
 
