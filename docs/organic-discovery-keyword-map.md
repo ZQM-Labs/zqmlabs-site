@@ -39,7 +39,7 @@ Use the existing `/pricing/` page for corporate/office cost explanation and `/ti
 
 The cost question is a commercial-investigation hypothesis, not a newly measured keyword. A useful answer includes current fees, the actual Wisp story, organizer preparation, materials, device requirements, agreed venue/window and support. Competitor numbers need dated primary sources and comparable billing/participant/service units; no automatic group-capacity, savings or setup-time promises follow from a persona.
 
-The [supporting cost brief](high-intent-content-briefs.md#buyer-questions-and-first-supporting-cost-brief) and [implementation issue #134](https://github.com/ZQM-Labs/zqmlabs-site/issues/134) record acceptance. The existing dated keyword estimates below remain unchanged.
+The [supporting cost brief](high-intent-content-briefs.md) and [implementation issue #134](https://github.com/ZQM-Labs/zqmlabs-site/issues/134) record acceptance. The existing dated keyword estimates below remain unchanged.
 
 ## Measured Labs buyer-phrase snapshot
 
