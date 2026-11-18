@@ -72,7 +72,7 @@ The following records credit the former company or describe a consulting team's 
 | --- | --- |
 | Martin County resilience and watershed planning | Clearview-branded vulnerability maps reproduced in [Town of Ocean Breeze planning materials (PDF)](https://townofoceanbreeze.com/wp-content/uploads/2021/01/Ordinance-310-2021-EAR-Transmittal-Package.pdf); consulting-team qualifications also describe Clearview map books and GIS data |
 | Palm Beach County climate vulnerability assessment, 2024 | Clearview named on the consultant roster of the county's [2024 climate vulnerability assessment](https://discover.pbc.gov/fdo/BERR/Pages/Climate-Vulnerability-Assessment-and-RAP.aspx) (completed end of 2024); individual tasks are not specified there |
-| Pensacola vulnerability assessment, 2021 | The [2023 Levy qualifications submission (PDF)](https://mccmeetingspublic.blob.core.usgovcloudapi.net/levyfl-meet-89faed121abe4fa8915ba5a0c69999de/ITEM-Attachment-001-eef88d8e25a3432093412e9213999374.pdf) describes a jointly completed assessment with Clearview |
+| Pensacola vulnerability assessment, 2021 | The 2023 Levy qualifications submission describes a jointly completed assessment with Clearview |
 
 ## Public service, environmental policy and outreach
 
