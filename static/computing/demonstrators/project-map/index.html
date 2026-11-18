@@ -17,7 +17,8 @@
 <!--
   Accessible interactive map of public parks (CSV-managed) — REAL PUBLIC DATA.
   Data source: projects.csv in this same folder, loaded with Papa Parse.
-  45 park and beach-access points in New Smyrna Beach, FL, from the Volusia
+  45 park and beach-access points with a New Smyrna Beach mailing address
+  (ZIP 32168), from the Volusia
   County GIS Open Data "Park Locations" layer (maps5.vcgov.org, Open_Data_4
   FeatureServer/4). County Hub item a54ea51538044f33a6e8811602613464.
   License basis: Florida public record (Fla. Stat. ch. 119); the county's
@@ -33,6 +34,8 @@
   No backend, no keys, no tracking. Basemap: OpenStreetMap standard tiles (no key). Libraries vendored locally; no external scripts.
 -->
 <link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.Default.css">
 <style>
   :root {
     --ink: #1a1a1a;          /* body text on white */
@@ -147,7 +150,7 @@
 <a class="skip-link" href="#project-list-heading">Skip to place list</a>
 
 <div class="banner" role="note">
-  Real public data &mdash; Volusia County park locations in New Smyrna Beach. Computed against a public-data sample, not a client project.
+  Real public data &mdash; Volusia County park locations in the New Smyrna Beach area (ZIP 32168). Computed against a public-data sample, not a client project.
 </div>
 
 <header class="site-header">
@@ -170,9 +173,12 @@
     <p id="result-count" class="status-line" aria-live="polite"></p>
   </div>
 
+  <p class="map-hint"><strong>How the 45 were chosen:</strong> these are the records in the county&rsquo;s Park Locations layer with a New Smyrna Beach mailing address (ZIP 32168). That filter follows the mailing address, not the city boundary, so the map reaches beyond the city limits &mdash; Lake Ashby Park and its boat ramp, about 18 miles west in Samsula, are the farthest. One further county record (a private facility) is excluded. The county record spells one playground &ldquo;Manatee All Childern&rsquo;s Playground&rdquo;; it is shown here with the City&rsquo;s spelling, &ldquo;Manatee All Children&rsquo;s Playground&rdquo;.</p>
   <h2 id="map-heading">Map</h2>
   <p class="map-hint" id="map-hint">
-    Tab to reach each numbered marker button, then use Left / Right (or Up / Down)
+    Places close together are grouped into numbered clusters; select a
+    cluster to zoom in and separate them, or zoom in until the markers stand
+    alone. Tab to reach each numbered marker button, then use Left / Right (or Up / Down)
     arrow keys to move between places in list order. Enter or Space opens the
     place detail. The full place list below the map contains the same
     information &mdash; the map is never the only way to get it.
@@ -200,8 +206,9 @@
       <h2 id="legend-heading">Legend</h2>
       <ul>
         <li><strong>Numbered marker</strong> &mdash; one per public park or beach-access point; the number matches its position in the place list.</li>
+        <li><strong>Numbered cluster</strong> &mdash; several places close together at this zoom; select it to zoom in and separate them.</li>
         <li><span class="badge badge-active">Active</span> listed as Active in the county record.</li>
-        <li><span class="badge badge-other">Not listed</span> status not listed in the county record.</li>
+        <li><span class="badge badge-other">Not listed</span> means the county record leaves the status blank.</li>
         <li>Coordinates are the county record points for each place (Volusia County GIS Open Data). They locate the facility, not a surveyed boundary.</li>
         <li>Categories are the county record's park types; &ldquo;Not listed in county record&rdquo; means the county record leaves the type blank.</li>
       </ul>
@@ -224,7 +231,7 @@
      This demonstrator makes no claim of survey or engineering licensure and no claim
      of ArcGIS Enterprise experience. Basemap &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
      contributors. Aerial option: USGS The National Map orthoimagery (NAIP, U.S. public domain) — see Sources on the service page.
-     Map library: Leaflet 1.9.4 (vendored locally); CSV parsing: Papa Parse 5.4.1 (vendored locally).</p>
+     Map library: Leaflet 1.9.4 with Leaflet.markercluster 1.5.3 (both vendored locally); CSV parsing: Papa Parse 5.4.1 (vendored locally).</p>
 </footer>
 
 <!-- Embedded fallback copy of projects.csv (identical content).
@@ -232,10 +239,10 @@
      directly via file:// in a browser that forbids local fetch. -->
 <script type="text/csv" id="embedded-csv">id,name,category,status,lat,lon,description,source
 VC28,27th Avenue Park,Beachfront Park,Active,29.0089,-80.8783,"3701 S Atlantic Av, New Smyrna Beach, FL. 3 acres. Listed amenities: restrooms, playground, courts, sidewalk, picnic facilities, pier.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 28."
-VC332,3rd Ave E,Not listed in county record,Not listed,29.0298,-80.8906,"1111 E 3rd Ave, New Smyrna Beach, FL. Listed amenities: restrooms.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 332."
+VC332,3rd Ave E beach access (1111),Not listed in county record,Not listed,29.0298,-80.8906,"1111 E 3rd Ave, New Smyrna Beach, FL. Listed amenities: restrooms.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 332."
 VC66,Alonzo Babe James Community Center,Community Center,Active,29.0237,-80.9306,"201 N Myrtle Av, New Smyrna Beach, FL. 1 acre. Listed amenities: restrooms, playground, courts.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 66."
-VC333,Beachway Ave,Not listed in county record,Not listed,29.0516,-80.9032,"405 Beachway Ave, New Smyrna Beach, FL. Listed amenities: restrooms.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 333."
-VC334,Beachway Ave,Not listed in county record,Not listed,29.0519,-80.9027,"410 Beachway Ave, New Smyrna Beach, FL. Listed amenities: restrooms.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 334."
+VC333,Beachway Ave beach access (405),Not listed in county record,Not listed,29.0516,-80.9032,"405 Beachway Ave, New Smyrna Beach, FL. Listed amenities: restrooms.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 333."
+VC334,Beachway Ave beach access (410),Not listed in county record,Not listed,29.0519,-80.9027,"410 Beachway Ave, New Smyrna Beach, FL. Listed amenities: restrooms.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 334."
 VC272,Brannon Community Center,Community Center,Active,29.0254,-80.9201,"105 S Riverside Dr, New Smyrna Beach, FL. 3 acres.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 272."
 VC259,Buena Vista Park,Local Park,Active,29.0373,-80.9086,"500 N Causeway, New Smyrna Beach, FL. 2 acres. Listed amenities: restrooms, playground, sidewalk, picnic facilities, pier.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 259."
 VC276,Callalisa Park,Local Park,Active,29.0297,-80.9033,"S Causeway & S Peninsula Av, New Smyrna Beach, FL. 1 acre. Listed amenities: sidewalk, picnic facilities, pier, canoe launch.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 276."
@@ -257,7 +264,7 @@ VC89,Indian River Lagoon Park,Beachfront Park,Active,29.0036,-80.8841,"700 Sandp
 VC113,Inlet Shores Park,Local Park,Active,29.0568,-80.9289,"53 Cunningham Dr, New Smyrna Beach, FL. 1 acre. Listed amenities: playground, courts, picnic facilities.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 113."
 VC24,Lake Ashby Boat Ramp,Boat Ramp,Active,28.9389,-81.0941,"1151 Commercial Av, New Smyrna Beach, FL. Listed amenities: boat ramp.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 24."
 VC33,Lake Ashby Park,Eco/Nature Park,Active,28.9361,-81.0826,"4150 Boy Scout Camp Rd, New Smyrna Beach, FL. 72 acres. Listed amenities: restrooms, playground, courts, trails, sidewalk, picnic facilities, pier, boat ramp.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 33."
-VC98,Manatee All Childern's Playground,Local Park,Active,29.0238,-80.9194,"299 S Riverside Dr, New Smyrna Beach, FL. Listed amenities: restrooms, playground, sidewalk, picnic facilities.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 98."
+VC98,Manatee All Children's Playground,Local Park,Active,29.0238,-80.9194,"299 S Riverside Dr, New Smyrna Beach, FL. Listed amenities: restrooms, playground, sidewalk, picnic facilities.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 98."
 VC322,Marianne Clancy Park,Beachfront Park,Not listed,29.0328,-80.8926,"895 S Atlantic Ave, New Smyrna Beach, FL. 1 acre. Listed amenities: restrooms, picnic facilities.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 322."
 VC38,Mary McLeod Bethune Beach Park,Beachfront Park,Active,28.9505,-80.8393,"6656 S Atlantic Av, New Smyrna Beach, FL. 4 acres. Listed amenities: restrooms, playground, courts, sidewalk, picnic facilities, pier, boat ramp, canoe launch, concession.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 38."
 VC207,Mary Street Park,Local Park,Active,29.0277,-80.9298,"511 Mary Av, New Smyrna Beach, FL. 1 acre. Listed amenities: restrooms, playground, sidewalk.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 207."
@@ -278,7 +285,9 @@ VC178,Turnbull Street Park,Local Park,Active,29.0442,-80.9384,"1220 Turnbull St,
 VC232,Women's Club of New Smyrna Beach,Community Center,Active,29.0224,-80.9206,"403 Magnolia St, New Smyrna Beach, FL.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 232."</script>
 
 <script src="vendor/leaflet.js"></script>
+<script src="vendor/leaflet.markercluster.js"></script>
 <script src="vendor/papaparse.min.js"></script>
 <script src="app.js"></script>
 
 </html>
+
