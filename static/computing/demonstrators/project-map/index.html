@@ -34,6 +34,8 @@
   No backend, no keys, no tracking. Basemap: OpenStreetMap standard tiles (no key). Libraries vendored locally; no external scripts.
 -->
 <link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.Default.css">
 <style>
   :root {
     --ink: #1a1a1a;          /* body text on white */
@@ -174,7 +176,9 @@
   <p class="map-hint"><strong>How the 45 were chosen:</strong> these are the records in the county&rsquo;s Park Locations layer with a New Smyrna Beach mailing address (ZIP 32168). That filter follows the mailing address, not the city boundary, so the map reaches beyond the city limits &mdash; Lake Ashby Park and its boat ramp, about 18 miles west in Samsula, are the farthest. One further county record (a private facility) is excluded. The county record spells one playground &ldquo;Manatee All Childern&rsquo;s Playground&rdquo;; it is shown here with the City&rsquo;s spelling, &ldquo;Manatee All Children&rsquo;s Playground&rdquo;.</p>
   <h2 id="map-heading">Map</h2>
   <p class="map-hint" id="map-hint">
-    Tab to reach each numbered marker button, then use Left / Right (or Up / Down)
+    Places close together are grouped into numbered clusters; select a
+    cluster to zoom in and separate them, or zoom in until the markers stand
+    alone. Tab to reach each numbered marker button, then use Left / Right (or Up / Down)
     arrow keys to move between places in list order. Enter or Space opens the
     place detail. The full place list below the map contains the same
     information &mdash; the map is never the only way to get it.
@@ -202,6 +206,7 @@
       <h2 id="legend-heading">Legend</h2>
       <ul>
         <li><strong>Numbered marker</strong> &mdash; one per public park or beach-access point; the number matches its position in the place list.</li>
+        <li><strong>Numbered cluster</strong> &mdash; several places close together at this zoom; select it to zoom in and separate them.</li>
         <li><span class="badge badge-active">Active</span> listed as Active in the county record.</li>
         <li><span class="badge badge-other">Not listed</span> means the county record leaves the status blank.</li>
         <li>Coordinates are the county record points for each place (Volusia County GIS Open Data). They locate the facility, not a surveyed boundary.</li>
@@ -226,7 +231,7 @@
      This demonstrator makes no claim of survey or engineering licensure and no claim
      of ArcGIS Enterprise experience. Basemap &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
      contributors. Aerial option: USGS The National Map orthoimagery (NAIP, U.S. public domain) — see Sources on the service page.
-     Map library: Leaflet 1.9.4 (vendored locally); CSV parsing: Papa Parse 5.4.1 (vendored locally).</p>
+     Map library: Leaflet 1.9.4 with Leaflet.markercluster 1.5.3 (both vendored locally); CSV parsing: Papa Parse 5.4.1 (vendored locally).</p>
 </footer>
 
 <!-- Embedded fallback copy of projects.csv (identical content).
@@ -280,7 +285,9 @@ VC178,Turnbull Street Park,Local Park,Active,29.0442,-80.9384,"1220 Turnbull St,
 VC232,Women's Club of New Smyrna Beach,Community Center,Active,29.0224,-80.9206,"403 Magnolia St, New Smyrna Beach, FL.","Volusia County GIS Open Data — Park Locations layer, record OBJECTID 232."</script>
 
 <script src="vendor/leaflet.js"></script>
+<script src="vendor/leaflet.markercluster.js"></script>
 <script src="vendor/papaparse.min.js"></script>
 <script src="app.js"></script>
 
 </html>
+

@@ -94,8 +94,8 @@ This preview is drawn from a six-parcel public-data sample near Turnbull Bay, Ne
 <text x="540" y="394" font-size="15" text-anchor="middle">100 m</text>
 <path d="M650,154 L650,106 M640,121 L650,106 L660,121" fill="none" stroke="#132c3d" stroke-width="3"/>
 <text x="650" y="180" font-size="16" text-anchor="middle">Grid N</text>
-<text x="600" y="383" font-size="16" text-anchor="end">Figure CRS: EPSG:32617</text>
-<text x="28" y="383" font-size="14">Panels at different scales — see scale bars.</text>
+<text x="600" y="448" font-size="16" text-anchor="end">Figure CRS: EPSG:32617</text>
+<text x="28" y="448" font-size="14">Panels at different scales — see scale bars.</text>
 <rect x="28" y="410" width="20" height="18" fill="#d08a42"/><text x="57" y="425" font-size="17">Wetland indicator</text>
 <rect x="250" y="410" width="20" height="18" fill="#187ea6" fill-opacity="0.55" stroke="#187ea6"/><text x="279" y="425" font-size="17">Flood indicator (SFHA Zone A)</text>
 <rect x="520" y="410" width="20" height="18" fill="#ffffff" stroke="#132c3d" stroke-width="2"/><text x="549" y="425" font-size="17">Parcel boundary</text>
@@ -187,3 +187,4 @@ No. A missing intersection is meaningful only within verified source coverage an
 An agreed [GIS workflow audit or spatial ETL pilot](/computing/services/gis-automation/) can assess the repeatable preparation and QA steps before the map series is refreshed.
 
 [Send the general geography, requested figures and deadline](/computing/inquiry/#map-production). Availability, fee and final deliverables are confirmed after scope review.
+
