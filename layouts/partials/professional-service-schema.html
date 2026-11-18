@@ -1,0 +1,11 @@
+{{- $serviceID := printf "%s#service" ("computing/" | absURL) -}}
+{{- $personID := printf "%s#person" ("computing/alex-zelenski/" | absURL) -}}
+{{- $provider := dict "@type" "Person" "@id" $personID "name" "Alex Zelenski" "url" ("computing/alex-zelenski/" | absURL) -}}
+{{- $production := dict "@type" "Offer" "name" "Production package" "description" "Subcontract GIS production: figures, QA, data prep." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "minPrice" 1000 "maxPrice" 1500) -}}
+{{- $automation := dict "@type" "Offer" "name" "Automation pilot" "description" "A working workflow, delivered and documented." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "minPrice" 3000) -}}
+{{- $program := dict "@type" "Offer" "name" "Program" "description" "Multi-phase or large-area work, quoted by scope." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "minPrice" 25000) -}}
+{{- $retainer := dict "@type" "Offer" "name" "Retainer" "description" "10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "price" 1000) -}}
+{{- $focused := dict "@type" "Offer" "name" "Focused task" "description" "A single defined deliverable." "priceSpecification" (dict "@type" "PriceSpecification" "priceCurrency" "USD" "minPrice" 250) -}}
+{{- $catalog := dict "@type" "OfferCatalog" "name" "GIS services" "itemListElement" (slice $production $automation $program $retainer $focused) -}}
+{{- $service := dict "@context" "https://schema.org" "@type" "ProfessionalService" "@id" $serviceID "name" "ZQM Computing" "url" ("computing/" | absURL) "description" "GIS subcontracting, QGIS map series, spatial ETL and Web GIS for consulting and operations teams." "provider" $provider "areaServed" (slice (dict "@type" "City" "name" "New Smyrna Beach, Florida") (dict "@type" "AdministrativeArea" "name" "Volusia County, Florida") (dict "@type" "State" "name" "Florida") (dict "@type" "Country" "name" "United States")) "priceRange" "$250 - $25,000+" "hasOfferCatalog" $catalog "sameAs" (slice "https://github.com/ZQM-Computing") -}}
+<script type="application/ld+json">{{ $service | jsonify | safeJS }}</script>
