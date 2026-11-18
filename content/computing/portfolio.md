@@ -28,13 +28,13 @@ The university describes the plan as a contribution to the county's Community Ra
 
 ### Fort Lauderdale — vulnerability-assessment communication, 2024
 
-**Personal participation.** City Sustainability Advisory Board minutes name Alex Zelenski in the consultant group with Arcadis and Erin Deady Law at the September 23, 2024 meeting. The minutes record his explanation of the assessment's digital-elevation-model basis in response to a board question.
+**Personal participation.** City Sustainability Advisory Board minutes record Alex Zelenski's participation at the September 23, 2024 meeting. The minutes record his explanation of the assessment's digital-elevation-model basis in response to a board question.
 
 [Source: CAM 24-1165, Exhibit 1 (PDF)](https://fortlauderdale.legistar.com/View.ashx?GUID=1B943C35-3413-4F4B-93B0-04AFFA6298B7&ID=13645748&M=F).
 
 ### St. Lucie County — resilience outreach
 
-**Personal presentation credit.** The county's webinar record identifies Alex Zelenski, GISP, and Erin Deady as presenters of the vulnerability-assessment project and local resilience-planning process.
+**Personal presentation credit.** The county's webinar record identifies Alex Zelenski, GISP, as a presenter of the vulnerability-assessment project and local resilience-planning process.
 
 [Source: Resilient St. Lucie webinar record](https://www.stlucieco.gov/departments-and-services/county-administration/innovation-resilience-and-performance/resilience-initiative/resilient-st-lucie-webinar-videos).
 
@@ -72,7 +72,7 @@ The following records credit the former company or describe a consulting team's 
 | --- | --- |
 | Martin County resilience and watershed planning | Clearview-branded vulnerability maps reproduced in [Town of Ocean Breeze planning materials (PDF)](https://townofoceanbreeze.com/wp-content/uploads/2021/01/Ordinance-310-2021-EAR-Transmittal-Package.pdf); consulting-team qualifications also describe Clearview map books and GIS data |
 | Palm Beach County climate vulnerability assessment, 2024 | Clearview named on the consultant roster of the county's [2024 climate vulnerability assessment](https://discover.pbc.gov/fdo/BERR/Pages/Climate-Vulnerability-Assessment-and-RAP.aspx) (completed end of 2024); individual tasks are not specified there |
-| Pensacola vulnerability assessment, 2021 | Erin L. Deady P.A.'s retrospective account in the [2023 Levy qualifications submission (PDF)](https://mccmeetingspublic.blob.core.usgovcloudapi.net/levyfl-meet-89faed121abe4fa8915ba5a0c69999de/ITEM-Attachment-001-eef88d8e25a3432093412e9213999374.pdf) describes a jointly completed assessment with Clearview |
+| Pensacola vulnerability assessment, 2021 | The [2023 Levy qualifications submission (PDF)](https://mccmeetingspublic.blob.core.usgovcloudapi.net/levyfl-meet-89faed121abe4fa8915ba5a0c69999de/ITEM-Attachment-001-eef88d8e25a3432093412e9213999374.pdf) describes a jointly completed assessment with Clearview |
 
 ## Public service, environmental policy and outreach
 
