@@ -90,3 +90,7 @@ Play the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1) before you
 ## Contact
 
 To ask about a Wisp's Lost Lanterns event, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) with your organization or group, preferred dates, location, and the option you are considering. Coordinate with the Lab before announcing your event. Confirm a currently supported event window, purchase terms and fulfillment arrangements with the Lab before advertising an event.
+
+## Need GIS services instead?
+
+Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.

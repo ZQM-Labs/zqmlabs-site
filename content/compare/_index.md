@@ -12,3 +12,7 @@ There are three ways to run a scavenger hunt: build one yourself on a platform, 
 - [Scavenger hunt apps compared](/compare/scavenger-hunt-apps/) — GooseChase, Let's Roam, Scavify, PlayTours, and ZQM Labs side by side on price, format, and who does the work.
 
 Not sure which fits? Play the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1), then [contact the Lab](/contact/) about a future event.
+
+## Need GIS services instead?
+
+Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.

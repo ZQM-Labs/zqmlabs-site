@@ -57,3 +57,7 @@ Six stops. A story that connects them — Wisp, the Game Master's escaped first 
 [Play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1) — six stops, no sign-up, right in your browser. It is the fastest way to tell whether a finished quest is what your group wants, or whether you would rather build your own.
 
 *Competitor prices checked 2026-11-13 on each vendor's own site: [GooseChase](https://goosechase.com/friends-and-family-holiday-party), [Let's Roam team building](https://www.letsroam.com/team-building/pricing), [Let's Roam consumer tickets](https://www.letsroam.com/scavenger-hunt/rouen-france), [Scavify](https://www.scavify.com/christmas-scavenger-hunt), [PlayTours](https://www.playtours.app/pricing). ZQM Labs prices are the published tiers on [the hosting tiers page](/tiers/). Prices change; confirm on each vendor's site before you buy.*
+
+## Need GIS services instead?
+
+Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.

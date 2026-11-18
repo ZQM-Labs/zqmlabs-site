@@ -56,3 +56,7 @@ Compare the work as well as the listed fee: a builder asks you to author and tes
 If you want to feel the difference before you decide, [play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1): six stops, no sign-up, right in your browser. It is a finished quest, not a builder — you will know within ten minutes which one your group actually wants.
 
 *GooseChase prices checked 2026-11-11 on [goosechase.com](https://goosechase.com/friends-and-family-holiday-party) and [its pricing pages](https://goosechase.com/pricing/education). ZQM Labs prices are the published tiers on [the hosting tiers page](/tiers/). Prices change; confirm on each vendor's site before you buy.*
+
+## Need GIS services instead?
+
+Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.

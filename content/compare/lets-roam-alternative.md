@@ -58,3 +58,7 @@ For a group visiting a city, a published city route may suit the day. For a grou
 If you want to feel the difference before you decide, [play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1): six stops, no sign-up, right in your browser. It is a finished quest at your own pace — you will know within ten minutes whether your group wants a city route or a story at their own place.
 
 *Let's Roam prices checked 2026-11-11 on [letsroam.com](https://www.letsroam.com/team-building/pricing) and [its hunt pages](https://www.letsroam.com/scavenger-hunt/rouen-france). ZQM Labs prices are the published tiers on [the hosting tiers page](/tiers/). Prices change; confirm on each vendor's site before you buy.*
+
+## Need GIS services instead?
+
+Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.

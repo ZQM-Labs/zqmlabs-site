@@ -82,4 +82,8 @@ The earlier example of $15 per family with $5 retained by the community was illu
 
 An undeliverable order is eligible for refund; other refund or reschedule requests follow applicable law and agreed terms. Repeat events, schools, youth groups and other arrangements need confirmation rather than an assumed discount, response time or booking.
 
+## Need GIS services instead?
+
+Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.
+
 [Prior tier descriptions](/tiers/) · [Organizer details](/organizers/) · [FAQ](/faq/) · [Contact the Lab](/contact/).
