@@ -154,6 +154,18 @@ For a consultant-facing review, see the [synthetic Atlas figure-set handoff exam
 
 Send the non-sensitive outline first. File transfer and permitted handling are agreed before confidential inputs are shared. Fee, start date, delivery window and revision allowance are confirmed after the inputs and scope are reviewed.
 
+## Typical pricing
+
+Typical engagements, scoped and priced after review:
+
+- **Production package — typically $1,000–$1,500.** Subcontract GIS production: figures, QA, data prep.
+- **Automation pilot — from $3,000.** A working workflow, delivered and documented.
+- **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
+- **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
+- **Focused task — from $250.** A single defined deliverable.
+
+Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a figure-set brief](/computing/inquiry/#map-production)
+
 ## Define acceptance before production
 
 Agree the figure index or screening question, source rights and coverage, CRS, intended scale, output formats, reviewer and revision limit. The delivery records sources, assumptions, QA findings and items requiring further review. Additional figures, replacement inputs or a changed analysis question are reviewed as a scope change before extra work proceeds.
