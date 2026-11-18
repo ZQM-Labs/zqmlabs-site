@@ -8,7 +8,9 @@ description: "Send a short GIS project brief: the task, available inputs, desire
 
 Briefs go to [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS Professional, GIS Certification Institute, current until January 2027.
 
-Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about environmental GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
+First reply within one business day.
+
+Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
 
 A short description is enough to begin — for example, a map/figure set, desktop screening, data cleanup, workflow automation or Web GIS. Copy this brief into your email, or click the button above it and paste:
 
@@ -135,7 +137,7 @@ A scoped estimate records:
 - Output formats, acceptance checks, revision allowance and scope-change handling.
 - Deployment, operation and support responsibilities where relevant.
 
-The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. A scoped estimate is a written statement of the agreed work and fee. It is not a price quotation, and no fee is presumed from an inquiry. Response times are confirmed individually.
+The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. A scoped estimate is a written statement of the agreed work and fee. It is not a price quotation, and no fee is presumed from an inquiry. Delivery timelines are confirmed individually.
 
 ## Send your brief
 

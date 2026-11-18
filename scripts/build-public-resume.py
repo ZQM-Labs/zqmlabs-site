@@ -92,7 +92,7 @@ bullet("<b>Lake County conservation planning (2023):</b> named coauthor of the t
 bullet("<b>Osceola County conservation planning (2024):</b> named technical-report coauthor for biodiversity, conservation prioritization and flood resilience, FDEP Agreement 24RRE02.")
 bullet("<b>Islamorada vulnerability assessment (2024):</b> named originator/contact in critical-asset inventory metadata.")
 bullet("<b>Fort Lauderdale vulnerability assessment (2024):</b> city minutes document consultant-team participation and explanation of DEM-based modeling to the Sustainability Advisory Board.")
-bullet("<b>St. Lucie County:</b> county webinar record names Alex Zelenski and Erin Deady as presenters of the vulnerability-assessment project and local resilience-planning process.")
+bullet("<b>St. Lucie County:</b> county webinar record names Alex Zelenski as a presenter of the vulnerability-assessment project and local resilience-planning process.")
 bullet("<b>Mitigation banking GIS:</b> public map and layer records attribute mitigation-bank, watershed, drainage-basin and service-area GIS content to Alex Zelenski.")
 p("PUBLIC SERVICE &amp; TECHNICAL COMMUNICATION", "section")
 bullet("<b>Volusia County ENRAC:</b> appointed September 2022 for a two-year term; recorded individual comments addressed historic trees, canopy retention, conservation easements and historical imagery.")

@@ -20,7 +20,7 @@ Delivered by [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS 
 
 A consulting team may need to **automate a repeatable GIS data cleanup, verify a spatial ETL import, or standardize parcel and asset records** before monthly map or reporting production. The starting point is a bounded diagnostic with input/output acceptance criteria, not a promise of automatic savings.
 
-For example, a synthetic workflow can read supplied GeoPackage or CSV records, validate field names and coordinate systems, isolate geometry errors, preserve rejected-record reasons, and write a versioned GeoPackage or PostGIS staging output. The demonstration must reconcile input counts before a reviewer accepts the result.
+For example, the workflow demonstrated below reads supplied GeoPackage or CSV records, validates field names and coordinate systems, isolates geometry errors, preserves rejected-record reasons, and writes a versioned GeoPackage or PostGIS staging output. The demonstration must reconcile input counts before a reviewer accepts the result.
 
 ## Three practical starting points
 
@@ -57,7 +57,7 @@ The audit produces a workflow outline, data-quality rules, a proposed pilot boun
 
 ## Inspect the QA evidence
 
-The [synthetic workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff. The full report below was computed by a standard-library-only Python script against a six-parcel GeoPackage built from Volusia County parcels, USFWS NWI wetlands, and FEMA NFHL flood zones (Turnbull Bay sample, accessed 2026-11-16); nothing in it is hand-typed.
+The [workflow QA sample — synthetic fixture](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff. The full report below was computed by a standard-library-only Python script against a six-parcel GeoPackage built from Volusia County parcels, USFWS NWI wetlands, and FEMA NFHL flood zones (Turnbull Bay sample, accessed 2026-11-16); nothing in it is hand-typed.
 
 ### QA report — computed checks
 

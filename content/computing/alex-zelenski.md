@@ -13,6 +13,8 @@ I'm Alex Zelenski, a Certified GIS Professional based in New Smyrna Beach, Flori
 
 Through **ZQM Computing**, I help consulting and operations teams turn a defined mapping or spatial-data task into a reviewable deliverable. My background is particularly relevant when environmental context, source quality and a clear explanation of the analysis matter as much as the map itself.
 
+ZQM Computing is the portfolio name under which I, Alex Zelenski, offer independent GIS services. It is not a registered company, LLC, or DBA; proposals, invoices, and checks are issued in my individual name, Alex Zelenski.
+
 {{< btn href="/computing/inquiry/" text="Discuss a GIS project" >}}
 
 [Download my public résumé (PDF)](/computing/alex-zelenski-resume.pdf) · [Explore project credits and sources](/computing/portfolio/) · [LinkedIn](https://www.linkedin.com/in/alexczelenski/)
@@ -29,7 +31,7 @@ Through **ZQM Computing**, I help consulting and operations teams turn a defined
 
 ### ZQM Computing — independent geospatial developer, October 2026–present
 
-I build and document reusable GIS tools and spatial-data workflows using Python, QGIS/PyQGIS, GDAL, GeoPandas and PostgreSQL/PostGIS. Current public examples include a synthetic parcel Atlas and a synthetic workflow QA report. These let a prospective client inspect the deliverable format and validation approach before scoping related work.
+I build and document reusable GIS tools and spatial-data workflows using Python, QGIS/PyQGIS, GDAL, GeoPandas and PostgreSQL/PostGIS. Current public examples include a parcel Atlas built on a synthetic two-parcel fixture (DEMO-P1/DEMO-P2) and a workflow QA report computed on six real Volusia County parcels (Turnbull Bay sample). These let a prospective client inspect the deliverable format and validation approach before scoping related work.
 
 [Browse the GIS services](/computing/) and [open-source repositories](https://github.com/ZQM-Computing). ZQM Labs is my separate [game studio](/labs/); its browser-game work is presented under that brand.
 
@@ -37,11 +39,15 @@ I build and document reusable GIS tools and spatial-data workflows using Python,
 
 I founded and led an environmental and geospatial consultancy, combining project delivery with technical development, proposals, budgets, staff coordination and client relationships. The practice worked across environmental planning and permitting support, flood and watershed analysis, GIS production, conservation research and data infrastructure. Clearview closed in 2026; the work below belongs to that former practice.
 
+I also briefly held FWC authorized agent status for gopher tortoise relocation work during this period. That status has since lapsed; it is past experience, not a current credential.
+
 Stetson University's account of the Monroe County Watershed Management Plan credits my GIS model development, map production and report coauthorship. Later records name me in conservation technical reports, municipal assessment presentations and environmental advisory work. [See the project record](/computing/portfolio/) for the scope of each credit.
 
 ### Zev Cohen & Associates — environmental scientist and GIS specialist, 2016–2018
 
 My work combined environmental field investigations with GIS support for development and infrastructure projects: wetland/GPS mapping, regulatory exhibits, FDEP and Water Management District permitting support, mitigation work and protected-species compliance. This field and regulatory background informs how I interpret desktop screening and communicate where field verification is needed.
+
+Fieldwork during this period included wetland delineations, gopher tortoise surveys and relocations, and FDACS-licensed herbicide applications in conservation and natural areas. The FDACS applicator license lapsed when I left the firm; it is past experience, not a current credential.
 
 ### Kappa Map Group — digital cartographer, 2015–2016
 
@@ -71,6 +77,8 @@ Early university work and my Environmental Science & Geography degree establishe
 **B.S., Environmental Science & Geography — Stetson University, 2016.**
 
 **Certified GIS Professional (GISP) — GIS Certification Institute.** Current, valid until January 2027. Verify in the [GISCI GISP Registry](https://www.gisci.org/Already-a-GISP/GISP-Registry) (search by name; the registry lists active and inactive GISPs).
+
+**FAA Part 107 Remote Pilot certificate — current.** Licensed to operate small unmanned aircraft systems for commercial work.
 
 ## Tools and delivery methods
 
