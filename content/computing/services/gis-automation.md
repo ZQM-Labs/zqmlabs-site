@@ -94,6 +94,18 @@ Agree a baseline before implementation: current effort, error/rework counts, fre
 
 One defined task at a time: scope, start date and availability are agreed in writing before work begins.
 
+## Typical pricing
+
+Typical engagements, scoped and priced after review:
+
+- **Production package — typically $1,000–$1,500.** Subcontract GIS production: figures, QA, data prep.
+- **Automation pilot — from $3,000.** A working workflow, delivered and documented.
+- **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
+- **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
+- **Focused task — from $250.** A single defined deliverable.
+
+Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a workflow audit brief](/computing/inquiry/#workflow-automation)
+
 ## Choose tools around the target
 
 Use Python/GeoPandas, GDAL, DuckDB Spatial, PostGIS or QGIS where the agreed inputs and output justify them. A file-only workflow need not add a database or a hosted orchestration platform. Client-specific tools, licensing, source access and operational ownership are reviewed during scoping.

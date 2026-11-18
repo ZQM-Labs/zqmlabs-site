@@ -41,6 +41,18 @@ The handoff can include source code, environment instructions, interface documen
 
 The estimate separates the prototype or implementation from data preparation, hosting and maintenance. Required data rights, access, expected usage and review needs determine the fee and target dates. Changes to those assumptions are reviewed before extending the work.
 
+## Typical pricing
+
+Typical engagements, scoped and priced after review:
+
+- **Production package — typically $1,000–$1,500.** Subcontract GIS production: figures, QA, data prep.
+- **Automation pilot — from $3,000.** A working workflow, delivered and documented.
+- **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
+- **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
+- **Focused task — from $250.** A single defined deliverable.
+
+Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a Web GIS brief](/computing/inquiry/#web-gis)
+
 ## Plan the operating responsibilities
 
 Establish authentication and authorization, data rights, geographic coverage, accessibility, performance expectations, caching, hosting, monitoring and rollback. A prototype and a production service have different acceptance requirements; ongoing operation and support are separately agreed.
