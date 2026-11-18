@@ -38,6 +38,7 @@
 {{ dict "@context" "https://schema.org" "@type" "Organization" "name" "ZQM Labs" "url" ("labs/" | absURL) "description" .Site.Params.description "logo" ("img/logo-primary-evergreen.webp" | absURL) "sameAs" (slice "https://github.com/ZQM-Labs") | jsonify | safeJS }}
 {{ end }}
 </script>
+{{ if $isComputing }}{{ partial "professional-service-schema.html" . }}{{ end }}
 {{ partial "professional-profile-schema.html" . }}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
