@@ -187,4 +187,3 @@ No. A missing intersection is meaningful only within verified source coverage an
 An agreed [GIS workflow audit or spatial ETL pilot](/computing/services/gis-automation/) can assess the repeatable preparation and QA steps before the map series is refreshed.
 
 [Send the general geography, requested figures and deadline](/computing/inquiry/#map-production). Availability, fee and final deliverables are confirmed after scope review.
-
