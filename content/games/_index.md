@@ -44,6 +44,8 @@ A planned pumpkin-rolling scavenger hunt. Not yet playable — see the [Hunt for
 **In development** · Winter scavenger hunt
 A planned winter-themed scavenger hunt. Not yet playable — see the [Hunt for Wisps demo](/games/hunt-for-wisps/) for the currently available browser experience.
 
+{{< waitlist game="snowflake-secret" source="games-index" >}}
+
 ### Spring Festival
 
 **In development** · Spring scavenger hunt
