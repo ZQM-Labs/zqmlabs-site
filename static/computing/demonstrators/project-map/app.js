@@ -24,7 +24,12 @@
   basemapControl.addTo(map);
   function setBasemap(which) {
     if (which === 'aerial') {
-      if (map.hasLayer(osmLayer)) { map.removeLayer(osmLayer); }
+      /* The USGS imagery tiles are transparent where the service has no
+         coverage (open water returns a fully transparent tile), so keep the
+         Streets layer underneath: where imagery is missing, the OSM
+         pale-blue water shows instead of the blank map pane. The imagery
+         layer stays on top everywhere it has tiles. */
+      if (!map.hasLayer(osmLayer)) { osmLayer.addTo(map); }
       if (!map.hasLayer(aerialLayer)) { aerialLayer.addTo(map); }
     } else {
       if (map.hasLayer(aerialLayer)) { map.removeLayer(aerialLayer); }
@@ -38,7 +43,19 @@
   var allProjects = [];      // every row from projects.csv, in file order
   var visibleProjects = [];  // rows passing the current category filter, in file order
   var markers = {};          // id -> Leaflet marker
-  var markerLayer = L.layerGroup().addTo(map);
+  /* Markers close together are grouped (Leaflet.markercluster, vendored).
+     At the default fit-bounds view ~20 central-NSB parks sit within a few
+     hundred metres of each other, so 32px numbered markers pile up and hide
+     each other's numbers. Clusters separate on zoom; clustering stops at
+     zoom 17, where even the closest pair (Coronado Civic Center vs
+     Shuffleboard, ~40 m apart) stands ~38px apart. */
+  var markerLayer = L.markerClusterGroup({
+    maxClusterRadius: 50,
+    showCoverageOnHover: false,
+    zoomToBoundsOnClick: true,
+    spiderfyOnMaxZoom: true,
+    disableClusteringAtZoom: 17
+  }).addTo(map);
   var selectedId = null;
   var lastInvoker = null;    // element to return focus to when detail is closed
 
@@ -136,12 +153,10 @@
       var marker = L.marker([project.lat, project.lon], { icon: icon, keyboard: false, title: project.name });
       marker.addTo(markerLayer);
       markers[project.id] = marker;
-      // The marker's DOM node is created by Leaflet; wire the inner <button>.
-      var btn = marker.getElement() && marker.getElement().querySelector('.marker-btn');
-      if (btn) {
-        btn.addEventListener('click', function () { openProject(project.id, btn); });
-        btn.addEventListener('keydown', onProjectKeydown);
-      }
+      /* No per-button listeners here: a clustered marker has no DOM node
+         yet, so marker.getElement() is null at render time and wiring
+         would silently attach to nothing. Buttons are wired by delegation
+         on #map below, which works whenever a button enters the DOM. */
     });
 
     renderList();
@@ -189,7 +204,13 @@
     }
     event.preventDefault();
     event.stopPropagation(); // keep Leaflet's own map-pan arrow keys from also firing
-    var id = event.currentTarget.dataset.id;
+    /* The id comes from the event target, not currentTarget: marker buttons
+       are wired by delegation on #map (see below), where currentTarget is
+       the map element. The target is the button itself in both cases
+       (direct list-button listeners and delegated marker-button ones). */
+    var btn = event.target && event.target.closest ? event.target.closest('[data-id]') : null;
+    var id = btn ? btn.dataset.id : null;
+    if (!id) { return; }
     var index = visibleProjects.findIndex(function (p) { return p.id === id; });
     if (index === -1) { return; }
     var forward = (key === 'ArrowRight' || key === 'ArrowDown');
@@ -256,15 +277,39 @@
   });
 
   document.getElementById('reset-view').addEventListener('click', function () {
-    if (visibleProjects.length) {
-      var bounds = L.latLngBounds(visibleProjects.map(function (p) { return [p.lat, p.lon]; }));
-      map.fitBounds(bounds.pad(0.15));
-    } else {
-      map.setView([29.022, -80.918], 13);
-    }
-    var first = document.querySelector('.marker-btn');
+    /* Reset is a full reset: filter back to "All categories" (which
+       re-renders markers, list and count to 45 of 45), detail closed, then
+       the view back to the default extent. Previously the filter was left
+       as-is, so the map re-fit to the filtered subset while the filter and
+       count still showed the old selection. Focus moves to the first list
+       button: at the default view the markers are inside clusters and have
+       no DOM node to focus. */
+    filterEl.value = '';
+    selectedId = null;
+    detailBody.innerHTML = '<p>Select a marker on the map or a place in the list to see its details here.</p>';
+    detailClose.hidden = true;
+    render();
+    var first = listEl.querySelector('.project-open');
     if (first) { first.focus(); }
   });
+
+  /* Marker-button wiring by delegation: the cluster group creates and
+     removes marker buttons as the user zooms, so listeners attached at
+     render time would miss every clustered marker. The list buttons are
+     always in the DOM and keep their direct listeners in renderList(). */
+  var mapEl = document.getElementById('map');
+  mapEl.addEventListener('click', function (event) {
+    var btn = event.target && event.target.closest ? event.target.closest('.marker-btn') : null;
+    if (btn) { openProject(btn.dataset.id, btn); }
+  });
+  /* Capture phase: this runs before the event reaches the button and before
+     Leaflet's own bubble-phase arrow-key pan handler on the same container,
+     so onProjectKeydown's stopPropagation still keeps the map from panning
+     while arrowing between markers. */
+  mapEl.addEventListener('keydown', function (event) {
+    var btn = event.target && event.target.closest ? event.target.closest('.marker-btn') : null;
+    if (btn) { onProjectKeydown(event); }
+  }, true);
 
   function escapeHtml(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -274,3 +319,4 @@
 
   loadProjects();
 })();
+
