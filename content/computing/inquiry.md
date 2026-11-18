@@ -137,7 +137,7 @@ A scoped estimate records:
 - Output formats, acceptance checks, revision allowance and scope-change handling.
 - Deployment, operation and support responsibilities where relevant.
 
-The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. A scoped estimate is a written statement of the agreed work and fee. It is not a price quotation, and no fee is presumed from an inquiry. Response times are confirmed individually.
+The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. A scoped estimate is a written statement of the agreed work and fee. It is not a price quotation, and no fee is presumed from an inquiry. Delivery timelines are confirmed individually.
 
 ## Send your brief
 
