@@ -129,7 +129,7 @@ Sources: Volusia County GIS Open Data (Florida public record, Fla. Stat. ch. 119
 
 Aerial imagery (optional basemap): USDA National Agriculture Imagery Program (NAIP) orthoimagery served by the U.S. Geological Survey's The National Map (USGSImageryOnly). Data available from U.S. Geological Survey, National Geospatial Program. Imagery is shown for orientation only; it does not change the screening/project data.
 
-Download the sample: [parcel_screening.gpkg](/computing/demonstrators/parcel-screening/parcel_screening.gpkg) — open in QGIS by drag-and-drop; 6 layers: parcels 6, wetland_indicator 7, flood_hazard 3, flood_coverage 9, wetland_coverage 6, source_register 5. [parcel_screening.geojson](/computing/demonstrators/parcel-screening/parcel_screening.geojson) — same 6 parcels, same attributes.
+Download the sample: [parcel_screening.gpkg](/computing/demonstrators/parcel-screening/parcel_screening.gpkg) — UTM Zone 17N (EPSG:32617), open in QGIS by drag-and-drop; 6 layers: parcels 6, wetland_indicator 7, flood_hazard 3, flood_coverage 9, wetland_coverage 6, source_register 5. [parcel_screening.geojson](/computing/demonstrators/parcel-screening/parcel_screening.geojson) — same 6 parcels, same attributes, UTM Zone 17N (EPSG:32617). [parcel_screening_wgs84.geojson](/computing/demonstrators/parcel-screening/parcel_screening_wgs84.geojson) — same 6 parcels, same attributes, WGS 84 longitude/latitude (EPSG:4326) for web maps and tools that expect lon/lat.
 
 Public-data sample only. Real Volusia County parcels with real NWI and NFHL overlaps — not a client project, not a client case study, and no owner information is included (geometry + parcel ID only).
 
