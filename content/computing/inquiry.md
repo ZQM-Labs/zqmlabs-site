@@ -31,13 +31,11 @@ A short description is enough to begin — for example, a map/figure set, deskto
 > **Figure or parcel count (if known):** …
 >
 > **Timing and review:** …
->
-> **Budget range (if you have one):** …
 {#brief-generic}
 
-For map production, a non-sensitive figure list helps. For automation, describe the current manual steps, how often they repeat and where errors or delays occur. If you have a budget range or a required client environment, include it.
+For map production, a non-sensitive figure list helps. For automation, describe the current manual steps, how often they repeat and where errors or delays occur. If you have a required client environment, include it.
 
-{{< cta subject="ZQM Computing project inquiry" text="Email your project brief" body="Name and organisation: \nI need: \nThe output will be used for: \nAvailable inputs: \nDesired output: \nFigure or parcel count (if known): \nTiming and review: \nBudget range (if you have one): " >}}
+{{< cta subject="ZQM Computing project inquiry" text="Email your project brief" body="Name and organisation: \nI need: \nThe output will be used for: \nAvailable inputs: \nDesired output: \nFigure or parcel count (if known): \nTiming and review: " >}}
 
 ## Map production
 
@@ -56,13 +54,11 @@ For [environmental GIS figures or a parcel Atlas series](/computing/services/env
 > **Required handoff:** PDF/native formats, page size, title block or style requirements.
 >
 > **Review and timing:** reviewing professional, target deadline and revision needs.
->
-> **Budget range (if you have one):** …
 {#brief-map-production}
 
 Flag missing data or uncertain coverage. Do not attach confidential source files until transfer and handling are agreed.
 
-{{< cta subject="Environmental GIS figure set inquiry" text="Email a map production brief" body="Name and organisation: \nFigures and use: \nAvailable inputs: \nRequired handoff: \nReview and timing: \nBudget range (if you have one): " >}}
+{{< cta subject="Environmental GIS figure set inquiry" text="Email a map production brief" body="Name and organisation: \nFigures and use: \nAvailable inputs: \nRequired handoff: \nReview and timing: " >}}
 
 ## Workflow automation
 
@@ -83,11 +79,9 @@ For a [GIS workflow audit or spatial ETL pilot](/computing/services/gis-automati
 > **Desired output:** the one agreed output.
 >
 > **Required environment:** any required Python, QGIS, database or client platform environment.
->
-> **Budget range (if you have one):** …
 {#brief-workflow}
 
-{{< cta subject="GIS workflow audit inquiry" text="Email a workflow audit brief" body="Name and organisation: \nRecurring process: \nCurrent manual steps: \nInputs and approximate record volume: \nFrequency and known failures: \nDesired output: \nRequired environment: \nBudget range (if you have one): " >}}
+{{< cta subject="GIS workflow audit inquiry" text="Email a workflow audit brief" body="Name and organisation: \nRecurring process: \nCurrent manual steps: \nInputs and approximate record volume: \nFrequency and known failures: \nDesired output: \nRequired environment: " >}}
 
 ## Web GIS
 
@@ -106,11 +100,9 @@ For a [browser map, PostGIS integration or spatial API](/computing/services/web-
 > **Anticipated usage and target environment:** approximate usage and target deployment environment.
 >
 > **Prototype or production implementation:** whether you need a prototype or a production implementation.
->
-> **Budget range (if you have one):** …
 {#brief-web-gis}
 
-{{< cta subject="Web GIS and spatial API inquiry" text="Email a Web GIS brief" body="Name and organisation: \nUsers and task: \nPermitted datasets: \nExisting application: \nAnticipated usage and target environment: \nPrototype or production implementation: \nBudget range (if you have one): " >}}
+{{< cta subject="Web GIS and spatial API inquiry" text="Email a Web GIS brief" body="Name and organisation: \nUsers and task: \nPermitted datasets: \nExisting application: \nAnticipated usage and target environment: \nPrototype or production implementation: " >}}
 
 ## Professional scope and contracting
 
@@ -139,11 +131,27 @@ A scoped estimate records:
 
 The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. A scoped estimate is a written statement of the agreed work and fee. It is not a price quotation, and no fee is presumed from an inquiry. Delivery timelines are confirmed individually.
 
+## How your brief is handled
+
+**What we keep.** Your email address, your name and organisation, the task you describe, the inputs and output you list, and any timing or project context you include.
+
+**Where it is kept.** In the ZQM Computing mailbox ([zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)). Your brief goes to Alex Zelenski directly, and email is the record — there is no separate form store yet.
+
+**How long it is kept.** Briefs are retained indefinitely, and deleted on request. If storage ever runs short, the oldest inactive briefs are pruned first.
+
+**Who can access it.** Alex Zelenski only.
+
+**Deletion.** Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) and ask for your brief to be deleted.
+
+**Confidential files.** Do not send confidential source files in your first email — agree transfer and handling first.
+
+The full privacy note, including GIS briefs, is in the [Privacy Policy](/privacy/).
+
 ## Send your brief
 
 Choose the brief above that matches your task, fill in the fields, and send it. If your email application does not open, use the webmail links below.
 
-{{< cta subject="ZQM Computing project inquiry" text="Email your project brief" body="Name and organisation: \nI need: \nThe output will be used for: \nAvailable inputs: \nDesired output: \nFigure or parcel count (if known): \nTiming and review: \nBudget range (if you have one): " >}}
+{{< cta subject="ZQM Computing project inquiry" text="Email your project brief" body="Name and organisation: \nI need: \nThe output will be used for: \nAvailable inputs: \nDesired output: \nFigure or parcel count (if known): \nTiming and review: " >}}
 
 If an email application does not open, copy [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) into your usual email service, or open a pre-addressed compose window: [Compose in Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=zqmcomputing@gmail.com&su=ZQM%20Computing%20project%20inquiry) · [Compose in Outlook](https://outlook.live.com/mail/0/deeplink/compose?to=zqmcomputing@gmail.com&subject=ZQM%20Computing%20project%20inquiry). Use the subject for the service you need — the brief fields are on this page, and the copy button above each brief copies them.
 
