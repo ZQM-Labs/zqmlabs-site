@@ -1,6 +1,7 @@
 ---
 title: "Technical Resources"
 description: "Explore ZQM Labs game-building resources and ZQM Computing geospatial engineering cookbooks, APIs, and data tools, maintained as distinct projects."
+lastmod: 2026-11-19
 ---
 
 ![An overhead quest map with a winding route, a key, a lantern, footprints, a bridge, and a locked gate](/img/patterns-evergreen.webp)
@@ -50,6 +51,7 @@ paywalls, no sign-ups — if the Lab learned it, you can have it.
 - Want to play? Start with [Games](/games/) and the [browser demo](/games/hunt-for-wisps/).
 - Want to create or host a quest? Start with the [organizer toolkit](https://github.com/ZQM-Labs/organizer-toolkit) and [quest authoring guide](https://github.com/ZQM-Labs/quest-authoring).
 - Want geospatial engineering references? Start with [geospatial-cookbooks](https://github.com/ZQM-Computing/geospatial-cookbooks).
+- Want GIS mapping, automation, or Web GIS work done? See [ZQM Computing GIS services](/computing/).
 - Want the source for the public website? Visit [ZQM-Labs/zqmlabs-site](https://github.com/ZQM-Labs/zqmlabs-site).
 
 Only public repositories intended for public use are linked here. Internal Project Volusia portals and data pipelines are deliberately excluded. Dedicated `docs.zqmlabs.com` and `software.zqmlabs.com` hostnames should be linked here only after their separate public builds, access boundaries, and route health have been verified.
