@@ -143,7 +143,7 @@ Public-data sample only. Real Volusia County parcels with real NWI and NFHL over
 
 The map shows all six real parcels with their wetland and flood screening numbers in click popups, toggleable wetland and flood overlays, and client-side-only KML/KMZ import — nothing is uploaded. Static front-end demonstration, not a live PostGIS application; a production version would be PostGIS-backed.
 
-For a consultant-facing review, see the [synthetic Atlas figure-set handoff example](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/exhibit-production/BUYER_HANDOFF_SAMPLE.md) and [scope/acceptance worksheet](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/docs/ENVIRONMENTAL_GIS_BRIEF_TEMPLATE.md). They explain the requested figures, source-rights questions, coverage uncertainty, QA and quote factors. Both are written synthetic examples, **not** a pre-generated sample PDF, customer engagement or fixed-price offer.
+For a consultant-facing review, see the [Atlas figure-set handoff example](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/exhibit-production/BUYER_HANDOFF_SAMPLE.md) and [scope/acceptance worksheet](https://github.com/ZQM-Computing/qgis-resources/blob/1310eebcced32bf02e19d037548d57fe44ce5dd7/docs/ENVIRONMENTAL_GIS_BRIEF_TEMPLATE.md). They explain the requested figures, source-rights questions, coverage uncertainty, QA and quote factors. Both are written examples, **not** a pre-generated sample PDF, customer engagement or fixed-price offer.
 
 ## What to send for an estimate
 
@@ -153,6 +153,10 @@ For a consultant-facing review, see the [synthetic Atlas figure-set handoff exam
 - **The review:** known gaps, acceptance checks, revision needs and whether the work will repeat.
 
 Send the non-sensitive outline first. File transfer and permitted handling are agreed before confidential inputs are shared. Fee, start date, delivery window and revision allowance are confirmed after the inputs and scope are reviewed.
+
+## Start with one figure set — from $250
+
+A first figure set is a fixed-scope entry offer: one defined deliverable — for example, a site-location figure set or a geolocated parcel PDF — scoped and priced after review, from $250. It is modelled on a $250 geolocated tree PDF delivered in November 2026. [Send a figure-set brief](/computing/inquiry/#map-production) — first reply within one business day; work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash.
 
 ## Typical pricing
 
@@ -164,7 +168,7 @@ Typical engagements, scoped and priced after review:
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
 
-Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a figure-set brief](/computing/inquiry/#map-production)
+Every engagement is scoped and priced after review. First reply within one business day. New engagements are being accepted; start dates are agreed in writing when the scope is set. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a figure-set brief](/computing/inquiry/#map-production)
 
 ## Define acceptance before production
 

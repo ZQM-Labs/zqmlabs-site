@@ -120,7 +120,7 @@ Earlier Clearview-era sources include the following studies. Their printed autho
 **ZQM Computing** publishes inspectable examples for spatial-data preparation, GIS quality checks, map production and API design:
 
 - [Parcel Atlas — synthetic two-parcel fixture](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production) — QGIS project, layout template, map series and source/coverage register.
-- [GIS workflow QA sample — synthetic fixture](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) — accepted/rejected records, reconciled counts and handoff structure.
+- [GIS workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) — accepted/rejected records, reconciled counts and handoff structure.
 - [Open-source GIS repositories](https://github.com/ZQM-Computing) — Python, GeoPandas, GDAL, PostGIS, QGIS, DuckDB Spatial and GeoParquet patterns.
 
 The examples above demonstrate configured workflows and checks. Historical project credits and current demonstrations are identified individually so clients can evaluate the relevant evidence.

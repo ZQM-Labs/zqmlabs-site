@@ -14,3 +14,7 @@ New to ZQM Labs? See [how a quest works](/games/) or [compare us with GooseChase
 ## Need GIS services instead?
 
 Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.
+
+## Waitlist for the next edition
+
+Paid kits are currently unavailable and return with the next edition. To join the waitlist, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20waitlist%20-%20next%20edition) with the kit format you are interested in.
