@@ -135,7 +135,7 @@ The scope is agreed before work begins. An inquiry is not a booking, order confi
 
 **What we keep.** Your email address, your name and organisation, the task you describe, the inputs and output you list, and any timing or project context you include.
 
-**Where it is kept.** Briefs sent by email stay in the ZQM Computing mailbox ([zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)). Briefs sent through the form on this page are stored in the brief store. Either way, your brief goes to Alex Zelenski directly.
+**Where it is kept.** Briefs sent by email stay in the ZQM Computing mailbox ([zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)). Your brief goes to Alex Zelenski directly.
 
 **How long it is kept.** Briefs are retained indefinitely, and deleted on request. If storage ever runs short, the oldest inactive briefs are pruned first.
 
@@ -149,41 +149,7 @@ The full privacy note, including GIS briefs, is in the [Privacy Policy](/privacy
 
 ## Send your brief
 
-Choose the brief above that matches your task, fill in the fields, and send it through the form below — or email it instead. Clicking a brief's copy button above also fills in the form with that brief's fields.
-
-<!-- markdownlint-disable MD033 -->
-<style>
-#brief-form label{display:block;font-weight:700;margin:14px 0 4px}
-#brief-form input,#brief-form select,#brief-form textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:inherit;font:inherit;font-size:1rem}
-#brief-form textarea{min-height:180px;resize:vertical}
-#brief-form .brief-error{color:#b3261e;margin:10px 0 0}
-#brief-form .brief-success{margin:10px 0 0}
-#brief-form button[disabled]{opacity:.6;cursor:wait}
-</style>
-<form id="brief-form" novalidate>
-  <label for="brief-name">Your name</label>
-  <input id="brief-name" name="name" type="text" maxlength="120" required autocomplete="name">
-  <label for="brief-email">Email</label>
-  <input id="brief-email" name="email" type="email" maxlength="254" required autocomplete="email">
-  <label for="brief-organisation">Organisation (optional)</label>
-  <input id="brief-organisation" name="organisation" type="text" maxlength="120" autocomplete="organization">
-  <label for="brief-service-type">What do you need?</label>
-  <select id="brief-service-type" name="service_type" required>
-    <option value="general">General GIS project</option>
-    <option value="map-production">Map production</option>
-    <option value="workflow-automation">Workflow automation</option>
-    <option value="web-gis">Web GIS</option>
-    <option value="other">Something else</option>
-  </select>
-  <label for="brief-text">Your brief</label>
-  <textarea id="brief-text" name="brief_text" maxlength="10000" required rows="10"></textarea>
-  <p id="brief-form-status" role="status" aria-live="polite"></p>
-  <button type="submit" class="btn">Send your brief</button>
-</form>
-<script src="/computing/brief-form.js" defer></script>
-<!-- markdownlint-enable MD033 -->
-
-Or email your brief instead:
+Choose the brief above that matches your task, fill in the fields, and email it to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry). Clicking a brief's copy button above copies the brief fields so you can paste them into your email.
 
 {{< cta subject="ZQM Computing project inquiry" text="Email your project brief" body="Name and organisation: \nI need: \nThe output will be used for: \nAvailable inputs: \nDesired output: \nFigure or parcel count (if known): \nTiming and review: " >}}
 
