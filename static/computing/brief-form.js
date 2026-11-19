@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }).then(function (result) {
       if (result.ok) {
         form.reset();
-        setStatus("Thank you — your brief has been sent. First reply within one business day.", false);
+        setStatus("Thank you — your brief has been submitted. Please retain a copy of your project details for your records.", false);
       } else {
         setStatus(result.error, true);
       }
