@@ -159,7 +159,12 @@ map.on('load', function () {
      default on every visit; the choice is not persisted. */
   function setBasemap(which) {
     if (which === 'aerial') {
-      map.setLayoutProperty('basemap', 'visibility', 'none');
+      /* The USGS imagery tiles are transparent where the service has no
+         coverage (open water returns a fully transparent tile), so keep the
+         Streets layer underneath: where imagery is missing, the OSM
+         pale-blue water shows instead of the blank map pane. The imagery
+         layer stays on top everywhere it has tiles. */
+      map.setLayoutProperty('basemap', 'visibility', 'visible');
       map.setLayoutProperty('aerial', 'visibility', 'visible');
     } else {
       map.setLayoutProperty('aerial', 'visibility', 'none');

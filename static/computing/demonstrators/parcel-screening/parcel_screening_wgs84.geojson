@@ -1,6 +1,18 @@
 {
   "type": "FeatureCollection",
   "name": "parcel_screening_wgs84",
+  "metadata": {
+    "title": "Real parcel screening sample - six Volusia County parcels, Turnbull Bay, New Smyrna Beach, FL",
+    "extracted": "2026-11-16",
+    "sources": {
+      "parcels": "Volusia County GIS Open Data parcel layer (Florida public record, Fla. Stat. ch. 119); effective date not published",
+      "wetlands": "USFWS National Wetlands Inventory, Oct 2026 release (doi:10.7944/usfws.nwi.202610)",
+      "flood": "FEMA National Flood Hazard Layer, DFIRM 12127C, VERSION_ID 2.3.3.2; effective date not published"
+    },
+    "licence": "Parcel boundaries: Florida public record (Fla. Stat. ch. 119). NWI and NFHL: U.S. federal public domain. Reuse with attribution to the source agencies. Not a survey, wetland delineation, or flood determination.",
+    "precision": "Areas and percentages are computed values shown to two decimals; the decimals are arithmetic, not accuracy.",
+    "crs": "EPSG:4326 (WGS 84 longitude/latitude)"
+  },
   "features": [
     {
       "type": "Feature",
