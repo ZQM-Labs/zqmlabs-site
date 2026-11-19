@@ -6,6 +6,13 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: camera=(), microphone=(), geolocation=(self), payment=()
 
+# GeoPackage MIME: Cloudflare Pages serves .gpkg as
+# application/octet-stream by default; the OGC GeoPackage media type is
+# application/geopackage+sqlite3, so desktop GIS opens the download
+# directly instead of treating it as an unknown binary.
+/computing/demonstrators/parcel-screening/parcel_screening.gpkg
+  Content-Type: application/geopackage+sqlite3
+
 # Long-cache the immutable assets
 /css/*
   Cache-Control: public, max-age=31536000, immutable
