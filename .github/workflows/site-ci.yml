@@ -24,6 +24,9 @@ jobs:
         with:
           hugo-version: "0.165.0"
           extended: true
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
       - name: Verify pinned production static restore safety (offline fixtures)
         run: python3 -m unittest discover -s tests -p 'test_restore_production_static.py' -v
       - name: Verify source inventory schema and historical comparison negative tests
