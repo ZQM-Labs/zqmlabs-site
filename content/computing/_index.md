@@ -84,12 +84,12 @@ For a project manager preparing a figure list or parcel screening request, start
 Inspect the structure and checks behind the proposed work:
 
 - **[Real-parcel figure preview](/computing/services/environmental-screening/#see-the-exhibit-structure):** inspect mapped indicators and explicit coverage gaps for six real Volusia County parcels, then follow the pinned source fixture and reproducible QGIS Atlas workflow.
-- **[Workflow QA sample — synthetic fixture](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md):** traceable accepted/rejected records and reconciled counts; the computed QA report on the [automation page](/computing/services/gis-automation/#inspect-the-qa-evidence) runs the same checks on six real parcels.
+- **[Workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md):** traceable accepted/rejected records and reconciled counts; the computed QA report on the [automation page](/computing/services/gis-automation/#inspect-the-qa-evidence) runs the same checks on six real parcels.
 - **[Open-source GIS resources](https://github.com/ZQM-Computing):** reusable examples for GeoPandas, GDAL, DuckDB Spatial, PostGIS and QGIS.
 
-These examples demonstrate configured checks — the figure preview on six real parcels, the QA sample on a synthetic fixture. They are not completed client projects, a production integration or evidence of customer savings.
+These examples demonstrate configured checks — the figure preview on six real parcels, and the QA sample showing the same checks on a worked example. They are not completed client projects, a production integration or evidence of customer savings.
 
-ZQM Computing is a new independent practice (October 2026). The examples above are capability demonstrations on a public-data sample and a synthetic fixture, not client work. Early engagements are scoped the same way as the examples: a defined task, a written scope, and acceptance criteria agreed before work begins.
+ZQM Computing is a new independent practice (October 2026). The examples above are capability demonstrations on public data and a two-parcel Atlas fixture, not client work. Early engagements are scoped the same way as the examples: a defined task, a written scope, and acceptance criteria agreed before work begins.
 
 ## Who delivers the work?
 

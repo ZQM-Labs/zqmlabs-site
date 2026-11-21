@@ -57,7 +57,7 @@ The audit produces a workflow outline, data-quality rules, a proposed pilot boun
 
 ## Inspect the QA evidence
 
-The [workflow QA sample — synthetic fixture](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff. The full report below was computed by a standard-library-only Python script against a six-parcel GeoPackage built from Volusia County parcels, USFWS NWI wetlands, and FEMA NFHL flood zones (Turnbull Bay sample, accessed 2026-11-16); nothing in it is hand-typed.
+The [workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects, input identity and reconciled counts. The [delivery checklist](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/planning/pipeline-source-qa-checklist.md) explains the source, quality and review evidence expected in a handoff. The full report below was computed by a standard-library-only Python script against a six-parcel GeoPackage built from Volusia County parcels, USFWS NWI wetlands, and FEMA NFHL flood zones (Turnbull Bay sample, accessed 2026-11-16); nothing in it is hand-typed.
 
 ### QA report — computed checks
 
@@ -104,7 +104,7 @@ Typical engagements, scoped and priced after review:
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
 
-Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a workflow audit brief](/computing/inquiry/#workflow-automation)
+Every engagement is scoped and priced after review. First reply within one business day. New engagements are being accepted; start dates are agreed in writing when the scope is set. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a workflow audit brief](/computing/inquiry/#workflow-automation)
 
 ## Choose tools around the target
 

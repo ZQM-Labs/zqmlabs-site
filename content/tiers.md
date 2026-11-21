@@ -15,6 +15,10 @@ These packages describe **Wisp’s Lost Lanterns**, the Halloween 2026 experienc
 
 **Paid kit checkout is currently unavailable.** The Stripe purchase links are inactive, and no new kit order or automatic delivery is being offered. The Halloween 2026 window (October 30–November 1) has ended. The amounts below are prior published reference prices, **not active offers**. [Contact the Lab](/contact/) to discuss possible future arrangements; the [free browser demo](/games/hunt-for-wisps/play/?demo=1) remains available.
 
+## Waitlist for the next edition
+
+Paid kits return with the next edition, and the games stay live — the free demo remains playable. To join the waitlist, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20waitlist%20-%20next%20edition) with the kit format you are interested in. The waitlist is collected by email.
+
 ## Required game coordination
 
 **To organize or participate in a kit-based Wisp game, coordinate with [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20Game%20Coordination).** One designated organizer may email on behalf of the whole group. Include the kit format, requested date and time (with time zone), city or proposed venue, approximate team/participant count, and any accessibility or support needs.

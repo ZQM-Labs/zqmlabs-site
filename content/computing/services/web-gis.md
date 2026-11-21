@@ -51,7 +51,7 @@ Typical engagements, scoped and priced after review:
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
 
-Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a Web GIS brief](/computing/inquiry/#web-gis)
+Every engagement is scoped and priced after review. First reply within one business day. New engagements are being accepted; start dates are agreed in writing when the scope is set. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a Web GIS brief](/computing/inquiry/#web-gis)
 
 ## Plan the operating responsibilities
 
