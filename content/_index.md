@@ -10,10 +10,10 @@ description: "Independent GIS services from ZQM Computing — map production, sp
 See how a deliverable is put together before discussing your project:
 
 - **Parcel map series:** the [synthetic QGIS Atlas example — two-parcel DEMO-P1/DEMO-P2 fixture](https://github.com/ZQM-Computing/qgis-resources/tree/341e3376aa89c1e210727c2876ab5776e72130a0/exhibit-production) shows parcel pages, source information, coverage gaps and a delivery manifest.
-- **Workflow QA:** the [synthetic automation sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects and reconciled counts.
+- **Workflow QA:** the [workflow QA sample](https://github.com/ZQM-Computing/ZQM-Computing/blob/870e6138f47e71d2b23676dc0fae373c1f0e588f/docs/services/examples/gis-workflow-qa-synthetic-sample.md) shows accepted records, reason-coded rejects and reconciled counts.
 - **Real-parcel screening sample:** the [six-parcel Turnbull Bay sample](/computing/services/environmental-screening/#see-the-exhibit-structure) shows real Volusia County parcels with computed wetland and flood overlaps, source register and coverage gaps.
 
-These are public capability demonstrations — the Atlas and workflow samples use synthetic fixtures; the Turnbull Bay screening sample below uses six real parcels — not client case studies or measured customer savings. [Explore the services and approach](/computing/).
+These are public capability demonstrations — the Atlas example uses a synthetic two-parcel fixture; the workflow QA report and the Turnbull Bay screening sample below use six real parcels — not client case studies or measured customer savings. [Explore the services and approach](/computing/).
 
 ## GIS services and typical pricing
 

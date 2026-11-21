@@ -10,6 +10,22 @@ Briefs go to [Alex Zelenski, GISP](/computing/alex-zelenski/) — Certified GIS 
 
 First reply within one business day.
 
+New engagements are being accepted; start dates are agreed in writing when the scope is set.
+
+To book a 15-minute scoping call: [scheduling link to be added — SCHEDULING-LINK-TODO].
+
+## Typical pricing
+
+Typical engagements, scoped and priced after review:
+
+- **Production package — typically $1,000–$1,500.** Subcontract GIS production: figures, QA, data prep.
+- **Automation pilot — from $3,000.** A working workflow, delivered and documented.
+- **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
+- **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
+- **Focused task — from $250.** A single defined deliverable.
+
+Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash.
+
 Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
 
 A short description is enough to begin — for example, a map/figure set, desktop screening, data cleanup, workflow automation or Web GIS. Copy this brief into your email, or click the button above it and paste:
@@ -129,7 +145,7 @@ A scoped estimate records:
 - Output formats, acceptance checks, revision allowance and scope-change handling.
 - Deployment, operation and support responsibilities where relevant.
 
-The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation. A scoped estimate is a written statement of the agreed work and fee. It is not a price quotation, and no fee is presumed from an inquiry. Delivery timelines are confirmed individually.
+The scope is agreed before work begins. An inquiry is not a booking, order confirmation or price quotation, and no fee is presumed from it. A scoped estimate is a written statement of the agreed work and fee. Delivery timelines are confirmed individually.
 
 ## How your brief is handled
 
