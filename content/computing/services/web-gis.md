@@ -4,6 +4,7 @@ seo_title: "Web GIS, PostGIS & Geospatial API Services | ZQM Computing"
 description: "Scope a browser map, PostGIS integration or geospatial API around your users, data access and deployment requirements, with a documented technical handoff."
 service_type: "Web GIS, spatial database integration and geospatial APIs"
 breadcrumb_title: "Web GIS and spatial APIs"
+lastmod: 2026-11-21
 ---
 
 ## Make spatial data useful to the people who need it
@@ -64,10 +65,10 @@ One defined task at a time: scope, start date and availability are agreed in wri
 ## See an accessible project map
 
 <!-- markdownlint-disable MD033 -->
-<iframe src="/computing/demonstrators/project-map/index.html" width="100%" height="900" title="Accessible map of 45 real public parks in New Smyrna Beach" loading="lazy"></iframe>
+<iframe src="/computing/demonstrators/project-map/" width="100%" height="900" title="Accessible map of 45 real public parks in New Smyrna Beach" loading="lazy"></iframe>
 <!-- markdownlint-enable MD033 -->
 
-[Open the accessible project map](/computing/demonstrators/project-map/index.html) (full size) if the embedded map does not load.
+[Open the accessible project map](/computing/demonstrators/project-map/) (full size) if the embedded map does not load.
 
 The map shows 45 real public parks and beach-access points in New Smyrna Beach, from Volusia County GIS Open Data — [projects.csv](/computing/demonstrators/project-map/projects.csv): edit it and reload to update the markers, the place list and the filter. Markers are keyboard-navigable buttons with arrow-key movement between places, and the full place list below the map carries the same information as a text alternative. Contrast is WCAG 2.1 AA (body text 17.40:1; worst passing pair 5.98:1 focus outline).
 

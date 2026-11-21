@@ -4,6 +4,7 @@ seo_title: "Environmental GIS Subcontracting & Parcel Maps | ZQM Computing"
 description: "Environmental GIS mapping services for permit exhibits, QGIS parcel map series, data QA and preliminary desktop screening, scoped for consultant review."
 service_type: "Environmental GIS map production and preliminary parcel screening"
 breadcrumb_title: "Environmental GIS production"
+lastmod: 2026-11-21
 ---
 
 ## GIS figure production for environmental consulting teams
@@ -136,10 +137,10 @@ Public-data sample only. Real Volusia County parcels with real NWI and NFHL over
 ### Explore the six parcels interactively
 
 <!-- markdownlint-disable MD033 -->
-<iframe src="/computing/demonstrators/parcel-web-map/index.html" width="100%" height="560" title="Interactive map of the six real Volusia County screening parcels" loading="lazy"></iframe>
+<iframe src="/computing/demonstrators/parcel-web-map/" width="100%" height="560" title="Interactive map of the six real Volusia County screening parcels" loading="lazy"></iframe>
 <!-- markdownlint-enable MD033 -->
 
-[Open the interactive parcel map](/computing/demonstrators/parcel-web-map/index.html) (full size) if the embedded map does not load.
+[Open the interactive parcel map](/computing/demonstrators/parcel-web-map/) (full size) if the embedded map does not load.
 
 The map shows all six real parcels with their wetland and flood screening numbers in click popups, toggleable wetland and flood overlays, and client-side-only KML/KMZ import — nothing is uploaded. Static front-end demonstration, not a live PostGIS application; a production version would be PostGIS-backed.
 

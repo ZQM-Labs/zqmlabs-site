@@ -4,6 +4,7 @@ seo_title: "GIS Workflow Automation & Spatial ETL Services | ZQM Computing"
 description: "Scope a GIS workflow audit or spatial ETL pilot for recurring cleanup, format conversion and PostGIS imports. Get QA evidence, code and an operator handoff."
 service_type: "GIS workflow automation and spatial ETL"
 breadcrumb_title: "GIS workflow automation"
+lastmod: 2026-11-21
 ---
 
 ## Start with the GIS task your team repeats
@@ -82,7 +83,7 @@ Reject reasons include duplicate identifiers, missing names, unusable geometry, 
 
 Input identity: SHA-256 `c6ec806a…1a2a4`. Tooling: Python 3.12 standard library only (`sqlite3` + WKB parsing plus the documented ear-clipping triangulation for real-geometry clipping); no geopandas/shapely needed to run it.
 
-Read the full rendered report: [qa_report.html](/computing/demonstrators/qa-report/qa_report.html) — a complete standalone document, inline styles, no external dependencies. Run it yourself: [qa_report.py](/computing/demonstrators/qa-report/qa_report.py) (download; it reads the GeoPackage above).
+Read the full rendered report: [qa_report.html](/computing/demonstrators/qa-report/qa_report) — a complete standalone document, inline styles, no external dependencies. Run it yourself: [qa_report.py](/computing/demonstrators/qa-report/qa_report.py) (download; it reads the GeoPackage above).
 
 These are computed checks against a public-data sample, not customer results or proof of a complete production integration. They demonstrate traceable checks, not a measured percentage improvement or labor saving.
 
