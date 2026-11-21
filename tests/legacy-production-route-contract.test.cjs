@@ -88,7 +88,8 @@ test("production player and origin security contract stay byte-identical in prev
     // basemap.nationalmap.gov added to connect-src so MapLibre's
     // fetch()-based raster tiles load live. worker-src blob:,
     // img-src nationalmap + frame-ancestors mischief unchanged.
-    ["_headers", "af5cdc1ec384b50224a93ee6b94d967d05d210f5faa5937d548db2c98e55d531"],
+    // Re-pinned 2026-11-21 (PR #165): GeoPackage MIME type added to _headers.
+    ["_headers", "98ede971096dbf70a40111d5eb2e8c8421e982a757d702f1f607cb2e5abbd344"],
     ["_redirects", "a86219edab4a9afd594efa36ea59a06dc15a51ab9f19db10ec3178fa05695dd2"],
     ["games/hunt-for-wisps/play/PLAYER_SOURCE_SHA", "25d80eb3e9d75e832564ca75d13343d7e8a6ff6dac6cc22cedc9107343649fec"],
     ["games/hunt-for-wisps/play/app.js", "c90925ae9c43da99a2445ef0b45513c1970641d65843c24a5f7e1c1d3d68df45"],
