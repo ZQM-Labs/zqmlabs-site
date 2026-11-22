@@ -12,7 +12,7 @@ First reply within one business day.
 
 New engagements are being accepted; start dates are agreed in writing when the scope is set.
 
-To book a 15-minute scoping call: [scheduling link to be added — SCHEDULING-LINK-TODO].
+To book a 15-minute scoping call, email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20scoping%20call) with a short description of your scope.
 
 ## Typical pricing
 
