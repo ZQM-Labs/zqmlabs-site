@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
         with:
           node-version: "22"
+      - name: Validate GIS inquiry contract (email-only until verified)
+        run: node --test tests/gis-inquiry-contract.test.cjs
       - name: Validate isolated Daily Geo Mystery prototype
         run: node --test tests/daily-geo-mystery.test.mjs
       - name: Install Hugo
