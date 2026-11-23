@@ -74,20 +74,17 @@ test("all three Computing services exist without activating forms or checkout", 
   }
 });
 
-test("Computing inquiries remain brand-specific, form-plus-mailto and noncommittal", () => {
+test("Computing inquiries remain brand-specific, email-only and noncommittal", () => {
   const file = path.join(root, "public/computing/inquiry/index.html");
   assert.ok(fs.existsSync(file), "Computing inquiry route missing");
   const page = fs.readFileSync(file, "utf8");
   assert.match(page, /ZQM Computing/);
   assert.match(page, /mailto:zqmcomputing@gmail.com/);
   assert.match(page, /booking, order confirmation/i);
-  // D2 form (step 3): the brief form posts to the PocketBase brief hook;
-  // mailto stays as the fallback. Checkout links are still forbidden.
-  assert.match(page, /<form\b[^>]*id="?brief-form"?/);
-  assert.match(page, /brief-form\.js/);
-  const script = path.join(root, "public/computing/brief-form.js");
-  assert.ok(fs.existsSync(script), "Brief form script missing");
-  assert.match(fs.readFileSync(script, "utf8"), /\/api\/lantern\/brief/);
+  // 2.3 interim: the brief form is removed until the inquiries store exists
+  // (monorepo PR #369); the page is email-only. No form, no form script.
+  assert.doesNotMatch(page, /<form\b/);
+  assert.doesNotMatch(page, /brief-form\.js/);
   assert.doesNotMatch(page, /checkout\.stripe\.com|buy\.stripe\.com/i);
   assert.match(page, /First reply within one business day/i);
   assert.ok(hasLink(page, "/labs/"));

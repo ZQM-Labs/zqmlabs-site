@@ -14,6 +14,7 @@ permissions:
 jobs:
   gitleaks:
     runs-on: [self-hosted, Linux, X64, zqm-linux]
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -31,6 +32,10 @@ jobs:
           else
             gitleaks git --report-format json --report-path gitleaks-redacted.json --redact .
           fi
+
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
 
       - name: Verify unrelated synthetic credentials remain detectable
         shell: bash

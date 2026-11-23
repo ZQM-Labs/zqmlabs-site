@@ -11,7 +11,7 @@ There are three ways to run a scavenger hunt: build one yourself on a platform, 
 - [Let's Roam alternative](/compare/lets-roam-alternative/) — a ready-made self-guided kit versus a booked city hunt: compare setup, format and confirmed event arrangements.
 - [Scavenger hunt apps compared](/compare/scavenger-hunt-apps/) — GooseChase, Let's Roam, Scavify, PlayTours, and ZQM Labs side by side on price, format, and who does the work.
 
-Not sure which fits? Play the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1), then [contact the Lab](/contact/) about a future event.
+Not sure which fits? Play the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1), then [contact the Lab](/contact/) about a future event. Paid kits return with the next edition — [join the waitlist by email](mailto:zqmcomputing@gmail.com?subject=Wisp%20waitlist%20-%20next%20edition).
 
 ## Need GIS services instead?
 

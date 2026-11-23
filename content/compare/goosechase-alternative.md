@@ -51,7 +51,7 @@ Compare the work as well as the listed fee: a builder asks you to author and tes
 
 ## What to do next
 
-**Paid kit checkout is currently unavailable.** The October 30–November 1, 2026 Halloween event window has ended, and no new kit order or automatic delivery is being offered. The flat fees above are prior published reference prices, not active offers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything.
+**Paid kit checkout is currently unavailable.** The October 30–November 1, 2026 Halloween event window has ended, and no new kit order or automatic delivery is being offered. The flat fees above are prior published reference prices, not active offers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything. Paid kits return with the next edition — [join the waitlist by email](mailto:zqmcomputing@gmail.com?subject=Wisp%20waitlist%20-%20next%20edition).
 
 If you want to feel the difference before you decide, [play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1): six stops, no sign-up, right in your browser. It is a finished quest, not a builder — you will know within ten minutes which one your group actually wants.
 

@@ -6,6 +6,27 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: camera=(), microphone=(), geolocation=(self), payment=()
 
+# GeoPackage MIME: Cloudflare Pages serves .gpkg as
+# application/octet-stream by default; the OGC GeoPackage media type is
+# application/geopackage+sqlite3, so desktop GIS opens the download
+# directly instead of treating it as an unknown binary.
+/computing/demonstrators/parcel-screening/parcel_screening.gpkg
+  Content-Type: application/geopackage+sqlite3
+
+# HTML: short cache with revalidation (was the Pages default max-age=0).
+# /*.html covers directly-linked .html files; /*/ covers directory URLs;
+# / covers the front page.
+# NOTE: Cloudflare joins a header set by two matching rules, so a narrower
+# rule that sets Cache-Control must detach it first ("! Cache-Control").
+# A detach only removes what earlier rules added, so narrower rules go
+# after broader ones.
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+/*/
+  Cache-Control: public, max-age=300, must-revalidate
+/
+  Cache-Control: public, max-age=300, must-revalidate
+
 # Long-cache the immutable assets
 /css/*
   Cache-Control: public, max-age=31536000, immutable
@@ -13,3 +34,9 @@
   Cache-Control: public, max-age=31536000, immutable
 /games/hunt-for-wisps/play/vendor/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Sample data: cache like other static assets, revalidated via ETag
+# (If-None-Match returns 304 — verified live 2026-11-19).
+/computing/demonstrators/*
+  ! Cache-Control
+  Cache-Control: public, max-age=3600, must-revalidate
