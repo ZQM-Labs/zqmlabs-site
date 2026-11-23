@@ -86,7 +86,10 @@ test("Computing inquiries remain brand-specific, email-only and noncommittal", (
   assert.doesNotMatch(page, /<form\b/);
   assert.doesNotMatch(page, /brief-form\.js/);
   assert.doesNotMatch(page, /checkout\.stripe\.com|buy\.stripe\.com/i);
-  assert.match(page, /First reply within one business day/i);
+  // No unverified service-level response promise; receipt is email-only.
+  assert.doesNotMatch(page, /first reply within one business day|guaranteed 24-hour reply/i);
+  assert.match(page, /The first reply confirms whether the task fits/i);
+  assert.match(page, /Delivery timelines are confirmed individually/i);
   assert.ok(hasLink(page, "/labs/"));
 });
 
