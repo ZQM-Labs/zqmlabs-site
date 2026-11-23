@@ -105,7 +105,7 @@ Typical engagements, scoped and priced after review:
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
 
-Every engagement is scoped and priced after review. First reply within one business day. New engagements are being accepted; start dates are agreed in writing when the scope is set. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a workflow audit brief](/computing/inquiry/#workflow-automation)
+Every engagement is scoped and priced after review. Response timing is confirmed after reviewing the inquiry. New engagements are being accepted; start dates are agreed in writing when the scope is set. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a workflow audit brief](/computing/inquiry/#workflow-automation)
 
 ## Choose tools around the target
 
