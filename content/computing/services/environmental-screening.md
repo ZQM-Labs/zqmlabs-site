@@ -157,7 +157,7 @@ Send the non-sensitive outline first. File transfer and permitted handling are a
 
 ## Start with one figure set — from $250
 
-A first figure set is a fixed-scope entry offer: one defined deliverable — for example, a site-location figure set or a geolocated parcel PDF — scoped and priced after review, from $250. It is modelled on a $250 geolocated tree PDF delivered in November 2026. [Send a figure-set brief](/computing/inquiry/#map-production) — first reply within one business day; work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash.
+A first figure set is a fixed-scope entry offer: one defined deliverable — for example, a site-location figure set or a geolocated parcel PDF — scoped and priced after review, from $250. It is modelled on a $250 geolocated tree PDF delivered in November 2026. [Send a figure-set brief](/computing/inquiry/#map-production) — response timing is confirmed after review; work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash.
 
 ## Typical pricing
 
@@ -169,7 +169,7 @@ Typical engagements, scoped and priced after review:
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
 
-Every engagement is scoped and priced after review. First reply within one business day. New engagements are being accepted; start dates are agreed in writing when the scope is set. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a figure-set brief](/computing/inquiry/#map-production)
+Every engagement is scoped and priced after review. Response timing is confirmed after reviewing the inquiry. New engagements are being accepted; start dates are agreed in writing when the scope is set. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a figure-set brief](/computing/inquiry/#map-production)
 
 ## Define acceptance before production
 
