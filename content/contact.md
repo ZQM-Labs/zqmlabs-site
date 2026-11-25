@@ -1,6 +1,6 @@
 ---
 title: "Contact the Lab"
-description: "Contact ZQM Labs about the free Wisp demo, future kit availability, organizing a group, press, or partnerships. Paid checkout is currently unavailable."
+description: "Get in touch with ZQM Labs — booking a kit, hosting a fundraiser, joining the party-rental waitlist, press inquiries, or partnering."
 ---
 
 ## Email the Lab
@@ -27,10 +27,11 @@ For the fastest reply, include:
 
 ## Common reasons to write
 
-**Ask about a future kit.** Paid kit checkout is currently unavailable. For a prospective community, office, youth group, or form-your-own event, confirm scope and timing in writing before announcing anything. See
+**Book a kit.** Community, office, youth group, or a form-your-own event (by arrangement — flat kits are generic, not customized per buyer). See
 [Pricing →](/pricing/) and [Tiers →](/tiers/).
 
-**Discuss a future fundraiser.** Prior revenue-split examples are historical, not available offers. Any future arrangement needs written terms. See [Pricing →](/pricing/).
+**Run a fundraiser.** Community kits can split revenue: families pay $15,
+your community keeps $5. See [Pricing →](/pricing/).
 
 **Join the party-rental waitlist.** Tables, chairs, grills, cornhole, and yard
 games are Phase 2. Get on the list and you'll hear first.

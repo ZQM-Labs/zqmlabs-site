@@ -1,13 +1,13 @@
 ---
 title: "Pricing — flat fees for your quest"
-description: "Host a ZQM Labs location quest: Family Night $49, Community $199, Office Team $349, Office Event $499. One-time flat fees, no subscriptions. Previously listed kit prices; paid checkout is currently unavailable."
+description: "Host a ZQM Labs location quest: Family Night $49, Community $199, Office Team $349, Office Event $499. One-time flat fees, no subscriptions. Buy your kit — checkout is live."
 ---
 
 ## How much does an office scavenger hunt cost?
 
-ZQM Labs previously listed Wisp kits at **Office Team $349** and **Office Event $499**, each a one-time fee for an agreed event window. **Paid checkout is currently unavailable.** They provide the same finished, six-stop Wisp story for your organizer to run. Confirm the appropriate tier, group format, venue and dates with the Lab before announcing an event.
+ZQM Labs' published Wisp kits are **Office Team $349** and **Office Event $499**, each a one-time flat fee for the agreed event window. They provide the same finished, six-stop Wisp story for your organizer to run. Confirm the appropriate tier, group format, venue and dates with the Lab before announcing an event.
 
-[Try the free browser demo](/games/hunt-for-wisps/play/?demo=1) · [Review reference Wisp tiers](/tiers/) · [Ask about future availability](/contact/).
+[Try the free browser demo](/games/hunt-for-wisps/play/?demo=1) · [Choose a current Wisp kit](/tiers/) · [Ask about your group](/contact/).
 
 **Game coordination is required.** Before organizing or participating in a future paid kit event, one organizer should email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20Game%20Coordination) with the proposed date/time, location, group size and kit format. Coordinate venue permission, route safety, accessibility and delivery arrangements; the Lab must confirm the event in writing. Payment alone does not confirm a booking.
 
@@ -24,7 +24,7 @@ ZQM Labs previously listed Wisp kits at **Office Team $349** and **Office Event 
 
 <!-- coderabbit-ai-generated-section:v1:8925f4131205b707f368a56821ff2882a6941bae12253387aa58912b461a16ae -->
 
-These are previously listed Wisp's Lost Lanterns reference prices, not active purchase offers. **All paid kit checkout links are currently inactive.** The [hosting tiers page](/tiers/) describes earlier kit formats; contact the Lab about a potential future event. Youth Groups and Form-Your-Own requests need a separately confirmed scope and price.
+These are current Wisp's Lost Lanterns offers, not universal prices for every future game. Checkout is live on the [hosting tiers page](/tiers/); that page holds the purchase links and full tier terms. Youth Groups and Form-Your-Own requests need a separately confirmed scope and price.
 
 <!-- /coderabbit-ai-generated:v1 -->
 
@@ -68,11 +68,11 @@ Use the [scavenger hunt apps and kits comparison](/compare/scavenger-hunt-apps/)
 1. **Try the current story.** Play the [free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1) and review the [organizer guidance](/guides/host-your-first-scavenger-hunt/).
 2. **Check your arrangements.** Send the group type/count, proposed dates, general location, tier and any suitability or support needs to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=Wisp%20office%20kit%20and%20event%20arrangements).
 3. **Confirm the scope.** Agree the event window, venue permissions, organizer responsibilities, accessibility/weather plans and available support before announcing anything.
-4. **Discuss availability, not checkout.** [Contact the Lab](/contact/) about a future kit or event. No paid checkout or automatic kit entitlement is currently available; do not announce an event until scope and delivery are explicitly confirmed.
+4. **Buy the agreed kit.** Use the existing purchase links on [the tiers page](/tiers/). Kit access details are emailed after checkout; confirm the event window and delivery arrangements with the Lab.
 
 ## Seasonal editions and availability
 
-The Halloween 2026 activation is a past edition. Its October 30–November 1, 2026 event window has ended. Future Wisp event availability is subject to written confirmation, and no kit is currently available for online purchase. The Great Pumpkin Roll and The Snowflake Secret are **in development**, not separately playable releases or included alternative editions. Confirm current arrangements before making plans.
+The Halloween 2026 activation is a past edition. Its October 30–November 1, 2026 event window has ended. Current kits use the Wisp's Lost Lanterns story with an agreed event window. The Great Pumpkin Roll and The Snowflake Secret are **in development**, not separately playable releases or included alternative editions. Confirm current arrangements before making plans.
 
 ## Historical fundraiser example
 
@@ -86,4 +86,4 @@ An undeliverable order is eligible for refund; other refund or reschedule reques
 
 Need GIS mapping, automation or Web GIS work? [ZQM Computing](/computing/) offers GIS services for consulting and operations teams — production packages typically $1,000–$1,500, scoped after review.
 
-[Prior tier descriptions](/tiers/) · [Organizer details](/organizers/) · [FAQ](/faq/) · [Contact the Lab](/contact/).
+[Full tier descriptions and purchase links](/tiers/) · [Organizer details](/organizers/) · [FAQ](/faq/) · [Contact the Lab](/contact/).
