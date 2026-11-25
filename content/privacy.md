@@ -2,7 +2,7 @@
 title: "Privacy Policy — ZQM Labs"
 seo_title: "Privacy Policy — ZQM Labs"
 h1: "Privacy policy"
-description: "Privacy for existing waitlist records, emails, demo play state, and GIS project briefs."
+description: "Privacy for existing waitlist records, emails, demo play state, GIS project briefs, and visit analytics."
 breadcrumb: true
 ---
 
@@ -16,13 +16,15 @@ breadcrumb: true
 
 **Demo play state.** The free browser demo stores puzzle progress and completed stops in your browser's local storage. In free demo mode, solved-progress updates are not sent to the ZQM Labs backend. Clearing local storage can remove that progress.
 
+**Analytics.** The site uses Cloudflare Web Analytics to count visits and see which pages are read. It does not use cookies, does not collect personal information, and does not follow visitors across sites.
+
 **Map tiles, optional location and external routing.** Opening the Wisp map while online can load map tiles from `tile.openstreetmap.org`. Tile requests reveal technical request information, including your IP address and the map area being displayed, to that external provider, even if you decline browser location permission. If you grant browser location permission, the player can show your position and guide you toward a stop. Its online walking-route feature may then request directions from the external Open Source Routing Machine demonstration service at `router.project-osrm.org`, passing your current latitude/longitude and the selected stop's coordinates in the request URL. Selecting an external navigation link may also open Google Maps with the stop destination. Those third-party operators process requests under their own practices; ZQM Labs cannot guarantee that information used for external maps stays on your device. You can decline location permission and use sign-code and puzzle options, and the free demo does not require online routing or location permission to progress.
 
 ## What this site does not collect
 
 There are **no accounts** on this site — nothing to sign up for, and no passwords stored anywhere.
 
-The generated public website does **not include analytics or advertising scripts**. Locally bundled game JavaScript is used for gameplay. External map and routing requests described above, and technical requests processed by Cloudflare as the hosting and security provider, are separate from analytics or advertising scripts.
+The generated public website does **not include advertising scripts**. Locally bundled game JavaScript is used for gameplay. External map and routing requests described above, and technical requests processed by Cloudflare as the hosting and security provider, are not advertising scripts.
 
 The site does **not use cookies to track or advertise to you**. The site is served through Cloudflare, which may set technical cookies to deliver pages securely — those are not advertising cookies and the Lab does not use them to identify you.
 
