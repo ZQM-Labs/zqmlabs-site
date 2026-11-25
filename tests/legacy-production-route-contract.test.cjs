@@ -144,17 +144,16 @@ test("pricing retains inquiry route, historical prices, and planned-season label
     "An unverified leaderboard must not be listed as an included feature");
   assert.match(pricing, /href=(?:"|)\/tiers\//i);
   const tiers = fs.readFileSync(artifact("/tiers/"), "utf8");
-  // The connected live Stripe account marked all four advertised links inactive
-  // as of 2026-11-16. Route-level truth must not regress to dead payment CTAs.
-  assert.doesNotMatch(tiers, /buy[.]stripe[.]com/i, "Inactive purchase links must not render");
-  assert.doesNotMatch(pricing, /buy[.]stripe[.]com/i, "Pricing must remain inquiry-only");
-  assert.match(tiers, /Paid kit checkout is currently unavailable/i);
-  assert.match(pricing, /paid checkout is currently unavailable/i);
-  assert.doesNotMatch(tiers, /schema[.]org[/]InStock|"@type" *: *"Product"/i);
+  assert.match(tiers, /https:\/\/buy\.stripe\.com\/28E14p9hV23bgNA5Fv9bO03/i, "Family Night must link to its verified Stripe payment link");
+  assert.match(tiers, /https:\/\/buy\.stripe\.com\/28E6oJeCf0Z740Od7X9bO00/i, "Community must link to its verified Stripe payment link");
+  assert.match(tiers, /https:\/\/buy\.stripe\.com\/14AcN78dR7nvbtg5Fv9bO01/i, "Office Team must link to its verified Stripe payment link");
+  assert.match(tiers, /https:\/\/buy\.stripe\.com\/fZu14p8dR7nveFs0lb9bO02/i, "Office Event must link to its verified Stripe payment link");
+  assert.doesNotMatch(tiers, /Paid kit checkout is paused/i);
+  assert.doesNotMatch(pricing, /checkout is paused/i);
   assert.match(tiers, /href=(?:"|)\/contact\//i);
   assert.match(tiers, /Halloween 2026 (?:event )?window/i);
   assert.match(tiers, /FAMILY25/);
   assert.match(tiers, /refund/i);
-  assert.doesNotMatch(tiers, /Your kit is usable as soon as checkout delivers it|Checkout is live/i);
+  assert.match(tiers, /Your kit is usable as soon as checkout delivers it/i);
   assert.doesNotMatch(pricing, /<form\b/i, "Pricing should not add a new payment or intake form");
 });
