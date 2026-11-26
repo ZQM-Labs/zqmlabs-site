@@ -71,6 +71,16 @@ Typical engagements, scoped and priced after review:
 
 Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a brief](/computing/inquiry/).
 
+## Start with a First Figure Set — from $500
+
+Three report-ready figures for one site, built to your figure list and style, from $500. Print-ready PDFs plus GeoPackage and a QGIS project, a signed source register with retrieval dates and coverage gaps, and one revision round for corrections against the brief. Delivered in three days from the agreed scope and receipt of all inputs. Rush available: $750, next business day.
+
+The $500 is credited in full toward a Production package on the same project within 30 days. If your brief does not fit this fixed scope, it is quoted instead under the published menu.
+
+This is figure production for your team's review, not outsourced professional signoff. It does not include an EP signature, Phase I authorship, survey or boundary work, a PE stamp, legal advice, or flood modeling. Work begins with an agreed scope, a 50% deposit ($250) to book, and the balance on delivery. Payment by check (payable to Alex Zelenski) or cash.
+
+[Send a figure-set brief](/computing/inquiry/#map-production) to start.
+
 ## Environmental mapping resources
 
 For a project manager preparing a figure list or parcel screening request, start with the [environmental GIS production resource hub](/computing/resources/):
