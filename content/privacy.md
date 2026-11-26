@@ -28,7 +28,7 @@ The site does **not use cookies to track or advertise to you**. The site is serv
 
 ## Payments
 
-**Paid kit checkout is currently unavailable.** Previously listed offers used Stripe Payment Links; Stripe processes card details on its hosted pages; **ZQM Labs does not receive or store payment-card numbers**. No new kit purchase is currently offered. Confirmation, customer records, delivery, support and refunds follow the published terms and fulfillment.
+**Paid kit checkout is live.** Kit purchases use Stripe Payment Links; Stripe processes card details on its hosted pages; **ZQM Labs does not receive or store payment-card numbers**. Confirmation, customer records, delivery, support and refunds follow the published terms and fulfillment.
 
 ## Your choices
 

@@ -53,7 +53,7 @@ For a group visiting a city, a published city route may suit the day. For a grou
 
 ## What to do next
 
-**Paid kit checkout is currently unavailable.** The October 30–November 1, 2026 Halloween event window has ended, and no new kit order or automatic delivery is being offered. The flat fees above are prior published reference prices, not active offers. [Contact ZQM Labs](/contact/) to discuss a future event — confirm scope, price, and availability in writing before announcing anything. The Lab is based in New Smyrna Beach, in Volusia County, Florida, and its first activation ran there; ask about your location before you plan around it. Paid kits return with the next edition — [join the waitlist by email](mailto:zqmcomputing@gmail.com?subject=Wisp%20waitlist%20-%20next%20edition).
+**Paid kit checkout is live.** The October 30–November 1, 2026 Halloween event window has ended; kits are now available for your own event window. Buy your kit on [the tiers page](/tiers/) — Family Night $49, Community $199, Office Team $349, Office Event $499. [Contact ZQM Labs](/contact/) to discuss your event — confirm scope, price, and availability in writing before announcing anything. The Lab is based in New Smyrna Beach, in Volusia County, Florida, and its first activation ran there; ask about your location before you plan around it.
 
 If you want to feel the difference before you decide, [play the free Wisp browser demo](/games/hunt-for-wisps/play/?demo=1): six stops, no sign-up, right in your browser. It is a finished quest at your own pace — you will know within ten minutes whether your group wants a city route or a story at their own place.
 
