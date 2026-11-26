@@ -10,7 +10,7 @@ faq:
   - q: "Is there a fixed route in New Smyrna Beach?"
     a: "No. Flagler Avenue, Canal Street, and local parks are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance."
   - q: "How much does a local quest cost?"
-    a: "Current published tier prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms."
+    a: "Prior published reference prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. Paid kit checkout is currently unavailable; see the tiers page for reference prices and future availability. The former FAMILY25 discount has expired."
 ---
 
 > **Current Wisp kit availability:** The free demo remains playable, and paid kit options are listed on the [tiers page](/tiers/). The Halloween 2026 event window has ended; the FAMILY25 discount and historical fundraiser splits are not current offers. Confirm venue, event window and organizer responsibilities before announcing an event.
@@ -29,7 +29,7 @@ Flat-fee Wisp kits use the same finished story for every buyer. Coordinating the
 
 ## Current kit pricing and historical promotions
 
-The prices below are the current published Wisp kit tiers. Venue suitability, event window and support arrangements still need confirmation; a purchase is not a hosted-event booking.
+The prices below are prior published Wisp kit reference prices — paid kit checkout is currently unavailable. Venue suitability, event window and support arrangements still need confirmation; a purchase is not a hosted-event booking.
 
 ## Which tier fits which group
 
@@ -54,7 +54,7 @@ See [scavenger hunt hosting tiers and pricing](/tiers/) for the full list, or [f
 
 **Is there a fixed route in New Smyrna Beach?** No. Flagler Avenue, Canal Street, and local parks are settings the Lab can coordinate a quest around; the route, stops, and permissions are agreed for each event, not promised in advance.
 
-**How much does a local quest cost?** Current published tier prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. The former FAMILY25 discount has expired; see the tiers page for current purchase and event terms.
+**How much does a local quest cost?** Prior published reference prices are Family Night $49, Community $199, Office Team $349 and Office Event $499. Paid kit checkout is currently unavailable; see the tiers page for reference prices and future availability. The former FAMILY25 discount has expired.
 
 ## Check availability
 
