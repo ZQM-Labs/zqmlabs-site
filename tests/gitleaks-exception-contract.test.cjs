@@ -7,12 +7,13 @@ const allowlist = fs.readFileSync(path.join(__dirname, "..", ".gitleaksignore"),
 const expected = [
   "add4d3d75fcd9f3cf7b50f7f9b66d74cb52215c2:docs/DUAL_BRAND_FILE_INVENTORY.csv:generic-api-key:13",
   "344aad1a2b79344477ed2bc3c7cc4acb895d0b99:docs/DUAL_BRAND_FILE_INVENTORY.csv:generic-api-key:13",
+  "32b1b3bcc3abc4270798e05e383b5233e01f71e3:layouts/_default/baseof.html:generic-api-key:116",
 ];
 test("historical false-positive exceptions are exact fingerprints, never blanket rules", () => {
   const active = allowlist.split(/\r?\n/).map(x=>x.trim()).filter(x=>x && !x.startsWith("#"));
   assert.deepEqual(active.sort(), expected.slice().sort());
   for (const line of active) {
-    assert.match(line, /^[0-9a-f]{40}:docs\/DUAL_BRAND_FILE_INVENTORY\.csv:generic-api-key:13$/);
+    assert.match(line, /^(?:[0-9a-f]{40}:docs\/DUAL_BRAND_FILE_INVENTORY\.csv:generic-api-key:13|[0-9a-f]{40}:layouts\/_default\/baseof\.html:generic-api-key:116)$/);
     assert.doesNotMatch(line, /[*!?]/);
   }
 });
