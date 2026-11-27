@@ -23,7 +23,7 @@ Typical engagements, scoped and priced after review:
 - **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
-- **First Figure Set — from $500.** Three report-ready figures for one site, source register included, delivered in three days. Scope confirmed after review; 50% deposit ($250) to book, balance on delivery.
+- **First Figure Set — from $500.** Three report-ready figures for one site, source register included, delivered in three days. Scope confirmed after review; 50% deposit ($250) to book, balance on delivery. Rush available: $750, next business day. The $500 is credited in full toward a Production package on the same project within 30 days.
 
 Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash.
 
