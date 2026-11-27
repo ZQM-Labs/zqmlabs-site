@@ -12,6 +12,8 @@ Based in New Smyrna Beach, Florida. Project geography, remote delivery and clien
 
 [See example deliverables](#work-examples) · [What to include in your brief](/computing/inquiry/).
 
+**Bounded starter option:** A preliminary desktop GIS screening starts at **$500** for one defined study area and screening question, subject to input/source review and a written scope. The agreed map or tabular outputs, source register, mapped-coverage gaps, QA criteria, revisions, fee and delivery date are confirmed before work begins. This is not a field delineation, surveyed boundary, jurisdictional determination, engineering opinion or regulatory approval. [Request a screening scope](/computing/inquiry/#map-production).
+
 See the evidence first: [six-parcel screening table and downloadable fixture](/computing/services/environmental-screening/#see-the-exhibit-structure) · [computed QA report — 12/12 overlap checks PASS](/computing/services/gis-automation/#inspect-the-qa-evidence) · [accessible project map](/computing/services/web-gis/#see-an-accessible-project-map).
 
 ## Choose the work you need
@@ -63,13 +65,14 @@ Figure count, source readiness, data licensing, output formats, review needs and
 
 Typical engagements, scoped and priced after review:
 
+- **Bounded desktop screening — starting at $500.** One agreed geography and screening question; source/coverage limitations, QA and deliverables are fixed by a written scope, not this example price.
 - **Production package — typically $1,000–$1,500.** Subcontract GIS production: figures, QA, data prep.
 - **Automation pilot — from $3,000.** A working workflow, delivered and documented.
 - **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
 
-Every engagement is scoped and priced after review. First reply within one business day. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a brief](/computing/inquiry/).
+Every engagement is scoped and priced after review. Response timing is confirmed when the inquiry is received. Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash. [Send a brief](/computing/inquiry/).
 
 ## Start with a First Figure Set — from $500
 
