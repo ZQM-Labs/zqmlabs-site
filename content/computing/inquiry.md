@@ -29,7 +29,7 @@ Work begins with an agreed scope, a deposit and milestones; payment by check (pa
 
 Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
 
-A short description is enough to begin — for example, a map/figure set, desktop screening, data cleanup, workflow automation or Web GIS. Copy this brief into your email, or click the button above it and paste:
+A short description is enough to begin — for example, a map/figure set, desktop screening, data cleanup, workflow automation or Web GIS. Click the button to copy this brief for email — it also selects the matching service and fills in the form below:
 
 <!-- markdownlint-disable MD033 -->
 <button type="button" class="btn" data-copy-target="brief-generic">Copy this brief</button>
@@ -127,13 +127,13 @@ For a [browser map, PostGIS integration or spatial API](/computing/services/web-
 
 ## Share project context first
 
-Keep credentials, confidential customer records, private access keys, health information and restricted datasets out of your initial email. If sample data is needed, agree a suitable transfer method and permitted handling first.
+Keep credentials, confidential customer records, private access keys, health information and restricted datasets out of your initial brief. If sample data is needed, agree a suitable transfer method and permitted handling first.
 
 Preliminary screening is not a boundary survey, field wetland delineation, jurisdictional determination, Phase I environmental site assessment, engineering opinion or regulatory approval. Figure production supports the client's professional review.
 
 ## What happens next
 
-What happens after you send: your email goes to Alex Zelenski directly. The first reply confirms whether the task fits and what further information is needed. Scope, data rights, fees, timing, review responsibilities and availability are then agreed in writing before work begins.
+What happens after you send: your brief goes to Alex Zelenski directly. The first reply confirms whether the task fits and what further information is needed. Scope, data rights, fees, timing, review responsibilities and availability are then agreed in writing before work begins.
 
 The initial review establishes whether the task fits, what further information is needed and whether a separately scoped diagnostic or implementation makes sense. Scope, data rights, fees, timing, review responsibilities and availability are agreed before work begins.
 
@@ -152,7 +152,7 @@ The scope is agreed before work begins. An inquiry is not a booking, order confi
 
 **What we keep.** Your email address, your name and organisation, the task you describe, the inputs and output you list, and any timing or project context you include.
 
-**Where it is kept.** Briefs sent by email stay in the ZQM Computing mailbox ([zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)). Your brief goes to Alex Zelenski directly.
+**Where it is kept.** Briefs sent through the form on this page are stored in the brief store, read only by Alex Zelenski. Briefs sent by email stay in the ZQM Computing mailbox ([zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)).
 
 **How long it is kept.** Briefs are retained indefinitely, and deleted on request. If storage ever runs short, the oldest inactive briefs are pruned first.
 
@@ -160,13 +160,41 @@ The scope is agreed before work begins. An inquiry is not a booking, order confi
 
 **Deletion.** Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) and ask for your brief to be deleted.
 
-**Confidential files.** Do not send confidential source files in your first email — agree transfer and handling first.
+**Confidential files.** Do not send confidential source files in your first brief — agree transfer and handling first.
 
 The full privacy note, including GIS briefs, is in the [Privacy Policy](/privacy/).
 
 ## Send your brief
 
-Choose the brief above that matches your task, fill in the fields, and email it to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry). Clicking a brief's copy button above copies the brief fields so you can paste them into your email.
+Choose the brief above that matches your task, then fill in the form below. Clicking a brief's copy button also selects the matching service and fills in the brief field.
+
+<!-- markdownlint-disable MD033 -->
+<form id="brief-form">
+  <fieldset>
+    <legend>Submitting this form stores your brief in the brief store. Alex Zelenski only reads it, and no email is sent.</legend>
+    <label for="brief-name">Your name</label>
+    <input type="text" id="brief-name" name="name" required maxlength="120">
+    <label for="brief-email">Your email</label>
+    <input type="email" id="brief-email" name="email" required maxlength="254">
+    <label for="brief-organisation">Organisation</label>
+    <input type="text" id="brief-organisation" name="organisation" maxlength="120">
+    <label for="brief-service-type">Service</label>
+    <select id="brief-service-type" name="service_type">
+      <option value="general">General GIS help</option>
+      <option value="map-production">Map production</option>
+      <option value="workflow-automation">Workflow automation</option>
+      <option value="web-gis">Web GIS</option>
+      <option value="other">Other</option>
+    </select>
+    <label for="brief-text">Your brief</label>
+    <textarea id="brief-text" name="brief_text" required maxlength="10000"></textarea>
+    <p id="brief-form-status" aria-live="polite"></p>
+    <button type="submit">Send your brief</button>
+  </fieldset>
+</form>
+<!-- markdownlint-enable MD033 -->
+
+If the form does not send, email your brief to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) instead.
 
 {{< cta subject="ZQM Computing project inquiry" text="Email your project brief" body="Name and organisation: \nI need: \nThe output will be used for: \nAvailable inputs: \nDesired output: \nFigure or parcel count (if known): \nTiming and review: " >}}
 
@@ -178,4 +206,5 @@ For a game kit or event, use the separate [ZQM Labs information](/labs/).
 
 <!-- markdownlint-disable MD033 -->
 <script src="/computing/copy-brief.js" defer></script>
+<script src="/computing/brief-form.js" defer></script>
 <!-- markdownlint-enable MD033 -->
