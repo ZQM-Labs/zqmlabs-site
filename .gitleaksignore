@@ -6,3 +6,11 @@
 # Gitleaks full-history scanning and all other findings remain blocking.
 add4d3d75fcd9f3cf7b50f7f9b66d74cb52215c2:docs/DUAL_BRAND_FILE_INVENTORY.csv:generic-api-key:13
 344aad1a2b79344477ed2bc3c7cc4acb895d0b99:docs/DUAL_BRAND_FILE_INVENTORY.csv:generic-api-key:13
+# Cloudflare Web Analytics site token in layouts/_default/baseof.html (PR #184).
+# This is Cloudflare's PUBLIC site token for the zqmlabs.com Web Analytics
+# site: it only identifies which Analytics site receives the pageview and
+# grants no access to any account, API, or data. Cloudflare publishes this
+# token inside the beacon snippet, which is served to every visitor by
+# design. Not a credential; the generic-api-key match is a false positive.
+# Fingerprint is commit-specific, as with the historical entries above.
+32b1b3bcc3abc4270798e05e383b5233e01f71e3:layouts/_default/baseof.html:generic-api-key:116
