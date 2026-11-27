@@ -84,7 +84,9 @@ test("Computing inquiries remain brand-specific and noncommittal, with the brief
   // Brief form restored now that the briefs store exists (briefs collection
   // live on Node-3, POST /api/lantern/brief routed by the Worker). The form
   // submits in-page with no action attribute; email stays as the fallback.
-  assert.match(page, /<form\b[^>]*id="brief-form"/);
+  // Note: Hugo --minify strips attribute quotes, so match id with or
+  // without quotes (built HTML renders <form id=brief-form>).
+  assert.match(page, /<form\b[^>]*id="?brief-form"?/);
   assert.doesNotMatch(page, /<form\b[^>]*\baction\s*=/);
   assert.match(page, /brief-form\.js/);
   assert.match(page, /brief-form-status/);
