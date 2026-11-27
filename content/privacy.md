@@ -12,7 +12,7 @@ breadcrumb: true
 
 **Emails you send us.** If you email the Lab at [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com), we keep your message so we can answer it and coordinate your event.
 
-**GIS project briefs.** If you email a GIS project brief to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com), the brief is kept in the ZQM Computing mailbox so Alex Zelenski can review it and reply. Briefs are retained indefinitely unless you ask for them to be deleted. Only Alex Zelenski has access to the mailbox. Do not send confidential source files in your first email — agree transfer and handling first. The handling rule is on the [inquiry page](/computing/inquiry/).
+**GIS project briefs.** If you send a GIS project brief through the form on the [inquiry page](/computing/inquiry/), it is stored in the brief store so Alex Zelenski can review it and reply; only Alex Zelenski can read it. If you email a brief to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com) instead, it is kept in the ZQM Computing mailbox, which only Alex Zelenski can access. Briefs are retained indefinitely unless you ask for them to be deleted. Do not send confidential source files in your first brief — agree transfer and handling first. The handling rule is on the [inquiry page](/computing/inquiry/).
 
 **Demo play state.** The free browser demo stores puzzle progress and completed stops in your browser's local storage. In free demo mode, solved-progress updates are not sent to the ZQM Labs backend. Clearing local storage can remove that progress.
 

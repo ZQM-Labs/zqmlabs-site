@@ -74,17 +74,22 @@ test("all three Computing services exist without activating forms or checkout", 
   }
 });
 
-test("Computing inquiries remain brand-specific, email-only and noncommittal", () => {
+test("Computing inquiries remain brand-specific and noncommittal, with the brief form wired to the store", () => {
   const file = path.join(root, "public/computing/inquiry/index.html");
   assert.ok(fs.existsSync(file), "Computing inquiry route missing");
   const page = fs.readFileSync(file, "utf8");
   assert.match(page, /ZQM Computing/);
   assert.match(page, /mailto:zqmcomputing@gmail.com/);
   assert.match(page, /booking, order confirmation/i);
-  // 2.3 interim: the brief form is removed until the inquiries store exists
-  // (monorepo PR #369); the page is email-only. No form, no form script.
-  assert.doesNotMatch(page, /<form\b/);
-  assert.doesNotMatch(page, /brief-form\.js/);
+  // Brief form restored now that the briefs store exists (briefs collection
+  // live on Node-3, POST /api/lantern/brief routed by the Worker). The form
+  // submits in-page with no action attribute; email stays as the fallback.
+  // Note: Hugo --minify strips attribute quotes, so match id with or
+  // without quotes (built HTML renders <form id=brief-form>).
+  assert.match(page, /<form\b[^>]*id="?brief-form"?/);
+  assert.doesNotMatch(page, /<form\b[^>]*\baction\s*=/);
+  assert.match(page, /brief-form\.js/);
+  assert.match(page, /brief-form-status/);
   assert.doesNotMatch(page, /checkout\.stripe\.com|buy\.stripe\.com/i);
   assert.match(page, /First reply within one business day/i);
   assert.ok(hasLink(page, "/labs/"));
