@@ -152,7 +152,7 @@ The scope is agreed before work begins. An inquiry is not a booking, order confi
 
 **What we keep.** Your email address, your name and organisation, the task you describe, the inputs and output you list, and any timing or project context you include.
 
-**Where it is kept.** Briefs sent through the form on this page are stored in the brief store, read only by Alex Zelenski. Briefs sent by email stay in the ZQM Computing mailbox ([zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)).
+**Where it is kept.** Briefs sent through the form on this page are stored in the brief store, read only by Alex Zelenski. Inquiries sent through the structured inquiry form below are stored in the inquiries store instead, and return a reference number you can quote in later emails. Briefs sent by email stay in the ZQM Computing mailbox ([zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com)).
 
 **How long it is kept.** Briefs are retained indefinitely, and deleted on request. If storage ever runs short, the oldest inactive briefs are pruned first.
 
@@ -198,6 +198,42 @@ If the form does not send, email your brief to [zqmcomputing@gmail.com](mailto:z
 
 {{< cta subject="ZQM Computing project inquiry" text="Email your project brief" body="Name and organisation: \nI need: \nThe output will be used for: \nAvailable inputs: \nDesired output: \nFigure or parcel count (if known): \nTiming and review: " >}}
 
+## Send a structured inquiry
+
+If you prefer a reference number for your inquiry, use this second form instead of the brief form above. It asks for the same project details plus a budget range and timing, and returns a reference you can quote in later emails. The two forms are separate: use one or the other, not both.
+
+<!-- markdownlint-disable MD033 -->
+<form id="inquiry-form">
+  <fieldset>
+    <legend>Submitting this form stores your inquiry and returns a reference number. Alex Zelenski only reads it, and no email is sent automatically yet.</legend>
+    <label for="inquiry-name">Your name</label>
+    <input type="text" id="inquiry-name" name="name" required maxlength="120">
+    <label for="inquiry-email">Your email</label>
+    <input type="email" id="inquiry-email" name="email" required maxlength="254">
+    <label for="inquiry-organisation">Organisation</label>
+    <input type="text" id="inquiry-organisation" name="organisation" maxlength="200">
+    <label for="inquiry-brief-type">Type of inquiry</label>
+    <select id="inquiry-brief-type" name="brief_type">
+      <option value="generic">General GIS help</option>
+      <option value="map-production">Map production</option>
+      <option value="web-gis">Web GIS</option>
+      <option value="workflow">Workflow automation</option>
+    </select>
+    <label for="inquiry-brief-text">Your inquiry</label>
+    <textarea id="inquiry-brief-text" name="brief_text" required maxlength="20000"></textarea>
+    <label for="inquiry-budget-range">Budget range</label>
+    <input type="text" id="inquiry-budget-range" name="budget_range" maxlength="120">
+    <label for="inquiry-timing">Timing</label>
+    <input type="text" id="inquiry-timing" name="timing" maxlength="200">
+    <input type="hidden" id="inquiry-website" name="website" tabindex="-1" autocomplete="off">
+    <p id="inquiry-form-status" aria-live="polite"></p>
+    <button type="submit">Send your inquiry</button>
+  </fieldset>
+</form>
+<!-- markdownlint-enable MD033 -->
+
+If this form does not send, email your inquiry to [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) instead.
+
 If an email application does not open, copy [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) into your usual email service, or open a pre-addressed compose window: [Compose in Gmail](https://mail.google.com/mail/?view=cm&fs=1&to=zqmcomputing@gmail.com&su=ZQM%20Computing%20project%20inquiry) · [Compose in Outlook](https://outlook.live.com/mail/0/deeplink/compose?to=zqmcomputing@gmail.com&subject=ZQM%20Computing%20project%20inquiry). Use the subject for the service you need — the brief fields are on this page, and the copy button above each brief copies them.
 
 [Review the services and work examples](/computing/).
@@ -207,4 +243,5 @@ For a game kit or event, use the separate [ZQM Labs information](/labs/).
 <!-- markdownlint-disable MD033 -->
 <script src="/computing/copy-brief.js" defer></script>
 <script src="/computing/brief-form.js" defer></script>
+<script src="/computing/inquiry-form.js" defer></script>
 <!-- markdownlint-enable MD033 -->

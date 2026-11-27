@@ -90,6 +90,14 @@ test("Computing inquiries remain brand-specific and noncommittal, with the brief
   assert.doesNotMatch(page, /<form\b[^>]*\baction\s*=/);
   assert.match(page, /brief-form\.js/);
   assert.match(page, /brief-form-status/);
+  // Structured inquiries form: a second, separate form posting to
+  // POST /api/inquiries, returning a reference number. Same no-action rule
+  // (checked above for the whole page). The honeypot field is rendered
+  // hidden; the hook ignores an empty value and silently drops a filled one.
+  assert.match(page, /<form\b[^>]*id="?inquiry-form"?/);
+  assert.match(page, /inquiry-form\.js/);
+  assert.match(page, /inquiry-form-status/);
+  assert.match(page, /id="?inquiry-website"?/);
   assert.doesNotMatch(page, /checkout\.stripe\.com|buy\.stripe\.com/i);
   assert.match(page, /First reply within one business day/i);
   assert.ok(hasLink(page, "/labs/"));
