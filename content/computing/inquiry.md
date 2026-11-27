@@ -23,9 +23,18 @@ Typical engagements, scoped and priced after review:
 - **Program — $25,000 and up, quoted by scope.** Multi-phase or large-area work.
 - **Retainer — $1,000/month.** 10 reserved hours, priority turnaround, monthly reconciliation; additional hours $125/hr; unused hours expire monthly.
 - **Focused task — from $250.** A single defined deliverable.
-- **First Figure Set — from $500.** Three report-ready figures for one site, source register included, delivered in three days. Scope confirmed after review; 50% deposit ($250) to book, balance on delivery.
 
 Work begins with an agreed scope, a deposit and milestones; payment by check (payable to Alex Zelenski) or cash.
+
+## Start with a First Figure Set — from $500
+
+Three report-ready figures for one site, built to your figure list and style, from $500. Print-ready PDFs plus GeoPackage and a QGIS project, a signed source register with retrieval dates and coverage gaps, and one revision round for corrections against the brief. Delivered in three days from the agreed scope and receipt of all inputs. Rush available: $750, next business day.
+
+The $500 is credited in full toward a Production package on the same project within 30 days. If your brief does not fit this fixed scope, it is quoted instead under the published menu.
+
+This is figure production for your team's review, not outsourced professional signoff. It does not include an EP signature, Phase I authorship, survey or boundary work, a PE stamp, legal advice, or flood modeling. Work begins with an agreed scope, a 50% deposit ($250) to book, and the balance on delivery. Payment by check (payable to Alex Zelenski) or cash.
+
+[Send a figure-set brief](/computing/inquiry/#map-production) to start.
 
 Email [zqmcomputing@gmail.com](mailto:zqmcomputing@gmail.com?subject=ZQM%20Computing%20project%20inquiry) about GIS production, preliminary parcel screening, workflow automation, PostGIS, Web GIS or a geospatial API.
 
